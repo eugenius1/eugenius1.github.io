@@ -43,6 +43,13 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--memory", "512"]
   end
 
+
   config.vm.provision "shell", inline: $script_provision, run: "once"
   config.vm.provision "shell", inline: "/usr/local/bin/jekyll-start.sh", run: "always"
+
+  config.vm.provision "fix-no-tty", type: "shell" do |s|
+    s.privileged = false
+    s.inline = "sudo sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile"
+  end
+
 end
