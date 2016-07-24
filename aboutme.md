@@ -15,3 +15,8 @@ What else do you need?
 # *Eusebius* Pronounciation
 
 Usually it's pronounced [yoo-SEE-bee-əs] but I am the exception [yoo-SAY-bee-əs], which adds an accent: **Eusébius**.
+
+
+# Contact
+
+You will find buttons below to email me or see my social network pages. My email address is [me@eusebius.tech](mailto:me@eusebius.tech).

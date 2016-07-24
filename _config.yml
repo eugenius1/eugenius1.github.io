@@ -22,8 +22,12 @@ description: Personal website of Eusebius Ngemera including a blog of technologi
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
+#http://eugenius1.github.io/ee3-rtdsp"
 navbar-links:
   About Me: "aboutme"
+  Projects: "projects"
+  Blog: ""
+  Contact: "contact"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
