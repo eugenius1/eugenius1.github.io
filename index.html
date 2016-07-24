@@ -1,42 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Eusebius aka eugenius1</title>
-<!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>-->
+---
+layout: page
+title: Hi, I'm Eusebius
+subtitle: This is where I blog about tech and life as I know it
+bigimg:
+  - "/img/covers/2016-Kigamboni-ferry-TZ.jpg" : "Kigamboni Ferry, Dar es Salaam, Tanzania (2016)"
+  - "/img/covers/2015-Mt-Saleve-FR.jpg" : "Mont Salève, French Prealps overlooking Lake Geneva (2015)"
+  - "/img/covers/2016-facebook-hackathon-UK.jpg" : "Facebook London Hackathon (2016)"
+  - "/img/covers/2015-wedding-tux.jpg" : "UK (2015)"
+---
 
-<style>
-body {
-    background-color: lightgrey;
-    font-family: serif;
-}
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
 
-h1 {
-    font-family: Ubuntu, sans-serif;"
-}
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
+    </a>
 
-p {
-    font-family: serif;
-}
-</style>
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 
-<h1>Hello World! It's Eusebius.</h1>
-</head>
+    <div class="post-entry">
+      {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
 
-<body>
-<p>Some of my public projects:<br />
+   </article>
+  {% endfor %}
+</div>
 
-<ul>
-<li><a href="https://eugenius1.github.io/ee3-rtdsp/" title="ee3-rtdsp">Real-Time Speech Enhancement</a> #TexasInstruments #DSP #EmbeddedSoftware</li>
-</ul></p>
-
-<h2>Connect with me</h2><p>
-Be professional: <a href="https://www.linkedin.com/in/eusebius" title="LinkedIn: eusebius">LinkedIn</a><br />
-Be social: <a href="https://twitter.com/esebi95" title="Twitter: @esebi95">Twitter</a><br />
-Be <strong>awesome</strong>: <a href="https://github.com/eugenius1" title="GitHub: eugenius1">GitHub</a><br />
-Be special: <a href="https://www.instagram.com/esebi95/" title="Instagram: @esebi95">Instagram</a><br />
-</p>
-
-</body>
-</html>
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
