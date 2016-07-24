@@ -12,6 +12,7 @@ title: How I made this website!
 I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. Shortness vs Reliability. There were three contenders and in the end I settled on the middle ground and that's `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
 
 [hover.com](https://hover.com/Yiflhr2y)
+Other registrars exists but I chose hover because of the value, considering they offer free Whois privacy.
 
 > Image showing hover price
 
