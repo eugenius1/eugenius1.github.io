@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: My "productive" fixations
+subtitle: My productive fixations
 comments: true
 ---
 

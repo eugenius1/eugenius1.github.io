@@ -16,7 +16,7 @@ Other registrars exist but I chose hover because of the value, especially consid
 
 ![alt text](/img/posts/2016/hover-renewal.png "Domain renewal for a second year")
 
-[Donate](donate) towards a renewal.
+[Donate](/donate) towards a renewal.
 
 # Hosting
 
@@ -29,6 +29,13 @@ The beauty of GitHub Pages is that I can have my website hosted, for free, at a 
 # Theme
 
 > GIF of website transformation
+
+## Features
+
+- Disqus commenting
+- Google Analytics
+- RSS Feed
+- Animated cover images
 
 # Email
 

@@ -26,7 +26,7 @@ description: Personal website of Eusebius Ngemera including a blog of technologi
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-  Blog: ""
+  Blog: "blog"
   Contact: "contact"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
