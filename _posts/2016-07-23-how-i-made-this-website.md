@@ -14,7 +14,7 @@ I had to choose a website domain name that I could spell out in a few seconds ye
 [hover.com](https://hover.com/Yiflhr2y)
 Other registrars exist but I chose hover because of the value, especially considering they offer free Whois privacy.
 
-![alt text](/img/posts/2016/hover-renewal.png "Domain renewal for a second year")
+![alt text](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
 [Donate](/donate) towards a renewal.
 
@@ -24,7 +24,7 @@ Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](htt
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub.
 
-![alt text](/img/posts/2016/hover-dns.png "DNS settings on hover.com")
+![alt text](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
 # Theme
 
