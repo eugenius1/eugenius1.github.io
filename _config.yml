@@ -49,6 +49,7 @@ author:
   twitter: esebi95
   linkedin: in/eusebius
   #stackoverflow: yourlink  # eg. "3943160/daattali"
+  instagram: esebi95
  
 # Select which links to show in the footer
 footer-links-active:
@@ -59,6 +60,7 @@ footer-links-active:
   github: true
   linkedin: true
   stackoverflow: false
+  instagram: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
