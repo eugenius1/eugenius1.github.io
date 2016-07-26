@@ -83,11 +83,16 @@
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
+    function specialName(name) {
+      if (name === 'Abdou Nezezra') return 'Abs ;)';
+      return name + '!';
+    }
+    
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in with Facebook, ' + response.name=='Abdou Nezezra'? 'Abs ;)' : response.name + '!';
+        'Thanks for logging in with Facebook, ' + specialName(response.name);
     });
   }
 </script>
