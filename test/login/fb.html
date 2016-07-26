@@ -84,7 +84,8 @@
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
     function specialName(name) {
-      if (name === 'Abdou Nezezra') return 'Abs ;)';
+      if (name.startsWith('Abdou Ne')) return 'Abs ;)';
+      if (name.startsWith('Hope Ka')) return 'Mama!';
       return name + '!';
     }
     
