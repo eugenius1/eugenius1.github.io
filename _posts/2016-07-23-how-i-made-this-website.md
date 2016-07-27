@@ -7,12 +7,16 @@ title: How I made this website!
 
 ---
 
+Why bother making a website? 
+For me, this website is my own personal space on the web that I'm in control of. I can quickly link anyone to pages like [eusebius.tech/uber](http://eusebius.tech/uber). 
+The bare minimum to having your own website is finding a place to host it and adding your content. Most people go for blogging services like WordPress but I wanted more than just a blog.
+
 # Website domain name
 
-I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. Shortness vs Reliability. There were three contenders and in the end I settled on the middle ground and that's `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
+I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. *Shortness vs Reliability*. There were three contenders and in the end I settled on the middle ground and that's `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
 
-[hover.com](https://hover.com/Yiflhr2y)
-Other registrars exist but I chose hover because of the value, especially considering they offer free Whois privacy.
+You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y). Other reputable registrars exist (name.com, GoDaddy, namecheap) but I chose hover because they offer free Whois privacy and my total cost was less than US $14 for the first year. 
+> Whois
 
 ![alt text](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
