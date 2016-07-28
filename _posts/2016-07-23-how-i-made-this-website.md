@@ -47,3 +47,7 @@ With [hover.com](https://hover.com/Yiflhr2y) I pay $5 a year for email forwardin
 improvmx.com
 
 # Webpage contents
+
+## Imagery
+
+> Credit Faisal for Avatar and aboutme cover.
