@@ -8,7 +8,7 @@ title: How I made this website!
 ---
 
 Why bother making a website? 
-For me, this website is my own personal space on the web that I'm in control of. I can quickly link anyone to pages like [eusebius.tech/uber](http://eusebius.tech/uber). 
+For me, this website is my own personal space on the web that I'm in control of. I can quickly link anyone to pages like [eusebius.tech/uber](/uber "Free Uber ride"). 
 The bare minimum to having your own website is finding a place to host it and adding your content. Most people go for blogging services like WordPress but I wanted more than just a blog.
 
 # Website domain name
@@ -20,7 +20,7 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 ![alt text](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
-[Donate](/donate) towards a renewal.
+[Donate](/donate "Donate to Eusebius.Tech") towards a renewal.
 
 # Hosting
 
