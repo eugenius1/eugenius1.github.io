@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Facebook Login JavaScript Example</title>
+<title>Login to Eusebius.Tech with Facebook</title>
 <meta charset="UTF-8">
 </head>
 <body>
@@ -83,11 +83,17 @@
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
+    function specialName(name) {
+      if (name.startsWith('Abdou Ne')) return 'Abs ;)';
+      if (name.startsWith('Hope Ka')) return 'Mama!';
+      return name + '!';
+    }
+    
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in with Facebook, ' + response.name=='Abdou Nezezra'? 'Abs ;)' : response.name + '!';
+        'Thanks for logging in with Facebook, ' + specialName(response.name);
     });
   }
 </script>
