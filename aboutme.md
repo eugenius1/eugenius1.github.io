@@ -17,7 +17,7 @@ What else do you need?
 
 # *Eusebius* Pronounciation
 
-Usually it's pronounced [yoo-SEE-bee-əs] but I am the exception [yoo-*SAY*-bee-əs], which adds an acute accent: **Eusébius**.
+Usually it's pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-bee-əs], which adds an acute accent: Eus**é**bius.
 
 
 # Contact
