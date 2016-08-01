@@ -90,20 +90,21 @@
     }
     
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', {fields: 'name,first_name,last_name,age_range,birthday,email,locale,location,timezone'}, function(response) {
+    FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
-      console.log(response);
+      //console.log(response);
       document.getElementById('status').innerHTML =
         'Thanks for logging in with Facebook, ' + specialName(response.name, response.first_name) +
         "<br />" + 
         response.first_name + "<br />" +
         response.last_name + "<br />" +
         response.age_range + "<br />" +
-        response.birthday + "<br />" +
         response.email + "<br />" +
         response.locale +  "<br />" +
-        response.location +  "<br />" +
-        response.timezone;
+        response.timezone+ "<br />" +
+        '<a href='+response.picture+
+        '<img src="'+response.picture+'" alt="alt text" title="You!">'+
+        '</a>';
     });
   }
 </script>
