@@ -102,8 +102,8 @@
         response.email + "<br />" +
         response.locale +  "<br />" +
         response.timezone+ "<br />" +
-        '<a href='+response.picture+
-        '<img src="'+response.picture+'" alt="alt text" title="You!">'+
+        '<a href='+response.picture.data.url+
+        '<img src="'+response.picture.data.url+'" alt="alt text" title="You!">'+
         '</a>';
     });
   }
