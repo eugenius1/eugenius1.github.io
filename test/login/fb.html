@@ -92,13 +92,13 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
-      //console.log(response);
+      console.log(response);
       document.getElementById('status').innerHTML =
         'Thanks for logging in with Facebook, ' + specialName(response.name, response.first_name) +
         "<br />" + 
         response.first_name + "<br />" +
         response.last_name + "<br />" +
-        response.age_range + "<br />" +
+        response.age_range.min + "-" + response.age_range.max + "<br />" +
         response.email + "<br />" +
         response.locale +  "<br />" +
         response.timezone+ "<br />" +
