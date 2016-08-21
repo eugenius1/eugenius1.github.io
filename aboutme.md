@@ -14,6 +14,132 @@ My name is Eusebius Ngemera. I have the following qualities:
 
 What else do you need?
 
+# Technologies
+
+
+<ul class="list-inline text-center">
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-amazon fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-android fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-bluetooth-b fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-chrome fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-facebook fa-stack-1x"></i>
+    </span>
+  </li>
+  <li title="Font Awesome">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-font-awesome fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-git fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-github fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-google fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-google-plus fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-instagram fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-linux fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-paypal fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-skype fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-slack fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-spotify fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-stack-overflow fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-trello fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-tripadvisor fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-usb fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-whatsapp fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-wikipedia-w fa-stack-1x"></i>
+    </span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-youtube fa-stack-1x"></i>
+    </span>
+  </li>
+</ul>
+
 
 # *Eusebius* Pronounciation
 
