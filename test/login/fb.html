@@ -83,17 +83,27 @@
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
-    function specialName(name) {
-      if (name.startsWith('Abdou Ne')) return 'Abs ;)';
-      if (name.startsWith('Hope Ka')) return 'Mama!';
-      return name + '!';
+    function specialName(fullname, firstname) {
+      if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
+      if (fullname.startsWith('Hope Ka')) return 'Mama!';
+      return firstname + '!';
     }
     
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
+    FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
+      console.log(response);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in with Facebook, ' + specialName(response.name);
+        'Thanks for logging in with Facebook, ' + specialName(response.name, response.first_name) +
+        "<br />" + 
+        response.first_name + "<br />" +
+        response.last_name + "<br />" +
+        response.age_range.min + "-" + response.age_range.max + "<br />" +
+        response.email + "<br />" +
+        response.locale +  "<br />" +
+        response.timezone+ "<br />" +
+        '<a href='+response.picture.data.url+'>Your picture:<br></a>'
+        '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
     });
   }
 </script>
