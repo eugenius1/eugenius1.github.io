@@ -15,7 +15,7 @@ The bare minimum to having your own website is finding a place to host it and ad
 
 I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. *Shortness vs Reliability*. There were three contenders and in the end I settled on the middle ground and that's `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
 
-You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y). Other reputable registrars exist (name.com, GoDaddy, namecheap) but I chose hover because they offer free Whois privacy and my total cost was less than US $14 for the first year. 
+You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y). Other reputable registrars exist (name.com, GoDaddy, namecheap) but I chose hover because they offer free Whois privacy and my total cost for the first year was less than US $14. 
 > Whois
 
 ![alt text](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
