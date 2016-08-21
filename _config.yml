@@ -19,7 +19,7 @@ title: Eusebius.Tech
 title_navbar: Eusebius Ngemera
 
 # Short description of your site
-description: Personal website of Eusebius Ngemera including a blog of technologies and life as he knows it.
+description: Personal website of Eusebius Ngemera, including a blog of technologies and life as he knows it.
 
 # --- Navigation bar options --- #
 
@@ -30,7 +30,6 @@ navbar-links:
   Projects: "projects"
   Blog: "blog"
   CV: "cv"
-  Contact: "contact"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"

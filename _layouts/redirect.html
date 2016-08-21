@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <script>
+      window.location = "{{ page.to }}";
+    </script>
+    <noscript>
+      <a href="{{ page.to }}">Click here to go to the 
+        {% if page.title %}
+          <em>{{ page.title }}</em>
+        {% else%}
+          redirected
+        {% endif %}
+         page.
+       </a>
+    </noscript>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
