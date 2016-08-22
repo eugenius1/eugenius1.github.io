@@ -3,6 +3,19 @@ layout: post
 title: How I made this website!
 ---
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=1009749102479073";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'en-GB'}
+</script>
+
 **TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage") theme by Dean Attali.
 
 ---
@@ -27,7 +40,7 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages such as [this](http://eusebius.tech/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing"). A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when you make a request.
 
-The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub.
+The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.
 
 ![alt text](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
@@ -52,3 +65,13 @@ improvmx.com
 ## Imagery
 
 > Credit Faisal for Avatar and aboutme cover.
+
+<div>
+  <div class="fb-like" data-href="http://eusebius.tech/blog/how-i-made-this-website/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+  <div><a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+  <!-- Place this tag where you want the +1 button to render. -->
+  <div class="g-plusone" data-href="http://eusebius.tech/blog/how-i-made-this-website/"></div>
+</div>
