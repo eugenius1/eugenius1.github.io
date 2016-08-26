@@ -552,3 +552,21 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
+
+/* Social share buttons */
+
+/* This gets Google to fall into place */
+.social-share {
+  font-size: 1px;
+}
+
+/* This gets Facebook to fall into place */
+.social-share iframe {
+  vertical-align: middle;
+}
+
+/* Set an optional width for your button wrappers */
+.social-share span {
+  display: inline-block;
+  width: 110px;
+}
