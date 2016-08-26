@@ -71,6 +71,10 @@ footer-links-active:
 
 # --- Misc --- #
 
+# Share buttons above and below page content
+share-buttons-above: true
+share-buttons-below: true
+
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 disqus: "eusebiustech"
 
@@ -98,6 +102,15 @@ defaults:
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
+      share-buttons: true   # A row of social sharing buttons
+  -
+    scope:
+      path: "projects"
+    values:
+      layout: "projects"
+      show-avatar: true
+      comments: true
+      share-buttons: true
   -
     scope:
       path: "" # all files

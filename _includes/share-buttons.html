@@ -1,0 +1,13 @@
+<div class="social-share">
+  <span class="twitter">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </span>
+  <span class="google">
+    <!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://apis.google.com/js/platform.js" async defer>{lang: 'en-GB'}</script>
+	<g:plusone size="medium" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}"></g:plusone>
+  </span>
+  <span class="facebook">
+    <iframe src="https://www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}/&amp;show_faces=false&amp;layout=button_count&amp;share=true" scrolling="no" frameborder="0" style="height: 21px;" allowTransparency="true"></iframe>
+  </span>
+</div>

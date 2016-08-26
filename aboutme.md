@@ -18,7 +18,7 @@ What else do you need?
 
 
 <ul class="list-inline text-center">
-  <li>
+  <li title="Amazon Web Services">
     <span class="fa-stack fa-lg">
       <i class="fa fa-amazon fa-stack-1x"></i>
     </span>
