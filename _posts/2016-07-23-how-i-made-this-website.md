@@ -67,30 +67,6 @@ improvmx.com
 > Credit Faisal for Avatar and aboutme cover.
 
 <hr>
-<ul class="list-inline">
-  <li style="vertical-align:top">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </li>
-  <li style="vertical-align:top">
-    <!-- Place this tag where you want the +1 button to render. -->
-    <div class="g-plusone" data-href="http://eusebius.tech/blog/how-i-made-this-website/"></div>
-  </li>
-  <li style="vertical-align:top">
-    <div class="fb-like" data-href="http://eusebius.tech/blog/how-i-made-this-website/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-  </li>
-</ul>
-
-<div>
-  <span style="">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </span>
-    <!-- Place this tag where you want the +1 button to render. -->
-  <span class="g-plusone" data-href="http://eusebius.tech/blog/how-i-made-this-website/">
-  </span>
-  <span class="fb-like" data-href="http://eusebius.tech/blog/how-i-made-this-website/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true">
-  </span>
-</div>
-<br>
 <div class="social-share">
   <span class="twitter">
     <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -98,8 +74,7 @@ improvmx.com
   <span class="google">
     <g:plusone size="medium" href="http://eusebius.tech/blog/how-i-made-this-website/"></g:plusone>
   </span>
-  <span class="Facebook">
+  <span class="facebook">
     <iframe src="https://www.facebook.com/plugins/like.php?href=http://eusebius.tech/blog/how-i-made-this-website/&amp;show_faces=false&amp;layout=button_count&amp;share=true" scrolling="no" frameborder="0" style="height: 21px;" allowTransparency="true"></iframe>
   </span>
 </div>
-
