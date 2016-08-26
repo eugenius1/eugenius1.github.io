@@ -38,7 +38,7 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 # Hosting
 
-Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages such as [this](http://eusebius.tech/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing"). A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when you make a request.
+Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages. A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when you make a request.
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.
 
@@ -50,10 +50,12 @@ The beauty of GitHub Pages is that I can have my website hosted, for free, at a 
 
 ## Features
 
-- Disqus commenting
-- Google Analytics
-- RSS Feed
-- Animated cover images
+The theme is more of a framework, on top of Jekyll.
+
+- **Disqus commenting**
+- **Google Analytics**: for statistics on viewers
+- **RSS Feed**
+- **Animated cover images**
 
 # Email
 
@@ -63,41 +65,7 @@ I would highly recommend you use [improvmx.com](http://improvmx.com/), which is 
 
 # Webpage content
 
-### Markdown
-
-```markdown
-# Heading
-
-## Sub-heading
-
-### Another deeper heading
- 
-Paragraphs are separated
-by a blank line.
-
-Two spaces at the end of a line leave a  
-line break.
-
-Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
-
-Horizontal rule:
-
----
-
-Bullet list:
-
-  * apples
-  * oranges
-  * pears
-
-Numbered list:
-
-  1. apples
-  2. oranges
-  3. pears
-
-A [link](http://example.com).
-```
+Last but not least is filling webpages with content or making a blog post. HTML, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML.
 
 ### HTML
 
@@ -106,38 +74,39 @@ A [link](http://example.com).
 
 <h2>Sub-heading</h2>
 
-<h3>Another deeper heading</h3>
-
-<p>Paragraphs are separated
-by a blank line.</p>
-
-<p>Two spaces at the end of a line leave a<br />
-line break.</p>
-
-<p>Text attributes <em>italic</em>, <em>italic</em>, <strong>bold</strong>, <strong>bold</strong>, <code>monospace</code>.</p>
-
-Horizontal rule:
-
-<hr />
+<p>Text attributes <em>italic</em>, <strong>bold</strong>, <code>monospace</code>.</p>
 
 <p>Bullet list:</p>
 
 <ul>
-<li>apples</li>
-<li>oranges</li>
-<li>pears</li>
+  <li>apples</li>
+  <li>oranges</li>
 </ul>
-
-<p>Numbered list:</p>
-
-<ol>
-<li>apples</li>
-<li>oranges</li>
-<li>pears</li>
-</ol>
 
 <p>A <a href="http://example.com">link</a>.</p>
 ```
+
+### Markdown
+
+```markdown
+# Heading
+
+## Sub-heading
+
+Text attributes *italic*, **bold**, `monospace`.
+
+Bullet list:
+
+  * apples
+  * oranges
+
+A [link](http://example.com).
+```
+
+Of course, you could use *Microsoft Word* or a similar program to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure, is that Markdown is quicker to pickup than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
+
+
+Comment below on your experiences of making your own website. Was it WordPress? If you're following this as a guide feel free to get in touch for any clarifications.
 
 
 <hr>
