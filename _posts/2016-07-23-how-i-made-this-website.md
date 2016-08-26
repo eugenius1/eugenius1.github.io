@@ -3,20 +3,7 @@ layout: post
 title: How I made this website!
 ---
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=1009749102479073";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script src="https://apis.google.com/js/platform.js" async defer>
-  {lang: 'en-GB'}
-</script>
-
-**TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage") theme by Dean Attali.
+**TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage") theme by Dean Attali. Content written in Markdown.
 
 ---
 
@@ -52,7 +39,7 @@ The beauty of GitHub Pages is that I can have my website hosted, for free, at a 
 
 The theme is more of a framework, on top of Jekyll.
 
-- **Disqus commenting**
+- **Disqus**: commenting
 - **Google Analytics**: for statistics on viewers
 - **RSS Feed**
 - **Animated cover images**
@@ -61,7 +48,7 @@ The theme is more of a framework, on top of Jekyll.
 
 With [hover.com](https://hover.com/Yiflhr2y) I pay $5 a year for email forwarding. This price is only for one email address on your domain. All emails sent to [me@eusebius.tech](mailto:me@eusebius.tech) are forwarded to my personal Gmail address.
 
-I would highly recommend you use [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of writing this post, I haven't been able to modify their record. Thus, I'm back to hover's service.
+I would highly recommend [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of writing this post, I haven't been able to modify their record. Thus, I'm back to hover's service.
 
 # Webpage content
 
@@ -97,8 +84,8 @@ Text attributes *italic*, **bold**, `monospace`.
 
 Bullet list:
 
-  * apples
-  * oranges
+* apples
+* oranges
 
 A [link](http://example.com).
 ```
@@ -107,17 +94,3 @@ Of course, you could use *Microsoft Word* or a similar program to write content 
 
 
 Comment below on your experiences of making your own website. Was it WordPress? If you're following this as a guide feel free to get in touch for any clarifications.
-
-
-<hr>
-<div class="social-share">
-  <span class="twitter">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </span>
-  <span class="google">
-    <g:plusone size="medium" href="http://eusebius.tech/blog/how-i-made-this-website/"></g:plusone>
-  </span>
-  <span class="facebook">
-    <iframe src="https://www.facebook.com/plugins/like.php?href=http://eusebius.tech/blog/how-i-made-this-website/&amp;show_faces=false&amp;layout=button_count&amp;share=true" scrolling="no" frameborder="0" style="height: 21px;" allowTransparency="true"></iframe>
-  </span>
-</div>
