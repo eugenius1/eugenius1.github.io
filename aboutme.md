@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: Why you'd want to have a drink with me
+share-img: "/img/covers/2015-wedding-tux.jpg"
 bigimg:
   - "/img/covers/2015-wedding-tux.jpg" : "*Let me show you a few things*"
 ---

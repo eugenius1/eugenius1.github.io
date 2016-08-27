@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 subtitle: My productive fixations
+share-img: "/img/projects/ee3-rtdsp/lynx.png"
 comments: true
 ---
 

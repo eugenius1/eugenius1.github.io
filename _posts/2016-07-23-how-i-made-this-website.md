@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How I made this website!
+share-img: "/img/blog/2016/theme-history.gif"
 ---
 
 **TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"). Content written in Markdown.

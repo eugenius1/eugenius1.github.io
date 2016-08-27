@@ -2,6 +2,7 @@
 layout: project
 title: EE3-RTDSP
 subtitle: Real-Time Digital Signal Processing
+share-img: "/img/projects/ee3-rtdsp/lynx.png"
 comments: true
 ---
 
