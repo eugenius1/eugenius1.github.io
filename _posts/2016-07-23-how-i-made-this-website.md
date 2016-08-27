@@ -97,4 +97,4 @@ A [link](http://example.com).
 Of course, you could use *Microsoft Word* or a similar program to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure, is that Markdown is quicker to pickup than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
 
 
-Comment below on your experiences of making your own website. Was it WordPress? If you're following this as a guide feel free to get in touch for any clarifications.
+Comment below on your experiences of making your own website. Was it WordPress? If you're following this as a guide, feel free to get in touch for any clarifications.
