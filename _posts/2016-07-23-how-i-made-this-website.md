@@ -38,7 +38,7 @@ A theme can drastically affect a website's impression.
 
 [![alt text](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/ img/blog/2016/theme-history.gif)
 
-The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"), and it goes beyond some css's and visuals. It's more of a framework, built on top of Jekyll. Jekyll is a static-site generator.
+The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 
 ## Features
 

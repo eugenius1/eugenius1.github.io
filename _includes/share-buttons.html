@@ -8,6 +8,10 @@
 	<g:plusone size="medium" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}"></g:plusone>
   </span>
   <span class="facebook">
-    <iframe src="https://www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}/&amp;show_faces=false&amp;layout=button_count&amp;share=true" scrolling="no" frameborder="0" style="height: 21px;" allowTransparency="true"></iframe>
+    <iframe src="https://www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}/&amp;show_faces=false&amp;layout=button_count&amp;share=true" scrolling="no" frameborder="0" style="height: 21px; width: 160px;" allowTransparency="true"></iframe>
+  </span>
+  <span class="linkedin">
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script type="IN/Share" data-url="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" data-counter="right"></script>
   </span>
 </div>

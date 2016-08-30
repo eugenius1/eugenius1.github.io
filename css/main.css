@@ -568,5 +568,17 @@ table tr td :last-child {
 /* Set an optional width for your button wrappers */
 .social-share span {
   display: inline-block;
-  width: 110px;
+  /*width: 110px;*/
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+.social-share .twitter {
+  padding-right: 30px;
+}
+
+.social-share .linkedin {
+  padding: 0 0px;
+  /*height: 21px;
+  width: 110px;*/
 }
