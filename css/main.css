@@ -579,6 +579,7 @@ table tr td :last-child {
 
 .social-share .linkedin {
   padding: 0 0px;
+  text-align: left;
   /*height: 21px;
   width: 110px;*/
 }

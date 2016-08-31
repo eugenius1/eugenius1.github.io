@@ -1,0 +1,10 @@
+<!-- wrap in some bootstrap panel -->
+<div>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <a class="github-button" href="https://github.com/{{ include.repo }}/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download {{ include.repo }} on GitHub">Download</a>
+  <a class="github-button" href="https://github.com/{{ include.repo }}" data-icon="octicon-eye" data-style="mega" data-count-href="/{{ include.repo }}/watchers" data-count-api="/repos/{{ include.repo }}#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch {{ include.repo }} on GitHub">Watch</a>
+  <!-- Place this tag where you want the button to render. -->
+  <a class="github-button" href="https://github.com/{{ include.repo }}" data-icon="octicon-star" data-style="mega" data-count-href="/{{ include.repo }}/stargazers" data-count-api="/repos/{{ include.repo }}#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star {{ include.repo }} on GitHub">Star</a>
+  <!-- Place this tag where you want the button to render. -->
+  <a class="github-button" href="https://github.com/{{ include.repo }}/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/{{ include.repo }}/network" data-count-api="/repos/{{ include.repo }}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork {{ include.repo }} on GitHub">Fork</a>
+</div>

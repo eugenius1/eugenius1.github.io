@@ -12,4 +12,4 @@ Some of my public projects:
 
 - [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing") `#DSP` `#EmbeddedSoftware`
 
-- [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle") `#Hackathon`
+- [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle") `#Hackathon` `#Qt`
