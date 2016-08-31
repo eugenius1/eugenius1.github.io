@@ -566,10 +566,12 @@ table tr td :last-child {
 }
 
 /* Set an optional width for your button wrappers */
+.social-share div,
 .social-share span {
   display: inline-block;
   /*width: 110px;*/
   padding: 0 5px;
+  padding-bottom: 10px;
   vertical-align: middle;
 }
 

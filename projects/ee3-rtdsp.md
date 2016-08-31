@@ -4,7 +4,7 @@ title: EE3-RTDSP
 subtitle: Real-Time Digital Signal Processing
 share-img: "/img/projects/ee3-rtdsp/lynx.png"
 comments: true
-github: "eugenius1/ee3-rtdsp"
+github: eugenius1/ee3-rtdsp
 ---
 
 > Telephones are increasingly being used in noisy environments such as cars, airports and undergraduate laboratories! The aim of this project is to implement **a real-time system that will reduce the background noise in a speech signal while leaving the signal itself intact**: this process is called speech enhancement.<br><br>

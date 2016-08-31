@@ -1,17 +1,17 @@
 <div class="social-share">
-  <span class="twitter">
+  <div class="twitter col-md-2 col-md-offset-0 col-sm-3 col-xs-6">
     <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="EusebiusTech" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </span>
-  <span class="google">
+  </div>
+  <div class="google col-md-2 col-sm-3 col-xs-6">
     <!-- Place this tag in your head or just before your close body tag. -->
 	<script src="https://apis.google.com/js/platform.js" async defer>{lang: 'en-GB'}</script>
 	<g:plusone size="medium" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}"></g:plusone>
-  </span>
-  <span class="facebook">
+  </div>
+  <div class="facebook col-md-2 col-sm-3 col-xs-6">
     <iframe src="https://www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}/&amp;show_faces=false&amp;layout=button_count&amp;share=true" scrolling="no" frameborder="0" style="height: 21px; width: 160px;" allowTransparency="true"></iframe>
-  </span>
-  <span class="linkedin">
+  </div>
+  <div class="linkedin col-md-2 col-sm-3 col-xs-6">
     <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
     <script type="IN/Share" data-url="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" data-counter="right"></script>
-  </span>
+  </div>
 </div>
