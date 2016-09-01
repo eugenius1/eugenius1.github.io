@@ -80,11 +80,9 @@ What else do you need?
     </span>
   </li>
   <li>
-    <a href="/donate" title="PayPal donation">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-paypal fa-stack-1x"></i>
-      </span>
-    </a>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-paypal fa-stack-1x"></i>
+    </span>
   </li>
   <li>
     <span class="fa-stack fa-lg">
