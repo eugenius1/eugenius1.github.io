@@ -47,17 +47,17 @@ The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jeky
 - **RSS Feed**
 - **Animated cover images**
 
-The features above are built-in very well as all I had to was fill in my [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) and [Google Analytics ID](https://support.google.com/analytics/answer/1008080) in the configurations file.
+The features above are built-in very well as all I had to do was fill in my [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) and [Google Analytics ID](https://support.google.com/analytics/answer/1008080) in the configurations file.
 
 # Email
 
-With [hover.com](https://hover.com/Yiflhr2y) I pay $5 a year for email forwarding. This price is only for one email address on your domain. All emails sent to [me@eusebius.tech](mailto:me@eusebius.tech) are forwarded to my personal Gmail address.
+With [hover.com](https://hover.com/Yiflhr2y) I pay $5 a year for email forwarding. This price is only for one email address on my domain. All emails sent to [me@eusebius.tech](mailto:me@eusebius.tech) are forwarded to my personal Gmail address.
 
-I would highly recommend [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of writing this post, I haven't been able to modify their record. Thus, I'm back to hover's service.
+I would highly recommend [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of writing this post, I haven't been able to modify their record. Thus, I'm back to hover's email-forwarding service.
 
 # Webpage content
 
-Last but not least is filling webpages with content or making a blog post. HTML, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML.
+Last but not least, is filling webpages with content or making a blog post. HTML, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML.
 
 ### HTML
 
@@ -98,4 +98,4 @@ A [link](http://example.com).
 Of course, you could use *Microsoft Word* or a similar program to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure, is that Markdown is quicker to pickup than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
 
 
-Comment below on your experiences of making your own website. Was it WordPress? If you're following this as a guide, feel free to get in touch for any clarifications.
+Comment below on your experiences of making your own website. Did you use WordPress? If you're following this as a guide, feel free to get in touch for any clarifications.
