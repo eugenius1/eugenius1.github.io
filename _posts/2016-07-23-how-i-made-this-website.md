@@ -5,7 +5,7 @@ subtitle: And kept costs low
 share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
 ---
 
-**TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"). Content written in Markdown.
+**TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"). Content written in [Markdown](#webpage-content).
 
 ---
 
