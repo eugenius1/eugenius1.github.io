@@ -35,7 +35,7 @@ The screenshot belows shows the DNS Records for my domain. These are just settin
 
 # Theme
 
-A theme can drastically affect a website's impression.
+A theme can drastically affect a website's impression. See versions [1](/index-v1.html) and [2](/index-v2.html) of my homepage.
 
 [![alt text](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/ img/blog/2016/theme-history.gif)
 
