@@ -553,7 +553,7 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
-/* Social share buttons */
+/* --- Social share buttons --- */
 
 /* This gets Google to fall into place */
 .social-share {
@@ -588,4 +588,10 @@ table tr td :last-child {
   text-align: left;
   /*height: 21px;
   width: 110px;*/
+}
+
+/* --- Social share buttons --- */
+
+a .fa-circle {
+  color: #404040;
 }

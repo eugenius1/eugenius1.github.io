@@ -5,6 +5,7 @@ bluetooth-b
 chrome
 facebook
 font-awesome
+get-pocket
 git
 github
 google
