@@ -590,8 +590,8 @@ table tr td :last-child {
   width: 110px;*/
 }
 
-/* --- Social share buttons --- */
+/* --- Fixes --- */
 
-a .fa-circle {
+a .fa-stack {
   color: #404040;
 }
