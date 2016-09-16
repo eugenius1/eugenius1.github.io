@@ -58,7 +58,7 @@ I would highly recommend [improvmx.com](http://improvmx.com/), which is free. Al
 
 # Webpage content
 
-Last but not least, is filling webpages with content or making a blog post. HTML, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML.
+Last but not least, is filling webpages with content or making a blog post. HTML, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML by Jekyll.
 
 ### HTML
 
