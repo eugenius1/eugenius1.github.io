@@ -127,6 +127,9 @@ exclude:
   - README.md
   - CNAME
   - Vagrantfile
+  - "*.sublime-workspace"
+  - "*.sublime-project"
+  - "*.sh"
 
 # prose.io config
 prose:
