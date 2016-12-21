@@ -25,11 +25,11 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 # Hosting
 
-Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages. A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when you make a request.
+Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages. A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when someone requests a page.
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.
 
-The screenshot belows shows the DNS Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. [Read more on setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/ "GitHub Pages: About supported custom domains").
+The screenshot belows shows the DNS Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/ "GitHub Pages: About supported custom domains").
 
 ![alt text](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
@@ -37,7 +37,7 @@ The screenshot belows shows the DNS Records for my domain. These are just settin
 
 A theme can drastically affect a website's impression. See versions [1](/index-v1.html) and [2](/index-v2.html) of my homepage.
 
-[![alt text](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/ img/blog/2016/theme-history.gif)
+[![alt text](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
 
 The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 
