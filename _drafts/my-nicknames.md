@@ -8,3 +8,5 @@ Pepeusi
 Osibisa
 Chubius
 Eus
+Sebi
+Usabius
