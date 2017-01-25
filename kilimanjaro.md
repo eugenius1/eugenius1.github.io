@@ -1,5 +1,5 @@
 ---
 layout: redirect
-to: https://mydonate.bt.com/fundraisers/eusebius
-title: My Kilimanjaro
+to: https://mydonate.bt.com/fundraisers/kunalpatel113
+title: Kunal's Kilimanjaro
 ---
