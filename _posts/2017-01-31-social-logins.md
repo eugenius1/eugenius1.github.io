@@ -6,8 +6,7 @@ subtitle: See what you give away when you login using Facebook
 
 Login with Facebook to see your details.
 
-<div class="jumbotron" id="facebook-card">
-  <script>
+<script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -82,7 +81,10 @@ Login with Facebook to see your details.
     function specialName(fullname, firstname) {
       if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
       if (fullname.startsWith('Hope Ka')) return 'Mama!';
-      if (fullname.startsWith('Kunal Pa')) return 'Benchod!';
+      if (fullname.startsWith('Kunal Pat')) return 'Benchod!';
+      if (fullname.startsWith('Kunal Raj')) return 'Chodu!';
+      if (fullname.startsWith('Ahmed Ib')) return 'Ed!';
+      if (fullname.endsWith('va Ginger')) return 'Ketchup!';
       return firstname + '!';
     }
     
@@ -98,7 +100,7 @@ Login with Facebook to see your details.
         response.age_range.min + "-" + response.age_range.max + "<br />" +
         response.email + "<br />" +
         response.locale +  "<br />" +
-        response.timezone+ "<br />" +
+        response.timezone + "<br />" +
         '<a href='+response.picture.data.url+'>Your picture:<br></a>'
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
     });
@@ -114,11 +116,9 @@ Login with Facebook to see your details.
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
-<div id="facebook-info">
-</div>
+<div class="jumbotron" id="facebook-card">
 
-<h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <div id="facebook-info">
+  </div>
 
 </div>
