@@ -101,16 +101,16 @@ Login with Facebook to see your details.
       console.log(response);
       document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
       document.getElementById('facebook-info').innerHTML =
-        '<a href='+response.picture.data.url+'>Your picture:<br></a>'
+        '<a href='+response.picture.data.url+'>Your picture:<br></a>' +
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
       age_min = response.age_range.min;
       age_max = response.age_range.max;
-      if( age_min === null && age_max === null) age_range = '';
-      else if( age_min === null) age_range = '<' + age_max;
-      else if( age_max === null) age_range = '>' + age_min;
+      if( age_min === undefined && age_max === undefined) age_range = '';
+      else if( age_min === undefined) age_range = '<' + age_max;
+      else if( age_max === undefined) age_range = '>' + age_min;
       else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
