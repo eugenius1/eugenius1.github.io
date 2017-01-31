@@ -105,6 +105,7 @@ Login with Facebook to see your details.
         response.timezone + "<br />" +
         '<a href='+response.picture.data.url+'>Your picture:<br></a>'
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
+      document.getElementById('facebook-firstname').innerHTML = response.first_name;
     });
   }
 </script>
@@ -119,6 +120,8 @@ Login with Facebook to see your details.
 </fb:login-button>
 
 <div class="jumbotron" id="facebook-card">
+
+  <div>Firstname: <span id="facebook-firstname"></span></div>
 
   <div id="facebook-info">
   </div>

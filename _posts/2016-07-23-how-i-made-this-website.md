@@ -5,7 +5,7 @@ subtitle: And how you could make one quickly and cheaper
 share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
 ---
 
-**TL;DR**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"), with content written in [Markdown](#webpage-content).
+**<abbr title="Too long; didn't read">TL;DR</abbr>**: Domain name from [hover.com](https://hover.com/Yiflhr2y), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"), with content written in [Markdown](#webpage-content).
 
 ---
 
