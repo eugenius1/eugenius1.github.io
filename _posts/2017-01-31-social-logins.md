@@ -6,9 +6,14 @@ subtitle: See what you give away when you login using Facebook
 
 <div class="alert alert-warning" role="alert">This article is a work in progress.</div>
 
+<noscript><div class="alert alert-danger" role="alert">Oh no! JavaScript has not been detected so these demonstrations will not work. You should use an up-to-date modern web browser or turn it back on if it's off.</div></noscript>
+
+Social login demo. Powered by JavaScript. The information you will see will not stored.
+
 Login with Facebook to see your details.
 
 <script>
+<!--
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -96,8 +101,6 @@ Login with Facebook to see your details.
       console.log(response);
       document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
       document.getElementById('facebook-info').innerHTML =
-        'Thanks for logging in with Facebook, ' + 
-        "<br />" + 
         '<a href='+response.picture.data.url+'>Your picture:<br></a>'
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
@@ -108,13 +111,8 @@ Login with Facebook to see your details.
       document.getElementById('facebook-timezone').innerHTML = response.timezone;
     });
   }
+//->
 </script>
-
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button><span id="facebook-thanks-name"></span>
