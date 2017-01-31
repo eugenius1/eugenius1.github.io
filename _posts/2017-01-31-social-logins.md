@@ -100,17 +100,16 @@ Login with Facebook to see your details.
       console.log('Successful Facebook login for: ' + response.name);
       console.log(response);
       document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
-      document.getElementById('facebook-info').innerHTML =
-        '<a href='+response.picture.data.url+'>Your picture:<br></a>' +
-        '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
+      document.getElementById('facebook-picture').innerHTML =
+        '<img src="https://graph.facebook.com/v2.7/'+ response.id +'/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
       age_min = response.age_range.min;
       age_max = response.age_range.max;
       if( age_min === undefined && age_max === undefined) age_range = '';
-      else if( age_min === undefined) age_range = '<' + age_max;
-      else if( age_max === undefined) age_range = '>' + age_min;
+      else if( age_min === undefined) age_range = '&#8804' + age_max;
+      else if( age_max === undefined) age_range = '&ge;' + age_min;
       else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
@@ -129,6 +128,7 @@ Login with Facebook to see your details.
 
 <div class="jumbotron" id="facebook-card">
 
+  <div id="facebook-picture"></div>
   <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
   <div>Age range: <strong><span id="facebook-agerange"></span></strong></div>
