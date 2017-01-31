@@ -10,8 +10,6 @@ subtitle: See what you give away when you login using Facebook
 
 Social login demo. Powered by JavaScript. The information you will see will <strong>not</strong> be stored.
 
-Login with Facebook to see your details.
-
 <script>
 <!--
   // This is called with the results from from FB.getLoginStatus().
@@ -101,30 +99,32 @@ Login with Facebook to see your details.
       console.log(response);
       document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
       document.getElementById('facebook-picture').innerHTML =
-        '<img src="https://graph.facebook.com/v2.7/'+ response.id +'/picture?type=large" alt="alt text" title="You!">';
+        '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
       age_min = response.age_range.min;
       age_max = response.age_range.max;
       if( age_min === undefined && age_max === undefined) age_range = '';
-      else if( age_min === undefined) age_range = '&#8804' + age_max;
+      else if( age_min === undefined) age_range = '&le;' + age_max;
       else if( age_max === undefined) age_range = '&ge;' + age_min;
       else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
-      document.getElementById('facebook-locale').innerHTML = response.locale;
+      document.getElementById('facebook-locale').innerHTML = 
+        '<a href="http://lh.2xlibre.net/locale/' + response.locale + '/">' + response.locale + '</a>';
       
       timezone = response.timezone
       if(timezone >= 0) timezone = '+' + timezone;
-      document.getElementById('facebook-timezone').innerHTML = 'UTC' + timezone;
+      timezone = 'UTC' + timezone;
+      document.getElementById('facebook-timezone').innerHTML = '<a href="https://en.wikipedia.org/wiki/' + timezone + '">' + timezone + '</a>';
     });
   }
 //->
 </script>
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button><span id="facebook-thanks-name"></span>
+</fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details.</span>
 
 <div class="jumbotron" id="facebook-card">
 
@@ -133,7 +133,7 @@ Login with Facebook to see your details.
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
   <div>Age range: <strong><span id="facebook-agerange"></span></strong></div>
   <div>Email: <strong><span id="facebook-email"></span></strong></div>
-  <div><a href="https://msdn.microsoft.com/en-gb/library/ee825488(v=cs.20).aspx" title="List of language locales">Locale</a>: <strong><span id="facebook-locale"></span></strong></div>
+  <div>Locale: <strong><span id="facebook-locale"></span></strong></div>
   <div>Timezone: <strong><span id="facebook-timezone"></span></strong></div>
 
   <div id="facebook-info">
