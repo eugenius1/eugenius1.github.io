@@ -108,17 +108,17 @@ Login with Facebook to see your details.
       
       age_min = response.age_range.min;
       age_max = response.age_range.max;
-      if( age_min === null && age_max === null){ age_range = ''; }
-      else if( age_min === null){ age_range = '<' + age_max; }
-      else if( age_max === null){ age_range = '>' + age_min; }
-      else{ age_range = age_min + '-' + age_max; }
+      if( age_min === null && age_max === null) age_range = '';
+      else if( age_min === null) age_range = '<' + age_max;
+      else if( age_max === null) age_range = '>' + age_min;
+      else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
       document.getElementById('facebook-locale').innerHTML = response.locale;
       
       timezone = response.timezone
       if(timezone >= 0) timezone = '+' + timezone;
-      document.getElementById('facebook-timezone').innerHTML = 'UTC' + response.timezone;
+      document.getElementById('facebook-timezone').innerHTML = 'UTC' + timezone;
     });
   }
 //->
@@ -133,7 +133,7 @@ Login with Facebook to see your details.
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
   <div>Age range: <strong><span id="facebook-agerange"></span></strong></div>
   <div>Email: <strong><span id="facebook-email"></span></strong></div>
-  <div>Locale: <strong><span id="facebook-locale"></span></strong></div>
+  <div><a href="https://msdn.microsoft.com/en-gb/library/ee825488(v=cs.20).aspx" title="List of language locales">Locale</a>: <strong><span id="facebook-locale"></span></strong></div>
   <div>Timezone: <strong><span id="facebook-timezone"></span></strong></div>
 
   <div id="facebook-info">
