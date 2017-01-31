@@ -105,13 +105,20 @@ Login with Facebook to see your details.
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
-      age_range = (response.age_range.min==null ? '' : response.age_range.min) + '-' + 
-                  (response.age_range.max==null ? '' : response.age_range.max);
-      if(age_range==='-') age_range = '';
+      
+      age_min = response.age_range.min;
+      age_max = response.age_range.max;
+      if( age_min === null && age_max === null) age_range = '';
+      else if( age_min === null) age_range = '<' + age_max;
+      else if( age_max === null) age_range = '>' + age_min;
+      else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
       document.getElementById('facebook-locale').innerHTML = response.locale;
-      document.getElementById('facebook-timezone').innerHTML = response.timezone;
+      
+      timezone = response.timezone
+      if(timezone >= 0) timezone = '+' + timezone;
+      document.getElementById('facebook-timezone').innerHTML = 'UTC' + response.timezone;
     });
   }
 //->
