@@ -6,9 +6,9 @@ subtitle: See what you give away when you login using Facebook
 
 <div class="alert alert-warning" role="alert">This article is a work in progress.</div>
 
-<noscript><div class="alert alert-danger" role="alert">Oh no! JavaScript has not been detected so these demonstrations will not work. You should use an up-to-date modern web browser or turn it back on if it's off.</div></noscript>
+<noscript><div class="alert alert-danger" role="alert">Oh no! JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Social login demo. Powered by JavaScript. The information you will see will not stored.
+Social login demo. Powered by JavaScript. The information you will see will <strong>not</strong> be stored.
 
 Login with Facebook to see your details.
 
@@ -105,7 +105,10 @@ Login with Facebook to see your details.
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
-      document.getElementById('facebook-agerange').innerHTML = response.age_range.min + "-" + response.age_range.max;
+      age_range = (response.age_range.min==null ? '' : response.age_range.min) + '-' + 
+                  (response.age_range.max==null ? '' : response.age_range.max);
+      if(age_range==='-') age_range = '';
+      document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
       document.getElementById('facebook-locale').innerHTML = response.locale;
       document.getElementById('facebook-timezone').innerHTML = response.timezone;
