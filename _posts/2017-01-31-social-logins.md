@@ -108,10 +108,10 @@ Login with Facebook to see your details.
       
       age_min = response.age_range.min;
       age_max = response.age_range.max;
-      if( age_min === null && age_max === null) age_range = '';
-      else if( age_min === null) age_range = '<' + age_max;
-      else if( age_max === null) age_range = '>' + age_min;
-      else age_range = age_min + '-' + age_max;
+      if( age_min === null && age_max === null){ age_range = ''; }
+      else if( age_min === null){ age_range = '<' + age_max; }
+      else if( age_max === null){ age_range = '>' + age_min; }
+      else{ age_range = age_min + '-' + age_max; }
       document.getElementById('facebook-agerange').innerHTML = age_range;
       document.getElementById('facebook-email').innerHTML = response.email;
       document.getElementById('facebook-locale').innerHTML = response.locale;
