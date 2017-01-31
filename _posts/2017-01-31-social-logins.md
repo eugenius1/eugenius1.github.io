@@ -94,18 +94,18 @@ Login with Facebook to see your details.
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       console.log(response);
+      document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
       document.getElementById('facebook-info').innerHTML =
-        'Thanks for logging in with Facebook, ' + specialName(response.name, response.first_name) +
+        'Thanks for logging in with Facebook, ' + 
         "<br />" + 
-        response.first_name + "<br />" +
-        response.last_name + "<br />" +
-        response.age_range.min + "-" + response.age_range.max + "<br />" +
-        response.email + "<br />" +
-        response.locale +  "<br />" +
-        response.timezone + "<br />" +
         '<a href='+response.picture.data.url+'>Your picture:<br></a>'
         '<img src="https://graph.facebook.com/v2.7/'+response.id+'/picture?type=large" alt="alt text" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
+      document.getElementById('facebook-lastname').innerHTML = response.last_name;
+      document.getElementById('facebook-agerange').innerHTML = response.age_range.min + "-" + response.age_range.max;
+      document.getElementById('facebook-email').innerHTML = response.email;
+      document.getElementById('facebook-locale').innerHTML = response.locale;
+      document.getElementById('facebook-timezone').innerHTML = response.timezone;
     });
   }
 </script>
@@ -117,11 +117,16 @@ Login with Facebook to see your details.
 -->
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
+</fb:login-button><span id="facebook-thanks-name"></span>
 
 <div class="jumbotron" id="facebook-card">
 
-  <div>Firstname: <span id="facebook-firstname"></span></div>
+  <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
+  <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
+  <div>Age range: <strong><span id="facebook-agerange"></span></strong></div>
+  <div>Email: <strong><span id="facebook-email"></span></strong></div>
+  <div>Locale: <strong><span id="facebook-locale"></span></strong></div>
+  <div>Timezone: <strong><span id="facebook-timezone"></span></strong></div>
 
   <div id="facebook-info">
   </div>
