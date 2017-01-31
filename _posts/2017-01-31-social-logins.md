@@ -4,6 +4,8 @@ title: Social logins
 subtitle: See what you give away when you login using Facebook
 ---
 
+<div class="alert alert-warning" role="alert">This article is a work in progress.</div>
+
 Login with Facebook to see your details.
 
 <script>
