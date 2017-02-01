@@ -19,7 +19,7 @@ I had to choose a website domain name that I could spell out in a few seconds ye
 
 You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y). Other reputable registrars exist ([name.com](https://www.name.com/), [GoDaddy](https://www.godaddy.com/), [namecheap](https://www.namecheap.com/)) but I chose hover because they offer free *Whois* privacy and my total cost for the first year was less than US $14. The first year price was heavily discounted, compared to $55 for the second year. You can [donate](/donate "Donate to Eusebius.Tech") towards a renewal.
 
-![alt text](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
+![Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which cost $5 per year. An ICANN fee of $0.18 makes the total $55.17.](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
 *Whois* is a service that gives you information about the registered user of domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](http://www.whois.com/whois/eusebius.tech).
 
@@ -31,13 +31,13 @@ The beauty of GitHub Pages is that I can have my website hosted, for free, at a 
 
 The screenshot belows shows the DNS Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/ "GitHub Pages: About supported custom domains").
 
-![alt text](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
+![5 entries in the DNS records.](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
 # Theme
 
 A theme can drastically affect a website's impression. See versions [1](/index-v1.html) and [2](/index-v2.html) of my homepage.
 
-[![alt text](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
+[![The homepage transforms from a simple `Hello, world! It's Eusebius` on a blank white page to another with more text and finally to the current, more polished version with `Hi, I'm Eusebius`.](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
 
 The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/ "beautiful-jekyll homepage"), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 

@@ -6,7 +6,7 @@ subtitle: See what you give away when you login using Facebook
 
 <div class="alert alert-warning" role="alert">This article is a work in progress.</div>
 
-<noscript><div class="alert alert-danger" role="alert">Oh no! JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
+<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
 Social login demo. Try it! Powered by client-side JavaScript. More on this below. The information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
@@ -84,12 +84,15 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
     function specialName(fullname, firstname) {
+      if (fullname.startsWith('Eusebius Ngem')) return 'but not thanks, ' + firstname;
       if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
       if (fullname.startsWith('Hope Ka')) return 'Mama!';
       if (fullname.startsWith('Kunal Pat')) return 'Benchod!';
       if (fullname.startsWith('Kunal Raj')) return 'Chodu!';
       if (fullname.startsWith('Ahmed Ib')) return 'Ed!';
-      if (fullname.endsWith('va Ginger')) return 'Ketchup!';
+      if (fullname.startsWith('Mattin M')) return 'Mattin! The Iranians have been informed.';
+      if (fullname.startsWith('Sautrik Ba')) return 'Snaketrik!';
+      if (fullname.endsWith('va Ginger')) return 'Ketchup :P';
       return firstname + '!';
     }
     
@@ -99,7 +102,7 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
       console.log(response);
       document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
       document.getElementById('facebook-picture').innerHTML =
-        '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="alt text" title="You!">';
+        '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
