@@ -130,6 +130,7 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
 </fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details below.</span>
 
 <div class="jumbotron" id="facebook-card">
+  <h1>Facebook's bare minimum</h1>
   <div id="facebook-picture"></div>
   <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
