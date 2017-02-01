@@ -8,7 +8,7 @@ subtitle: See what you give away when you login using Facebook
 
 <noscript><div class="alert alert-danger" role="alert">Oh no! JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Social login demo. Powered by JavaScript. The information you will see will <strong>not</strong> be stored.
+Social login demo. Try it! Powered by client-side JavaScript. More on this below. The information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
 <script>
 <!--
@@ -124,10 +124,9 @@ Social login demo. Powered by JavaScript. The information you will see will <str
 </script>
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details.</span>
+</fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details below.</span>
 
 <div class="jumbotron" id="facebook-card">
-
   <div id="facebook-picture"></div>
   <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
@@ -136,7 +135,9 @@ Social login demo. Powered by JavaScript. The information you will see will <str
   <div>Locale: <strong><span id="facebook-locale"></span></strong></div>
   <div>Timezone: <strong><span id="facebook-timezone"></span></strong></div>
 
-  <div id="facebook-info">
-  </div>
-
+  <div id="facebook-info"></div>
 </div>
+
+The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
+
+Client-side JavaScript code for the Facebook login is included in this GitHub repo. I would have added a Twitter login demo but OAuth restricts this from being purely client-side.
