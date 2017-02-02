@@ -2,6 +2,7 @@
 layout: post
 title: Social logins!
 subtitle: See what you give away when you login using Facebook
+github: eugenius1/social-login-demos
 js:
   - "/js/funcs/specialName.js"
 ---
@@ -199,7 +200,3 @@ function GoogleOnSignIn(googleUser) {
 The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 
 I would have added a Twitter login demo but OAuth restricts this from being purely client-side. Client-side JavaScript code for the Facebook login is included in this GitHub repo:
-
-```
-{% include github-repo.html repo=eugenius1/social-login-demos %}
-```
