@@ -32,10 +32,9 @@ function onSignIn(googleUser) {
   document.getElementById('google-lastname').innerHTML = response.last_name;
   document.getElementById('google-email').innerHTML = response.email;
 	
-	var scopes = googleUser.getGrantedScopes()
+	var scopes = googleUser.getGrantedScopes();
 	console.log(scopes);
 	document.getElementById('google-scopes').innerHTML = scopes;
-
 }
 //->
 </script>
@@ -50,7 +49,6 @@ function onSignIn(googleUser) {
   <div id="google-picture"></div>
   <div>First name: <strong><span id="google-firstname"></span></strong></div>
   <div>Last name: <strong><span id="google-lastname"></span></strong></div>
-  <div>Age range: <strong><span id="google-agerange"></span></strong></div>
   <div>Email: <strong><span id="google-email"></span></strong></div>
 
   Granted scopes:<pre id="google-scopes"></pre>

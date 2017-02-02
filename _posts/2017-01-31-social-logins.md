@@ -27,20 +27,22 @@ Social login demos. Try it! Powered by client-side JavaScript. More on this belo
       testAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
+      var alertDiv = document.getElementById('facebook-thanks-name');
+      alertDiv.className = 'alert-danger';
+      alertDiv.innerHTML = 'Please authorise Eusebius.Tech with your Facebook';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
+      var alertDiv = document.getElementById('facebook-thanks-name');
+      alertDiv.className = 'alert-danger';
+      alertDiv.innerHTML = 'Please log into Facebook.';
     }
   }
 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
-  function checkLoginState() {
+  function FacebookCheckLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
@@ -103,7 +105,10 @@ Social login demos. Try it! Powered by client-side JavaScript. More on this belo
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
-      document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+      var alertDiv = document.getElementById('facebook-thanks-name')
+
+      alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+      alertDiv.className = 'alert-success';
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
@@ -130,8 +135,12 @@ Social login demos. Try it! Powered by client-side JavaScript. More on this belo
 //->
 </script>
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details below.</span>
+<fb:login-button scope="public_profile,email" onlogin="FacebookCheckLoginState();">
+</fb:login-button>
+
+<div class="alert">
+<div class="alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
+</div>
 
 <div class="jumbotron" id="facebook-card">
   <h2 id="facebook-card-title">Facebook's bare minimum</h2>
@@ -147,31 +156,46 @@ Social login demos. Try it! Powered by client-side JavaScript. More on this belo
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
 <!--
-function onSignIn(googleUser) {
+function GoogleOnSignIn(googleUser) {
+  // https://developers.google.com/identity/sign-in/web/reference#googleusergetbasicprofile
   var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  var response = {};
+  response.id = profile.getId(); // Do not send to your backend! Use an ID token instead.
+  response.name = profile.getName();
+  response.picture = profile.getImageUrl();
+  response.email = profile.getEmail(); // This is null if the 'email' scope is not present.
+  response.first_name = profile.getGivenName();
+  response.last_name = profile.getFamilyName();
+  console.log(response);
+
+  document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+  document.getElementById('google-card-title').innerHTML = response.name;
+  document.getElementById('google-picture').innerHTML =
+    '<img src="' + response.picture + '" alt="Your Google Profile Picture" title="You!">';
+  document.getElementById('google-firstname').innerHTML = response.first_name;
+  document.getElementById('google-lastname').innerHTML = response.last_name;
+  document.getElementById('google-email').innerHTML = response.email;
+  
+  var scopes = googleUser.getGrantedScopes();
+  console.log(scopes);
+  document.getElementById('google-scopes').innerHTML = scopes;
 }
 //->
 </script>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<div id="google-thanks-name">Login with Google to see your details:</div>
+
+<div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
 <div class="jumbotron" id="google-card">
-  <h2>Google's bare minimum</h2>
+  <h2 id="google-card-title">Google's bare minimum</h2>
   <div id="google-picture"></div>
   <div>First name: <strong><span id="google-firstname"></span></strong></div>
   <div>Last name: <strong><span id="google-lastname"></span></strong></div>
-  <div>Age range: <strong><span id="google-agerange"></span></strong></div>
   <div>Email: <strong><span id="google-email"></span></strong></div>
-  <div>Locale: <strong><span id="google-locale"></span></strong></div>
-  <div>Timezone: <strong><span id="google-timezone"></span></strong></div>
 
-  <div id="google-info"></div>
+  Granted scopes:
+  <pre id="google-scopes"></pre>
 </div>
-
-
 
 The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 
