@@ -22,6 +22,7 @@ function onSignIn(googleUser) {
   response.email = profile.getEmail(); // This is null if the 'email' scope is not present.
   response.first_name = profile.getGivenName();
 	response.last_name = profile.getFamilyName();
+	console.log('Successful Google login for: ' + response.name);
 	console.log(response);
 
 	document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);

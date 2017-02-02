@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Social logins
+title: Social logins!
 subtitle: See what you give away when you login using Facebook
 js:
   - "/js/funcs/specialName.js"
@@ -10,7 +10,7 @@ js:
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Social login demos. Try it! Powered by client-side JavaScript. More on this below. The information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
+Social login demos. Try them! Powered by client-side JavaScript (more on this below), which means the information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
 <script type="text/javascript">
 <!--
@@ -166,7 +166,7 @@ function GoogleOnSignIn(googleUser) {
   response.email = profile.getEmail(); // This is null if the 'email' scope is not present.
   response.first_name = profile.getGivenName();
   response.last_name = profile.getFamilyName();
-  console.log(response);
+  console.log('Successful Google login for: ' + response.name);
 
   document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
   document.getElementById('google-card-title').innerHTML = response.name;
@@ -177,7 +177,6 @@ function GoogleOnSignIn(googleUser) {
   document.getElementById('google-email').innerHTML = response.email;
   
   var scopes = googleUser.getGrantedScopes();
-  console.log(scopes);
   document.getElementById('google-scopes').innerHTML = scopes;
 }
 //->
@@ -187,7 +186,7 @@ function GoogleOnSignIn(googleUser) {
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
 <div class="jumbotron" id="google-card">
-  <h2 id="google-card-title">Google's bare minimum</h2>
+  <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
   <div id="google-picture"></div>
   <div>First name: <strong><span id="google-firstname"></span></strong></div>
   <div>Last name: <strong><span id="google-lastname"></span></strong></div>
