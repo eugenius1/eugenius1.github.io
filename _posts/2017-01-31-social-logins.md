@@ -127,33 +127,33 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 <div class="alert alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
 
 <div class="row">
-  <div class="jumbotron col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" id="facebook-card">
+  <div class="jumbotron col-sm-10 col-sm-offset-1" id="facebook-card">
     <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
     <div id="facebook-picture"></div>
     <div>
       <div class="row">
-        <div class="col-md-4">First name: </div><strong>
-        <div class="col-md-8" id="facebook-firstname"></div></strong>
+        <div class="col-xs-4">First name: </div><strong>
+        <div class="col-sm-8" id="facebook-firstname"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-4">Last name: </div><strong>
-        <div class="col-md-8" id="facebook-lastname"></div></strong>
+        <div class="col-xs-4">Last name: </div><strong>
+        <div class="col-sm-8" id="facebook-lastname"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-4">Age range: </div><strong>
-        <div class="col-md-8" id="facebook-agerange"></div></strong>
+        <div class="col-xs-4">Age range: </div><strong>
+        <div class="col-sm-8" id="facebook-agerange"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-4">Email: </div><strong>
-        <div class="col-md-8" id="facebook-email"></div></strong>
+        <div class="col-xs-4">Email: </div><strong>
+        <div class="col-sm-8" id="facebook-email"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-4">Locale: </div><strong>
-        <div class="col-md-8" id="facebook-locale"></div></strong>
+        <div class="col-xs-4">Locale: </div><strong>
+        <div class="col-sm-8" id="facebook-locale"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-4">Timezone: </div><strong>
-        <div class="col-md-8" id="facebook-timezone"></div></strong>
+        <div class="col-xs-4">Timezone: </div><strong>
+        <div class="col-sm-8" id="facebook-timezone"></div></strong>
       </div>
     </div>
   </div>
