@@ -1,5 +1,5 @@
 function specialName(fullname, firstname) {
-  if (fullname.startsWith('Eusebius Ngem')) return 'but no thanks, ' + firstname;
+  if (fullname.endsWith('bius Ngemera')) return 'but no thanks, ' + firstname;
   if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
   if (fullname.startsWith('Hope Ka')) return 'Mama!';
   if (fullname.startsWith('Kunal Pat')) return 'Benchod!';
