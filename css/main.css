@@ -83,6 +83,10 @@ img::-moz-selection {
 img {
   max-width: 100%;
 }
+article img {
+  display: block;
+  margin: auto;
+}
 
 .disqus-comments {
   margin-top: 30px;
