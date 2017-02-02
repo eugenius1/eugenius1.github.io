@@ -14,7 +14,7 @@
 function onSignIn(googleUser) {
   // https://developers.google.com/identity/sign-in/web/reference#googleusergetbasicprofile
   var profile = googleUser.getBasicProfile();
-  var response;
+  var response = {};
   response.id = profile.getId(); // Do not send to your backend! Use an ID token instead.
   response.name = profile.getName();
   response.picture = profile.getImageUrl();
