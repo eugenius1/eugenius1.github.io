@@ -29,13 +29,13 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       var alertDiv = document.getElementById('facebook-thanks-name');
-      alertDiv.className += 'alert-danger';
+      alertDiv.className += ' alert-danger';
       alertDiv.innerHTML = 'Please authorise Eusebius.Tech with your Facebook';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
       var alertDiv = document.getElementById('facebook-thanks-name');
-      alertDiv.className += 'alert-danger';
+      alertDiv.className += ' alert-danger';
       alertDiv.innerHTML = 'Please log into Facebook.';
     }
   }
@@ -94,7 +94,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       var alertDiv = document.getElementById('facebook-thanks-name')
 
       alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
-      alertDiv.className += 'alert-success';
+      alertDiv.className += ' alert-success';
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
@@ -126,15 +126,37 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 
 <div class="alert alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
 
-<div class="jumbotron" id="facebook-card">
-  <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
-  <div id="facebook-picture"></div>
-  <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
-  <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
-  <div>Age range: <strong><span id="facebook-agerange"></span></strong></div>
-  <div>Email: <strong><span id="facebook-email"></span></strong></div>
-  <div>Locale: <strong><span id="facebook-locale"></span></strong></div>
-  <div>Timezone: <strong><span id="facebook-timezone"></span></strong></div>
+<div class="row">
+  <div class="jumbotron col-md-8 col-md-offset-2" id="facebook-card">
+    <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
+    <div id="facebook-picture"></div>
+    <div>
+      <div class="row">
+        <div class="col-md-6">First name: <strong>
+        <div class="col-md-6" id="facebook-firstname"></div></strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Last name: <strong>
+        <div class="col-md-6" id="facebook-lastname"></div></strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Age range: <strong>
+        <div class="col-md-6" id="facebook-agerange"></div></strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Email: <strong>
+        <div class="col-md-6" id="facebook-email"></div></strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Locale: <strong>
+        <div class="col-md-6" id="facebook-locale"></div></strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Timezone: <strong>
+        <div class="col-md-6" id="facebook-timezone"></div></strong></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -152,7 +174,7 @@ function GoogleOnSignIn(googleUser) {
   response.last_name = profile.getFamilyName();
   console.log('Successful Google login for: ' + response.name);
 
-  document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+  // document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
   document.getElementById('google-card-title').innerHTML = response.name;
   document.getElementById('google-picture').innerHTML =
     '<img src="' + response.picture + '" alt="Your Google Profile Picture" title="You!">';
@@ -165,8 +187,6 @@ function GoogleOnSignIn(googleUser) {
 }
 //->
 </script>
-<div id="google-thanks-name">Login with Google to see your details:</div>
-
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
 <div class="jumbotron" id="google-card">
