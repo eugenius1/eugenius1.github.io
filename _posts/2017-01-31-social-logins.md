@@ -87,22 +87,7 @@ Social login demos. Try them! Powered by client-side JavaScript (more on this be
 
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
-    /*
-    function specialName(fullname, firstname) {
-      if (fullname.startsWith('Eusebius Ngem')) return 'but not thanks, ' + firstname;
-      if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
-      if (fullname.startsWith('Hope Ka')) return 'Mama!';
-      if (fullname.startsWith('Kunal Pat')) return 'Benchod!';
-      if (fullname.startsWith('Kunal Raj')) return 'Chodu!';
-      if (fullname.startsWith('Ahmed Ib')) return 'Ed!';
-      if (fullname.startsWith('Mattin M')) return 'Mattin! The Iranians have been informed.';
-      if (fullname.startsWith('Sautrik Ba')) return 'Snaketrik!';
-      if (fullname.endsWith('va Ginger')) return 'Ketchup :P';
-      return firstname + '!';
-    }
-    */
-    
+  function testAPI() {   
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
@@ -192,11 +177,10 @@ function GoogleOnSignIn(googleUser) {
   <div>First name: <strong><span id="google-firstname"></span></strong></div>
   <div>Last name: <strong><span id="google-lastname"></span></strong></div>
   <div>Email: <strong><span id="google-email"></span></strong></div>
-
-  Granted scopes:
-  <pre id="google-scopes"></pre>
 </div>
 
 The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 
-I would have added a Twitter login demo but OAuth restricts this from being purely client-side. Client-side JavaScript code for the Facebook login is included in this GitHub repo:
+**Insert diagram**
+
+I would have added a Twitter login demo but OAuth restricts this from being purely client-side. HTML with client-side JavaScript code for the logins above are on GitHub.

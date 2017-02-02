@@ -29,6 +29,10 @@ layout: base
       </ul>
       
       <hr>
+      {% if page.github %}
+        {% include github-repo.html repo=page.github %}
+        <hr>
+      {% endif %}
       {% if page.share-buttons and site.share-buttons-below %}
         {% include share-buttons.html %}
       {% endif %}
