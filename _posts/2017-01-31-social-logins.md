@@ -11,7 +11,7 @@ js:
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Social login demos. Try them! Powered by client-side JavaScript (more on this below), which means the information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
+Try out the two social login demos! Powered by client-side JavaScript (more on this below), which means the information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
 <script type="text/javascript">
 <!--
@@ -29,13 +29,13 @@ Social login demos. Try them! Powered by client-side JavaScript (more on this be
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       var alertDiv = document.getElementById('facebook-thanks-name');
-      alertDiv.className = 'alert-danger';
+      alertDiv.className += 'alert-danger';
       alertDiv.innerHTML = 'Please authorise Eusebius.Tech with your Facebook';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
       var alertDiv = document.getElementById('facebook-thanks-name');
-      alertDiv.className = 'alert-danger';
+      alertDiv.className += 'alert-danger';
       alertDiv.innerHTML = 'Please log into Facebook.';
     }
   }
@@ -94,7 +94,7 @@ Social login demos. Try them! Powered by client-side JavaScript (more on this be
       var alertDiv = document.getElementById('facebook-thanks-name')
 
       alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
-      alertDiv.className = 'alert-success';
+      alertDiv.className += 'alert-success';
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
@@ -183,4 +183,4 @@ The code to gather and display your info only runs on your machine and never by 
 
 **Insert diagram**
 
-I would have added a Twitter login demo but OAuth restricts this from being purely client-side. HTML with client-side JavaScript code for the logins above are on GitHub.
+I would have added a demo for Twitter login but Twitter's API has to be via OAuth, which restricts the action from being purely client-side. HTML with client-side JavaScript code for the logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
