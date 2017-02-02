@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login to Eusebius.Tech with Facebook</title>
+<title>Login to Eusebius.Tech with Google</title>
 <meta charset="UTF-8">
 <meta name="google-signin-client_id" content="902472055956-1bc5mtd9j8tro5rn3p7d9cjp05dsm4si.apps.googleusercontent.com">
 </head>
@@ -14,19 +14,47 @@
 function onSignIn(googleUser) {
   // https://developers.google.com/identity/sign-in/web/reference#googleusergetbasicprofile
   var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  console.log('Given Name: ' + profile.getGivenName());
-	console.log('Family Name: ' + profile.getFamilyName());
+  var response;
+  response.id = profile.getId(); // Do not send to your backend! Use an ID token instead.
+  response.name = profile.getName();
+  response.picture = profile.getImageUrl();
+  response.email = profile.getEmail(); // This is null if the 'email' scope is not present.
+  response.first_name = profile.getGivenName();
+	response.last_name = profile.getFamilyName();
+	console.log(response);
 
-	console.log(googleUser.getGrantedScopes());
+	document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+  document.getElementById('google-card-title').innerHTML = response.name;
+  document.getElementById('google-picture').innerHTML =
+    '<img src="' + response.picture + '" alt="Your Google Profile Picture" title="You!">';
+  document.getElementById('google-firstname').innerHTML = response.first_name;
+  document.getElementById('google-lastname').innerHTML = response.last_name;
+  document.getElementById('google-email').innerHTML = response.email;
+	
+	var scopes = googleUser.getGrantedScopes()
+	console.log(scopes);
+	document.getElementById('google-scopes').innerHTML = scopes;
+
 }
 //->
 </script>
 
+<div class="google-thanks-name">Login with Google to see your details:</div>
+
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
+
+<div class="jumbotron" id="google-card">
+  <h2 id="google-card-title">Google's bare minimum</h2>
+  <div id="google-picture"></div>
+  <div>First name: <strong><span id="google-firstname"></span></strong></div>
+  <div>Last name: <strong><span id="google-lastname"></span></strong></div>
+  <div>Age range: <strong><span id="google-agerange"></span></strong></div>
+  <div>Email: <strong><span id="google-email"></span></strong></div>
+
+  Granted scopes:<pre id="google-scopes"></pre>
+</div>
+
+Check the console too.
 </body>
 </html>

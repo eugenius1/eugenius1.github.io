@@ -10,7 +10,7 @@ js:
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Social login demo. Try it! Powered by client-side JavaScript. More on this below. The information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
+Social login demos. Try it! Powered by client-side JavaScript. More on this below. The information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
 <script type="text/javascript">
 <!--
@@ -103,8 +103,8 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
-      console.log(response);
       document.getElementById('facebook-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+      document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
@@ -134,7 +134,7 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
 </fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details below.</span>
 
 <div class="jumbotron" id="facebook-card">
-  <h2>Facebook's bare minimum</h2>
+  <h2 id="facebook-card-title">Facebook's bare minimum</h2>
   <div id="facebook-picture"></div>
   <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
