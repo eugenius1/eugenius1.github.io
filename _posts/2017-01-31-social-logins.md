@@ -143,7 +143,7 @@ Social login demos. Try them! Powered by client-side JavaScript (more on this be
 </div>
 
 <div class="jumbotron" id="facebook-card">
-  <h2 id="facebook-card-title">Facebook's bare minimum</h2>
+  <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
   <div id="facebook-picture"></div>
   <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
@@ -200,4 +200,6 @@ The code to gather and display your info only runs on your machine and never by 
 
 I would have added a Twitter login demo but OAuth restricts this from being purely client-side. Client-side JavaScript code for the Facebook login is included in this GitHub repo:
 
+```
 {% include github-repo.html repo=eugenius1/social-login-demos %}
+```
