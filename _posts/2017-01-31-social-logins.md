@@ -132,28 +132,28 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     <div id="facebook-picture"></div>
     <div>
       <div class="row">
-        <div class="col-md-6">First name: <strong>
-        <div class="col-md-6" id="facebook-firstname"></div></strong></div>
+        <div class="col-md-4">First name: </div><strong>
+        <div class="col-md-8" id="facebook-firstname"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-6">Last name: <strong>
-        <div class="col-md-6" id="facebook-lastname"></div></strong></div>
+        <div class="col-md-4">Last name: </div><strong>
+        <div class="col-md-8" id="facebook-lastname"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-6">Age range: <strong>
-        <div class="col-md-6" id="facebook-agerange"></div></strong></div>
+        <div class="col-md-4">Age range: </div><strong>
+        <div class="col-md-8" id="facebook-agerange"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-6">Email: <strong>
-        <div class="col-md-6" id="facebook-email"></div></strong></div>
+        <div class="col-md-4">Email: </div><strong>
+        <div class="col-md-8" id="facebook-email"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-6">Locale: <strong>
-        <div class="col-md-6" id="facebook-locale"></div></strong></div>
+        <div class="col-md-4">Locale: </div><strong>
+        <div class="col-md-8" id="facebook-locale"></div></strong>
       </div>
       <div class="row">
-        <div class="col-md-6">Timezone: <strong>
-        <div class="col-md-6" id="facebook-timezone"></div></strong></div>
+        <div class="col-md-4">Timezone: </div><strong>
+        <div class="col-md-8" id="facebook-timezone"></div></strong>
       </div>
     </div>
   </div>
