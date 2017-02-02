@@ -127,7 +127,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 <div class="alert alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
 
 <div class="row">
-  <div class="jumbotron col-md-8 col-md-offset-2" id="facebook-card">
+  <div class="jumbotron col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" id="facebook-card">
     <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
     <div id="facebook-picture"></div>
     <div>
@@ -158,6 +158,8 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     </div>
   </div>
 </div>
+
+Note that Facebook gives an age range, e.g. *over 18*, but not the exact age explicitly. One of the extra details is birthday.
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
