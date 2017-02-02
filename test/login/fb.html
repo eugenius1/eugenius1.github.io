@@ -12,6 +12,7 @@
   data-width="450"
   data-show-faces="true">
 </div>-->
+<script src="/js/funcs/specialName.js"></script>
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -84,12 +85,14 @@
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
+    /*
     function specialName(fullname, firstname) {
       if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
       if (fullname.startsWith('Hope Ka')) return 'Mama!';
       if (fullname.startsWith('Kunal Pa')) return 'Benchod!';
       return firstname + '!';
     }
+    */
     
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {

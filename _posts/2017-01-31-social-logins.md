@@ -2,6 +2,8 @@
 layout: post
 title: Social logins
 subtitle: See what you give away when you login using Facebook
+js:
+  - "/js/funcs/specialName.js"
 ---
 
 <div class="alert alert-warning" role="alert">This article is a work in progress.</div>
@@ -10,7 +12,7 @@ subtitle: See what you give away when you login using Facebook
 
 Social login demo. Try it! Powered by client-side JavaScript. More on this below. The information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
-<script>
+<script type="text/javascript">
 <!--
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -83,6 +85,7 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
+    /*
     function specialName(fullname, firstname) {
       if (fullname.startsWith('Eusebius Ngem')) return 'but not thanks, ' + firstname;
       if (fullname.startsWith('Abdou Ne')) return 'Abs ;)';
@@ -95,6 +98,7 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
       if (fullname.endsWith('va Ginger')) return 'Ketchup :P';
       return firstname + '!';
     }
+    */
     
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
@@ -130,7 +134,7 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
 </fb:login-button><span id="facebook-thanks-name">Login with Facebook to see your details below.</span>
 
 <div class="jumbotron" id="facebook-card">
-  <h1>Facebook's bare minimum</h1>
+  <h2>Facebook's bare minimum</h2>
   <div id="facebook-picture"></div>
   <div>First name: <strong><span id="facebook-firstname"></span></strong></div>
   <div>Last name: <strong><span id="facebook-lastname"></span></strong></div>
@@ -138,9 +142,36 @@ Social login demo. Try it! Powered by client-side JavaScript. More on this below
   <div>Email: <strong><span id="facebook-email"></span></strong></div>
   <div>Locale: <strong><span id="facebook-locale"></span></strong></div>
   <div>Timezone: <strong><span id="facebook-timezone"></span></strong></div>
-
-  <div id="facebook-info"></div>
 </div>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">
+<!--
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+//->
+</script>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+<div class="jumbotron" id="google-card">
+  <h2>Google's bare minimum</h2>
+  <div id="google-picture"></div>
+  <div>First name: <strong><span id="google-firstname"></span></strong></div>
+  <div>Last name: <strong><span id="google-lastname"></span></strong></div>
+  <div>Age range: <strong><span id="google-agerange"></span></strong></div>
+  <div>Email: <strong><span id="google-email"></span></strong></div>
+  <div>Locale: <strong><span id="google-locale"></span></strong></div>
+  <div>Timezone: <strong><span id="google-timezone"></span></strong></div>
+
+  <div id="google-info"></div>
+</div>
+
+
 
 The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 
