@@ -124,9 +124,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 <fb:login-button scope="public_profile,email" onlogin="FacebookCheckLoginState();">
 </fb:login-button>
 
-<div class="alert">
-<div class="alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
-</div>
+<div class="alert alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
 
 <div class="jumbotron" id="facebook-card">
   <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
