@@ -11,7 +11,7 @@ js:
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Try out the two social login demos! Powered by client-side JavaScript (more on this below), which means the information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
+Try out the two social login demos below! Powered by client-side JavaScript (more on this below), which means the information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
 
 <script type="text/javascript">
 <!--
@@ -99,7 +99,9 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 
       alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
       alertDiv.className = 'alert alert-success';
-      document.getElementById('facebook-card-title').innerHTML = response.name;
+      // document.getElementById('facebook-card-title').innerHTML = response.name;
+      document.getElementById('facebook-cover').innerHTML = '<div class="big-img intro-header" style="background-image: url(&quot;' + response.cover.source + '&quot;);"><div class="page-heading"><h2>' + response.name + '</h2></div></div>';
+
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
       document.getElementById('facebook-gender').innerHTML = response.gender.capitalizeFirstLetter();
@@ -122,8 +124,8 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       timezone = 'UTC' + timezone;
       document.getElementById('facebook-timezone').innerHTML = '<a href="https://en.wikipedia.org/wiki/' + timezone + '">' + timezone + '</a>';
       document.getElementById('facebook-verified').innerHTML = 
-      '<span class="glyphicon glyphicon-' + (response.verified? 'ok':'remove') + '" aria-hidden="true"></span>'
-      '<span class="sr-only">' + response.verified + '</span>';
+      '<i class="fa fa-' + (response.verified? 'check':'times') + '" aria-hidden="true"></span><span class="sr-only">' + response.verified + '</span>';
+      document.getElementById('facebook-lastupdated').innerHTML = new Date(response.updated_time);
       console.log(response);
 
     });
@@ -139,8 +141,8 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 <div class="row">
   <div class="jumbotron col-sm-10 col-sm-offset-1" id="facebook-card">
     <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
-    <div class="row" id="facebook-picture">
-    </div>
+    <div class="row" id="facebook-cover"></div>
+    <div class="row" id="facebook-picture"></div>
     <div class="row">
       <div class="col-sm-4">Gender: </div><strong>
       <div class="col-sm-8" id="facebook-gender"></div></strong>
@@ -172,6 +174,10 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     <div class="row">
       <div class="col-sm-4">Verified? </div><strong>
       <div class="col-sm-8" id="facebook-verified"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Last updated: </div><strong>
+      <div class="col-sm-8" id="facebook-lastupdated"></div></strong>
     </div>
   </div>
 </div>
@@ -205,10 +211,9 @@ function GoogleOnSignIn(googleUser) {
 </script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
-<div class="jumbotron" id="google-card">
+<div class="jumbotron col-sm-10 col-sm-offset-1" id="google-card">
   <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
-  <div class="row" id="google-picture">
-  </div>
+  <div class="row" id="google-picture"></div>
   <div class="row">
     <div class="col-sm-4">First name: </div><strong>
     <div class="col-sm-8" id="google-firstname"></div></strong>
