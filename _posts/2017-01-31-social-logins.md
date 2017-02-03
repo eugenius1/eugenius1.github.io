@@ -93,7 +93,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {   
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', {fields: 'cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
+    FB.api('/me', {fields: 'cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       var alertDiv = document.getElementById('facebook-thanks-name')
 
@@ -102,7 +102,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
-      document.getElementById('facebook-gender').innerHTML = response.gender.capitalizeFirstLetter;
+      document.getElementById('facebook-gender').innerHTML = response.gender.capitalizeFirstLetter();
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
@@ -121,7 +121,11 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       if(timezone >= 0) timezone = '+' + timezone;
       timezone = 'UTC' + timezone;
       document.getElementById('facebook-timezone').innerHTML = '<a href="https://en.wikipedia.org/wiki/' + timezone + '">' + timezone + '</a>';
+      document.getElementById('facebook-verified').innerHTML = 
+      '<span class="glyphicon glyphicon-' + (response.verified? 'ok':'remove') + '" aria-hidden="true"></span>'
+      '<span class="sr-only">' + response.verified + '</span>';
       console.log(response);
+
     });
   }
 //->
@@ -135,40 +139,39 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
 <div class="row">
   <div class="jumbotron col-sm-10 col-sm-offset-1" id="facebook-card">
     <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
-    <div id="facebook-picture"></div>
-    <div>
-      <div class="row">
-        <div class="col-sm-4">Gender: </div><strong>
-        <div class="col-sm-8" id="facebook-gender"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">First name: </div><strong>
-        <div class="col-sm-8" id="facebook-firstname"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Last name: </div><strong>
-        <div class="col-sm-8" id="facebook-lastname"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Age range: </div><strong>
-        <div class="col-sm-8" id="facebook-agerange"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Email: </div><strong>
-        <div class="col-sm-8" id="facebook-email"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Locale: </div><strong>
-        <div class="col-sm-8" id="facebook-locale"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Timezone: </div><strong>
-        <div class="col-sm-8" id="facebook-timezone"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Verified? </div><strong>
-        <div class="col-sm-8" id="facebook-verified"></div></strong>
-      </div>
+    <div class="row" id="facebook-picture">
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Gender: </div><strong>
+      <div class="col-sm-8" id="facebook-gender"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">First name: </div><strong>
+      <div class="col-sm-8" id="facebook-firstname"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Last name: </div><strong>
+      <div class="col-sm-8" id="facebook-lastname"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Age range: </div><strong>
+      <div class="col-sm-8" id="facebook-agerange"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Email: </div><strong>
+      <div class="col-sm-8" id="facebook-email"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Locale: </div><strong>
+      <div class="col-sm-8" id="facebook-locale"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Timezone: </div><strong>
+      <div class="col-sm-8" id="facebook-timezone"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Verified? </div><strong>
+      <div class="col-sm-8" id="facebook-verified"></div></strong>
     </div>
   </div>
 </div>
@@ -204,10 +207,20 @@ function GoogleOnSignIn(googleUser) {
 
 <div class="jumbotron" id="google-card">
   <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
-  <div id="google-picture"></div>
-  <div>First name: <strong><span id="google-firstname"></span></strong></div>
-  <div>Last name: <strong><span id="google-lastname"></span></strong></div>
-  <div>Email: <strong><span id="google-email"></span></strong></div>
+  <div class="row" id="google-picture">
+  </div>
+  <div class="row">
+    <div class="col-sm-4">First name: </div><strong>
+    <div class="col-sm-8" id="google-firstname"></div></strong>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">Last name: </div><strong>
+    <div class="col-sm-8" id="google-lastname"></div></strong>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">Email: </div><strong>
+    <div class="col-sm-8" id="google-email"></div></strong>
+  </div>
 </div>
 
 The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
