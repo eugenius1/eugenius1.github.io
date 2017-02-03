@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social logins!
-subtitle: See what you give away when you login using Facebook
+subtitle: See what you give away when you login using Facebook or Google
 share-img: "http://eusebius.tech/raw/img/branding/github-eugenius1/original.png"
 js:
   - "/js/funcs/specialName.js"
@@ -85,6 +85,10 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
+  String.prototype.capitalizeFirstLetter = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  }
+
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {   
@@ -98,7 +102,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
-      document.getElementById('facebook-gender').innerHTML = response.gender;
+      document.getElementById('facebook-gender').innerHTML = response.gender.capitalizeFirstLetter;
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
