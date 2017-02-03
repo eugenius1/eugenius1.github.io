@@ -2,7 +2,7 @@
 layout: post
 title: Social logins!
 subtitle: See what you give away when you login using Facebook
-github: eugenius1/social-login-demos
+share-img: "http://eusebius.tech/raw/img/branding/github-eugenius1/original.png"
 js:
   - "/js/funcs/specialName.js"
 ---
@@ -29,13 +29,13 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       var alertDiv = document.getElementById('facebook-thanks-name');
-      alertDiv.className += ' alert-danger';
+      alertDiv.className = 'alert alert-danger';
       alertDiv.innerHTML = 'Please authorise Eusebius.Tech with your Facebook';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
       var alertDiv = document.getElementById('facebook-thanks-name');
-      alertDiv.className += ' alert-danger';
+      alertDiv.className = 'alert alert-danger';
       alertDiv.innerHTML = 'Please log into Facebook.';
     }
   }
@@ -89,12 +89,12 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {   
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', {fields: 'name,first_name,last_name,age_range,email,locale,timezone,picture'}, function(response) {
+    FB.api('/me', {fields: 'name,first_name,last_name,age_range,birthday,email,locale,timezone,picture'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       var alertDiv = document.getElementById('facebook-thanks-name')
 
       alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
-      alertDiv.className += ' alert-success';
+      alertDiv.className = 'alert alert-success';
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
@@ -108,6 +108,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       else if( age_max === undefined) age_range = '&ge;' + age_min;
       else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
+      document.getElementById('facebook-birthday').innerHTML = response.birthday;
       document.getElementById('facebook-email').innerHTML = response.email;
       document.getElementById('facebook-locale').innerHTML = 
         '<a href="http://lh.2xlibre.net/locale/' + response.locale + '/">' + response.locale + '</a>';
@@ -144,6 +145,10 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
         <div class="col-sm-8" id="facebook-agerange"></div></strong>
       </div>
       <div class="row">
+        <div class="col-sm-4">Birthday: </div><strong>
+        <div class="col-sm-8" id="facebook-birthday"></div></strong>
+      </div>
+      <div class="row">
         <div class="col-sm-4">Email: </div><strong>
         <div class="col-sm-8" id="facebook-email"></div></strong>
       </div>
@@ -158,8 +163,6 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     </div>
   </div>
 </div>
-
-Note that Facebook gives an age range, e.g. *over 18*, but not the exact age explicitly. One of the extra details is birthday.
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
