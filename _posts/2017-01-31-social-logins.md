@@ -89,7 +89,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {   
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', {fields: 'name,first_name,last_name,age_range,birthday,email,locale,timezone,picture'}, function(response) {
+    FB.api('/me', {fields: 'cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       var alertDiv = document.getElementById('facebook-thanks-name')
 
@@ -98,6 +98,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       document.getElementById('facebook-card-title').innerHTML = response.name;
       document.getElementById('facebook-picture').innerHTML =
         '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
+      document.getElementById('facebook-gender').innerHTML = response.gender;
       document.getElementById('facebook-firstname').innerHTML = response.first_name;
       document.getElementById('facebook-lastname').innerHTML = response.last_name;
       
@@ -108,7 +109,6 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       else if( age_max === undefined) age_range = '&ge;' + age_min;
       else age_range = age_min + '-' + age_max;
       document.getElementById('facebook-agerange').innerHTML = age_range;
-      document.getElementById('facebook-birthday').innerHTML = response.birthday;
       document.getElementById('facebook-email').innerHTML = response.email;
       document.getElementById('facebook-locale').innerHTML = 
         '<a href="http://lh.2xlibre.net/locale/' + response.locale + '/">' + response.locale + '</a>';
@@ -133,6 +133,10 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     <div id="facebook-picture"></div>
     <div>
       <div class="row">
+        <div class="col-sm-4">Gender: </div><strong>
+        <div class="col-sm-8" id="facebook-gender"></div></strong>
+      </div>
+      <div class="row">
         <div class="col-sm-4">First name: </div><strong>
         <div class="col-sm-8" id="facebook-firstname"></div></strong>
       </div>
@@ -143,10 +147,6 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       <div class="row">
         <div class="col-sm-4">Age range: </div><strong>
         <div class="col-sm-8" id="facebook-agerange"></div></strong>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">Birthday: </div><strong>
-        <div class="col-sm-8" id="facebook-birthday"></div></strong>
       </div>
       <div class="row">
         <div class="col-sm-4">Email: </div><strong>
@@ -160,9 +160,15 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
         <div class="col-sm-4">Timezone: </div><strong>
         <div class="col-sm-8" id="facebook-timezone"></div></strong>
       </div>
+      <div class="row">
+        <div class="col-sm-4">Verified? </div><strong>
+        <div class="col-sm-8" id="facebook-verified"></div></strong>
+      </div>
     </div>
   </div>
 </div>
+
+All permissions [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
@@ -186,9 +192,6 @@ function GoogleOnSignIn(googleUser) {
   document.getElementById('google-firstname').innerHTML = response.first_name;
   document.getElementById('google-lastname').innerHTML = response.last_name;
   document.getElementById('google-email').innerHTML = response.email;
-  
-  var scopes = googleUser.getGrantedScopes();
-  document.getElementById('google-scopes').innerHTML = scopes;
 }
 //->
 </script>
