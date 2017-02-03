@@ -93,7 +93,7 @@ Try out the two social login demos below! Powered by client-side JavaScript (mor
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {   
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', {fields: 'cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
+    FB.api('/me', {fields: 'email,cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
       var alertDiv = document.getElementById('facebook-thanks-name')
 
@@ -182,7 +182,7 @@ Try out the two social login demos below! Powered by client-side JavaScript (mor
   </div>
 </div>
 
-All permissions [here](https://developers.facebook.com/docs/facebook-login/permissions).
+All Facebook permissions [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
@@ -211,20 +211,22 @@ function GoogleOnSignIn(googleUser) {
 </script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
-<div class="jumbotron col-sm-10 col-sm-offset-1" id="google-card">
-  <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
-  <div class="row" id="google-picture"></div>
-  <div class="row">
-    <div class="col-sm-4">First name: </div><strong>
-    <div class="col-sm-8" id="google-firstname"></div></strong>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">Last name: </div><strong>
-    <div class="col-sm-8" id="google-lastname"></div></strong>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">Email: </div><strong>
-    <div class="col-sm-8" id="google-email"></div></strong>
+<div class="row">
+  <div class="jumbotron col-sm-10 col-sm-offset-1" id="google-card">
+    <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
+    <div class="row" id="google-picture"></div>
+    <div class="row">
+      <div class="col-sm-4">First name: </div><strong>
+      <div class="col-sm-8" id="google-firstname"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Last name: </div><strong>
+      <div class="col-sm-8" id="google-lastname"></div></strong>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Email: </div><strong>
+      <div class="col-sm-8" id="google-email"></div></strong>
+    </div>
   </div>
 </div>
 
