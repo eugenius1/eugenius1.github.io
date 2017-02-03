@@ -132,27 +132,27 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
     <div id="facebook-picture"></div>
     <div>
       <div class="row">
-        <div class="col-xs-4">First name: </div><strong>
+        <div class="col-sm-4">First name: </div><strong>
         <div class="col-sm-8" id="facebook-firstname"></div></strong>
       </div>
       <div class="row">
-        <div class="col-xs-4">Last name: </div><strong>
+        <div class="col-sm-4">Last name: </div><strong>
         <div class="col-sm-8" id="facebook-lastname"></div></strong>
       </div>
       <div class="row">
-        <div class="col-xs-4">Age range: </div><strong>
+        <div class="col-sm-4">Age range: </div><strong>
         <div class="col-sm-8" id="facebook-agerange"></div></strong>
       </div>
       <div class="row">
-        <div class="col-xs-4">Email: </div><strong>
+        <div class="col-sm-4">Email: </div><strong>
         <div class="col-sm-8" id="facebook-email"></div></strong>
       </div>
       <div class="row">
-        <div class="col-xs-4">Locale: </div><strong>
+        <div class="col-sm-4">Locale: </div><strong>
         <div class="col-sm-8" id="facebook-locale"></div></strong>
       </div>
       <div class="row">
-        <div class="col-xs-4">Timezone: </div><strong>
+        <div class="col-sm-4">Timezone: </div><strong>
         <div class="col-sm-8" id="facebook-timezone"></div></strong>
       </div>
     </div>
