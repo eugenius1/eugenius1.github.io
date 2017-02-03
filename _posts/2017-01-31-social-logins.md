@@ -117,6 +117,7 @@ Try out the two social login demos! Powered by client-side JavaScript (more on t
       if(timezone >= 0) timezone = '+' + timezone;
       timezone = 'UTC' + timezone;
       document.getElementById('facebook-timezone').innerHTML = '<a href="https://en.wikipedia.org/wiki/' + timezone + '">' + timezone + '</a>';
+      console.log(response);
     });
   }
 //->
