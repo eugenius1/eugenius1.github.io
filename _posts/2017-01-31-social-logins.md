@@ -217,7 +217,7 @@ function GoogleOnSignIn(googleUser) {
 </script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
-<div class="alert alert-warning" role="alert">If you have issues with signing in with Google on a mobile device<div class="text-muted">, then open this page in your phone's native browser, not that inside another app. Check out these [screenshots](#). This is due to a [limitation] (https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1) by Google.</div></div>
+<div class="alert alert-warning" role="alert">If you have issues with signing in with Google on a mobile device, <br><div class="text-muted">open this page in your phone's native browser, not that inside another app. Check out these <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshots</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div></div>
 
 <div class="row">
   <div class="jumbotron col-sm-10 col-sm-offset-1" id="google-card">
