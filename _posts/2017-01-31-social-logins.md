@@ -7,11 +7,13 @@ js:
   - "/js/funcs/specialName.js"
 ---
 
-<div class="alert alert-warning" role="alert">This article is a work in progress.</div>
+<div class="alert alert-warning" role="alert">This article is a **work in progress**.</div>
 
-<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
+<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work for you. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-Try out the two social login demos below! Powered by client-side JavaScript (more on this below), which means the information you will see will <strong>not</strong> be stored by or on Eusebius.Tech.
+Picture this scenario: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
+
+Try out the two social login demos below! They're powered by client-side JavaScript (more on this below), which means the information you will see will **not** be stored by or on Eusebius.Tech.
 
 <script type="text/javascript">
 <!--
@@ -172,7 +174,11 @@ Try out the two social login demos below! Powered by client-side JavaScript (mor
       <div class="col-sm-8" id="facebook-timezone"></div></strong>
     </div>
     <div class="row">
-      <div class="col-sm-4">Verified? </div><strong>
+      <div class="col-sm-4">
+        <abbr title="Someone is considered verified if they take any of the following actions:
+          Register for mobile,
+          Confirm their account via SMS,
+          Enter a valid credit card">Verified</abbr>? </div><strong>
       <div class="col-sm-8" id="facebook-verified"></div></strong>
     </div>
     <div class="row">
@@ -182,7 +188,7 @@ Try out the two social login demos below! Powered by client-side JavaScript (mor
   </div>
 </div>
 
-All Facebook permissions [here](https://developers.facebook.com/docs/facebook-login/permissions).
+All Facebook login permissions [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
@@ -230,8 +236,12 @@ function GoogleOnSignIn(googleUser) {
   </div>
 </div>
 
-The code to gather and display your info only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
+**Google scopes**
+
+The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 
 **Insert diagram**
 
-I would have added a demo for Twitter login but Twitter's API has to be via OAuth, which restricts the action from being purely client-side. HTML with client-side JavaScript code for the logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
+I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
+
+Thanks for reading and as always, please let me know if you spot something broken.
