@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social logins!
-subtitle: See what you give away when you sign up to a site using Facebook or Google
+subtitle: An interactive look at what you give away when you sign up to a site using Facebook or Google
 share-img: "http://eusebius.tech/raw/img/branding/github-eugenius1/original.png"
 js:
   - "/js/funcs/specialName.js"
@@ -206,7 +206,7 @@ function GoogleOnSignIn(googleUser) {
   response.last_name = profile.getFamilyName();
   console.log('Successful Google login for: ' + response.name);
 
-  // document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+  document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
   document.getElementById('google-card-title').innerHTML = response.name;
   document.getElementById('google-picture').innerHTML =
     '<img src="' + response.picture + '" alt="Your Google Profile Picture" title="You!">';
@@ -218,8 +218,8 @@ function GoogleOnSignIn(googleUser) {
 </script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
-<div class="alert alert-warning" role="alert">If you have issues with signing in with Google on a mobile device,<br>
-  <div class="text-muted small">open this page in your phone's native browser, not that inside another app. Check out these <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshots</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
+<div class="alert alert-warning" role="alert" id="google-thanks-name">If you have issues with signing in with Google on a mobile device,<br>
+  <div class="text-muted small">open this page in your phone or tablet's native browser, not that inside another app. Check out these <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshots</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
 </div>
 
 <div class="row">
