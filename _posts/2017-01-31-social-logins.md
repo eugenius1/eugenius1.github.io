@@ -176,9 +176,9 @@ Try out the two social login demos below! They're powered by client-side JavaScr
     <div class="row">
       <div class="col-sm-4">
         <abbr title="Someone is considered verified if they take any of the following actions:
-          Register for mobile,
-          Confirm their account via SMS,
-          Enter a valid credit card">Verified</abbr>? </div><strong>
+    Register for mobile,
+    Confirm their account via SMS,
+    Enter a valid credit card">Verified</abbr>? </div><strong>
       <div class="col-sm-8" id="facebook-verified"></div></strong>
     </div>
     <div class="row">
@@ -188,7 +188,8 @@ Try out the two social login demos below! They're powered by client-side JavaScr
   </div>
 </div>
 
-By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they get is vital to the app's functions and user experience. All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
+By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they would get is vital to the app's functions and user experience. 
+All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
@@ -217,7 +218,9 @@ function GoogleOnSignIn(googleUser) {
 </script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
-<div class="alert alert-warning" role="alert">If you have issues with signing in with Google on a mobile device, <br><div class="text-muted">open this page in your phone's native browser, not that inside another app. Check out these <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshots</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div></div>
+<div class="alert alert-warning" role="alert">If you have issues with signing in with Google on a mobile device,<br>
+  <div class="text-muted small">open this page in your phone's native browser, not that inside another app. Check out these <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshots</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
+</div>
 
 <div class="row">
   <div class="jumbotron col-sm-10 col-sm-offset-1" id="google-card">
@@ -244,6 +247,8 @@ The code to gather and display your info on this page only runs on your machine 
 
 **Insert diagram**
 
-I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. Facebook and Google on the other hand, provide web login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
+I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. 
+Facebook and Google on the other hand, provide web login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. 
+HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
 
 Thanks for reading and as always, please let me know if you spot something broken.

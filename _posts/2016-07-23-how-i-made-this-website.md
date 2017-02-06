@@ -29,7 +29,7 @@ Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](htt
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.
 
-The screenshot belows shows the DNS Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/ "GitHub Pages: About supported custom domains").
+The screenshot belows shows the <abbr title="Domain Name System">DNS</abbr> Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/ "GitHub Pages: About supported custom domains").
 
 ![5 entries in the DNS records.](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
@@ -58,7 +58,7 @@ I would highly recommend [improvmx.com](http://improvmx.com/), which is free. Al
 
 # Webpage content
 
-Last but not least, is filling webpages with content or making a blog post. HTML, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML by Jekyll.
+Last but not least, is filling webpages with content or making a blog post. <abbr title="HyperText Markup Language">HTML</abbr>, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML by Jekyll.
 
 ### HTML
 
