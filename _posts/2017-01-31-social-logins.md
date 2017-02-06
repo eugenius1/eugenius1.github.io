@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social logins!
-subtitle: See what you give away when you login using Facebook or Google
+subtitle: See what you give away when you sign up to a site using Facebook or Google
 share-img: "http://eusebius.tech/raw/img/branding/github-eugenius1/original.png"
 js:
   - "/js/funcs/specialName.js"
@@ -135,7 +135,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
 //->
 </script>
 
-<fb:login-button scope="public_profile,email" onlogin="FacebookCheckLoginState();">
+<fb:login-button scope="public_profile,email,user_friends" onlogin="FacebookCheckLoginState();">
 </fb:login-button>
 
 <div class="alert alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
@@ -188,7 +188,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
   </div>
 </div>
 
-By default, Facebook gives the permissions `public_profile` and `email`. An app's developer can expand the permissions they can ask a user by making a request to Facebook. This request needs to incldue why the extra information they get is vital to the developer's app. All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
+By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they get is vital to the app's functions and user experience. All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
@@ -217,6 +217,8 @@ function GoogleOnSignIn(googleUser) {
 </script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
+<div class="alert alert-warning" role="alert">If you have issues with signing in with Google on a mobile device<div class="text-muted">, then open this page in your phone's native browser, not that inside another app. Check out these [screenshots](#). This is due to a [limitation] (https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1) by Google.</div></div>
+
 <div class="row">
   <div class="jumbotron col-sm-10 col-sm-offset-1" id="google-card">
     <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
@@ -242,6 +244,6 @@ The code to gather and display your info on this page only runs on your machine 
 
 **Insert diagram**
 
-I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
+I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. Facebook and Google on the other hand, provide web login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
 
 Thanks for reading and as always, please let me know if you spot something broken.
