@@ -7,7 +7,7 @@ js:
   - "/js/funcs/specialName.js"
 ---
 
-<div class="alert alert-warning" role="alert">This article is a **work in progress**.</div>
+<div class="alert alert-warning" role="alert">This article is a work in progress.</div>
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work for you. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
@@ -188,7 +188,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
   </div>
 </div>
 
-All Facebook login permissions [here](https://developers.facebook.com/docs/facebook-login/permissions).
+By default, Facebook gives the permissions `public_profile` and `email`. An app's developer can expand the permissions they can ask a user by making a request to Facebook. This request needs to incldue why the extra information they get is vital to the developer's app. All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
