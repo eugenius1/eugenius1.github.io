@@ -206,7 +206,9 @@ function GoogleOnSignIn(googleUser) {
   response.last_name = profile.getFamilyName();
   console.log('Successful Google login for: ' + response.name);
 
-  document.getElementById('google-thanks-name').innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+  var alertDiv = document.getElementById('google-thanks-name');
+  alertDiv.className = 'alert alert-success';
+  alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
   document.getElementById('google-card-title').innerHTML = response.name;
   document.getElementById('google-picture').innerHTML =
     '<img src="' + response.picture + '" alt="Your Google Profile Picture" title="You!">';
