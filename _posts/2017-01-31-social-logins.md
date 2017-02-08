@@ -243,7 +243,7 @@ function GoogleOnSignIn(googleUser) {
   </div>
 </div>
 
-**Google scopes**
+**Insert Google scopes**
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 

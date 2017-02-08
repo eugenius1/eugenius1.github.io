@@ -19,6 +19,8 @@ I had to choose a website domain name that I could spell out in a few seconds ye
 
 You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y). Other reputable registrars exist ([name.com](https://www.name.com/), [GoDaddy](https://www.godaddy.com/), [namecheap](https://www.namecheap.com/)) but I chose hover because they offer free *Whois* privacy and my total cost for the first year was less than US $14. The first year price was heavily discounted, compared to $55 for the second year. You can [donate](/donate "Donate to Eusebius.Tech") towards a renewal.
 
+`.tech` has the premium annual price of $49.99 but other usual top-level domains like `.com`($14.99) and `.co.uk`($9.99) mostly cost far less.
+
 ![Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which costs $5 per year. An ICANN fee of $0.18 makes the total $55.17.](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
 *Whois* is a service that gives you information about the registered user of domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](http://www.whois.com/whois/eusebius.tech).
@@ -96,7 +98,6 @@ Bullet list:
 A [link](http://example.com).
 ```
 
-Of course, you could use *Microsoft Word* or a similar word processor to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure, is that Markdown is quicker to pickup than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
-
+Of course, you could use *Microsoft Word* or another word processor to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure, is that Markdown is quicker to pickup than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
 
 Comment below on your experiences of making your own website. Did you use WordPress? If you're following this as a guide, feel free to get in touch for any clarifications.
