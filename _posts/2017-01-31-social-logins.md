@@ -27,7 +27,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
-      testAPI();
+      facebookBasicAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       var alertDiv = document.getElementById('facebook-thanks-name');
@@ -45,7 +45,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
-  function FacebookCheckLoginState() {
+  function facebookCheckLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
@@ -93,7 +93,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
 
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {   
+  function facebookBasicAPI() {   
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'email,cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
       console.log('Successful Facebook login for: ' + response.name);
@@ -135,7 +135,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
 //->
 </script>
 
-<fb:login-button scope="public_profile,email,user_friends" onlogin="FacebookCheckLoginState();">
+<fb:login-button scope="public_profile,email,user_friends" onlogin="facebookCheckLoginState();">
 </fb:login-button>
 
 <div class="alert alert-info" role="alert" id="facebook-thanks-name">Login with Facebook to see your details below.</div>
@@ -162,10 +162,6 @@ Try out the two social login demos below! They're powered by client-side JavaScr
       <div class="col-sm-8" id="facebook-agerange"></div></strong>
     </div>
     <div class="row">
-      <div class="col-sm-4">Email: </div><strong>
-      <div class="col-sm-8" id="facebook-email"></div></strong>
-    </div>
-    <div class="row">
       <div class="col-sm-4">Locale: </div><strong>
       <div class="col-sm-8" id="facebook-locale"></div></strong>
     </div>
@@ -184,6 +180,11 @@ Try out the two social login demos below! They're powered by client-side JavaScr
     <div class="row">
       <div class="col-sm-4">Last updated: </div><strong>
       <div class="col-sm-8" id="facebook-lastupdated"></div></strong>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4">Email: </div><strong>
+      <div class="col-sm-8" id="facebook-email"></div></strong>
     </div>
   </div>
 </div>
@@ -248,6 +249,8 @@ function GoogleOnSignIn(googleUser) {
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
 
 **Insert diagram**
+
+My experience of social logins has come from doing web development at a startup. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 
 I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. 
 Facebook and Google on the other hand, provide web login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. 
