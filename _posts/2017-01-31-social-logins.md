@@ -206,11 +206,12 @@ function GoogleOnSignIn(googleUser) {
   response.first_name = profile.getGivenName();
   response.last_name = profile.getFamilyName();
   console.log('Successful Google login for: ' + response.name);
+  console.log(googleUser.getGrantedScopes()); // <---------------------------------------
 
   var alertDiv = document.getElementById('google-thanks-name');
   alertDiv.className = 'alert alert-success';
   alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
-  document.getElementById('google-card-title').innerHTML = response.name;
+  // document.getElementById('google-card-title').innerHTML = response.name;
   document.getElementById('google-picture').innerHTML =
     '<img src="' + response.picture + '" alt="Your Google Profile Picture" title="You!">';
   document.getElementById('google-firstname').innerHTML = response.first_name;
@@ -246,7 +247,15 @@ function GoogleOnSignIn(googleUser) {
 
 **Insert Google scopes**
 
-The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook servers to your browser.
+`profile` and `email`
+
+Google Plus API is quick and easy to enable
+
+`plus.login`, `plus.me`
+
+(https://developers.google.com/+/web/api/rest/latest/people#resource)
+
+The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
 **Insert diagram**
 
