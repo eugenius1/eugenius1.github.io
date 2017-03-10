@@ -194,6 +194,8 @@ Try out the two social login demos below! They're powered by client-side JavaScr
 By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they would get is vital to the app's functions and user experience. 
 All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
 
+# Google
+
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
 <!--
@@ -247,9 +249,7 @@ function GoogleOnSignIn(googleUser) {
   </div>
 </div>
 
-# Google
-
-By default, Google makes `profile` and `email` persmissions available for a developer to request. A developer can quickly and easily extend to the Google Plus API, which adds the scopes `plus.login` and`plus.me`. This basically includes everything public on your Google Plus page, from your occupation to the places you have lived. The full list is available [here](https://developers.google.com/+/web/api/rest/latest/people#resource).
+By default, Google makes the scopes [`openid`](https://developers.google.com/identity/protocols/OpenIDConnect), `userinfo.profile` and `userinfo.email` available for a developer to request. A developer can quickly and easily [extend to the Google Plus API](https://developers.google.com/+/web/signin/#enable_the_google_api), which adds the scopes `plus.login` and `plus.me`. This basically includes everything public on your Google Plus page, from your occupation to the places you have lived. The full list is available [here](https://developers.google.com/+/web/api/rest/latest/people#resource).
 
 # Data flow
 
@@ -257,7 +257,7 @@ The code to gather and display your info on this page only runs on your machine 
 
 **Insert diagram**
 
-My experience of social logins has come from doing web development at a startup. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
+My experience with social logins has come from doing web development at a startup. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 
 I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. 
 Facebook and Google on the other hand, provide web login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. 
