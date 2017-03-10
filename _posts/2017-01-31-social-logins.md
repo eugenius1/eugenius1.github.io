@@ -15,6 +15,8 @@ Picture this scenario: You go to sign up to a website and they ask you to create
 
 Try out the two social login demos below! They're powered by client-side JavaScript (more on this below), which means the information you will see will **not** be stored by or on Eusebius.Tech.
 
+# Facebook
+
 <script type="text/javascript">
 <!--
   // This is called with the results from from FB.getLoginStatus().
@@ -245,15 +247,11 @@ function GoogleOnSignIn(googleUser) {
   </div>
 </div>
 
-**Insert Google scopes**
+# Google
 
-`profile` and `email`
+By default, Google makes `profile` and `email` persmissions available for a developer to request. A developer can quickly and easily extend to the Google Plus API, which adds the scopes `plus.login` and`plus.me`. This basically includes everything public on your Google Plus page, from your occupation to the places you have lived. The full list is available [here](https://developers.google.com/+/web/api/rest/latest/people#resource).
 
-Google Plus API is quick and easy to enable
-
-`plus.login`, `plus.me`
-
-(https://developers.google.com/+/web/api/rest/latest/people#resource)
+# Data flow
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
