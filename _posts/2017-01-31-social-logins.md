@@ -137,15 +137,30 @@ Try out the two social login demos below! They're powered by client-side JavaScr
     FB.api('/me/friends', {fields: ''}, function(response){
       console.log(response);
       document.getElementById('facebook-friend-count').innerHTML = response.summary.total_count;
-      var auth_count = response.data.length;
+      const auth_count = response.data.length;
       
+      /*
+      You have no friends yet who use Eusebius.Tech.
+      You have 1 friend who uses Eusebius.Tech: Adam One.
+      You have 2 friends who use Eusebius.Tech: Adam One and Beth Two.
+      You have 3 friends who use Eusebius.Tech including Adam One and Beth Two.
+      */
       var message = 'You have ' + (auth_count === 0 ? 'no' : auth_count) + ' friend';
       if(auth_count != 1) message += 's';
-      message += ' who use Eusebius.Tech';
+      if(auth_count === 0) message += ' yet';
+      message += ' who use' ;
+      if(auth_count === 1) message += 's';
+      message += ' Eusebius.Tech';
       if(auth_count >= 1){
-        message += ' including ' + response.data[0].name;
+        const friendHtml = function(datum){
+          return '<a href="https://www.facebook.com/profile.php?id=' + datum.id + '">' + datum.name + '</a>';
+        }
+
+        if(auth_count >= 3) message += ' including ';
+        else message += ': ';
+        message += friendHtml(response.data[0]);
         if(auth_count >= 2) 
-          message += ' and ' + response.data[1].name;
+          message += ' and ' + friendHtml(response.data[1]);
       }
       message += '.';
       document.getElementById('facebook-friends').innerHTML = message;
@@ -210,7 +225,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
       <div class="col-sm-8" id="facebook-friend-count"></div></strong>
     </div>
     <div class="row">
-      <div id="facebook-friends"></div>
+      <div class="col-xs-12" id="facebook-friends"></div>
     </div>
   </div>
 </div>
@@ -273,7 +288,7 @@ function GoogleOnSignIn(googleUser) {
   </div>
 </div>
 
-By default, Google makes the scopes [`openid`](https://developers.google.com/identity/protocols/OpenIDConnect), `userinfo.profile` and `userinfo.email` available for a developer to request. A developer can quickly and easily [extend to the Google Plus API](https://developers.google.com/+/web/signin/#enable_the_google_api), which adds the scopes `plus.login` and `plus.me`. This basically includes everything public on your Google Plus page, from your occupation to the places you have lived. The full list is available [here](https://developers.google.com/+/web/api/rest/latest/people#resource).
+By default, Google makes the scopes [`openid`](https://developers.google.com/identity/protocols/OpenIDConnect), `userinfo.profile` and `userinfo.email` available for a developer to request. A developer can quickly and easily [extend to the Google Plus API](https://developers.google.com/+/web/signin/#enable_the_google_api), which adds the scopes `plus.login` and `plus.me`. This basically includes everything (public) on your Google Plus page, from your occupation to the places you have lived. The full list is available [here](https://developers.google.com/+/web/api/rest/latest/people#resource).
 
 # Data flow
 
