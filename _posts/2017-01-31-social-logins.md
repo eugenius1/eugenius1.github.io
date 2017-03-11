@@ -9,7 +9,7 @@ js:
 
 <div class="alert alert-warning" role="alert">This article is a work in progress.</div>
 
-<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work for you. Please use an up-to-date modern web browser or turn JavaScript back on if it's turned off.</div></noscript>
+<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
 Picture this scenario: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
 
@@ -98,72 +98,74 @@ Try out the two social login demos below! They're powered by client-side JavaScr
   function facebookBasicAPI() {   
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'email,cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
-      console.log('Successful Facebook login for: ' + response.name);
-      console.log(response);
-      var alertDiv = document.getElementById('facebook-thanks-name')
+      if (response && !response.error) {
+        console.log('Successful Facebook login for: ' + response.name);
+        var alertDiv = document.getElementById('facebook-thanks-name')
 
-      alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
-      alertDiv.className = 'alert alert-success';
-      // document.getElementById('facebook-card-title').innerHTML = response.name;
-      document.getElementById('facebook-cover').innerHTML = '<div class="big-img intro-header" style="background-image: url(&quot;' + response.cover.source + '&quot;);"><div class="page-heading"><h2>' + response.name + '</h2></div></div>';
+        alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name);
+        alertDiv.className = 'alert alert-success';
+        // document.getElementById('facebook-card-title').innerHTML = response.name;
+        document.getElementById('facebook-cover').innerHTML = '<div class="big-img intro-header" style="background-image: url(&quot;' + response.cover.source + '&quot;);"><div class="page-heading"><h2>' + response.name + '</h2></div></div>';
 
-      document.getElementById('facebook-picture').innerHTML =
-        '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
-      document.getElementById('facebook-gender').innerHTML = response.gender.capitalizeFirstLetter();
-      document.getElementById('facebook-firstname').innerHTML = response.first_name;
-      document.getElementById('facebook-lastname').innerHTML = response.last_name;
-      
-      age_min = response.age_range.min;
-      age_max = response.age_range.max;
-      if( age_min === undefined && age_max === undefined) age_range = '';
-      else if( age_min === undefined) age_range = '&le;' + age_max;
-      else if( age_max === undefined) age_range = '&ge;' + age_min;
-      else age_range = age_min + '-' + age_max;
-      document.getElementById('facebook-agerange').innerHTML = age_range;
-      document.getElementById('facebook-email').innerHTML = response.email;
-      document.getElementById('facebook-locale').innerHTML = 
-        '<a href="http://lh.2xlibre.net/locale/' + response.locale + '/">' + response.locale + '</a>';
-      
-      timezone = response.timezone
-      if(timezone >= 0) timezone = '+' + timezone;
-      timezone = 'UTC' + timezone;
-      document.getElementById('facebook-timezone').innerHTML = '<a href="https://en.wikipedia.org/wiki/' + timezone + '">' + timezone + '</a>';
-      document.getElementById('facebook-verified').innerHTML = 
-      '<i class="fa fa-' + (response.verified? 'check':'times') + '" aria-hidden="true"></span><span class="sr-only">' + response.verified + '</span>';
-      document.getElementById('facebook-lastupdated').innerHTML = new Date(response.updated_time);
-
+        document.getElementById('facebook-picture').innerHTML =
+          '<img src="https://graph.facebook.com/v2.7/' + response.id + '/picture?type=large" alt="Your Facebook Profile Picture" title="You!">';
+        document.getElementById('facebook-gender').innerHTML = response.gender.capitalizeFirstLetter();
+        document.getElementById('facebook-firstname').innerHTML = response.first_name;
+        document.getElementById('facebook-lastname').innerHTML = response.last_name;
+        
+        age_min = response.age_range.min;
+        age_max = response.age_range.max;
+        if( age_min === undefined && age_max === undefined) age_range = '';
+        else if( age_min === undefined) age_range = '&le;' + age_max;
+        else if( age_max === undefined) age_range = '&ge;' + age_min;
+        else age_range = age_min + '-' + age_max;
+        document.getElementById('facebook-agerange').innerHTML = age_range;
+        document.getElementById('facebook-email').innerHTML = response.email;
+        document.getElementById('facebook-locale').innerHTML = 
+          '<a href="http://lh.2xlibre.net/locale/' + response.locale + '/">' + response.locale + '</a>';
+        
+        timezone = response.timezone
+        if(timezone >= 0) timezone = '+' + timezone;
+        timezone = 'UTC' + timezone;
+        document.getElementById('facebook-timezone').innerHTML = '<a href="https://en.wikipedia.org/wiki/' + timezone + '">' + timezone + '</a>';
+        document.getElementById('facebook-verified').innerHTML = 
+        '<i class="fa fa-' + (response.verified? 'check':'times') + '" aria-hidden="true"></span><span class="sr-only">' + response.verified + '</span>';
+        document.getElementById('facebook-lastupdated').innerHTML = new Date(response.updated_time);
+      }
     });
 
     FB.api('/me/friends', {fields: ''}, function(response){
-      console.log(response);
-      document.getElementById('facebook-friend-count').innerHTML = response.summary.total_count;
-      const auth_count = response.data.length;
-      
-      /*
-      You have no friends yet who use Eusebius.Tech.
-      You have 1 friend who uses Eusebius.Tech: Adam One.
-      You have 2 friends who use Eusebius.Tech: Adam One and Beth Two.
-      You have 3 friends who use Eusebius.Tech including Adam One and Beth Two.
-      */
-      var message = 'You have ' + (auth_count === 0 ? 'no' : auth_count) + ' friend';
-      if(auth_count != 1) message += 's';
-      if(auth_count === 0) message += ' yet';
-      message += ' who use' ;
-      if(auth_count === 1) message += 's';
-      message += ' Eusebius.Tech';
-      if(auth_count >= 1){
-        const friendHtml = function(datum){
-          return '<a href="https://www.facebook.com/' + datum.id + '">' + datum.name + '</a>';
-        }
+      if (response && !response.error) {
+        console.log(response);
+        document.getElementById('facebook-friend-count').innerHTML = response.summary.total_count;
+        const auth_count = response.data.length;
+        
+        /*
+        You have no friends yet who use Eusebius.Tech.
+        You have 1 friend who uses Eusebius.Tech: Adam One.
+        You have 2 friends who use Eusebius.Tech: Adam One and Beth Two.
+        You have 3 friends who use Eusebius.Tech including Adam One and Beth Two.
+        */
+        var message = 'You have ' + (auth_count === 0 ? 'no' : auth_count) + ' friend';
+        if(auth_count != 1) message += 's';
+        if(auth_count === 0) message += ' yet';
+        message += ' who use' ;
+        if(auth_count === 1) message += 's';
+        message += ' Eusebius.Tech';
+        if(auth_count >= 1){
+          const friendHtml = function(datum){
+            return '<a href="https://www.facebook.com/' + datum.id + '">' + datum.name + '</a>';
+          }
 
-        if(auth_count >= 3) message += ' including ';
-        else message += ': ';
-        message += friendHtml(response.data[0]);
-        if(auth_count >= 2) 
-          message += ' and ' + friendHtml(response.data[1]);
+          if(auth_count >= 3) message += ' including ';
+          else message += ': ';
+          message += friendHtml(response.data[0]);
+          if(auth_count >= 2) 
+            message += ' and ' + friendHtml(response.data[1]);
+        }
+        message += '.';
+        document.getElementById('facebook-friends').innerHTML = message;
       }
-      message += '.';
-      document.getElementById('facebook-friends').innerHTML = message;
     });
   }
 //->
