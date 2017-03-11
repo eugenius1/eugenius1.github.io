@@ -4,8 +4,8 @@ title: Social logins!
 subtitle: An interactive look at what you give away when you sign up to a site using Facebook or Google
 share-img: "http://eusebius.tech/raw/img/branding/github-eugenius1/original.png"
 js:
-  - "/js/funcs/specialName.js"
-  - "/js/blog/2017/social-logins.js"
+  - "/js/funcs/specialName.min.js"
+  - "/js/blog/2017/social-logins.min.js"
 ---
 
 <div class="alert alert-warning" role="alert">This article is a work in progress.</div>
