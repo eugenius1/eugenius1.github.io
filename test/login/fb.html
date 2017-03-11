@@ -90,7 +90,7 @@
       console.log('Successful Facebook login for: ' + response.name);
       console.log(response);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in with Facebook, ' + specialName(response.name, response.first_name) +
+        'Thanks for logging in with Facebook, ' + specialName(response.name, response.first_name, response.last_name) +
         "<br />" + 
         response.first_name + "<br />" +
         response.last_name + "<br />" +
