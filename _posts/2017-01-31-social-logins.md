@@ -153,7 +153,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
       message += ' Eusebius.Tech';
       if(auth_count >= 1){
         const friendHtml = function(datum){
-          return '<a href="https://www.facebook.com/profile.php?id=' + datum.id + '">' + datum.name + '</a>';
+          return '<a href="https://www.facebook.com/' + datum.id + '">' + datum.name + '</a>';
         }
 
         if(auth_count >= 3) message += ' including ';
@@ -224,6 +224,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
       <div class="col-sm-4">Number of friends: </div><strong>
       <div class="col-sm-8" id="facebook-friend-count"></div></strong>
     </div>
+    <br>
     <div class="row">
       <div class="col-xs-12" id="facebook-friends"></div>
     </div>
