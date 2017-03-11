@@ -13,7 +13,7 @@ js:
 
 Picture this scenario: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
 
-Try out the two social login demos below! They're powered by client-side JavaScript (more on this below), which means the information you will see will **not** be stored by or on Eusebius.Tech.
+**Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will **not** be stored by or on Eusebius.Tech.
 
 # Facebook
 
@@ -178,7 +178,7 @@ Try out the two social login demos below! They're powered by client-side JavaScr
 
 <div class="row">
   <div class="jumbotron col-sm-10 col-sm-offset-1" id="facebook-card">
-    <h2 class="text-center" id="facebook-card-title">Facebook's bare minimum</h2>
+    <h2 class="text-center" id="facebook-card-title">Facebook's minimum</h2>
     <div class="row" id="facebook-cover"></div>
     <div class="row" id="facebook-picture"></div>
     <div class="row">
@@ -234,7 +234,9 @@ Try out the two social login demos below! They're powered by client-side JavaScr
 </div>
 
 By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they would get is vital to the app's functions and user experience. 
-All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions).
+All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions), from date of birth to relationship status and spouse.
+
+Note that the basic permissions don't give the exact age in years but instead where the age falls with respect to 18 and 21 (`age_range`). For example, the API might just give that you have a minimum age of 13 and maximum of 17. Even with the `user_birthday` permission, only the day and month from your date of birth are guaranteed; the year of birth depends on your privacy setting.
 
 # Google
 
@@ -297,12 +299,12 @@ By default, Google makes the scopes [`openid`](https://developers.google.com/ide
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
-[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network](/raw/img/blog/2017/client-side-social-login-flow.png)](/raw/img/blog/2017/client-side-social-login-flow.png)
+[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server](/raw/img/blog/2017/client-side-social-login-flow.png)](/raw/img/blog/2017/client-side-social-login-flow.png)
 
-My experience with social logins has come from doing web development at a startup. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
+My experience with social logins has come from doing web development at a startup during my last holiday. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 
 I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. 
-Facebook and Google on the other hand, provide web login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. 
+Facebook and Google on the other hand, provide web-login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. 
 HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
 
-Thanks for reading and as always, please let me know if you spot something broken.
+Thanks for reading and, as always, please let me know if you spot something broken.
