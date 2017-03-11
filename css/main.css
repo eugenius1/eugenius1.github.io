@@ -557,10 +557,13 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
-/* --- Social share buttons --- */
+/* --- Social share buttons --- 
+https://gist.github.com/thebigreason/1296097 */
 
-/* This gets Google to fall into place */
 .social-share {
+  margin: 30px 0;
+
+  /* This gets Google to fall into place */
   font-size: 1px;
 }
 

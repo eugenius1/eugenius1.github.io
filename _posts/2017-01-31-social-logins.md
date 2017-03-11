@@ -89,7 +89,7 @@ Note that the basic permissions don't give the exact age in years but instead wh
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
 <div class="alert alert-warning" role="alert" id="google-thanks-name">If you have issues with signing in with Google on a mobile device,<br>
-  <div class="text-muted small">open this page in your phone or tablet's native browser, not that inside another app. Check out these <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshots</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
+  <div class="text-muted small">open this page in your phone or tablet's native browser, not that inside another app. Check out this <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshot</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
 </div>
 
 <div class="row">
