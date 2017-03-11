@@ -75,7 +75,7 @@ String.prototype.capitalizeFirstLetter = function() {
 // Here we run a very simple test of the Graph API after login is
 // successful.  See statusChangeCallback() for when this call is made.
 function facebookBasicAPI() {   
-  console.log('Welcome!  Fetching your information.... ');
+  // console.log('Welcome!  Fetching your information.... ');
   FB.api('/me', {fields: 'email,cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
     if (response && !response.error) {
       console.log('Successful Facebook login for: ' + response.name);
