@@ -12,7 +12,7 @@ github: eugenius1/ee3-rtdsp
 
 This 3<sup>rd</sup> year project involved understanding Real-Time Digital Signal Processing and putting it into practice on a Texas Instruments DSP Starter Kit (TMS320C6713 DSK). The diagram below shows 3 spectograms. A spectogram is effectively a photograph of sound; a visual representation of a sound's frequency distribution over time. First is noisy sound, then the filtered version, and finally clean speech for comparison.
 
-[![alt text](/img/projects/ee3-rtdsp/lynx.png "Spectograms for noise by a lynx helicopter")](/raw/img/projects/ee3-rtdsp/lynx.png)
+[![Spectograms that show speech with reduced noise from a lynx helicopter](/img/projects/ee3-rtdsp/lynx.png "Spectograms for speech with noise from a lynx helicopter")](/raw/img/projects/ee3-rtdsp/lynx.png)
 
 The [final report](https://github.com/eugenius1/ee3-rtdsp/blob/master/speech-enhancement/EusebiusN_And_PrahnavS_RTDSP_Project.pdf) is available on GitHub. To sum up, these are the goals achieved towards the end of the project.
 

@@ -131,8 +131,24 @@ Try out the two social login demos below! They're powered by client-side JavaScr
       document.getElementById('facebook-verified').innerHTML = 
       '<i class="fa fa-' + (response.verified? 'check':'times') + '" aria-hidden="true"></span><span class="sr-only">' + response.verified + '</span>';
       document.getElementById('facebook-lastupdated').innerHTML = new Date(response.updated_time);
-      console.log(response);
 
+    });
+
+    FB.api('/me/friends', {fields: ''}, function(response){
+      console.log(response);
+      document.getElementById('facebook-friend-count').innerHTML = response.summary.total_count;
+      var auth_count = response.data.length;
+      
+      var message = 'You have ' + (auth_count === 0 ? 'no' : auth_count) + ' friend';
+      if(auth_count != 1) message += 's';
+      message += ' who use Eusebius.Tech';
+      if(auth_count >= 1){
+        message += ' including ' + response.data[0].name;
+        if(auth_count >= 2) 
+          message += ' and ' + response.data[1].name;
+      }
+      message += '.';
+      document.getElementById('facebook-friends').innerHTML = message;
     });
   }
 //->
@@ -189,6 +205,13 @@ Try out the two social login demos below! They're powered by client-side JavaScr
       <div class="col-sm-4">Email: </div><strong>
       <div class="col-sm-8" id="facebook-email"></div></strong>
     </div>
+    <div class="row">
+      <div class="col-sm-4">Number of friends: </div><strong>
+      <div class="col-sm-8" id="facebook-friend-count"></div></strong>
+    </div>
+    <div class="row">
+      <div id="facebook-friends"></div>
+    </div>
   </div>
 </div>
 
@@ -211,7 +234,7 @@ function GoogleOnSignIn(googleUser) {
   response.first_name = profile.getGivenName();
   response.last_name = profile.getFamilyName();
   console.log('Successful Google login for: ' + response.name);
-  console.log(googleUser.getGrantedScopes()); // <---------------------------------------
+  console.log(response);
 
   var alertDiv = document.getElementById('google-thanks-name');
   alertDiv.className = 'alert alert-success';
@@ -256,7 +279,7 @@ By default, Google makes the scopes [`openid`](https://developers.google.com/ide
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
-![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network](/raw/img/blog/2017/client-side-social-login-flow.png)
+[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network](/raw/img/blog/2017/client-side-social-login-flow.png)](/raw/img/blog/2017/client-side-social-login-flow.png)
 
 My experience with social logins has come from doing web development at a startup. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 
