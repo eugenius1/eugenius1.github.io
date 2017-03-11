@@ -1,6 +1,6 @@
 // This is called with the results from from FB.getLoginStatus().
-function statusChangeCallback(response) {
-  // console.log('statusChangeCallback');
+function facebookStatusChangeCallback(response) {
+  // console.log('facebookStatusChangeCallback');
   // console.log(response);
   // The response object is returned with a status field that lets the
   // app know the current login status of the person.
@@ -28,7 +28,7 @@ function statusChangeCallback(response) {
 // code below.
 function facebookCheckLoginState() {
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
+    facebookStatusChangeCallback(response);
   });
 }
 
@@ -54,7 +54,7 @@ FB.init({
 // These three cases are handled in the callback function.
 
 FB.getLoginStatus(function(response) {
-  statusChangeCallback(response);
+  facebookStatusChangeCallback(response);
 });
 
 };
@@ -73,7 +73,7 @@ String.prototype.capitalizeFirstLetter = function() {
 }
 
 // Here we run a very simple test of the Graph API after login is
-// successful.  See statusChangeCallback() for when this call is made.
+// successful.  See facebookStatusChangeCallback() for when this call is made.
 function facebookBasicAPI() {   
   // console.log('Welcome!  Fetching your information.... ');
   FB.api('/me', {fields: 'email,cover,name,first_name,last_name,age_range,gender,locale,picture,timezone,updated_time,verified'}, function(response) {
