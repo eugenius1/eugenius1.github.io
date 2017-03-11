@@ -141,19 +141,20 @@ Picture this scenario: You go to sign up to a website and they ask you to create
         const auth_count = response.data.length;
         
         /*
-        You have no friends yet who use Eusebius.Tech.
-        You have 1 friend who uses Eusebius.Tech: Adam One.
-        You have 2 friends who use Eusebius.Tech: Adam One and Beth Two.
-        You have 3 friends who use Eusebius.Tech including Adam One and Beth Two.
+        You have no friends yet who signed in to Eusebius.Tech.
+        You have 1 friend who also signed in to Eusebius.Tech: Adam One.
+        You have 2 friends who also signed in to Eusebius.Tech: Adam One and Beth Two.
+        You have 3 friends who also signed in to Eusebius.Tech including Adam One and Beth Two.
         */
         var message = 'You have ' + (auth_count === 0 ? 'no' : auth_count) + ' friend';
         if(auth_count != 1) message += 's';
         if(auth_count === 0) message += ' yet';
-        message += ' who use' ;
-        if(auth_count === 1) message += 's';
-        message += ' Eusebius.Tech';
+        message += ' who'
+        if(auth_count >= 1) message += ' also';
+        message += ' signed in to Eusebius.Tech';
         if(auth_count >= 1){
           const friendHtml = function(datum){
+            // `/profile.php?id=` did not reliably work
             return '<a href="https://www.facebook.com/' + datum.id + '">' + datum.name + '</a>';
           }
 
