@@ -27,6 +27,10 @@ The scenario: You go to sign up to a website and they ask you to create an accou
     <div class="row" id="facebook-cover"></div>
     <div class="row" id="facebook-picture"></div>
     <div class="row">
+      <div class="col-sm-4">ID: </div><strong>
+      <div class="col-sm-8" id="facebook-id"></div></strong>
+    </div>
+    <div class="row">
       <div class="col-sm-4">Gender: </div><strong>
       <div class="col-sm-8" id="facebook-gender"></div></strong>
     </div>
