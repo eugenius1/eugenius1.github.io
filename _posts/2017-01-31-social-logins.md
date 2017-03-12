@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Social logins!
-subtitle: An interactive look at what you give away when you sign up to a site or an app using Facebook or Google
+subtitle: An interactive look at what you give away when you sign up to a website or an app using Facebook or Google
 share-img: "http://eusebius.tech/img/blog/2017/social-logins-shareable.png"
-bigimg:
-  - "/img/covers/blog/2017/social-logins-cover.png" : "bootstrap-social"
 js:
   - "/js/funcs/specialName.min.js"
   - "/js/blog/2017/social-logins.min.js"
