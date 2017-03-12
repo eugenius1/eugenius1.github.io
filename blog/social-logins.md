@@ -1,5 +1,5 @@
 ---
 layout: redirect
-to: /blog/social-logins-what-you-give-away/
-title: "Social logins: what you give away!"
+to: /blog/social-logins-what-info-you-give-away/
+title: "Social logins: what info you give away!"
 ---
