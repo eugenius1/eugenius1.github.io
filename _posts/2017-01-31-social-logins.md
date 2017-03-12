@@ -101,6 +101,10 @@ Note that the basic permissions don't give the exact age in years but instead wh
     <h2 class="text-center" id="google-card-title">Google's bare minimum</h2>
     <div class="row" id="google-picture"></div>
     <div class="row">
+      <div class="col-sm-4">ID: </div><strong>
+      <div class="col-sm-8" id="google-id"></div></strong>
+    </div>
+    <div class="row">
       <div class="col-sm-4">First name: </div><strong>
       <div class="col-sm-8" id="google-firstname"></div></strong>
     </div>
