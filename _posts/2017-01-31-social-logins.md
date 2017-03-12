@@ -81,7 +81,7 @@ The scenario: You go to sign up to a website and they ask you to create an accou
 By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they would get is vital to the app's functions and user experience. 
 All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions), from date of birth to relationship status and spouse.
 
-Note that the basic permissions don't give the exact age in years but instead where the age falls with respect to 18 and 21 (`age_range`). For example, the API might just give that you have a minimum age of 13 and maximum of 17. Even with the `user_birthday` permission, only the day and month from your date of birth are guaranteed; the year of birth depends on your privacy setting.
+Note that the basic permissions don't give the exact age in years but instead where the age falls with respect to 18 and 21 (`age_range`). For example, the API might just give that you have a minimum age of 13 and maximum of 17. Even with the `user_birthday` permission granted, the visibility depends on your birthday privacy setting.
 
 # Google
 
@@ -117,7 +117,7 @@ By default, Google makes the scopes [`openid`](https://developers.google.com/ide
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
-[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server](/raw/img/blog/2017/client-side-social-login-flow.png)](/raw/img/blog/2017/client-side-social-login-flow.png)
+[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server](/raw/img/blog/2017/client-side-social-login-flow-diagram.png)](/raw/img/blog/2017/client-side-social-login-flow-diagram.png)
 
 My experience with social logins has come from doing web development at a startup during my last holiday. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 

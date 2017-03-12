@@ -88,6 +88,7 @@ function facebookGetUserDetails() {
     function(response) {
       if (response && !response.error) {
         console.log('Successful Facebook login for: ' + response.name);
+        console.log(response);
         
         var alertDiv = document.getElementById('facebook-thanks-name')
         alertDiv.innerHTML = 'Thanks, ' + specialName(response.name, response.first_name, response.last_name);
