@@ -125,7 +125,7 @@ By default, Google makes the scopes [`openid`](https://developers.google.com/ide
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
-[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server](/raw/img/blog/2017/client-side-social-login-flow-diagram.png)](/raw/img/blog/2017/client-side-social-login-flow-diagram.png)
+[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server](/img/blog/2017/client-side-social-login-flow-diagram.png)](/raw/img/blog/2017/client-side-social-login-flow-diagram.png)
 
 My experience with social logins has come from doing web development at a startup during my last holiday. When a user logins in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, always embrace frameworks, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 
