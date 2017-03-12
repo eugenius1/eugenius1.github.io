@@ -126,3 +126,5 @@ Facebook and Google on the other hand, provide web-login JavaScript <abbr title=
 HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
 
 Thanks for reading and, as always, please let me know if you spot something broken.
+
+<img hidden src="http://eusebius.tech/img/blog/2017/social-logins-shareable.png" width="200px">

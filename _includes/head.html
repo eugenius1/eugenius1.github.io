@@ -69,8 +69,8 @@
   {% endif %}
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif site.thumbnail %}
+  <meta property="og:image" content="{{ site.url }}{{ site.thumbnail }}" />
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
@@ -87,8 +87,8 @@
   {% endif %}
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif site.thumbnail %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.thumbnail }}" />
   {% endif %}
 
   <!-- Social App IDs -->

@@ -40,6 +40,9 @@ nav-search: "search"
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/eusebius-avatar-icon.jpg"
 
+# Image to use as default for share-img, when sharing to social media
+thumbnail: "/raw/img/branding/github-eugenius1/original.png"
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
