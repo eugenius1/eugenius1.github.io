@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Social logins: what info you give away!"
-subtitle: An interactive look at what you give away when you sign up to a website or an app using Facebook or Google
+subtitle: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
 share-img: "http://eusebius.tech/img/blog/2017/social-logins-shareable.png"
 js:
   - "/js/funcs/specialName.min.js"
   - "/js/blog/2017/social-logins.min.js"
 ---
 
-**Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will **not** be stored by or on Eusebius.Tech.
+**Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will *not* be handled by a Eusebius.Tech server and therefore **never stored here**.
 
 The scenario: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
 
@@ -134,5 +134,3 @@ Facebook and Google on the other hand, provide web-login JavaScript <abbr title=
 HTML with client-side JavaScript code for the two logins above are on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
 
 Thanks for reading and, as always, please let me know if you spot something broken.
-
-<img hidden src="http://eusebius.tech/img/blog/2017/social-logins-shareable.png" width="200px">
