@@ -85,7 +85,7 @@ The scenario: You go to sign up to a website and they ask you to create an accou
 By default, Facebook gives the permission `public_profile`. Optionally, an app's developer can ask for `email` and `user_friends`, friends who also use the app. A developer can expand to have more permissions available by making a request to Facebook. This [request](https://developers.facebook.com/docs/facebook-login/review/what-is-login-review "Login Review") needs to include why the extra information they would get is vital to the app's functions and user experience. 
 All Facebook login permissions are listed [here](https://developers.facebook.com/docs/facebook-login/permissions), from date of birth to relationship status and spouse.
 
-Note that the basic permissions don't give the exact age in years but instead where the age falls with respect to 18 and 21 (`age_range`). For example, the API might just give that you have a minimum age of 13 and maximum of 17. Even with the `user_birthday` permission granted, the visibility depends on your birthday privacy setting.
+Note that the basic permissions don't give the exact age in years but instead where the age falls with respect to 18 and 21 (`age_range`). For example, the <abbr title="Application Programming Interface">API</abbr> might just give that you have a minimum age of 13 and maximum of 17. Even with the `user_birthday` permission granted, the visibility depends on your birthday privacy setting.
 
 # Google
 
