@@ -20,6 +20,7 @@ Some of my public projects:
 
 - [Udacity CS101](https://github.com/eugenius1/Udacity-CS101): Intro to Computer Science `#Python`
 
+# Contributions
 
 I have contributed to these awesome projects:
 
