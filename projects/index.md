@@ -12,7 +12,7 @@ Some of my public projects:
 
 - [Social Login Demos](/social-login-demos/) `#JavaScript` `#WebAPIs` `#Bootstrap`
 
-- [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter `#Embedded` `#WebClient`
+- [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter `#Embedded` `#microPython` `#WebClient`
 
 - [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing") `#DSP` `#Embedded` `#C`
 
