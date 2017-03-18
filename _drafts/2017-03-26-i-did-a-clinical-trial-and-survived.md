@@ -25,7 +25,7 @@ The efficacy and safety of benralizumab has been shown in two large clinical tri
 
 > **Full Study Title:** A Multicenter, Randomized, Open-Label Parallel Group Phase 1 Pharmocokenetic Comparability Study of Benralizumab Administered using Accessorized Pre-Filled Syringe (APFS) or Autoinjector (AI) in Healthy volunteers
 
-The main purpose of the study is to compare how much of the drug is taken up, how the drug is broken down and removed from the body when administered throught the 2 different devices mention above. Another purpose is to see how safe it is, how well it is tolerated and if it causes an immnune response (ant-drug antibodies).
+The main purpose of the study is to compare how much of the drug is taken up, how the drug is broken down and removed from the body when administered through the 2 different devices mention above. Another purpose is to see how safe it is, how well it is tolerated and if it causes an immune response (ant-drug antibodies).
 
 17 weeks
 Free to leave the study at any time and without any reason
@@ -38,7 +38,7 @@ weigh between 55 and 69.9 kg
 
 medical summary from the GP 
 
-# In-house visit
+# In-house stay
 
 reserve participant
 stays until end of dosing
