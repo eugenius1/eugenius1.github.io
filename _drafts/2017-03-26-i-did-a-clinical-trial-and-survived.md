@@ -4,6 +4,8 @@ title: I did a clinical trial and survived
 subtitle: I received £,£££ and this is my experience
 ---
 
+**Remember** to put this in /drafts/
+
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a great experience and got money that covered my lacking student finance but be aware that clinical trials are not for everyone and rightfully so.
 
 ---

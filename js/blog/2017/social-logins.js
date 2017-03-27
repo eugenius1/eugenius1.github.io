@@ -109,8 +109,9 @@ function facebookGetUserDetails() {
         document.getElementById('facebook-lastname').innerHTML = response.last_name;
         
         // format min and max to a mathematically notated range
-        age_min = response.age_range.min;
-        age_max = response.age_range.max;
+        const age_min = response.age_range.min;
+        const age_max = response.age_range.max;
+        var age_range;
         if( age_min === undefined && age_max === undefined) age_range = '';
         else if( age_min === undefined) age_range = '&le;' + age_max; // <= max
         else if( age_max === undefined) age_range = '&ge;' + age_min; // >= min
@@ -124,7 +125,7 @@ function facebookGetUserDetails() {
           '<a href="http://lh.2xlibre.net/locale/' + response.locale + '/">' + response.locale + '</a>';
         
         // There's a Wikipedia page for each timezone, eg. /wiki/UTC+5
-        timezone = response.timezone
+        var timezone = response.timezone;
         if(timezone >= 0) timezone = '+' + timezone;
         timezone = 'UTC' + timezone;
         document.getElementById('facebook-timezone').innerHTML = 
