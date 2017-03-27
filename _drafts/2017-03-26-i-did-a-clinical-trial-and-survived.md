@@ -1,14 +1,14 @@
 ---
 layout: post
 title: I did a clinical trial and survived
-subtitle: Received £,£££
+subtitle: I received £,£££ and this is my experience
 ---
 
-**<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a good experience and got money that covered my lacking student finance but rightly so, clinical trials are not for everyone.
+**<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a great experience and got money that covered my lacking student finance but be aware that clinical trials are not for everyone and rightfully so.
 
 ---
 
-Last week, I successfully completed 8 weeks after being injected with a single dose of a study drug. This is the first brief I received before getting screened:
+Last month, I successfully completed 8 weeks after being injected with a single dose of a study drug. This is the first brief I received before getting screened:
 
 > The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18-55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
 

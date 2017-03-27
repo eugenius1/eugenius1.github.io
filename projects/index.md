@@ -14,6 +14,8 @@ Some of my public projects:
 
 - [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter `#Embedded` `#microPython` `#WebClient`
 
+- [Brushless DC Motor Controller](https://github.com/eugenius1/esys-cw2 "EE3: Embedded Systems") `#mbed` `#threaded` `#RTOS`
+
 - [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing") `#DSP` `#Embedded` `#C`
 
 - [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle") `#Hackathon` `#Qt`

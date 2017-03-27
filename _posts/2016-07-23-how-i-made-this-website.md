@@ -19,7 +19,7 @@ I had to choose a website domain name that I could spell out in a few seconds ye
 
 You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y "$2 discount link"). Other reputable registrars exist ([name.com](https://www.name.com/), [GoDaddy](https://www.godaddy.com/), [namecheap](https://www.namecheap.com/)) but I chose hover because they offer free *Whois* privacy and my total cost for the first year was less than US $14. The first year price was heavily discounted, compared to $55 for the second year. You can [donate](/donate "Donate to Eusebius.Tech") towards a renewal.
 
-`.tech` has the premium annual price of $49.99 but other usual top-level domains like `.com`($14.99) and `.co.uk`($9.99) mostly cost far less.
+`.tech` has the premium annual price of $49.99 but other usual top-level domains like `.com` ($14.99) and `.co.uk` ($9.99) mostly cost far less.
 
 ![Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which costs $5 per year. An ICANN fee of $0.18 makes the total $55.17.](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
