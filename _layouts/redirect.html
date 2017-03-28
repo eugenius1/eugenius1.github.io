@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    {% include google_analytics.html %}
     <script>
       window.location = "{{ page.to }}";
     </script>
@@ -11,9 +12,9 @@
         {% if page.title %}
           <em>{{ page.title }}</em>
         {% else%}
-          the redirected
+          the redirected page
         {% endif %}
-         page.
+        .
        </a>
     </noscript>
   </head>
