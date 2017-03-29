@@ -16,14 +16,21 @@ Last month, I successfully completed 8 weeks after being injected with a single 
 
 > The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18-55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
 
+But before we get started, let me take you back to the beginning.
+
 # Study details
 
-AstroZeneca of Sweden
+AstraZeneca of Sweden
 19-page document
 180 participants
 Another study centre in Germany
 
 The efficacy and safety of benralizumab has been shown in two large clinical trials in patients that suffer from asthma.
+
+[](https://seekingalpha.com/news/3206982-astrazenecas-benralizumab-reduces-asthma-exacerbations-51-percent-two-late-state-studies)
+
+benralizumab reduces asthma exacerbations up to 51% in two late-state studies
+more than a thousand patients
 
 > **Simplified Study Title:** A Study in Healthy Volunteers to Compare the Absorption, Distribution, Metabolism and Excretion of Benralizumab when Administered using 2 Different Devices
 
@@ -61,6 +68,8 @@ man who stopped the trial. Problems with urinating
 End-of-treatment visit
 Man afraid of needles
 
+cohort 11,
+
 # What I discovered
 
 I'm quite a healthy man.
@@ -70,3 +79,5 @@ I need to be drinking a lot more water
 - Parexel
 - HMR
 - (Wales)
+
+BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)

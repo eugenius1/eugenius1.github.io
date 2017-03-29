@@ -4,7 +4,7 @@ title: Freebies
 share-buttons: true
 ---
 
-Disclaimers: I may also be getting something in turn. Also, these links and codes may become invalid.
+Disclaimer: I may also be getting something in turn. Also, these links and codes may become invalid.
 
 ---
 
