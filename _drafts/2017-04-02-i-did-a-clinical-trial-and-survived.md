@@ -2,6 +2,8 @@
 layout: post
 title: I did a clinical trial and survived
 subtitle: I received £,£££ and this is my experience
+bigimg:
+  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "Paraxel Ward, Northwick Park Hospital, London"
 ---
 
 **Remember** to put this in /drafts/
