@@ -56,6 +56,9 @@ man got ill, bed-ridden. His food was brought to his bed
 
 man who stopped the trial. Problems with urinating
 
+End-of-treatment visit
+Man afraid of needles
+
 # What I discovered
 
 I'm quite a healthy man.

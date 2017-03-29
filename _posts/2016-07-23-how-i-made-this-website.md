@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I made this website!
-subtitle: And how you could make one quickly and cheaper
+subtitle: An overview to having your own website
 share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
 ---
 

@@ -107,8 +107,9 @@ defaults:
       comments: true  # add comments to all blog posts
       share-buttons: true   # A row of social sharing buttons
   -
-    scope:
+    scope: # Any html files that exist in the projects/ folder will use the project layout,
       path: "projects"
+      type: "pages"
     values:
       layout: "projects"
       show-avatar: true
