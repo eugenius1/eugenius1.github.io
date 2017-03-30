@@ -3,7 +3,7 @@ layout: post
 title: I did a clinical trial and survived
 subtitle: I received £,£££ and this is my experience
 bigimg:
-  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "Paraxel Ward, Northwick Park Hospital, London"
+  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PARAXEL Ward, Northwick Park Hospital, London"
 ---
 
 **Remember** to put this in /drafts/
@@ -80,4 +80,20 @@ I need to be drinking a lot more water
 - HMR
 - (Wales)
 
+## 2006 PARAXEL incident
 BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)
+
+2006
+8 men
+changed how medical trials are done
+treat leukemia
+first in man
+
+> A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The Safety, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
+
+(A first-in-man study to investigate the effects in healthy male volunteers of single doses of a new
+drug for the potential treatment of various inflammatory diseases.)
+(http://www.circare.org/foia5/tgn1412_consentform.pdf)
+
+approved by the government
+
