@@ -80,7 +80,7 @@ I need to be drinking a lot more water
 - HMR
 - (Wales)
 
-## 2006 PARAXEL incident
+## 2006 incident at PARAXEL
 BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)
 
 2006

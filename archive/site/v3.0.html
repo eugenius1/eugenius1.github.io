@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>
+    
+      
+        Hi, I'm Eusebius | Eusebius.Tech
+      
+    
+  </title>
+
+  <meta name="author" content="Eusebius Ngemera" />
+  
+  
+  <meta name="description" content="This is where I blog about tech and life as I know it">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Eusebius.Tech - Personal website of Eusebius Ngemera including a blog of technologies and life as he knows it." href="/feed.xml" />
+
+  
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    
+      
+  
+  
+    
+      <link rel="stylesheet" href="/archive/site/v3.0/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/archive/site/v3.0/css/main.css" />
+    
+    
+  
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+    
+  
+  
+
+  
+
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="Hi, I'm Eusebius" />
+  <meta property="og:type" content="website" />
+  
+  <meta property="og:url" content="http://eusebius.tech/" />
+  
+  
+  <meta property="og:image" content="http://eusebius.tech/archive/site/v3.0/img/eusebius-avatar-icon.jpg" />
+  
+  
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@esebi95" />
+  <meta name="twitter:creator" content="@esebi95" />
+  <meta name="twitter:title" content="Hi, I'm Eusebius" />
+  <meta name="twitter:description" content="Blog Posts {% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {{ post.content | strip_html | xml_escape | truncatewords: 50 }} [Read&amp;nbsp;More] {% endfor %} {% if paginator.total_pages &gt; 1..." />
+  
+  <meta name="twitter:image" content="http://eusebius.tech/archive/site/v3.0/img/eusebius-avatar-icon.jpg" />
+  
+  
+</head>
+
+
+  <body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://eusebius.tech">Eusebius Ngemera</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/projects">Projects</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/cv">CV</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/contact">Contact</a>
+
+          </li>
+        
+        
+        
+        
+          <li>
+            <a href="/search" class="nav-search-link" title="Search">
+              <span class="fa fa-search nav-search-icon"></span>
+              
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://eusebius.tech ">
+	      <img class="avatar-img" src="/archive/site/v3.0/img/eusebius-avatar-icon.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+  <div id="header-big-imgs" data-num-img=6
+    
+	  
+	  
+	    
+		  data-img-src-1="/archive/site/v3.0/img/covers/2016-Kigamboni-ferry-TZ.jpg"
+		  data-img-desc-1="Kigamboni Ferry, Dar es Salaam, Tanzania (2016)"
+		
+	  
+    
+	  
+	  
+	    
+		  data-img-src-2="/archive/site/v3.0/img/covers/2015-Mt-Saleve-FR.jpg"
+		  data-img-desc-2="Mont Salève, French Prealps overlooking Lake Geneva (2015)"
+		
+	  
+    
+	  
+	  
+	    
+		  data-img-src-3="/archive/site/v3.0/img/covers/2016-facebook-hackathon-UK.jpg"
+		  data-img-desc-3="Facebook London Hackathon, UK (2016)"
+		
+	  
+    
+	  
+	  
+	    
+		  data-img-src-4="/archive/site/v3.0/img/covers/2015-Mt-Kilimanjaro-TZ.jpg"
+		  data-img-desc-4="Mount Kilimanjaro, Tanzania (2015)"
+		
+	  
+    
+	  
+	  
+	    
+		  data-img-src-5="/archive/site/v3.0/img/covers/2015-Karagwe-hills-TZ.jpg"
+		  data-img-desc-5="Karagwe, Tanzania (2015)"
+		
+	  
+    
+	  
+	  
+	    
+		  data-img-src-6="/archive/site/v3.0/img/covers/2015-Jokuco-butterfly-TZ.jpg"
+		  data-img-desc-6="Josiah Kibira University College, Tanzania (2015)"
+		
+	  
+    
+  ></div>
+
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Hi, I'm Eusebius</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">This is where I blog about tech and life as I know it</span>
+			
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Hi, I'm Eusebius</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">This is where I blog about tech and life as I know it</span>
+			
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h1 id="blog">Blog Posts</h1>
+
+<div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/blog/how-i-made-this-website/">
+	  <h2 class="post-title">How I made this website!</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on July 23, 2016
+    </p>
+
+    <div class="post-entry">
+      TL;DR: Domain name from hover.com, free hosting through GitHub Pages, and Beautiful Jekyll theme by Dean Attali. Why bother making a website? For me, this website is my own personal space on the web that I’m in control of. I can quickly link anyone to pages like eusebius.tech/uber. The bare...
+	  <a href="/blog/how-i-made-this-website/" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+
+   </article>
+  
+</div>
+
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/eugenius1" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/esebi95" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="mailto:esebi95@gmail.com" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://linkedin.com/in/eusebius" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+      
+          <li>
+            <a href="https://www.instagram.com/esebi95" title="Instagram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  <li>
+			<a href="/feed.xml" title="RSS">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>		
+          		  
+        </ul>
+        <p class="copyright text-muted">
+		  <a href="https://github.com/eugenius1/eugenius1.github.io/blob/master/LICENSE">&copy;</a>
+      &nbsp;&bull;&nbsp;
+      Eusebius Ngemera
+		  &nbsp;&bull;&nbsp;
+		  2017
+		  
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by 
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-81211584-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  
+  </body>
+</html>
