@@ -31,11 +31,11 @@
         {% endif %}
         {% endfor %}
         
-        {% if site.nav-search %}
+        {% if site.nav-search-link %}
           <li>
-            <a href="{{ site.baseurl }}/{{ site.nav-search }}" class="nav-search-link" title="Search">
-              <span class="fa fa-search nav-search-icon" aria-hidden="true"></span>
-              <span class="nav-search-text sr-only">Search</span>
+            <a href="{{ site.baseurl }}{{ site.nav-search }}" class="navlinks-parent" title="Search">
+              <span class="fa fa-search" aria-hidden="true"></span>
+              <span class="sr-only">Search</span>
             </a>
           </li>
         {% endif %}
