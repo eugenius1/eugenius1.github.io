@@ -24,7 +24,6 @@ description: Personal website of Eusebius Ngemera, including a blog of technolog
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-#http://eugenius1.github.io/ee3-rtdsp"
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
@@ -54,7 +53,7 @@ author:
   github: eugenius1
   twitter: esebi95
   linkedin: in/eusebius
-  #stackoverflow: eusebius-n
+  stackoverflow: eusebius-n
   instagram: esebi95
  
 # Select which links to show in the footer
