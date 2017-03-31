@@ -341,6 +341,10 @@ footer .theme-by {
   margin: 80px 0 20px;
   position: relative;
 }
+/* http://stackoverflow.com/questions/32490798/apply-opacity-to-background-image-but-not-text */
+.darken {
+  background-color: black;
+}
 .intro-header.big-img {
   background: no-repeat center center;
   -webkit-background-size: cover;
@@ -349,6 +353,15 @@ footer .theme-by {
   -o-background-size: cover;
   margin-top: 51px; /* The small navbar is 50px tall + 1px border */
   margin-bottom: 35px;
+}
+.intro-header.big-img:before {
+  content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  background: rgba(0,0,0,0.3);
 }
 .intro-header.big-img  .big-img-transition {
   position: absolute;
