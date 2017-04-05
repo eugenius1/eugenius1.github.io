@@ -16,7 +16,7 @@ Last month, I successfully completed 8 weeks after being injected with a single 
 
 > The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18-55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
 
-But before we get started, let me take you back to the beginning.
+But before we get started, let me take you back to how I got into trials.
 
 # Study details
 
@@ -65,7 +65,7 @@ man got ill, bed-ridden. His food was brought to his bed
 
 man who stopped the trial. Problems with urinating
 
-End-of-treatment visit
+## End-of-treatment visit
 Man afraid of needles
 
 cohort 11,
@@ -80,7 +80,8 @@ I need to be drinking a lot more water
 - HMR
 - (Wales)
 
-## 2006 incident at PARAXEL
+
+## 2006 TGN1412 mincident
 BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)
 
 2006
@@ -88,6 +89,9 @@ BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/program
 changed how medical trials are done
 treat leukemia
 first in man
+
+£2000
+12 outpatients
 
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The Safety, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
 
@@ -97,3 +101,38 @@ drug for the potential treatment of various inflammatory diseases.)
 
 approved by the government
 
+hypothermia
+loss of bowel control
+migraine in waves
+
+2 days
+Feeling better simultaneously
+
+7 days
+4 out of 6, out of ICU
+
+located at major hospital
+
+because they had no bad cells (cancer), their good cells were eaten away
+
+21 days
+Ryan still in ICU
+
+4 months
+part of fingers, feet amputated
+
+10 times quicker into the bloodstream in humans than in monkeys
+
+unpredictable biological action in human
+
+independent report made 22 recommendations to improve the safety of first-in-man
+internationally
+
+now safer than any oth
+
+within hosp with ICU
+whole of europe
+
+man with 3 kids
+
+saved by another drug
