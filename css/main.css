@@ -316,6 +316,7 @@ footer .theme-by {
   margin-bottom: 10px;
 }
 .post-preview .post-meta,
+.page-heading .page-meta,
 .post-heading .post-meta {
   color: #808080;
   font-size: 18px;
@@ -390,6 +391,7 @@ footer .theme-by {
   font-weight: 300;
   margin: 10px 0 0;
 }
+.intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
   margin-bottom: 20px;
 }
@@ -402,6 +404,7 @@ footer .theme-by {
   -webkit-box-shadow: 1px 1px 3px #000;
   -moz-box-shadow: 1px 1px 3px #000;
 }
+.intro-header.big-img .page-heading .page-meta,
 .intro-header.big-img .post-heading .post-meta {
   color: #EEE;
 }
