@@ -2,6 +2,7 @@
 layout: post
 title: I did a clinical trial and survived
 subtitle: I received £,£££ and this is my experience
+share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London (2017)"
 sitemap:
