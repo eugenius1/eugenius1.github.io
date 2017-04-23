@@ -9,8 +9,6 @@ sitemap:
   exclude: true
 ---
 
-**Remember** to put this in /drafts/
-
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I found out about the world of clinical trials and what to anticipate as a volunteer. I discovered a bit more about my own body.
 
 ---
@@ -172,7 +170,7 @@ I need to be drinking a lot more water
 
 Some places will pay for screening too.
 
-## 2006 TGN1412 mincident
+## 2006 TGN1412 incident
 
 BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)
 
