@@ -104,7 +104,7 @@ There is some restriction on what can be brought in before going in, mostly to s
 
 My cohort was the first for the study, at least in the UK. There were 5 of us and in the same ward. I was the youngest, at 21, with one man in his 40s and the rest in their 30s. The eldest man told me that he has been doing one trial per year for about a decade!
 
-There were some brief medical tests and blood and urine samples before getting independent time to do anything. The common room had **a relaxed atmosphere** with books and newspapers to read, video games to play, TV to watch and board games to play. I was able to do my studies on my laptop comfortably. There was also decent WiFi for browsing although I ended up using my phone's hotspot to watch Netflix in HD during dinner.
+There were some brief medical tests and blood and urine samples before getting independent time to do anything. The  lounge room had **a relaxed atmosphere** with books and newspapers to read, video games to play, TV to watch, and pool table and board games to play. There's even laundry services for longer studies! I was able to do my studies on my laptop comfortably. There was also decent WiFi for browsing although I ended up using my phone's hotspot to watch Netflix in HD during dinner.
 
 I noticed there are definitely **more men than women** in the centre. The women there were mostly past child-bearing age, except for one woman who must have been in her 20s. Apart from pregnancy, a reason why women are less prefered to men is because of having more hormonal changes which can skew results.
 
@@ -180,16 +180,16 @@ I thought I drank quite a bit of water but I should be drinking even more, and I
 
 ### Neutrophil
 
-I generally have a low neutrophil count and this is very likely for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
+I generally have a low (but still normal) count for [neutrophil](https://en.wikipedia.org/wiki/Neutrophil), the most abundant type of white blood cell, and this is very likely to happen for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
 
 ## Research units
 
-- PAREXEL
-- HMR
-- (Wales)
-- Imperial Centre for Translational and Experimental Medicine (relatively low pay compared to the above)
+- PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some [other global locations](https://www.parexel.com/company/volunteer))
+- [Hammersmith Medicines Research](http://www.hmrlondon.com/) (HMR)
+- [Simbec](http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
+- [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above)
 
-Some places will pay for screening too.
+Some units will pay for screening too.
 
 ## 2006 *TGN1412* incident
 
@@ -202,6 +202,7 @@ treat leukemia
 first in man
 
 £2,000
+3 nights
 12 outpatients
 
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The Safety, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers

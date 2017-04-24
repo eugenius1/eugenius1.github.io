@@ -83,7 +83,11 @@
   {% endif %}
   
   <!-- Twitter summary cards -->
+  {% if page.share-img-cannot-be-wide %}
+  <meta name="twitter:card" content="summary" />
+  {% else %}
   <meta name="twitter:card" content="summary_large_image" />
+  {% endif %}
   <meta name="twitter:site" content="@{{ site.author.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
