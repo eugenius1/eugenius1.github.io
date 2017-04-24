@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I did a clinical trial and survived
-subtitle: I received £,£££ and this is my experience
+subtitle: I received £,£££ and this is my experience!
 share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London (2017)"
@@ -9,13 +9,14 @@ sitemap:
   exclude: true
 ---
 
-**<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I found out about the world of clinical trials and what to anticipate as a volunteer. I discovered a bit more about my own body.
+**<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
 
 ---
 
+<a id="intro"></a>
 Last month, I successfully completed 8 weeks after being injected with a single dose of a study drug. This is the first brief I received before getting screened:
 
-> The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18-55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
+> The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is [[not](#safety)] a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18-55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
 
 But before we get started, let me take you back to how I got into clinical trials.
 
@@ -59,13 +60,14 @@ Full Study Title:
 
 The **main purpose** of the study is to compare how much of the drug is taken up, its distribution, how the drug is broken down and removed from the body when administered through the 2 different devices mentioned above. Another purpose is to see how safe it is, how well it is tolerated and if it causes an immune response (anti-drug antibodies).
 
-The trial took 17 weeks from the overnight stay to the last outpatient visit, with my screening being the week before the start. Volunteers are free to leave the study at any time and without any reason.
+The trial took 2 months from the overnight stay to the last outpatient visit, with my screening being the week before the start. Volunteers are free to leave the study at any time and without any reason. If you leave early you're partially compensated by the fraction of the time you've taken part.
 
 ## Safety
 
 > The efficacy and safety of benralizumab has been shown in **two large clinical trials** in patients that suffer from asthma.
 
-That's what was mentioned in the information document and is supported by [other sources](https://seekingalpha.com/news/3206982-astrazenecas-benralizumab-reduces-asthma-exacerbations-51-percent-two-late-state-studies). More than **2,000 patients** received benralizumab and it was shown that the drug reduces asthma exacerbations by up to 51% in two late-state studies.
+That's what was mentioned in the information document and is supported by [other sources](https://seekingalpha.com/news/3206982-astrazenecas-benralizumab-reduces-asthma-exacerbations-51-percent-two-late-state-studies). More than **2,000 patients** received benralizumab and it was shown that the drug reduces asthma exacerbations by up to 51% in two late-state studies. 
+I'm now realising the original [first brief](#intro) was wrong or at least ambiguous in saying this is a [*first time into man*](https://en.wikipedia.org/wiki/First-in-man_study) study.
 
 
 # Screening
@@ -90,7 +92,7 @@ Screening took about 2 hours or so and it was their way of assessing me for the 
 - Blood pressure
 - Blood samples (~97 mL)
 
-To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The trial's maximum volume taken doesn't exceed 470 mL. For this cohort of the study, my weight had to be strictly between 55.0 and 69.9 kg.
+To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The trial's maximum volume taken doesn't exceed 470 mL. For this cohort of the study, my weight had to be between 55.0 and 69.9 kg.
 
 I got dates for my overnight stay and outpatient visits during my screening and were part of the agreement to sign. 
 After successful screening, Parexel sent a request to my GP for my medical history. I had to pay my GP surgery for this to be sent but Parexel reimbursed me.
@@ -100,30 +102,25 @@ After successful screening, Parexel sent a request to my GP for my medical histo
 
 There is some restriction on what can be brought in before going in, mostly to stop external food and drink. Inside we got set meals which were really good; I have no complaints. Weirdly enough, everyone gets vegetarian meals on their first day. The first day and night of standardised meals prepared us to a baseline state, so to speak, before dosing.
 
-My cohort was the first for the study, at least in the UK. There were 5 of us and in the same ward. I was the youngest, at 21, with the other 4 men being in their 30s and one in his 40s. The eldest man told me that he has been doing one trial per year for about a decade!
+My cohort was the first for the study, at least in the UK. There were 5 of us and in the same ward. I was the youngest, at 21, with one man in his 40s and the rest in their 30s. The eldest man told me that he has been doing one trial per year for about a decade!
 
-brief physical examination
-weighed, vital signs measured
-blood and urine samples
+There were some brief medical tests and blood and urine samples before getting independent time to do anything. The common room had **a relaxed atmosphere** with books and newspapers to read, video games to play, TV to watch and board games to play. I was able to do my studies on my laptop comfortably. There was also decent WiFi for browsing although I ended up using my phone's hotspot to watch Netflix in HD during dinner.
 
-books and newspapers to read, video games to play, TV to watch and board games to play. There was also decent WiFi for browsing although I ended up using my hotspot to watch Netflix in HD.
+I noticed there are definitely **more men than women** in the centre. The women there were mostly past child-bearing age, except for one woman who must have been in her 20s. Apart from pregnancy, a reason why women are less prefered to men is because of having more hormonal changes which can skew results.
 
-more men than women. Women who do are mostly post child bearing age.
+Some were there for a trial involving heart-related medication and one was about to start one that restricted them from driving.
+That night I heard that **a man got ill** and was so bedridden that his food had to be brought to his bed. The nurses did take care of him but the study doctor hadn't been reached.
 
-man got ill, bed-ridden. His food was brought to his bed
+In the morning, one person from my cohort would be sent home as they are a **reserve** until the rest get dosed. 1 in 5 people end up being a reserve and the choice is usually based on medical test results. This reserve can go straight to be screened for another trial or the same trial but for another day. The reserve is paid **£225** for their time.
 
-In the morning, one of my cohort would be sent home as they are a reserve until the rest get dosed. 1 in 5 people end up being a reserve and the choice is usually based on medical test results. This reserve can go straight to be screened for another trial or the same trial but for another day. The reserve is paid for their time, **£225**.
+The study drug was injected with a random choice between the two devices and also randomly chosen into either left or right, of either the upper arm, abdomen or thigh. I got left upper arm and didn't feel much of a sting at all and neither did the others; blood sample injections had way more of a sting.
 
-The study drug was injected with a random choice between the two devices and also randomly chosen into either left or right, of either the upper arm, abdomen or thigh. I got left upper arm and didn't feel much of a sting at all; blood sample injections had more of a sting.
-
-vital signs measured, ECG
-
-We were given yellow cards to have on us at all times to present to any medical staff or use one of the phone numbers to reach the study doctor.
+We were given yellow cards to have on us at all times to present to any medical staff or use one of the phone numbers to reach the study doctor. I was injected at 8:44 am and was told to try to be at the outpatient visits for checkup at the same time, probably for scheduling purposes to avoid long queues.
 
 
 # Restrictions
 
-Any restrictions I list here should only be taken as examples since generally they'll vary between different trials and different research units. My restrictions during the trial, mostly until the last visit:
+Any restrictions I list here should only be taken as examples since generally they'll vary between different trials and different research units but most may be similar. My restrictions during the trial, mostly until the last visit:
 
 - no **medication** from 14 days before admission until the last visit, unless regular and prescribed
 - **only Paracetamol** for relief of pain and fever and after the Study Doctor's approval
@@ -136,41 +133,65 @@ Any restrictions I list here should only be taken as examples since generally th
 - as a **male**, use a barrier contraception and not donate sperm until 4 months after the last visit
 - **females** would need to have a negative pregnancy test, not be breastfeeding and must be unable to have children (eg. age reasons)
 
-The poppy seed restriction meant missing my beloved [seeded bread](http://www.warburtons.co.uk/products/bread/seeded/400g-seeded-batch-five-seeds) for 17 weeks or so. Other than that, my non-smoking, non-binge drinking habits and lack of caffeine had prepared me well for this trial's "restrictions".
+The poppy seed restriction meant missing my beloved [seeded bread](http://www.warburtons.co.uk/products/bread/seeded/400g-seeded-batch-five-seeds) for 11 weeks or so. Other than that, my non-smoking, non-binge drinking habits and lack of caffeine had prepared me well for this trial's "restrictions".
 
 
 # Outpatient visits
 
-<img src="/img/blog/2017/outpatient-morning-commute.jpg" alt="Commuting at 6:33 am through Acton, London." title="Snapchat" style="width: 50%;"/>
+<img class="golden-width" src="/img/blog/2017/outpatient-morning-commute.jpg" alt="Commuting at 6:33 am through Acton, London." title="Snapchat"/>
 
-restrictions
+My outpatients didn't have a scheduled time but I was supposed to be there before noon, with a strong preference towards the time I was dosed, according to the doctors. My commute was an hour each way and so I had to wake up pretty early on the first week to get to my morning lectures on time.
+
+There are some more restrictions I had to follow before going in for an outpatient visit:
 
 - no **alcohol** 72 hours before
-- no **caffeine or xanthine** 24 hours before and during admission
+- no **caffeine or xanthine** 24 hours before
 
+During one of my outpatients, there was **a man who decided to stop his trial**. He mentioned having problems with urinating and had just generally had enough; I believe this was pretty early through his trial. In my last outpatient, there was a man doing a trial and afraid of needles!
 
-man who stopped the trial. Problems with urinating
+The outpatient visit usually took less than 20 minutes:
 
-## End-of-treatment visit
-Man afraid of needles
+- they ask how you're feeling
+- oral body temperature
+- blood pressure
+- blood samples
+- occasional physical examination
+- occasional urine sample
+- occasional ECG
 
-cohort 11,
+The calendar below shows my dates for the 1-night stay, 9 outpatients and 3 **repeat blood samples**.
+After an outpatient, you might be recalled for another blood sample, mostly because they want to check an abnormal value they measure in your blood is just an anomaly and not an effect of the study drug.
+Twice I needed to repeat because I had a low [neutrophil](#neutrophil) count and once due to my potassium level being on the high side of normal.
+After the first repeat, you get compensated **£30** per repeat; I had 3 repeats so I got an extra £60.
+
+[![Calendar showing date commitments as well as 3 repeat blood sample dates.](/img/blog/2017/clinical-trial-calendar.png)](/raw/img/blog/2017/clinical-trial-calendar.png)
+
+I didn't realise at screening, but the dates I was given were perfect. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind.
 
 
 # What I discovered
 
-I'm quite a healthy man.
-neutrofill
-I need to be drinking a lot more water
+<img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through the morning amidst heavy mist during sunrise" title="Wembley Stadium"/>
 
-- Parexel
+## &hellip;about myself {#about-myself}
+
+I'm quite a healthy man, although I wouldn't go as far as claiming I have great fitness.
+I thought I drank quite a bit of water but I should be drinking even more, and I'm not just saying this because I had to drink a lot more because of blood samples.
+
+### Neutrophil
+
+I generally have a low neutrophil count and this is very likely for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
+
+## Research units
+
+- PAREXEL
 - HMR
 - (Wales)
 - Imperial Centre for Translational and Experimental Medicine (relatively low pay compared to the above)
 
 Some places will pay for screening too.
 
-## 2006 TGN1412 incident
+## 2006 *TGN1412* incident
 
 BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)
 
@@ -180,7 +201,7 @@ changed how medical trials are done
 treat leukemia
 first in man
 
-£2000
+£2,000
 12 outpatients
 
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The Safety, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers

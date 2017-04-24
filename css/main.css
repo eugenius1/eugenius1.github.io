@@ -607,3 +607,11 @@ https://gist.github.com/thebigreason/1296097 */
 a .fa-stack {
   color: #404040;
 }
+
+.golden-width {
+  width: 61.8%;
+}
+/* a height that will fit the screen height */
+.height-fits {
+  height: 500px;
+}
