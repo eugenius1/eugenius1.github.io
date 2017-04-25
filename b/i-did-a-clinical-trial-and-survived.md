@@ -1,7 +1,7 @@
 ---
 layout: post
-title: I did a clinical trial and survived
-subtitle: I received £,£££ and this is my experience!
+title: I did a Clinical Trial and this is my experience!
+subtitle: I was paid £,£££
 share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London (2017)"
@@ -151,7 +151,7 @@ During one of my outpatients, there was **a man who decided to stop his trial**.
 
 The outpatient visit usually took less than 20 minutes:
 
-- they ask how you're feeling
+- they ask how you're feeling, if there's any health changes
 - oral body temperature
 - blood pressure
 - blood samples
@@ -161,7 +161,7 @@ The outpatient visit usually took less than 20 minutes:
 
 The calendar below shows my dates for the 1-night stay, 9 outpatients and 3 **repeat blood samples**.
 After an outpatient, you might be recalled for another blood sample, mostly because they want to check an abnormal value they measure in your blood is just an anomaly and not an effect of the study drug.
-Twice I needed to repeat because I had a low [neutrophil](#neutrophil) count and once due to my potassium level being on the high side of normal.
+Twice I needed to repeat because I had a low [neutrophil](#about-myself) count and once due to my potassium level being on the high side of normal.
 After the first repeat, you get compensated **£30** per repeat; I had 3 repeats so I got an extra £60.
 
 [![Calendar showing date commitments as well as 3 repeat blood sample dates.](/img/blog/2017/clinical-trial-calendar.png)](/raw/img/blog/2017/clinical-trial-calendar.png)
@@ -178,18 +178,18 @@ I didn't realise at screening, but the dates I was given were perfect. Apart fro
 I'm quite a healthy man, although I wouldn't go as far as claiming I have great fitness.
 I thought I drank quite a bit of water but I should be drinking even more, and I'm not just saying this because I had to drink a lot more because of blood samples.
 
-### Neutrophil
-
+<a id="neutrophil"></a>
 I generally have a low (but still normal) count for [neutrophil](https://en.wikipedia.org/wiki/Neutrophil), the most abundant type of white blood cell, and this is very likely to happen for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
 
 ## Research units
 
-- PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some [other global locations](https://www.parexel.com/company/volunteer))
-- [Hammersmith Medicines Research](http://www.hmrlondon.com/) (HMR)
-- [Simbec](http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
-- [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above)
+Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too.
 
-Some units will pay for screening too.
+- PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some [other global locations](https://www.parexel.com/company/volunteer))
+- [Hammersmith Medicines Research (HMR)](http://www.hmrlondon.com/)
+- [Simbec](http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
+- [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above from what I've seen)
+
 
 ## 2006 *TGN1412* incident
 
@@ -205,10 +205,12 @@ first in man
 3 nights
 12 outpatients
 
-> A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The Safety, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
+> A **first-in-man** study to investigate the effects in healthy male volunteers of single doses of **a new
+drug** for the potential treatment of various inflammatory diseases.
 
-(A first-in-man study to investigate the effects in healthy male volunteers of single doses of a new
-drug for the potential treatment of various inflammatory diseases.)
+> A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The **Safety**, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
+
+
 (http://www.circare.org/foia5/tgn1412_consentform.pdf)
 
 approved by the government
@@ -249,6 +251,16 @@ man with 3 kids
 
 saved by another drug
 
----
+Dr Ganesh Suntharalingam, Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there, wrote his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event.
 
-Would I go back and do it again? Yes. Would I do it for a second time? Yes, depending on timing.
+# Conclusion
+
+Knowing what I know now, would I go back and do it again?
+
+> Yes.
+
+Would I do a second clinical trial?
+
+> Yes, depending on time requirements and my availability.
+
+If anything, **what has suprised you most from this article?** Comment below. If you've done a clinical trial before, comment on your experiences, especially if at a different research unit.

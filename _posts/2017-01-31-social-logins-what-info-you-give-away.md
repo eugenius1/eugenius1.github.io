@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Social Logins: What info you give away!"
+title: "Social Logins–What info you give away!"
 subtitle: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
 share-img: "http://eusebius.tech/img/blog/2017/social-logins-shareable.png"
 js:
