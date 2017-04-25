@@ -5,8 +5,6 @@ subtitle: I got £,£££
 share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London (2017)"
-sitemap:
-  exclude: true
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
@@ -23,7 +21,7 @@ But before we get started, let me take you back to how I got into clinical trial
 
 # Missed opportunity
 
-In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has potential for treating autoimmune diseases like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
+In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has potential for treating [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
 
 Some time later, I was invited for a screening and accepted to the trial subject to my <abbr title="General Practice">GP</abbr> sending my medical summary to Quintiles in time. This didn't happen. I had a good healthcare experience from my GP surgery at that time, Farnham Road Practice in Slough, but they have been poorly let down by very slow admin processing.
 
@@ -61,6 +59,7 @@ Full Study Title:
 The **main purpose** of the study is to compare how much of the drug is taken up, its distribution, how the drug is broken down and removed from the body when administered through the 2 different devices mentioned above. Another purpose is to see how safe it is, how well it is tolerated and if it causes an immune response (anti-drug antibodies).
 
 My participation in the study took 2 months from the overnight stay to the last outpatient visit, with my screening being the week before the start. Volunteers are free to leave the study at any time and without any reason. If you leave early you're partially compensated by the fraction of the *time* you've taken part, and not by the number of outpatients you've been to for example.
+
 
 ## Safety
 
@@ -168,10 +167,13 @@ After the first repeat, you get compensated **£30** per repeat; I had 3 repeats
 
 I didn't realise at screening, but the dates I was given were perfect. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind. If your commute time is long I would highly suggest you go for fewer outpatients and more nights in-house.
 
+Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Placebo) and no one will ever know if they are one of them. The fact is inside a sealed envelope that is only opened in medical emergencies to determine whether action should be taken. The outpatient nurses don't know if someone has been given a placebo so they treat everyone the same.
+
 
 # What I discovered
 
 <img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through the morning amidst heavy mist during sunrise" title="Wembley Stadium"/>
+
 
 ## &hellip;about myself {#about-myself}
 
@@ -182,6 +184,7 @@ I thought I drank quite a bit of water but I should be drinking even more, and I
 I generally have a low (but still normal) count for [neutrophil](https://en.wikipedia.org/wiki/Neutrophil), the most abundant type of white blood cell.
 This is very likely to happen for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
 
+
 ## Research units
 
 Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too.
@@ -191,11 +194,10 @@ Below are some of the units I've come across that run clinical trials. I've hear
 - [Simbec](http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
 - [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above from what I've seen)
 
-[placebo](https://en.wikipedia.org/wiki/Placebo)
 
 ## 2006 *TGN1412* incident
 
-While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat leukemia**. On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. It has changed how medical trials are done.
+While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat [leukemia](https://www.bupa.co.uk/health-information/directory/l/leukaemia "blood cancer")**. On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. It has changed how medical trials are done.
 
 The study drug was injected for the first time into humans after successful animal tests, human modelling and the government's approval. The volunteers were [agreeing](http://www.circare.org/foia5/tgn1412_consentform.pdf) to 3 nights and 12 outpatients before getting **£2,000**. The purpose of the study:
 
@@ -216,11 +218,13 @@ After **2 days**, they started feeling better simultaneously and almost miraculo
 It is thought that because they had no bad cells (cancer), their good cells were eaten away.
 
 What came in the investigations after, included **praise to the NHS** and Northwick Park Hospital. The fact that the trial was done in a major hospital with an ICU, gave them a much better chance of survival.
-The study was criticised for administering the study drug 10 times quicker into the bloodstream in the 6 humans than in monkeys during earlier animal trials, even though it was a much smaller effective volume. unpredictable biological action in human
+The study was criticised for administering the study drug 10 times quicker into the bloodstream in the 6 humans than in monkeys during earlier animal trials, even though it was a much smaller effective volume.
 
-An independent report made 22 recommendations to improve the safety of first-in-man studies internationally. Some of these have been implemented in the whole of Europe. **Clinical trials are now safer than any other time before**.
+An independent report made 22 recommendations to improve the safety of first-in-man studies internationally. Some of these have been implemented in the whole of Europe.
+**Clinical trials are now safer than at any other time before.**
 
 The first man to be injected is now married with **3 kids**. He is glad to have been saved by another drug and still values the importance of clinical trials.
+
 
 # Conclusion
 
