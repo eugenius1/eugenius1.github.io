@@ -1,7 +1,7 @@
 ---
 layout: post
-title: I did a Clinical Trial and this is my experience!
-subtitle: I was paid £,£££
+title: I did a Clinical Trial&mdash;and this is my experience!
+subtitle: I got £,£££
 share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London (2017)"
@@ -48,23 +48,23 @@ Fast-forward past this missed opportunity, I had a look at some other drug resea
 
 # Study details
 
-The trial I was part of is study 230172 run by [Parexel](https://en.wikipedia.org/wiki/PAREXEL) and sponsored by [AstraZeneca](https://en.wikipedia.org/wiki/AstraZeneca), the drug developer ([1](https://clinicaltrials.gov/ct2/show/NCT02968914))([2](https://www.smartpatients.com/trials/NCT02968914)). I was given a 19-page document with participant information and a consent document. Up to 180 participants will take part in this study. The study is also being run at another study centre in Germany
+The trial I was part of is study 230172 run by [Parexel](https://en.wikipedia.org/wiki/PAREXEL) and sponsored by [AstraZeneca](https://en.wikipedia.org/wiki/AstraZeneca), the drug developer ([1](https://clinicaltrials.gov/ct2/show/NCT02968914))([2](https://www.smartpatients.com/trials/NCT02968914)). I was given a 19-page document with participant information and a consent document. Up to 180 participants will take part in this study. The study is also being run at another study centre in Germany.
 
 **Simplified Study Title:**
 
-> **A Study in Healthy Volunteers to Compare the Absorption, Distribution, Metabolism and Excretion of Benralizumab when Administered using 2 Different Devices**
+> A Study in Healthy Volunteers to Compare the Absorption, Distribution, Metabolism and Excretion of Benralizumab when Administered using 2 Different Devices
 
 Full Study Title:
 
-> A Multicenter, Randomized, Open-Label Parallel Group Phase 1 Pharmocokenetic Comparability Study of Benralizumab Administered using Accessorized Pre-Filled Syringe (APFS) or Autoinjector (AI) in Healthy volunteers
+> A Multicenter, Randomized, Open-Label Parallel Group Phase 1 Pharmacokinetic Comparability Study of Benralizumab Administered using Accessorized Pre-Filled Syringe (APFS) or Autoinjector (AI) in Healthy volunteers
 
 The **main purpose** of the study is to compare how much of the drug is taken up, its distribution, how the drug is broken down and removed from the body when administered through the 2 different devices mentioned above. Another purpose is to see how safe it is, how well it is tolerated and if it causes an immune response (anti-drug antibodies).
 
-The trial took 2 months from the overnight stay to the last outpatient visit, with my screening being the week before the start. Volunteers are free to leave the study at any time and without any reason. If you leave early you're partially compensated by the fraction of the time you've taken part.
+My participation in the study took 2 months from the overnight stay to the last outpatient visit, with my screening being the week before the start. Volunteers are free to leave the study at any time and without any reason. If you leave early you're partially compensated by the fraction of the *time* you've taken part, and not by the number of outpatients you've been to for example.
 
 ## Safety
 
-> The efficacy and safety of benralizumab has been shown in **two large clinical trials** in patients that suffer from asthma.
+> The efficacy and safety of benralizumab have been shown in **two large clinical trials** in patients that suffer from asthma.
 
 That's what was mentioned in the information document and is supported by [other sources](https://seekingalpha.com/news/3206982-astrazenecas-benralizumab-reduces-asthma-exacerbations-51-percent-two-late-state-studies). More than **2,000 patients** received benralizumab and it was shown that the drug reduces asthma exacerbations by up to 51% in two late-state studies. 
 I'm now realising the original [first brief](#intro) was wrong or at least ambiguous in saying this is a [*first time into man*](https://en.wikipedia.org/wiki/First-in-man_study) study.
@@ -74,17 +74,17 @@ I'm now realising the original [first brief](#intro) was wrong or at least ambig
 
 Before getting screened, there are some requirements I had to meet before going in:
 
-- **fast** from food & drink (except water) for 8 hours before
+- **fast** from food & drink (except water) for the 8 hours before
 - no **alcohol** 72 hours before
 - no foods with **poppy seeds** 72 hours before and throughout the trial
 - not taken part in **a study** in the 3 months prior
 - no history of drinking more than 21 units of **alcohol** per week in the 12 weeks prior
-- not donated one or or more units nor had any other significant **loss of blood** in the 3 months prior
+- not donated one or more units nor had any other significant **loss of blood** in the 3 months prior
 - not donated plasma in the 1 month prior
 
 Fasting for 8 hours is not unreasonable, even more so considering screening and outpatients are usually in the mornings.
 
-Screening took about 2 hours or so and it was their way of assessing me for the requirements of the trial. I was in a small group with other volunteers screening when a study doctor talked to us in more detail. We then signed the consent form after getting the chance to ask questions. I answered a questionaire (smoking habits, alcohol consumption and such) before going through some physical assessments and sample collections:
+The screening took about 2 hours or so and it was their way of assessing me for the requirements of the trial. I was in a small group with other volunteers screening when a study doctor talked to us in more detail. We then signed the consent form after getting the chance to ask questions. I answered a questionnaire (smoking habits, alcohol consumption and such) before going through some physical assessments and sample collections:
 
 - Physical examination, including height and weight for calculating Body Mass Index
 - Urine sample
@@ -92,23 +92,23 @@ Screening took about 2 hours or so and it was their way of assessing me for the 
 - Blood pressure
 - Blood samples (~97 mL)
 
-To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The trial's maximum volume taken doesn't exceed 470 mL. For this cohort of the study, my weight had to be between 55.0 and 69.9 kg.
+To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The amount of blood collected varies but doesn't exceed 470 mL. For this cohort of the study, my weight had to strictly be between 55.0 and 69.9 kg, inclusive of both.
 
 I got dates for my overnight stay and outpatient visits during my screening and were part of the agreement to sign. 
-After successful screening, Parexel sent a request to my GP for my medical history. I had to pay my GP surgery for this to be sent but Parexel reimbursed me.
+After my successful screening, Parexel sent a request to my GP for my medical history. I had to pay my GP surgery for this to be sent but Parexel reimbursed me.
 
 
 # In-house stay
 
-There is some restriction on what can be brought in before going in, mostly to stop external food and drink. Inside we got set meals which were really good; I have no complaints. Weirdly enough, everyone gets vegetarian meals on their first day. The first day and night of standardised meals prepared us to a baseline state, so to speak, before dosing.
+There is some restriction on what can be brought in before going in, mostly to stop external food and drink. Inside we got **set meals** which were really good; I have no complaints. Weirdly enough, everyone gets vegetarian meals on their first day. The first day and night of standardised meals prepared us to a baseline state, so to speak, before dosing.
 
-My cohort was the first for the study, at least in the UK. There were 5 of us and in the same ward. I was the youngest, at 21, with one man in his 40s and the rest in their 30s. The eldest man told me that he has been doing one trial per year for about a decade!
+My cohort was the first for the study, at least in the UK. There were 5 of us and in the same ward. I was the youngest, at 21, with one man in his 40s and the rest in their 30s. The oldest man told me that he has been doing one trial per year for about a decade!
 
-There were some brief medical tests and blood and urine samples before getting independent time to do anything. The  lounge room had **a relaxed atmosphere** with books and newspapers to read, video games to play, TV to watch, and pool table and board games to play. There's even laundry services for longer studies! I was able to do my studies on my laptop comfortably. There was also decent WiFi for browsing although I ended up using my phone's hotspot to watch Netflix in HD during dinner.
+There were some brief medical tests and blood and urine samples before getting independent time to do anything. The lounge room had **a relaxed atmosphere** with books and newspapers to read, video games to play, TV and DVDs to watch, and a pool table and board games to play. There's even laundry service for longer studies. I was able to do my studies on my laptop comfortably. There was also decent WiFi for browsing although I ended up using my phone's hotspot to watch Netflix in HD during dinner.
 
-I noticed there are definitely **more men than women** in the centre. The women there were mostly past child-bearing age, except for one woman who must have been in her 20s. Apart from pregnancy, a reason why women are less prefered to men is because of having more hormonal changes which can skew results.
+I noticed there are definitely **more men than women** in the centre. The women there were mostly past child-bearing age, except for one woman who must have been in her 20s. Apart from pregnancy, a reason why women are less preferred to men is because of having more hormonal changes which can skew results.
 
-Some were there for a trial involving heart-related medication and one was about to start one that restricted them from driving.
+Some were there for a trial involving heart-related medication and two were about to start a trial that restricted them from driving.
 That night I heard that **a man got ill** and was so bedridden that his food had to be brought to his bed. The nurses did take care of him but the study doctor hadn't been reached.
 
 In the morning, one person from my cohort would be sent home as they are a **reserve** until the rest get dosed. 1 in 5 people end up being a reserve and the choice is usually based on medical test results. This reserve can go straight to be screened for another trial or the same trial but for another day. The reserve is paid **£225** for their time.
@@ -140,18 +140,18 @@ The poppy seed restriction meant missing my beloved [seeded bread](http://www.wa
 
 <img class="golden-width" src="/img/blog/2017/outpatient-morning-commute.jpg" alt="Commuting at 6:33 am through Acton, London." title="Snapchat"/>
 
-My outpatients didn't have a scheduled time but I was supposed to be there before noon, with a strong preference towards the time I was dosed, according to the doctors. My commute was an hour each way and so I had to wake up pretty early on the first week to get to my morning lectures on time.
+My outpatients didn't have a scheduled time but I was supposed to be there before noon, with a strong preference towards the time I was dosed, according to the doctors. My commute was an hour each way and so I had to wake up pretty early in the first week to get to my morning lectures on time. My **total commute time has been 26 hours** or so but I always took my laptop with me to do some work while on the train.
 
 There are some more restrictions I had to follow before going in for an outpatient visit:
 
 - no **alcohol** 72 hours before
 - no **caffeine or xanthine** 24 hours before
 
-During one of my outpatients, there was **a man who decided to stop his trial**. He mentioned having problems with urinating and had just generally had enough; I believe this was pretty early through his trial. In my last outpatient, there was a man doing a trial and afraid of needles!
+During one of my outpatients, there was **a man who decided to stop his trial**. He mentioned having problems with urinating and had just generally had enough; I believe this was pretty early in his trial. In my last outpatient, there was a man doing a trial and afraid of needles!
 
 The outpatient visit usually took less than 20 minutes:
 
-- they ask how you're feeling, if there's any health changes
+- they ask how you're feeling and if there are any health changes
 - oral body temperature
 - blood pressure
 - blood samples
@@ -166,7 +166,7 @@ After the first repeat, you get compensated **£30** per repeat; I had 3 repeats
 
 [![Calendar showing date commitments as well as 3 repeat blood sample dates.](/img/blog/2017/clinical-trial-calendar.png)](/raw/img/blog/2017/clinical-trial-calendar.png)
 
-I didn't realise at screening, but the dates I was given were perfect. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind.
+I didn't realise at screening, but the dates I was given were perfect. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind. If your commute time is long I would highly suggest you go for fewer outpatients and more nights in-house.
 
 
 # What I discovered
@@ -175,83 +175,52 @@ I didn't realise at screening, but the dates I was given were perfect. Apart fro
 
 ## &hellip;about myself {#about-myself}
 
-I'm quite a healthy man, although I wouldn't go as far as claiming I have great fitness.
+I'm **objectively quite healthy**, if not greatly, although I wouldn't go as far as claiming I have great fitness.
 I thought I drank quite a bit of water but I should be drinking even more, and I'm not just saying this because I had to drink a lot more because of blood samples.
 
 <a id="neutrophil"></a>
-I generally have a low (but still normal) count for [neutrophil](https://en.wikipedia.org/wiki/Neutrophil), the most abundant type of white blood cell, and this is very likely to happen for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
+I generally have a low (but still normal) count for [neutrophil](https://en.wikipedia.org/wiki/Neutrophil), the most abundant type of white blood cell.
+This is very likely to happen for (young, male) **Africans**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
 
 ## Research units
 
 Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too.
 
-- PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some [other global locations](https://www.parexel.com/company/volunteer))
+- PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some other [global locations](https://www.parexel.com/company/volunteer))
 - [Hammersmith Medicines Research (HMR)](http://www.hmrlondon.com/)
 - [Simbec](http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
 - [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above from what I've seen)
 
+[placebo](https://en.wikipedia.org/wiki/Placebo)
 
 ## 2006 *TGN1412* incident
 
-BBC Two [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3)
+While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat leukemia**. On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. It has changed how medical trials are done.
 
-2006
-8 men
-changed how medical trials are done
-treat leukemia
-first in man
-
-£2,000
-3 nights
-12 outpatients
+The study drug was injected for the first time into humans after successful animal tests, human modelling and the government's approval. The volunteers were [agreeing](http://www.circare.org/foia5/tgn1412_consentform.pdf) to 3 nights and 12 outpatients before getting **£2,000**. The purpose of the study:
 
 > A **first-in-man** study to investigate the effects in healthy male volunteers of single doses of **a new
 drug** for the potential treatment of various inflammatory diseases.
 
+Study Title:
+
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The **Safety**, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
 
+The 6 men's symptoms included hypothermia, loss of bowel control, migraines coming in waves and at least 4 of them with multiple organ failure. Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital (in the same building) where it now became the <abbr title="The UK's National Health Service">NHS</abbr>'s job to save their lives.
 
-(http://www.circare.org/foia5/tgn1412_consentform.pdf)
+The story caught on in the media at the time that they looked like the ["Elephant Man"](https://en.wikipedia.org/wiki/Joseph_Merrick) after a family member described what they saw. Dr Ganesh Suntharalingam (Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there) in his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event, wrote:
 
-approved by the government
+> In truth, it was not a specific symptom or effect of the drug, or some kind of explosive growth of the head. Critically ill people develop leaky blood vessels and shock, and the **large volume of fluid we give them in the first few hours causes temporary swelling** - most noticeable in the face. It gets better as they recover, but can look understandably upsetting to their friends and family.
 
-hypothermia
-loss of bowel control
-migraine in waves
+After **2 days**, they started feeling better simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**.
+It is thought that because they had no bad cells (cancer), their good cells were eaten away.
 
-2 days
-Feeling better simultaneously
+What came in the investigations after, included **praise to the NHS** and Northwick Park Hospital. The fact that the trial was done in a major hospital with an ICU, gave them a much better chance of survival.
+The study was criticised for administering the study drug 10 times quicker into the bloodstream in the 6 humans than in monkeys during earlier animal trials, even though it was a much smaller effective volume. unpredictable biological action in human
 
-7 days
-4 out of 6, out of ICU
+An independent report made 22 recommendations to improve the safety of first-in-man studies internationally. Some of these have been implemented in the whole of Europe. **Clinical trials are now safer than any other time before**.
 
-located at major hospital
-
-because they had no bad cells (cancer), their good cells were eaten away
-
-21 days
-Ryan still in ICU
-
-4 months
-part of fingers, feet amputated
-
-10 times quicker into the bloodstream in humans than in monkeys
-
-unpredictable biological action in human
-
-independent report made 22 recommendations to improve the safety of first-in-man
-internationally
-
-now safer than any oth
-
-within hosp with ICU
-whole of europe
-
-man with 3 kids
-
-saved by another drug
-
-Dr Ganesh Suntharalingam, Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there, wrote his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event.
+The first man to be injected is now married with **3 kids**. He is glad to have been saved by another drug and still values the importance of clinical trials.
 
 # Conclusion
 
@@ -263,4 +232,4 @@ Would I do a second clinical trial?
 
 > Yes, depending on time requirements and my availability.
 
-If anything, **what has suprised you most from this article?** Comment below. If you've done a clinical trial before, comment on your experiences, especially if at a different research unit.
+If anything, **what has surprised you the most from this article?** Comment below. If you've done a clinical trial before, comment on your experiences, especially if at a different research unit.
