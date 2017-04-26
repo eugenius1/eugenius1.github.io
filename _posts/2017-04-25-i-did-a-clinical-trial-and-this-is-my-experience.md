@@ -18,8 +18,11 @@ Last month, I successfully completed 8 weeks after being injected with a single 
 
 But before we get started, let me take you back to how I got into clinical trials.
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong> so you might want to scroll through the headings and bold text.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong> so you might want to scroll through the bold text.
+</div>
 
+- TOC
+{:toc}
 
 # Missed opportunity
 
