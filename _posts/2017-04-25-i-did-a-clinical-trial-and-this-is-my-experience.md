@@ -18,7 +18,8 @@ Last month, I successfully completed 8 weeks after being injected with a single 
 
 But before we get started, let me take you back to how I got into clinical trials.
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong> so you might want to scroll through the bold text.
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong> so you might want to scroll through the bold text.
 </div>
 
 - TOC
@@ -68,7 +69,7 @@ My participation in the study took 2 months from the overnight stay to the last 
 
 ## Safety
 
-> The efficacy and safety of benralizumab have been shown in **two large clinical trials** in patients that suffer from asthma.
+> The efficacy and safety of benralizumab have been shown in **two large clinical trials** in patients that suffer from [asthma](http://www.nhs.uk/conditions/Asthma/Pages/Introduction.aspx).
 
 That's what was mentioned in the information document and is supported by [other sources](https://seekingalpha.com/news/3206982-astrazenecas-benralizumab-reduces-asthma-exacerbations-51-percent-two-late-state-studies). More than **2,000 patients** received benralizumab and it was shown that the drug reduces asthma exacerbations (worsening) by up to 51% in two studies. 
 I'm now realising the original [first brief](#intro) was wrong or at least ambiguous in saying this is a [*first time into man*](https://en.wikipedia.org/wiki/First-in-man_study) study.
@@ -84,7 +85,7 @@ Before getting screened, there are some requirements I had to meet before going 
 - not taken part in **a study** in the 3 months prior
 - no history of drinking more than 21 units of **alcohol** per week in the 12 weeks prior
 - not donated one or more units nor had any other significant **loss of blood** in the 3 months prior
-- not donated blood **plasma** in the 1 month prior
+- not donated blood [**plasma**](https://www.blood.co.uk/why-give-blood/how-blood-is-used/blood-components/plasma/) in the 1 month prior
 
 Fasting for 8 hours is not unreasonable, even more so considering screening and outpatients are usually in the mornings.
 
@@ -242,7 +243,7 @@ Would I do a second clinical trial?
 > Yes, depending on time requirements and my availability.
 
 I got paid £1760 for a total of 31 hours in the unit (including lounge room time and 8 hours of sleep) and 26 hours of commuting. That's an insane hourly wage for a student.
-There is of course always some risk and it depends on the trial but to be fair, you perhaps have more risks by simply living in a big city (air pollution, violent crime) than by doing most trials.
-In the UK at least, how much you are paid depends on the time commitment and the medical assessments' intrusion and not by the health risk involved.
+There is of course always some risk and it depends on the trial but to be fair, you perhaps have more risk by simply living in a big city (air pollution, violent crime) than by doing most trials.
+In the UK at least, how much you are paid depends on the time commitment and the medical assessments' intrusion and *not* by the health risk involved.
 
 If anything, **what has surprised you the most from this article?** Comment below. If you've done a clinical trial before, comment on your experiences, especially if at a different research unit.

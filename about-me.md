@@ -175,4 +175,4 @@ Usually it's pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-
 
 # Contact
 
-You will find buttons below to email me or see my social network pages. My email address is [me@eusebius.tech](mailto:me@eusebius.tech).
+You will find buttons below to email me or see my social network pages. My email address is [me [at] eusebius [dot] tech](mailto:me@eusebius.tech).
