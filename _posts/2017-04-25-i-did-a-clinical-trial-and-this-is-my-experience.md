@@ -26,7 +26,7 @@ But before we get started, let me take you back to how I got into clinical trial
 
 # Missed opportunity
 
-In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has potential for treating [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
+In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has the potential to treat [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
 
 Some time later, I was invited for a screening and accepted to the trial subject to my <abbr title="General Practice">GP</abbr> sending my medical summary to Quintiles in time. This didn't happen. I had a good healthcare experience from my GP surgery at that time, Farnham Road Practice in Slough, but they have been poorly let down by very slow admin processing.
 
@@ -88,7 +88,7 @@ Before getting screened, there are some requirements I had to meet before going 
 
 Fasting for 8 hours is not unreasonable, even more so considering screening and outpatients are usually in the mornings.
 
-The screening took about 2 hours or so and it was their way of assessing me for the requirements of the trial. I was in a small group with other volunteers screening when a study doctor talked to us in more detail. We then signed the consent form after getting the chance to ask questions. I answered a questionnaire (smoking habits, alcohol consumption and such) before going through some physical assessments and sample collections:
+The screening took about 2 hours and it was their way of assessing me for the requirements of the trial. I was in a small group with other volunteers screening when a study doctor talked to us in more detail. We then signed the consent form after getting the chance to ask questions. I answered a questionnaire (smoking habits, alcohol consumption and such) before going through some physical assessments and sample collections:
 
 - Physical examination, including height and weight for calculating Body Mass Index
 - Urine sample
@@ -127,14 +127,14 @@ We were given yellow cards to have on us at all times to present to any medical 
 Any restrictions I list here should only be taken as examples since generally they'll vary between different trials and different research units but most may be similar. My restrictions during the trial, mostly until the last visit:
 
 - no **medication** from 14 days before admission until the last visit, unless regular and prescribed
-- **only Paracetamol** for relief of pain and fever and after the Study Doctor's approval
+- **only Paracetamol** for the relief of pain and fever and after the Study Doctor's approval
 - no more than 2 units of **alcohol** per day
 - no more than 3 cups of **caffeine** per day (1 cup = 250 mL of soda, 180 mL of coffee or 240 mL of tea)
 - no **high-energy drinks**, such as Red Bull
 - no foods with **poppy seeds**
 - no **nicotine**-containing products, such as tobacco and nicotine plasters
 - not donate **blood or plasma** until 3 months after the last visit
-- as a **male**, use a barrier contraception and not donate sperm until 4 months after the last visit
+- as a **male**, use a barrier contraception (eg. condom) and not donate sperm until 4 months after the last visit
 - **females** would need to have a negative pregnancy test, not be breastfeeding and must be unable to have children (eg. age reasons)
 
 The poppy seed restriction meant missing my beloved [seeded bread](http://www.warburtons.co.uk/products/bread/seeded/400g-seeded-batch-five-seeds) for 11 weeks or so. Other than that, my non-smoking, non-binge drinking habits and lack of caffeine had prepared me well for this trial's "restrictions".
@@ -170,9 +170,9 @@ After the first repeat, you get compensated **£30** per repeat; I had 3 repeats
 
 [![Calendar showing date commitments as well as 3 repeat blood sample dates.](/img/blog/2017/clinical-trial-calendar.png)](/raw/img/blog/2017/clinical-trial-calendar.png)
 
-I didn't realise at screening, but the dates I was given were perfect. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind. If your commute time is long I would highly suggest you go for fewer outpatients and more nights in-house.
+I didn't realise at screening, but the dates I was given were perfect for me. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays, which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind. If your commute time is long I would highly suggest you go for fewer outpatients and more nights in-house.
 
-Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Placebo) and no one will ever know if they are one of them. The fact is inside a sealed envelope that is only opened in medical emergencies to determine whether action should be taken. The outpatient nurses don't know if someone has been given a placebo so they treat everyone the same.
+Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Placebo) and no one will ever know if they are one of them, even after the study finishes. The fact is inside a sealed envelope that is only opened in medical emergencies to determine whether action should be taken. The outpatient nurses don't know if someone has been given a placebo so they treat everyone the same. The **nurses** at Parexel were very friendly and caring.
 
 
 # What I discovered
@@ -192,7 +192,7 @@ This is very likely to happen to (young, male) people of **African descent**, as
 
 ## Research units
 
-Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too.
+Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too. I've heard HMR has a very professional and timely administration.
 
 - PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some other [global locations](https://www.parexel.com/company/volunteer))
 - [Hammersmith Medicines Research (HMR)](http://www.hmrlondon.com/)
@@ -202,7 +202,7 @@ Below are some of the units I've come across that run clinical trials. I've hear
 
 ## 2006 *TGN1412* incident
 
-While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat [leukemia](https://www.bupa.co.uk/health-information/directory/l/leukaemia)** (blood cancer). On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. Since then, it has changed how medical trials are done.
+While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat [leukaemia](https://www.bupa.co.uk/health-information/directory/l/leukaemia)** (blood cancer). On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. Since then, it has changed how medical trials are done.
 
 The study drug was injected for the first time into humans after successful animal tests, human modelling and the government's approval. The volunteers were [agreeing](http://www.circare.org/foia5/tgn1412_consentform.pdf) to 3 nights and 12 outpatients before getting **£2,000**. The purpose of the study:
 
@@ -213,13 +213,13 @@ Study Title:
 
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The **Safety**, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
 
-The 6 men's symptoms included [hypothermia](http://www.mayoclinic.org/diseases-conditions/hypothermia/basics/definition/con-20020453), [loss of bowel control](http://www.nhs.uk/conditions/incontinence-bowel/Pages/Introduction.aspx), migraines coming in waves and at least 4 of them with multiple organ failure. Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital (in the same building) where it now became the <abbr title="The UK's National Health Service">NHS</abbr>'s job to save their lives.
+The 6 men's symptoms included [hypothermia](http://www.mayoclinic.org/diseases-conditions/hypothermia/basics/definition/con-20020453), [loss of bowel control](http://www.nhs.uk/conditions/incontinence-bowel/Pages/Introduction.aspx), [migraines](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) coming in waves and at least 4 of them with [multiple organ failure](https://en.wikipedia.org/wiki/Multiple_organ_dysfunction_syndrome). Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital (in the same building) where it now became the <abbr title="The UK's National Health Service">NHS</abbr>'s job to save their lives.
 
 The story caught on in the media at the time that they looked like the ["Elephant Man"](https://en.wikipedia.org/wiki/Joseph_Merrick) after a family member described what they saw. Dr Ganesh Suntharalingam (Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there) in his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event, wrote:
 
 > In truth, it was not a specific symptom or effect of the drug, or some kind of explosive growth of the head. Critically ill people develop leaky blood vessels and shock, and the **large volume of fluid we give them in the first few hours causes temporary swelling** - most noticeable in the face. It gets better as they recover, but can look understandably upsetting to their friends and family.
 
-After **2 days**, they started feeling better simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**.
+After **2 days**, they started **feeling better** simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**.
 It is thought that because they had no bad cells (cancer), their good cells were eaten away.
 
 What came in the investigations after, included **praise to the NHS** and Northwick Park Hospital. The fact that the trial was done in a major hospital with an ICU, gave them a much better chance of survival.
@@ -240,5 +240,9 @@ Knowing what I know now, would I go back and do it again?
 Would I do a second clinical trial?
 
 > Yes, depending on time requirements and my availability.
+
+I got paid £1760 for a total of 31 hours in the unit (including lounge room time and 8 hours of sleep) and 26 hours of commuting. That's an insane hourly wage for a student.
+There is of course always some risk and it depends on the trial but to be fair, you perhaps have more risks by simply living in a big city (air pollution, violent crime) than by doing most trials.
+In the UK at least, how much you are paid depends on the time commitment and the medical assessments' intrusion and not by the health risk involved.
 
 If anything, **what has surprised you the most from this article?** Comment below. If you've done a clinical trial before, comment on your experiences, especially if at a different research unit.

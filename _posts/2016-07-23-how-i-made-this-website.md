@@ -14,6 +14,9 @@ Why bother making a website?
 For me, this website is my own personal space on the web that I'm in control of. I can quickly link anyone to pages like [eusebius.tech/uber](/uber "Free Uber ride"). 
 The bare minimum to having your own website is finding a place to host it and adding your content. Most people go for blogging services like WordPress but I wanted more than just a blog.
 
+- TOC
+{:toc}
+
 # Website domain name
 
 I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. *Shortness vs Reliability*. There were three contenders and in the end, I settled on the middle ground that is `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
