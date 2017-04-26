@@ -1,5 +1,5 @@
 ---
 layout: redirect
-to: /aboutme
+to: /about-me
 title: About Me
 ---

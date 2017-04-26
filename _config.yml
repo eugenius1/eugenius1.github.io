@@ -25,7 +25,7 @@ description: Personal website of Eusebius Ngemera, including a blog of technolog
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about-me"
   Projects: "projects"
   Blog: "blog"
   CV: "cv"

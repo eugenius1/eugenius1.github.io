@@ -1,5 +1,5 @@
 ---
 layout: redirect
-to: /aboutme#contact
+to: /about-me#contact
 title: Contact
 ---
