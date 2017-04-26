@@ -130,7 +130,7 @@ The code to gather and display your info on this page only runs on your machine 
 My experience with social logins has come from doing web development at a startup during my last summer holiday. When a user logs in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, frameworks should always be embraced, for example [*python-social-auth*](http://python-social-auth-docs.readthedocs.io/en/latest/).
 
 I would have added a demo for Twitter login but [Twitter's API](https://dev.twitter.com/web/sign-in/implementing) requires OAuth authentication with every API request. This requires the use of the API secret key, which restricts the action from being purely client-side. 
-Facebook and Google on the other hand, provide web-login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be perfomed only on the client. 
+Facebook and Google on the other hand, provide web-login JavaScript <abbr title="Software Development Kits">SDKs</abbr> that can be performed only on the client. 
 HTML with client-side JavaScript code for the two logins above are available on [GitHub](https://github.com/eugenius1/social-login-demos "social-login-demos").
 
 Thanks for reading and, as always, please let me know if you spot something broken.

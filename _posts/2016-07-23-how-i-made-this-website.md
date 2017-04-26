@@ -16,15 +16,15 @@ The bare minimum to having your own website is finding a place to host it and ad
 
 # Website domain name
 
-I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. *Shortness vs Reliability*. There were three contenders and in the end I settled on the middle ground and that's `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
+I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. *Shortness vs Reliability*. There were three contenders and in the end, I settled on the middle ground that is `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
 
-You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y "$2 discount link"). Other reputable registrars exist ([name.com](https://www.name.com/), [GoDaddy](https://www.godaddy.com/), [namecheap](https://www.namecheap.com/)) but I chose hover because they offer free *Whois* privacy and my total cost for the first year was less than US $14. The first year price was heavily discounted, compared to $55 for the second year. You can [donate](/donate "Donate to Eusebius.Tech") towards a renewal.
+You buy a domain name from a registrar; I bought mine from [hover.com](https://hover.com/Yiflhr2y "$2 discount link"). Other reputable registrars exist ([name.com](https://www.name.com/), [GoDaddy](https://www.godaddy.com/), [Namecheap](https://www.namecheap.com/)) but I chose hover because they offer free *Whois* privacy and my total cost for the first year was less than US $14. The first year price was heavily discounted, compared to $55 for the second year. You can [donate](/donate "Donate to Eusebius.Tech") towards a renewal.
 
 `.tech` has the premium annual price of $49.99 but other usual top-level domains like `.com` ($14.99) and `.co.uk` ($9.99) mostly cost far less.
 
 ![Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which costs $5 per year. An ICANN fee of $0.18 makes the total $55.17.](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
-*Whois* is a service that gives you information about the registered user of domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](http://www.whois.com/whois/eusebius.tech).
+*Whois* is a service that gives you information about the registered user of a domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](http://www.whois.com/whois/eusebius.tech).
 
 # Hosting
 
@@ -32,7 +32,7 @@ Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](htt
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.
 
-The screenshot belows shows the <abbr title="Domain Name System">DNS</abbr> Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/).
+The screenshot below shows the <abbr title="Domain Name System">DNS</abbr> Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/).
 
 ![5 entries in the DNS records.](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
@@ -99,6 +99,6 @@ Bullet list:
 A [link](http://example.com).
 ```
 
-Of course, you could use *Microsoft Word* or another word processor to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure, is that Markdown is quicker to pickup than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
+Of course, you could use *Microsoft Word* or another word processor to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure is that Markdown is quicker to pick up than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
 
 Comment below on your experiences of making your own website. Did you use WordPress? If you're following this as a guide, feel free to get in touch for any clarifications.
