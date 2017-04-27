@@ -19,7 +19,7 @@ Last month, I successfully completed 8 weeks after being injected with a single 
 But before we get started, let me take you back to how I got into clinical trials.
 
 <div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong> so you might want to scroll through the bold text.
+<i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong>. Key points are in <strong>bold</strong>.
 </div>
 
 - TOC
@@ -95,7 +95,7 @@ The screening took about 2 hours and it was their way of assessing me for the re
 - Urine sample
 - [Electrocardiogram](http://www.nhs.uk/Conditions/electrocardiogram/Pages/Introduction.aspx) (ECG)
 - Blood pressure
-- Blood samples (~97 mL)
+- Blood samples (~97 <abbr title="millilitres">mL</abbr>)
 
 To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The amount of blood collected varies but doesn't exceed 470 mL. For this cohort of the study, my weight had to strictly be between 55.0 and 69.9 kg, inclusive of both.
 
@@ -178,7 +178,7 @@ Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Place
 
 # What I discovered
 
-<img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through the morning amidst heavy mist during sunrise" title="Wembley Stadium"/>
+<img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through heavy mist with the sunrise in view" title="Wembley Stadium"/>
 
 
 ## &hellip;about myself {#about-myself}
