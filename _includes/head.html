@@ -1,24 +1,22 @@
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
   <title>
     {% if page.title_html %}
       {{ page.title_html }} | {{ site.title }}
+    {% elsif page.title %}
+      {{ page.title }} | {{ site.title }}
     {% else %}
-      {% if page.title %}
-        {{ page.title }} | {{ site.title }}
-      {% else %}
-        {{ site.title }} | {{ site.title }}
-      {% endif %}
+      {{ site.title }}
     {% endif %}
   </title>
 
   <meta name="author" content="{{ site.author.name }}" />
   
   {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
+  <meta name="description" content="{{ page.subtitle }}" />
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -62,11 +60,11 @@
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   {% if page.meta-description %}
-  <meta property="og:description" content="{{ page.meta-description }}">
+  <meta property="og:description" content="{{ page.meta-description }}" />
   {% elsif page.subtitle %}
-  <meta property="og:description" content="{{ page.subtitle }}">
+  <meta property="og:description" content="{{ page.subtitle }}" />
   {% else %}
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}" />
   {% endif %}
   <meta property="og:type" content="website" />
   {% if page.id %}
@@ -92,7 +90,7 @@
   <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   {% if page.subtitle %}
-  <meta name="twitter:description" content="{{ page.subtitle }}">
+  <meta name="twitter:description" content="{{ page.subtitle }}" />
   {% else %}
   <!--{{ page.content | strip_html | xml_escape | truncatewords: 50 }}" />-->
   {% endif %}
@@ -104,6 +102,6 @@
 
   <!-- Social App IDs -->
   <meta property="fb:app_id" content="1009749102479073" /> 
-  <meta name="google-signin-client_id" content="902472055956-1bc5mtd9j8tro5rn3p7d9cjp05dsm4si.apps.googleusercontent.com">
+  <meta name="google-signin-client_id" content="902472055956-1bc5mtd9j8tro5rn3p7d9cjp05dsm4si.apps.googleusercontent.com" />
   
 </head>

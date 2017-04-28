@@ -11,7 +11,7 @@ My name is Eusebius Ngemera. I have the following qualities:
 
 - I survived chicken pox at the age of 17
 - Electrical & Electronic Engineering student at Imperial College London
-- My favourite programming language is Python
+- My favourite programming language is currently Python
 
 What else do you need?
 
