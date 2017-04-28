@@ -178,7 +178,7 @@ Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Place
 
 # What I discovered
 
-<img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through heavy mist with the sunrise in view" title="Wembley Stadium"/>
+<img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through heavy mist with the sunrise in view." title="Wembley Stadium"/>
 
 
 ## &hellip;about myself {#about-myself}

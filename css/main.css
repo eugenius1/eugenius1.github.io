@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
+  font-size: 18px; /* copied to .social-share a.twitter */
   color: #404040;
   position: relative;
   background: #FFF;
@@ -570,6 +570,11 @@ https://gist.github.com/thebigreason/1296097 */
 
   /* This gets Google to fall into place */
   font-size: 1px;
+}
+/* DIRTY: This gets Twitter text to body size when there's no rendered button */
+.social-share a.twitter-share-button,
+.social-share noscript {
+  font-size: 18px;
 }
 
 /* This gets Facebook to fall into place */

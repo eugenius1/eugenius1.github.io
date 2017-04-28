@@ -7,17 +7,13 @@
     <script>
       window.location = "{{ page.to }}";
     </script>
-    <noscript>
-      <a href="{{ page.to }}">Click here to go to 
-        {% if page.title %}
-          <em>{{ page.title }}</em>
-        {% else%}
-          the redirected page
-        {% endif %}.
-       </a>
-    </noscript>
   </head>
   <body>
+    <noscript>
+      <a href="{{ page.to }}">
+      Click here to go to {% if page.title %}<em>{{ page.title }}</em>{% else %}the redirected page{% endif %}.
+      </a>
+    </noscript>
     {{ content }}
   </body>
 </html>
