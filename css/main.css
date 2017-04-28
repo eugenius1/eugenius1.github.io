@@ -574,14 +574,14 @@ https://gist.github.com/thebigreason/1296097 */
 /* DIRTY: This gets Twitter text to body size when there's no rendered button */
 .social-share a.twitter-share-button,
 .social-share noscript {
-  font-size: 18px;
+  font-size: 18px; /* fallback for Internet Explorer 11 and earlier */
+  font-size: initial;
 }
 
 /* This gets Facebook to fall into place */
 .social-share iframe {
   vertical-align: middle;
 }
-
 /* Set an optional width for your button wrappers */
 .social-share div,
 .social-share span {
@@ -595,11 +595,9 @@ https://gist.github.com/thebigreason/1296097 */
 .social-share .twitter {
   padding-right: 30px;
 }
-
 .social-share .facebook {
   padding-right: 40px;
 }
-
 .social-share .linkedin {
   /* padding: 0 1px; */
   text-align: left;
@@ -612,6 +610,8 @@ https://gist.github.com/thebigreason/1296097 */
 a .fa-stack {
   color: #404040;
 }
+
+/* --- Other additions --- */
 
 .golden-width {
   width: 61.8%;
