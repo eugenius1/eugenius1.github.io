@@ -605,10 +605,25 @@ https://gist.github.com/thebigreason/1296097 */
   width: 110px; */
 }
 
+/* --- Table of Contents --- */
+
+ul#markdown-toc:before {
+  content: "Coming up:";
+}
+ul#markdown-toc {
+/* small */
+  font-size: 85%;
+/* panel panel-default */
+  border: 1px solid transparent;
+  border-color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
 /* --- Fixes --- */
 
 a .fa-stack {
-  color: #404040;
+  color: #404040; /* matches footer a */
 }
 
 /* --- Other additions --- */
