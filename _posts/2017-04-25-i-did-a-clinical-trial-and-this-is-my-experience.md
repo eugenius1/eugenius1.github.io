@@ -174,7 +174,7 @@ After the first repeat, you get compensated **£30** per repeat; I had 3 repeats
 
 I didn't realise at screening, but the dates I was given were perfect for me. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays, which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind. If your commute time is long I would highly suggest you go for fewer outpatients and more nights in-house.
 
-Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Placebo) and no one will ever know if they are one of them, even after the study finishes. The fact is inside a sealed envelope that is only opened in medical emergencies to determine whether action should be taken. The outpatient nurses don't know if someone has been given a placebo so they treat everyone the same. The **nurses** at Parexel were very friendly and caring.
+Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Placebo) and no one will ever know if they are one of them, even after the study finishes. They say the fact is inside a sealed envelope that is only opened in medical emergencies to determine whether special measures should be taken. The outpatient nurses don't know if someone has been given a placebo so they treat everyone the same. The **nurses** at Parexel were very friendly and caring.
 
 
 # What I discovered
@@ -224,7 +224,7 @@ The story caught on in the media at the time that they looked like the ["Elephan
 After **2 days**, they started **feeling better** simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**.
 It is thought that because they had no bad cells (cancer), their good cells were eaten away.
 
-What came in the investigations after, included **praise to the NHS** and Northwick Park Hospital. The fact that the trial was done in a major hospital with an ICU, gave them a much better chance of survival.
+What came in the investigations after included **praise to the NHS** and Northwick Park Hospital. The fact that the trial was done in a major hospital with an ICU, gave them a much better chance of survival.
 The study was criticised for administering the study drug 10 times quicker into the bloodstream of the 6 humans than into monkeys during earlier animal trials, even though the men effectively got a much smaller volume.
 
 An independent report made 22 recommendations to improve the safety of first-in-man studies internationally. Some of these have been implemented in the whole of Europe.
