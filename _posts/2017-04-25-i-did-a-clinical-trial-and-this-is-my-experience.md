@@ -14,7 +14,7 @@ bigimg:
 <a id="intro"></a>
 Last month, I completed 8 weeks of a clinical study without any health changes after being injected with a single dose of a study drug. This is the first brief I got before being screened:
 
-> The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is [[not](#safety)] a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18-55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
+> The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is [[not](#safety)] a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18&ndash;55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
 
 But before we get started, let me take you back to how I got into clinical trials.
 
@@ -98,7 +98,7 @@ The screening took about 2 hours and it was their way of assessing me for the re
 - Blood pressure
 - Blood samples (~97 <abbr title="millilitres">mL</abbr>)
 
-To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The amount of blood collected varies but doesn't exceed 470 mL. For this cohort of the study, my weight had to strictly be between 55.0 and 69.9 kg, inclusive of both.
+To put 97 mL of blood into perspective, 470 mL is given in a single donation at the Blood Transfusion Service. The amount of blood collected varies but doesn't exceed 470 mL. For this cohort of the study, my weight had to strictly be in the range 55.0&ndash;69.9 kg.
 
 I got dates for my overnight stay and outpatient visits during my screening and were part of the agreement to sign. 
 After my successful screening, Parexel sent a request to my GP for my medical history. I had to pay my GP surgery for this to be sent but Parexel reimbursed me.
@@ -219,7 +219,7 @@ The 6 men's symptoms included [hypothermia](http://www.mayoclinic.org/diseases-c
 
 The story caught on in the media at the time that they looked like the ["Elephant Man"](https://en.wikipedia.org/wiki/Joseph_Merrick) after a family member described what they saw. Dr Ganesh Suntharalingam (Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there) in his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event, wrote:
 
-> In truth, it was not a specific symptom or effect of the drug, or some kind of explosive growth of the head. Critically ill people develop leaky blood vessels and shock, and the **large volume of fluid we give them in the first few hours causes temporary swelling** - most noticeable in the face. It gets better as they recover, but can look understandably upsetting to their friends and family.
+> In truth, it was not a specific symptom or effect of the drug, or some kind of explosive growth of the head. Critically ill people develop leaky blood vessels and shock, and the **large volume of fluid we give them in the first few hours causes temporary swelling**&mdash;most noticeable in the face. It gets better as they recover, but can look understandably upsetting to their friends and family.
 
 After **2 days**, they started **feeling better** simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**.
 It is thought that because they had no bad cells (cancer), their good cells were eaten away.
