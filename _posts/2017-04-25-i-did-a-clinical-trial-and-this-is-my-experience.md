@@ -14,7 +14,7 @@ bigimg:
 <a id="intro"></a>
 Last month, I completed 8 weeks of a clinical study without any health changes after being injected with a single dose of a study drug. This is the first brief I got before being screened:
 
-> The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is [[not](#safety)] a first time into man study. This study consists of **1 night in–house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18&ndash;55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
+> The study drug being developed in this study is a compound called benralizumab for the **treatment of asthma**. This is [[not](#safety)] a first time into man study. This study consists of **1 night in-house and 9 outpatients visits**. We are looking for **healthy male** volunteers (aged 18&ndash;55). Volunteers must be non-smokers for at least 3 months prior to screening. The inconvenience allowance for this study is **£1,700**.
 
 But before we get started, let me take you back to how I got into clinical trials.
 
@@ -28,9 +28,9 @@ But before we get started, let me take you back to how I got into clinical trial
 
 # Missed opportunity
 
-In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has the potential to treat [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
+In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">Tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has the potential to treat [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
 
-Some time later, I was invited for a screening and accepted to the trial subject to my <abbr title="General Practice">GP</abbr> sending my medical summary to Quintiles in time. This didn't happen. I had a good healthcare experience from my GP surgery at that time, Farnham Road Practice in Slough, but they have been poorly let down by very slow admin processing.
+Some time later, I was invited for a screening and accepted to the trial subject to my General Practice (GP) sending my medical summary to Quintiles in time. This didn't happen. I had a good healthcare experience from my GP surgery at that time, Farnham Road Practice in Slough, but they have been poorly let down by very slow admin processing.
 
 Fast-forward past this missed opportunity, I had a look at some other drug research units and subscribed to Parexel's email and SMS notifications. The table below is a 7-month summary of trials available before I chose one.
 
@@ -215,7 +215,7 @@ Study Title:
 
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The **Safety**, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
 
-The 6 men's symptoms included [hypothermia](http://www.mayoclinic.org/diseases-conditions/hypothermia/basics/definition/con-20020453), [loss of bowel control](http://www.nhs.uk/conditions/incontinence-bowel/Pages/Introduction.aspx), [migraines](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) coming in waves and at least 4 of them with [multiple organ failure](https://en.wikipedia.org/wiki/Multiple_organ_dysfunction_syndrome). Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital (in the same building) where it now became the <abbr title="The UK's National Health Service">NHS</abbr>'s job to save their lives.
+The 6 men's symptoms included [hypothermia](http://www.mayoclinic.org/diseases-conditions/hypothermia/basics/definition/con-20020453), [loss of bowel control](http://www.nhs.uk/conditions/incontinence-bowel/Pages/Introduction.aspx), [migraines](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) coming in waves and at least 4 of them with [multiple organ failure](https://en.wikipedia.org/wiki/Multiple_organ_dysfunction_syndrome). Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital&mdash;in the same building&mdash;where it now became the job of the National Health Service (NHS) to save their lives.
 
 The story caught on in the media at the time that they looked like the ["Elephant Man"](https://en.wikipedia.org/wiki/Joseph_Merrick) after a family member described what they saw. Dr Ganesh Suntharalingam (Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there) in his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event, wrote:
 

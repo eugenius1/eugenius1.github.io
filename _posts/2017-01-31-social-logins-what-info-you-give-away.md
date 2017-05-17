@@ -10,7 +10,7 @@ js:
 
 **Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will *not* be handled by a Eusebius.Tech server and therefore **never stored here**.
 
-The scenario: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
+*The scenario*: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 

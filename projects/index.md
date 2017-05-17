@@ -12,21 +12,21 @@ Some of my public projects:
 `#Jekyll`
 
 - [Social Login Demos](http://eusebius.tech/social-login-demos/)  
-`#JavaScript` `#WebAPIs` `#Bootstrap`
+`#JavaScript` `#webAPIs` `#Bootstrap`
 
 - [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter  
-`#Embedded` `#microPython` `#WebClient`
+`#embedded` `#microPython` `#WebClient`
 
 - [Brushless DC Motor Controller](https://github.com/eugenius1/esys-cw2 "EE3: Embedded Systems")  
 `#mbed` `#threaded` `#RTOS`
 
 - [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing")  
-`#DSP` `#Embedded` `#C`
+`#DSP` `#embedded` `#C`
 
 - [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle")  
-`#Hackathon` `#Qt`
+`#hackathon` `#Qt` `#Arduino`
 
-- [Udacity CS101](https://github.com/eugenius1/Udacity-CS101): Intro to Computer Science  
+- [Udacity CS101](https://github.com/eugenius1/Udacity-CS101): Intro to Computer Science, includes a Gamer's network  
 `#Python`
 
 # Contributions
