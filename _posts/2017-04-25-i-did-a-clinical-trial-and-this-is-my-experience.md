@@ -4,7 +4,7 @@ title: I did a Clinical Trial&mdash;and this is my experience!
 subtitle: I got £,£££
 share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
-  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London (2017)"
+  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London, UK (2017)"
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
@@ -221,7 +221,7 @@ The story caught on in the media at the time that they looked like the ["Elephan
 
 > In truth, it was not a specific symptom or effect of the drug, or some kind of explosive growth of the head. Critically ill people develop leaky blood vessels and shock, and the **large volume of fluid we give them in the first few hours causes temporary swelling**&mdash;most noticeable in the face. It gets better as they recover, but can look understandably upsetting to their friends and family.
 
-After **2 days**, they started **feeling better** simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**.
+After **2 days**, they started **feeling better** simultaneously and almost miraculously. After 7 days, 4 out of 6 were out of ICU. After 21 days, one man was still in ICU. After 4 months, this man sadly had **part of his fingers and toes amputated**. [Images](https://www.google.co.uk/search?tbm=isch&q=TGN1412+fingers+OR+toes) are graphic.
 It is thought that because they had no bad cells (cancer), their good cells were eaten away.
 
 What came in the investigations after included **praise to the NHS** and Northwick Park Hospital. The fact that the trial was done in a major hospital with an ICU, gave them a much better chance of survival.
@@ -243,7 +243,7 @@ Would I do a second clinical trial?
 
 > Yes, depending on time requirements and my availability.
 
-I got paid £1760 for a total of 31 hours in the unit (including lounge room time and 8 hours of sleep) and 26 hours of commuting. That's an insane hourly wage for a student.
+I got paid £1,760 for a total of 31 hours in the unit (including lounge room time and 8 hours of sleep) and 26 hours of commuting. That's an insane hourly wage for a student.
 There is of course always some risk and it depends on the trial but to be fair, you perhaps have more risk by simply living in a big city (air pollution, violent crime) than by doing most trials.
 In the UK at least, how much you are paid depends on the time commitment and the medical assessments' intrusion and *not* by the health risk involved.
 
