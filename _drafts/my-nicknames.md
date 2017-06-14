@@ -10,3 +10,8 @@ Chubius
 Eus
 Sebi
 Usabius
+Xavier (Professor X)
+Sebby
+Eus
+Yus
+Hughes

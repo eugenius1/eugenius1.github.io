@@ -10,7 +10,7 @@ sitemap:
 
 Project Supervisor: [Prof. George A. Constantinides](http://cas.ee.ic.ac.uk/people/gac1/)
 
-Full report will appear here on 21<sup>st</sup> June 2017.
+Full report will appear here on 27<sup>th</sup> June 2017.
 
 # Abstract
 
