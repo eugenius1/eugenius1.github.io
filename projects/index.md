@@ -11,11 +11,14 @@ Some of my public projects:
 - This [personal website/tech blog](/blog/how-i-made-this-website/ "How I made this website!")  
 `#Jekyll`
 
+- My [MEng Final-Year Project](/fyp)  
+`#Python`
+
 - [Social Login Demos](http://eusebius.tech/social-login-demos/)  
 `#JavaScript` `#webAPIs` `#Bootstrap`
 
 - [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter  
-`#embedded` `#microPython` `#WebClient`
+`#embedded` `#microPython` `#webClient`
 
 - [Brushless DC Motor Controller](https://github.com/eugenius1/esys-cw2 "EE3: Embedded Systems")  
 `#mbed` `#threaded` `#RTOS`
