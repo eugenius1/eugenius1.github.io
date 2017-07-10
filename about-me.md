@@ -9,11 +9,10 @@ bigimg:
 
 My name is Eusebius Ngemera. I have the following qualities:
 
-- I survived chicken pox at the age of 17
-- Electrical & Electronic Engineering student at Imperial College London
+- **2017 graduate** in [MEng Electrical & Electronic Engineering](https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-meng/) from Imperial College London
 - My favourite programming language is currently Python
-
-What else do you need?
+- I survived chicken pox at the age of 17
+- More on my [CV](/cv)
 
 # Technologies
 
@@ -105,7 +104,7 @@ What else do you need?
     </span>
     <span class="sr-only">Skype</span>
   </li>
-  <li>
+  <li title="Slack">
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-slack fa-stack-1x"></i>
     </span>
@@ -170,9 +169,9 @@ What else do you need?
 
 # *Eusebius* Pronounciation
 
-Usually it's pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-bee-əs], which adds an acute accent: Eus**é**bius.
+It's usually pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-bee-əs], which adds an acute accent: Eus**é**bius.
 
 
 # Contact
 
-You will find buttons below to email me or see my social network pages. My email address is [me [at] eusebius [dot] tech](mailto:me@eusebius.tech).
+You will find buttons below to email or connect with me on social networks. My email address is [me [at] eusebius [dot] tech](mailto:me@eusebius.tech).
