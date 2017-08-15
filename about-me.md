@@ -78,11 +78,25 @@ My name is Eusebius Ngemera. I have the following qualities:
     </span>
     <span class="sr-only">Google Plus</span>
   </li>
+  <li title="IMDb">
+    <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-imdb fa-stack-1x"></i>
+    </span>
+    <span class="sr-only">IMDb</span>
+  </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-instagram fa-stack-1x"></i>
     </span>
     <span class="sr-only">Instagram</span>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/eusebius/" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fa fa-linkedin fa-stack-1x"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
@@ -91,30 +105,24 @@ My name is Eusebius Ngemera. I have the following qualities:
     <span class="sr-only">Linux</span>
   </li>
   <li>
-    <a href="/donate" title="PayPal">
+    <a href="/donate/" title="PayPal">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fa fa-paypal fa-stack-1x"></i>
       </span>
       <span class="sr-only">Paypal</span>
     </a>
   </li>
-  <li>
+  <li title="Pocket">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-skype fa-stack-1x"></i>
+      <i class="fa fa-get-pocket fa-stack-1x"></i>
     </span>
-    <span class="sr-only">Skype</span>
+    <span class="sr-only">Pocket</span>
   </li>
   <li title="Slack">
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-slack fa-stack-1x"></i>
     </span>
     <span class="sr-only">Slack</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Snapchat</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
@@ -128,23 +136,17 @@ My name is Eusebius Ngemera. I have the following qualities:
     </span>
     <span class="sr-only">Stack Overflow</span>
   </li>
+  <li title="Terminal">
+    <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-terminal fa-stack-1x"></i>
+    </span>
+    <span class="sr-only">Terminal</span>
+  </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-trello fa-stack-1x"></i>
     </span>
     <span class="sr-only">Trello</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-tripadvisor fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">TripAdvisor</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-usb fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">USB</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
