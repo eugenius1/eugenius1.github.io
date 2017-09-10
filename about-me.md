@@ -9,10 +9,10 @@ bigimg:
 
 My name is Eusebius Ngemera. I have the following qualities:
 
-- **2017 graduate** in [MEng Electrical & Electronic Engineering](https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-meng/) from Imperial College London
+- 2017 Graduate in [MEng Electrical & Electronic Engineering](https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-meng/) from Imperial College London
 - My favourite programming language is currently Python
 - I survived chicken pox at the age of 17
-- More on my [CV](/cv)
+- More on my [CV](/cv/)
 
 # Technologies
 
