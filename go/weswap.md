@@ -1,5 +1,5 @@
 ---
 layout: redirect
-to: http://swp.to/invite/muw3420
-title: "WeSwap (£5 free travel money)"
+to: http://www.moneysavingexpert.com/redir/3a732357
+title: "WeSwap (£25 free travel money and perfect rates for a year)"
 ---
