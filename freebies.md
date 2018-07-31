@@ -10,9 +10,9 @@ Disclaimer: I may also be getting something in turn. Also, these links and codes
 
 Get up to **£10 off** your first **Uber** ride at [this link](https://www.uber.com/invite/hfxr3ue "A free ride from Uber") or use promo code `hfxr3ue`.
 
-From **WeSwap**, get **£25 free** on your first load, plus perfect rates on currency for a whole year using [this link](http://www.moneysavingexpert.com/redir/3a732357) or [alternatively](https://www.weswap.com/en/mse-lp/?utm_source=MSE&utm_campaign=MSE25F&utm_medium=Comparison&utm_content=Card).
+Join **Revolut** using [this link](https://revolut.com/r/eusebi8t3 "Your Digital Banking Alternative &#124; Airbnb").
 
-Get **£5 free** travel money from **WeSwap** using [this link](http://swp.to/invite/muw3420 "£5 free travel money with WeSwap") (`muw3420`).
+Get **£25 travel credit** for **Airbnb** when you sign up using [this link](www.airbnb.fr/c/eusebiusn3 "Get £25 off your first adventure").
 
 Get **20% off** your first order at **Flowers Direct**. Use [this link](https://flowersdirect.mention-me.com/m/ol/rv2er-eusebius-ngemera "Flowers Direct 20% off") or enter `Eusebius Ngemera` at checkout.
 
