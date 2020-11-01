@@ -93,6 +93,8 @@ paginate: 5
 
 kramdown:
   input: GFM
+  gfm_quirks:
+    - fake_to_fix_options_parsing # quick fix at least for kramdown 1.11.1
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
