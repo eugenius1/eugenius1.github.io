@@ -1,1 +1,0 @@
-which elements are better

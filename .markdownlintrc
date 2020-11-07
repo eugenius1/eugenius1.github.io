@@ -1,0 +1,7 @@
+{
+    "default": true,
+    // line length
+    "MD013": false,
+    // inline html
+    "MD033": false
+}

@@ -11,11 +11,18 @@ Some of my public projects:
 - This [personal website/tech blog](/blog/how-i-made-this-website/ "How I made this website!")  
 `#Jekyll`
 
+{% comment %}
+- [Instagram Lists](/projects/instagram-lists): Detailed lists of Instagram followers and followings  
+`#JavaScript`
+{% endcomment %}
+
+- [Social Login Demos](/social-login-demos/)  
+`#JavaScript` `#webAPIs` `#Bootstrap`
+
+## University Projects
+
 - My [MEng Final-Year Project](/fyp)  
 `#Python`
-
-- [Social Login Demos](http://eusebius.tech/social-login-demos/)  
-`#JavaScript` `#webAPIs` `#Bootstrap`
 
 - [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter  
 `#embedded` `#microPython` `#webClient`
@@ -32,7 +39,7 @@ Some of my public projects:
 - [Udacity CS101](https://github.com/eugenius1/Udacity-CS101): Intro to Computer Science, includes a Gamer's network  
 `#Python`
 
-# Contributions
+## Contributions
 
 I have contributed to these awesome projects:
 

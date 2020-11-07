@@ -17,7 +17,7 @@ The bare minimum to having your own website is finding a place to host it and ad
 - TOC
 {:toc}
 
-# Website domain name
+## Website domain name
 
 I had to choose a website domain name that I could spell out in a few seconds yet you could remember after some months or even years. *Shortness vs Reliability*. There were three contenders and in the end, I settled on the middle ground that is `eusebius.tech`. This domain name just has my first name and I like that the extension captures my techie personality.
 
@@ -29,7 +29,7 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 *Whois* is a service that gives you information about the registered user of a domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](http://www.whois.com/whois/eusebius.tech).
 
-# Hosting
+## Hosting
 
 Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages. A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when someone requests a page.
 
@@ -39,7 +39,7 @@ The screenshot below shows the <abbr title="Domain Name System">DNS</abbr> Recor
 
 ![5 entries in the DNS records.](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
-# Theme
+## Theme
 
 A theme can drastically affect a website's impression. See versions [1](/index-v1.html) and [2](/index-v2.html) of my homepage.
 
@@ -47,7 +47,7 @@ A theme can drastically affect a website's impression. See versions [1](/index-v
 
 The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 
-## Features
+### Features
 
 - **Disqus**: commenting
 - **Google Analytics**: viewer statistics
@@ -56,13 +56,13 @@ The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jeky
 
 The features above are built-in very well as all I had to do was fill in my [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) and [Google Analytics ID](https://support.google.com/analytics/answer/1008080) in the configurations file.
 
-# Email
+## Email
 
 With [hover.com](https://hover.com/Yiflhr2y "$2 discount link") I pay $5 a year for email forwarding. This price is only for one email address on my domain. All emails sent to [me@eusebius.tech](mailto:me@eusebius.tech) are forwarded to my personal Gmail address.
 
 I would highly recommend [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of writing this post, I haven't been able to modify their record. Thus, I'm back to hover's email-forwarding service.
 
-# Webpage content
+## Webpage content
 
 Last but not least, is filling webpages with content or making a blog post. <abbr title="HyperText Markup Language">HTML</abbr>, the language to markup webpages looks as shown below. Those opening and closing `<>` tags can be tedious and not to mention intimidating to beginners. This is where Markdown comes to the rescue, as shown further below. Markdown is a lightweight markup language that simplifies and quickens writing up content. Markdown is converted to HTML by Jekyll.
 

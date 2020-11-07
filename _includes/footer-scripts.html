@@ -31,4 +31,10 @@
   {% endfor %}
 {% endif %}
 
+{% comment %}marcanuy, https://stackoverflow.com/a/48078807/5288481{% endcomment %}
+{% if page.content contains "code" %}
+<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+<script src="/js/copy-code-button.js"></script>
+{% endif %}
+
 {% include google_analytics.html %}
