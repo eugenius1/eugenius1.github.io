@@ -10,6 +10,9 @@ _site
 Thumbs.db
 ehthumbs.db
 
+# Node.js
+node_modules/
+
 ############# Sublime
 # cache files for sublime text
 *.tmlanguage.cache
