@@ -150,10 +150,16 @@ copy(lists)
 </form>
 
 <div class="row">
-  <div class="col-sm-6">Number of accounts: <span id="first-list-size"></span></div>
-  <div class="col-sm-6"><button type="button" class="btn btn-primary pull-right">Get CSV (spreadsheet)</button></div>
+  <div class="col-sm-6">Number of users: <span id="first-list-size"></span></div>
+  <div class="col-sm-6"><button type="button" id="first-csv-button" class="btn btn-primary pull-right">Get CSV (spreadsheet)</button></div>
 </div>
-<div>Estimated time needed for more details: <span id="first-time-estimate"></span></div>
+<div class="pre-scrollable" id="first-csv" style="display: none">
+{% highlight text %}
+Data will appear here in CSV format
+{% endhighlight %}
+</div>
+
+<p>Estimated time needed for more details: <span id="first-time-estimate"></span></p>
 
 Below you can unselect users in order to reduce time needed to get more details. You will see the new time estimate below the table.
 
