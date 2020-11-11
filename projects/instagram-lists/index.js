@@ -83,7 +83,7 @@ function objArrayToCsv(objArray, header = true) {
   // header row
   if (header && array.length >= 1) {
     let line = '';
-    for (var key in array[0]) {
+    for (let key in array[0]) {
       if (line != '') {
         line += ',';
       }
@@ -92,9 +92,9 @@ function objArrayToCsv(objArray, header = true) {
     str += line + '\r\n';
   }
 
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     let line = '';
-    for (var index in array[i]) {
+    for (let index in array[i]) {
       if (line != '') {
         line += ',';
       }
@@ -177,7 +177,7 @@ function onSubmitInputLists(event) {
 }
 
 function addUserUrl(userList) {
-  for (var i = 0; i < userList.length; ++i) {
+  for (let i = 0; i < userList.length; ++i) {
     userList[i].url = `https://www.instagram.com/${userList[i].username}/`;
   }
 }

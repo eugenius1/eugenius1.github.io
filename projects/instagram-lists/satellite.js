@@ -8,7 +8,7 @@ async function getLists() {
     { name: 'followings', user_edge: 'edge_follow', query_hash: 'd04b0a864b4b54837c0d870b0e77e076' }
   ];
   var userId = JSON.parse(document.getElementsByTagName('body')[0].innerText).graphql.user.id
-  for (var i = 0; i < configs.length; ++i) {
+  for (let i = 0; i < configs.length; ++i) {
     let config = configs[i], after = null, hasNext = true, thisList = [];
     console.info(`Fetching ${config.name}...`);
     while (hasNext) {

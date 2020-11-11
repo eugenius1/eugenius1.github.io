@@ -106,7 +106,7 @@ async function getLists() {
 getLists()
 {% endraw %}
 {% endhighlight %}
-      Paste below the result that will be automatically copied when done. If not copied, run:
+      When done, the result that will be automatically copied. Paste it below. If not copied, run:
 {% highlight javascript %}
 {% raw %}
 copy(lists)
@@ -219,3 +219,5 @@ Run this:
 ```js
 getMoreDetails();
 ```
+
+<strong>TODO: Button to clear localStorage</strong><br>
