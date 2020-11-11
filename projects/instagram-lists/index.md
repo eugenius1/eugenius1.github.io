@@ -3,7 +3,14 @@ layout: page
 title: Instagram Lists
 subtitle: Detailed lists of your Instagram followers and followings
 comments: true
-js: index.js
+ext-css:
+  - https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap.min.css
+ext-js:
+  - https://code.jquery.com/jquery-3.5.1.js
+  - https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js
+  - https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap.min.js
+js:
+  - index.js
 ---
 
 {% comment %} TODO: add share-img above {% endcomment %}
@@ -105,7 +112,7 @@ getLists()
 copy(lists)
 {% endraw %}
 {% endhighlight %}
-    <textarea class="form-control" rows="3" id="inputLists" placeholder="[{}]" required></textarea>
+    <textarea class="form-control" rows="3" id="inputLists" placeholder='[{"followers": [], "followings": []}]' required></textarea>
   </div>
   <div class="form-group">
   I want to see:
@@ -142,7 +149,7 @@ copy(lists)
     <div class="radio">
       <label>
         <input type="radio" name="prunedListRadios" id="prunedListRadio6" value="all">
-        All followers + all followings combined
+        All followers + all followings (without duplicates)
       </label>
     </div>
   </div>
@@ -154,8 +161,9 @@ copy(lists)
   <div class="col-sm-6"><button type="button" id="first-csv-button" class="btn btn-primary pull-right">Get CSV (spreadsheet)</button></div>
 </div>
 <div class="pre-scrollable" id="first-csv" style="display: none">
+  You can copy this to a spreadsheet in software like Excel or <a href="https://docs.google.com/spreadsheets/">Google Sheets</a>.
 {% highlight text %}
-Data will appear here in CSV format
+Preparing data...
 {% endhighlight %}
 </div>
 
@@ -163,21 +171,51 @@ Data will appear here in CSV format
 
 Below you can unselect users in order to reduce time needed to get more details. You will see the new time estimate below the table.
 
-<strong>TODO: Table here</strong>
+<div class="container-fluid">
+  <table id="first-table" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Full name</th>
+        <th>Private</th>
+        <th>Verified</th>
+        <th>Story</th>
+        <th>I am following</th>
+        <th>I requested to follow</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th>Username</th>
+        <th>Full name</th>
+        <th>Private</th>
+        <th>Verified</th>
+        <th>Story</th>
+        <th>I am following</th>
+        <th>I requested to follow</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
 
+<strong>TODO: Do I need this button?</strong><br>
 <button class="btn btn-primary">Refresh time estimate</button>
 
 <p>New estimated time needed for more details: <span id="second-time-estimate"></span></p>
 
 <button class="btn btn-primary">Get selected list</button>
 
-```js
+<div class="pre-scrollable">
+{% highlight javascript %}
 /* Code to copy will appear here after clicking the button above */
-// prunedUserList =
-```
+// prunedUsernameList =
+{% endhighlight %}
+</div>
 
 Run this:
 
 ```js
-var moreDetails = getMoreDetails();
+getMoreDetails();
 ```

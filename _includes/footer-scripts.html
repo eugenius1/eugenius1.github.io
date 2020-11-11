@@ -18,8 +18,8 @@
 
 {% if layout.common-js %}
   {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     {% if js contains 'jquery' %}
+      <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
       <script>
       	if (typeof jQuery == 'undefined') {
       	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');

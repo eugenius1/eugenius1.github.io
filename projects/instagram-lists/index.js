@@ -9,9 +9,23 @@ const inputListsTextArea = document.getElementById('inputLists');
 const firstCsvButton = document.getElementById('first-csv-button');
 const firstCsvParent = document.getElementById('first-csv');
 
+var firstTable = $('#first-table');
+
 usernameForm.onsubmit = onSubmitUsername;
 inputListsForm.onsubmit = onSubmitInputLists;
 firstCsvButton.onclick = onClickGetFirstCsv;
+
+var firstDataTable = firstTable.DataTable({
+  columns: [
+    { data: 'username' },
+    { data: 'full_name' },
+    { data: 'is_private' },
+    { data: 'is_verified' },
+    { data: 'has_story' },
+    { data: 'followed_by_viewer' },
+    { data: 'requested_by_viewer' }
+  ]
+});
 
 // Inspired by https://stackoverflow.com/a/8212878/5288481
 // limit sets how many parts to include
@@ -61,7 +75,7 @@ function secondsToStr(totalSeconds, limit = 2) {
 }
 
 // Inspired by https://stackoverflow.com/a/11257124/5288481
-function objArrayToCsv(objArray, header=true) {
+function objArrayToCsv(objArray, header = true) {
   // parse to object if not already one
   let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
   let str = '';
@@ -85,7 +99,7 @@ function objArrayToCsv(objArray, header=true) {
         line += ',';
       }
       let field = array[i][index];
-      if (typeof(field) === 'string' && field.match('[,"]')) {
+      if (typeof (field) === 'string' && field.match('[,"]')) {
         if (field.includes('"')) {
           // " becomes ""
           field = field.replace('"', '""');
@@ -123,8 +137,8 @@ function onSubmitInputLists(event) {
     inputLists = JSON.parse(inputListsTextArea.value);
     followers = inputLists.followers;
     followings = inputLists.followings;
-    addLinks(followers);
-    addLinks(followings);
+    addUserUrl(followers);
+    addUserUrl(followings);
     switch (inputListsForm.prunedListRadios.value) {
       case "all_wers":
         firstSelectedList = followers;
@@ -147,8 +161,14 @@ function onSubmitInputLists(event) {
       default:
         alert('Missing choice of list')
     }
+
     document.getElementById('first-list-size').innerText = String(firstSelectedList.length);
-    document.getElementById('first-time-estimate').innerText = secondsToStr(36 * firstSelectedList.length);
+    // (interval + response time)
+    let estimatedTime = ((36 + 2) * firstSelectedList.length);
+    document.getElementById('first-time-estimate').innerText = secondsToStr(estimatedTime);
+
+    firstDataTable.clear();
+    firstDataTable.rows.add(firstSelectedList).draw();
   } catch (error) {
     console.error(error);
     alert(error);
@@ -156,9 +176,9 @@ function onSubmitInputLists(event) {
   event.preventDefault();
 }
 
-function addLinks(userList) {
-  for (var i=0; i< userList.length; ++i){
-    userList[i].link = `https://www.instagram.com/${userList[i].username}/`;
+function addUserUrl(userList) {
+  for (var i = 0; i < userList.length; ++i) {
+    userList[i].url = `https://www.instagram.com/${userList[i].username}/`;
   }
 }
 
@@ -203,6 +223,8 @@ function arrayUnion(first, second) {
 
 function onClickGetFirstCsv() {
   let codeEl = firstCsvParent.querySelector('code');
-  codeEl.innerText = objArrayToCsv(firstSelectedList);
+  // Display first the loading message in case the formatting takes some time
   firstCsvParent.style.display = 'block';
+  codeEl.innerText = objArrayToCsv(firstSelectedList);
 }
+

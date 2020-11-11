@@ -1,5 +1,6 @@
 // Inspired by StackOverflow: https://stackoverflow.com/q/32407851
 var lists = {};
+var prunedUsernameList = [];
 var copyFunc = copy;
 async function getLists() {
   let configs = [
