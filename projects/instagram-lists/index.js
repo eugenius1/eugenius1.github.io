@@ -9,23 +9,12 @@ const inputListsTextArea = document.getElementById('inputLists');
 const firstCsvButton = document.getElementById('first-csv-button');
 const firstCsvParent = document.getElementById('first-csv');
 
-var firstTable = $('#first-table');
+const firstTable = $('#first-table');
+var firstDataTable;
 
 usernameForm.onsubmit = onSubmitUsername;
 inputListsForm.onsubmit = onSubmitInputLists;
 firstCsvButton.onclick = onClickGetFirstCsv;
-
-var firstDataTable = firstTable.DataTable({
-  columns: [
-    { data: 'username' },
-    { data: 'full_name' },
-    { data: 'is_private' },
-    { data: 'is_verified' },
-    { data: 'has_story' },
-    { data: 'followed_by_viewer' },
-    { data: 'requested_by_viewer' }
-  ]
-});
 
 // Inspired by https://stackoverflow.com/a/8212878/5288481
 // limit sets how many parts to include
@@ -37,6 +26,7 @@ function secondsToStr(totalSeconds, limit = 2) {
   function numberEnding(number) {
     return (number > 1) ? 's' : '';
   }
+
   function append(newPart) {
     if (partsCount < limit) {
       if (result.length !== 0) {
@@ -228,3 +218,74 @@ function onClickGetFirstCsv() {
   codeEl.innerText = objArrayToCsv(firstSelectedList);
 }
 
+firstDataTable = firstTable.DataTable({
+  columns: [
+    { data: 'username' },
+    { data: 'full_name' },
+    {
+      data: 'is_private',
+      className: 'text-center',
+      render: function (data, type) {
+        if (type === 'display') {
+          if (data === true) {
+            return '<i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">Private</span>';
+          }
+          return '<span class="sr-only">Not private</span>';
+        }
+        return data;
+      }
+    },
+    {
+      data: 'is_verified',
+      className: 'text-center',
+      render: function (data, type) {
+        if (type === 'display') {
+          if (data === true) {
+            return '<i class="fa fa-check ig-verified" aria-hidden="true"></i><span class="sr-only">Verified</span>';
+          }
+          return '<span class="sr-only">Not verified</span>';
+        }
+        return data;
+      }
+    },
+    {
+      data: 'has_story',
+      className: 'text-center',
+      render: function (data, type) {
+        if (type === 'display') {
+          if (data === true) {
+            return '<i class="fa fa-circle-thin ig-story" aria-hidden="true"></i><span class="sr-only">Has story</span>';
+          }
+          return '<span class="sr-only">Has story</span>';
+        }
+        return data;
+      }
+    },
+    {
+      data: 'followed_by_viewer',
+      className: 'text-center',
+      render: function (data, type) {
+        if (type === 'display') {
+          if (data === true) {
+            return '<button class="btn btn-default disabled">Following</button>';
+          }
+          return '<span class="sr-only">Not following</span>';
+        }
+        return data;
+      }
+    },
+    {
+      data: 'requested_by_viewer',
+      className: 'text-center',
+      render: function (data, type) {
+        if (type === 'display') {
+          if (data === true) {
+            return '<button class="btn btn-default disabled">Requested</button>';
+          }
+          return '<span class="sr-only">Not requested</span>';
+        }
+        return data;
+      }
+    }
+  ]
+});

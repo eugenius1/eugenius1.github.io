@@ -14,8 +14,7 @@ My name is Eusebius Ngemera. I have the following qualities:
 - I survived chicken pox at the age of 17
 - More on my [CV](/cv/)
 
-# Technologies
-
+## Technologies
 
 <ul class="list-inline text-center">
   <li title="Amazon Web Services">
@@ -168,12 +167,10 @@ My name is Eusebius Ngemera. I have the following qualities:
   </li>
 </ul>
 
-
-# *Eusebius* Pronounciation
+## *Eusebius* Pronounciation
 
 It's usually pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-bee-əs], which adds an acute accent: Eus**é**bius.
 
-
-# Contact
+## Contact
 
 You will find buttons below to email or connect with me on social networks. My email address is [me [at] eusebius [dot] tech](mailto:me@eusebius.tech).

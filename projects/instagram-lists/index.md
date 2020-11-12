@@ -1,15 +1,18 @@
 ---
 layout: page
 title: Instagram Lists
-subtitle: Detailed lists of your Instagram followers and followings
+subtitle: Detailed, sortable lists of your Instagram followers and followings
 comments: true
 ext-css:
   - https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap.min.css
+css:
+  - index.css
 ext-js:
   - https://code.jquery.com/jquery-3.5.1.js
   - https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js
   - https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap.min.js
 js:
+  - /js/utils/storage.js
   - index.js
 ---
 
@@ -41,7 +44,7 @@ Due to the possible many requests, the Instagram app might ask you to verify you
     <input type="text" class="form-control" id="username" placeholder="username" required>
   </div>
   <button type="submit" class="btn btn-primary">Open new tab</button>
-  <small id="ig-username-fallback" style="display:none">Didn't work? Link: <a id="ig-username-fallback-link"></a></small>
+  <div id="ig-username-fallback" class="small" style="display:none">Didn't work? Link: <a id="ig-username-fallback-link"></a></div>
 </form>
 
 In the new instagram.com tab, open the browser console (normally `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on Mac)
@@ -112,7 +115,7 @@ getLists()
 copy(lists)
 {% endraw %}
 {% endhighlight %}
-    <textarea class="form-control" rows="3" id="inputLists" placeholder='[{"followers": [], "followings": []}]' required></textarea>
+    <textarea class="form-control" rows="5" id="inputLists" placeholder='[{"followers": [], "followings": []}]' required></textarea>
   </div>
   <div class="form-group">
   I want to see:
@@ -171,17 +174,17 @@ Preparing data...
 
 Below you can unselect users in order to reduce time needed to get more details. You will see the new time estimate below the table.
 
-<div class="container-fluid">
-  <table id="first-table" class="table table-striped table-bordered" style="width:100%">
+<div class="container" class="md-screen-width">
+  <table id="first-table" class="table table-striped table-bordered">
     <thead>
       <tr>
         <th>Username</th>
         <th>Full name</th>
-        <th>Private</th>
-        <th>Verified</th>
-        <th>Story</th>
-        <th>I am following</th>
-        <th>I requested to follow</th>
+        <th class="small text-center">Private</th>
+        <th class="small text-center">Verified</th>
+        <th class="small text-center">Story</th>
+        <th class="small text-center">I am following</th>
+        <th class="small text-center">I requested to follow</th>
       </tr>
       </thead>
       <tbody>
@@ -190,11 +193,11 @@ Below you can unselect users in order to reduce time needed to get more details.
       <tr>
         <th>Username</th>
         <th>Full name</th>
-        <th>Private</th>
-        <th>Verified</th>
-        <th>Story</th>
-        <th>I am following</th>
-        <th>I requested to follow</th>
+        <th class="small text-center">Private</th>
+        <th class="small text-center">Verified</th>
+        <th class="small text-center">Story</th>
+        <th class="small text-center">I am following</th>
+        <th class="small text-center">I requested to follow</th>
       </tr>
     </tfoot>
   </table>

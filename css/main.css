@@ -635,3 +635,18 @@ a .fa-stack {
 .height-fits {
   height: 500px;
 }
+
+.md-screen-width {
+  width: min(100vw, 1100px);
+  left: calc(-1*(min(100vw, 1100px))/2 + 50%);
+}
+.full-screen-width {
+  width: 100vw;
+  left: calc(-50vw + 50%);
+}
+.md-screen-width,
+.full-screen-width {
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+}
