@@ -1,15 +1,30 @@
+/// <reference path="../../js/utils/storage.js" />
+
+const storageKeyPrefix = '/projects/instagram-lists/';
+const storageTypeUsed = storageTypes.sessionStorage;
+var storage = new ScopedStorage(storageKeyPrefix, storageTypeUsed);
+const storageKeys = {
+  inputListsTextArea: 'inputListsTextArea',
+  firstSelectedList: 'firstSelectedList'
+};
+
 var username = '';
 var followers = [];
 var followings = [];
 var firstSelectedList = [];
 
 const usernameForm = document.getElementById('username-form');
+const igUsernameFallbackLink = document.getElementById('ig-username-fallback-link');
+const igUsernameFallbackParent = document.getElementById('ig-username-fallback');
 const inputListsForm = document.getElementById('input-lists-form');
 const inputListsTextArea = document.getElementById('inputLists');
+
 const firstCsvButton = document.getElementById('first-csv-button');
 const firstCsvParent = document.getElementById('first-csv');
+const firstListSizeSpan = document.getElementById('first-list-size');
+const firstTimeEstimateSpan = document.getElementById('first-time-estimate');
 
-const firstTable = $('#first-table');
+const firstTable = $('#first-table'); // need to use jQuery for DataTable
 var firstDataTable;
 
 usernameForm.onsubmit = onSubmitUsername;
@@ -112,16 +127,15 @@ function onSubmitUsername(event) {
   window.open(link, '_blank');
   window.focus();
 
-  let fallbackLink = document.getElementById('ig-username-fallback-link');
-  fallbackLink.href = link;
-  fallbackLink.textContent = link;
-  let fallbackParent = document.getElementById('ig-username-fallback');
-  fallbackParent.style.display = 'block';
+  igUsernameFallbackLink.href = link;
+  igUsernameFallbackLink.textContent = link;
+  igUsernameFallbackParent.style.display = 'block';
 
   event.preventDefault();
 }
 
 function onSubmitInputLists(event) {
+  event.preventDefault();
   let inputLists = {};
   try {
     inputLists = JSON.parse(inputListsTextArea.value);
@@ -129,6 +143,7 @@ function onSubmitInputLists(event) {
     followings = inputLists.followings;
     addUserUrl(followers);
     addUserUrl(followings);
+
     switch (inputListsForm.prunedListRadios.value) {
       case "all_wers":
         firstSelectedList = followers;
@@ -152,18 +167,25 @@ function onSubmitInputLists(event) {
         alert('Missing choice of list')
     }
 
-    document.getElementById('first-list-size').innerText = String(firstSelectedList.length);
+    firstListSizeSpan.innerText = String(firstSelectedList.length);
     // (interval + response time)
     let estimatedTime = ((36 + 2) * firstSelectedList.length);
-    document.getElementById('first-time-estimate').innerText = secondsToStr(estimatedTime);
+    firstTimeEstimateSpan.innerText = secondsToStr(estimatedTime);
 
-    firstDataTable.clear();
-    firstDataTable.rows.add(firstSelectedList).draw();
+    setDataInTable(firstDataTable, firstSelectedList);
+
+    storeAfterSubmitInputLists();
+
   } catch (error) {
     console.error(error);
     alert(error);
   }
-  event.preventDefault();
+}
+
+async function storeAfterSubmitInputLists() {
+  storage.setItem(storageKeys.inputListsTextArea, inputListsTextArea.value);
+  console.log(typeof (firstSelectedList));
+  storage.setItem(storageKeys.firstSelectedList, firstSelectedList);
 }
 
 function addUserUrl(userList) {
@@ -220,6 +242,13 @@ function onClickGetFirstCsv() {
 
 firstDataTable = firstTable.DataTable({
   columns: [
+    {
+      render: function name() {
+       // if (type === 'display') {
+          return '<div class="checkbox"><label><input type="checkbox" checked></label></div>'
+        //}
+      }
+    },
     { data: 'username' },
     { data: 'full_name' },
     {
@@ -289,3 +318,24 @@ firstDataTable = firstTable.DataTable({
     }
   ]
 });
+
+function setDataInTable(dataTable, data) {
+  dataTable.clear();
+  dataTable.rows.add(data).draw();
+}
+
+function loadFromStorageIfAvailable() {
+  if (storageAvailable(storageTypeUsed)) {
+    let stored = storage.getItem(storageKeys.inputListsTextArea)
+    if (stored != null) {
+      inputListsTextArea.value = stored;
+    }
+    stored = storage.getItem(storageKeys.firstSelectedList)
+    if (stored != null) {
+      firstSelectedList = stored;
+      setDataInTable(firstDataTable, firstSelectedList);
+    }
+  }
+}
+
+loadFromStorageIfAvailable();

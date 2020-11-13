@@ -115,7 +115,7 @@ getLists()
 copy(lists)
 {% endraw %}
 {% endhighlight %}
-    <textarea class="form-control" rows="5" id="inputLists" placeholder='[{"followers": [], "followings": []}]' required></textarea>
+    <textarea class="form-control" rows="7" id="inputLists" placeholder='[{"followers": [], "followings": []}]' required></textarea>
   </div>
   <div class="form-group">
   I want to see:
@@ -178,11 +178,12 @@ Below you can unselect users in order to reduce time needed to get more details.
   <table id="first-table" class="table table-striped table-bordered">
     <thead>
       <tr>
+        <th><span class="sr-only">Selected?</span></th>
         <th>Username</th>
         <th>Full name</th>
-        <th class="small text-center">Private</th>
-        <th class="small text-center">Verified</th>
-        <th class="small text-center">Story</th>
+        <th class="small text-center">Private?</th>
+        <th class="small text-center">Verified?</th>
+        <th class="small text-center">Story?</th>
         <th class="small text-center">I am following</th>
         <th class="small text-center">I requested to follow</th>
       </tr>
@@ -191,11 +192,12 @@ Below you can unselect users in order to reduce time needed to get more details.
       </tbody>
       <tfoot>
       <tr>
+        <th><span class="sr-only">Selected?</span></th>
         <th>Username</th>
         <th>Full name</th>
-        <th class="small text-center">Private</th>
-        <th class="small text-center">Verified</th>
-        <th class="small text-center">Story</th>
+        <th class="small text-center">Private?</th>
+        <th class="small text-center">Verified?</th>
+        <th class="small text-center">Story?</th>
         <th class="small text-center">I am following</th>
         <th class="small text-center">I requested to follow</th>
       </tr>
