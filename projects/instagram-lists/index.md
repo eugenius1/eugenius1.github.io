@@ -12,6 +12,7 @@ ext-js:
   - https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js
   - https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap.min.js
 js:
+  - /js/utils/utils.js
   - /js/utils/storage.js
   - index.js
 ---
@@ -34,7 +35,7 @@ This info will not be available for a private account you're not following:
 
 ### Warning
 
-Due to the possible many requests, the Instagram app might ask you to verify your identity via email or phone number.
+Due to the possibly large number of requests, the Instagram app might ask you to verify your identity via email or phone number.
 
 ## Let's go
 
@@ -49,7 +50,7 @@ Due to the possible many requests, the Instagram app might ask you to verify you
 
 In the new instagram.com tab, open the browser console (normally `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on Mac)
 
-Copy the code below into the console and press enter. This will set up all the needed functions.
+Copy the code below into the console and press `Enter`. This will set up all the needed functions.
 
 <div class="pre-scrollable" id="main-code-to-copy">
 {% highlight javascript %}
@@ -205,14 +206,13 @@ Below you can unselect users in order to reduce time needed to get more details.
   </table>
 </div>
 
-<strong>TODO: Do I need this button?</strong><br>
-<button class="btn btn-primary">Refresh time estimate</button>
+<button type="submit" id="submit-second-list" class="btn btn-primary">Refresh time estimate</button>
 
 <p>New estimated time needed for more details: <span id="second-time-estimate"></span></p>
 
 <button class="btn btn-primary">Get selected list</button>
 
-<div class="pre-scrollable">
+<div id="pruned-username-list" class="pre-scrollable">
 {% highlight javascript %}
 /* Code to copy will appear here after clicking the button above */
 // prunedUsernameList =

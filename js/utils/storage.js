@@ -36,7 +36,7 @@ class ScopedStorage {
     if (allStringValues) {
       this.keyToType = null;
     } else {
-      this.keyToType = new ScopedStorage('__ScopedStorage__', type, true);
+      this.keyToType = new ScopedStorage('ScopedStorage__/', type, true);
     }
   }
 
