@@ -21,6 +21,9 @@ js:
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
+<div class="alert alert-warning" role="alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;<strong>Work in progress!</strong></div>
+
+
 - TOC
 {:toc}
 
@@ -176,7 +179,7 @@ Preparing data...
 Below you can unselect users in order to reduce time needed to get more details. You will see the new time estimate below the table.
 
 <div class="container" class="md-screen-width">
-  <table id="first-table" class="table table-striped table-bordered">
+  <table id="first-table" class="table table-bordered">
     <thead>
       <tr>
         <th><span class="sr-only">Selected?</span></th>
@@ -206,11 +209,10 @@ Below you can unselect users in order to reduce time needed to get more details.
   </table>
 </div>
 
-<button type="submit" id="submit-second-list" class="btn btn-primary">Refresh time estimate</button>
+<button type="submit" id="submit-pruned-list" class="btn btn-primary">Refresh time estimate</button>
 
-<p>New estimated time needed for more details: <span id="second-time-estimate"></span></p>
-
-<button class="btn btn-primary">Get selected list</button>
+<div>Number of users: <span id="pruned-list-size"></span></div>
+<div>New estimated time needed for more details: <span id="second-time-estimate"></span></div>
 
 <div id="pruned-username-list" class="pre-scrollable">
 {% highlight javascript %}
@@ -225,4 +227,4 @@ Run this:
 getMoreDetails();
 ```
 
-<strong>TODO: Button to clear localStorage</strong><br>
+<button type="button" id="clear-storage" class="btn btn-danger">Clear this page</button>

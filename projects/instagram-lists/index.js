@@ -23,28 +23,48 @@ const inputListsTextArea = document.getElementById('inputLists');
 
 const firstCsvButton = document.getElementById('first-csv-button');
 const firstCsvParent = document.getElementById('first-csv');
+const firstCsvCode = firstCsvParent.getElementsByTagName('code')[0];
 const firstListSizeSpan = document.getElementById('first-list-size');
 const firstTimeEstimateSpan = document.getElementById('first-time-estimate');
 const firstTable = $('#first-table'); // need to use jQuery for DataTable
 var firstDataTable;
 
-const submitSecondListButton = $('#submit-second-list');
+const submitPrunedListButton = $('#submit-pruned-list');
 const prunedUsernameListCode = document.getElementById('pruned-username-list').getElementsByTagName('code')[0];
+const prunedListSizeSpan = document.getElementById('pruned-list-size');
+const secondTimeEstimateSpan = document.getElementById('second-time-estimate');
+
+const secondTable = $('#second-table');
+var secondDataTable;
+
+const clearStorageButton = document.getElementById('clear-storage');
 
 var firstDataTableArgs = {
   columns: [
     {
       render: function name(data, type, row) {
-        return '<div class="checkbox"><label><input type="checkbox" name="' + row.username + '" value ="" checked></label></div>'
+        return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" value ="" checked></label></div>`;
       }
     },
     {
       data: 'username',
       render: function (data, type, row) {
+        if (type === 'display') {
+          // there's a normal space just before data in case it's so long that it starts on the second line
+          return `<img src="${row.profile_pic_url}" class="img-circle ig-pic" aria-hidden="true">&nbsp;&nbsp; <small>${data}</small>`;
+        }
         return data;
       }
     },
-    { data: 'full_name' },
+    {
+      data: 'full_name',
+      render: function (data, type) {
+        if (type === 'display') {
+          return `<small>${data}</small>`;
+        }
+        return data;
+      }
+    },
     {
       data: 'is_private',
       className: 'text-center',
@@ -118,6 +138,14 @@ function setDataInTable(dataTable, data) {
   dataTable.rows.add(data).draw();
 }
 
+function updateDisplayedListInfo(length, listSizeEl, timeEstimateEl) {
+  listSizeEl.textContent = String(length);
+
+  // (interval + response time)
+  let estimatedTime = ((36 + 2) * length);
+  timeEstimateEl.textContent = secondsToStr(estimatedTime);
+}
+
 function onSubmitUsername(event) {
   username = usernameForm.username.value;
   let link = `https://www.instagram.com/${username}/?__a=1`;
@@ -165,10 +193,7 @@ function onSubmitInputLists(event) {
         alert('Missing choice of list')
     }
 
-    firstListSizeSpan.innerText = String(firstSelectedList.length);
-    // (interval + response time)
-    let estimatedTime = ((36 + 2) * firstSelectedList.length);
-    firstTimeEstimateSpan.innerText = secondsToStr(estimatedTime);
+    updateDisplayedListInfo(firstSelectedList.length, firstListSizeSpan, firstTimeEstimateSpan);
 
     setDataInTable(firstDataTable, firstSelectedList);
 
@@ -231,15 +256,15 @@ function arrayUnion(first, second) {
 }
 
 function onClickGetFirstCsv() {
-  let codeEl = firstCsvParent.querySelector('code');
   // Display first the loading message in case the formatting takes some time
   firstCsvParent.style.display = 'block';
-  codeEl.innerText = objArrayToCsv(firstSelectedList);
+  firstCsvCode.textContent = objArrayToCsv(firstSelectedList);
 }
 
-function onSubmitSecondList() {
+function onSubmitPrunedList() {
   let selectedCheckboxes = firstDataTable.$('input').serializeArray();
   prunedUsernameList = selectedCheckboxes.map((checkbox) => { return checkbox.name; });
+  updateDisplayedListInfo(prunedUsernameList.length, prunedListSizeSpan, secondTimeEstimateSpan);
   prunedUsernameListCode.textContent = `prunedUsernameList = ${JSON.stringify(prunedUsernameList)}`;
   return false;
 }
@@ -258,13 +283,33 @@ function loadFromStorageIfAvailable() {
   }
 }
 
+function onClickClearStorage() {
+  storage.clear();
+
+  inputListsTextArea.textContent = '';
+  firstCsvCode.textContent = '';
+  firstListSizeSpan.textContent = '';
+  firstTimeEstimateSpan.textContent = '';
+  prunedUsernameListCode.textContent = '';
+  prunedListSizeSpan.textContent = '';
+  secondTimeEstimateSpan.textContent = '';
+
+  setDataInTable(firstDataTable, []);
+  setDataInTable(secondDataTable, []);
+
+  firstSelectedList = [];
+  prunedUsernameList = []
+}
+
 $(document).ready(function () {
   usernameForm.onsubmit = onSubmitUsername;
   inputListsForm.onsubmit = onSubmitInputLists;
   firstCsvButton.onclick = onClickGetFirstCsv;
 
   firstDataTable = firstTable.DataTable(firstDataTableArgs);
-  submitSecondListButton.click(onSubmitSecondList);
+  submitPrunedListButton.click(onSubmitPrunedList);
+
+  clearStorageButton.onclick = onClickClearStorage;
 
   loadFromStorageIfAvailable();
 })
