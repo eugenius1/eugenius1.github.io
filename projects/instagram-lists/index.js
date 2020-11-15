@@ -39,7 +39,7 @@ var secondDataTable;
 
 const clearStorageButton = document.getElementById('clear-storage');
 
-var firstDataTableArgs = {
+const firstDataTableArgs = {
   columns: [
     {
       render: function name(data, type, row) {
@@ -50,8 +50,7 @@ var firstDataTableArgs = {
       data: 'username',
       render: function (data, type, row) {
         if (type === 'display') {
-          // there's a normal space just before data in case it's so long that it starts on the second line
-          return `<img src="${row.profile_pic_url}" class="img-circle ig-pic" aria-hidden="true">&nbsp;&nbsp; <small>${data}</small>`;
+          return `<a class="btn btn-default-outline ig-username" role="button" target="_blank" href="https://www.instagram.com/${data}/"><img src="${row.profile_pic_url}" class="img-circle ig-profile-pic" aria-hidden="true">&nbsp;&nbsp;${data}</a>`;
         }
         return data;
       }
@@ -110,7 +109,8 @@ var firstDataTableArgs = {
       render: function (data, type) {
         if (type === 'display') {
           if (data === true) {
-            return '<button class="btn btn-default disabled">Following</button>';
+            // tabindex="-1" disables keyboard focus (via TAB key)
+            return '<button class="btn btn-default disabled" tabindex="-1">Following</button>';
           }
           return '<span class="sr-only">Not following</span>';
         }
@@ -123,7 +123,7 @@ var firstDataTableArgs = {
       render: function (data, type) {
         if (type === 'display') {
           if (data === true) {
-            return '<button class="btn btn-default disabled">Requested</button>';
+            return '<button class="btn btn-default disabled" tabindex="-1">Requested</button>';
           }
           return '<span class="sr-only">Not requested</span>';
         }
@@ -286,7 +286,8 @@ function loadFromStorageIfAvailable() {
 function onClickClearStorage() {
   storage.clear();
 
-  inputListsTextArea.textContent = '';
+  usernameForm.username.value = '';
+  inputListsTextArea.value = '';
   firstCsvCode.textContent = '';
   firstListSizeSpan.textContent = '';
   firstTimeEstimateSpan.textContent = '';
@@ -297,8 +298,10 @@ function onClickClearStorage() {
   setDataInTable(firstDataTable, []);
   setDataInTable(secondDataTable, []);
 
+  followers = [];
+  followings = [];
   firstSelectedList = [];
-  prunedUsernameList = []
+  prunedUsernameList = [];
 }
 
 $(document).ready(function () {

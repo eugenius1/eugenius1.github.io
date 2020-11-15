@@ -1,5 +1,10 @@
-.ig-pic {
+.ig-profile-pic {
   height: 2em;
+}
+
+a.ig-username {
+  background-color: transparent;
+  padding: 0%;
 }
 
 .ig-verified {
@@ -9,4 +14,8 @@
 .ig-story {
   color: #dc3879;
   font-weight: bold;
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
 }

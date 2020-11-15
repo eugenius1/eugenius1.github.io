@@ -637,8 +637,8 @@ a .fa-stack {
 }
 
 .md-screen-width {
-  width: min(100vw, 1100px);
-  left: calc(-1*(min(100vw, 1100px))/2 + 50%);
+  width: min(100vw, 1200px);
+  left: calc(-1*(min(100vw, 1200px))/2 + 50%);
 }
 .full-screen-width {
   width: 100vw;

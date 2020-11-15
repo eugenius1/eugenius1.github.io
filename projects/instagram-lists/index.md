@@ -113,7 +113,7 @@ async function getLists() {
 getLists()
 {% endraw %}
 {% endhighlight %}
-      When done, the result that will be automatically copied. Paste it below. If not copied, run:
+      When you get a "Done" message at the bottom of your console, the result will be automatically copied. Paste it below. If not copied, run:
 {% highlight javascript %}
 {% raw %}
 copy(lists)
@@ -164,7 +164,7 @@ copy(lists)
 </form>
 
 <div class="row">
-  <div class="col-sm-6">Number of users: <span id="first-list-size"></span></div>
+  <div class="col-sm-6">Number of accounts: <span id="first-list-size"></span></div>
   <div class="col-sm-6"><button type="button" id="first-csv-button" class="btn btn-primary pull-right">Get CSV (spreadsheet)</button></div>
 </div>
 <div class="pre-scrollable" id="first-csv" style="display: none">
@@ -176,7 +176,7 @@ Preparing data...
 
 <p>Estimated time needed for more details: <span id="first-time-estimate"></span></p>
 
-Below you can unselect users in order to reduce time needed to get more details. You will see the new time estimate below the table.
+Below you can unselect accounts in order to reduce time needed to get more details. You will see the new time estimate below the table.
 
 <div class="container" class="md-screen-width">
   <table id="first-table" class="table table-bordered">
@@ -211,7 +211,7 @@ Below you can unselect users in order to reduce time needed to get more details.
 
 <button type="submit" id="submit-pruned-list" class="btn btn-primary">Refresh time estimate</button>
 
-<div>Number of users: <span id="pruned-list-size"></span></div>
+<div>Number of accounts: <span id="pruned-list-size"></span></div>
 <div>New estimated time needed for more details: <span id="second-time-estimate"></span></div>
 
 <div id="pruned-username-list" class="pre-scrollable">

@@ -63,7 +63,7 @@ class ScopedStorage {
       let originalType = this.keyToType.getItem(key);
       let parsedType = typeof (stored);
       if (parsedType !== originalType) {
-        console.error(`ScopedStorage: getItem: Parsed key "${key}" to ${parsedType} type instead of ${originalType} originally`);
+        console.error(`ScopedStorage: getItem: Parsed stored value for key "${key}" to ${parsedType} type instead of ${originalType} originally`);
       }
     }
     return stored;
