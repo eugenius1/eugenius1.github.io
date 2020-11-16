@@ -1,25 +1,31 @@
 /// <reference path="../../js/utils/utils.js" />
 /// <reference path="../../js/utils/storage.js" />
 
-const storageKeyPrefix = 'project-instagram-lists/';
 const storageTypeUsed = storageTypes.sessionStorage;
-var storage = new ScopedStorage(storageKeyPrefix, storageTypeUsed);
+const storageAvailable = isStorageAvailable(storageTypeUsed);
+var storage = null;
+if (storageAvailable) {
+  storage = new ScopedStorage('project-instagram-lists/', storageTypeUsed);
+}
 const storageKeys = {
   inputListsTextArea: 'inputListsTextArea',
-  firstSelectedList: 'firstSelectedList'
+  listSelectionRadios: 'listSelectionRadios',
+  firstSelectedList: 'firstSelectedList',
+  moreDetails: 'moreDetails'
 };
 
-var username = '';
 var followers = [];
 var followings = [];
 var firstSelectedList = [];
 var prunedUsernameList = [];
+var moreDetails = [];
 
 const usernameForm = document.getElementById('username-form');
 const igUsernameFallbackLink = document.getElementById('ig-username-fallback-link');
 const igUsernameFallbackParent = document.getElementById('ig-username-fallback');
 const inputListsForm = document.getElementById('input-lists-form');
-const inputListsTextArea = document.getElementById('inputLists');
+const inputListsTextArea = inputListsForm.elements.inputLists;
+const listSelectionRadios = inputListsForm.elements.listSelectionRadios;
 
 const firstCsvButton = document.getElementById('first-csv-button');
 const firstCsvParent = document.getElementById('first-csv');
@@ -34,103 +40,218 @@ const prunedUsernameListCode = document.getElementById('pruned-username-list').g
 const prunedListSizeSpan = document.getElementById('pruned-list-size');
 const secondTimeEstimateSpan = document.getElementById('second-time-estimate');
 
+const moreDetailsForm = document.getElementById('more-details-form');
+const moreDetailsTextArea = moreDetailsForm.elements.moreDetails;
 const secondTable = $('#second-table');
 var secondDataTable;
 
 const clearStorageButton = document.getElementById('clear-storage');
 
+const renderers = {
+  username: function (data, type, row) {
+    if (type === 'display') {
+      return `<a class="btn btn-default-outline ig-username" role="button" target="_blank" href="https://www.instagram.com/${data}/"><img src="${row.profile_pic_url}" class="img-circle ig-profile-pic" aria-hidden="true">&nbsp;&nbsp;${data}</a>`;
+    }
+    return data;
+  },
+  fullName: function (data, type) {
+    if (type === 'display') {
+      return `<small>${data}</small>`;
+    }
+    return data;
+  },
+  igTimestamp: function (data, type) {
+    if (type === 'display' || type === 'filter') {
+      if (data) {
+        // data is in seconds, transform to ms
+        return new Date(data * 1000).toLocaleDateString(
+          getUserLanguage(),
+          { day: 'numeric', month: 'short', year: 'numeric' });
+      } else {
+        return '';
+      }
+    }
+    return (data === null ? 0 : data);
+  },
+  // only provide row to check if data is known or not, i.e. user is public or followed by viewer
+  iconForBoolean: function (iconClass, data, type, row = null) {
+    if (type === 'display') {
+      let result = ''
+      let srText = 'Unknown';
+      if (data === true) {
+        result += `<i class="${iconClass}" aria-hidden="true"></i>`;
+        srText = 'True';
+      } else if (row && (!row.is_private || row.followed_by_viewer)) {
+        srText = 'False';
+      }
+      result += `<span class="sr-only">${srText}</span>`;
+      return result;
+    }
+    return data;
+  },
+  buttonForBoolean: function (trueText, data, type) {
+    if (type === 'display') {
+      if (data === true) {
+        // tabindex="-1" disables keyboard focus (via TAB key)
+        return `<button class="btn btn-default disabled" tabindex="-1">${trueText}</button>`;
+      }
+      return '<span class="sr-only">False</span>';
+    }
+    return data;
+  }
+}
+
 const firstDataTableArgs = {
   columns: [
     {
       render: function name(data, type, row) {
-        return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" value ="" checked></label></div>`;
+        return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" checked></label></div>`;
       }
     },
     {
       data: 'username',
-      render: function (data, type, row) {
-        if (type === 'display') {
-          return `<a class="btn btn-default-outline ig-username" role="button" target="_blank" href="https://www.instagram.com/${data}/"><img src="${row.profile_pic_url}" class="img-circle ig-profile-pic" aria-hidden="true">&nbsp;&nbsp;${data}</a>`;
-        }
-        return data;
-      }
+      render: renderers.username
     },
     {
       data: 'full_name',
-      render: function (data, type) {
-        if (type === 'display') {
-          return `<small>${data}</small>`;
-        }
-        return data;
-      }
+      render: renderers.fullName
     },
     {
       data: 'is_private',
-      className: 'text-center',
-      render: function (data, type) {
-        if (type === 'display') {
-          if (data === true) {
-            return '<i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">Private</span>';
-          }
-          return '<span class="sr-only">Not private</span>';
-        }
-        return data;
-      }
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
     },
     {
       data: 'is_verified',
-      className: 'text-center',
-      render: function (data, type) {
-        if (type === 'display') {
-          if (data === true) {
-            return '<i class="fa fa-check ig-verified" aria-hidden="true"></i><span class="sr-only">Verified</span>';
-          }
-          return '<span class="sr-only">Not verified</span>';
-        }
-        return data;
-      }
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-check ig-verified', data, type); }
     },
     {
       data: 'has_story',
-      className: 'text-center',
-      render: function (data, type) {
-        if (type === 'display') {
-          if (data === true) {
-            return '<i class="fa fa-circle-thin ig-story" aria-hidden="true"></i><span class="sr-only">Has story</span>';
-          }
-          return '<span class="sr-only">Has story</span>';
-        }
-        return data;
-      }
+      className: 'body-center',
+      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-circle-thin ig-story', data, type, row); }
     },
     {
       data: 'followed_by_viewer',
-      className: 'text-center',
-      render: function (data, type) {
-        if (type === 'display') {
-          if (data === true) {
-            // tabindex="-1" disables keyboard focus (via TAB key)
-            return '<button class="btn btn-default disabled" tabindex="-1">Following</button>';
-          }
-          return '<span class="sr-only">Not following</span>';
-        }
-        return data;
-      }
+      className: 'body-center',
+      render: function (data, type) { return renderers.buttonForBoolean('Following', data, type); }
     },
     {
       data: 'requested_by_viewer',
-      className: 'text-center',
-      render: function (data, type) {
-        if (type === 'display') {
-          if (data === true) {
-            return '<button class="btn btn-default disabled" tabindex="-1">Requested</button>';
-          }
-          return '<span class="sr-only">Not requested</span>';
-        }
-        return data;
-      }
+      className: 'body-center',
+      render: function (data, type) { return renderers.buttonForBoolean('Requested', data, type); }
     }
   ]
+}
+
+const secondDataTableArgs = {
+  scrollX: true,
+  fixedColumns: {
+    leftColumns: 2
+  },
+  columns: [
+    {
+      data: 'username',
+      render: renderers.username
+    },
+    {
+      data: 'full_name',
+      render: renderers.fullName
+    },
+    {
+      data: 'is_private',
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
+    },
+    {
+      data: 'follows_viewer',
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
+    },
+    {
+      data: 'followed_by_viewer',
+      className: 'body-center',
+      render: function (data, type) { return renderers.buttonForBoolean('Following', data, type); }
+    },
+    {
+      data: 'requested_by_viewer',
+      className: 'body-center',
+      render: function (data, type) { return renderers.buttonForBoolean('Requested', data, type); }
+    },
+    {
+      data: 'follow_count',
+      className: 'body-right',
+      render: $.fn.dataTable.render.number(',', '.')
+    },
+    {
+      data: 'followed_by_count',
+      className: 'body-right',
+      render: $.fn.dataTable.render.number(',', '.')
+    },
+    {
+      data: 'mutual_followed_by_count',
+      className: 'body-right',
+      render: $.fn.dataTable.render.number(',', '.')
+    },
+    {
+      data: 'is_joined_recently',
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
+    },
+    {
+      data: 'is_verified',
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
+    },
+    {
+      data: 'is_business_account',
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-briefcase', data, type); }
+    },
+    {
+      data: 'business_category_name'
+    },
+    {
+      data: 'posts_count',
+      className: 'body-right',
+      render: $.fn.dataTable.render.number(',', '.')
+    },
+    {
+      data: 'last_post_timestamp',
+      className: 'body-right',
+      render: renderers.igTimestamp
+    },
+    {
+      data: 'story_highlights_count',
+      className: 'body-right',
+      render: $.fn.dataTable.render.number(',', '.')
+    },
+    {
+      data: 'has_igtv',
+      className: 'body-center',
+      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-television', data, type, row); }
+    },
+    {
+      data: 'has_reel_clips',
+      className: 'body-center',
+      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-youtube-play', data, type, row); }
+    },
+    {
+      data: 'has_ar_effects',
+      className: 'body-center',
+      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-smile-o', data, type, row); }
+    },
+    {
+      data: 'has_guides',
+      className: 'body-center',
+      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-newspaper-o', data, type, row); }
+    }
+  ]
+}
+
+function handleError(error) {
+  console.error(error);
+  alert(`Sorry, an error occurred! You can leave a comment with or send me this:\n${error}`);
 }
 
 function setDataInTable(dataTable, data) {
@@ -147,7 +268,7 @@ function updateDisplayedListInfo(length, listSizeEl, timeEstimateEl) {
 }
 
 function onSubmitUsername(event) {
-  username = usernameForm.username.value;
+  let username = usernameForm.username.value;
   let link = `https://www.instagram.com/${username}/?__a=1`;
 
   window.open(link, '_blank');
@@ -170,7 +291,7 @@ function onSubmitInputLists(event) {
     addUserUrl(followers);
     addUserUrl(followings);
 
-    switch (inputListsForm.prunedListRadios.value) {
+    switch (listSelectionRadios.value) {
       case "all_wers":
         firstSelectedList = followers;
         break;
@@ -197,17 +318,18 @@ function onSubmitInputLists(event) {
 
     setDataInTable(firstDataTable, firstSelectedList);
 
-    storeAfterSubmitInputLists();
-
   } catch (error) {
-    console.error(error);
-    alert(error);
+    handleError(error);
   }
+  storeAfterSubmitInputLists();
 }
 
 async function storeAfterSubmitInputLists() {
-  storage.setItem(storageKeys.inputListsTextArea, inputListsTextArea.value);
-  storage.setItem(storageKeys.firstSelectedList, firstSelectedList);
+  if (storageAvailable) {
+    storage.setItem(storageKeys.inputListsTextArea, inputListsTextArea.value);
+    storage.setItem(storageKeys.firstSelectedList, firstSelectedList);
+    storage.setItem(storageKeys.listSelectionRadios, listSelectionRadios.value);
+  }
 }
 
 function addUserUrl(userList) {
@@ -261,7 +383,7 @@ function onClickGetFirstCsv() {
   firstCsvCode.textContent = objArrayToCsv(firstSelectedList);
 }
 
-function onSubmitPrunedList() {
+function onClickSubmitPrunedList() {
   let selectedCheckboxes = firstDataTable.$('input').serializeArray();
   prunedUsernameList = selectedCheckboxes.map((checkbox) => { return checkbox.name; });
   updateDisplayedListInfo(prunedUsernameList.length, prunedListSizeSpan, secondTimeEstimateSpan);
@@ -269,25 +391,51 @@ function onSubmitPrunedList() {
   return false;
 }
 
+function onSubmitMoreDetails(event) {
+  event.preventDefault();
+  try {
+    moreDetails = JSON.parse(moreDetailsTextArea.value);
+    setDataInTable(secondDataTable, moreDetails);
+
+  } catch (error) {
+    handleError(error);
+  }
+  if (storageAvailable) {
+    storage.setItem(storageKeys.moreDetails, moreDetails);
+  }
+}
+
 function loadFromStorageIfAvailable() {
-  if (storageAvailable(storageTypeUsed)) {
+  if (storageAvailable) {
     let stored = storage.getItem(storageKeys.inputListsTextArea)
     if (stored != null) {
       inputListsTextArea.value = stored;
+    }
+    stored = storage.getItem(storageKeys.listSelectionRadios)
+    if (stored != null) {
+      listSelectionRadios.value = stored;
     }
     stored = storage.getItem(storageKeys.firstSelectedList)
     if (stored != null) {
       firstSelectedList = stored;
       setDataInTable(firstDataTable, firstSelectedList);
     }
+    stored = storage.getItem(storageKeys.moreDetails)
+    if (stored != null) {
+      moreDetails = stored;
+      setDataInTable(secondDataTable, moreDetails);
+    }
   }
 }
 
 function onClickClearStorage() {
-  storage.clear();
+  if (storageAvailable) {
+    storage.clear();
+  }
 
   usernameForm.username.value = '';
   inputListsTextArea.value = '';
+  listSelectionRadios.value = '';
   firstCsvCode.textContent = '';
   firstListSizeSpan.textContent = '';
   firstTimeEstimateSpan.textContent = '';
@@ -302,17 +450,23 @@ function onClickClearStorage() {
   followings = [];
   firstSelectedList = [];
   prunedUsernameList = [];
+  moreDetails = [];
 }
 
 $(document).ready(function () {
   usernameForm.onsubmit = onSubmitUsername;
   inputListsForm.onsubmit = onSubmitInputLists;
   firstCsvButton.onclick = onClickGetFirstCsv;
+  moreDetailsForm.onsubmit = onSubmitMoreDetails;
+  submitPrunedListButton.click(onClickSubmitPrunedList);
+  clearStorageButton.onclick = onClickClearStorage;
 
   firstDataTable = firstTable.DataTable(firstDataTableArgs);
-  submitPrunedListButton.click(onSubmitPrunedList);
-
-  clearStorageButton.onclick = onClickClearStorage;
+  secondDataTable = secondTable.DataTable(secondDataTableArgs);
+  secondDataTable.on('length.dt', function (e, settings, newLength) {
+    // Using FixedColumns means having to redraw when the page length changes, otherwise misalignment
+    secondDataTable.draw();
+  });
 
   loadFromStorageIfAvailable();
 })

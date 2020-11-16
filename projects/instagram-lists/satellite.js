@@ -4,7 +4,10 @@ var prunedUsernameList = [];
 var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
-function abort() { doAbort = true; }
+function abort() {
+  console.info('Abort has been triggered.')
+  doAbort = true;
+}
 function handleResult(result, variableName, aborted = false) {
   console.log(result);
   copyFunc(result);
@@ -39,7 +42,7 @@ async function getLists() {
             requested_by_viewer: node.requested_by_viewer,
             is_private: node.is_private,
             is_verified: node.is_verified,
-            has_story: (node.reel.latest_reel_media !== 0) // NB: not available in ?__a=1
+            has_story: Boolean(node.reel.latest_reel_media) // NB: not available in ?__a=1
           };
         }));
       });
@@ -51,6 +54,7 @@ async function getLists() {
 }
 const timer = ms => new Promise(res => setTimeout(res, ms));
 async function getMoreDetails(startingIndex = 0, interval = 36000) {
+  let failures = [];
   for (let i = startingIndex; i < prunedUsernameList.length; ++i) {
     let username = prunedUsernameList[i];
     console.log(`[${new Date().toLocaleTimeString()}] ${i + 1}/${prunedUsernameList.length}: ${username}`);
@@ -72,13 +76,18 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
           }
           await timer(pollingMs);
         }
+        // retry this index
+        --i;
+      } else {
+        // other statuses won't trigger a retry but will be recorded
+        failures.push({ index: i, username: username, httpStatus: response.status })
       }
       continue;
     }
     response = await response.json();
     let user = response.graphql.user;
     let posts = user.edge_owner_to_timeline_media.edges;
-    let last_post_timestamp = 0;
+    let last_post_timestamp = null;
     if (posts.length > 0) {
       last_post_timestamp = posts[0].node.taken_at_timestamp;
     }
@@ -106,8 +115,11 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
       is_verified: user.is_verified,
       is_business_account: user.is_business_account,
       business_category_name: user.business_category_name,
-      overall_category_name: user.overall_category_name,
+      overall_category_name: user.overall_category_name
     });
+  }
+  if (failures.length) {
+    console.warn(`${failures.length} failures: `, failures);
   }
   handleResult(moreDetails, 'moreDetails');
 }

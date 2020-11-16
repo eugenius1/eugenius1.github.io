@@ -19,3 +19,17 @@ a.ig-username {
 .table>tbody>tr>td {
   vertical-align: middle;
 }
+
+/* Text alignment for only the body of a table */
+
+.table>tbody>tr>td.body-left {
+  text-align: left;
+}
+
+.table>tbody>tr>td.body-center {
+  text-align: center;
+}
+
+.table>tbody>tr>td.body-right {
+  text-align: right;
+}

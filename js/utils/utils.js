@@ -1,3 +1,12 @@
+// Inspired by https://stackoverflow.com/a/31135571/5288481
+function getUserLanguage() {
+  if (navigator.languages !== undefined)
+    return navigator.languages[0];
+  else if (navigator.language !== undefined)
+    return navigator.language;
+  return 'en';
+}
+
 // Inspired by https://stackoverflow.com/a/8212878/5288481
 // limit sets how many parts to include
 function secondsToStr(totalSeconds, limit = 2) {

@@ -4,7 +4,7 @@ const storageTypes = {
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
-function storageAvailable(type) {
+function isStorageAvailable(type) {
   var storage;
   try {
     storage = window[type];

@@ -533,13 +533,15 @@ table {
 }
 table tr {
   border-top: 1px solid #cccccc;
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+
+/* Apply table-striped to all tables */
+table > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
 }
+
 table tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
