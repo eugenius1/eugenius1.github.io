@@ -11,6 +11,7 @@ My name is Eusebius Ngemera. I have the following qualities:
 
 - 2017 Graduate in [MEng Electrical & Electronic Engineering](https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-meng/) from Imperial College London
 - My favourite programming language is currently Python
+- Currently hired to develop C++ backends
 - I survived chicken pox at the age of 17
 - More on my [CV](/cv/)
 
@@ -73,18 +74,6 @@ My name is Eusebius Ngemera. I have the following qualities:
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-google-plus fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Google Plus</span>
-  </li>
-  <li title="IMDb">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-imdb fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">IMDb</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-instagram fa-stack-1x"></i>
     </span>
     <span class="sr-only">Instagram</span>
@@ -108,7 +97,7 @@ My name is Eusebius Ngemera. I have the following qualities:
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fa fa-paypal fa-stack-1x"></i>
       </span>
-      <span class="sr-only">Paypal</span>
+      <span class="sr-only">PayPal</span>
     </a>
   </li>
   <li title="Pocket">
@@ -143,12 +132,6 @@ My name is Eusebius Ngemera. I have the following qualities:
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-trello fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Trello</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-whatsapp fa-stack-1x"></i>
     </span>
     <span class="sr-only">WhatsApp</span>
@@ -169,7 +152,7 @@ My name is Eusebius Ngemera. I have the following qualities:
 
 ## *Eusebius* Pronounciation
 
-It's usually pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-bee-əs], which adds an acute accent: Eus**é**bius.
+It's usually pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-bee-əs].
 
 ## Contact
 

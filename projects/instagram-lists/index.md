@@ -25,20 +25,33 @@ js:
 - TOC
 {:toc}
 
-## Notes
+## The process
 
-### Limitations
+You will be guided step-by-step. Read from **top to bottom**.
 
-This info will not be available for a private account you're not following:
+Everything is happening in your browser (client-side) and none of your data is sent to a server.
+As you will see below, we will use the development tools built-in to your browser
+(Chrome, Firefox, new Edge, Safari).
 
-- last_post_timestamp
-- story_highlights_count
+There are two stages:
 
-### Warning
+1. Get basic details about all followers and followings
+2. Optional: Get more details
+    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to verify your identity via email or phone number.
 
-Due to the possibly large number of requests, the Instagram app might ask you to verify your identity via email or phone number.
+### Legal disclaimer
+
+> The software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and noninfringement. In no event shall the
+authors or copyright holders be liable for any claim, damages or other
+liability, whether in an action of contract, tort or otherwise, arising from,
+out of or in connection with the software or the use or other dealings in the
+software.
 
 ## Let's go
+
+Make sure you're logged in on [instagram.com](https://www.instagram.com/).
 
 <form class="form-inline" id="username-form">
   <div class="form-group">
@@ -320,6 +333,8 @@ copy(moreDetails)
 - AR effects
 - Guides
 
+Bear in mind that if an account is private and you're not following it, you will only see the public details.
+
 <div class="container" class="full-screen-width">
   <table id="second-table" class="table table-bordered">
     <thead>
@@ -374,5 +389,7 @@ copy(moreDetails)
     </tfoot>
   </table>
 </div>
+
+Your data is stored in this browser tab until it is closed. You can also manually clear this local storage:
 
 <button type="button" id="clear-storage" class="btn btn-danger">Clear this page</button>
