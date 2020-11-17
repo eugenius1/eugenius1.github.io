@@ -252,7 +252,7 @@ const secondDataTableArgs = {
 
 function handleError(error) {
   console.error(error);
-  alert(`Sorry, an error occurred! You can leave a comment with or send me this:\n${error}`);
+  alert(`Sorry, an error occurred! Re-paste any data you recently pasted and retry. If it still doesn't work then please leave a comment with or send me this:\n${error}`);
 }
 
 function setDataInTable(dataTable, data) {

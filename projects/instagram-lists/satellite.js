@@ -5,8 +5,8 @@ var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
 function abort() {
-  console.info('Abort has been triggered.')
   doAbort = true;
+  console.info('Abort has been triggered.')
 }
 function handleResult(result, variableName, aborted = false) {
   console.log(result);

@@ -16,9 +16,7 @@ js:
   - index.js
 ---
 
-{% comment %} TODO: add share-img above {% endcomment %}
-
-This tool helped me cleanup 151 of the 1079 accounts I followed on Instagram.
+This tool helped me cleanup 151 of the 1079 accounts I used to follow on Instagram.
 I could sort my followings by details like when they last posted.
 
 This would not be possible with Instagram's official APIs so here we use their **unofficial, internal APIs**.
@@ -26,7 +24,8 @@ We are using something that wasn't designed for us to easily use.
 As you will see, it's a _hack_ but you will be guided step-by-step.
 
 You can only do this on **desktop**.
-We need to use the developer tools built-in to modern browsers like Chrome, Firefox, the new Edge and Safari.
+We need to use the developer tools built-in to modern browsers like Chrome, Firefox and the new Edge.
+For Safari, you have to enable it under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
 Everything is happening in your browser (client-side) and none of your data is sent to a server.
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
@@ -44,7 +43,7 @@ There are two stages:
     - You will get details including:
       - number of posts, followers, followings
       - number of their followers that you follow
-      - date of the last post
+      - date of their last post
       - are they a business account?
       - are they verified?
       - have they joined recently?
@@ -68,7 +67,9 @@ software.
 
 ### 1. Setup
 
-Make sure you're logged in on [instagram.com](https://www.instagram.com/).
+Make sure you're **logged in** on [instagram.com](https://www.instagram.com/).
+
+<br>
 <br>
 
 <form class="form-inline" id="username-form">
@@ -76,7 +77,7 @@ Make sure you're logged in on [instagram.com](https://www.instagram.com/).
     <label for="username">Your username:</label>
     <input type="text" class="form-control" id="username" placeholder="username" required>
   </div>
-  <button type="submit" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">new tab</span></button>
+  <button type="submit" class="btn btn-primary">Open starting point <i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only"> in a new tab</span></button>
   <div id="ig-username-fallback" class="small" style="display:none">Didn't work? Link: <a id="ig-username-fallback-link"></a></div>
 </form>
 
@@ -91,8 +92,8 @@ var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
 function abort() {
-  console.info('Abort has been triggered.')
   doAbort = true;
+  console.info('Abort has been triggered.')
 }
 function handleResult(result, variableName, aborted = false) {
   console.log(result);
@@ -212,21 +213,22 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
 ```
 {:.pre-scrollable}
 {: #main-code-to-copy}
+
 <br>
 
 ### 2. Get lists
 
 Copy the code below into the console and press `Enter`:
 
-<div>
-{% highlight javascript %}
+```js
 getLists()
-{% endhighlight %}
+```
+
 When you get a "Done" message at the bottom of your console, the result will be automatically copied. Paste it below. If not copied, run:
-{% highlight javascript %}
+
+```js
 copy(lists)
-{% endhighlight %}
-</div>
+```
 
 <form class="form-horizontal" id="input-lists-form">
   <div class="form-group">
@@ -275,6 +277,7 @@ copy(lists)
 </form>
 
 <br>
+
 <div class="row">
   <div class="col-sm-6">Number of accounts: <span id="first-list-size"></span></div>
   <div class="col-sm-6"><button type="button" id="first-csv-button" class="btn btn-primary pull-right">Optional: Get CSV (spreadsheet)</button></div>
@@ -289,6 +292,7 @@ Preparing data...
 <p>Estimated time needed for more details: <span id="first-time-estimate"></span></p>
 
 Below you can unselect accounts in order to reduce time needed to get more details. You will see the new time estimate below the table.
+Clicking on a user link will open their profile in a **new tab**.
 *I requested to follow* means it's a private account you requested to follow and they haven't approved yet.
 
 <div class="container" class="md-screen-width">
@@ -322,7 +326,7 @@ Below you can unselect accounts in order to reduce time needed to get more detai
   </table>
 </div>
 
-### 3: Optional: More details
+### 3: Optional: Get more details
 
 <button type="submit" id="submit-pruned-list" class="btn btn-primary">Refresh time estimate</button>
 
@@ -331,17 +335,18 @@ Below you can unselect accounts in order to reduce time needed to get more detai
 
 Copy the code below into the console and press `Enter`:
 
-<div id="pruned-username-list" class="pre-scrollable">
-{% highlight javascript %}
+```js
 /* Code to copy will appear here after clicking the button above */
 // prunedUsernameList =
-{% endhighlight %}
-</div>
+```
+{:.pre-scrollable}
+{: #pruned-username-list}
 
 When you get a "Done" message at the bottom of your console, the result will be automatically copied. Paste it below. If not copied, run:
-{% highlight javascript %}
+
+```js
 copy(moreDetails)
-{% endhighlight %}
+```
 
 <form class="form-horizontal" id="more-details-form">
   <div class="form-group">
@@ -412,10 +417,10 @@ Explanation of some of the columns:
   </table>
 </div>
 
-### Ending notes
+## Ending notes
 
 Your data is stored in this browser tab, even after refreshing, until the tab is closed. You can also manually clear this local storage:
 
 <button type="button" id="clear-storage" class="btn btn-danger">Clear this page</button>
 
-I'd love to know what you think of this tool. You can leave me a comment below or [contact me](/contact).
+I'd love to know what you think of this tool. You can leave a comment below or [contact me](/contact).
