@@ -9,7 +9,7 @@ function getUserLanguage() {
 
 // Inspired by https://stackoverflow.com/a/8212878/5288481
 // limit sets how many parts to include
-function secondsToStr(totalSeconds, limit = 2) {
+function secondsToString(totalSeconds, limit = 2) {
   let result = '';
   let partsCount = 0;
   let remainderSeconds = totalSeconds;
@@ -56,7 +56,7 @@ function secondsToStr(totalSeconds, limit = 2) {
 }
 
 // Inspired by https://stackoverflow.com/a/11257124/5288481
-function objArrayToCsv(objArray, header = true) {
+function objectArrayToCsv(objArray, header = true) {
   // parse to object if not already one
   let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
   let str = '';

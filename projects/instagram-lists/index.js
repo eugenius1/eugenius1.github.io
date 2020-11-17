@@ -124,7 +124,7 @@ const firstDataTableArgs = {
     {
       data: 'is_verified',
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-check ig-verified', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
     },
     {
       data: 'has_story',
@@ -156,7 +156,7 @@ const secondDataTableArgs = {
     },
     {
       data: 'full_name',
-      render: renderers.fullName
+      className: 'small'
     },
     {
       data: 'is_private',
@@ -170,27 +170,27 @@ const secondDataTableArgs = {
     },
     {
       data: 'followed_by_viewer',
-      className: 'body-center',
+      className: 'body-center small',
       render: function (data, type) { return renderers.buttonForBoolean('Following', data, type); }
     },
     {
       data: 'requested_by_viewer',
-      className: 'body-center',
+      className: 'body-center small',
       render: function (data, type) { return renderers.buttonForBoolean('Requested', data, type); }
     },
     {
       data: 'follow_count',
-      className: 'body-right',
+      className: 'body-right small',
       render: $.fn.dataTable.render.number(',', '.')
     },
     {
       data: 'followed_by_count',
-      className: 'body-right',
+      className: 'body-right small',
       render: $.fn.dataTable.render.number(',', '.')
     },
     {
       data: 'mutual_followed_by_count',
-      className: 'body-right',
+      className: 'body-right small',
       render: $.fn.dataTable.render.number(',', '.')
     },
     {
@@ -209,21 +209,22 @@ const secondDataTableArgs = {
       render: function (data, type) { return renderers.iconForBoolean('fa fa-briefcase', data, type); }
     },
     {
-      data: 'business_category_name'
+      data: 'business_category_name',
+      className: 'small'
     },
     {
       data: 'posts_count',
-      className: 'body-right',
+      className: 'body-right small',
       render: $.fn.dataTable.render.number(',', '.')
     },
     {
       data: 'last_post_timestamp',
-      className: 'body-right',
+      className: 'body-right small',
       render: renderers.igTimestamp
     },
     {
       data: 'story_highlights_count',
-      className: 'body-right',
+      className: 'body-right small',
       render: $.fn.dataTable.render.number(',', '.')
     },
     {
@@ -264,7 +265,7 @@ function updateDisplayedListInfo(length, listSizeEl, timeEstimateEl) {
 
   // (interval + response time)
   let estimatedTime = ((36 + 2) * length);
-  timeEstimateEl.textContent = secondsToStr(estimatedTime);
+  timeEstimateEl.textContent = secondsToString(estimatedTime);
 }
 
 function onSubmitUsername(event) {
@@ -380,14 +381,14 @@ function arrayUnion(first, second) {
 function onClickGetFirstCsv() {
   // Display first the loading message in case the formatting takes some time
   firstCsvParent.style.display = 'block';
-  firstCsvCode.textContent = objArrayToCsv(firstSelectedList);
+  firstCsvCode.textContent = objectArrayToCsv(firstSelectedList);
 }
 
 function onClickSubmitPrunedList() {
   let selectedCheckboxes = firstDataTable.$('input').serializeArray();
   prunedUsernameList = selectedCheckboxes.map((checkbox) => { return checkbox.name; });
   updateDisplayedListInfo(prunedUsernameList.length, prunedListSizeSpan, secondTimeEstimateSpan);
-  prunedUsernameListCode.textContent = `prunedUsernameList = ${JSON.stringify(prunedUsernameList)}`;
+  prunedUsernameListCode.textContent = `prunedUsernameList = ${JSON.stringify(prunedUsernameList)};\n`+'getMoreDetails()';
   return false;
 }
 

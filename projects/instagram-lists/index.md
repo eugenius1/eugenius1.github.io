@@ -18,25 +18,36 @@ js:
 
 {% comment %} TODO: add share-img above {% endcomment %}
 
-<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
+This tool helped me cleanup 151 of the 1079 accounts I followed on Instagram.
+I could sort my followings by details like when they last posted.
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;<strong>Work in progress!</strong></div>
+This would not be possible with Instagram's official APIs so here we use their **unofficial, internal APIs**.
+We are using something that wasn't designed for us to easily use.
+As you will see, it's a _hack_ but you will be guided step-by-step.
+
+You can only do this on **desktop**.
+We need to use the developer tools built-in to modern browsers like Chrome, Firefox, the new Edge and Safari.
+Everything is happening in your browser (client-side) and none of your data is sent to a server.
+
+<noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
 - TOC
 {:toc}
 
-## The process
-
-You will be guided step-by-step. Read from **top to bottom**.
-
-Everything is happening in your browser (client-side) and none of your data is sent to a server.
-As you will see below, we will use the development tools built-in to your browser
-(Chrome, Firefox, new Edge, Safari).
+## Overview
 
 There are two stages:
 
-1. Get basic details about all followers and followings
-2. Optional: Get more details
+1. Get the lists of all followers and all followings.
+
+2. _Optional_: Get details about each account. This can run for **hours**; we're limited to 100 accounts/hour.
+    - You will get details including:
+      - number of posts, followers, followings
+      - number of their followers that you follow
+      - date of the last post
+      - are they a business account?
+      - are they verified?
+      - have they joined recently?
     - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to verify your identity via email or phone number.
 
 ### Legal disclaimer
@@ -49,20 +60,27 @@ liability, whether in an action of contract, tort or otherwise, arising from,
 out of or in connection with the software or the use or other dealings in the
 software.
 
-## Let's go
+## Let's go!  
+
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle" aria-hidden="true"></i> This is in <strong>beta</strong> so please send me a message or leave a comment with any feedback or if something doesn't work as expected.
+</div>
+
+### 1. Setup
 
 Make sure you're logged in on [instagram.com](https://www.instagram.com/).
+<br>
 
 <form class="form-inline" id="username-form">
   <div class="form-group">
-    <label for="username">Username:</label>
+    <label for="username">Your username:</label>
     <input type="text" class="form-control" id="username" placeholder="username" required>
   </div>
-  <button type="submit" class="btn btn-primary">Open new tab</button>
+  <button type="submit" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">new tab</span></button>
   <div id="ig-username-fallback" class="small" style="display:none">Didn't work? Link: <a id="ig-username-fallback-link"></a></div>
 </form>
 
-In the new instagram.com tab, open the browser console (normally `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on Mac)
+In the new instagram.com tab, open the browser console (normally `Ctrl`+`Shift`+`J` on Windows/Linux or `⌘`+`Option`+`J` on Mac).
 
 Copy the code below into the console and press `Enter`. This will set up all the needed functions.
 
@@ -194,6 +212,11 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
 ```
 {:.pre-scrollable}
 {: #main-code-to-copy}
+<br>
+
+### 2. Get lists
+
+Copy the code below into the console and press `Enter`:
 
 <div>
 {% highlight javascript %}
@@ -207,7 +230,7 @@ copy(lists)
 
 <form class="form-horizontal" id="input-lists-form">
   <div class="form-group">
-    <textarea class="form-control" rows="7" name="inputLists" placeholder='[{"followers": [], "followings": []}]' required></textarea>
+    <textarea class="form-control" rows="7" name="inputLists" placeholder='{"followers": [], "followings": []}' required></textarea>
   </div>
   <div class="form-group">
   I want to see:
@@ -251,9 +274,10 @@ copy(lists)
   <button type="submit" class="btn btn-primary">Compute list</button>
 </form>
 
+<br>
 <div class="row">
   <div class="col-sm-6">Number of accounts: <span id="first-list-size"></span></div>
-  <div class="col-sm-6"><button type="button" id="first-csv-button" class="btn btn-primary pull-right">Get CSV (spreadsheet)</button></div>
+  <div class="col-sm-6"><button type="button" id="first-csv-button" class="btn btn-primary pull-right">Optional: Get CSV (spreadsheet)</button></div>
 </div>
 <div class="pre-scrollable" id="first-csv" style="display: none">
   You can copy this to a spreadsheet in software like Excel or <a href="https://docs.google.com/spreadsheets/">Google Sheets</a>.
@@ -265,6 +289,7 @@ Preparing data...
 <p>Estimated time needed for more details: <span id="first-time-estimate"></span></p>
 
 Below you can unselect accounts in order to reduce time needed to get more details. You will see the new time estimate below the table.
+*I requested to follow* means it's a private account you requested to follow and they haven't approved yet.
 
 <div class="container" class="md-screen-width">
   <table id="first-table" class="table table-bordered">
@@ -297,10 +322,14 @@ Below you can unselect accounts in order to reduce time needed to get more detai
   </table>
 </div>
 
+### 3: Optional: More details
+
 <button type="submit" id="submit-pruned-list" class="btn btn-primary">Refresh time estimate</button>
 
 <div>Number of accounts: <span id="pruned-list-size"></span></div>
-<div>New estimated time needed for more details: <span id="second-time-estimate"></span></div>
+<div>New estimated time needed for more details: <strong><span id="second-time-estimate"></span></strong></div>
+
+Copy the code below into the console and press `Enter`:
 
 <div id="pruned-username-list" class="pre-scrollable">
 {% highlight javascript %}
@@ -309,11 +338,6 @@ Below you can unselect accounts in order to reduce time needed to get more detai
 {% endhighlight %}
 </div>
 
-Run this:
-
-{% highlight javascript %}
-getMoreDetails()
-{% endhighlight %}
 When you get a "Done" message at the bottom of your console, the result will be automatically copied. Paste it below. If not copied, run:
 {% highlight javascript %}
 copy(moreDetails)
@@ -323,24 +347,22 @@ copy(moreDetails)
   <div class="form-group">
     <textarea class="form-control" rows="7" name="moreDetails" placeholder='[{}]' required></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Show</button>
+  <button type="submit" class="btn btn-primary">Show in table</button>
 </form>
 
-<strong>TODO: explain:</strong>
+Bear in mind that if an account is private and you're not following them, you will only see the public details.
+Explanation of some of the columns:
 
-- *I requested to follow*:
-- Mutual followers
-- AR effects
-- Guides
-
-Bear in mind that if an account is private and you're not following it, you will only see the public details.
+- _Mutual followers_: how many of their followers you follow
+- _AR effects_: Story effects or filters created by that account
+- _Guides_: [what are they?](https://about.instagram.com/blog/announcements/supporting-well-being-with-instagram-guides)
 
 <div class="container" class="full-screen-width">
   <table id="second-table" class="table table-bordered">
     <thead>
       <tr>
-        <th>Username</th>
-        <th>Full name</th>
+        <th class="small text-center">Username</th>
+        <th class="small text-center">Full name</th>
         <th class="small text-center">Private?</th>
         <th class="small text-center">Follows me?</th>
         <th class="small text-center">I am following?</th>
@@ -365,8 +387,8 @@ Bear in mind that if an account is private and you're not following it, you will
     </tbody>
     <tfoot>
       <tr>
-        <th>Username</th>
-        <th>Full name</th>
+        <th class="small text-center">Username</th>
+        <th class="small text-center">Full name</th>
         <th class="small text-center">Private?</th>
         <th class="small text-center">Follows me?</th>
         <th class="small text-center">I am following?</th>
@@ -390,6 +412,10 @@ Bear in mind that if an account is private and you're not following it, you will
   </table>
 </div>
 
-Your data is stored in this browser tab until it is closed. You can also manually clear this local storage:
+### Ending notes
+
+Your data is stored in this browser tab, even after refreshing, until the tab is closed. You can also manually clear this local storage:
 
 <button type="button" id="clear-storage" class="btn btn-danger">Clear this page</button>
+
+I'd love to know what you think of this tool. You can leave me a comment below or [contact me](/contact).
