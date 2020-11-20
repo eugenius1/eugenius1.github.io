@@ -94,12 +94,6 @@ var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
 const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
-function copy(data, showMessage = true) {
-  copyFunc(JSON.stringify(data));
-  if (showMessage) {
-    console.info('*** Copied!');
-  }
-}
 function abort() {
   doAbort = true;
   console.info('Abort has been triggered.');
@@ -322,8 +316,8 @@ Clicking on a user link will open their profile in a **new tab**.
     <thead>
       <tr>
         <th><span class="sr-only">Selected?</span></th>
-        <th>Username</th>
-        <th>Full name</th>
+        <th class="small">Username</th>
+        <th class="small">Full name</th>
         <th class="small">Private?</th>
         <th class="small">Verified?</th>
         <th class="small">Has story?</th>
@@ -338,8 +332,8 @@ Clicking on a user link will open their profile in a **new tab**.
       <tfoot>
       <tr>
         <th><span class="sr-only">Selected?</span></th>
-        <th>Username</th>
-        <th>Full name</th>
+        <th class="small">Username</th>
+        <th class="small">Full name</th>
         <th class="small">Private?</th>
         <th class="small">Verified?</th>
         <th class="small">Has story?</th>
@@ -352,7 +346,7 @@ Clicking on a user link will open their profile in a **new tab**.
   </table>
 </div>
 
-### 3: Optional: Get more details
+### 3. Optional: Get more details
 
 <button type="submit" id="submit-pruned-list" class="btn btn-primary">Refresh time estimate</button>
 
