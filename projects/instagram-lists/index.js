@@ -1,18 +1,30 @@
 /// <reference path="../../js/utils/utils.js" />
 /// <reference path="../../js/utils/storage.js" />
 
+// also in ./satellite.js
+const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
+
 const storageTypeUsed = storageTypes.sessionStorage;
 const storageAvailable = isStorageAvailable(storageTypeUsed);
 var storage = null;
 if (storageAvailable) {
   storage = new ScopedStorage('project-instagram-lists/', storageTypeUsed);
 }
-const storageKeys = {
+const StorageKeys = Object.freeze({
   inputListsTextArea: 'inputListsTextArea',
   listSelectionRadios: 'listSelectionRadios',
   firstSelectedList: 'firstSelectedList',
   moreDetails: 'moreDetails'
-};
+});
+
+const ListSelections = Object.freeze({
+  all_followers: "all_wers",
+  all_followings: "all_wings",
+  one_way_followers: "1_way_wers",
+  one_way_followings: "1_way_wings",
+  friends: "friends", // a friend is both a follower and a following
+  all: "all"
+});
 
 var followers = [];
 var followings = [];
@@ -47,6 +59,8 @@ var secondDataTable;
 
 const clearStorageButton = document.getElementById('clear-storage');
 
+const usernameColumnWidth = 230; // 30-character username fits
+
 const renderers = {
   username: function (data, type, row) {
     if (type === 'display') {
@@ -54,24 +68,69 @@ const renderers = {
     }
     return data;
   },
-  fullName: function (data, type) {
-    if (type === 'display') {
-      return `<small>${data}</small>`;
-    }
-    return data;
-  },
   igTimestamp: function (data, type) {
     if (type === 'display' || type === 'filter') {
       if (data) {
+        let monthFormat = (type === 'display' ? 'short' : 'long');
         // data is in seconds, transform to ms
         return new Date(data * 1000).toLocaleDateString(
           getUserLanguage(),
-          { day: 'numeric', month: 'short', year: 'numeric' });
+          { day: 'numeric', month: monthFormat, year: 'numeric' });
       } else {
         return '';
       }
     }
     return (data === null ? 0 : data);
+  },
+  storyViewStatus: function (data, type) {
+    if (type === 'display') {
+      let text = '';
+      switch (data) {
+        case StoryViewStatus.none:
+          text = 'Not viewed';
+          break;
+        case StoryViewStatus.partial:
+          text = 'Partly viewed';
+          break;
+        case StoryViewStatus.all:
+          text = 'Finished';
+          break;
+        default:
+          break;
+      }
+      return text;
+    }
+    return data;
+  },
+  hasStory: function (data, type, row) {
+    if (type === 'display') {
+      let result = ''
+      let srText = '';
+      if (data === true) {
+        srText = 'True';
+        let iconClass = 'fa ';
+
+        switch (row.story_view_status) {
+          case StoryViewStatus.none:
+            iconClass += 'fa-circle ig-story-not-viewed';
+            break;
+          case StoryViewStatus.partial:
+            iconClass += 'fa-circle-thin ig-story-partly-viewed';
+            break;
+          case StoryViewStatus.all:
+            iconClass += 'fa-circle-thin ig-story-finished';
+            break;
+          default:
+            break;
+        }
+        result += `<i class="${iconClass}" aria-hidden="true"></i>`;
+      } else {
+        srText = 'False';
+      }
+      result += `<span class="sr-only">${srText}</span>`;
+      return result;
+    }
+    return data;
   },
   // only provide row to check if data is known or not, i.e. user is public or followed by viewer
   iconForBoolean: function (iconClass, data, type, row = null) {
@@ -102,6 +161,7 @@ const renderers = {
 }
 
 const firstDataTableArgs = {
+  autoWidth: true,
   columns: [
     {
       render: function name(data, type, row) {
@@ -110,48 +170,7 @@ const firstDataTableArgs = {
     },
     {
       data: 'username',
-      render: renderers.username
-    },
-    {
-      data: 'full_name',
-      render: renderers.fullName
-    },
-    {
-      data: 'is_private',
-      className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
-    },
-    {
-      data: 'is_verified',
-      className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
-    },
-    {
-      data: 'has_story',
-      className: 'body-center',
-      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-circle-thin ig-story', data, type, row); }
-    },
-    {
-      data: 'followed_by_viewer',
-      className: 'body-center',
-      render: function (data, type) { return renderers.buttonForBoolean('Following', data, type); }
-    },
-    {
-      data: 'requested_by_viewer',
-      className: 'body-center',
-      render: function (data, type) { return renderers.buttonForBoolean('Requested', data, type); }
-    }
-  ]
-}
-
-const secondDataTableArgs = {
-  scrollX: true,
-  fixedColumns: {
-    leftColumns: 2
-  },
-  columns: [
-    {
-      data: 'username',
+      width: usernameColumnWidth,
       render: renderers.username
     },
     {
@@ -160,21 +179,86 @@ const secondDataTableArgs = {
     },
     {
       data: 'is_private',
+      searchable: false,
       className: 'body-center',
       render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
     },
     {
+      data: 'is_verified',
+      searchable: false,
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
+    },
+    {
+      data: 'has_story',
+      searchable: false,
+      className: 'body-center',
+      render: renderers.hasStory
+    },
+    {
+      data: 'story_view_status',
+      searchable: false,
+      className: 'body-left small',
+      render: renderers.storyViewStatus
+    },
+    {
       data: 'follows_viewer',
+      searchable: false,
       className: 'body-center',
       render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
     },
     {
       data: 'followed_by_viewer',
+      searchable: false,
+      className: 'body-center',
+      render: function (data, type) { return renderers.buttonForBoolean('Following', data, type); }
+    },
+    {
+      data: 'requested_by_viewer',
+      searchable: false,
+      className: 'body-center',
+      render: function (data, type) { return renderers.buttonForBoolean('Requested', data, type); }
+    }
+  ]
+}
+
+const secondDataTableArgs = {
+  autoWidth: true,
+  scrollX: true,
+  fixedColumns: {
+    leftColumns: 2
+  },
+  columns: [
+    {
+      data: 'username',
+      width: usernameColumnWidth,
+      render: renderers.username
+    },
+    {
+      data: 'full_name',
+      className: 'small'
+    },
+    {
+      data: 'is_private',
+      searchable: false,
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
+    },
+    {
+      data: 'follows_viewer',
+      searchable: false,
+      className: 'body-center',
+      render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
+    },
+    {
+      data: 'followed_by_viewer',
+      searchable: false,
       className: 'body-center small',
       render: function (data, type) { return renderers.buttonForBoolean('Following', data, type); }
     },
     {
       data: 'requested_by_viewer',
+      searchable: false,
       className: 'body-center small',
       render: function (data, type) { return renderers.buttonForBoolean('Requested', data, type); }
     },
@@ -195,16 +279,19 @@ const secondDataTableArgs = {
     },
     {
       data: 'is_joined_recently',
+      searchable: false,
       className: 'body-center',
       render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
     },
     {
       data: 'is_verified',
+      searchable: false,
       className: 'body-center',
       render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
     },
     {
       data: 'is_business_account',
+      searchable: false,
       className: 'body-center',
       render: function (data, type) { return renderers.iconForBoolean('fa fa-briefcase', data, type); }
     },
@@ -229,21 +316,25 @@ const secondDataTableArgs = {
     },
     {
       data: 'has_igtv',
+      searchable: false,
       className: 'body-center',
       render: function (data, type, row) { return renderers.iconForBoolean('fa fa-television', data, type, row); }
     },
     {
       data: 'has_reel_clips',
+      searchable: false,
       className: 'body-center',
       render: function (data, type, row) { return renderers.iconForBoolean('fa fa-youtube-play', data, type, row); }
     },
     {
       data: 'has_ar_effects',
+      searchable: false,
       className: 'body-center',
       render: function (data, type, row) { return renderers.iconForBoolean('fa fa-smile-o', data, type, row); }
     },
     {
       data: 'has_guides',
+      searchable: false,
       className: 'body-center',
       render: function (data, type, row) { return renderers.iconForBoolean('fa fa-newspaper-o', data, type, row); }
     }
@@ -289,31 +380,31 @@ function onSubmitInputLists(event) {
     inputLists = JSON.parse(inputListsTextArea.value);
     followers = inputLists.followers;
     followings = inputLists.followings;
-    addUserUrl(followers);
-    addUserUrl(followings);
 
     switch (listSelectionRadios.value) {
-      case "all_wers":
+      case ListSelections.all_followers:
         firstSelectedList = followers;
         break;
-      case "all_wings":
+      case ListSelections.all_followings:
         firstSelectedList = followings;
         break;
-      case "1_way_wers":
+      case ListSelections.one_way_followers:
         firstSelectedList = oneWayFollowers(followers);
         break;
-      case "1_way_wings":
+      case ListSelections.one_way_followings:
         firstSelectedList = arrayDifference(followings, followers);
         break;
-      case "friends":
+      case ListSelections.friends:
         firstSelectedList = arrayIntersection(followers, followings);
         break;
-      case "all":
+      case ListSelections.all:
         firstSelectedList = arrayUnion(followers, followings);
         break;
       default:
         alert('Missing choice of list')
     }
+
+    addInfo(firstSelectedList, followers);
 
     updateDisplayedListInfo(firstSelectedList.length, firstListSizeSpan, firstTimeEstimateSpan);
 
@@ -327,15 +418,23 @@ function onSubmitInputLists(event) {
 
 async function storeAfterSubmitInputLists() {
   if (storageAvailable) {
-    storage.setItem(storageKeys.inputListsTextArea, inputListsTextArea.value);
-    storage.setItem(storageKeys.firstSelectedList, firstSelectedList);
-    storage.setItem(storageKeys.listSelectionRadios, listSelectionRadios.value);
+    storage.setItem(StorageKeys.inputListsTextArea, inputListsTextArea.value);
+    storage.setItem(StorageKeys.firstSelectedList, firstSelectedList);
+    storage.setItem(StorageKeys.listSelectionRadios, listSelectionRadios.value);
   }
 }
 
-function addUserUrl(userList) {
-  for (let i = 0; i < userList.length; ++i) {
-    userList[i].url = `https://www.instagram.com/${userList[i].username}/`;
+// Add properties follows_viewer and url to the first selected list
+function addInfo(selectedList, followers) {
+  let followersIdSet = new Set();
+  followers.forEach(user => followersIdSet.add(user.id));
+
+  for (let i = 0; i < selectedList.length; ++i) {
+    // add the URL in case a CSV is needed
+    selectedList[i].url = `https://www.instagram.com/${selectedList[i].username}/`;
+
+    // use the list of followers to populate property `follows_viewer`
+    selectedList[i].follows_viewer = followersIdSet.has(selectedList[i].id);
   }
 }
 
@@ -367,7 +466,7 @@ function arrayIntersection(first, second) {
 
 // Order of input parameters is irrelevant
 function arrayUnion(first, second) {
-  let result = first;
+  let result = [...first]; // deep copy
   let firstIdSet = new Set();
   first.forEach(user => firstIdSet.add(user.id));
   second.forEach(item => {
@@ -388,7 +487,7 @@ function onClickSubmitPrunedList() {
   let selectedCheckboxes = firstDataTable.$('input').serializeArray();
   prunedUsernameList = selectedCheckboxes.map((checkbox) => { return checkbox.name; });
   updateDisplayedListInfo(prunedUsernameList.length, prunedListSizeSpan, secondTimeEstimateSpan);
-  prunedUsernameListCode.textContent = `prunedUsernameList = ${JSON.stringify(prunedUsernameList)};\n`+'getMoreDetails()';
+  prunedUsernameListCode.textContent = `prunedUsernameList = ${JSON.stringify(prunedUsernameList)};\n` + 'getMoreDetails()';
   return false;
 }
 
@@ -402,29 +501,34 @@ function onSubmitMoreDetails(event) {
     handleError(error);
   }
   if (storageAvailable) {
-    storage.setItem(storageKeys.moreDetails, moreDetails);
+    storage.setItem(StorageKeys.moreDetails, moreDetails);
   }
 }
 
 function loadFromStorageIfAvailable() {
   if (storageAvailable) {
-    let stored = storage.getItem(storageKeys.inputListsTextArea)
+    let stored = storage.getItem(StorageKeys.inputListsTextArea)
     if (stored != null) {
       inputListsTextArea.value = stored;
     }
-    stored = storage.getItem(storageKeys.listSelectionRadios)
+    stored = storage.getItem(StorageKeys.listSelectionRadios)
     if (stored != null) {
       listSelectionRadios.value = stored;
     }
-    stored = storage.getItem(storageKeys.firstSelectedList)
+    stored = storage.getItem(StorageKeys.firstSelectedList)
     if (stored != null) {
       firstSelectedList = stored;
-      setDataInTable(firstDataTable, firstSelectedList);
+      // try-catch in case the stored data is incompatible with the recent table
+      try {
+        setDataInTable(firstDataTable, firstSelectedList);
+      } catch (e) { console.error(e); }
     }
-    stored = storage.getItem(storageKeys.moreDetails)
+    stored = storage.getItem(StorageKeys.moreDetails)
     if (stored != null) {
       moreDetails = stored;
-      setDataInTable(secondDataTable, moreDetails);
+      try {
+        setDataInTable(secondDataTable, moreDetails);
+      } catch (e) { console.error(e); }
     }
   }
 }

@@ -75,7 +75,6 @@ class ScopedStorage {
   }
 
   setItem(key, value) {
-    console.log(key, typeof (value));
     let valueAsString;
     if (typeof (value) === 'string') {
       valueAsString = value;

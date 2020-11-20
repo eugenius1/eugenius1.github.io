@@ -638,15 +638,15 @@ a .fa-stack {
   height: 500px;
 }
 
-.md-screen-width {
-  width: min(100vw, 1200px);
-  left: calc(-1*(min(100vw, 1200px))/2 + 50%);
+.lg-screen-width {
+  width: min(100vw, 1400px);
+  left: calc(-1*(min(100vw, 1400px))/2 + 50%);
 }
 .full-screen-width {
   width: 100vw;
   left: calc(-50vw + 50%);
 }
-.md-screen-width,
+.lg-screen-width,
 .full-screen-width {
   padding-left: 2%;
   padding-right: 2%;

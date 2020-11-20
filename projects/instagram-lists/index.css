@@ -11,8 +11,15 @@ a.ig-username {
   color: #3897f0;
 }
 
-.ig-story {
+.ig-story-finished {
+  color: #7e7e7e;
+}
+
+.ig-story-partly-viewed, .ig-story-not-viewed {
   color: #dc3879;
+}
+
+.ig-story-finished, .ig-story-partly-viewed, .ig-story-not-viewed {
   font-weight: bold;
 }
 

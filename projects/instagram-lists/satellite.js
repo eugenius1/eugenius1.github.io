@@ -4,9 +4,10 @@ var prunedUsernameList = [];
 var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
+const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
 function abort() {
   doAbort = true;
-  console.info('Abort has been triggered.')
+  console.info('Abort has been triggered.');
 }
 function handleResult(result, variableName, aborted = false) {
   console.log(result);
@@ -33,6 +34,18 @@ async function getLists() {
         hasNext = res.data.user[config.user_edge].page_info.has_next_page
         after = res.data.user[config.user_edge].page_info.end_cursor
         thisList = thisList.concat(res.data.user[config.user_edge].edges.map(({ node }) => {
+          let has_story = Boolean(node.reel.latest_reel_media);
+          let story_view_status = StoryViewStatus.na;
+          if (has_story) {
+            let seen = node.reel.seen;
+            if (seen === null) {
+              story_view_status = StoryViewStatus.none;
+            } else if (seen === node.reel.latest_reel_media) {
+              story_view_status = StoryViewStatus.all;
+            } else {
+              story_view_status = StoryViewStatus.partial;
+            }
+          }
           return {
             id: node.id,
             username: node.username,
@@ -42,7 +55,8 @@ async function getLists() {
             requested_by_viewer: node.requested_by_viewer,
             is_private: node.is_private,
             is_verified: node.is_verified,
-            has_story: Boolean(node.reel.latest_reel_media) // NB: not available in ?__a=1
+            has_story: has_story,
+            story_view_status: story_view_status
           };
         }));
       });
@@ -80,7 +94,7 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
         --i;
       } else {
         // other statuses won't trigger a retry but will be recorded
-        failures.push({ index: i, username: username, httpStatus: response.status })
+        failures.push({ index: i, username: username, http_status: response.status })
       }
       continue;
     }

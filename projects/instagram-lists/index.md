@@ -28,6 +28,8 @@ We need to use the developer tools built-in to modern browsers like Chrome, Fire
 For Safari, you have to enable it under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
 Everything is happening in your browser (client-side) and none of your data is sent to a server.
 
+Currently, this tool won't work if your combined number of followers and followings exceeds **10,000**.
+
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
 - TOC
@@ -39,9 +41,9 @@ There are two stages:
 
 1. Get the lists of all followers and all followings.
 
-2. _Optional_: Get details about each account. This can run for **hours**; we're limited to 100 accounts/hour.
+2. _Optional_: Get details about each account. This can run for **hours** as we're limited to 100 accounts/hour.
     - You will get details including:
-      - number of posts, followers, followings
+      - number of posts, followers and followings
       - number of their followers that you follow
       - date of their last post
       - are they a business account?
@@ -91,9 +93,10 @@ var prunedUsernameList = [];
 var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
+const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
 function abort() {
   doAbort = true;
-  console.info('Abort has been triggered.')
+  console.info('Abort has been triggered.');
 }
 function handleResult(result, variableName, aborted = false) {
   console.log(result);
@@ -120,6 +123,18 @@ async function getLists() {
         hasNext = res.data.user[config.user_edge].page_info.has_next_page
         after = res.data.user[config.user_edge].page_info.end_cursor
         thisList = thisList.concat(res.data.user[config.user_edge].edges.map(({ node }) => {
+          let has_story = Boolean(node.reel.latest_reel_media);
+          let story_view_status = StoryViewStatus.na;
+          if (has_story) {
+            let seen = node.reel.seen;
+            if (seen === null) {
+              story_view_status = StoryViewStatus.none;
+            } else if (seen === node.reel.latest_reel_media) {
+              story_view_status = StoryViewStatus.all;
+            } else {
+              story_view_status = StoryViewStatus.partial;
+            }
+          }
           return {
             id: node.id,
             username: node.username,
@@ -129,7 +144,8 @@ async function getLists() {
             requested_by_viewer: node.requested_by_viewer,
             is_private: node.is_private,
             is_verified: node.is_verified,
-            has_story: Boolean(node.reel.latest_reel_media) // NB: not available in ?__a=1
+            has_story: has_story,
+            story_view_status: story_view_status
           };
         }));
       });
@@ -167,7 +183,7 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
         --i;
       } else {
         // other statuses won't trigger a retry but will be recorded
-        failures.push({ index: i, username: username, httpStatus: response.status })
+        failures.push({ index: i, username: username, http_status: response.status })
       }
       continue;
     }
@@ -295,18 +311,20 @@ Below you can unselect accounts in order to reduce time needed to get more detai
 Clicking on a user link will open their profile in a **new tab**.
 *I requested to follow* means it's a private account you requested to follow and they haven't approved yet.
 
-<div class="container" class="md-screen-width">
+<div class="container" class="lg-screen-width">
   <table id="first-table" class="table table-bordered">
     <thead>
       <tr>
         <th><span class="sr-only">Selected?</span></th>
         <th>Username</th>
         <th>Full name</th>
-        <th class="small text-center">Private?</th>
-        <th class="small text-center">Verified?</th>
-        <th class="small text-center">Story?</th>
-        <th class="small text-center">I am following?</th>
-        <th class="small text-center">I requested to follow?</th>
+        <th class="small">Private?</th>
+        <th class="small">Verified?</th>
+        <th class="small">Has story?</th>
+        <th class="small">I viewed their story?</th>
+        <th class="small">Follows me?</th>
+        <th class="small">I am following?</th>
+        <th class="small">I requested to follow?</th>
       </tr>
       </thead>
       <tbody>
@@ -316,11 +334,13 @@ Clicking on a user link will open their profile in a **new tab**.
         <th><span class="sr-only">Selected?</span></th>
         <th>Username</th>
         <th>Full name</th>
-        <th class="small text-center">Private?</th>
-        <th class="small text-center">Verified?</th>
-        <th class="small text-center">Story?</th>
-        <th class="small text-center">I am following?</th>
-        <th class="small text-center">I requested to follow?</th>
+        <th class="small">Private?</th>
+        <th class="small">Verified?</th>
+        <th class="small">Has story?</th>
+        <th class="small">I viewed their story?</th>
+        <th class="small">Follows me?</th>
+        <th class="small">I am following?</th>
+        <th class="small">I requested to follow?</th>
       </tr>
     </tfoot>
   </table>
@@ -366,52 +386,52 @@ Explanation of some of the columns:
   <table id="second-table" class="table table-bordered">
     <thead>
       <tr>
-        <th class="small text-center">Username</th>
-        <th class="small text-center">Full name</th>
-        <th class="small text-center">Private?</th>
-        <th class="small text-center">Follows me?</th>
-        <th class="small text-center">I am following?</th>
-        <th class="small text-center">I requested to follow?</th>
-        <th class="small text-center">Followings</th>
-        <th class="small text-center">Followers</th>
-        <th class="small text-center">Mutual followers</th>
-        <th class="small text-center">Joined recently?</th>
-        <th class="small text-center">Verified?</th>
-        <th class="small text-center">Business account?</th>
-        <th class="small text-center">Business category</th>
-        <th class="small text-center">Posts</th>
-        <th class="small text-center">Last post date</th>
-        <th class="small text-center">Story highlights</th>
-        <th class="small text-center">IGTV?</th>
-        <th class="small text-center">Reels?</th>
-        <th class="small text-center">AR effects?</th>
-        <th class="small text-center">Guides?</th>
+        <th class="small">Username</th>
+        <th class="small">Full name</th>
+        <th class="small">Private?</th>
+        <th class="small">Follows me?</th>
+        <th class="small">I am following?</th>
+        <th class="small">I requested to follow?</th>
+        <th class="small">Followings</th>
+        <th class="small">Followers</th>
+        <th class="small">Mutual followers</th>
+        <th class="small">Joined recently?</th>
+        <th class="small">Verified?</th>
+        <th class="small">Business account?</th>
+        <th class="small">Business category</th>
+        <th class="small">Posts</th>
+        <th class="small">Last post date</th>
+        <th class="small">Story highlights</th>
+        <th class="small">IGTV?</th>
+        <th class="small">Reels?</th>
+        <th class="small">AR effects?</th>
+        <th class="small">Guides?</th>
       </tr>
     </thead>
     <tbody>
     </tbody>
     <tfoot>
       <tr>
-        <th class="small text-center">Username</th>
-        <th class="small text-center">Full name</th>
-        <th class="small text-center">Private?</th>
-        <th class="small text-center">Follows me?</th>
-        <th class="small text-center">I am following?</th>
-        <th class="small text-center">I requested to follow?</th>
-        <th class="small text-center">Followings</th>
-        <th class="small text-center">Followers</th>
-        <th class="small text-center">Mutual followers</th>
-        <th class="small text-center">Joined recently?</th>
-        <th class="small text-center">Verified?</th>
-        <th class="small text-center">Business account?</th>
-        <th class="small text-center">Business category</th>
-        <th class="small text-center">Posts</th>
-        <th class="small text-center">Last post date</th>
-        <th class="small text-center">Story highlights</th>
-        <th class="small text-center">IGTV?</th>
-        <th class="small text-center">Reels?</th>
-        <th class="small text-center">AR effects?</th>
-        <th class="small text-center">Guides?</th>
+        <th class="small">Username</th>
+        <th class="small">Full name</th>
+        <th class="small">Private?</th>
+        <th class="small">Follows me?</th>
+        <th class="small">I am following?</th>
+        <th class="small">I requested to follow?</th>
+        <th class="small">Followings</th>
+        <th class="small">Followers</th>
+        <th class="small">Mutual followers</th>
+        <th class="small">Joined recently?</th>
+        <th class="small">Verified?</th>
+        <th class="small">Business account?</th>
+        <th class="small">Business category</th>
+        <th class="small">Posts</th>
+        <th class="small">Last post date</th>
+        <th class="small">Story highlights</th>
+        <th class="small">IGTV?</th>
+        <th class="small">Reels?</th>
+        <th class="small">AR effects?</th>
+        <th class="small">Guides?</th>
       </tr>
     </tfoot>
   </table>
