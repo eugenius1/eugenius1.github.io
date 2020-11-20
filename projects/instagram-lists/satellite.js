@@ -5,6 +5,12 @@ var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
 const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
+function copy(data, showMessage = true) {
+  copyFunc(JSON.stringify(data));
+  if (showMessage) {
+    console.info('*** Copied!');
+  }
+}
 function abort() {
   doAbort = true;
   console.info('Abort has been triggered.');
