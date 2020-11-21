@@ -162,8 +162,30 @@ const renderers = {
   }
 }
 
+// TODO: firstDataTableArgs.drawCallback1 and secondDataTableArgs.initComplete1 are temporary
+
 const firstDataTableArgs = {
   autoWidth: true,
+  drawCallback1: function () {
+    this.api().columns().every(function () {
+      var column = this;
+      var select = $('<select><option value=""></option></select>')
+        .appendTo($(column.footer()).empty())
+        .on('change', function () {
+          var val = $.fn.dataTable.util.escapeRegex(
+            $(this).val()
+          );
+
+          column
+            .search(val ? '^' + val + '$' : '', true, false)
+            .draw();
+        });
+
+      column.data().unique().sort().each(function (d, j) {
+        select.append('<option value="' + d + '">' + d + '</option>')
+      });
+    });
+  },
   columns: [
     {
       className: 'body-center',
@@ -172,6 +194,7 @@ const firstDataTableArgs = {
         if (type === 'display') {
           return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" checked></label></div>`;
         }
+        return true;
       }
     },
     {
@@ -233,6 +256,26 @@ const secondDataTableArgs = {
   scrollX: true,
   fixedColumns: {
     leftColumns: 2
+  },
+  initComplete1: function () {
+    this.api().columns().every(function () {
+      var column = this;
+      var select = $('<select><option value=""></option></select>')
+        .appendTo($(column.footer()).empty())
+        .on('change', function () {
+          var val = $.fn.dataTable.util.escapeRegex(
+            $(this).val()
+          );
+
+          column
+            .search(val ? '^' + val + '$' : '', true, false)
+            .draw();
+        });
+
+      column.data().unique().sort().each(function (d, j) {
+        select.append('<option value="' + d + '">' + d + '</option>')
+      });
+    });
   },
   columns: [
     {

@@ -5,6 +5,7 @@ var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
 const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
+const HttpStatus = Object.freeze({ tooManyRequests: 429 });
 function abort() {
   doAbort = true;
   console.info('Abort has been triggered.');
@@ -16,50 +17,61 @@ function handleResult(result, variableName, aborted = false) {
 }
 async function getLists() {
   let configs = [
+    { name: 'followings', user_edge: 'edge_follow', query_hash: 'd04b0a864b4b54837c0d870b0e77e076' },
     { name: 'followers', user_edge: 'edge_followed_by', query_hash: 'c76146de99bb02f6415203be841dd25a' },
-    { name: 'followings', user_edge: 'edge_follow', query_hash: 'd04b0a864b4b54837c0d870b0e77e076' }
   ];
-  var userId = JSON.parse(document.getElementsByTagName('body')[0].innerText).graphql.user.id
+  var userId = JSON.parse(document.getElementsByTagName('body')[0].innerText).graphql.user.id;
+  let pageLimit = 200; // = 10,000 / 50
+  let pageCount = 1;
   for (let i = 0; i < configs.length; ++i) {
     let config = configs[i], after = null, hasNext = true, thisList = [];
     console.info(`Fetching ${config.name}...`);
-    while (hasNext) {
-      await fetch(`https://www.instagram.com/graphql/query/?query_hash=${config.query_hash}&variables=` + encodeURIComponent(JSON.stringify({
+    for (; hasNext && (pageCount <= pageLimit); ++pageCount) {
+      let response = await fetch(`https://www.instagram.com/graphql/query/?query_hash=${config.query_hash}&variables=` + encodeURIComponent(JSON.stringify({
         id: userId,
         include_reel: true,
         fetch_mutual: true,
         first: 50,
         after: after
-      }))).then(res => res.json()).then(res => {
-        hasNext = res.data.user[config.user_edge].page_info.has_next_page
-        after = res.data.user[config.user_edge].page_info.end_cursor
-        thisList = thisList.concat(res.data.user[config.user_edge].edges.map(({ node }) => {
-          let has_story = Boolean(node.reel.latest_reel_media);
-          let story_view_status = StoryViewStatus.na;
-          if (has_story) {
-            let seen = node.reel.seen;
-            if (seen === null) {
-              story_view_status = StoryViewStatus.none;
-            } else if (seen === node.reel.latest_reel_media) {
-              story_view_status = StoryViewStatus.all;
-            } else {
-              story_view_status = StoryViewStatus.partial;
-            }
+      })));
+      if (!response.ok) {
+        console.warn(`Failed at page number ${pageCount} (during ${config.name} list). HTTP status ${response.status}: ${response.statusText}.`);
+        if (response.status === HttpStatus.tooManyRequests) {
+          // stop all by ending outer for-loop
+          i = configs.length;
+        }
+        break;
+      }
+      response = await response.json();
+      hasNext = response.data.user[config.user_edge].page_info.has_next_page
+      after = response.data.user[config.user_edge].page_info.end_cursor
+      thisList = thisList.concat(response.data.user[config.user_edge].edges.map(({ node }) => {
+        let has_story = Boolean(node.reel.latest_reel_media);
+        let story_view_status = StoryViewStatus.na;
+        if (has_story) {
+          let seen = node.reel.seen;
+          if (seen === null) {
+            story_view_status = StoryViewStatus.none;
+          } else if (seen === node.reel.latest_reel_media) {
+            story_view_status = StoryViewStatus.all;
+          } else {
+            story_view_status = StoryViewStatus.partial;
           }
-          return {
-            id: node.id,
-            username: node.username,
-            full_name: node.full_name,
-            profile_pic_url: node.profile_pic_url,
-            followed_by_viewer: node.followed_by_viewer,
-            requested_by_viewer: node.requested_by_viewer,
-            is_private: node.is_private,
-            is_verified: node.is_verified,
-            has_story: has_story,
-            story_view_status: story_view_status
-          };
-        }));
-      });
+        }
+        return {
+          id: node.id,
+          username: node.username,
+          full_name: node.full_name,
+          profile_pic_url: node.profile_pic_url,
+          followed_by_viewer: node.followed_by_viewer,
+          requested_by_viewer: node.requested_by_viewer,
+          is_private: node.is_private,
+          is_verified: node.is_verified,
+          has_story: has_story,
+          story_view_status: story_view_status
+        };
+      }));
+      console.log(thisList.length);
     }
     console.info(`${thisList.length} ${config.name} fetched.`);
     lists[config.name] = thisList;
@@ -77,12 +89,12 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
     }
     let response = await fetch(`https://www.instagram.com/${username}/?__a=1`);
     if (!response.ok) {
-      console.warn(`Failed at index ${i} (${username}). HTTP status ${response.status}.`);
-      if (response.status === 429) {
+      console.warn(`Failed at index ${i} (${username}). HTTP status ${response.status}: ${response.statusText}.`);
+      if (response.status === HttpStatus.tooManyRequests) {
         let totalWaitMins = 30;
         let pollingMs = 200;
         doAbort = false;
-        console.warn(`Reason is Too Many Requests. Pausing for ${totalWaitMins} minutes. To abort and get the data already fetched (${moreDetails.length} users), run:\n abort()`);
+        console.warn(`Pausing for ${totalWaitMins} minutes. To abort and get the data already fetched (${moreDetails.length} users), run:\n abort()`);
         for (let pollingCount = 0; pollingCount < (totalWaitMins * 60 * 1000 / pollingMs); ++pollingCount) {
           if (doAbort) {
             handleResult(moreDetails, 'moreDetails', true);
