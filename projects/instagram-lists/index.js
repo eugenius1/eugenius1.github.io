@@ -167,9 +167,12 @@ const firstDataTableArgs = {
   columns: [
     {
       className: 'body-center',
+      orderDataType: 'dom-checkbox',
       render: function name(data, type, row) {
+        if (type === 'display') {
           return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" checked></label></div>`;
         }
+      }
     },
     {
       data: 'username',
