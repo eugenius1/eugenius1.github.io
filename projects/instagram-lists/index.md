@@ -79,7 +79,7 @@ Make sure you're **logged in** on [instagram.com](https://www.instagram.com/).
     <label for="username">Your username:</label>
     <input type="text" class="form-control" id="username" placeholder="username" required>
   </div>
-  <button type="submit" class="btn btn-primary">Open starting point <i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only"> in a new tab</span></button>
+  <button type="submit" class="btn btn-primary">Open starting point <i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">in a new tab</span></button>
   <div id="ig-username-fallback" class="small" style="display:none">Didn't work? Link: <a id="ig-username-fallback-link"></a></div>
 </form>
 
@@ -311,6 +311,13 @@ Below you can unselect accounts in order to reduce time needed to get more detai
 Clicking on a user link will open their profile in a **new tab**.
 *I requested to follow* means it's a private account you requested to follow and they haven't approved yet.
 
+<div class="text-center">
+  <div class="btn-group" role="group" style="margin-bottom: 5px" aria-label="Start with all users selected or unselected?">
+    <button type="button" class="btn btn-default" id="first-select-all">Select all</button>
+    <button type="button" class="btn btn-default" id="first-unselect-all">Unselect all</button>
+  </div>
+</div>
+
 <div class="container" class="lg-screen-width">
   <table id="first-table" class="table table-bordered">
     <thead>
@@ -441,6 +448,6 @@ Explanation of some of the columns:
 
 Your data is stored in this browser tab, even after refreshing, until the tab is closed. You can also manually clear this local storage:
 
-<button type="button" id="clear-storage" class="btn btn-danger">Clear this page</button>
+<button type="button" id="clear-storage" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear this page</button>
 
 I'd love to know what you think of this tool. You can leave a comment below or [contact me](/contact).

@@ -44,6 +44,8 @@ const firstCsvParent = document.getElementById('first-csv');
 const firstCsvCode = firstCsvParent.getElementsByTagName('code')[0];
 const firstListSizeSpan = document.getElementById('first-list-size');
 const firstTimeEstimateSpan = document.getElementById('first-time-estimate');
+const firstTableSelectAllButton = document.getElementById('first-select-all');
+const firstTableUnselectAllButton = document.getElementById('first-unselect-all');
 const firstTable = $('#first-table'); // need to use jQuery for DataTable
 var firstDataTable;
 
@@ -164,9 +166,10 @@ const firstDataTableArgs = {
   autoWidth: true,
   columns: [
     {
+      className: 'body-center',
       render: function name(data, type, row) {
-        return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" checked></label></div>`;
-      }
+          return `<div class="checkbox"><label><input type="checkbox" name="${row.username}" checked></label></div>`;
+        }
     },
     {
       data: 'username',
@@ -416,7 +419,7 @@ function onSubmitInputLists(event) {
   storeAfterSubmitInputLists();
 }
 
-async function storeAfterSubmitInputLists() {
+function storeAfterSubmitInputLists() {
   if (storageAvailable) {
     storage.setItem(StorageKeys.inputListsTextArea, inputListsTextArea.value);
     storage.setItem(StorageKeys.firstSelectedList, firstSelectedList);
@@ -483,8 +486,16 @@ function onClickGetFirstCsv() {
   firstCsvCode.textContent = objectArrayToCsv(firstSelectedList);
 }
 
+function onClickSetAllCheckboxesAs(bool) {
+  return function () {
+    $.each(firstDataTable.$(':checkbox'), (i, checkbox) => {
+      $(checkbox).prop('checked', bool);
+    });
+  }
+}
+
 function onClickSubmitPrunedList() {
-  let selectedCheckboxes = firstDataTable.$('input').serializeArray();
+  let selectedCheckboxes = firstDataTable.$(':checkbox').serializeArray();
   prunedUsernameList = selectedCheckboxes.map((checkbox) => { return checkbox.name; });
   updateDisplayedListInfo(prunedUsernameList.length, prunedListSizeSpan, secondTimeEstimateSpan);
   prunedUsernameListCode.textContent = `prunedUsernameList = ${JSON.stringify(prunedUsernameList)};\n` + 'getMoreDetails()';
@@ -562,6 +573,8 @@ $(document).ready(function () {
   usernameForm.onsubmit = onSubmitUsername;
   inputListsForm.onsubmit = onSubmitInputLists;
   firstCsvButton.onclick = onClickGetFirstCsv;
+  firstTableSelectAllButton.onclick = onClickSetAllCheckboxesAs(true);
+  firstTableUnselectAllButton.onclick = onClickSetAllCheckboxesAs(false);
   moreDetailsForm.onsubmit = onSubmitMoreDetails;
   submitPrunedListButton.click(onClickSubmitPrunedList);
   clearStorageButton.onclick = onClickClearStorage;

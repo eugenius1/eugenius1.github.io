@@ -10,6 +10,9 @@ function getUserLanguage() {
 // Inspired by https://stackoverflow.com/a/8212878/5288481
 // limit sets how many parts to include
 function secondsToString(totalSeconds, limit = 2) {
+  if (totalSeconds === 0){
+    return '0 seconds';
+  }
   let result = '';
   let partsCount = 0;
   let remainderSeconds = totalSeconds;
