@@ -8,21 +8,19 @@ comments: true
 
 Some of my public projects:
 
-- This [personal website/tech blog](/blog/how-i-made-this-website/ "How I made this website!")  
+- This personal website/tech blog: [how I made it](/blog/how-i-made-this-website/ "How I made this website!")  
 `#Jekyll`
 
-{% comment %}
-- [Instagram Lists](/projects/instagram-lists): Detailed lists of Instagram followers and followings  
-`#JavaScript`
-{% endcomment %}
+- [Instagram Lists](/projects/instagram-lists): Detailed, sortable lists of your Instagram followings and followers  
+`#JavaScript` `#hack` `#unofficialAPIs`
 
 - [Social Login Demos](/social-login-demos/)  
-`#JavaScript` `#webAPIs` `#Bootstrap`
+`#JavaScript` `#webAPIs`
 
 ## University Projects
 
 - My [MEng Final-Year Project](/fyp)  
-`#Python`
+`#Python` `#HighLevelSynthesis`
 
 - [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter  
 `#embedded` `#microPython` `#webClient`
@@ -31,7 +29,7 @@ Some of my public projects:
 `#mbed` `#threaded` `#RTOS`
 
 - [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing")  
-`#DSP` `#embedded` `#C`
+`#DigitalSignalProcessing` `#embedded` `#C`
 
 - [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle")  
 `#hackathon` `#Qt` `#Arduino`

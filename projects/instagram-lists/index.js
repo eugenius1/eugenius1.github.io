@@ -2,9 +2,9 @@
 /// <reference path="../../js/utils/storage.js" />
 
 // also in ./satellite.js
-const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
+const StoryViewStatus = Object.freeze({ NA: 0, NONE: 1, PARTIAL: 2, ALL: 3 });
 
-const storageTypeUsed = storageTypes.sessionStorage;
+const storageTypeUsed = StorageTypes.SESSION_STORAGE;
 const storageAvailable = isStorageAvailable(storageTypeUsed);
 var storage = null;
 if (storageAvailable) {
@@ -18,12 +18,12 @@ const StorageKeys = Object.freeze({
 });
 
 const ListSelections = Object.freeze({
-  all_followers: "all_wers",
-  all_followings: "all_wings",
-  one_way_followers: "1_way_wers",
-  one_way_followings: "1_way_wings",
-  friends: "friends", // a friend is both a follower and a following
-  all: "all"
+  ALL_FOLLOWERS: "all_wers",
+  ALL_FOLLOWINGS: "all_wings",
+  ONE_WAY_FOLLOWERS: "1_way_wers",
+  ONE_WAY_FOLLOWINGS: "1_way_wings",
+  FRIENDS: "friends", // a friend is both a follower and a following
+  ALL: "all"
 });
 
 var followers = [];
@@ -61,7 +61,7 @@ var secondDataTable;
 
 const clearStorageButton = document.getElementById('clear-storage');
 
-const usernameColumnWidth = 230; // 30-character username fits
+const USERNAME_COLUMN_WIDTH = 230; // 30-character username fits
 
 const renderers = {
   username: function (data, type, row) {
@@ -88,13 +88,13 @@ const renderers = {
     if (type === 'display') {
       let text = '';
       switch (data) {
-        case StoryViewStatus.none:
+        case StoryViewStatus.NONE:
           text = 'Not viewed';
           break;
-        case StoryViewStatus.partial:
+        case StoryViewStatus.PARTIAL:
           text = 'Partly viewed';
           break;
-        case StoryViewStatus.all:
+        case StoryViewStatus.ALL:
           text = 'Finished';
           break;
         default:
@@ -113,13 +113,13 @@ const renderers = {
         let iconClass = 'fa ';
 
         switch (row.story_view_status) {
-          case StoryViewStatus.none:
+          case StoryViewStatus.NONE:
             iconClass += 'fa-circle ig-story-not-viewed';
             break;
-          case StoryViewStatus.partial:
+          case StoryViewStatus.PARTIAL:
             iconClass += 'fa-circle-thin ig-story-partly-viewed';
             break;
-          case StoryViewStatus.all:
+          case StoryViewStatus.ALL:
             iconClass += 'fa-circle-thin ig-story-finished';
             break;
           default:
@@ -199,7 +199,7 @@ const firstDataTableArgs = {
     },
     {
       data: 'username',
-      width: usernameColumnWidth,
+      width: USERNAME_COLUMN_WIDTH,
       render: renderers.username
     },
     {
@@ -280,7 +280,7 @@ const secondDataTableArgs = {
   columns: [
     {
       data: 'username',
-      width: usernameColumnWidth,
+      width: USERNAME_COLUMN_WIDTH,
       render: renderers.username
     },
     {
@@ -392,7 +392,7 @@ const secondDataTableArgs = {
 
 function handleError(error) {
   console.error(error);
-  alert(`Sorry, an error occurred! Re-paste any data you recently pasted and retry. If it still doesn't work then please leave a comment with or send me this:\n${error}`);
+  alert(`Sorry, an error occurred. Re-paste any data you recently pasted and retry. If it still doesn't work then please leave a comment with or send me this:\n${error}`);
 }
 
 function setDataInTable(dataTable, data) {
@@ -431,22 +431,22 @@ function onSubmitInputLists(event) {
     followings = inputLists.followings;
 
     switch (listSelectionRadios.value) {
-      case ListSelections.all_followers:
+      case ListSelections.ALL_FOLLOWERS:
         firstSelectedList = followers;
         break;
-      case ListSelections.all_followings:
+      case ListSelections.ALL_FOLLOWINGS:
         firstSelectedList = followings;
         break;
-      case ListSelections.one_way_followers:
+      case ListSelections.ONE_WAY_FOLLOWERS:
         firstSelectedList = oneWayFollowers(followers);
         break;
-      case ListSelections.one_way_followings:
+      case ListSelections.ONE_WAY_FOLLOWINGS:
         firstSelectedList = arrayDifference(followings, followers);
         break;
-      case ListSelections.friends:
+      case ListSelections.FRIENDS:
         firstSelectedList = arrayIntersection(followers, followings);
         break;
-      case ListSelections.all:
+      case ListSelections.ALL:
         firstSelectedList = arrayUnion(followers, followings);
         break;
       default:

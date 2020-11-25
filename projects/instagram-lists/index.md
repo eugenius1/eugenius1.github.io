@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Instagram Lists
-subtitle: Detailed, sortable lists of your Instagram followers and followings
+subtitle: Detailed, sortable lists of your Instagram followings and followers
 comments: true
 ext-css:
   - https://cdn.datatables.net/v/bs/dt-1.10.22/fc-3.3.1/datatables.min.css
@@ -17,7 +17,7 @@ js:
   - index.js
 ---
 
-This tool helped me cleanup 151 of the 1079 accounts I used to follow on Instagram.
+This tool helped me clean up 151 of the 1079 accounts I used to follow on Instagram.
 I could sort my followings by details like when they last posted.
 
 This would not be possible with Instagram's official APIs so here we use their **unofficial, internal APIs**.
@@ -29,8 +29,6 @@ We need to use the developer tools built-in to modern browsers like Chrome, Fire
 For Safari, you have to enable it under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
 Everything is happening in your browser (client-side) and none of your data is sent to a server.
 
-Currently, this tool won't work if your combined number of followers and followings exceeds **10,000**.
-
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
 - TOC
@@ -40,9 +38,13 @@ Currently, this tool won't work if your combined number of followers and followi
 
 There are two stages:
 
-1. Get the lists of all followers and all followings.
+1. Get the **lists** of all followers and all followings.
+    - If your _combined_ number of followings and followers is more than **9,900**,
+    the tool will try to only get as many of your followings (accounts that you follow) as possible, up to 10,000.
+    <br>
+    <br>
 
-2. _Optional_: Get details about each account. This can run for **hours** as we're limited to 100 accounts/hour.
+2. _Optional_: Get **details** about each account. This can run for **hours** as we're limited to 100 accounts per hour.
     - You will get details including:
       - number of posts, followers and followings
       - number of their followers that you follow
@@ -50,17 +52,17 @@ There are two stages:
       - are they a business account?
       - are they verified?
       - have they joined recently?
-    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to verify your identity via email or phone number.
+    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/raw/img/projects/instagram-lists/instagram-verify.jpg) your identity via email or phone number.
 
 ### Legal disclaimer
 
-> The software is provided "as is", without warranty of any kind, express or
+> The tool is provided "as is", without warranty of any kind, express or
 implied, including but not limited to the warranties of merchantability,
 fitness for a particular purpose and noninfringement. In no event shall the
 authors or copyright holders be liable for any claim, damages or other
 liability, whether in an action of contract, tort or otherwise, arising from,
-out of or in connection with the software or the use or other dealings in the
-software.
+out of or in connection with the tool or the use or other dealings in the
+tool.
 
 ## Let's go!  
 
@@ -86,6 +88,8 @@ Make sure you're **logged in** on [instagram.com](https://www.instagram.com/).
 
 In the new instagram.com tab, open the browser console (normally `Ctrl`+`Shift`+`J` on Windows/Linux or `⌘`+`Option`+`J` on Mac).
 
+[![Browser console](/img/projects/instagram-lists/console-annotated.png)](/raw/img/projects/instagram-lists/console-annotated.png)
+
 Copy the code below into the console and press `Enter`. This will set up all the needed functions.
 
 ```js
@@ -94,148 +98,204 @@ var prunedUsernameList = [];
 var moreDetails = [];
 var doAbort = false;
 var copyFunc = copy;
-const StoryViewStatus = Object.freeze({ na: 0, none: 1, partial: 2, all: 3 });
-const HttpStatus = Object.freeze({ tooManyRequests: 429 });
+const GRAPHQL_MAX_PER_PAGE = 50;
+const StoryViewStatus = Object.freeze({ NA: 0, NONE: 1, PARTIAL: 2, ALL: 3 });
+const HttpStatus = Object.freeze({ TOO_MANY_REQUESTS: 429 });
+const timer = ms => new Promise(res => setTimeout(res, ms));
+function getTime() {
+  return new Date().toLocaleTimeString();
+}
 function abort() {
   doAbort = true;
   console.info('Abort has been triggered.');
 }
-function handleResult(result, variableName, aborted = false) {
+function handleResult(result, variableName) {
   console.log(result);
   copyFunc(result);
-  console.info(`*** ${aborted ? 'Aborted' : 'Done'}! The result is now copied to the clipboard. To copy again, run:\n copy(${variableName})`);
+  console.info(`******************************\n Done! The result is now copied to the clipboard. To copy again, run:\n\t copy(${variableName})`);
 }
-async function getLists() {
-  let configs = [
-    { name: 'followings', user_edge: 'edge_follow', query_hash: 'd04b0a864b4b54837c0d870b0e77e076' },
-    { name: 'followers', user_edge: 'edge_followed_by', query_hash: 'c76146de99bb02f6415203be841dd25a' },
-  ];
-  var userId = JSON.parse(document.getElementsByTagName('body')[0].innerText).graphql.user.id;
-  let pageLimit = 200; // = 10,000 / 50
-  let pageCount = 1;
-  for (let i = 0; i < configs.length; ++i) {
-    let config = configs[i], after = null, hasNext = true, thisList = [];
-    console.info(`Fetching ${config.name}...`);
-    for (; hasNext && (pageCount <= pageLimit); ++pageCount) {
-      let response = await fetch(`https://www.instagram.com/graphql/query/?query_hash=${config.query_hash}&variables=` + encodeURIComponent(JSON.stringify({
-        id: userId,
-        include_reel: true,
-        fetch_mutual: true,
-        first: 50,
-        after: after
-      })));
-      if (!response.ok) {
-        console.warn(`Failed at page number ${pageCount} (during ${config.name} list). HTTP status ${response.status}: ${response.statusText}.`);
-        if (response.status === HttpStatus.tooManyRequests) {
-          // stop all by ending outer for-loop
-          i = configs.length;
-        }
-        break;
-      }
-      response = await response.json();
-      hasNext = response.data.user[config.user_edge].page_info.has_next_page
-      after = response.data.user[config.user_edge].page_info.end_cursor
-      thisList = thisList.concat(response.data.user[config.user_edge].edges.map(({ node }) => {
-        let has_story = Boolean(node.reel.latest_reel_media);
-        let story_view_status = StoryViewStatus.na;
-        if (has_story) {
-          let seen = node.reel.seen;
-          if (seen === null) {
-            story_view_status = StoryViewStatus.none;
-          } else if (seen === node.reel.latest_reel_media) {
-            story_view_status = StoryViewStatus.all;
-          } else {
-            story_view_status = StoryViewStatus.partial;
-          }
-        }
-        return {
-          id: node.id,
-          username: node.username,
-          full_name: node.full_name,
-          profile_pic_url: node.profile_pic_url,
-          followed_by_viewer: node.followed_by_viewer,
-          requested_by_viewer: node.requested_by_viewer,
-          is_private: node.is_private,
-          is_verified: node.is_verified,
-          has_story: has_story,
-          story_view_status: story_view_status
-        };
-      }));
-      console.log(thisList.length);
+function minPagesNeeded(total) {
+  return Math.ceil(total / GRAPHQL_MAX_PER_PAGE);
+}
+function limitConfigs(configs, pageLimit) {
+  let result = configs.slice(0, 1);
+  let resultPages = minPagesNeeded(configs[0].total_count);
+  for (let i = 1; i < configs.length; ++i) {
+    let c = configs[i];
+    let thisPages = minPagesNeeded(c.total_count);
+    if ((resultPages + thisPages) <= pageLimit) {
+      result.push(c);
+      resultPages += thisPages;
+    } else {
+      console.info(`Ignoring the ${c.total_count.toLocaleString()} ${c.name}.`);
     }
-    console.info(`${thisList.length} ${config.name} fetched.`);
+  }
+  return result;
+}
+
+async function getLists() {
+  let pageLimits = { withoutWaiting: 200, withWaiting: 370 };
+  let pageLimit = pageLimits.withoutWaiting;
+  let baseInfo = null;
+  try {
+    baseInfo = JSON.parse(document.getElementsByTagName('body')[0].innerText);
+  } catch (error) {
+    console.error('You may not be on the right page, normally it should be like "https://www.instagram.com/username/?__a=1"', error);
+    return;
+  }
+
+  var userId = baseInfo.graphql.user.id;
+  var followersCount = baseInfo.graphql.user.edge_followed_by.count;
+  var followingsCount = baseInfo.graphql.user.edge_follow.count;
+  let configs = [
+    { name: 'followings', user_edge: 'edge_follow', query_hash: 'd04b0a864b4b54837c0d870b0e77e076', total_count: followingsCount },
+    { name: 'followers', user_edge: 'edge_followed_by', query_hash: 'c76146de99bb02f6415203be841dd25a', total_count: followersCount }
+  ];
+  configs = limitConfigs(configs, pageLimit);
+  
+  let pageCount = 1;
+  for (let i = 0; (i < configs.length) && !doAbort; ++i) {
+    let config = configs[i], after = null, hasNext = true, thisList = [];
+    let doWait = (pageLimit === pageLimits.withWaiting);
+    console.info(`Fetching ${config.name}...`);
+    for (; hasNext && (pageCount <= pageLimit) && !doAbort; ++pageCount) {
+      if (doWait && (pageCount !== 1)) {
+        // 200 pages every 15 mins assuming 400 ms latency => 4.1 s interval between pages
+        await timer((15 * 60 * 1000 / 200) - 400);
+      }
+      try {
+        let response = await fetch(`https://www.instagram.com/graphql/query/?query_hash=${config.query_hash}&variables=` + encodeURIComponent(JSON.stringify({
+          id: userId, include_reel: true, fetch_mutual: true, first: GRAPHQL_MAX_PER_PAGE, after: after
+        })));
+        if (!response.ok) {
+          console.warn(`Failed at page number ${pageCount.toLocaleString()} (during ${config.name} list). HTTP status ${response.status}: ${response.statusText}.`);
+          if (response.status === HttpStatus.TOO_MANY_REQUESTS) {
+            doAbort = true;
+          } // else don't abort
+          break;
+        }
+        try {
+          response = await response.json();
+        } catch (error) {
+          console.error(`Detected that you may need to verify your account. Stopping. Failed at page number ${pageCount.toLocaleString()} (during ${config.name} list).`, error);
+          doAbort = true;
+          break;
+        }
+        hasNext = response.data.user[config.user_edge].page_info.has_next_page
+        after = response.data.user[config.user_edge].page_info.end_cursor
+        thisList = thisList.concat(response.data.user[config.user_edge].edges.map(({ node }) => {
+          let has_story = Boolean(node.reel.latest_reel_media);
+          let story_view_status = StoryViewStatus.NA;
+          if (has_story) {
+            let seen = node.reel.seen;
+            if (seen === null) {
+              story_view_status = StoryViewStatus.NONE;
+            } else if (seen === node.reel.latest_reel_media) {
+              story_view_status = StoryViewStatus.ALL;
+            } else {
+              story_view_status = StoryViewStatus.PARTIAL;
+            }
+          }
+          return {
+            id: node.id,
+            username: node.username,
+            full_name: node.full_name,
+            profile_pic_url: node.profile_pic_url,
+            followed_by_viewer: node.followed_by_viewer,
+            requested_by_viewer: node.requested_by_viewer,
+            is_private: node.is_private,
+            is_verified: node.is_verified,
+            has_story: has_story,
+            story_view_status: story_view_status
+          };
+        }));
+      } catch (error) {
+        console.warn(`Error at page number ${pageCount.toLocaleString()} (during ${config.name} list):`, error);
+      }
+      console.log(`[${getTime()}] ${thisList.length.toLocaleString()} of ${config.total_count.toLocaleString()} ${config.name} fetched so far`);
+    }
+    console.info(`${thisList.length.toLocaleString()} ${config.name} fetched.`);
     lists[config.name] = thisList;
   }
+  doAbort = false;
   handleResult(lists, 'lists');
 }
-const timer = ms => new Promise(res => setTimeout(res, ms));
+
 async function getMoreDetails(startingIndex = 0, interval = 36000) {
   let failures = [];
-  for (let i = startingIndex; i < prunedUsernameList.length; ++i) {
+  for (let i = startingIndex; (i < prunedUsernameList.length) && !doAbort; ++i) {
     let username = prunedUsernameList[i];
-    console.log(`[${new Date().toLocaleTimeString()}] ${i + 1}/${prunedUsernameList.length}: ${username}`);
+    console.log(`[${getTime()}] ${(i + 1).toLocaleString()} of ${prunedUsernameList.length.toLocaleString()}: ${username}`);
     if (i !== 0) {
       await timer(interval);
     }
-    let response = await fetch(`https://www.instagram.com/${username}/?__a=1`);
-    if (!response.ok) {
-      console.warn(`Failed at index ${i} (${username}). HTTP status ${response.status}: ${response.statusText}.`);
-      if (response.status === HttpStatus.tooManyRequests) {
-        let totalWaitMins = 30;
-        let pollingMs = 200;
-        doAbort = false;
-        console.warn(`Pausing for ${totalWaitMins} minutes. To abort and get the data already fetched (${moreDetails.length} users), run:\n abort()`);
-        for (let pollingCount = 0; pollingCount < (totalWaitMins * 60 * 1000 / pollingMs); ++pollingCount) {
-          if (doAbort) {
-            handleResult(moreDetails, 'moreDetails', true);
-            return;
+    try {
+      let response = await fetch(`https://www.instagram.com/${username}/?__a=1`);
+      if (!response.ok) {
+        console.warn(`Failed at index ${i.toLocaleString()} (${username}). HTTP status ${response.status}: ${response.statusText}.`);
+        if (response.status === HttpStatus.TOO_MANY_REQUESTS) {
+          let totalWaitMins = 30;
+          let pollingMs = 200;
+          let totalPolls = totalWaitMins * 60 * 1000 / pollingMs;
+          console.warn(`Pausing for ${totalWaitMins} minutes. To abort and get the data already fetched (${moreDetails.length.toLocaleString()} users), run:\n abort()`);
+          for (let pollingCount = 0; (pollingCount < totalPolls) && !doAbort; ++pollingCount) {
+            await timer(pollingMs);
           }
-          await timer(pollingMs);
+          // retry this index
+          --i;
+        } else {
+          // other statuses won't trigger a retry but will be recorded
+          failures.push({ index: i, username: username, http_status: response.status });
         }
-        // retry this index
-        --i;
-      } else {
-        // other statuses won't trigger a retry but will be recorded
-        failures.push({ index: i, username: username, http_status: response.status })
+        continue;
       }
-      continue;
+      try {
+        response = await response.json();
+      } catch (error) {
+        console.error(`Detected that you may need to verify your account. Stopping. Failed at index ${i.toLocaleString()} (${username}).`, error);
+        failures.push({ index: i, username: username, error: error });
+        break;
+      }
+      let user = response.graphql.user;
+      let posts = user.edge_owner_to_timeline_media.edges;
+      let last_post_timestamp = null;
+      if (posts.length > 0) {
+        last_post_timestamp = posts[0].node.taken_at_timestamp;
+      }
+      moreDetails.push({
+        id: user.id,
+        username: user.username,
+        full_name: user.full_name,
+        profile_pic_url: user.profile_pic_url,
+        profile_pic_url_hd: user.profile_pic_url_hd,
+        follows_viewer: user.follows_viewer,
+        followed_by_viewer: user.followed_by_viewer,
+        requested_by_viewer: user.requested_by_viewer,
+        follow_count: user.edge_follow.count,
+        followed_by_count: user.edge_followed_by.count,
+        mutual_followed_by_count: user.edge_mutual_followed_by.count,
+        posts_count: user.edge_owner_to_timeline_media.count,
+        is_private: user.is_private,
+        last_post_timestamp: last_post_timestamp,
+        story_highlights_count: user.highlight_reel_count,
+        has_igtv: user.has_channel,
+        has_reel_clips: user.has_clips,
+        has_ar_effects: user.has_ar_effects,
+        has_guides: user.has_guides,
+        is_joined_recently: user.is_joined_recently,
+        is_verified: user.is_verified,
+        is_business_account: user.is_business_account,
+        business_category_name: user.business_category_name,
+        overall_category_name: user.overall_category_name
+      });
+    } catch (error) {
+      console.log(error);
+      failures.push({ index: i, username: username, error: error });
     }
-    response = await response.json();
-    let user = response.graphql.user;
-    let posts = user.edge_owner_to_timeline_media.edges;
-    let last_post_timestamp = null;
-    if (posts.length > 0) {
-      last_post_timestamp = posts[0].node.taken_at_timestamp;
-    }
-    moreDetails.push({
-      id: user.id,
-      username: user.username,
-      full_name: user.full_name,
-      profile_pic_url: user.profile_pic_url,
-      profile_pic_url_hd: user.profile_pic_url_hd,
-      follows_viewer: user.follows_viewer,
-      followed_by_viewer: user.followed_by_viewer,
-      requested_by_viewer: user.requested_by_viewer,
-      follow_count: user.edge_follow.count,
-      followed_by_count: user.edge_followed_by.count,
-      mutual_followed_by_count: user.edge_mutual_followed_by.count,
-      posts_count: user.edge_owner_to_timeline_media.count,
-      is_private: user.is_private,
-      last_post_timestamp: last_post_timestamp,
-      story_highlights_count: user.highlight_reel_count,
-      has_igtv: user.has_channel,
-      has_reel_clips: user.has_clips,
-      has_ar_effects: user.has_ar_effects,
-      has_guides: user.has_guides,
-      is_joined_recently: user.is_joined_recently,
-      is_verified: user.is_verified,
-      is_business_account: user.is_business_account,
-      business_category_name: user.business_category_name,
-      overall_category_name: user.overall_category_name
-    });
   }
+  doAbort = false;
   if (failures.length) {
-    console.warn(`${failures.length} failures: `, failures);
+    console.warn(`${failures.length.toLocaleString()} failure(s): `, failures);
   }
   handleResult(moreDetails, 'moreDetails');
 }
@@ -253,7 +313,8 @@ Copy the code below into the console and press `Enter`:
 getLists()
 ```
 
-When you get a "Done" message at the bottom of your console, the result will be automatically copied. Paste it below. If not copied, run:
+When you get a "Done" message at the bottom of your console, the result will be automatically copied.
+Paste it below; it might take **a few seconds** to paste. If not copied, run:
 
 ```js
 copy(lists)
@@ -320,7 +381,8 @@ Preparing data...
 
 <p>Estimated time needed for more details: <span id="first-time-estimate"></span></p>
 
-Below you can unselect accounts in order to reduce time needed to get more details. You will see the new time estimate below the table.
+Below you can unselect accounts in order to reduce the time needed to get more details.
+You will see the new time estimate below the table.
 Clicking on a user link will open their profile in a **new tab**.
 *I requested to follow* means it's a private account you requested to follow and they haven't approved yet.
 
@@ -370,19 +432,19 @@ Clicking on a user link will open their profile in a **new tab**.
 
 <button type="submit" id="submit-pruned-list" class="btn btn-primary">Refresh time estimate</button>
 
-<div>Number of accounts: <span id="pruned-list-size"></span></div>
-<div>New estimated time needed for more details: <strong><span id="second-time-estimate"></span></strong></div>
+<div>Number of accounts selected: <span id="pruned-list-size"></span></div>
+<div>Estimated time needed for more details: <strong><span id="second-time-estimate"></span></strong></div>
 
-Copy the code below into the console and press `Enter`:
+If you're happy with the time estimate above, copy the code below into the console and press `Enter`:
 
 ```js
 /* Code to copy will appear here after clicking the button above */
-// prunedUsernameList =
 ```
 {:.pre-scrollable}
 {: #pruned-username-list}
 
-When you get a "Done" message at the bottom of your console, the result will be automatically copied. Paste it below. If not copied, run:
+When you get a "Done" message at the bottom of your console, the result will be automatically copied.
+Paste it below; it might take **a few seconds** to paste. If not copied, run:
 
 ```js
 copy(moreDetails)

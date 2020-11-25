@@ -1,7 +1,7 @@
-const storageTypes = {
-  localStorage: 'localStorage',
-  sessionStorage: 'sessionStorage'
-}
+const StorageTypes = Object.freeze({
+  LOCAL_STORAGE: 'localStorage',
+  SESSION_STORAGE: 'sessionStorage'
+});
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
 function isStorageAvailable(type) {
