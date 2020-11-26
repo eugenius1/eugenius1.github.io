@@ -26,7 +26,7 @@ As you will see, it's a _hack_ but you will be guided step-by-step.
 
 You can only do this on **desktop**.
 We need to use the developer tools built-in to modern browsers like Chrome, Firefox and the new Edge.
-For Safari, you have to enable it under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
+For Safari, you have to enable them under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
 Everything is happening in your browser (client-side) and none of your data is sent to a server.
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
@@ -458,7 +458,7 @@ copy(moreDetails)
 </form>
 
 Bear in mind that if an account is private and you're not following them, you will only see the public details.
-Explanation of some of the columns:
+some of the columns explained:
 
 - _Mutual followers_: how many of their followers you follow
 - _AR effects_: Story effects or filters created by that account

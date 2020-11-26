@@ -427,8 +427,8 @@ function onSubmitInputLists(event) {
   let inputLists = {};
   try {
     inputLists = JSON.parse(inputListsTextArea.value);
-    followers = inputLists.followers;
-    followings = inputLists.followings;
+    followers = inputLists.followers || [];
+    followings = inputLists.followings || [];
 
     switch (listSelectionRadios.value) {
       case ListSelections.ALL_FOLLOWERS:
