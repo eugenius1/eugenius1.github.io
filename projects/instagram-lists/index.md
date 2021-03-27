@@ -24,7 +24,7 @@ This would not be possible with Instagram's official APIs so here we use their *
 We are using something that wasn't designed for us to easily use.
 As you will see, it's a _hack_ but you will be guided step-by-step.
 
-You can only do this on **desktop**.
+You can only do this on **desktop**; it's mostly **not possible on mobile**.
 We need to use the developer tools built-in to modern browsers like Chrome, Firefox and the new Edge.
 For Safari, you have to enable them under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
 Everything is happening in your browser (client-side) and none of your data is sent to a server.

@@ -35,7 +35,7 @@ Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](htt
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`. One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.
 
-The screenshot below shows the <abbr title="Domain Name System">DNS</abbr> Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://help.github.com/articles/about-supported-custom-domains/).
+The screenshot below shows the <abbr title="Domain Name System">DNS</abbr> Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages).
 
 ![5 entries in the DNS records.](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
 
@@ -102,6 +102,12 @@ Bullet list:
 A [link](http://example.com).
 ```
 
-Of course, you could use *Microsoft Word* or another word processor to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure is that Markdown is quicker to pick up than pure HTML because Markdown is a lot more intuitive to read and write for us, humans.
+Of course, you could use *Microsoft Word* or another word processor to write content and save as HTML. I have already been quite accustomed to Markdown thanks to GitHub and I find it at least as convenient as clicking buttons to format text. One thing I believe for sure is that Markdown is quicker to pick up than pure HTML because Markdown is a lot more intuitive to read and write for us humans.
 
 Comment below on your experiences of making your own website. Did you use WordPress? If you're following this as a guide, feel free to get in touch for any clarifications.
+
+---
+
+**Update** 27/03/2021: I now use [Google Domains](https://domains.google/) as my registrar instead of hover.com.
+They allow free email forwarding to a single email address.
+The caveat is no PayPal so you have to remember to update your payment card before it expires.

@@ -185,6 +185,14 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ### Very advanced: Local development
 
+```sh
+bundle exec jekyll serve --drafts
+```
+
+Previous content:
+
+---
+
 Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Folow these simple steps to do that with Vagrant:
 
 1. Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com)
