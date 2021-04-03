@@ -128,7 +128,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
+  - "**/README.md"
   - CNAME
   - Vagrantfile
   - "*.sublime-workspace"

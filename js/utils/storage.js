@@ -30,7 +30,7 @@ function isStorageAvailable(type) {
 }
 
 class ScopedStorage {
-  constructor(scope, type = 'sessionStorage', allStringValues = false) {
+  constructor(scope, type = StorageTypes.SESSION_STORAGE, allStringValues = false) {
     this.scope = scope;
     this.storage = window[type];
     if (allStringValues) {

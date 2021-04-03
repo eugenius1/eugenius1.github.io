@@ -18,15 +18,18 @@ js:
 ---
 
 This tool helped me clean up 151 of the 1079 accounts I used to follow on Instagram.
-I could sort my followings by details like when they last posted.
+I could sort the accounts I follow by details like when they last posted.
 
 This would not be possible with Instagram's official APIs so here we use their **unofficial, internal APIs**.
 We are using something that wasn't designed for us to easily use.
 As you will see, it's a _hack_ but you will be guided step-by-step.
 
-You can only do this on **desktop**; it's mostly **not possible on mobile**.
-We need to use the developer tools built-in to modern browsers like Chrome, Firefox and the new Edge.
-For Safari, you have to enable them under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
+<div class="alert alert-warning" role="alert">
+<i class="fa fa-exclamation-circle" aria-hidden="true"></i> This tool <strong>needs a desktop</strong> (Windows, Mac, Linux); it's mostly <strong>not possible on mobiles</strong> (Android, iOS).
+</div>
+
+We need to use the developer tools built-in to modern desktop browsers like Chrome, Firefox and the new Edge.
+For **Safari**, you have to enable them under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
 Everything is happening in your browser (client-side) and none of your data is sent to a server.
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
@@ -526,3 +529,5 @@ Your data is stored in this browser tab, even after refreshing, until the tab is
 <button type="button" id="clear-storage" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear this page</button>
 
 I'd love to know what you think of this tool. You can leave a comment below or [contact me](/contact).
+
+[Source code](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists)
