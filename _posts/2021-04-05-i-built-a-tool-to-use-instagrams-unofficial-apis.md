@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I built a tool to use Instagram's unofficial APIs!
-# TODO: subtitle: 
+subtitle: It shows detailed, sortable lists of your Instagram followings and followers
 ---
 
 <!-- TODO: share-img -->
