@@ -26,7 +26,9 @@ description: Personal website of Eusebius Ngemera, including a blog of technolog
 # List of links in the navigation bar
 navbar-links:
   About Me: "about-me/"
-  Projects: "projects/"
+  Projects:
+    - All: "projects/"
+    - Instagram Lists: "projects/instagram-lists/"
   Blog: "blog/"
   Misc.:
     - Freebies: "freebies/"
@@ -48,7 +50,6 @@ thumbnail: "/raw/img/branding/github-eugenius1/original.png"
 author:
   name: Eusebius Ngemera
   email: "me@eusebius.tech"
-  facebook: eusebius.n
   github: eugenius1
   twitter: esebi95
   linkedin: in/eusebius
@@ -185,3 +186,14 @@ gems:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
+plugins_dir:
+  - jekyll-compress-images
+
+compress_images:
+  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
+
+imageoptim:
+  pngout: false
+  svgo: false
+  verbose: false

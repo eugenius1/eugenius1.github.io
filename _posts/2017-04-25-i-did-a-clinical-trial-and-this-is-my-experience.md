@@ -144,7 +144,7 @@ The poppy seed restriction meant missing my beloved [seeded bread](http://www.wa
 
 # Outpatient visits
 
-<img class="golden-width" src="/img/blog/2017/outpatient-morning-commute.jpg" alt="Commuting at 6:33 am through Acton, London." title="Snapchat"/>
+![Commuting at 6:33 am through Acton, London.](/img/blog/2017/outpatient-morning-commute.jpg){:.golden-width}
 
 My outpatients didn't have a scheduled time but I was supposed to be there before noon, with a strong preference towards the time I was dosed, according to the doctors. My commute was an hour each way and so I had to wake up pretty early in the first week to get to my morning lectures on time. My **total commute time has been 26 hours** or so but I always took my laptop with me to do some work while on the train.
 
@@ -179,7 +179,7 @@ Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Place
 
 # What I discovered
 
-<img class="height-fits" src="/img/blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through heavy mist with the sunrise in view." title="Wembley Stadium"/>
+![8:08 am, Wembley Stadium through heavy mist with the sunrise in view.](/img/blog/2017/wembley-sunrise.jpg){:.height-fits}
 
 
 ## &hellip;about myself {#about-myself}

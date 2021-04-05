@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Instagram Lists
 subtitle: Detailed, sortable lists of your Instagram followings and followers
 comments: true
@@ -19,6 +19,8 @@ js:
 
 This tool helped me clean up 151 of the 1079 accounts I used to follow on Instagram.
 I could sort the accounts I follow by details like when they last posted.
+
+![Number of accounts I follow reduced from 1079 to 928, a reduction of 151](/img/projects/instagram-lists/my-result.jpg){:.golden-width}
 
 This would not be possible with Instagram's official APIs so here we use their **unofficial, internal APIs**.
 We are using something that wasn't designed for us to easily use.
@@ -527,6 +529,17 @@ some of the columns explained:
 Your data is stored in this browser tab, even after refreshing, until the tab is closed. You can also manually clear this local storage:
 
 <button type="button" id="clear-storage" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear this page</button>
+
+### What I discovered from the accounts I followed
+
+- Old inactive accounts with last post date as far back as 10<sup>th</sup> May 2012.
+  - [@sakaguchiaya](https://www.instagram.com/sakaguchiaya/), with 29k followers, last posted in November 2012.
+- Friends that **never followed me back**, perhaps they stopped using Instagram.
+- One or two "friends" that **stopped following me**.
+- Accounts that started with photography then turned personal after Instagram became **mainstream**.
+- A few accounts that **deleted all posts**, at least one of these because they were worried about Instagram's policy change regarding ownership rights.
+
+---
 
 I'd love to know what you think of this tool. You can leave a comment below or [contact me](/contact).
 

@@ -77,8 +77,8 @@ async function getLists() {
           console.warn(`Failed at page number ${pageCount.toLocaleString()} (during ${config.name} list). HTTP status ${response.status}: ${response.statusText}.`);
           if (response.status === HttpStatus.TOO_MANY_REQUESTS) {
             doAbort = true;
-          } // else don't abort
-          break;
+          } // else don't abort and continue to next list (next config)
+          break; // no next page
         }
         try {
           response = await response.json();
