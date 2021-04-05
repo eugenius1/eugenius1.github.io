@@ -5,7 +5,7 @@ subtitle: It shows detailed, sortable lists of your Instagram followings and fol
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:
-The tool is [Instagram Lists](https://eusebius.tech/projects/instagram-lists/) and it empowered me to cleanup the accounts I follow.
+The tool is [Instagram Lists](/projects/instagram-lists/) and it empowered me to clean up the accounts I follow.
 Source code is [here](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists).
 The tool is a robust, guided hack made to be user friendly.
 
