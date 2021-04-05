@@ -4,7 +4,6 @@ title: I built a tool to use Instagram's unofficial APIs!
 subtitle: It shows detailed, sortable lists of your Instagram followings and followers
 ---
 
-<!-- TODO: share-img -->
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:
 The tool is [Instagram Lists](https://eusebius.tech/projects/instagram-lists/) and it empowered me to cleanup the accounts I follow.
 Source code is [here](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists).

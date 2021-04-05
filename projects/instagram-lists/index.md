@@ -17,12 +17,12 @@ js:
   - index.js
 ---
 
-This tool helped me clean up 151 of the 1079 accounts I used to follow on Instagram.
+This tool helped me clean up the accounts I used to follow on Instagram.
 I could sort the accounts I follow by details like when they last posted.
 
 ![Number of accounts I follow reduced from 1079 to 928, a reduction of 151](/img/projects/instagram-lists/my-result.jpg){:.golden-width}
 
-This would not be possible with Instagram's official APIs so here we use their **unofficial, internal APIs**.
+This would not be possible with Instagram's official <a href="https://en.wikipedia.org/wiki/API"><abbr title="Application Programming Interface">API</abbr></a>s so here we use their **unofficial, internal APIs**.
 We are using something that wasn't designed for us to easily use.
 As you will see, it's a _hack_ but you will be guided step-by-step.
 
@@ -58,6 +58,8 @@ There are two stages:
       - are they verified?
       - have they joined recently?
     - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/raw/img/projects/instagram-lists/instagram-verify.jpg) your identity via email or phone number.
+
+This tool doesn't unfollow accounts for you, you will have to open the linked Instagram profiles to unfollow.
 
 ### Legal disclaimer
 
@@ -544,3 +546,5 @@ Your data is stored in this browser tab, even after refreshing, until the tab is
 I'd love to know what you think of this tool. You can leave a comment below or [contact me](/contact).
 
 [Source code](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists)
+&bull;
+[How I built this tool](/blog/i-built-a-tool-to-use-instagrams-unofficial-apis/)
