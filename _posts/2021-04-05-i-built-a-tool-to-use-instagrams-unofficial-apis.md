@@ -151,7 +151,7 @@ With a little more testing I found that I could reach 370 pages with this delay 
 so still very far from Cristiano's millions.
 
 With this info on page limits, I wrote the code to either do 200 total pages without waiting or 370 with the aforementioned delays.
-However, only the 200 pages method is currently activated.
+However, only the 200-pages method is currently activated.
 
 #### Handling HTTP errors
 
@@ -189,6 +189,6 @@ In building this tool, I also empowered others to manage the accounts they follo
 
 ![Positive user feedback from several users](/img/projects/instagram-lists/user-feedback.png){:.golden-width}
 
-I hope this article helps you to understand my [source code](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists)
+I hope this article helps you to understand the [source code](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists)
 and maybe even empower you to build other tools.
 I am always open to feedback.

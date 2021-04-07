@@ -55,7 +55,6 @@ There are two stages:
       - number of their followers that you follow
       - date of their last post
       - are they a business account?
-      - are they verified?
       - have they joined recently?
     - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/raw/img/projects/instagram-lists/instagram-verify.jpg) your identity via email or phone number.
 
@@ -537,7 +536,7 @@ Your data is stored in this browser tab, even after refreshing, until the tab is
 - Old inactive accounts with last post date as far back as 10<sup>th</sup> May 2012.
   - [@sakaguchiaya](https://www.instagram.com/sakaguchiaya/), with 29k followers, last posted in November 2012.
 - Friends that **never followed me back**, perhaps they stopped using Instagram.
-- One or two "friends" that **stopped following me**.
+- A few "friends" that **stopped following me**.
 - Accounts that started with photography then turned personal after Instagram became **mainstream**.
 - A few accounts that **deleted all posts**, at least one of these because they were worried about Instagram's policy change regarding ownership rights.
 
