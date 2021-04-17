@@ -62,10 +62,10 @@ The tool is ready when I have solved my problem thanks to it.
 
 I started with a manual proof of concept that had to accomplish all of these actions:
 
-1. get lists of all my followers and followings.
+1. Get lists of all my followers and followings.
 `https://www.instagram.com/graphql/query/?query_hash=...`
 
-2. get relevant details about some of these accounts (in a loop)
+2. Get relevant details about some of these accounts (in a loop)
 `https://www.instagram.com/${username}/?__a=1`
 
 The first part was fine, after all it was the aim of the StackOverflow answers.
@@ -157,7 +157,7 @@ However, only the 200-pages method is currently activated.
 
 With all my testing, I came to know the `429 Too Many Requests` error too well;
 so while the other HTTP errors are caught and continue to the next list item, this one is treated differently.
-When fetching lists, the function is aborted whereas when fetching more details per account, there is a 30-minute pause and then the account is retried.
+When fetching lists, the function is aborted whereas when fetching more details per account, there is a 30-minute pause and then the failed account is retried.
 I also added an `abort()` function that can be run to halt any for-loop and get data fetched so far.
 
 Another possibility to consider is that the HTTP status is ok but instead of receiving JSON, you get HTML with a visible message.

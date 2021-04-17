@@ -73,7 +73,7 @@ tool.
 ## Let's go!  
 
 <div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i> This is in <strong>beta</strong> so please send me a message or leave a comment with any feedback or if something doesn't work as expected.
+<i class="fa fa-info-circle" aria-hidden="true"></i> Leave a comment if something doesn't work as expected or with any other feedback.
 </div>
 
 ### 1. Setup
