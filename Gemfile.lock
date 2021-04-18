@@ -174,11 +174,11 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  github-pages (= 106)
+  github-pages
   jekyll-compress-images
   jekyll-paginate
   jekyll-redirect-from
-  jekyll-spark (= 0.6.0)
+  jekyll-spark
 
 BUNDLED WITH
    1.13.6
