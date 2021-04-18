@@ -177,6 +177,7 @@ DEPENDENCIES
   github-pages (= 106)
   jekyll-compress-images
   jekyll-paginate
+  jekyll-redirect-from
   jekyll-spark (= 0.6.0)
 
 BUNDLED WITH
