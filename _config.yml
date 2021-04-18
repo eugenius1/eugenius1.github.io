@@ -190,6 +190,7 @@ gems:
 
 plugins_dir:
   - jekyll-compress-images
+  - jekyll-redirect-from
 
 compress_images:
   images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
