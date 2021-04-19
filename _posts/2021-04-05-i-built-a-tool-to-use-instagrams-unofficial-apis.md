@@ -3,7 +3,7 @@ layout: post
 title: I built a tool to use Instagram's unofficial APIs!
 subtitle: It shows detailed, sortable lists of your Instagram followings and followers
 redirect_from:
- - "/b/iua"
+ - "/b/iua/"
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:

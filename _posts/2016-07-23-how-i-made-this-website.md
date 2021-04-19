@@ -5,7 +5,7 @@ subtitle: An overview to having your own website
 share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
 share-img-cannot-be-wide: true
 redirect_from:
- - "/b/himtw"
+ - "/b/himtw/"
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: Domain name from [hover.com](https://hover.com/Yiflhr2y "$2 discount link"), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/), with content written in [Markdown](#webpage-content).

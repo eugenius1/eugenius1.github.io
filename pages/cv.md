@@ -3,9 +3,9 @@ layout: page
 title: CV
 subtitle: Curriculum Vitae
 share-buttons: true
-permalink: "/cv"
+permalink: "/cv/"
 redirect_from:
- - "/CV"
+ - "/CV/"
 ---
 
 <div class="text-center">

@@ -369,7 +369,7 @@ copy(lists)
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Compute list</button>
+  <button type="submit" class="btn btn-primary">View list</button>
 </form>
 
 <br>
@@ -464,7 +464,7 @@ copy(moreDetails)
 </form>
 
 Bear in mind that if an account is private and you're not following them, you will only see the public details.
-some of the columns explained:
+Some of the columns explained:
 
 - _Mutual followers_: how many of their followers you follow
 - _AR effects_: Story effects or filters created by that account

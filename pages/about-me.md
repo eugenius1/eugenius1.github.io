@@ -5,10 +5,10 @@ subtitle: Why you'd want to have a drink with me
 share-img: "/img/covers/2015-wedding-tux.jpg"
 bigimg:
   - "/img/covers/2015-wedding-tux.jpg" : "&copy;&nbsp;Faisal&nbsp;&lsquo;Tre&rsquo;&nbsp;Shah (2014)"
-permalink: "/about-me"
+permalink: "/about-me/"
 redirect_from:
- - "/about"
- - "/aboutme"
+ - "/about/"
+ - "/aboutme/"
 ---
 
 My name is Eusebius Ngemera. I have the following qualities:
