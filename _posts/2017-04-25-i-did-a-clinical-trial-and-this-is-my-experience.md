@@ -20,9 +20,9 @@ Last month, I completed 8 weeks of a clinical study without any health changes a
 
 But before we get started, let me take you back to how I got into clinical trials.
 
-{% InfoAlert %}
-Brace yourself! This a <strong>long read</strong>. Key points are in <strong>bold</strong>.
-{% endInfoAlert %}
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong>. Key points are in <strong>bold</strong>.
+</div>
 
 - TOC
 {:toc}
