@@ -2,6 +2,7 @@
 layout: page
 title: Freebies
 share-buttons: true
+permalink: "/freebies/"
 ---
 
 Disclaimer: I may also be getting something in turn. Also, these links and codes may become invalid.
@@ -13,13 +14,13 @@ Disclaimer: I may also be getting something in turn. Also, these links and codes
 
 ## Finance
 
-### Trading212
+### Trading212 (investing)
 
 Sign up to Trading212 using [my link](https://www.trading212.com/invite/FMqHiTlg) (`FMqHiTlg`) and we both get a **free share**!
 
-### Revolut
+### Revolut (banking & more)
 
-Join Revolut using [this link](https://revolut.com/r/eusebi8t3 "Your Digital Banking Alternative &#124; Airbnb").
+Join Revolut using [this link](https://revolut.com/referral/eusebi8t3!ASO).
 
 ## Other
 
@@ -37,4 +38,4 @@ Get **20% off** your first order at Flowers Direct. Use [this link](https://flow
 
 ### hover.com (web domains)
 
-Get a **$2 discount** at hover.com using [this link](https://hover.com/Yiflhr2y "Domain Names &#124; Buy Domains & Email At Hover.com") (`Yiflhr2y`).
+Get a **$2 discount** at hover.com using [this link](https://hover.com/Yiflhr2y) (`Yiflhr2y`).

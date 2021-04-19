@@ -5,6 +5,8 @@ subtitle: I got £,£££
 share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
 bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London, UK (2017)"
+redirect_from:
+ - "/b/idact"
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.

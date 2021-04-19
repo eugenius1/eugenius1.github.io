@@ -181,7 +181,7 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
@@ -190,7 +190,6 @@ gems:
 
 plugins_dir:
   - jekyll-compress-images
-  - jekyll-redirect-from
 
 compress_images:
   images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"

@@ -6,6 +6,9 @@ share-img: "http://eusebius.tech/img/blog/2017/social-logins-shareable.png"
 js:
   - "/js/funcs/specialName.min.js"
   - "/js/blog/2017/social-logins.min.js"
+redirect_from:
+ - "/blog/social-logins"
+ - "/b/sl"
 ---
 
 **Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will *not* be handled by a Eusebius.Tech server and therefore **never stored here**.
