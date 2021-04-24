@@ -15,6 +15,8 @@ js:
   - /js/utils/utils.js
   - /js/utils/storage.js
   - index.js
+redirect_from:
+ - "/igl/"
 ---
 
 This tool helped me clean up the accounts I used to follow on Instagram.
@@ -444,7 +446,7 @@ Clicking on a user link will open their profile in a **new tab**.
 If you're happy with the time estimate above, copy the code below into the console and press `Enter`:
 
 ```js
-/* Code to copy will appear here after clicking the button above */
+/* Code to copy will appear here after clicking the blue button (Refresh time estimate) above */
 ```
 {:.pre-scrollable}
 {: #pruned-username-list}

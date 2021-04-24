@@ -627,7 +627,7 @@ ul#markdown-toc {
 a .fa-stack {
   color: #404040; /* matches footer a */
 }
-/* Undo centering by `article img` */
+/* Undo centering by `article img` for images in buttons */
 button img {
   display: inline-block;
 }

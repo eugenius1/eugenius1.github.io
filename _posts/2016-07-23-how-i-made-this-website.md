@@ -6,9 +6,11 @@ share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
 share-img-cannot-be-wide: true
 redirect_from:
  - "/b/himtw/"
+sitemap:
+  lastmod: "2021-03-27"
 ---
 
-**<abbr title="Too long; didn't read">TL;DR</abbr>**: Domain name from [hover.com](https://hover.com/Yiflhr2y "$2 discount link"), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/), with content written in [Markdown](#webpage-content).
+**<abbr title="Too long; didn't read">TL;DR</abbr>**: Domain name from [hover.com](https://hover.com/Yiflhr2y "$2 discount link"), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](https://beautifuljekyll.com/), with content written in [Markdown](#webpage-content).
 
 ---
 
@@ -47,7 +49,7 @@ A theme can drastically affect a website's impression. See versions [1](/index-v
 
 [![The homepage transforms from a simple `Hello, world! It's Eusebius` on a blank white page to another with more text and finally to the current, more polished version with `Hi, I'm Eusebius`.](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
 
-The theme I'm using is [*Beautiful Jekyll*](http://deanattali.com/beautiful-jekyll/), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
+The theme I'm using is [*Beautiful Jekyll*](https://beautifuljekyll.com/), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 
 ### Features
 
