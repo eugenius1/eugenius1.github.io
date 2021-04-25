@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms of Service
-subtitle: Eusebius.Tech
+subtitle: Eusebius.Tech ToS
 date: 2017-04-05
 date-updated: 2017-04-05
 ---

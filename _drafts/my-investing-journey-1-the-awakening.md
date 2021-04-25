@@ -32,7 +32,8 @@ In this series, I share my investing journey.
 <p class="alert alert-warning" role="alert">
 <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
 I am <strong>no financial adviser</strong> and nothing in this blog should be considered financial, tax or investment advice.
-Everything here is <strong>my opinion</strong> and my understanding at publication.
+Everything here is <strong>knowledge sharing</strong> and <strong>my opinion</strong>.
+Always do your own due diligence.
 </p>
 
 - toc
@@ -59,14 +60,18 @@ What you should keep in mind is they're all in the US so some things like tax ma
 ### Short recap
 
 **Asset**:
-Any thing that can be bought with the hope of future profit and/or income. Common examples include stocks, bonds, real estate, currencies and commodities like gold.
+Something that can be bought with the hope of future profit and/or income. Common examples include stocks, bonds, real estate, currencies and commodities like gold.
 
 **Liability**:
-Things that make you lose money, such as debt and cars (especially a brand new Lamborghini)
+Something that makes you lose money, such as debt or a car (especially a brand new Lamborghini)
 
 **Trading vs investing**:
 Generally, trading is short-term buying and selling for profit while investing means holding assets over a longer time (think years).
 Trading takes a lot of time and skill, similar to a job, and you're up against (institutional) traders with a lot of money, skill, experience and algorithms.
+
+**Inflation**:
+Things costing more money over time due to the decline of a currency's purchasing power.
+For example, $100 today can buy less things than $100 10 years ago.
 
 **Stock**:
 An asset representing ownership of a fraction of a company.
@@ -93,17 +98,13 @@ Usually, the borrower pays interest (annually or more frequent) to the lender/bo
 **Commodity**:
 A natural/scarce resource like gold or oil, or agricultural product like wheat, or even livestock animals.
 
-**Inflation**:
-The decline of a currency's purchasing power over time.
-For example, $100 today can buy less things than $100 10 years ago.
-
 ### Mindset
 
 **Markets are emotional**:
 Asset prices are fundamentally driven by human emotion and the dynamics of supply and demand.
 Many people buy assets with **greed/FOMO** (Fear Of Missing Out) when prices are shooting up,
 and panic sell with **fear** when prices are going down.
-Places like the stock market are the only places where people run away when prices come down (a good investor sees a sale),
+Places like the stock market are the only places where people run away when prices come down (a good investor sees a **sale**),
 and people want to buy more when prices go up.
 
 ![Current uncertain reality vs the goal that is more certain to be higher](/raw/img/blog/2021/investing/current-reality-vs-goal.jpg){:.golden-width}
@@ -112,7 +113,7 @@ and people want to buy more when prices go up.
 
 A major key to remember is that investing (medium- to long-term) means going through multiple market cycles and their ups and downs.
 
-Time 
+Time
 
 ## 1st: Eliminating bad debt
 
@@ -123,7 +124,14 @@ They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_sc
 
 ## 2nd: Emergency fund
 
+At the same time as making a plan to eliminate bad debt (if any), a plan should also be made for your emergency fund.
+
+1. Liquidity: Cash in a bank account for emergencies
+2. Avoid selling investments and let investments compound over time
+
 ## 3rd: Financial goals
+
+After figuring
 
 Risk
 
@@ -133,9 +141,16 @@ Align your financial goals with your investments
 
 ## 4th: Active or passive?
 
+With financial goals set, the next step is to figure out time and effort commitment.
+
 ## 5th: Taxable or non-taxable account?
 
 ## 6th: Asset classes
+
+- Stocks
+- Bonds
+- Commodities
+- Cryptocurrencies aka cryptos
 
 Crypto: young, volatile, still evolving, very speculative right now
 
