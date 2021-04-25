@@ -7,9 +7,11 @@ bigimg:
   - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London, UK (2017)"
 redirect_from:
  - "/b/idact/"
+sitemap:
+  lastmod: "2021-04-25"
 ---
 
-**<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
+**<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience at Parexel and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
 
 ---
 
