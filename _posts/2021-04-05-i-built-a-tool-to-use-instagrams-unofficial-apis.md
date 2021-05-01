@@ -24,8 +24,8 @@ Also, psychologically I didn't like having a significantly higher number of acco
 ## Finding solutions & why unofficial
 
 So I started with an internet search of how I could get a list of the accounts I follow, my "followings".
-In my case, I wanted this list narrowed down to the accounts that don't follow me,
-in other words accounts that are not my friends'.
+In my case I wanted this list narrowed down to the accounts that don't follow me
+so in other words, accounts that are not my friends'.
 I also wanted to find out which accounts have been inactive for a long time.
 
 I came across this [StackOverflow question](https://stackoverflow.com/q/32407851) from 2015,
@@ -52,7 +52,7 @@ list under _following_ list that says:
 I found the list partly _okay_ but overall not a great solution to my problem.
 This list of 50 accounts is first and foremost **not exhaustive**.
 So let's say you would have to go through it once, unfollow as you wish and then re-enter the list to see the new suggestions at the bottom (that maintain the list at 50 accounts).
-Secondly, there were a number of accounts I didn't agree with them being on the list.
+Secondly, there were several accounts I didn't agree with them being on the list.
 
 ## Building
 
@@ -70,7 +70,7 @@ I started with a manual proof of concept that had to accomplish all of these act
 2. Get relevant details about some of these accounts (in a loop)
 `https://www.instagram.com/${username}/?__a=1`
 
-The first part was fine, after all it was the aim of the StackOverflow answers.
+The first part was fine, after all, it was the aim of the StackOverflow answers.
 The loop of the second part started running okay and then I run into the HTTP error `429 Too Many Requests`.
 Consequently, opening the Instagram app (or website also) showed that I needed to confirm my phone number before doing anything else:
 
@@ -79,7 +79,7 @@ Consequently, opening the Instagram app (or website also) showed that I needed t
 This is where I had to start thinking about **API rate limits**,
 and understanding that each time I hit the rate limit,
 I have to confirm my phone number and wait (~30 minutes) before retrying.
-I was logged in to my only Instagram account so I risked getting it suspended.
+I was logged-in to my only Instagram account so I risked getting it suspended.
 I hit rate limits about 5 times and I don't know at what point Instagram suspends or if they do.
 
 From my testing in November 2020,
@@ -94,24 +94,24 @@ automation software like [Selenium](https://www.selenium.dev/) were out of scope
 So I envisioned a web page with the following steps:
 
 1. Type your username and open the starting API link (`/${username}/?__a=1`)
-2. Copy JavaScript code (with all functions) into instagram.com console
+2. Copy JavaScript code (with all functions) into the instagram.com console
 3. Run function to get all followers and followings
 4. Paste data into my web page
-5. Choose which subset to view, for example _followings that don't follow me back_, or all
-6. For more details per account, select/unselect accounts (and see time estimate)
+5. Choose which subset to view, for example, _followings that don't follow me back_, or all
+6. For more details per account, select/unselect accounts (and see a time estimate)
 7. Run function to get more details for the selected accounts
-8. Paste data into my web page to view table
+8. Paste data into my web page to view a table
 
-You can see the end result [here](https://eusebius.tech/projects/instagram-lists/).
+You can see the result [here](https://eusebius.tech/projects/instagram-lists/).
 I explain at the start that we need a modern desktop browser and how Safari users can enable developer tools.
 Each block of code to be copied has a "Copy" button.
 
 There are 2 tables.
 The first is after getting basic details about all followings and followers.
 The second is after getting more details about a selection of these.
-Since the second part with more details is time consuming, it's labelled as optional.
-The first column of the first table has checkboxes that allow selecting accounts to get more details on.
-Below the first table there is an estimate of the time needed to get more details for the selected accounts.
+Since the second part with more details is time-consuming, it's labelled as optional.
+The first column of the first table has checkboxes that allow selecting accounts for which to get more details on.
+Below the first table, there is an estimate of the time needed to get more details for the selected accounts.
 
 Finally, I end with a "Clear this page" button because certain fields are stored in the browser tab's [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage).
 This is done so the tables persist per tab after refreshing.
@@ -122,7 +122,7 @@ Behind the scenes, I developed [**ScopedStorage**](https://github.com/eugenius1/
 After building a Minimum Viable Product, the next step was to refine and make it more robust.
 Also, getting **feedback from friends** was vital in making sure it works well and is **easy to use**.
 Instructions on my web page were made as clear as possible and if the user does a step wrongly,
-then the code should give a hint to what the problem is where possible.
+then the code should give a hint as to what the problem is where possible.
 For example, below a try-catch was added with a hint in case something went wrong.
 
 ```js
@@ -140,7 +140,7 @@ async function getLists() {
 
 #### Maximum list sizes
 
-One thing I wondered was the maximum list sizes of followings and followers that can be retrieved.
+One thing I wondered about was the maximum list sizes of followings and followers that can be retrieved.
 So I pretended to be [Cristiano Ronaldo](https://www.instagram.com/cristiano/) with 274 million followers!
 I then got another `429 Too Many Requests` error.
 The lists are paginated with up to 50 accounts per page (not always 50 in reality)

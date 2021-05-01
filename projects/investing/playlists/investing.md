@@ -11,6 +11,14 @@ subtitle: My YouTube playlist
 - consumer vs investor mindset
 - appreciation & dividend
 
+## [5 Secrets That WILL Make You WEALTHY](https://youtu.be/tjpKe6x-Ch0)
+
+1. mindset: rich vs wealthy; money is just a tool
+2. work on your income
+3. pay yourself
+4. stop the payments
+5. patience
+
 ## [Stock Market Investing For Beginners - A COMPLETE Guide To Stock Market Investing](https://youtu.be/hrx28rCKckM)
 
 - stock market is an accessible wealth-building tool
@@ -85,9 +93,19 @@ subtitle: My YouTube playlist
 - invest without margin
 - align your financial goals with your investments
 
+## [How To Earn COMPOUND INTEREST & Double Your Money](https://youtu.be/IHuvEsswIKQ)
+
+- active (business) & passive compounding
+
 ## [2020 Tech Stock Bubble?! - Watch This Before Investing In Tech Stocks](https://youtu.be/R1nQDF6ZFfg)
 
-- How long is your investment plan?
-- Don't overload your stock portfolio with only tech stocks
-- Understanding your investment goals before you invest in technology stocks
+- how long is your investment plan?
+- don't overload your stock portfolio with only tech stocks
+- understanding your investment goals before you invest in technology stocks
 
+---
+
+## [Why Media And Code Make People Rich](https://youtu.be/EMm2duiISQw)
+
+- no marginal cost of replication
+- scalable; incredible leverage

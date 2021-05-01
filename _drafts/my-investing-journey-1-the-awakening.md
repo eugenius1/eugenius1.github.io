@@ -41,10 +41,13 @@ Always do your own due diligence.
 
 ## Learning
 
+> "An investment in knowledge pays the best interest." — Benjamin Franklin
+
 Most of my learning on investing and personal finance has been from YouTube and supplemented by my own internet searches.
 I've made a [**YouTube playlist**](https://www.youtube.com/playlist?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo)
 with all the videos that I've found helpful, sorted from basics to more advanced topics.
-If you're new to investing I **highly recommend** watching at least the first 2 videos. Pro tip: I watch at 1.5x speed or faster.
+If you're new to investing I **highly recommend** watching at least the first 3 videos.
+Pro tip: I normally watch at 1.5x speed.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
 
@@ -100,6 +103,8 @@ A natural/scarce resource like gold or oil, or agricultural product like wheat, 
 
 ### Mindset
 
+> "I will tell you how to become rich. Close the doors. **Be fearful when others are greedy. Be greedy when others are fearful.**" — Warren Buffett
+
 **Markets are emotional**:
 Asset prices are fundamentally driven by human emotion and the dynamics of supply and demand.
 Many people buy assets with **greed/FOMO** (Fear Of Missing Out) when prices are shooting up,
@@ -108,44 +113,127 @@ Places like the stock market are the only places where people run away when pric
 and people want to buy more when prices go up.
 
 ![Current uncertain reality vs the goal that is more certain to be higher](/raw/img/blog/2021/investing/current-reality-vs-goal.jpg){:.golden-width}
-[&copy; BehaviorGap](https://store.behaviorgap.com/collections/all-sketches/products/current-reality){:.small}
+[&copy; BehaviorGap](https://store.behaviorgap.com/collections/all-sketches/products/current-reality)
+{:.small}
 {:.text-center}
 
 A major key to remember is that investing (medium- to long-term) means going through multiple market cycles and their ups and downs.
+**Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
 
-Time
+**Time is the greatest asset**:
+Jack & Jill both invest $200 per month but Jack for 10 years (ages 25-35) while Jill for 30 years (ages 35-65);
+While Jill has put in 3 times as much money as Jack, at age 65 Jack has a larger portfolio value than Jill because he started 10 years earlier.
+**Starting investing earlier** has a greater impact than contributions in later years.
+
+![Impact of when you start investing, even if you stop.](/raw/img/blog/2021/investing/impact-of-when-you-start-investing.png)
+[&copy; Coryanne Hicks & Nate Hellman](https://money.usnews.com/investing/investing-101/articles/2018-07-23/9-charts-showing-why-you-should-invest-today)
+{:.small}
+{:.text-center}
+
+"**Compound interest** is the 8<sup>th</sup> wonder of the world," reportedly said by Albert Einstein.
+Time allows investments to compound, much like continually rolling a small **snowball** on snow to grow it into a snowman's body.
+The bigger the snowball gets, the more snow it gathers when rolling.
+Withdrawing profits or dividends early reduces compounding effects.
+The truth is that too many people are impatient and look for get-rich-quick schemes.
+
+**Money is just fuel**:
+It amplifies who you are and your character.
+
+---
 
 ## 1st: Eliminating bad debt
 
-Debt is an inevitable part of life, be it student loans or home mortgage, but some are far worse than others to have.
-They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_score) in different ways.
+> Stop the bleeding.
 
-3-5%
+Debt is an inevitable part of life, be it for education or a home, but some are far worse than others to have.
+They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_score) in different ways.
+One key determinant on how bad a loan is, is the **interest rate**.
+There isn't a definitive, fixed threshold percentage but it can be compared to:
+
+- local currency's inflation: just to give an idea, as of writing this, the UK (developed country) has a rate of less than 2% while Tanzania (developing country) has ~7%
+- investing returns: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
+The idea here is if a loan's interest rate is lower than this, then it usually makes more financial sense to invest instead of trying to pay the loan sooner than planned.
+
+The usual bad debt suspects are **credit card debt** and [**payday loans**](https://www.investopedia.com/terms/p/payday-loans.asp).
+The former is a pretty big problem in the US.
+I don't use a credit card but the right way to use one would be to fully repay the debt at the end of the month instead of paying the minimum payment needed and carrying the debt (plus interest) over to the next month.
+
+**UK student loan**: I did my undergraduate studies in London and financed it with a loan from the UK government.
+The interest rate is variable; I have seen it go as high as 5% but now it's at 2.6%.
+UK student loan is quite unique (I've had trouble explaining it to French banks) in that it will be [written off 30 years after my first repayment](https://www.manage-student-loan-balance.service.gov.uk/ors/account-overview/secured/understand-balance-undergraduatePlan2),
+even if there is a remaining balance.
+This is great especially seeing that my repayments are less than the added interest so the balance keeps increasing!
 
 ## 2nd: Emergency fund
 
-At the same time as making a plan to eliminate bad debt (if any), a plan should also be made for your emergency fund.
+> The cushion when you fall.
 
-1. Liquidity: Cash in a bank account for emergencies
-2. Avoid selling investments and let investments compound over time
+At the same time as making a plan to eliminate bad debt (if any), a plan should also be made for building the emergency fund.
+It's savings in a bank account for emergencies, not holidays nor investing.
+Why we need it:
+
+1. **Liquidity**: money quickly ready for an emergency expenditure; cash is more liquid than investments.
+2. To avoid needing to sell investments at a loss during market declines or crashes in order to cover an emergency.
+3. To **let investments compound** over time without disruption.
+
+The general rule for the amount of this fund is to be able to last you **3-6 months** when you have no income.
+Less than 3 months is not enough cushion and significantly more than 6 months exposes you significantly to inflation losses.
+
+The vast majority of saving bank accounts don't consistently offer interest rates higher than inflation so **saving is losing**.
+This goes against the belief that most of us are led to believe: "save everything in a bank account".
+There's a limit to how much to keep in a cash bank account long-term.
 
 ## 3rd: Financial goals
 
-After figuring
+> "It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for." — Robert Kiyosaki
 
-Risk
+After figuring out how much I need for my emergency fund and setting a plan,
+the next step was to ask myself what my financial goals are.
+The common themes when asking yourself this question include wealth **accumulation/growth**, wealth **preservation**, **passive income** and **time horizon**.
+**Risk tolerance** is also another question to ask yourself.
 
-Wealth accumulation/growth then wealth preservation
+I don't think one can aim for growth and have a very low risk tolerance.
+Growth implies higher volatility which means investments can go up strongly as well as down strongly (at least in the short-term).
+Time horizon and risk tolerance are usually linked; a shorter time horizon means less risk can be taken.
 
-Align your financial goals with your investments 
+For me right now in my mid-20s, my goal is growth.
+I will use my investments on **big purchases like a home** and also aim for them to give me **early retirement**/financial freedom.
+I can tolerate relatively a lot of risk.
+As I progress through the decades (and have a family), my goal will transition to less growth and instead towards more passive income and less risk.
+
+Now I need to commit to always align my investments to my financial goals.
 
 ## 4th: Active or passive?
 
-With financial goals set, the next step is to figure out time and effort commitment.
+> "Don't look for the needle in the haystack. Just buy the haystack!" — John Bogle
+
+With financial goals set, the next step determines time and effort commitment and possible return on investment:
+
+- **Passive** investing is performing **as well as** the market, e.g. by investing in index funds or index ETFs.
+- **Active** investing is aiming to **beat** the market.
+This requires doing **more research** to choose individual assets like company stocks instead of investing in funds.
+It would also need me to stay informed and check on my companies/assets from time to time, let's say at least a few times per year.
+There is also **higher risk**, for example a company going bankrupt and my shares becoming worthless.
+
+I could also have chosen to go for a mix of both, for example majority passive with a few company stocks I believe in.
+
+Something about active investing...
+mathematical and analytical skills
+The average active investor does worse than the market long-term.
+
+I think there are 3 options:
+
+- Super-easy passive
+- Standard passive
+- Active
 
 ## 5th: Taxable or non-taxable account?
 
+> "I'm spending a year dead for tax reasons." — Douglas Adams
+
 ## 6th: Asset classes
+
+> "The individual investor should act consistently as an investor and not as a speculator." — Ben Graham
 
 - Stocks
 - Bonds
@@ -156,9 +244,11 @@ Crypto: young, volatile, still evolving, very speculative right now
 
 ## 7th: How much per month?
 
-TODO: Telegram channel
+> "Financial peace isn't the acquisition of stuff. It's learning to live on less than you make, so you can give money back and have money to invest. You can't win until you do this." — Dave Ramsey
 
 ## Closing thoughts
+
+TODO: Telegram channel
 
 Below are the upcoming articles; [follow me](/updates) for updates.
 
