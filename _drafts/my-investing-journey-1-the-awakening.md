@@ -10,13 +10,19 @@ redirect_from:
  - "/investing/"
 ---
 
-TODO: TL;DR
+**<abbr title="Too long; didn't read">TL;DR</abbr>**:
+Personal finance is low-key super important.
+[My YouTube playlist](https://www.youtube.com/playlist?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo)
+for learning.
+7 key points below before actually investing.
+My multi-currency [budgeting spreadsheet](https://docs.google.com/spreadsheets/d/1ubeMCW6oBh3bPdAQhrSWCKE3jF-9brWo4ywshyVdPbo/edit?usp=sharing).
+[Telegram channel](https://t.me/joinchat/0lHUGbU6PK0zYjA0) for my portfolio updates.
 
 ---
 
 It's March 2020 and the stock market is taking a nose dive (pictured above on the right) due to the Covid-19 pandemic.
 My digital bank [Revolut](https://revolut.com/referral/eusebi8t3!ASO) adds the ability to buy stocks.
-That's when I got into stocks and investing.
+That's when I got into stocks and the investing mindset.
 But the best of all of this has been understanding personal finance and taking it more seriously.
 
 **Personal finance** and managing your money is a really important part of life that, at least from my experience,
@@ -28,10 +34,10 @@ Saving & investing are pillars of good personal finance.
 **Investing** is making money work for you in the **medium- to long-term**.
 It is **not** a get-rich-quick scheme.
 When we don't talk widely about good investing, it leaves a void for scammers to lure the average person with false investments.
-If someone offers you "guaranteed" profits without presenting any risks then you should be extremely careful before entering.
+If someone offers you "guaranteed" profits without presenting any risks nor financial protection then you should be extremely careful before deciding to enter.
 
-In this series, I share my investing journey, starting with 7 key points before actually investing.
-The first 2 key points I think everyone should be considering.
+In this series, I share my investing journey, starting with **7 key points** before actually investing.
+The first 2 key points I think everyone should be considering even if not planning to invest.
 
 <p class="alert alert-warning" role="alert">
 <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
@@ -103,7 +109,11 @@ Owning a bond means being the lender to a borrower, typically governments or com
 Usually, the borrower pays interest (annually or more frequent) to the lender/bond owner.
 
 **Commodity**:
-A natural/scarce resource like gold or oil, or agricultural product like wheat, or even livestock animals.
+A natural/scarce resource like gold or oil, agricultural product like wheat, or even livestock animals.
+
+[**Cryptocurrency**](https://coinmarketcap.com/alexandria/glossary/cryptocurrency):
+a digital currency secured by cryptography and typically without a central authority like a bank.
+Most are on decentralised networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers.
 
 ### Mindset
 
@@ -121,7 +131,14 @@ and people want to buy more when prices go up.
 {:.small}
 {:.text-center}
 
-A major key to remember is that investing (medium- to long-term) means going through multiple market cycles and their ups and downs.
+**News**:
+It's a good idea to avoid daily financial news and trends while investing,
+in fact a lot of it can be considered noise to a long-term investor.
+The media is in the business of publishing news that sells, i.e. news that stir emotions.
+Some even suggest **going against the news**, for example, if the news says that the markets are crashing and hope is lost,
+then that is a great time to be buying, think a Black Friday sale.
+
+A major key to remember is that investing (medium- to long-term) means going through **multiple market cycles** and their ups and downs.
 **Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
 
 **Time is the greatest asset**:
@@ -158,12 +175,17 @@ They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_sc
 One key determinant on how bad a loan is, is the **interest rate**.
 There isn't a definitive, fixed threshold percentage but it can be compared to:
 
-- local currency's inflation: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has ~7%
-- investing returns: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
+- **local currency's inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has ~7%.
+
+- **investing returns**: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
 The idea here is if a loan's interest rate is lower than this, then it usually makes more financial sense to invest instead of trying to pay the loan sooner than planned.
 
-The usual bad debt suspects are **credit card debt** and [**payday loans**](https://www.investopedia.com/terms/p/payday-loans.asp).
-The former is a pretty big problem in the US.
+The usual bad debt suspects are **credit card debt** and [**payday loans**](https://www.moneysavingexpert.com/loans/payday-loans/).
+The former is a pretty big problem in the US;
+the latter is the worst kind of debt mentioned here.
+Typical credit card interests are above 20% especially when you consider compounding interest (APY) instead of the advertised APR without compounding.
+See [APR vs APY](https://www.investopedia.com/personal-finance/apr-apy-bank-hopes-cant-tell-difference/) for more info.
+
 I don't use a credit card but the right way to use one would be to fully repay the debt at the end of the month instead of paying the minimum payment needed and carrying the debt (plus interest) over to the next month.
 
 **UK student loan**: I did my undergraduate studies in London and financed them with a loan from the UK government.
@@ -193,7 +215,7 @@ There's a limit to how much to keep in a cash bank account long-term.
 
 ## 3rd: Financial goals
 
-> "It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for." — Robert Kiyosaki
+> "It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for." — Robert Kiyosaki (author of _Rich Dad Poor Dad_)
 
 After figuring out how much I need for my emergency fund and setting a plan,
 the next step was to ask myself what my financial goals are.
@@ -207,11 +229,11 @@ Time horizon and risk tolerance are usually linked; a shorter time horizon means
 This link is largely because of **market cycles**.
 In the stock market, they have historically lasted 5-7 years on average.
 For cryptocurrencies, it currently appears to be 4 years (due to [Bitcoin halving](https://www.investopedia.com/bitcoin-halving-4843769)).
-Investing for shorter periods than these while the market is going up has the risk that one day the market will enter the crash phase of the cycle.
+Investing for shorter periods than these while the market is going up has the risk that one day the market will enter the decline phase of the cycle.
 
 For me right now in my mid-20s, my goal is growth.
 I will use my investments as a means to an **early retirement**/financial freedom,
-while along the way using portions of it for **big purchases like real estate**.
+while along the way using portions of it for **big projects** like buying **real estate**.
 I can tolerate relatively a lot of risk.
 As I progress through the decades (and have a family), my goal will transition to less growth and instead towards more passive income and less risk.
 
@@ -219,7 +241,7 @@ Now I need to commit to always align my investments to my financial goals.
 
 ## 4th: Active or passive?
 
-> "Don't look for the needle in the haystack. Just buy the haystack!" — John Bogle
+> "Don't look for the needle in the haystack. Just buy the haystack!" — John Bogle (inventor of index fund investing)
 
 With financial goals set, the next step determines time and effort commitment and the range of possible return on investment:
 
@@ -231,7 +253,7 @@ There is also **higher risk**, for example a company going bankrupt and my share
 
 I could also have chosen to go for a **mix** of both, for example majority passive with a few company stocks I believe in.
 Active investing requires one to be confident in their **mathematical and analytical skills**, or at least work to improve them.
-It is also a greater test of emotion.
+It is also a greater test of emotion and **discipline**.
 
 Most (82% of) mutual funds actively managed by a team of professionals don't beat the market, i.e. index funds.
 The same holds for active, retail investors trying to do the same thing.
@@ -239,9 +261,9 @@ The problem as explained in this [Forbes article](https://www.forbes.com/sites/j
 is not **sticking to the plan when underperforming**.
 Of the 18% of fund managers that beat the market in a 15-year period,
 97% underperformed the market for at least 5 of those years.
-I think for many active, retail investors there's also the emotional element of buying high and selling low instead of holding long-term.
+I think for many active, retail investors there's also the emotional pitfall of buying high and selling low instead of holding long-term.
 
-Having said this, the pandemic and its lockdowns gave me a lot of **time to learn** and practice active investing.
+Having said that, the pandemic and its lockdowns gave me a lot of **time to learn** and practice active investing.
 I am confident in my general analytical skills.
 Having a long time horizon and relatively high risk appetite gives me **room for error** and time to correct my strategy.
 
@@ -252,8 +274,9 @@ Having a long time horizon and relatively high risk appetite gives me **room for
 It is said that our **biggest monetary expense in life** is tax!
 Unless one lives in a perfect tax haven, making profit or income from investments usually leads to paying taxes for it.
 So arguably the biggest determiner to one's take-home return on investment is how much one pays in tax on their returns.
-Many countries provide investment accounts with lower or no tax under conditions such as lock-in period or maximum yearly input.
+Also, usually profits and all dividend are usually taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
 
+Many countries provide investment accounts with lower or no tax under conditions such as lock-in period, maximum yearly input or limited asset choices.
 I will give a brief summary of what I understand but always do your own research and/or seek a tax advisor in your jurisdiction.
 
 In the **UK**, a stocks & shares Individual Savings Account (**ISA**) can be used by UK taxpayers
@@ -264,7 +287,7 @@ For dividend, there's also an allowance, currently [£2,000](https://www.gov.uk/
 
 In **France**, there is the _Plan d'Épargne en Actions_ ([**PEA**](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea))
 that typically has a 5-year lock-in period,
-has lower or no tax but still subject to social security contributions ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)).
+has lower or no tax but still subject to social security contributions ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)) at withdrawal.
 If withdrawing early, tax is exempt under certain conditions such as starting a business or retirement,
 otherwise gains are taxed at [12.8%](https://www.service-public.fr/particuliers/vosdroits/F22449).
 One big drawback with these accounts in France is they limit to investing in companies registered in the European Economic Area (EEA)
@@ -278,36 +301,111 @@ I have **not** chosen the PEA and instead willing to be taxed higher for the sak
 
 ## 6th: Asset classes
 
-> "The individual investor should act consistently as an investor and not as a speculator." — Ben Graham
+> "The individual investor should act consistently as an investor and not as a speculator." — Ben Graham (the father of value investing)
 
-- Stocks
-- Bonds
-- Commodities
-- Cryptocurrencies a.k.a. cryptos
+After tax, the next biggest determiner to returns is asset class allocation, even more than the choice of which individual assets.
 
-Crypto: young, volatile, still evolving, very speculative right now
+### Basics
 
-I think there are 3 options to choose from (excluding mixing between these):
+An asset class groups investments that show similar characteristics, for example stocks and bonds behave quite differently.
+Each asset class has its own profile of risk, volatility and possible range of returns.
+**Diversifying** is really important because it avoids putting all your eggs in one basket of common risk.
 
-- Super-easy passive
-- Standard passive
-- Active
+In addition to diversification, **correlation** is also an important aspect to consider.
+Correlation is a statistical measure of how two things move in relation to each other
+(but not saying which causes which to move).
+Having asset classes with low (or negative) correlation to each other can mean that when one goes down,
+the others **tend** to be unaffected (or even move up if negatively correlated).
 
+I think the 4 major, noteworthy asset classes are:
+
+- **Stocks** a.k.a. **equities**:
+volatile in the short term, follow the economy in the long run.
+Wide range of stocks for different financial goals.
+
+- **Bonds** a.k.a. **fixed income**:
+more stable than stocks, least volatile, lowest (but not zero) risk.
+Price is affected by inflation and central bank interest rates.
+
+- **Commodities**:
+run parallel to inflation in the long run.
+Relatively low correlation to other asset classes.
+
+- **Cryptocurrencies** a.k.a. crypto:
+young, rapidly evolving, highest volatility, highest risk, highly speculative right now.
+Low (possibly lowest) correlation to other asset classes.
+
+Other major asset classes include cash (that we all know), foreign currencies and valuable inventory like artwork and collectibles.
+There is also one more which for this scope I'm classifying as part of stocks:
+
+- **Real estate**:
+price and rental income run parallel to inflation in the long run.
+
+**Geographies**:
+Another aspect to diversify instead of putting all your eggs in one country or region of the world.
+A common way to divide this is:
+
+- Domestic
+- International developed countries
+- Emerging countries
+
+### Allocations
+
+With some understanding of the characteristics of the different asset classes,
+the next step is to assign a percentage to each of them based on one's financial goals.
+
+The common **rule of thumb** (not strict rule) is for the percentage in bonds to equal one's age.
+You can also have a look at the [target retirement funds](https://www.vanguardinvestor.co.uk/investing-explained/what-are-target-retirement-funds)
+from Vanguard (pioneer of index funds),
+either for inspiration or as a **super-easy passive** way to invest if you're in a country like the UK or the US but not France.
+These funds only provide exposure to stocks and bonds but not commodities nor crypto.
+
+![Asset mix of Vanguard's target retirement funds against one's age. Bonds going from 20% to 70%, with the rest being stocks.](/raw/img/blog/2021/investing/vanguard-target-retirement-funds-asset-mix.png)
+
+Personally, I found the [8 Lazy Portfolios](https://obliviousinvestor.com/8-lazy-etf-portfolios/)
+to be good inspiration in deciding allocations.
+If you're in the UK, there's a [UK-oriented view](https://monevator.com/9-lazy-portfolios-for-uk-passive-investors-2010/) that might also be worth reading.
+I started with David Swensen's Ivy League Portfolio and chose to have the asset classes and allocation percentages below.
+As a seeker of **growth** and acknowledging the US as the centre of the world's economy (at least for the foreseeable future),
+I've set the majority (roughly ⅔) of my stocks to be American companies.
+
+| Asset Class                                |       2020         |       2021         |
+|--------------------------------------------|--------------------|--------------------|
+| Stocks                                     |        60%         |        60%         |
+| <small>- US</small>                        | <small>30%</small> | <small>27%</small> |
+| <small>- Other developed countries</small> | <small>15%</small> | <small>18%</small> |
+| <small>- Emerging countries</small>        |  <small>5%</small> |  <small>5%</small> |
+| <small>- Real estate & dividend</small>    | <small>15%</small> | <small>10%</small> |
+| Bonds                                      |        20%         |        15%         |
+| Commodities                                |        10%         |        10%         |
+| Crypto                                     |        10%         |        15%         |
+{:.right-figures}
+
+Within bonds and _real estate & dividend_ stocks, I also diversify geographically.
+In early 2021, I made my allocations more growth aggressive by reducing bonds by 5% and increasing crypto by the same amount.
+This increase in crypto was also as I did more research and found many (40+) crypto tokens that I would like exposure to.
+I reduced _real estate & dividend_ stocks because they are not my priority right now and I have to pay 30% tax on all dividend (even if not withdrawn).
 
 ## 7th: How much per month?
 
 > "Financial peace isn't the acquisition of stuff. It's learning to live on less than you make, so you can give money back and have money to invest. You can't win until you do this." — Dave Ramsey
 
+
+
 ## Closing thoughts
 
-TODO: Telegram channel
+I hope this article has given you ideas into getting your personal finance in good order.
+Leave a **comment** below with your thoughts.
+If you've found this insightful, **share** with a friend that needs to read this.
 
-Below are the upcoming articles; [follow me](/updates) for updates.
+I have made a [Telegram channel](https://t.me/joinchat/0lHUGbU6PK0zYjA0) where I will share updates to my portfolio and notify of new articles I publish.
+Upcoming articles:
 
 - Stocks & Bonds
 - Commodities & Crypto
 
+{%comment%}
 Lastly, this blog is provided for **free and without ads**.
 If you have found value here, you can [**buy me a tea**](/donate)
 (I dislike coffee).
-TODO: Add XMR address
+{%endcomment%}

@@ -634,6 +634,14 @@ button img {
 
 /* --- Other additions --- */
 
+/* Align table with figures except in the first column (left by default) */
+table.right-figures tr th:nth-of-type(n+2) {
+  text-align: center;
+}
+table.right-figures tr td:nth-of-type(n+2) {
+  text-align: right;
+}
+
 .golden-width {
   width: 61.8%;
 }

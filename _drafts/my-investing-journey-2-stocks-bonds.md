@@ -30,4 +30,10 @@ Why it's hard
 A study by Vanguard found that 18% of fund managers that beat the benchmarks over a 15-year period
 and 97% of them experienced at least five years of underperformance.
 
-> As an investor, you should ask yourself if you can withstand experiencing lower returns than the market for long periods. Most cannot and should buy index funds so that impatience doesn’t lead to them underperforming the market along with the vast majority of others. 
+> As an investor, you should ask yourself if you can withstand experiencing lower returns than the market for long periods. Most cannot and should buy index funds so that impatience doesn’t lead to them underperforming the market along with the vast majority of others.
+
+[](https://www.investopedia.com/articles/basics/11/how-to-pick-a-stock.asp)
+
+- Check an ETFs top holdings
+- Use a screener
+- Search blogs, articles, news, videos. Be critical and get multiple view points

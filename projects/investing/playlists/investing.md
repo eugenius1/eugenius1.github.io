@@ -97,6 +97,10 @@ subtitle: My YouTube playlist
 
 - active (business) & passive compounding
 
+## [How To QUIT Your Day Job With DIVIDEND INVESTING (Step By Step Method)](https://youtu.be/Vsgjuc9O6Uk)
+
+- Dividend reinvestment
+
 ## [2020 Tech Stock Bubble?! - Watch This Before Investing In Tech Stocks](https://youtu.be/R1nQDF6ZFfg)
 
 - how long is your investment plan?
@@ -105,7 +109,18 @@ subtitle: My YouTube playlist
 
 ---
 
+TODO: this gap
+
+---
+
 ## [Why Media And Code Make People Rich](https://youtu.be/EMm2duiISQw)
 
 - no marginal cost of replication
 - scalable; incredible leverage
+
+## [How To Find High Quality Stocks](https://youtu.be/lZQrc7nN17Y)
+
+- High Return on Invested Capital
+- Moat: dominant position in the market
+- Great leadership
+- Strong balance sheet
