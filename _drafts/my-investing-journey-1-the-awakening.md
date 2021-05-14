@@ -279,7 +279,7 @@ Also, usually profits and all dividend are usually taxed even if not withdrawn s
 Many countries provide investment accounts with lower or no tax under conditions such as lock-in period, maximum yearly input or limited asset choices.
 I will give a brief summary of what I understand but always do your own research and/or seek a tax advisor in your jurisdiction.
 
-In the **UK**, a stocks & shares Individual Savings Account (**ISA**) can be used by UK taxpayers
+In the **UK**, a Stocks & Shares Individual Savings Account (**ISA**) can be used by UK taxpayers
 and the maximum one can put into it is currently [£20,000 for the tax year 2021-22](https://www.gov.uk/individual-savings-accounts).
 Otherwise, profits are subject to [capital gains tax](https://www.gov.uk/tax-sell-shares) if above the tax-free allowance,
 currently [£12,300](https://www.gov.uk/capital-gains-tax/allowances) for the tax year 2021-22.
@@ -358,9 +358,12 @@ The common **rule of thumb** (not strict rule) is for the percentage in bonds to
 You can also have a look at the [target retirement funds](https://www.vanguardinvestor.co.uk/investing-explained/what-are-target-retirement-funds)
 from Vanguard (pioneer of index funds),
 either for inspiration or as a **super-easy passive** way to invest if you're in a country like the UK or the US but not France.
-These funds only provide exposure to stocks and bonds but not commodities nor crypto.
+These funds only provide exposure to stocks and bonds so no commodities nor crypto.
 
 ![Asset mix of Vanguard's target retirement funds against one's age. Bonds going from 20% to 70%, with the rest being stocks.](/raw/img/blog/2021/investing/vanguard-target-retirement-funds-asset-mix.png)
+&copy; Vanguard Asset Management
+{:.small}
+{:.text-center}
 
 Personally, I found the [8 Lazy Portfolios](https://obliviousinvestor.com/8-lazy-etf-portfolios/)
 to be good inspiration in deciding allocations.
@@ -383,18 +386,61 @@ I've set the majority (roughly ⅔) of my stocks to be American companies.
 
 Within bonds and _real estate & dividend_ stocks, I also diversify geographically.
 In early 2021, I made my allocations more growth aggressive by reducing bonds by 5% and increasing crypto by the same amount.
-This increase in crypto was also as I did more research and found many (40+) crypto tokens that I would like exposure to.
+This increase in crypto came also as I did more research and found many (40+) crypto tokens that I would like exposure to.
 I reduced _real estate & dividend_ stocks because they are not my priority right now and I have to pay 30% tax on all dividend (even if not withdrawn).
+
+### Brokers/Exchanges
+
+If I wanted to take the **super-easy passive** route to have stocks & bonds, I would go for a low-fee fund like one of [Vanguard's retirement funds](https://www.vanguardinvestor.co.uk/investing-explained/what-are-target-retirement-funds).
+If I wanted to take the standard **passive** route of only index funds without any individual stocks, then I would go for a broker like Vanguard which has a wide range of low-fee funds.
+In the UK, Vanguard has a [Stocks & Shares ISA](https://www.vanguardinvestor.co.uk/investing-explained/investment-account-types) to avoid getting taxed as well as a Junior ISA for parents to invest for their children.
+
+If I wanted to take the **mixed** or **active** route (as I am), I would go for a more complete broker with the lowest costs and commission.
+In the US, there are many choices including M1 Finance and Robinhood.
+In most other countries including the UK and France, the best choice I've seen is [Trading212](https://www.trading212.com/invite/FMqHiTlg)
+(if you sign up using my link we both get a **free share**!)
+
+With Trading212, depositing, withdrawing, buying and selling are all possible without fees nor commission.
+The only thing is the [0.15%](https://www.trading212.com/en/Trading-Conditions) currency conversion charge when you buy or sell something not in your account's currency.
+They primarily make money from the CFD part of their platform which is for traders and not investors.
+In the UK, they provide a Stocks & Shares ISA (but no PEA in France).
+There's also a practice part of every account should you wish to build up confidence using fake money.
+As of May 2021, there's currently a waitlist so if you choose Trading212 you might want to [sign up](https://www.trading212.com/invite/FMqHiTlg) ASAP.
+
+For **crypto**, hands down the best and biggest exchange is [Binance](https://guy.coinbureau.com/binance/)
+(this link is not mine but you get 25% commission back with each trade).
+Binance has one of the lowest fees available, a very wide range of cryptocurrencies and [insurance](https://academy.binance.com/en/glossary/secure-asset-fund-for-users).
+Binance also has the [highest liquidity](https://coinmarketcap.com/currencies/bitcoin/markets/) which means the market price to buy or sell a cryptocurrency tends to be the best in the global market at that point in time.
+There's a separate [Binance for the US](https://www.binance.us/en/home).
+Binance complete [beginner's guide](https://youtu.be/YzJ6xkJpeUk).
 
 ## 7th: How much per month?
 
 > "Financial peace isn't the acquisition of stuff. It's learning to live on less than you make, so you can give money back and have money to invest. You can't win until you do this." — Dave Ramsey
 
+With asset class allocation defined and broker/exchange chosen, the next step was to figure out how much I can invest per month.
+I created a multi-currency budgeting spreadsheet ([template on Google Sheets](https://docs.google.com/spreadsheets/d/1ubeMCW6oBh3bPdAQhrSWCKE3jF-9brWo4ywshyVdPbo/edit?usp=sharing))
+based on [cash flow forecasting](https://en.wikipedia.org/wiki/Cash_flow_forecasting)
+to:
 
+- view & plan my expenditures & income
+- plan the building of my emergency fund
+
+The first time I did this exercise I determined I can dedicate this portion in purple of my expenditures to investing:
+
+![Pie chart of my expenditures by type](/raw/img/blog/2021/investing/my-expenditures-by-type.png)
+
+With the monthly amount figured out,
+ideally I should just **invest continuously** every month without putting much thought to when prices will peak or bottom.
+This is [Dollar-Cost Averaging](https://www.investopedia.com/terms/d/dollarcostaveraging.asp) (DCA).
+The more one **removes emotion** from investing and executes their plan **robotically**, the better they do long-term (and reduce a lot of unneeded stress).
+If your broker or exchange offers automatic regular investing to a plan you create
+(as the case for [Trading212](https://www.trading212.com/invite/FMqHiTlg)'s pies),
+then it is a very good idea to do so.
 
 ## Closing thoughts
 
-I hope this article has given you ideas into getting your personal finance in good order.
+I hope this article has given you plenty of ideas and tools for getting your personal finance in good order.
 Leave a **comment** below with your thoughts.
 If you've found this insightful, **share** with a friend that needs to read this.
 
