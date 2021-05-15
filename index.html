@@ -18,6 +18,7 @@ bigimg:
 
 <div class="posts-list" id="blog">
   {% for post in paginator.posts %}
+    {% unless post.listed == false %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
@@ -38,7 +39,8 @@ bigimg:
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
 
-   </article>
+  </article>
+   {% endunless %}
   {% endfor %}
 </div>
 

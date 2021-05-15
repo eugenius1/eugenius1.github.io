@@ -5,9 +5,11 @@ subtitle: "A 20-something actually starts managing his money (well)"
 # TODO: compress
 bigimg:
  - "/raw/img/covers/blog/2021/2020-stock-market-crash.png": "TradingView"
+share-img: "/raw/img/blog/2021/investing/2020-stock-market-crash-shareable.png"
 redirect_from:
  - "/mij1/"
  - "/investing/"
+listed: false
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:
@@ -20,7 +22,7 @@ My multi-currency [budgeting spreadsheet](https://docs.google.com/spreadsheets/d
 
 ---
 
-It's March 2020 and the stock market is taking a nose dive (pictured above on the right) due to the Covid-19 pandemic.
+It's March 2020 and the stock market is taking a nosedive (pictured above on the right) due to the Covid-19 pandemic.
 My digital bank [Revolut](https://revolut.com/referral/eusebi8t3!ASO) adds the ability to buy stocks.
 That's when I got into stocks and the investing mindset.
 But the best of all of this has been understanding personal finance and taking it more seriously.
@@ -31,7 +33,7 @@ So if this info isn't passed down from your parents, you fall behind on financia
 Furthermore, financial wellness is more determined by **how you manage** your money than simply your income.
 
 Saving & investing are pillars of good personal finance.
-**Investing** is making money work for you in the **medium- to long-term**.
+**Investing** is making money work for you in the **medium to long term**.
 It is **not** a get-rich-quick scheme.
 When we don't talk widely about good investing, it leaves a void for scammers to lure the average person with false investments.
 If someone offers you "guaranteed" profits without presenting any risks nor financial protection then you should be extremely careful before deciding to enter.
@@ -62,7 +64,7 @@ Pro tip: I normally watch at 1.5x speed.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
 
 I've also made this [succinct summary](/projects/investing/playlists/investing) of the playlist that you can use to jump to topics that may interest you.
-I follow the channels/accounts below (and you may see them a lot in my playlist because their content is gold).
+I follow the channels/accounts below and you may see them a lot in my playlist because their content is gold.
 What you should keep in mind is they're all in the US so some things like tax may be different for you where you live.
 
 - [<i class="fa fa-youtube-play" aria-hidden="true"></i> Minority Mindset](https://www.youtube.com/channel/UCT3EznhW_CNFcfOlyDNTLLw): education
@@ -76,7 +78,7 @@ What you should keep in mind is they're all in the US so some things like tax ma
 Something that can be bought with the hope of future profit and/or income. Common examples include stocks, bonds, real estate, currencies and commodities like gold.
 
 **Liability**:
-Something that makes you lose money, such as debt or a car (especially a brand new Lamborghini)
+Something that makes you lose money, such as debt or a car (especially a brand new Lamborghini).
 
 **Trading vs investing**:
 Generally, trading is short-term buying and selling for profit while investing means holding assets over a longer time (think years).
@@ -84,7 +86,7 @@ Trading takes a lot of time and skill, similar to a job, and you're up against (
 
 **Inflation**:
 Things costing more money over time due to the decline of a currency's purchasing power.
-For example, $100 today can buy less things than $100 10 years ago.
+For example, $100 today can buy fewer things than $100 10 years ago.
 
 **Stock**:
 An asset representing ownership of a fraction of a company.
@@ -92,28 +94,29 @@ Units of stock are _shares_.
 As a shareholder, you can even vote on some company decisions (depending on your broker)!
 
 **Dividend**:
-Some companies use a part of their profits to reward their shareholders every few months or every year.
+Some companies use part of their profits to reward their shareholders every few months or every year.
 
 **Index fund**:
 This allows investing in a single, pooled basket of different assets that track an index, e.g. the top 500 US companies (_S&P 500_) or a specific industry like real estate, instead of having to buy individual company stocks.
 
 **Mutual fund**:
 Like an index fund but the basket of assets is actively managed (selected) by a team of people instead of the selection being made objectively by an index.
-These funds tend to have higher fees than index funds.
+These funds tend to have higher fees than index funds and most don't outperform index funds in the long run.
 
 **ETF** (Exchange-Traded Fund):
-A single basket of assets that can be bought and sold just like a stock and it's price moves up and down many times in a trading day.
+A single basket of assets that can be bought and sold just like a stock and its price moves up and down many times in a trading day.
+An ETF could be for an index or a mutual fund.
 
 **Bond**:
 Owning a bond means being the lender to a borrower, typically governments or companies wanting to finance projects or operations.
 Usually, the borrower pays interest (annually or more frequent) to the lender/bond owner.
 
 **Commodity**:
-A natural/scarce resource like gold or oil, agricultural product like wheat, or even livestock animals.
+A natural/scarce resource like gold or oil, an agricultural product like wheat, or even livestock animals.
 
 [**Cryptocurrency**](https://coinmarketcap.com/alexandria/glossary/cryptocurrency):
 a digital currency secured by cryptography and typically without a central authority like a bank.
-Most are on decentralised networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers.
+Most including Bitcoin are on decentralised networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers.
 
 ### Mindset
 
@@ -133,8 +136,8 @@ and people want to buy more when prices go up.
 
 **News**:
 It's a good idea to avoid daily financial news and trends while investing,
-in fact a lot of it can be considered noise to a long-term investor.
-The media is in the business of publishing news that sells, i.e. news that stir emotions.
+a lot of it can be considered noise to a long-term investor.
+The media is in the business of publishing news that sells, i.e. news that stirs emotions.
 Some even suggest **going against the news**, for example, if the news says that the markets are crashing and hope is lost,
 then that is a great time to be buying, think a Black Friday sale.
 
@@ -151,7 +154,7 @@ While Jill has put in 3 times as much money as Jack, at age 65 Jack has a larger
 {:.small}
 {:.text-center}
 
-"**Compound interest** is the 8<sup>th</sup> wonder of the world," reportedly said by Albert Einstein.
+"**Compound interest** is the 8<sup>th</sup> wonder of the world," reportedly said Albert Einstein.
 Time allows investments to compound, much like continually rolling a small **snowball** on snow to grow it into a snowman's body.
 The bigger the snowball gets, the more snow it gathers when rolling.
 Withdrawing profits or dividends early reduces compounding effects.
@@ -159,7 +162,7 @@ The truth is that too many people are impatient and look for get-rich-quick sche
 
 Investing always has **risk** and **nothing is guaranteed**.
 You could even get back less than what you invested.
-In general (as many decades of history has shown), a well-diversified investment portfolio doesn't lose money in the long run.
+In general, as many decades of history has shown, a well-diversified investment portfolio doesn't lose money in the long run.
 
 **Money is just fuel**:
 It amplifies who you are and your character.
@@ -172,16 +175,16 @@ It amplifies who you are and your character.
 
 Debt is an inevitable part of life, be it for education or a home, but some are far worse than others to have.
 They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_score) in different ways.
-One key determinant on how bad a loan is, is the **interest rate**.
+One key determinant of how bad a loan is is the **interest rate**.
 There isn't a definitive, fixed threshold percentage but it can be compared to:
 
-- **local currency's inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has ~7%.
+- **local currency's inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has [~3.7%](https://www.statista.com/statistics/447617/inflation-rate-in-tanzania/).
 
 - **investing returns**: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
 The idea here is if a loan's interest rate is lower than this, then it usually makes more financial sense to invest instead of trying to pay the loan sooner than planned.
 
 The usual bad debt suspects are **credit card debt** and [**payday loans**](https://www.moneysavingexpert.com/loans/payday-loans/).
-The former is a pretty big problem in the US;
+The former is a pretty big problem in the US and
 the latter is the worst kind of debt mentioned here.
 Typical credit card interests are above 20% especially when you consider compounding interest (APY) instead of the advertised APR without compounding.
 See [APR vs APY](https://www.investopedia.com/personal-finance/apr-apy-bank-hopes-cant-tell-difference/) for more info.
@@ -190,7 +193,7 @@ I don't use a credit card but the right way to use one would be to fully repay t
 
 **UK student loan**: I did my undergraduate studies in London and financed them with a loan from the UK government.
 The interest rate is variable; I have seen it go as high as 5% but now it's at 2.6%.
-UK student loan is quite unique (I've had trouble explaining it to French banks) in that it will be [written off 30 years after my first repayment](https://www.manage-student-loan-balance.service.gov.uk/ors/account-overview/secured/understand-balance-undergraduatePlan2),
+UK student loan is unique (I've had trouble explaining it to French banks) in that it will be [written off 30 years after my first repayment](https://www.manage-student-loan-balance.service.gov.uk/ors/account-overview/secured/understand-balance-undergraduatePlan2),
 even if there is a remaining balance.
 This is great especially seeing that my repayments are less than the added interest so the balance keeps increasing!
 
@@ -203,7 +206,7 @@ It's savings in a bank account for emergencies, not holidays nor investing.
 Why we need it:
 
 1. **Liquidity**: money quickly ready for an emergency expenditure; cash is more liquid than investments.
-2. To avoid needing to sell investments at a loss during market declines or crashes in order to cover an emergency.
+2. To avoid needing to sell investments at a loss during market declines or crashes to cover an emergency.
 3. To **let investments compound** over time without disruption.
 
 The general rule for the amount of this fund is to be able to last you **3-6 months** when you have no income.
@@ -217,16 +220,16 @@ There's a limit to how much to keep in a cash bank account long-term.
 
 > "It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for." — Robert Kiyosaki (author of _Rich Dad Poor Dad_)
 
-After figuring out how much I need for my emergency fund and setting a plan,
+After figuring out how much I need for my emergency fund and setting a plan to build it,
 the next step was to ask myself what my financial goals are.
 The common themes when asking yourself this question include wealth **accumulation/growth**, wealth **preservation**, **passive income** and **time horizon**.
 **Risk tolerance** is also another question to ask yourself.
 
-I don't think one can aim for growth and have a low risk tolerance.
-Growth implies higher volatility which means investments can go up strongly as well as down strongly (at least in the short-term).
+I don't think one can aim for growth and have low risk tolerance.
+Growth implies seeking higher volatility which means investments can go up strongly as well as down strongly (at least in the short-term).
 Time horizon and risk tolerance are usually linked; a shorter time horizon means less risk can be taken.
 
-This link is largely because of **market cycles**.
+This link is largely due to **market cycles**.
 In the stock market, they have historically lasted 5-7 years on average.
 For cryptocurrencies, it currently appears to be 4 years (due to [Bitcoin halving](https://www.investopedia.com/bitcoin-halving-4843769)).
 Investing for shorter periods than these while the market is going up has the risk that one day the market will enter the decline phase of the cycle.
@@ -235,7 +238,7 @@ For me right now in my mid-20s, my goal is growth.
 I will use my investments as a means to an **early retirement**/financial freedom,
 while along the way using portions of it for **big projects** like buying **real estate**.
 I can tolerate relatively a lot of risk.
-As I progress through the decades (and have a family), my goal will transition to less growth and instead towards more passive income and less risk.
+As I progress through the decades (and have a family), my goal will transition to less growth and instead more passive income and less risk.
 
 Now I need to commit to always align my investments to my financial goals.
 
@@ -249,9 +252,9 @@ With financial goals set, the next step determines time and effort commitment an
 - **Active** investing is trying to **beat** the market.
 This requires doing **more research** to choose individual assets like company stocks instead of investing in funds.
 It would also need me to stay informed and check on my companies/assets from time to time, let's say at least a few times per year.
-There is also **higher risk**, for example a company going bankrupt and my shares becoming worthless.
+There is also **higher risk**, for example, a company going bankrupt and my shares becoming worthless.
 
-I could also have chosen to go for a **mix** of both, for example majority passive with a few company stocks I believe in.
+I could also have chosen to go for a **mix** of both, for example, majority passive with a few company stocks I believe in.
 Active investing requires one to be confident in their **mathematical and analytical skills**, or at least work to improve them.
 It is also a greater test of emotion and **discipline**.
 
@@ -265,19 +268,19 @@ I think for many active, retail investors there's also the emotional pitfall of 
 
 Having said that, the pandemic and its lockdowns gave me a lot of **time to learn** and practice active investing.
 I am confident in my general analytical skills.
-Having a long time horizon and relatively high risk appetite gives me **room for error** and time to correct my strategy.
+Having a long time horizon and a relatively high risk appetite gives me **room for error** and time to correct my strategy.
 
 ## 5th: Taxable or non-taxable account?
 
 > "I'm spending a year dead for tax reasons." — Douglas Adams
 
 It is said that our **biggest monetary expense in life** is tax!
-Unless one lives in a perfect tax haven, making profit or income from investments usually leads to paying taxes for it.
+Unless one lives in a perfect tax haven, making some profit or income from investments normally leads to paying taxes for it.
 So arguably the biggest determiner to one's take-home return on investment is how much one pays in tax on their returns.
-Also, usually profits and all dividend are usually taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
+Also, normally profits and all dividend are taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
 
-Many countries provide investment accounts with lower or no tax under conditions such as lock-in period, maximum yearly input or limited asset choices.
-I will give a brief summary of what I understand but always do your own research and/or seek a tax advisor in your jurisdiction.
+Many countries provide investment accounts with **lower or no tax** under conditions such as lock-in period, maximum yearly input or limited asset choices.
+I will give a summary of what I understand but always do your own research and/or seek a tax advisor in your jurisdiction.
 
 In the **UK**, a Stocks & Shares Individual Savings Account (**ISA**) can be used by UK taxpayers
 and the maximum one can put into it is currently [£20,000 for the tax year 2021-22](https://www.gov.uk/individual-savings-accounts).
@@ -285,19 +288,19 @@ Otherwise, profits are subject to [capital gains tax](https://www.gov.uk/tax-sel
 currently [£12,300](https://www.gov.uk/capital-gains-tax/allowances) for the tax year 2021-22.
 For dividend, there's also an allowance, currently [£2,000](https://www.gov.uk/tax-on-dividends) for the tax year 2021-22.
 
-In **France**, there is the _Plan d'Épargne en Actions_ ([**PEA**](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea))
+In **France**, there is the [_Plan d'Épargne en Actions_](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea) (**PEA**)
 that typically has a 5-year lock-in period,
 has lower or no tax but still subject to social security contributions ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)) at withdrawal.
-If withdrawing early, tax is exempt under certain conditions such as starting a business or retirement,
-otherwise gains are taxed at [12.8%](https://www.service-public.fr/particuliers/vosdroits/F22449).
-One big drawback with these accounts in France is they limit to investing in companies registered in the European Economic Area (EEA)
-and funds that can provide [less than 25%](https://www.amf-france.org/en/node/59240) exposure outside this area;
+If withdrawing early, tax is exempt under certain conditions such as starting a business or retirement;
+otherwise, gains are taxed at [12.8%](https://www.service-public.fr/particuliers/vosdroits/F22449).
+One big drawback with these accounts in France is they limit to investing in companies registered in the [European Economic Area](https://en.wikipedia.org/wiki/European_Economic_Area) (EEA)
+and funds that provide [less than 25%](https://www.amf-france.org/en/node/59240) exposure outside this area;
 so no individual, international stocks.
-Also, fees everywhere such as [0.5%](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea) transaction fee if online, otherwise 1.2%.
+Also, there are fees everywhere such as [0.5%](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea) transaction fee if online, otherwise 1.2%.
 
 So currently only being a **French taxpayer** aiming for active growth,
-and seeing that there is still 17.2% social security contributions to pay when withdrawing from a French taxable account,
-I have **not** chosen the PEA and instead willing to be taxed higher for the sake of more international investment choices.
+and seeing that there is still 17.2% social security contribution to pay when withdrawing from a French non-taxable account,
+I have **not** chosen the PEA and instead willing to be taxed for the sake of more international investment choices.
 
 ## 6th: Asset classes
 
@@ -307,12 +310,13 @@ After tax, the next biggest determiner to returns is asset class allocation, eve
 
 ### Basics
 
-An asset class groups investments that show similar characteristics, for example stocks and bonds behave quite differently.
-Each asset class has its own profile of risk, volatility and possible range of returns.
-**Diversifying** is really important because it avoids putting all your eggs in one basket of common risk.
+An asset class groups investments that show similar characteristics.
+For example, stocks and bonds behave quite differently.
+Each asset class has its own profile of risk, volatility and a possible range of returns.
+**Diversifying** is very important because it avoids putting all your eggs in one basket of common risk.
 
 In addition to diversification, **correlation** is also an important aspect to consider.
-Correlation is a statistical measure of how two things move in relation to each other
+Correlation is a statistical measure of how two things move compared to each other
 (but not saying which causes which to move).
 Having asset classes with low (or negative) correlation to each other can mean that when one goes down,
 the others **tend** to be unaffected (or even move up if negatively correlated).
@@ -324,7 +328,7 @@ volatile in the short term, follow the economy in the long run.
 Wide range of stocks for different financial goals.
 
 - **Bonds** a.k.a. **fixed income**:
-more stable than stocks, least volatile, lowest (but not zero) risk.
+least volatile, lowest (but not zero) risk.
 Price is affected by inflation and central bank interest rates.
 
 - **Commodities**:
@@ -335,15 +339,14 @@ Relatively low correlation to other asset classes.
 young, rapidly evolving, highest volatility, highest risk, highly speculative right now.
 Low (possibly lowest) correlation to other asset classes.
 
-Other major asset classes include cash (that we all know), foreign currencies and valuable inventory like artwork and collectibles.
+Other major asset classes include cash (that we all know), foreign currencies and valuable inventory like artwork and collectables.
 There is also one more which for this scope I'm classifying as part of stocks:
 
 - **Real estate**:
 price and rental income run parallel to inflation in the long run.
 
-**Geographies**:
-Another aspect to diversify instead of putting all your eggs in one country or region of the world.
-A common way to divide this is:
+**Geographies** is another aspect to diversify instead of putting all your eggs in one country or region of the world.
+A common way to classify:
 
 - Domestic
 - International developed countries
@@ -365,8 +368,8 @@ These funds only provide exposure to stocks and bonds so no commodities nor cryp
 {:.small}
 {:.text-center}
 
-Personally, I found the [8 Lazy Portfolios](https://obliviousinvestor.com/8-lazy-etf-portfolios/)
-to be good inspiration in deciding allocations.
+I found the [8 Lazy Portfolios](https://obliviousinvestor.com/8-lazy-etf-portfolios/)
+to have good inspiration in deciding allocations.
 If you're in the UK, there's a [UK-oriented view](https://monevator.com/9-lazy-portfolios-for-uk-passive-investors-2010/) that might also be worth reading.
 I started with David Swensen's Ivy League Portfolio and chose to have the asset classes and allocation percentages below.
 As a seeker of **growth** and acknowledging the US as the centre of the world's economy (at least for the foreseeable future),
@@ -389,7 +392,7 @@ In early 2021, I made my allocations more growth aggressive by reducing bonds by
 This increase in crypto came also as I did more research and found many (40+) crypto tokens that I would like exposure to.
 I reduced _real estate & dividend_ stocks because they are not my priority right now and I have to pay 30% tax on all dividend (even if not withdrawn).
 
-### Brokers/Exchanges
+### Broker/Exchange
 
 If I wanted to take the **super-easy passive** route to have stocks & bonds, I would go for a low-fee fund like one of [Vanguard's retirement funds](https://www.vanguardinvestor.co.uk/investing-explained/what-are-target-retirement-funds).
 If I wanted to take the standard **passive** route of only index funds without any individual stocks, then I would go for a broker like Vanguard which has a wide range of low-fee funds.
@@ -398,19 +401,19 @@ In the UK, Vanguard has a [Stocks & Shares ISA](https://www.vanguardinvestor.co.
 If I wanted to take the **mixed** or **active** route (as I am), I would go for a more complete broker with the lowest costs and commission.
 In the US, there are many choices including M1 Finance and Robinhood.
 In most other countries including the UK and France, the best choice I've seen is [Trading212](https://www.trading212.com/invite/FMqHiTlg)
-(if you sign up using my link we both get a **free share**!)
+(if you sign up using my link we both get a **free share**).
 
 With Trading212, depositing, withdrawing, buying and selling are all possible without fees nor commission.
-The only thing is the [0.15%](https://www.trading212.com/en/Trading-Conditions) currency conversion charge when you buy or sell something not in your account's currency.
-They primarily make money from the CFD part of their platform which is for traders and not investors.
+The only thing is the [0.15%](https://www.trading212.com/en/Trading-Conditions) currency conversion charge when you buy or sell something that's not in your account's currency.
+They largely make money from the CFD part of their platform which is for traders and not investors.
 In the UK, they provide a Stocks & Shares ISA (but no PEA in France).
-There's also a practice part of every account should you wish to build up confidence using fake money.
+There's also a practice part of every account should you wish to build up confidence in using the interface with fake money.
 As of May 2021, there's currently a waitlist so if you choose Trading212 you might want to [sign up](https://www.trading212.com/invite/FMqHiTlg) ASAP.
 
-For **crypto**, hands down the best and biggest exchange is [Binance](https://guy.coinbureau.com/binance/)
+For **crypto**, hands down the biggest and best exchange is [Binance](https://guy.coinbureau.com/binance/)
 (this link is not mine but you get 25% commission back with each trade).
 Binance has one of the lowest fees available, a very wide range of cryptocurrencies and [insurance](https://academy.binance.com/en/glossary/secure-asset-fund-for-users).
-Binance also has the [highest liquidity](https://coinmarketcap.com/currencies/bitcoin/markets/) which means the market price to buy or sell a cryptocurrency tends to be the best in the global market at that point in time.
+Binance also has the [highest liquidity](https://coinmarketcap.com/currencies/bitcoin/markets/) which results in the market price to buy or sell a cryptocurrency tending to be the best in the global market at that point in time.
 There's a separate [Binance for the US](https://www.binance.us/en/home).
 Binance complete [beginner's guide](https://youtu.be/YzJ6xkJpeUk).
 
@@ -431,9 +434,9 @@ The first time I did this exercise I determined I can dedicate this portion in p
 ![Pie chart of my expenditures by type](/raw/img/blog/2021/investing/my-expenditures-by-type.png)
 
 With the monthly amount figured out,
-ideally I should just **invest continuously** every month without putting much thought to when prices will peak or bottom.
+ideally, I should just **invest continuously** every month without putting much thought into when prices will peak or bottom.
 This is [Dollar-Cost Averaging](https://www.investopedia.com/terms/d/dollarcostaveraging.asp) (DCA).
-The more one **removes emotion** from investing and executes their plan **robotically**, the better they do long-term (and reduce a lot of unneeded stress).
+The more one **removes emotion** from investing and executes their plan **robotically**, the better they do long-term and reduce a lot of unneeded stress.
 If your broker or exchange offers automatic regular investing to a plan you create
 (as the case for [Trading212](https://www.trading212.com/invite/FMqHiTlg)'s pies),
 then it is a very good idea to do so.
