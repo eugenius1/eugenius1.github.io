@@ -442,6 +442,12 @@ If your broker or exchange offers automatic regular investing to a plan you crea
 (as the case for [Trading212](https://www.trading212.com/invite/FMqHiTlg)'s pies),
 then it is a very good idea to do so.
 
+**Pay yourself first**:
+The bank account I receive my salary is different to the one I use to spend.
+When I receive my salary, I split it into investing, fixed monthly expenditures like bills and then figure out how much to budget for the coming month for my other expenses.
+This short but important monthly exercise helps me to save & invest straightaway
+as well as to fill my spending account with a set budget for the month.
+
 ## Closing thoughts
 
 I hope this article has given you plenty of ideas and tools for getting your personal finance in good order.
