@@ -178,7 +178,7 @@ They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_sc
 One key determinant of how bad a loan is is the **interest rate**.
 There isn't a definitive, fixed threshold percentage but it can be compared to:
 
-- **local currency's inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has [~3.7%](https://www.statista.com/statistics/447617/inflation-rate-in-tanzania/).
+- **local inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has [~3.7%](https://www.statista.com/statistics/447617/inflation-rate-in-tanzania/).
 
 - **investing returns**: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
 The idea here is if a loan's interest rate is lower than this, then it usually makes more financial sense to invest instead of trying to pay the loan sooner than planned.
@@ -225,7 +225,7 @@ the next step was to ask myself what my financial goals are.
 The common themes when asking yourself this question include wealth **accumulation/growth**, wealth **preservation**, **passive income** and **time horizon**.
 **Risk tolerance** is also another question to ask yourself.
 
-I don't think one can aim for growth and have low risk tolerance.
+I don't think one can aim for substantial growth and have low risk tolerance.
 Growth implies seeking higher volatility which means investments can go up strongly as well as down strongly (at least in the short-term).
 Time horizon and risk tolerance are usually linked; a shorter time horizon means less risk can be taken.
 
@@ -249,6 +249,7 @@ Now I need to commit to always align my investments to my financial goals.
 With financial goals set, the next step determines time and effort commitment and the range of possible return on investment:
 
 - **Passive** investing is performing **as well as** the market by investing in index funds or index ETFs.
+
 - **Active** investing is trying to **beat** the market.
 This requires doing **more research** to choose individual assets like company stocks instead of investing in funds.
 It would also need me to stay informed and check on my companies/assets from time to time, let's say at least a few times per year.
@@ -290,7 +291,7 @@ For dividend, there's also an allowance, currently [£2,000](https://www.gov.uk/
 
 In **France**, there is the [_Plan d'Épargne en Actions_](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea) (**PEA**)
 that typically has a 5-year lock-in period,
-has lower or no tax but still subject to social security contributions ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)) at withdrawal.
+has lower or no tax but still subject to social security contribution ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)) at withdrawal.
 If withdrawing early, tax is exempt under certain conditions such as starting a business or retirement;
 otherwise, gains are taxed at [12.8%](https://www.service-public.fr/particuliers/vosdroits/F22449).
 One big drawback with these accounts in France is they limit to investing in companies registered in the [European Economic Area](https://en.wikipedia.org/wiki/European_Economic_Area) (EEA)
@@ -313,9 +314,9 @@ After tax, the next biggest determiner to returns is asset class allocation, eve
 An asset class groups investments that show similar characteristics.
 For example, stocks and bonds behave quite differently.
 Each asset class has its own profile of risk, volatility and a possible range of returns.
-**Diversifying** is very important because it avoids putting all your eggs in one basket of common risk.
+**Diversifying** is very important because it can reduce the overall risk of the portfolio.
 
-In addition to diversification, **correlation** is also an important aspect to consider.
+**Correlation** is also important to consider.
 Correlation is a statistical measure of how two things move compared to each other
 (but not saying which causes which to move).
 Having asset classes with low (or negative) correlation to each other can mean that when one goes down,
@@ -411,11 +412,11 @@ There's also a practice part of every account should you wish to build up confid
 As of May 2021, there's currently a waitlist so if you choose Trading212 you might want to [sign up](https://www.trading212.com/invite/FMqHiTlg) ASAP.
 
 For **crypto**, hands down the biggest and best exchange is [Binance](https://guy.coinbureau.com/binance/)
-(this link is not mine but you get 25% commission back with each trade).
+(this referral link is not mine but you get 25% commission back with each trade).
 Binance has one of the lowest fees available, a very wide range of cryptocurrencies and [insurance](https://academy.binance.com/en/glossary/secure-asset-fund-for-users).
 Binance also has the [highest liquidity](https://coinmarketcap.com/currencies/bitcoin/markets/) which results in the market price to buy or sell a cryptocurrency tending to be the best in the global market at that point in time.
 There's a separate [Binance for the US](https://www.binance.us/en/home).
-Binance complete [beginner's guide](https://youtu.be/YzJ6xkJpeUk).
+See also this complete [beginner's guide video](https://youtu.be/YzJ6xkJpeUk).
 
 ## 7th: How much per month?
 
