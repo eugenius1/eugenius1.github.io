@@ -281,17 +281,19 @@ So arguably the biggest determiner to one's take-home return on investment is ho
 Also, normally profits and all dividend are taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
 
 Many countries provide investment accounts with **lower or no tax** under conditions such as lock-in period, maximum yearly input or limited asset choices.
+If you aim to live off your investments in retirement, it's sensible to seek a financial advisor to find out the most tax-efficient way to withdraw,
+especially as tax rules can change several times over time.
 I will give a summary of what I understand but always do your own research and/or seek a tax advisor in your jurisdiction.
 
-In the **UK**, a Stocks & Shares Individual Savings Account (**ISA**) can be used by UK taxpayers
-and the maximum one can put into it is currently [£20,000 for the tax year 2021-22](https://www.gov.uk/individual-savings-accounts).
-Otherwise, profits are subject to [capital gains tax](https://www.gov.uk/tax-sell-shares) if above the tax-free allowance,
+In the **UK**, a Stocks & Shares Individual Savings Account (**ISA**) can be used by UK taxpayers to not get taxed on any profit or dividend made within the ISA.
+The maximum one can put into it is currently [£20,000 for the tax year 2021-22](https://www.gov.uk/individual-savings-accounts).
+In a non-ISA, profits are subject to [capital gains tax](https://www.gov.uk/tax-sell-shares) if above the tax-free allowance,
 currently [£12,300](https://www.gov.uk/capital-gains-tax/allowances) for the tax year 2021-22.
-For dividend, there's also an allowance, currently [£2,000](https://www.gov.uk/tax-on-dividends) for the tax year 2021-22.
+For dividend received in a non-ISA, there's also an allowance, currently [£2,000](https://www.gov.uk/tax-on-dividends) for the tax year 2021-22.
 
 In **France**, there is the [_Plan d'Épargne en Actions_](https://www.economie.gouv.fr/particuliers/plan-epargne-actions-pea) (**PEA**)
 that typically has a 5-year lock-in period,
-has lower or no tax but still subject to social security contribution ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)) at withdrawal.
+has lower or no tax but still subject to social security contribution ([17.2%](https://www.service-public.fr/particuliers/vosdroits/F22449)) on gains at withdrawal.
 If withdrawing early, tax is exempt under certain conditions such as starting a business or retirement;
 otherwise, gains are taxed at [12.8%](https://www.service-public.fr/particuliers/vosdroits/F22449).
 One big drawback with these accounts in France is they limit to investing in companies registered in the [European Economic Area](https://en.wikipedia.org/wiki/European_Economic_Area) (EEA)
@@ -314,7 +316,7 @@ After tax, the next biggest determiner to returns is asset class allocation, eve
 An asset class groups investments that show similar characteristics.
 For example, stocks and bonds behave quite differently.
 Each asset class has its own profile of risk, volatility and a possible range of returns.
-**Diversifying** is very important because it can reduce the overall risk of the portfolio.
+**Diversifying** is very important because it can reduce the overall risk and volatility of the investment portfolio.
 
 **Correlation** is also important to consider.
 Correlation is a statistical measure of how two things move compared to each other
@@ -444,6 +446,7 @@ then it is a very good idea to do so.
 
 **Pay yourself first**:
 The bank account I receive my salary is different to the one I use to spend.
+My spending bank account is on [Revolut](https://revolut.com/referral/eusebi8t3!ASO).
 When I receive my salary, I split it into investing, fixed monthly expenditures like bills and then figure out how much to budget for the coming month for my other expenses.
 This short but important monthly exercise helps me to save & invest straightaway
 as well as to fill my spending account with a set budget for the month.
