@@ -75,7 +75,7 @@ What you should keep in mind is they're all in the US so some things like tax ma
 ### Short recap
 
 **Asset**:
-Something that can be bought with the hope of future profit and/or income. Common examples include stocks, bonds, real estate, currencies and commodities like gold.
+Something that can be bought with the hope of future profit and/or income. Common examples include stocks, bonds, real estate and commodities like gold.
 
 **Liability**:
 Something that makes you lose money, such as debt or a car (especially a brand new Lamborghini).
@@ -135,14 +135,23 @@ and people want to buy more when prices go up.
 {:.text-center}
 
 **News**:
-It's a good idea to avoid daily financial news and trends while investing,
+It's a good idea to avoid daily financial news and trends while investing as
 a lot of it can be considered noise to a long-term investor.
 The media is in the business of publishing news that sells, i.e. news that stirs emotions.
 Some even suggest **going against the news**, for example, if the news says that the markets are crashing and hope is lost,
 then that is a great time to be buying, think a Black Friday sale.
 
+**Crash = sale** (not sell):
 A major key to remember is that investing (medium- to long-term) means going through **multiple market cycles** and their ups and downs.
 **Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
+For example, I bought (fractional) shares of Apple and panic sold them 3 days later at a loss of 9%:
+
+![Panic selling Tesla stock in March 2020](/raw/img/blog/2021/investing/aapl-2020-panic-sell.png)
+
+If I continued to hold those same shares through the crash,
+14 months later they would now be worth 70% more than my cost to buy them.
+
+![Panic selling Tesla stock in March 2020](/raw/img/blog/2021/investing/aapl-after-panic-sell.png)
 
 **Time is the greatest asset**:
 Jack & Jill both invest $200 per month but Jack for 10 years (ages 25-35) while Jill for 30 years (ages 35-65).
@@ -230,8 +239,8 @@ Growth implies seeking higher volatility which means investments can go up stron
 Time horizon and risk tolerance are usually linked; a shorter time horizon means less risk can be taken.
 
 This link is largely due to **market cycles**.
-In the stock market, they have historically lasted 5-7 years on average.
-For cryptocurrencies, it currently appears to be 4 years (due to [Bitcoin halving](https://www.investopedia.com/bitcoin-halving-4843769)).
+For cryptocurrencies, it currently appears to be almost 4 years (due to [Bitcoin halving](https://www.investopedia.com/bitcoin-halving-4843769)).
+For the stock market, it's a lot less definitive and with many factors but let's say 10-20 years with a lot of uncertainty.
 Investing for shorter periods than these while the market is going up has the risk that one day the market will enter the decline phase of the cycle.
 
 For me right now in my mid-20s, my goal is growth.
@@ -340,7 +349,7 @@ Relatively low correlation to other asset classes.
 
 - **Cryptocurrencies** a.k.a. crypto:
 young, rapidly evolving, highest volatility, highest risk, highly speculative right now.
-Low (possibly lowest) correlation to other asset classes.
+Not enough history but probably low correlation to other asset classes.
 
 Other major asset classes include cash (that we all know), foreign currencies and valuable inventory like artwork and collectables.
 There is also one more which for this scope I'm classifying as part of stocks:
@@ -376,7 +385,7 @@ to have good inspiration in deciding allocations.
 If you're in the UK, there's a [UK-oriented view](https://monevator.com/9-lazy-portfolios-for-uk-passive-investors-2010/) that might also be worth reading.
 I started with David Swensen's Ivy League Portfolio and chose to have the asset classes and allocation percentages below.
 As a seeker of **growth** and acknowledging the US as the centre of the world's economy (at least for the foreseeable future),
-I've set the majority (roughly ⅔) of my stocks to be American companies.
+I've set the majority (~54%) of my stocks to be American companies.
 
 | Asset Class                                |       2020         |       2021         |
 |--------------------------------------------|--------------------|--------------------|
@@ -432,7 +441,7 @@ to:
 - view & plan my expenditures & income
 - plan the building of my emergency fund
 
-The first time I did this exercise I determined I can dedicate this portion in purple of my expenditures to investing:
+The first time I did this exercise I determined I could dedicate 13% of my expenditures (excluding saving for my emergency fund) to investing:
 
 ![Pie chart of my expenditures by type](/raw/img/blog/2021/investing/my-expenditures-by-type.png)
 
@@ -460,8 +469,8 @@ If you've found this insightful, **share** with a friend that needs to read this
 I have made a [Telegram channel](https://t.me/joinchat/0lHUGbU6PK0zYjA0) where I will share updates to my portfolio and notify of new articles I publish.
 Upcoming articles:
 
-- Stocks & Bonds
 - Commodities & Crypto
+- Stocks & Bonds
 
 {%comment%}
 Lastly, this blog is provided for **free and without ads**.
