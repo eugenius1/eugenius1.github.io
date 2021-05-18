@@ -399,10 +399,40 @@ I've set the majority (~54%) of my stocks to be American companies.
 | Crypto                                     |        10%         |        15%         |
 {:.right-figures}
 
+<a id="portfolio-charts"></a>
+
 Within bonds and _real estate & dividend_ stocks, I also diversify geographically.
 In early 2021, I made my allocations more growth aggressive by reducing bonds by 5% and increasing crypto by the same amount.
 This increase in crypto came also as I did more research and found many (40+) crypto tokens that I would like exposure to.
 I reduced _real estate & dividend_ stocks because they are not my priority right now and I have to pay 30% tax on all dividend (even if not withdrawn).
+
+[PortfolioCharts.com](https://portfoliocharts.com/) is a great site to compare well-known, professionally recommended [portfolios](https://portfoliocharts.com/portfolios/)
+as well as see how your chosen portfolio would have done in the past decades.
+There are many charts that **easily visualise** risk & volatility, uncertainty of returns as well as financial independence.
+I used the [portfolio builder](https://portfoliocharts.com/portfolio/my-portfolio/) with the inputs below
+([my portfolio](https://portfoliocharts.com/portfolio/my-portfolio/?shortcode=ZFRAXAD27AJ15ED15EJ03AL03AM03BK06BM03AO10GA05GB05FA05Z)).
+I assume my 15% crypto to be American Small-Cap Growth (SCG) stocks (but crypto is more volatile and less correlated to stocks).
+My 15% bonds (green) are split across different bond types which I will detail in a future article.
+
+![My portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/my-portfolio.png)
+
+Drawdowns are a measure of downside volatility, so concretely, how much of a drop in portfolio value could I see?
+The chart below shows the **historical** drawdowns that my built portfolio would have seen,
+with the deepest being a 44% drop in value and taking 2 years to recover.
+The longest drawdown took 10 years to recover.
+This data takes into account inflation (France in this case),
+so a drawdown needs to return back to the previous peak value but adjusted for inflation.
+
+![Drawdowns profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/drawdowns.png)
+
+The many other charts include those allowing you to plan financial independence.
+The chart below shows that if I invest 30% of my income in this portfolio, I could retire in 18-28 years (aged 43-53).
+This assumes my monthly income now will be enough for me then when adjusted for (French) inflation, but this likely won't be enough for any dependent children.
+More details [here](https://portfoliocharts.com/portfolio/financial-independence/)
+and [here](https://portfoliocharts.com/portfolio/withdrawal-rates/)
+on how the calculation is done.
+
+![Financial independence profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/financial-independence.png)
 
 ### Broker/Exchange
 
