@@ -18,7 +18,7 @@ Personal finance is low-key super important.
 for learning.
 7 key points below before actually investing.
 My multi-currency [budgeting spreadsheet](https://docs.google.com/spreadsheets/d/1ubeMCW6oBh3bPdAQhrSWCKE3jF-9brWo4ywshyVdPbo/edit?usp=sharing).
-[Telegram channel](https://t.me/joinchat/0lHUGbU6PK0zYjA0) for my portfolio updates.
+[Telegram channel](/projects/investing/telegram/) for my portfolio updates.
 
 ---
 
@@ -407,16 +407,16 @@ This increase in crypto came also as I did more research and found many (40+) cr
 I reduced _real estate & dividend_ stocks because they are not my priority right now and I have to pay 30% tax on all dividend (even if not withdrawn).
 
 [PortfolioCharts.com](https://portfoliocharts.com/) is a great site to compare well-known, professionally recommended [portfolios](https://portfoliocharts.com/portfolios/)
-as well as see how your chosen portfolio would have done in the past decades.
-There are many charts that **easily visualise** risk & volatility, uncertainty of returns as well as financial independence.
+and to see how your chosen portfolio would have done in the past decades.
+There are many charts that **easily visualise** risk & volatility, uncertainty of returns and even financial independence.
 I used the [portfolio builder](https://portfoliocharts.com/portfolio/my-portfolio/) with the inputs below
-([my portfolio](https://portfoliocharts.com/portfolio/my-portfolio/?shortcode=ZFRAXAD27AJ15ED15EJ03AL03AM03BK06BM03AO10GA05GB05FA05Z)).
+([my portfolio link](https://portfoliocharts.com/portfolio/my-portfolio/?shortcode=ZFRAXAD27AJ15ED15EJ03AL03AM03BK06BM03AO10GA05GB05FA05Z)) to analyse my target portfolio.
 I assume my 15% crypto to be American Small-Cap Growth (SCG) stocks (but crypto is more volatile and less correlated to stocks).
 My 15% bonds (green) are split across different bond types which I will detail in a future article.
 
 ![My portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/my-portfolio.png)
 
-Drawdowns are a measure of downside volatility, so concretely, how much of a drop in portfolio value could I see?
+Drawdowns are a measure of downside volatility, so concretely, how much of a drop in portfolio value I could see.
 The chart below shows the **historical** drawdowns that my built portfolio would have seen,
 with the deepest being a 44% drop in value and taking 2 years to recover.
 The longest drawdown took 10 years to recover.
@@ -505,10 +505,11 @@ as well as to fill my spending account with a set budget for the month.
 ## Closing thoughts
 
 I hope this article has given you plenty of ideas and tools for getting your personal finance in good order.
+
 Leave a **comment** below with your thoughts.
 If you've found this insightful, **share** with a friend that needs to read this.
 
-I have made a [Telegram channel](https://t.me/joinchat/0lHUGbU6PK0zYjA0) where I will share updates to my portfolio and notify of new articles I publish.
+I have made a [Telegram channel](/projects/investing/telegram/) where I will share updates to my portfolio and notify of new articles I publish.
 Upcoming articles:
 
 - Commodities & Crypto
