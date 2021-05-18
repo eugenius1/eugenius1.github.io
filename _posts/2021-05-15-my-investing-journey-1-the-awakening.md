@@ -146,12 +146,12 @@ A major key to remember is that investing (medium- to long-term) means going thr
 **Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
 For example, I bought (fractional) shares of Apple and panic sold them 3 days later at a loss of 9%:
 
-![Panic selling Tesla stock in March 2020](/raw/img/blog/2021/investing/aapl-2020-panic-sell.png)
+![Panic selling Apple stock in March 2020](/raw/img/blog/2021/investing/aapl-2020-panic-sell.png)
 
 If I continued to hold those same shares through the crash,
 14 months later they would now be worth 70% more than my cost to buy them.
 
-![Panic selling Tesla stock in March 2020](/raw/img/blog/2021/investing/aapl-after-panic-sell.png)
+![Apple stock price crashing and then completely recovering](/raw/img/blog/2021/investing/aapl-after-panic-sell.png)
 
 **Time is the greatest asset**:
 Jack & Jill both invest $200 per month but Jack for 10 years (ages 25-35) while Jill for 30 years (ages 35-65).
@@ -291,7 +291,7 @@ Also, normally profits and all dividend are taxed even if not withdrawn so this 
 
 Many countries provide investment accounts with **lower or no tax** under conditions such as lock-in period, maximum yearly input or limited asset choices.
 If you aim to live off your investments in retirement, it's sensible to seek a financial advisor to find out the most tax-efficient way to withdraw,
-especially as tax rules can change several times over time.
+especially as tax rules can change several times over the years.
 I will give a summary of what I understand but always do your own research and/or seek a tax advisor in your jurisdiction.
 
 In the **UK**, a Stocks & Shares Individual Savings Account (**ISA**) can be used by UK taxpayers to not get taxed on any profit or dividend made within the ISA.
@@ -324,8 +324,8 @@ After tax, the next biggest determiner to returns is asset class allocation, eve
 
 An asset class groups investments that show similar characteristics.
 For example, stocks and bonds behave quite differently.
-Each asset class has its own profile of risk, volatility and a possible range of returns.
-**Diversifying** is very important because it can reduce the overall risk and volatility of the investment portfolio.
+Each asset class has its own profile of risk, volatility and possible range of returns.
+**Diversifying** is very important because it can reduce the risk and volatility of the investment portfolio as a whole while delivering more stable returns.
 
 **Correlation** is also important to consider.
 Correlation is a statistical measure of how two things move compared to each other
@@ -360,7 +360,7 @@ price and rental income run parallel to inflation in the long run.
 **Geographies** is another aspect to diversify instead of putting all your eggs in one country or region of the world.
 A common way to classify:
 
-- Domestic
+- Domestic (your country)
 - International developed countries
 - Emerging countries
 
@@ -444,6 +444,18 @@ to:
 The first time I did this exercise I determined I could dedicate 13% of my expenditures (excluding saving for my emergency fund) to investing:
 
 ![Pie chart of my expenditures by type](/raw/img/blog/2021/investing/my-expenditures-by-type.png)
+
+Minority Mindset [recommends](https://youtu.be/FubGyKuut6o) the percentages below for spending, investing and saving,
+depending on whether you have financial responsibilities (e.g. people that rely on you financially).
+Once (emergency fund) savings have reached an amount that could cover 6 months of your expenses,
+then you merge saving and investing into just investing.
+So for example, if you are investing 30% and saving 20% then you will switch to investing 50% of your income once your emergency fund has reached its maximum.
+
+| Personal situation                    | Max spending | Investing | Saving |
+|---------------------------------------|--------------|-----------|--------|
+| Young & no financial responsibilities |      50%     |    30%    |   20%  |
+| Financial responsibilities            |      75%     |    15%    |   10%  |
+{:.right-figures}
 
 With the monthly amount figured out,
 ideally, I should just **invest continuously** every month without putting much thought into when prices will peak or bottom.
