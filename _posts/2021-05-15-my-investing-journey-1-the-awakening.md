@@ -383,7 +383,7 @@ These funds only provide exposure to stocks and bonds so no commodities nor cryp
 I found the [8 Lazy Portfolios](https://obliviousinvestor.com/8-lazy-etf-portfolios/)
 to have good inspiration in deciding allocations.
 If you're in the UK, there's a [UK-oriented view](https://monevator.com/9-lazy-portfolios-for-uk-passive-investors-2010/) that might also be worth reading.
-I started with David Swensen's Ivy League Portfolio and chose to have the asset classes and allocation percentages below.
+I started with David Swensen's Ivy League Portfolio and tweaked it to have the asset classes and allocation percentages below.
 As a seeker of **growth** and acknowledging the US as the centre of the world's economy (at least for the foreseeable future),
 I've set the majority (~54%) of my stocks to be American companies.
 
@@ -505,6 +505,12 @@ as well as to fill my spending account with a set budget for the month.
 ## Closing thoughts
 
 I hope this article has given you plenty of ideas and tools for getting your personal finance in good order.
+I think **financial literacy** (or lack of it) is a big reason to why the rich stay rich, the poor unfortunately stay poor and the gap between them widens.
+Investing in public markets is an accessible wealth-building process for anyone and not only the few elites.
+
+**Reminders**: make a plan, avoid temporary hype (GME, DOGE) and never panic sell.
+
+---
 
 Leave a **comment** below with your thoughts.
 If you've found this insightful, **share** with a friend that needs to read this.
