@@ -18,7 +18,7 @@ Personal finance is low-key super important.
 for learning.
 7 key points below before actually investing.
 My multi-currency [budgeting spreadsheet](https://docs.google.com/spreadsheets/d/1ubeMCW6oBh3bPdAQhrSWCKE3jF-9brWo4ywshyVdPbo/edit?usp=sharing).
-[Telegram channel](/projects/investing/telegram/) for my portfolio updates.
+[Telegram](/projects/investing/telegram/) for my portfolio updates.
 
 ---
 
@@ -33,7 +33,7 @@ So if this info isn't passed down from your parents, you fall behind on financia
 Furthermore, financial wellness is more determined by **how you manage** your money than simply your income.
 
 Saving & investing are pillars of good personal finance.
-**Investing** is making money work for you in the **medium to long term**.
+**Investing** is making money work for you in the **medium to long term** while you're busy with life.
 It is **not** a get-rich-quick scheme.
 When we don't talk widely about good investing, it leaves a void for scammers to lure the average person with false investments.
 If someone offers you "guaranteed" profits without presenting any risks nor financial protection then you should be extremely careful before deciding to enter.
@@ -75,10 +75,14 @@ What you should keep in mind is they're all in the US so some things like tax ma
 ### Short recap
 
 **Asset**:
-Something that can be bought with the hope of future profit and/or income. Common examples include stocks, bonds, real estate and commodities like gold.
+Puts money in your pocket, usually through future profit and/or income.
+Common examples include stocks, bonds, real estate and commodities like gold.
 
 **Liability**:
-Something that makes you lose money, such as debt or a car (especially a brand new Lamborghini).
+Takes money from your pocket;
+basically anything that's not an asset.
+Some noteworthy examples include debt and a car depreciating in value (especially a brand new Lamborghini).
+A car taking you to work to earn income is not an asset.
 
 **Trading vs investing**:
 Generally, trading is short-term buying and selling for profit while investing means holding assets over a longer time (think years).
@@ -144,7 +148,7 @@ then that is a great time to be buying, think a Black Friday sale.
 **Crash = sale** (not sell):
 A major key to remember is that investing (medium- to long-term) means going through **multiple market cycles** and their ups and downs.
 **Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
-For example, I bought (fractional) shares of Apple and panic sold them 3 days later at a loss of 9%:
+For example, I bought (fractional) shares of Apple and panic sold them 4 days later at a loss of 9%:
 
 ![Panic selling Apple stock in March 2020](/raw/img/blog/2021/investing/aapl-2020-panic-sell.png)
 
@@ -172,6 +176,10 @@ The truth is that too many people are impatient and look for get-rich-quick sche
 Investing always has **risk** and **nothing is guaranteed**.
 You could even get back less than what you invested.
 In general, as many decades of history has shown, a well-diversified investment portfolio doesn't lose money in the long run.
+
+**History doesn't guarantee future**:
+For example, just because Tesla stocks went up over 700% last year, it doesn't mean that it will continue to do that every year.
+You would have to understand why the stock did so well last year and realistically what the future holds for the company.
 
 **Money is just fuel**:
 It amplifies who you are and your character.
@@ -285,6 +293,7 @@ Having a long time horizon and a relatively high risk appetite gives me **room f
 > "I'm spending a year dead for tax reasons." — Douglas Adams
 
 It is said that our **biggest monetary expense in life** is tax!
+It's many forms including income tax and Value-Added Tax (VAT).
 Unless one lives in a perfect tax haven, making some profit or income from investments normally leads to paying taxes for it.
 So arguably the biggest determiner to one's take-home return on investment is how much one pays in tax on their returns.
 Also, normally profits and all dividend are taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
@@ -369,7 +378,8 @@ A common way to classify:
 With some understanding of the characteristics of the different asset classes,
 the next step is to assign a percentage to each of them based on one's financial goals.
 
-The common **rule of thumb** (not strict rule) is for the percentage in bonds to equal one's age.
+The common **rule of thumb** (not strict rule) is for the percentage in bonds to equal your age.
+So as you get closer to retirement/withdrawal, you go for assets with lower risk.
 You can also have a look at the [target retirement funds](https://www.vanguardinvestor.co.uk/investing-explained/what-are-target-retirement-funds)
 from Vanguard (pioneer of index funds),
 either for inspiration or as a **super-easy passive** way to invest if you're in a country like the UK or the US but not France.
@@ -403,7 +413,7 @@ I've set the majority (~54%) of my stocks to be American companies.
 
 Within bonds and _real estate & dividend_ stocks, I also diversify geographically.
 In early 2021, I made my allocations more growth aggressive by reducing bonds by 5% and increasing crypto by the same amount.
-This increase in crypto came also as I did more research and found many (40+) crypto tokens that I would like exposure to.
+This increase in crypto came also as I did more research and found many (40+) crypto coins/tokens that I would like exposure to.
 I reduced _real estate & dividend_ stocks because they are not my priority right now and I have to pay 30% tax on all dividend (even if not withdrawn).
 
 [PortfolioCharts.com](https://portfoliocharts.com/) is a great site to compare well-known, professionally recommended [portfolios](https://portfoliocharts.com/portfolios/)
@@ -416,16 +426,16 @@ My 15% bonds (green) are split across different bond types which I will detail i
 
 ![My portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/my-portfolio.png)
 
-Drawdowns are a measure of downside volatility, so concretely, how much of a drop in portfolio value I could see.
-The chart below shows the **historical** drawdowns that my built portfolio would have seen,
-with the deepest being a 44% drop in value and taking 2 years to recover.
+**Drawdown** is a measure of downside volatility, so concretely, how much of a drop in portfolio value I could see from a peak and for how long.
+The chart below shows the **historical** drawdowns that my built portfolio would have seen from 1970 to 2015.
+The deepest drawdown was a 44% drop and took 2 years to recover.
 The longest drawdown took 10 years to recover.
 This data takes into account inflation (France in this case),
 so a drawdown needs to return back to the previous peak value but adjusted for inflation.
 
 ![Drawdowns profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/drawdowns.png)
 
-The many other charts include those allowing you to plan financial independence.
+The many other charts include those allowing you to plan **financial independence**.
 The chart below shows that if I invest 30% of my income in this portfolio, I could retire in 18-28 years (aged 43-53).
 This assumes my monthly income now will be enough for me then when adjusted for (French) inflation, but this likely won't be enough for any dependent children.
 More details [here](https://portfoliocharts.com/portfolio/financial-independence/)
@@ -451,6 +461,12 @@ They largely make money from the CFD part of their platform which is for traders
 In the UK, they provide a Stocks & Shares ISA (but no PEA in France).
 There's also a practice part of every account should you wish to build up confidence in using the interface with fake money.
 As of May 2021, there's currently a waitlist so if you choose Trading212 you might want to [sign up](https://www.trading212.com/invite/FMqHiTlg) ASAP.
+
+I should also mention that if your **workplace** offers an investing account
+(e.g. [Plan d'Épargne Entreprise](https://www.service-public.fr/particuliers/vosdroits/F2142) (PEE) in France),
+then it can be good to do some investing in it.
+Normally, one big benefit is that you can invest from your salary before it gets taxed (unlike your received salary),
+and tax when withdrawing might be only on gains.
 
 For **crypto**, hands down the biggest and best exchange is [Binance](https://guy.coinbureau.com/binance/)
 (this referral link is not mine but you get 25% commission back with each trade).
@@ -502,6 +518,14 @@ When I receive my salary, I split it into investing, fixed monthly expenditures 
 This short but important monthly exercise helps me to save & invest straightaway
 as well as to fill my spending account with a set budget for the month.
 
+{% comment %}
+**Lump-sum scenario**:
+Let's say I've just discovered about investing and I've realised that I have a lot of my savings that I want to invest.
+In this case, I would split this large sum of money 3 times or so, and invest over several months.
+The idea here is to reduce timing risk and diversify over time (similarly to dollar-cost averaging).
+If the market was to drop after investing the first portion then there would be another portion ready to benefit from the lower prices.
+{% endcomment %}
+
 ## Closing thoughts
 
 I hope this article has given you plenty of ideas and tools for getting your personal finance in good order.
@@ -515,14 +539,14 @@ Investing in public markets is an accessible wealth-building process for anyone 
 Leave a **comment** below with your thoughts.
 If you've found this insightful, **share** with a friend that needs to read this.
 
-I have made a [Telegram channel](/projects/investing/telegram/) where I will share updates to my portfolio and notify of new articles I publish.
+I have made a [Telegram group](/projects/investing/telegram/) where I will share updates to my portfolio and notify of new articles I publish.
 Upcoming articles:
 
 - Commodities & Crypto
 - Stocks & Bonds
 
-{%comment%}
+{% comment %}
 Lastly, this blog is provided for **free and without ads**.
 If you have found value here, you can [**buy me a tea**](/donate)
 (I dislike coffee).
-{%endcomment%}
+{% endcomment %}
