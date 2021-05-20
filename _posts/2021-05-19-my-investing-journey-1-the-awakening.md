@@ -34,7 +34,7 @@ Saving & investing are pillars of good personal finance.
 **Investing** is making money work for you in the **medium to long term** while you're busy with life.
 It is **not** a get-rich-quick scheme.
 When we don't talk widely about good investing, it leaves a void for scammers to lure the average person with false investments.
-If someone offers you "guaranteed" profits without presenting any risks nor financial protection then you should be extremely careful before deciding to enter.
+If someone offers you "guaranteed" profits without presenting any risks nor financial protection, you should be extremely careful before deciding to enter.
 
 In this series, I share my investing journey, starting with **7 key points** before actually investing.
 The first 2 key points I think everyone should be considering even if not planning to invest.
@@ -292,7 +292,7 @@ Having a long time horizon and a relatively high risk appetite gives me **room f
 > "I'm spending a year dead for tax reasons." — Douglas Adams
 
 It is said that our **biggest monetary expense in life** is tax!
-It's many forms including income tax and Value-Added Tax (VAT).
+Its many forms including income tax and Value-Added Tax (VAT).
 Unless one lives in a perfect tax haven, making some profit or income from investments normally leads to paying taxes for it.
 So arguably the biggest determiner to one's take-home return on investment is how much one pays in tax on their returns.
 Also, normally profits and all dividend are taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
