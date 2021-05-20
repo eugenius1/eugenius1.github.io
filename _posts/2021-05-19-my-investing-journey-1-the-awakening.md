@@ -2,14 +2,12 @@
 layout: post
 title: "My Investing Journey, Pt. 1—The Awakening!"
 subtitle: "A 20-something actually starts managing his money (well)"
-# TODO: compress
 bigimg:
  - "/raw/img/covers/blog/2021/2020-stock-market-crash.png": "TradingView"
 share-img: "/raw/img/blog/2021/investing/2020-stock-market-crash-shareable.png"
 redirect_from:
  - "/mij1/"
  - "/investing/"
-listed: false
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:
@@ -81,8 +79,8 @@ Common examples include stocks, bonds, real estate and commodities like gold.
 **Liability**:
 Takes money from your pocket;
 basically anything that's not an asset.
-Some noteworthy examples include debt and a car depreciating in value (especially a brand new Lamborghini).
-A car taking you to work to earn income is not an asset.
+Some noteworthy examples include debt and a car losing value (especially a brand new Lamborghini).
+A car taking you to work to earn an income is not an asset.
 
 **Trading vs investing**:
 Generally, trading is short-term buying and selling for profit while investing means holding assets over a longer time (think years).
@@ -177,9 +175,10 @@ Investing always has **risk** and **nothing is guaranteed**.
 You could even get back less than what you invested.
 In general, as many decades of history has shown, a well-diversified investment portfolio doesn't lose money in the long run.
 
-**History doesn't guarantee future**:
-For example, just because Tesla stocks went up over 700% last year, it doesn't mean that it will continue to do that every year.
+**History doesn't guarantee the future**:
+For example, just because Tesla stock went up over 700% last year, it doesn't mean that it will continue to do that every year.
 You would have to understand why the stock did so well last year and realistically what the future holds for the company.
+Prioritise **fundamentals** and analysing the future over recent past performance.
 
 **Money is just fuel**:
 It amplifies who you are and your character.
@@ -360,7 +359,7 @@ Relatively low correlation to other asset classes.
 young, rapidly evolving, highest volatility, highest risk, highly speculative right now.
 Not enough history but probably low correlation to other asset classes.
 
-Other major asset classes include cash (that we all know), foreign currencies and valuable inventory like artwork and collectables.
+Other major asset classes include cash, foreign currencies and valuable inventory like artwork and collectables.
 There is also one more which for this scope I'm classifying as part of stocks:
 
 - **Real estate**:
@@ -378,7 +377,7 @@ A common way to classify:
 With some understanding of the characteristics of the different asset classes,
 the next step is to assign a percentage to each of them based on one's financial goals.
 
-The common **rule of thumb** (not strict rule) is for the percentage in bonds to equal your age.
+The common **rule of thumb** (not a strict rule) is for the percentage in bonds to equal your age.
 So as you get closer to retirement/withdrawal, you go for assets with lower risk.
 You can also have a look at the [target retirement funds](https://www.vanguardinvestor.co.uk/investing-explained/what-are-target-retirement-funds)
 from Vanguard (pioneer of index funds),
@@ -418,7 +417,7 @@ I reduced _real estate & dividend_ stocks because they are not my priority right
 
 [PortfolioCharts.com](https://portfoliocharts.com/) is a great site to compare well-known, professionally recommended [portfolios](https://portfoliocharts.com/portfolios/)
 and to see how your chosen portfolio would have done in the past decades.
-There are many charts that **easily visualise** risk & volatility, uncertainty of returns and even financial independence.
+The site has many charts that **easily visualise** risk & volatility, the uncertainty of returns and even financial independence.
 I used the [portfolio builder](https://portfoliocharts.com/portfolio/my-portfolio/) with the inputs below
 ([my portfolio link](https://portfoliocharts.com/portfolio/my-portfolio/?shortcode=ZFRAXAD27AJ15ED15EJ03AL03AM03BK06BM03AO10GA05GB05FA05Z)) to analyse my target portfolio.
 I assume my 15% crypto to be American Small-Cap Growth (SCG) stocks (but crypto is more volatile and less correlated to stocks).
@@ -431,7 +430,7 @@ The chart below shows the **historical** drawdowns that my built portfolio would
 The deepest drawdown was a 44% drop and took 2 years to recover.
 The longest drawdown took 10 years to recover.
 This data takes into account inflation (France in this case),
-so a drawdown needs to return back to the previous peak value but adjusted for inflation.
+so a drawdown needs to return to the previous peak value but adjusted for inflation.
 
 ![Drawdowns profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/drawdowns.png)
 
@@ -463,7 +462,7 @@ There's also a practice part of every account should you wish to build up confid
 As of May 2021, there's currently a waitlist so if you choose Trading212 you might want to [sign up](https://www.trading212.com/invite/FMqHiTlg) ASAP.
 
 I should also mention that if your **workplace** offers an investing account
-(e.g. [Plan d'Épargne Entreprise](https://www.service-public.fr/particuliers/vosdroits/F2142) (PEE) in France),
+(e.g. [_Plan d'Épargne Entreprise_](https://www.service-public.fr/particuliers/vosdroits/F2142) (PEE) in France),
 then it can be good to do some investing in it.
 Normally, one big benefit is that you can invest from your salary before it gets taxed (unlike your received salary),
 and tax when withdrawing might be only on gains.
@@ -529,8 +528,8 @@ If the market was to drop after investing the first portion then there would be 
 ## Closing thoughts
 
 I hope this article has given you plenty of ideas and tools for getting your personal finance in good order.
-I think **financial literacy** (or lack of it) is a big reason to why the rich stay rich, the poor unfortunately stay poor and the gap between them widens.
-Investing in public markets is an accessible wealth-building process for anyone and not only the few elites.
+I think **financial literacy** (or lack of it) is a big reason why the rich stay rich, the poor unfortunately stay poor and the gap between them widens.
+Investing in public markets is an accessible wealth-building process for anyone and not only a few elites.
 
 **Reminders**: make a plan, avoid temporary hype (GME, DOGE) and never panic sell.
 
@@ -544,6 +543,10 @@ Upcoming articles:
 
 - Commodities & Crypto
 - Stocks & Bonds
+
+---
+
+Peer-reviewed by [Thomas Akinola](https://www.linkedin.com/in/thomas-akinola-031a561bb/).
 
 {% comment %}
 Lastly, this blog is provided for **free and without ads**.
