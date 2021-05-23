@@ -207,7 +207,7 @@ See [APR vs APY](https://www.investopedia.com/personal-finance/apr-apy-bank-hope
 
 I don't use a credit card but the right way to use one would be to fully repay the debt at the end of the month instead of paying the minimum payment needed and carrying the debt (plus interest) over to the next month.
 If I had high-interest debt like credit card debt or a payday loan,
-I would **live broke** and put as much of my money as possible to ending all bad debt.
+I would **live like I'm broke** and put as much of my money as possible to ending all bad debt.
 I would not start investing before this is done.
 
 **UK student loan**: I did my undergraduate studies in London and financed them with a loan from the UK government.
