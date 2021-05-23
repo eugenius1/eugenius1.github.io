@@ -175,7 +175,7 @@ Investing always has **risk** and **nothing is guaranteed**.
 You could even get back less than what you invested.
 In general, as many decades of history has shown, a well-diversified investment portfolio doesn't lose money in the long run.
 
-**History doesn't guarantee the future**:
+**The past doesn't guarantee the future**:
 For example, just because Tesla stock went up over 700% last year, it doesn't mean that it will continue to do that every year.
 You would have to understand why the stock did so well last year and realistically what the future holds for the company.
 Prioritise **fundamentals** and analysing the future over recent past performance.
@@ -206,6 +206,9 @@ Typical credit card interests are above 20% especially when you consider compoun
 See [APR vs APY](https://www.investopedia.com/personal-finance/apr-apy-bank-hopes-cant-tell-difference/) for more info.
 
 I don't use a credit card but the right way to use one would be to fully repay the debt at the end of the month instead of paying the minimum payment needed and carrying the debt (plus interest) over to the next month.
+If I had high-interest debt like credit card debt or a payday loan,
+I would **live broke** and put as much of my money as possible to ending all bad debt.
+I would not start investing before this is done.
 
 **UK student loan**: I did my undergraduate studies in London and financed them with a loan from the UK government.
 The interest rate is variable; I have seen it go as high as 5% but now it's at 2.6%.
@@ -547,9 +550,3 @@ Upcoming articles:
 ---
 
 Peer-reviewed by [Thomas Akinola](https://www.linkedin.com/in/thomas-akinola-031a561bb/).
-
-{% comment %}
-Lastly, this blog is provided for **free and without ads**.
-If you have found value here, you can [**buy me a tea**](/donate)
-(I dislike coffee).
-{% endcomment %}
