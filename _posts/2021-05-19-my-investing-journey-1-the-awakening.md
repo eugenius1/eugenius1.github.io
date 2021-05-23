@@ -143,7 +143,7 @@ The media is in the business of publishing news that sells, i.e. news that stirs
 Some even suggest **going against the news**, for example, if the news says that the markets are crashing and hope is lost,
 then that is a great time to be buying, think a Black Friday sale.
 
-**Crash = sale** (not sell):
+**Crash = sale (not sell)**:
 A major key to remember is that investing (medium- to long-term) means going through **multiple market cycles** and their ups and downs.
 **Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
 For example, I bought (fractional) shares of Apple and panic sold them 4 days later at a loss of 9%:
@@ -420,7 +420,7 @@ and to see how your chosen portfolio would have done in the past decades.
 The site has many charts that **easily visualise** risk & volatility, the uncertainty of returns and even financial independence.
 I used the [portfolio builder](https://portfoliocharts.com/portfolio/my-portfolio/) with the inputs below
 ([my portfolio link](https://portfoliocharts.com/portfolio/my-portfolio/?shortcode=ZFRAXAD27AJ15ED15EJ03AL03AM03BK06BM03AO10GA05GB05FA05Z)) to analyse my target portfolio.
-I assume my 15% crypto to be American Small-Cap Growth (SCG) stocks (but crypto is more volatile and less correlated to stocks).
+I assume my 15% crypto to be American Small-Cap Growth (SCG) stocks (but crypto is more volatile and less correlated to the stock market).
 My 15% bonds (green) are split across different bond types which I will detail in a future article.
 
 ![My portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/my-portfolio.png)
@@ -436,7 +436,7 @@ so a drawdown needs to return to the previous peak value but adjusted for inflat
 
 The many other charts include those allowing you to plan **financial independence**.
 The chart below shows that if I invest 30% of my income in this portfolio, I could retire in 18-28 years (aged 43-53).
-This assumes my monthly income now will be enough for me then when adjusted for (French) inflation, but this likely won't be enough for any dependent children.
+This assumes my current monthly expenses (the remaining 70%) will be enough for me then when adjusted for (French) inflation, but this won't be enough if I will have more financial responsibilities like children.
 More details [here](https://portfoliocharts.com/portfolio/financial-independence/)
 and [here](https://portfoliocharts.com/portfolio/withdrawal-rates/)
 on how the calculation is done.
