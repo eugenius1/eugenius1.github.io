@@ -194,7 +194,8 @@ They can also affect your [credit score](https://en.wikipedia.org/wiki/Credit_sc
 One key determinant of how bad a loan is is the **interest rate**.
 There isn't a definitive, fixed threshold percentage but it can be compared to:
 
-- **local inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of less than 2% while Tanzania (a developing country) has [~3.7%](https://www.statista.com/statistics/447617/inflation-rate-in-tanzania/).
+- **local inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of [~1.6%](https://www.ons.gov.uk/economy/inflationandpriceindices)
+while Tanzania (a developing country) has [~3.7%](https://www.statista.com/statistics/447617/inflation-rate-in-tanzania/).
 
 - **investing returns**: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
 The idea here is if a loan's interest rate is lower than this, then it usually makes more financial sense to invest instead of trying to pay the loan sooner than planned.
@@ -360,7 +361,7 @@ Relatively low correlation to other asset classes.
 
 - **Cryptocurrencies** a.k.a. crypto:
 young, rapidly evolving, highest volatility, highest risk, highly speculative right now.
-Not enough history but probably low correlation to other asset classes.
+Correlation to other asset classes is evolving; inconclusive.
 
 Other major asset classes include cash, foreign currencies and valuable inventory like artwork and collectables.
 There is also one more which for this scope I'm classifying as part of stocks:
