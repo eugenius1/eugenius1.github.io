@@ -255,7 +255,7 @@ For the stock market, it's a lot less definitive and with many factors but let's
 Investing for shorter periods than these while the market is going up has the risk that one day the market will enter the decline phase of the cycle.
 
 For me right now in my mid-20s, my goal is growth.
-I will use my investments as a means to an **early retirement**/financial freedom,
+I will use my investments as a means to an **financial freedom**/early retirement,
 while along the way using portions of it for **big projects** like buying **real estate**.
 I can tolerate relatively a lot of risk.
 As I progress through the decades (and have a family), my goal will transition to less growth and instead more passive income and less risk.
@@ -471,7 +471,8 @@ then it can be good to do some investing in it.
 Normally, one big benefit is that you can invest from your salary before it gets taxed (unlike your received salary),
 and tax when withdrawing might be only on gains.
 
-For **crypto**, hands down the biggest and best exchange is [Binance](https://guy.coinbureau.com/binance/)
+For **crypto**, hands down the [biggest](https://coinmarketcap.com/rankings/exchanges/)
+and best exchange is [Binance](https://guy.coinbureau.com/binance/)
 (this referral link is not mine but you get 25% commission back with each trade).
 Binance has one of the lowest fees available, a very wide range of cryptocurrencies and [insurance](https://academy.binance.com/en/glossary/secure-asset-fund-for-users).
 Binance also has the [highest liquidity](https://coinmarketcap.com/currencies/bitcoin/markets/) which results in the market price to buy or sell a cryptocurrency tending to be the best in the global market at that point in time.
