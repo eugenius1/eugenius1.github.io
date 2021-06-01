@@ -8,22 +8,22 @@ subtitle: My YouTube playlist
 
 ## [How Stock Market Investing Works](https://youtu.be/LKpupMSYCko)
 
-- consumer vs investor mindset
-- appreciation & dividend
+- Consumer vs investor mindset
+- Appreciation & dividend
 
 ## [5 Secrets That WILL Make You WEALTHY](https://youtu.be/tjpKe6x-Ch0)
 
-1. mindset: rich vs wealthy; money is just a tool
-2. work on your income
-3. pay yourself
-4. stop the payments
-5. patience
+1. Mindset: rich vs wealthy; money is just a tool
+2. Work on your income
+3. Pay yourself
+4. Stop the payments
+5. Patience
 
 ## [Stock Market Investing For Beginners - A COMPLETE Guide To Stock Market Investing](https://youtu.be/hrx28rCKckM)
 
-- stock market is an accessible wealth-building tool
-- appreciation & dividend
-- active vs passive
+- Stock market is an accessible wealth-building tool
+- Appreciation & dividend
+- Active vs passive
 
 ## [What Every 20-Something NEEDS To Hear About Money](https://youtu.be/FubGyKuut6o)
 
@@ -32,15 +32,15 @@ subtitle: My YouTube playlist
 
 ## [7 Essential Money Lessons You Never Learned In School (RIDICULOUSLY IMPORTANT)](https://youtu.be/sZIKPHu4tOA)
 
-- taxes are your biggest single expense
-- budgeting
-- being rich vs looking rich
-- credit cards
-- good credit score
+- Taxes are your biggest single expense
+- Budgeting
+- Being rich vs looking rich
+- Credit cards
+- Good credit score
 
 ## [Is This The Time to Invest Or Pay Down Debt](https://youtu.be/6q5pEogzDPc)
 
-- high interest rate
+- High interest rate
 
 ## [6 Investing Rules To Live By](https://youtu.be/Q9FJgYrLs30)
 
@@ -82,20 +82,20 @@ subtitle: My YouTube playlist
 ## [The Intelligent Investor Summary (By Benjamin Graham)](https://youtu.be/npoyc_X5zO8)
 
 - Mr Market
-- defensive & enterprising investor
-- margin of safety
-- risk & reward are not always correlated
+- Defensive & enterprising investor
+- Margin of safety
+- Risk & reward are not always correlated
 
 ## [DO NOT Make These 5 Stock Market Investing Mistake](https://youtu.be/4K6gpe13nMc)
 
-- invest without trading
-- understand the media
-- invest without margin
-- align your financial goals with your investments
+- Invest without trading
+- Understand the media
+- Invest without margin
+- Align your financial goals with your investments
 
 ## [How To Earn COMPOUND INTEREST & Double Your Money](https://youtu.be/IHuvEsswIKQ)
 
-- active (business) & passive compounding
+- Active (business) & passive compounding
 
 ## [How To QUIT Your Day Job With DIVIDEND INVESTING (Step By Step Method)](https://youtu.be/Vsgjuc9O6Uk)
 
@@ -103,9 +103,9 @@ subtitle: My YouTube playlist
 
 ## [2020 Tech Stock Bubble?! - Watch This Before Investing In Tech Stocks](https://youtu.be/R1nQDF6ZFfg)
 
-- how long is your investment plan?
-- don't overload your stock portfolio with only tech stocks
-- understanding your investment goals before you invest in technology stocks
+- How long is your investment plan?
+- Don't overload your stock portfolio with only tech stocks
+- Understanding your investment goals before you invest in technology stocks
 
 ---
 
@@ -115,8 +115,8 @@ TODO: this gap
 
 ## [Why Media And Code Make People Rich](https://youtu.be/EMm2duiISQw)
 
-- no marginal cost of replication
-- scalable; incredible leverage
+- No marginal cost of replication
+- Scalable; incredible leverage
 
 ## [How To Find High Quality Stocks](https://youtu.be/lZQrc7nN17Y)
 
@@ -124,3 +124,19 @@ TODO: this gap
 - Moat: dominant position in the market
 - Great leadership
 - Strong balance sheet
+
+## [What Exactly Are Hedge Funds (And Why Are They Always Causing Problems)?](https://youtu.be/QFj7gVatEeM)
+
+- Hedging: limiting risk
+- Trying to get returns regardless of what the market is doing
+- Limited to high net-worth investors
+- Lacking transparency & regulation
+
+## [What the Dot-com Bubble can teach us for 2021](https://youtu.be/iUHMnVIvGI8)
+
+- The dangers of baseless hype
+- Survivors show strong fundamentals
+
+## [DON'T Buy Gold!! Here's Why!](https://youtu.be/B_QaL9fAKoM)
+
+- Bitcoin as digital gold

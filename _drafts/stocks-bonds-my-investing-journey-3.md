@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Investing Journey, Pt. 2—Stocks & Bonds!"
+title: "Stocks & Bonds—My Investing Journey, Pt. 2!"
 subtitle: "A millennial's view"
 ---
 

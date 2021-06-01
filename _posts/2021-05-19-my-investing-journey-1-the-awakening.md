@@ -212,7 +212,7 @@ I would **live like I'm broke** and put as much of my money as possible to endin
 I would not start investing before this is done.
 
 **UK student loan**: I did my undergraduate studies in London and financed them with a loan from the UK government.
-The interest rate is variable; I have seen it go as high as 5% but now it's at 2.6%.
+The interest rate is variable; I have seen mine go as high as 5% but now it's at 2.6%.
 UK student loan is unique (I've had trouble explaining it to French banks) in that it will be [written off 30 years after my first repayment](https://www.manage-student-loan-balance.service.gov.uk/ors/account-overview/secured/understand-balance-undergraduatePlan2),
 even if there is a remaining balance.
 This is great especially seeing that my repayments are less than the added interest so the balance keeps increasing!
@@ -361,7 +361,7 @@ Relatively low correlation to other asset classes.
 
 - **Cryptocurrencies** a.k.a. crypto:
 young, rapidly evolving, highest volatility, highest risk, highly speculative right now.
-Correlation to other asset classes is evolving; inconclusive.
+Correlation to other asset classes is evolving & inconclusive.
 
 Other major asset classes include cash, foreign currencies and valuable inventory like artwork and collectables.
 There is also one more which for this scope I'm classifying as part of stocks:
