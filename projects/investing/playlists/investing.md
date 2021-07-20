@@ -139,4 +139,17 @@ TODO: this gap
 
 ## [DON'T Buy Gold!! Here's Why!](https://youtu.be/B_QaL9fAKoM)
 
-- Bitcoin as digital gold
+- Gold vs Bitcoin the digital gold
+
+## [Jack Bogle's 10 Investing Principles -- (Founder of Vanguard)](https://youtu.be/kTk9w-XuXXk)
+
+1. Remember Reversion to the Mean. Selecting yesterday's winners is not smart. Over the long term, reversion to the market average is inevitable.
+2. Time is Your Friend.
+3. Buy Right and Hold Tight.
+4. Have Realistic Expectations.
+5. Forget the Needle, Buy The Haystack.
+6. Minimize the Croupier's Take. Minimize fees by investing in low-cost, low turnover funds.
+7. There's No Escaping Risk.
+8. Don't Fight the Last War. What worked in the past is no predictor of what will work in future.
+9. The Hedgehog (simple investing) Beats the Fox (complex financial institutions).
+10. Stay the Course.

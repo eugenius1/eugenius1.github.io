@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Investing Journey, Pt. 1—The Awakening!"
+title: "My Investing Journey Pt 1—The Awakening!"
 subtitle: "A 20-something actually starts managing his money (well)"
 bigimg:
  - "/raw/img/covers/blog/2021/2020-stock-market-crash.png": "TradingView"
@@ -228,6 +228,12 @@ Why we need it:
 1. **Liquidity**: money quickly ready for an emergency expenditure; cash is more liquid than investments.
 2. To avoid needing to sell investments at a loss during market declines or crashes to cover an emergency.
 3. To **let investments compound** over time without disruption.
+
+An emergency should be:
+
+1. **Necessary**: you can live without Apple's newly released iPhone.
+2. **Unexpected**: expected means you should've budgeted for it earlier.
+3. **Urgent**: can it be delayed?
 
 The general rule for the amount of this fund is to be able to last you **3-6 months** when you have no income.
 Less than 3 months is not enough cushion and significantly more than 6 months exposes you significantly to inflation losses.
