@@ -1,17 +1,126 @@
 ---
 layout: post
-title: "Commodities & Crypto—Clarified! | MIJ Pt 2"
-subtitle: A software engineer's investing thesis. No DOGE here.
+title: "Commodities & Crypto—Decrypted! | MIJ Pt 2"
+subtitle: A software engineer's investing thesis. No DOGE.
 ---
+
+Cryptocurrency (crypto) is an asset class that most people haven't yet truly understood.
+They are new and complex but also have a lot of potential to forever transform the world,
+much like the internet has done.
+To explain crypto, I have to explain Bitcoin,
+and to explain Bitcoin, I have to explain commodities.
+
+I have owned cryptocurrencies since 2018 because I saw their potential.
+I started mindfully investing in 2020
+and started truly understanding them in 2021.
+
+> "An investment in knowledge pays the best interest." — Benjamin Franklin
+
+<p class="alert alert-warning" role="alert">
+<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+I am <strong>no financial advisor</strong> and nothing in this blog should be considered financial, tax or investment advice.
+Everything here is <strong>knowledge sharing</strong> and <strong>my opinion</strong>.
+Always do your own due diligence.
+</p>
 
 - toc
 {:toc}
 
+## Part 1 recap
+
+If you haven't already, I highly recommend reading [_Part 1: The Awakening_](/blog/my-investing-journey-1-the-awakening/)
+of my investing blog series before reading this article.
+Seriously, go scroll through my **7 key points before investing**.
+
+> "I will tell you how to become rich. Close the doors. **Be fearful when others are greedy. Be greedy when others are fearful.**" — Warren Buffett (one of the greatest investors of all time)
+
+The section on [**Mindset**](/blog/my-investing-journey-1-the-awakening/#mindset) is really important
+and even more so for crypto which is highly volatile.
+Crypto today has a lot of both **greed and fear spread around**,
+by both individuals and institutions.
+It's important to not follow either of these extreme emotions and instead stay logical.
+
+Commodities take up **10%** of my target investment portfolio and crypto takes up **15%**.
+I primarily buy these assets on [Trading212](https://www.trading212.com/invite/FMqHiTlg)
+and [Binance](https://guy.coinbureau.com/binance/) (both are special links with perks).
+I explained why these were the best options for me in the section
+[Broker/Exchange](/blog/my-investing-journey-1-the-awakening/#brokerexchange).
+
+| Asset Class     |         |
+|-----------------|---------|
+| Stocks          |   60%   |
+| Bonds           |   15%   |
+| **Commodities** | **10%** |
+| **Crypto**      | **15%** |
+{:.right-figures}
+
 ## Commodities
 
-Gold is scarce (but at least on Earth)
+> A commodity is a basic good used in commerce that is interchangeable with other goods of the same type.
+— [Investopedia](https://www.investopedia.com/terms/c/commodity.asp)
+
+[Wikipedia](https://en.wikipedia.org/wiki/Commodity) expands on the above definition with
+"the market treats instances of the good as equivalent or nearly so with no regard to who produced them."
+Let's see what commodities are available on Trading212:
+
+TODO: screenshot
+
+I've taken some illustrative asset examples and grouped them below.
+Please don't take this list as recommendations.
+For example, there are multiple ETFs for gold on Trading212.
+
+- Industrial metals: e.g. copper, aluminium
+- Precious metals:
+  - WisdomTree Physical **Precious Metals** (VZLE)
+  - iShares Physical **Gold** (SGLN)
+  - WisdomTree Physical **Silver** (PHSP)
+  - WisdomTree Physical **Platinum** (VZLA)
+  - iShares Physical **Palladium** (IPDM)
+- Energy:
+  - WisdomTree WTI **Crude Oil** (OD7F)
+  - iShares STOXX Europe 600 **Oil & Gas** ETF (EXH1) &mdash;companies
+  - Gore Street **Energy Storage** Fund (GSF) &mdash;via batteries
+- Water:
+  - iShares Global **Water** USD (DH2O)
+- Agricultural products: e.g. corn, soybeans, sugar, wheat, cotton, coffee, cocoa
+- Live cattle
+- Mixed ETFs:
+  - Invesco Bloomberg **Commodity ETF** (CMOD)
+  - Lyxor Commodities Thomson Reuters/Core **Commodity** CRB TR ETF ([LYTR](https://www.lyxoretf.co.uk/en/retail/products/commodities-etf/lyxor-commodities-refinitivcorecommodity-crb-tr-ucits-etf-acc/lu1829218749/usd))
+
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle" aria-hidden="true"></i> <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
+</div>
+
+TODO: compare ETF vs precious metals ETF vs gold
+
+June 2007 to August 2021.
+
+LYTR replaced with CRB, CMOD replaced with DJP (Bloomberg Commodity Index)
+
+TODO: gold's cycles through modern history, maybe vs silver.
+
+Note that palladium and platinum data above starts in 1997.
+
+[gold standard](https://www.investopedia.com/ask/answers/09/gold-standard.asp).
+US gradually abandoned it between 1930s and early 1970s.
+[fiat](https://www.investopedia.com/terms/f/fiatmoney.asp).
+"fiat" is derived from the Latin "fieri" meaning an arbitrary act or decree.
+
+- Inflation following the [1973–1975 recession](https://en.wikipedia.org/wiki/1973%E2%80%931975_recession)
+- [2000s commodities boom/super cycle](https://en.wikipedia.org/wiki/2000s_commodities_boom)
+
+Why is gold performing so well as a commodity?
+Scarcity
+(at least on Earth).
+
+Palladium:
+[supply deficit](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/)
 
 ### Stock to flow
+
+To demonstrate this relationship between scarcity and market value of an asset,
+we need to be able to give a number to scarcity.
 
 [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
 
@@ -43,7 +152,13 @@ History forever there.
 
 Economics and relatively slow transaction speed & throughput
 
+['Vast Majority' of Institutions Will Own Crypto by 2026](https://decrypt.co/76380/vast-majority-institutions-will-own-crypto-2026-fidelity).
+
 ## Crypto
+
+### Learning
+
+[Crypto Youtubers Tier List](https://www.reddit.com/r/CryptoCurrency/comments/mekhv7/crypto_youtubers_tier_list/)
 
 ### Background
 
@@ -56,7 +171,6 @@ Smart contracts are not really contracts but pieces of code that codify business
 - store rules
 - verify rules
 - execute rules
-
 
 
 Web 3.0
@@ -96,6 +210,7 @@ Eth 2.0:
 
 Issuance of new ETH will reduce from 4.5% to 0.5-0.8% an together with EIP-1559 (burning of most gas fees) will likely result in ETH becoming deflationary.
 
+[TPS comparison](https://twitter.com/coin98analytics/status/1318748458052825088)
 ---
 
 Reduced volatility of BTC and ETH over time as more utility from people and institutions using the respective blockchains.
@@ -103,3 +218,10 @@ Reduced volatility of BTC and ETH over time as more utility from people and inst
 ### Passive route
 
 ### Active route
+
+#### NFTs
+
+provable & permanent
+
+- Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
+- Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.

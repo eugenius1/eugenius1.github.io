@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Stocks & Bonds—My Investing Journey, Pt. 2!"
-subtitle: "A millennial's view"
+title: "Stocks & Bonds—My Investing Journey Pt 3!"
+subtitle: "A millennial's investing thesis. No GME here."
 ---
 
 - toc
