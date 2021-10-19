@@ -56,51 +56,95 @@ I explained why these were the best options for me in the section
 
 ## Commodities
 
-> A commodity is a basic good used in commerce that is interchangeable with other goods of the same type.
+> A commodity is a **basic good used in commerce** that is interchangeable with other goods of the same type.
 — [Investopedia](https://www.investopedia.com/terms/c/commodity.asp)
 
-[Wikipedia](https://en.wikipedia.org/wiki/Commodity) expands on the above definition with
-"the market treats instances of the good as equivalent or nearly so with no regard to who produced them."
+<!-- [Wikipedia](https://en.wikipedia.org/wiki/Commodity) expands on the above definition with
+"the market treats instances of the good as equivalent or nearly so with no regard to who produced them." -->
 Let's see what commodities are available on Trading212:
 
-TODO: screenshot
+![Searching for commodity funds in Trading212 app.](/raw/img/blog/2021/investing/trading212-search-commodity-funds.jpg){:.height-fits}
+[Trading212 app](https://www.trading212.com/invite/FMqHiTlg)
+{:.small}
+{:.text-center}
 
 I've taken some illustrative asset examples and grouped them below.
 Please don't take this list as recommendations.
 For example, there are multiple ETFs for gold on Trading212.
+WisdomTree and iShares (BlackRock) are some of the biggest ETF providers.
 
-- Industrial metals: e.g. copper, aluminium
+- Energy:
+  - WisdomTree **Energy** (AIGE)
+  - Petroleum:
+    - WisdomTree **Petroleum** (AIGO)
+    - WisdomTree WTI **Crude Oil** (OD7F)
+  - WisdomTree **Natural Gas** (NGAS)
+  - Gore Street **Energy Storage** Fund (GSF) &mdash; via batteries
+- Agricultural products:
+  - WisdomTree **Agriculture** (AIGA)
+  - Grains:
+    - WisdomTree **Grains** (AIGG)
+    - WisdomTree **Wheat** (WEAT)
+    - WisdomTree **Corn** (CORN)
+    - WisdomTree **Cocoa** (COCO)
+  - Softs:
+    - WisdomTree **Softs** (AIGS)
+    - WisdomTree **Sugar** (SUGA)
+    - WisdomTree **Cotton** (COTN)
+    - WisdomTree **Coffee** (COFF)
+  - WisdomTree **Soybean Oil** (SOYO)
+  - WisdomTree **Soybeans** (SOYB)
+- Livestock
+  - WisdomTree **Livestock** (AIGL)
+  - WisdomTree **Live Cattle** (CATL) &mdash; beef
+  - WisdomTree **Lean Hogs** (HOGS) &mdash; pork
+- Industrial metals:
+  - WisdomTree **Industrial Metals** (AIGI)
+  - WisdomTree **Copper** (COPA)
+  - WisdomTree **Aluminium** (ALUM)
+  - WisdomTree **Zinc** (ZINC)
+  - WisdomTree **Nickel** (NICK)
 - Precious metals:
   - WisdomTree Physical **Precious Metals** (VZLE)
   - iShares Physical **Gold** (SGLN)
   - WisdomTree Physical **Silver** (PHSP)
   - WisdomTree Physical **Platinum** (VZLA)
   - iShares Physical **Palladium** (IPDM)
-- Energy:
-  - WisdomTree WTI **Crude Oil** (OD7F)
-  - iShares STOXX Europe 600 **Oil & Gas** ETF (EXH1) &mdash;companies
-  - Gore Street **Energy Storage** Fund (GSF) &mdash;via batteries
 - Water:
-  - iShares Global **Water** USD (DH2O)
-- Agricultural products: e.g. corn, soybeans, sugar, wheat, cotton, coffee, cocoa
-- Live cattle
+  - iShares Global **Water** USD ([DH2O](https://www.ishares.com/uk/individual/en/products/251913/ishares-global-water-ucits-etf)) &mdash; companies
+- WisdomTree **Carbon** ([CARB](https://www.wisdomtree.eu/en-gb/products/ucits-etfs-unleveraged-etps/commodities/wisdomtree-carbon)) &mdash; [carbon credits](https://www.investopedia.com/terms/c/carbon_credit.asp)
 - Mixed ETFs:
   - Invesco Bloomberg **Commodity ETF** (CMOD)
-  - Lyxor Commodities Thomson Reuters/Core **Commodity** CRB TR ETF ([LYTR](https://www.lyxoretf.co.uk/en/retail/products/commodities-etf/lyxor-commodities-refinitivcorecommodity-crb-tr-ucits-etf-acc/lu1829218749/usd))
+  <!-- - Lyxor Commodities Thomson Reuters/Core **Commodity** CRB TR ETF ([LYTR](https://www.lyxoretf.co.uk/en/retail/products/commodities-etf/lyxor-commodities-refinitivcorecommodity-crb-tr-ucits-etf-acc/lu1829218749/usd)) -->
 
 <div class="alert alert-info" role="alert">
 <i class="fa fa-info-circle" aria-hidden="true"></i> <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
 </div>
 
-TODO: compare ETF vs precious metals ETF vs gold
+compare ETF vs precious metals ETF vs gold
 
+LYTR replaced with CRB, CMOD replaced with DJP (Bloomberg Commodity Index).
 June 2007 to August 2021.
 
-LYTR replaced with CRB, CMOD replaced with DJP (Bloomberg Commodity Index)
+![TODO](/raw/img/blog/2021/investing/commodities/commodities.png)
+{:.small}
+{:.text-center}
 
-TODO: gold's cycles through modern history, maybe vs silver.
+<!-- ![](/raw/img/blog/2021/investing/commodities/commodities-no-palladium-no-legend.png)
+{:.small}
+{:.text-center} -->
 
-Note that palladium and platinum data above starts in 1997.
+gold's cycles through modern history, maybe vs silver.
+
+![TODO](/raw/img/blog/2021/investing/commodities/precious-metals-1998-2021.png)
+{:.small}
+{:.text-center}
+
+Note that palladium and platinum data starts in 1997.
+
+![TODO](/raw/img/blog/2021/investing/commodities/precious-metals-1971-2021.png)
+{:.small}
+{:.text-center}
 
 [gold standard](https://www.investopedia.com/ask/answers/09/gold-standard.asp).
 US gradually abandoned it between 1930s and early 1970s.
@@ -158,7 +202,7 @@ Economics and relatively slow transaction speed & throughput
 
 ### Learning
 
-[Crypto Youtubers Tier List](https://www.reddit.com/r/CryptoCurrency/comments/mekhv7/crypto_youtubers_tier_list/)
+[Crypto YouTubers Tier List](https://www.reddit.com/r/CryptoCurrency/comments/mekhv7/crypto_youtubers_tier_list/)
 
 ### Background
 

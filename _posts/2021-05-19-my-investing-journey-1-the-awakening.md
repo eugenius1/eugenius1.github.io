@@ -302,7 +302,7 @@ Having a long time horizon and a relatively high risk appetite gives me **room f
 > "I'm spending a year dead for tax reasons." — Douglas Adams
 
 It is said that our **biggest monetary expense in life** is tax!
-Its many forms including income tax and Value-Added Tax (VAT).
+Its many forms include income tax and Value-Added Tax (VAT).
 Unless one lives in a perfect tax haven, making some profit or income from investments normally leads to paying taxes for it.
 So arguably the biggest determiner to one's take-home return on investment is how much one pays in tax on their returns.
 Also, normally profits and all dividend are taxed even if not withdrawn so this can hinder reinvesting dividend (for the compounding effect).
