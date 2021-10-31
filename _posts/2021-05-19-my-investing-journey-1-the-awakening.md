@@ -51,7 +51,8 @@ Always do your own due diligence.
 
 ## Learning
 
-> "An investment in knowledge pays the best interest." — Benjamin Franklin
+> "An investment in knowledge pays the best interest."  
+> — Benjamin Franklin
 
 Most of my learning on investing and personal finance has been from YouTube and supplemented by my own internet searches.
 I've made a [**YouTube playlist**](https://www.youtube.com/playlist?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo)
@@ -122,7 +123,8 @@ Most including Bitcoin are on decentralised networks based on blockchain technol
 
 ### Mindset
 
-> "I will tell you how to become rich. Close the doors. **Be fearful when others are greedy. Be greedy when others are fearful.**" — Warren Buffett (one of the greatest investors of all time)
+> "I will tell you how to become rich. Close the doors. **Be fearful when others are greedy. Be greedy when others are fearful.**"  
+> — Warren Buffett (one of the greatest investors of all time)
 
 **Markets are emotional**:
 Asset prices are fundamentally driven by human emotion and the dynamics of supply and demand.
@@ -197,7 +199,7 @@ There isn't a definitive, fixed threshold percentage but it can be compared to:
 - **local inflation**: just to give an idea, as of writing this, the UK (a developed country) has a rate of [~1.6%](https://www.ons.gov.uk/economy/inflationandpriceindices)
 while Tanzania (a developing country) has [~3.7%](https://www.statista.com/statistics/447617/inflation-rate-in-tanzania/).
 
-- **investing returns**: US stocks benchmark  _S&P 500_ has a long-term average of 7-10% (USD).
+- **investing returns**: US stocks benchmark _S&P 500_ has a long-term average of 7-10% (USD).
 The idea here is if a loan's interest rate is lower than this, then it usually makes more financial sense to invest instead of trying to pay the loan sooner than planned.
 
 The usual bad debt suspects are **credit card debt** and [**payday loans**](https://www.moneysavingexpert.com/loans/payday-loans/).
@@ -244,7 +246,8 @@ There's a limit to how much to keep in a cash bank account long-term.
 
 ## 3rd: Financial goals
 
-> "It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for." — Robert Kiyosaki (author of _Rich Dad Poor Dad_)
+> "It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for."  
+> — Robert Kiyosaki (author of _Rich Dad Poor Dad_)
 
 After figuring out how much I need for my emergency fund and setting a plan to build it,
 the next step was to ask myself what my financial goals are.
@@ -270,7 +273,8 @@ Now I need to commit to always align my investments to my financial goals.
 
 ## 4th: Active or passive?
 
-> "Don't look for the needle in the haystack. Just buy the haystack!" — John Bogle (inventor of index fund investing)
+> "Don't look for the needle in the haystack. Just buy the haystack!"  
+> — John Bogle (inventor of index fund investing)
 
 With financial goals set, the next step determines time and effort commitment and the range of possible return on investment:
 
@@ -299,7 +303,8 @@ Having a long time horizon and a relatively high risk appetite gives me **room f
 
 ## 5th: Taxable or non-taxable account?
 
-> "I'm spending a year dead for tax reasons." — Douglas Adams
+> "I'm spending a year dead for tax reasons."  
+> — Douglas Adams
 
 It is said that our **biggest monetary expense in life** is tax!
 Its many forms include income tax and Value-Added Tax (VAT).
@@ -334,7 +339,8 @@ I have **not** chosen the PEA and instead willing to be taxed for the sake of mo
 
 ## 6th: Asset classes
 
-> "The individual investor should act consistently as an investor and not as a speculator." — Ben Graham (the father of value investing)
+> "The individual investor should act consistently as an investor and not as a speculator."  
+> — Ben Graham (the father of value investing)
 
 After tax, the next biggest determiner to returns is asset class allocation, even more than the choice of which individual assets.
 
@@ -487,7 +493,8 @@ See also this complete [beginner's guide video](https://youtu.be/YzJ6xkJpeUk).
 
 ## 7th: How much per month?
 
-> "Financial peace isn't the acquisition of stuff. It's learning to live on less than you make, so you can give money back and have money to invest. You can't win until you do this." — Dave Ramsey
+> "Financial peace isn't the acquisition of stuff. It's learning to live on less than you make, so you can give money back and have money to invest. You can't win until you do this."  
+> — Dave Ramsey
 
 With asset class allocation defined and broker/exchange chosen, the next step was to figure out how much I can invest per month.
 I created a multi-currency budgeting spreadsheet ([template on Google Sheets](https://docs.google.com/spreadsheets/d/1ubeMCW6oBh3bPdAQhrSWCKE3jF-9brWo4ywshyVdPbo/edit?usp=sharing))
