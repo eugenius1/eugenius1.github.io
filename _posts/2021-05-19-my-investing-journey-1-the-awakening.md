@@ -80,7 +80,7 @@ Common examples include stocks, bonds, real estate and commodities like gold.
 Takes money from your pocket;
 basically anything that's not an asset.
 Some noteworthy examples include debt and a car losing value (especially a brand new Lamborghini).
-A car taking you to work to earn an income is not an asset.
+A car taking you to work to earn an income is NOT an asset.
 
 **Trading vs investing**:
 Generally, trading is short-term buying and selling for profit while investing means holding assets over a longer time (think years).
@@ -261,7 +261,7 @@ For the stock market, it's a lot less definitive and with many factors but let's
 Investing for shorter periods than these while the market is going up has the risk that one day the market will enter the decline phase of the cycle.
 
 For me right now in my mid-20s, my goal is growth.
-I will use my investments as a means to an **financial freedom**/early retirement,
+I will use my investments as a means to a **financial freedom**/early retirement,
 while along the way using portions of it for **big projects** like buying **real estate**.
 I can tolerate relatively a lot of risk.
 As I progress through the decades (and have a family), my goal will transition to less growth and instead more passive income and less risk.

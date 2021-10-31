@@ -153,3 +153,20 @@ TODO: this gap
 8. Don't Fight the Last War. What worked in the past is no predictor of what will work in future.
 9. The Hedgehog (simple investing) Beats the Fox (complex financial institutions).
 10. Stay the Course.
+
+## [5 Undervalued Stocks To Buy In 2021](https://youtu.be/rkFLKMyWajk)
+
+1. Alphabet (GOOG)
+2. Alibaba (BABA)
+3. Microsoft (MSFT)
+4. SalesForce (CRM)
+5. Amazon (AMZN)
+
+## [How the rich avoid paying taxes](https://youtu.be/t6V9i8fFADI)
+
+- Capital gains tax vs income tax
+- Loans against assets instead of income
+
+## [A WARNING To All Investors](https://youtu.be/zs8qHvATlss)
+
+- Stick to your strategy

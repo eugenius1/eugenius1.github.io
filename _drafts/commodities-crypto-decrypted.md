@@ -130,6 +130,9 @@ June 2007 to August 2021.
 {:.small}
 {:.text-center}
 
+Palladium:
+[supply deficit](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/)
+
 <!-- ![](/raw/img/blog/2021/investing/commodities/commodities-no-palladium-no-legend.png)
 {:.small}
 {:.text-center} -->
@@ -157,9 +160,6 @@ US gradually abandoned it between 1930s and early 1970s.
 Why is gold performing so well as a commodity?
 Scarcity
 (at least on Earth).
-
-Palladium:
-[supply deficit](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/)
 
 ### Stock to flow
 
@@ -215,7 +215,6 @@ Smart contracts are not really contracts but pieces of code that codify business
 - store rules
 - verify rules
 - execute rules
-
 
 Web 3.0
 
