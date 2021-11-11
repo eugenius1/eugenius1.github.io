@@ -20,24 +20,46 @@ Sign up to Trading212 using [my link](https://www.trading212.com/invite/FMqHiTlg
 
 ### Revolut (banking & more)
 
+My daily, international bank since 2017.
 Join Revolut using [this link](https://revolut.com/referral/eusebi8t3!ASO).
 
-## Crypto
+### Boursorama (banking in France)
 
-### Binance (exchange)
+In my opinion the best bank in France.
+No annual/monthly charges.
+Get 80€ (depending on certain conditions) when you join using [this link](https://bour.so/N4RWJJne5c)
+
+### Nexo (savings)
+
+4% to 12% interest on fiat savings!
+I use it for the majority of my emergency fund.
+There's also interest for stablecoins & other cryptocurrencies.
+
+Sign up using [this link](https://nexo.io/ref/qygstugzfc).
+You can then also sign up for a Nexo Card using [this link](https://nexo.io/nexo-card?referral=9L5OzN9)
+
+### Crypto
+
+#### Binance (exchange)
 
 Reduce trading fees by 25% (to 0.05625% with BNB) when you sign up using [this link](https://guy.coinbureau.com/r/binance) or referral ID `V96K5I7V`.
 
 > Disclaimer: not my link but Coin Bureau's.
 
-### Koinly (tax software)
+#### Koinly (tax software)
 
 Get $20 off your first order when you sign up using [this link](https://koinly.io/?via=19B912C6).
 
-### 3commas (trading bots & portfolio sharing)
+#### 3commas (trading bots & portfolio sharing)
 
 Sign up using [this link](https://3commas.io/?c=tc378694).
 Personally I use their forever-free plan but if you wish to pay for a monthly subscription you can get 10% off the first purchase.
+
+#### Hodlnaut (savings interest)
+
+The best interest rates I've seen for BTC and ETH.
+Join Hodlnaut using my referral code `J05A9LwjI` or [this link](https://www.hodlnaut.com/join/J05A9LwjI)
+and earn 20 USD equivalent after making a deposit equivalent of US$1,000 or more in a single transaction on any supported assets.
 
 ## Other
 
