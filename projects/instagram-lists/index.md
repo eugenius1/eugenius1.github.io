@@ -34,7 +34,7 @@ As you will see, it's a _hack_ but you will be guided step-by-step.
 
 We need to use the developer tools built-in to modern desktop browsers like Chrome, Firefox and the new Edge.
 For **Safari**, you have to enable them under [Preferences > Advanced](https://support.apple.com/en-gb/guide/safari/sfri20948/mac).
-Everything is happening in your browser (client-side) and none of your data is sent to a server.
+Everything is happening in your browser on your device and none of your data is sent to a server.
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so this will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
