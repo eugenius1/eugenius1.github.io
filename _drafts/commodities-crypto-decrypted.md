@@ -49,21 +49,26 @@ and [Binance](https://guy.coinbureau.com/binance/) (both are special links with 
 I explained why these were the best options for me in the section
 [Broker/Exchange](/blog/my-investing-journey-1-the-awakening/#brokerexchange).
 
-| Asset Class     |         |
-|-----------------|---------|
-| Stocks          |   60%   |
-| Bonds           |   15%   |
-| **Commodities** | **10%** |
-| **Crypto**      | **15%** |
+| Asset Class     | Target Allocation |
+|-----------------|-------------------|
+| Stocks          |             60%   |
+| Bonds           |             15%   |
+| **Commodities** |           **10%** |
+| **Crypto**      |           **15%** |
 {:.right-figures}
 
 ## Commodities
 
-> A commodity is a **basic good used in commerce** that is interchangeable with other goods of the same type.
-— [Investopedia](https://www.investopedia.com/terms/c/commodity.asp)
+### Overview
 
-<!-- [Wikipedia](https://en.wikipedia.org/wiki/Commodity) expands on the above definition with
-"the market treats instances of the good as equivalent or nearly so with no regard to who produced them." -->
+> A commodity is a **basic good used in commerce** that is interchangeable with other goods of the same type.  
+> — [Investopedia](https://www.investopedia.com/terms/c/commodity.asp)
+
+As an asset class, commodities may provide one or both of these benefits:
+
+- **Inflation hedge**: to run parallel to inflation in the long run. The idea here is that the price of basic goods needed for daily life tend to move up with inflation.
+- **Decorrelation**: to diversify a portfolio by providing relatively low correlation to other asset classes (e.g. stocks, bonds).
+
 Let's see what commodities are available on Trading212:
 
 ![Searching for commodity funds in Trading212 app.](/raw/img/blog/2021/investing/trading212-search-commodity-funds.jpg){:.height-fits}
@@ -96,10 +101,20 @@ Here's an overview of the different commodity types:
 - Mixed commodity ETFs: e.g. [LYTR](https://www.lyxoretf.co.uk/en/retail/products/commodities-etf/lyxor-commodities-refinitivcorecommodity-crb-tr-ucits-etf-acc/lu1829218749/usd),
 [CMOD](https://etf.invesco.com/gb/private/en/product/invesco-bloomberg-commodity-ucits-etf/trading-information?audienceType=private)
 
-compare ETF vs precious metals ETF vs gold
+### Performance comparison
 
-LYTR replaced with CRB, CMOD replaced with DJP (Bloomberg Commodity Index).
-June 2007 to August 2021.
+Let's take these commodity types and see how they've performed historically.
+Below is how they've performed in percentage terms from 2008 to 2021.
+I've include gold, a classic commodity, as well as S&P 500 Index (SPX), a common benchmark for the stock market.
+Prices of goods in the US inflated by around [28.5%](https://www.usinflationcalculator.com/) from 2008 to 2021.
+
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle" aria-hidden="true"></i> <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
+</div>
+
+![Performance of different commodity types 2008-2021: SPX S&P 500, DH2O Water, VZLE Precious Metals, CARB Carbon, AIGI Industrial Metals, AIGA Agriculture, DJP Commodity Index, AIGL Livestock, AIGO Petroleum, AIGE fossil fuel energy](/raw/img/blog/2021/investing/commodities/commodities-2008-2021.png)
+{:.small}
+{:.text-center}
 
 - SPX &mdash; S&P 500 Index, a common benchmark for the **stock market**
 - DH2O &mdash; iShares Global **Water** USD
@@ -112,32 +127,43 @@ June 2007 to August 2021.
 - AIG**O** &mdash; WisdomTree **Petroleum**
 - AIG**E** &mdash; WisdomTree **Energy** (fossil fuels)
 
-<div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i> <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
-</div>
+What we see first is that all commodity types have underperformed the stock market at least since 2018 with the exception of DH2O that is roughly on par.
+DH2O is made up of **water** companies' stocks so it makes sense for it be performing as well as the stock market and highly correlated.
+Some may argue that DH2O should only count as a stock ETF and not a commodity ETF
+but I think water is a very important daily good whose value shouldn't be ignored.
 
-![TODO](/raw/img/blog/2021/investing/commodities/commodities-2008-2021.png)
+Second best performing type was precious metals (VZLE).
+Gold is part of this index ETF but because gold underperforms,
+it means there is another precious metal that has performed better.
+What is also noteworthy is that precious metals (and in particular gold) demonstrated **decorrelation** to the stock market by staying strong during the **crashes** of [2007-2008](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008)
+and [early 2020](https://en.wikipedia.org/wiki/2020_stock_market_crash).
+Investors have typically switched from stocks to inflation hedges like gold when the economy is uncertain and vice versa.
+
+After gold comes carbon then industrial metals which performed just under US inflation.
+The other commodity types (agriculture, livestock, petroleum and fossil fuels) have lost significant value,
+with fossil fuels having lost 82% not accounting for inflation in the 13 years!
+Ethically, I don't believe in a future for fossil fuels and their performance as assets really cements that in.
+DJP, a commodity index, has also lost significant value and checking today's composition shows 72% is in fossil fuels, agriculture and livestock.
+
+Now let's see the 4 precious metals since 1997 (oldest data I could get for palladium & platinum):
+
+![Performance of the 4 precious metals 1997-2021: gold, silver, platinum, palladium](/raw/img/blog/2021/investing/commodities/precious-metals-1997-2021.png)
 {:.small}
 {:.text-center}
 
-Palladium:
-[supply deficit](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/)
+First obvious thing is that palladium has vastly outperformed the other assets including stocks and particularly since 2017.
+[Palladium](https://en.wikipedia.org/wiki/Palladium) is mostly used in [catalytic converters](https://en.wikipedia.org/wiki/Catalytic_converter) which convert toxic pollutants in exhaust gases from internal combustion engines into less toxic pollutants.
+From what I've gathered, the price jump is due to [lacking supply](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/) and speculation.
 
-<!-- ![](/raw/img/blog/2021/investing/commodities/commodities-no-palladium-no-legend.png)
-{:.small}
-{:.text-center} -->
+Another thing to note is the presence of **market cycles**.
+For example, palladium peaked in 2001 and all others in 2011.
+From this time perspective (24 years), 3 out of the 4 precious metals have outperformed stocks but some of them with a lot of **volatility** along the way.
+Gold seems to be the least volatile while delivering the second best performance after palladium.
 
-gold's cycles through modern history, maybe vs silver.
-
-![TODO](/raw/img/blog/2021/investing/commodities/precious-metals-1997-2021.png)
-{:.small}
-{:.text-center}
-
-Note that palladium and platinum data starts in 1997.
-
+<!-- gold's cycles through modern history, maybe vs silver.
 ![TODO](/raw/img/blog/2021/investing/commodities/gold-silver-1972-2021.png)
 {:.small}
-{:.text-center}
+{:.text-center} -->
 
 [gold standard](https://www.investopedia.com/ask/answers/09/gold-standard.asp).
 US gradually abandoned it between 1930s and early 1970s.
@@ -150,6 +176,8 @@ US gradually abandoned it between 1930s and early 1970s.
 Why is gold performing so well as a commodity?
 Scarcity
 (at least on Earth).
+
+### My choices
 
 With ETFs and other funds,
 there are usually costs consumed by the provider managing the fund as their fee to cover their expenses.
@@ -166,12 +194,13 @@ However, this comes at a sizeable expense ratio of around [2.74%](https://www.gs
 | Asset name                          | Ticker | Target Weight | Target Allocation |
 |-------------------------------------|--------|---------------|-------------------|
 | **Commodities**                     |        |               |       **10%**     |
-| Bitcoin                             |  BTC   |       3       |        4.3%       |
-| iShares Global Water USD ETF        |  DH2O  |       3       |        4.3%       |
-| Gore Street Energy Storage Fund plc |  GSF   |       1       |        1.4%       |
+| Bitcoin                             | BTC    |       3       |        4.3%       |
+| iShares Global Water USD ETF        | DH2O   |       3       |        4.3%       |
+| Gore Street Energy Storage Fund plc | GSF    |       1       |        1.4%       |
 {:.right-figures-3}
 
-I've set GSF to the lowest allocation because it was only listed in 2018 and as it's still small ([£400M](https://finance.yahoo.com/quote/GSF.L) market cap), there's quite some risk and uncertainty.
+I've set GSF to the lowest allocation as it was only listed in 2018 and it's still relatively small
+([£400M](https://finance.yahoo.com/quote/GSF.L) market cap) so there's quite some risk and uncertainty in its future.
 The other 2 assets I've split equally between the remaining allocation for commodities asset class.
 
 I discovered the Carbon ETF recently and it seems interesting but I want to do some more research before adding it.
@@ -269,6 +298,7 @@ Eth 2.0:
 Issuance of new ETH will reduce from 4.5% to 0.5-0.8% an together with EIP-1559 (burning of most gas fees) will likely result in ETH becoming deflationary.
 
 [TPS comparison](https://twitter.com/coin98analytics/status/1318748458052825088)
+
 ---
 
 Reduced volatility of BTC and ETH over time as more utility from people and institutions using the respective blockchains.
@@ -288,3 +318,7 @@ provable & permanent
 
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
+
+Why no DOGE, SHIB?
+
+rich list
