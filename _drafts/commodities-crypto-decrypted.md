@@ -59,14 +59,13 @@ I explained why these were the best options for me in the section
 
 ## Commodities
 
-### Overview
-
 > A commodity is a **basic good used in commerce** that is interchangeable with other goods of the same type.  
 > — [Investopedia](https://www.investopedia.com/terms/c/commodity.asp)
 
 As an asset class, commodities may provide one or both of these benefits:
 
-- **Inflation hedge**: to run parallel to inflation in the long run. The idea here is that the price of basic goods needed for daily life tend to move up with inflation.
+- **Inflation hedge**: to grow with inflation in the long run.
+The idea here is that the price of basic goods needed for daily life tend to move up with inflation.
 - **Decorrelation**: to diversify a portfolio by providing relatively low correlation to other asset classes (e.g. stocks, bonds).
 
 Let's see what commodities are available on Trading212:
@@ -93,7 +92,7 @@ Here's an overview of the different commodity types:
   - Lean hogs &mdash; pork
 - Metals:
   - Industrial metals: copper, aluminium, zinc, nickel
-  - Precious metals: gold, silver, platinum, palladium
+  - Precious metals: gold, silver, palladium, platinum
 - Water:
   - iShares Global **Water** ([DH2O](https://www.ishares.com/uk/individual/en/products/251913/ishares-global-water-ucits-etf)) &mdash;  50 largest global companies in water-related businesses
 - [Carbon credits / emission allowances](https://www.investopedia.com/terms/c/carbon_credit.asp) &mdash; market-based approach to reducing greenhouse gases:
@@ -105,7 +104,7 @@ Here's an overview of the different commodity types:
 
 Let's take these commodity types and see how they've performed historically.
 Below is how they've performed in percentage terms from 2008 to 2021.
-I've include gold, a classic commodity, as well as S&P 500 Index (SPX), a common benchmark for the stock market.
+I've include gold, a classic commodity, as well as S&P 500 Index (SPX), a common reference of the stock market.
 Prices of goods in the US inflated by around [28.5%](https://www.usinflationcalculator.com/) from 2008 to 2021.
 
 <div class="alert alert-info" role="alert">
@@ -116,7 +115,7 @@ Prices of goods in the US inflated by around [28.5%](https://www.usinflationcalc
 {:.small}
 {:.text-center}
 
-- SPX &mdash; S&P 500 Index, a common benchmark for the **stock market**
+- SPX &mdash; S&P 500 Index: **stocks**
 - DH2O &mdash; iShares Global **Water** USD
 - VZLE &mdash; WisdomTree Physical **Precious Metals**
 - CARB &mdash; WisdomTree **Carbon**
@@ -126,6 +125,7 @@ Prices of goods in the US inflated by around [28.5%](https://www.usinflationcalc
 - AIG**L** &mdash; WisdomTree **Livestock**
 - AIG**O** &mdash; WisdomTree **Petroleum**
 - AIG**E** &mdash; WisdomTree **Energy** (fossil fuels)
+{:.small}
 
 What we see first is that all commodity types have underperformed the stock market at least since 2018 with the exception of DH2O that is roughly on par.
 DH2O is made up of **water** companies' stocks so it makes sense for it be performing as well as the stock market and highly correlated.
@@ -134,7 +134,7 @@ but I think water is a very important daily good whose value shouldn't be ignore
 
 Second best performing type was precious metals (VZLE).
 Gold is part of this index ETF but because gold underperforms,
-it means there is another precious metal that has performed better.
+it means there is at least one other precious metal that has performed better.
 What is also noteworthy is that precious metals (and in particular gold) demonstrated **decorrelation** to the stock market by staying strong during the **crashes** of [2007-2008](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008)
 and [early 2020](https://en.wikipedia.org/wiki/2020_stock_market_crash).
 Investors have typically switched from stocks to inflation hedges like gold when the economy is uncertain and vice versa.
@@ -147,16 +147,25 @@ DJP, a commodity index, has also lost significant value and checking today's com
 
 Now let's see the 4 precious metals since 1997 (oldest data I could get for palladium & platinum):
 
-![Performance of the 4 precious metals 1997-2021: gold, silver, platinum, palladium](/raw/img/blog/2021/investing/commodities/precious-metals-1997-2021.png)
+![Performance of the 4 precious metals 1997-2021: gold, silver, palladium, platinum](/raw/img/blog/2021/investing/commodities/precious-metals-1997-2021.png)
 {:.small}
 {:.text-center}
 
 First obvious thing is that palladium has vastly outperformed the other assets including stocks and particularly since 2017.
 [Palladium](https://en.wikipedia.org/wiki/Palladium) is mostly used in [catalytic converters](https://en.wikipedia.org/wiki/Catalytic_converter) which convert toxic pollutants in exhaust gases from internal combustion engines into less toxic pollutants.
 From what I've gathered, the price jump is due to [lacking supply](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/) and speculation.
+This brings us to a very common economic law.
+
+[**Law of supply and demand**](https://www.investopedia.com/terms/l/law-of-supply-demand.asp):
+This theory says that the **quantity and price** of something in a market (e.g. financial assets, food, electricity)
+moves towards an equilibrium where **supply and demand are matched**.
+In palladium's case the supply reduced and assuming the demand didn't change much, the price went up.
+Inversely, if the supply goes up while the demand doesn't change, the price goes down.
+Conversely, the price follows the direction of demand if the supply remains unchanged.
+So decreased supply and unchanged demand leads to higher prices which leads to both lower demand and an increase in supply (producing or just selling becomes more profitable) and so on until an equilibrium of supply & demand.
 
 Another thing to note is the presence of **market cycles**.
-For example, palladium peaked in 2001 and all others in 2011.
+For example, palladium peaked in 2001 and all others in 2011 during the [2000s commodities boom](https://en.wikipedia.org/wiki/2000s_commodities_boom).
 From this time perspective (24 years), 3 out of the 4 precious metals have outperformed stocks but some of them with a lot of **volatility** along the way.
 Gold seems to be the least volatile while delivering the second best performance after palladium.
 
@@ -165,17 +174,72 @@ Gold seems to be the least volatile while delivering the second best performance
 {:.small}
 {:.text-center} -->
 
-[gold standard](https://www.investopedia.com/ask/answers/09/gold-standard.asp).
-US gradually abandoned it between 1930s and early 1970s.
-[fiat](https://www.investopedia.com/terms/f/fiatmoney.asp).
-"fiat" is derived from the Latin "fieri" meaning an arbitrary act or decree.
+### Types of money
 
-- Inflation following the [1973–1975 recession](https://en.wikipedia.org/wiki/1973%E2%80%931975_recession)
-- [2000s commodities boom/super cycle](https://en.wikipedia.org/wiki/2000s_commodities_boom)
+[**Gold standard**](https://www.investopedia.com/ask/answers/09/gold-standard.asp):
+For several millennia, this shiny metal has been used both as a monetary unit to trade goods & services (along with silver)
+and as a store of value & wealth.
+We transitioned to paper money that was backed by gold (most commonly) or silver.
+However, [the Great Depression](https://www.investopedia.com/terms/g/great_depression.asp) of the 1930s led to countries starting to drop the gold standard.
+Countries that dropped it earlier [recovered quicker](https://en.wikipedia.org/wiki/Great_Depression#Gold_standard).
+With the gold standard, inflation can be avoided but strict commitment to it can create economic instability.
 
-Why is gold performing so well as a commodity?
-Scarcity
-(at least on Earth).
+<!-- > "We have gold because we **cannot trust governments**."  
+> &mdash; President Herbert Hoover in his 1933 statement to Franklin D. Roosevelt (successor) -->
+
+[**Fiat money**](https://www.investopedia.com/terms/f/fiatmoney.asp):
+"fiat" is a Latin word often translated as "it shall be".
+With the gold standard dropped, paper money today has **no intrinsic value** as no precious metals back it.
+Through supply & demand, the value of fiat money comes entirely from the **trust** that we people put on it because a government or its central bank issued it.
+
+A major benefit of fiat money is that it gives central banks great control over the economy as they control money's supply.
+For example, supply is usually increased by ["printing"](https://en.wikipedia.org/wiki/Fiat_money#Money_creation_and_regulation) more money and it can be decreased by increasing interest rates so more money is saved and less circulates.
+
+However, fiat money is not a bulletproof way of protecting the economy as it can lead to severe inflation and even [hyperinflation](https://www.investopedia.com/terms/h/hyperinflation.asp) (over 50% per month) that usually leads to the country switching from their local fiat currency to a foreign one.
+Recent examples include [Zimbabwe](https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe) and [Venezuela](https://en.wikipedia.org/wiki/Hyperinflation_in_Venezuela) (ongoing as of 2021).
+This not to say that severe and hyperinflation are only caused by using fiat money as summarised in this quote from [Investopedia](https://www.investopedia.com/terms/f/fiatmoney.asp):
+
+> It is unclear whether or not hyperinflations are caused by "runaway printing" of money. In fact, hyperinflations have occurred throughout history, even when money was based on precious metals; and all contemporary hyperinflations have begun with a fundamental breakdown in the real **production economy** and/or **political instability** in the country.
+
+On the other side, low inflation can be seen as a positive for economic growth as it encourages people to put their money to work to avoid losing purchasing power over time.
+
+### Stock-to-flow
+
+In the thousands of years of history, why has gold held value consistently?
+The answer is scarcity, at least on Earth.
+Today the amount of gold already mined is much more than the yearly production which results in its price not changing much due to changes in yearly production.
+This means that the price of gold is mainly affected by changes in human sentiment, which affects market supply and demand.
+
+To demonstrate the relationship between scarcity and market value of an asset,
+we need to be able to quantify scarcity.
+Economics professor [Dr. Saifedean Ammous](https://books.google.fr/books/about/The_Bitcoin_Standard.html?id=wf9QDwAAQBAJ) talks about scarcity in terms of of **stock-to-flow ratio** (SF) where stock is the size of the existing stockpiles and flow is the yearly production:
+
+> SF = stock / flow
+
+A former institutional investor with the pseudonym PlanB wrote [an article](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) including the table below with the 4 precious metals and their stock-to-flow ratios:
+
+<!-- TODO: convert to text -->
+![2019 stock-to-flow data of the 4 precious metals: gold, silver, palladium, platinum](/raw/img/blog/2021/investing/commodities/precious-metals-stock-to-flow.png)
+{:.small}
+{:.text-center}
+
+As of 2019, gold had the highest stock-to-flow ratio of the precious metals at 62.
+In other words, it would takes 62 years of production to double the amount of gold above ground.
+For palladium that number was only 1.1 years.
+Commodities with higher SF ratios are less affected by changes in production and have lower [price elasticity of supply](https://www.investopedia.com/ask/answers/040615/how-does-price-elasticity-affect-supply.asp).
+This explains gold's low price volatility amongst the precious metals.
+
+These SF ratios may not significantly increase anytime soon as PlanB explains in the same article:
+
+> It is almost impossible for commodities to get a higher SF, because as soon as somebody hoards them, price rises, production rises, and price falls again. It is very hard to escape this trap.
+
+What if there was a scarce commodity like gold that you could easily transport via a medium like the internet?
+
+### Bitcoin as digital gold
+
+[Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
+
+Ammous estimated that Bitcoin's stock-to-flow ratio will overtake that of gold around 2022.
 
 ### My choices
 
@@ -204,18 +268,6 @@ I've set GSF to the lowest allocation as it was only listed in 2018 and it's sti
 The other 2 assets I've split equally between the remaining allocation for commodities asset class.
 
 I discovered the Carbon ETF recently and it seems interesting but I want to do some more research before adding it.
-
-### Stock to flow
-
-To demonstrate this relationship between scarcity and market value of an asset,
-we need to be able to give a number to scarcity.
-
-[Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
-
-High S2F are less susceptible to swings in supply;
-price is inelastic to supply.
-
-FDR took USD (and others) off the gold standard.
 
 ### Bitcoin as digital gold
 
