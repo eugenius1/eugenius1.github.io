@@ -130,7 +130,7 @@ Prices of goods in the US inflated by around [28.5%](https://www.usinflationcalc
 What we see first is that all commodity types have underperformed the stock market at least since 2018 with the exception of DH2O that is roughly on par.
 DH2O is made up of **water** companies' stocks so it makes sense for it be performing as well as the stock market and highly correlated.
 Some may argue that DH2O should only count as a stock ETF and not a commodity ETF
-but I think water is a very important daily good whose value shouldn't be ignored.
+but I think water is a very important, daily basic good whose value shouldn't be ignored.
 
 Second best performing type was precious metals (VZLE).
 Gold is part of this index ETF but because gold underperforms,
@@ -154,7 +154,7 @@ Now let's see the 4 precious metals since 1997 (oldest data I could get for pall
 First obvious thing is that palladium has vastly outperformed the other assets including stocks and particularly since 2017.
 [Palladium](https://en.wikipedia.org/wiki/Palladium) is mostly used in [catalytic converters](https://en.wikipedia.org/wiki/Catalytic_converter) which convert toxic pollutants in exhaust gases from internal combustion engines into less toxic pollutants.
 From what I've gathered, the price jump is due to [lacking supply](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/) and speculation.
-This brings us to a very common economic law.
+This brings us to a very common law in economics.
 
 [**Law of supply and demand**](https://www.investopedia.com/terms/l/law-of-supply-demand.asp):
 This theory says that the **quantity and price** of something in a market (e.g. financial assets, food, electricity)
@@ -197,7 +197,7 @@ For example, supply is usually increased by ["printing"](https://en.wikipedia.or
 
 However, fiat money is not a bulletproof way of protecting the economy as it can lead to severe inflation and even [hyperinflation](https://www.investopedia.com/terms/h/hyperinflation.asp) (over 50% per month) that usually leads to the country switching from their local fiat currency to a foreign one.
 Recent examples include [Zimbabwe](https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe) and [Venezuela](https://en.wikipedia.org/wiki/Hyperinflation_in_Venezuela) (ongoing as of 2021).
-This not to say that severe and hyperinflation are only caused by using fiat money as summarised in this quote from [Investopedia](https://www.investopedia.com/terms/f/fiatmoney.asp):
+This not to say that severe and hyperinflation are only caused by using fiat money as summarised on [Investopedia](https://www.investopedia.com/terms/f/fiatmoney.asp):
 
 > It is unclear whether or not hyperinflations are caused by "runaway printing" of money. In fact, hyperinflations have occurred throughout history, even when money was based on precious metals; and all contemporary hyperinflations have begun with a fundamental breakdown in the real **production economy** and/or **political instability** in the country.
 
@@ -235,41 +235,56 @@ These SF ratios may not significantly increase anytime soon as PlanB explains in
 
 What if there was a scarce commodity like gold that you could easily transport via a medium like the internet?
 
-### Bitcoin as digital gold
+## Crypto
+
+### Learning
+
+I started investing in cryptocurrencies in 2018 after some discussions with colleagues but I was aware of them at least a year earlier near the end of university.
+From 2018 to 2020, most of my learning was hands-on in the crypto space especially while trying to make an outperforming crypto trading bot (spoiler: it's hard).
+In early 2020, I zoomed out to realise the **bigger picture**:
+
+- Crypto has potential too big to ignore
+- In the medium-long term, **investing** delivers strong gains with far **less effort & stress** than trading
+
+There are plenty of resources online these days to learn about crypto.
+I've made a [**YouTube playlist**](https://www.youtube.com/playlist?list=PLJr1hnSQ56-Zyg48p5zKarzIOJh2vwaCk)
+with all the videos that I think are helpful, sorted from fundamental topics to those more advanced.
+If you're new to crypto I **highly recommend** watching at least the first video.
+Pro tip: I normally watch at 1.5x speed.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJr1hnSQ56-Zyg48p5zKarzIOJh2vwaCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
+
+Some of the YouTube channels and social media I follow:
+
+- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Coin Bureau](https://www.youtube.com/c/CoinBureau): education, coin reviews, news
+- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Benjamin Cowen](https://www.youtube.com/channel/UCRvqjQPSeaWn-uEx-w0XOIg): solid market analysis
+- [<i class="fa fa-youtube-play" aria-hidden="true"></i> uncomplication](https://www.youtube.com/c/uncomplication): a few interesting things like psychology
+- [<i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter:</span> PlanB](https://twitter.com/100trillionUSD): stock-to-flow model
+
+As there's a lot of greed and fear around crypto, you have to be careful with the information and advice you consume especially on YouTube.
+I prefer to have all the info I need to make an investing decision rather than to be blindly sold something.
+**Reddit** has this [Crypto YouTubers Tier List](https://www.reddit.com/r/CryptoCurrency/comments/mekhv7/crypto_youtubers_tier_list/) that you could use to see if a channel you've spotted shares info you should listen to or avoid.
+Reddit is an open, online community for anything and everything.
+Searching the internet for something followed by "reddit" can give you some indication of whether it's legit or a scam.
+
+In addition to the videos, there
+
+### Generations
+
+#### 1st gen: Bitcoin & wannabes
+
+most secure payment method.
+History forever there.
+
+Economics and relatively slow transaction speed & throughput
+
+['Vast Majority' of Institutions Will Own Crypto by 2026](https://decrypt.co/76380/vast-majority-institutions-will-own-crypto-2026-fidelity).
+
+##### Bitcoin as digital gold
 
 [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
 
 Ammous estimated that Bitcoin's stock-to-flow ratio will overtake that of gold around 2022.
-
-### My choices
-
-With ETFs and other funds,
-there are usually costs consumed by the provider managing the fund as their fee to cover their expenses.
-This is called the [Total Expense Ratio (TER)](https://www.investopedia.com/terms/t/ter.asp).
-iShares Global Water ETF (DH2O/IH2O) is an index ETF and so has a low TER at [0.65%](https://www.ishares.com/uk/individual/en/products/251913/ishares-global-water-ucits-etf).
-
-[Gore Street Energy Storage Fund plc (GSF)](https://www.gsenergystoragefund.com/content/about/fund)
-is a company with a fund that invests in a diversiﬁed portfolio of energy storage projects primarily located in the UK & Ireland.
-The vision is that a future relying mostly on renewable energy (which is not consistent) needs large energy storage to fill the gap between demand and generation.
-The fund targets a **dividend yield of 7%** and this has been achieved in at least the [last 2 years](https://www.hl.co.uk/shares/shares-search-results/g/gore-street-energy-storage-fund-plc-ord/dividends).
-For reference, [4%](https://finance.yahoo.com/quote/SPHD) is pretty good for dividend-paying companies so 7% is impressive.
-However, this comes at a sizeable expense ratio of around [2.74%](https://www.gsenergystoragefund.com/docs/librariesprovider22/archive/gsf_fact-sheet_2021.pdf).
-
-| Asset name                          | Ticker | Target Weight | Target Allocation |
-|-------------------------------------|--------|---------------|-------------------|
-| **Commodities**                     |        |               |       **10%**     |
-| Bitcoin                             | BTC    |       3       |        4.3%       |
-| iShares Global Water USD ETF        | DH2O   |       3       |        4.3%       |
-| Gore Street Energy Storage Fund plc | GSF    |       1       |        1.4%       |
-{:.right-figures-3}
-
-I've set GSF to the lowest allocation as it was only listed in 2018 and it's still relatively small
-([£400M](https://finance.yahoo.com/quote/GSF.L) market cap) so there's quite some risk and uncertainty in its future.
-The other 2 assets I've split equally between the remaining allocation for commodities asset class.
-
-I discovered the Carbon ETF recently and it seems interesting but I want to do some more research before adding it.
-
-### Bitcoin as digital gold
 
 S2F:
 _The Bitcoin Standard_ book by S. Ammous
@@ -287,20 +302,7 @@ Powered by cryptography
 - trustless
 - permissionless
 
-most secure payment method.
-History forever there.
-
-Economics and relatively slow transaction speed & throughput
-
-['Vast Majority' of Institutions Will Own Crypto by 2026](https://decrypt.co/76380/vast-majority-institutions-will-own-crypto-2026-fidelity).
-
-## Crypto
-
-### Learning
-
-[Crypto YouTubers Tier List](https://www.reddit.com/r/CryptoCurrency/comments/mekhv7/crypto_youtubers_tier_list/)
-
-### Background
+#### 2nd gen: Smart contracts
 
 Ethereum:
 Turing-complete virtual network that runs applications and stores information on a blockchain.
@@ -342,6 +344,8 @@ Smart Contracts:
 
 Paper guarantee (brand based) vs cryptographic guarantee (math based)
 
+#### 3rd gen: Scalability
+
 Eth 2.0:
 
 - PoS and reduced tranaction (gas) fees
@@ -355,14 +359,13 @@ Issuance of new ETH will reduce from 4.5% to 0.5-0.8% an together with EIP-1559 
 
 Reduced volatility of BTC and ETH over time as more utility from people and institutions using the respective blockchains.
 
-### Exchange
+### Doing your own research (DYOR)
 
-Binance with 2FA.
-[Lastpass](https://www.lastpass.com/pricing)
+- [Binance Research](https://research.binance.com/): objective, institutional-grade analysis of all coins listed on Binance.
+What I really like is that the they summarise a project into a few bullet points and then give their full analysis report.
+- [CoinMarketCap](https://coinmarketcap.com/): 
 
-### Passive route
-
-### Active route
+### Sectors
 
 #### NFTs
 
@@ -371,6 +374,70 @@ provable & permanent
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
 
+### Exchanges
+
+Binance with 2FA.
+[Lastpass](https://www.lastpass.com/pricing)
+
+### Investing decisions
+
+#### Passive route
+
+#### Active route
+
 Why no DOGE, SHIB?
 
 rich list
+
+### Managing the portfolio
+
+#### 3commas
+
+## My commodity choices
+
+As mentioned earlier, **water** is perhaps the most common basic good and whose value shouldn't be ignored in my opinion.
+ETFs and other funds usually have costs consumed by the provider managing the fund to cover their expenses.
+This is called the [Total Expense Ratio (TER)](https://www.investopedia.com/terms/t/ter.asp).
+iShares Global Water ETF (DH2O/IH2O) is an index ETF and so has a low TER at [0.65%](https://www.ishares.com/uk/individual/en/products/251913/ishares-global-water-ucits-etf).
+
+[Gore Street **Energy Storage** Fund plc (GSF)](https://www.gsenergystoragefund.com/content/about/fund)
+is a company with a fund that invests in a diversiﬁed portfolio of energy storage projects primarily located in the UK & Ireland.
+The vision is that a future relying mostly on renewable energy (which is not consistent) needs large energy storage to fill the gap between demand and generation.
+The fund targets a **dividend yield of 7%** and this has been achieved in at least the [last 2 years](https://www.hl.co.uk/shares/shares-search-results/g/gore-street-energy-storage-fund-plc-ord/dividends).
+For reference, [4%](https://finance.yahoo.com/quote/SPHD) is pretty good for dividend-paying companies so 7% is impressive.
+However, this comes at a major expense ratio of around [2.74%](https://www.gsenergystoragefund.com/docs/librariesprovider22/archive/gsf_fact-sheet_2021.pdf).
+In my mind, I subtract this from their target dividend yield which equates to just over 4%.
+
+| Asset name                          | Ticker          | Target Weight | Target Allocation |
+|-------------------------------------|-----------------|---------------|-------------------|
+| **Commodities**                     |                 |               |           **10%** |
+| ~~Gold~~<br>Bitcoin                 | ~~IS0E~~<br>BTC |             3 |            4.3%   |
+| iShares Global Water USD ETF        | DH2O            |             3 |            4.3%   |
+| Gore Street Energy Storage Fund plc | GSF             |             1 |            1.4%   |
+{:.right-figures-3}
+
+I've set GSF to the lowest allocation as it was only listed in 2018 and it's still relatively small
+([£400M](https://finance.yahoo.com/quote/GSF.L) market cap) so there's quite some risk and uncertainty in its future.
+The other 2 assets I've split equally between the remaining allocation for commodities asset class.
+
+I discovered the Carbon ETF recently and it seems interesting but I want to do some more research before adding it.
+
+## Closing thoughts
+
+TODO
+
+---
+
+Leave a **comment** below with your thoughts.
+If you've found this insightful, **share** with a friend that needs to read this.
+
+I have made a [Telegram group](/projects/investing/telegram/) where I will share updates to my portfolio and notify of new articles I publish.
+Upcoming articles:
+
+- Stocks & Bonds
+- Replacing Bonds with 20% interest on Terra's Anchor!
+- 4-10% interest on fiat savings on [Nexo](https://nexo.io/ref/qygstugzfc)!
+
+---
+
+<!-- Peer-reviewed by [Thomas Akinola](https://www.linkedin.com/in/thomas-akinola-031a561bb/). -->
