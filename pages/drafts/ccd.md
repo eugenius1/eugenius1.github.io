@@ -4,6 +4,8 @@ title: "Commodities & Crypto—Decrypted! | MIJ Pt 2"
 subtitle: A software engineer's investing thesis. No dogs.
 share-buttons: false
 permalink: "/drafts/ccd"
+sitemap:
+  exclude: true
 ---
 
 Cryptocurrency (crypto) is an asset class that most people haven't yet truly understood.
@@ -154,7 +156,7 @@ Now let's see the 4 precious metals since 1997 (oldest data I could get for pall
 {:.text-center}
 
 First obvious thing is that palladium has vastly outperformed the other assets including stocks and particularly since 2017.
-[Palladium](https://en.wikipedia.org/wiki/Palladium) is mostly used in [catalytic converters](https://en.wikipedia.org/wiki/Catalytic_converter) which convert toxic pollutants in exhaust gases from internal combustion engines into less toxic pollutants.
+[Palladium](https://en.wikipedia.org/wiki/Palladium) is mostly used in [catalytic converters](https://en.wikipedia.org/wiki/Catalytic_converter) which convert toxic pollutants in exhaust gases from internal combustion engines (e.g. in automobiles) into less toxic pollutants.
 From what I've gathered, the price jump is due to [lacking supply](https://investingnews.com/daily/resource-investing/precious-metals-investing/palladium-investing/palladium-outlook/) and speculation.
 This brings us to a very common law in economics.
 
@@ -194,8 +196,9 @@ With the gold standard, inflation can be avoided but strict commitment to it can
 With the gold standard dropped, paper money today has **no intrinsic value** as no precious metals back it.
 Through supply & demand, the value of fiat money comes entirely from the **trust** that we people put on it because a government or its central bank issued it.
 
-A major benefit of fiat money is that it gives central banks great control over the economy as they control money's supply.
-For example, supply is usually increased by ["printing"](https://en.wikipedia.org/wiki/Fiat_money#Money_creation_and_regulation) more money and it can be decreased by increasing interest rates so more money is saved and less circulates.
+A major benefit of fiat money is that it gives central banks great control over the economy as they control money's supply, e.g. recovery from the Great Depression.
+Some may argue this is (also) a disadvantage as we humans are flawed and no less when given power.
+Supply can be increased usually by ["printing"](https://en.wikipedia.org/wiki/Fiat_money#Money_creation_and_regulation) more money and it can be decreased by increasing interest rates so more money is saved and less circulates.
 
 However, fiat money is not a bulletproof way of protecting the economy as it can lead to severe inflation and even [hyperinflation](https://www.investopedia.com/terms/h/hyperinflation.asp) (over 50% per month) that usually leads to the country switching from their local fiat currency to a foreign one.
 Recent examples include [Zimbabwe](https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe) and [Venezuela](https://en.wikipedia.org/wiki/Hyperinflation_in_Venezuela) (ongoing as of 2021).
@@ -238,3 +241,7 @@ These SF ratios may not significantly increase anytime soon as PlanB explains in
 What if there was a scarce commodity like gold that you could easily transport via a medium like the internet?
 
 ## Crypto
+
+## My commodity choices
+
+## Closing thoughts
