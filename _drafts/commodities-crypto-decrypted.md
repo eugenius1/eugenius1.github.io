@@ -255,29 +255,67 @@ Pro tip: I normally watch at 1.5x speed.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJr1hnSQ56-Zyg48p5zKarzIOJh2vwaCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
 
-Some of the YouTube channels and social media I follow:
+Some of the YouTube channels I follow:
 
 - [<i class="fa fa-youtube-play" aria-hidden="true"></i> Coin Bureau](https://www.youtube.com/c/CoinBureau): education, coin reviews, news
 - [<i class="fa fa-youtube-play" aria-hidden="true"></i> Benjamin Cowen](https://www.youtube.com/channel/UCRvqjQPSeaWn-uEx-w0XOIg): solid market analysis
 - [<i class="fa fa-youtube-play" aria-hidden="true"></i> uncomplication](https://www.youtube.com/c/uncomplication): a few interesting things like psychology
-- [<i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter:</span> PlanB](https://twitter.com/100trillionUSD): stock-to-flow model
 
 As there's a lot of greed and fear around crypto, you have to be careful with the information and advice you consume especially on YouTube.
 I prefer to have all the info I need to make an investing decision rather than to be blindly sold something.
 **Reddit** has this [Crypto YouTubers Tier List](https://www.reddit.com/r/CryptoCurrency/comments/mekhv7/crypto_youtubers_tier_list/) that you could use to see if a channel you've spotted shares info you should listen to or avoid.
 Reddit is an open, online community for discussing almost anything and everything.
-Searching the internet for something followed by "reddit" can give you some indication of whether it's legit or a scam.
+Searching the internet for something followed by "reddit" can give you some indication of whether that thing is legit or a scam.
 
 In addition to the videos, these are some of the other top, beginner-friendly learning resources:
 
-- [Binance Academy](https://academy.binance.com/) &mdash; each article has a difficulty rating: beginner, intermediate, advanced
-- [CoinMarketCap Alexandria](https://coinmarketcap.com/alexandria) &mdash; pretty good for searching specific terms, like Wikipedia
+- [Binance Academy](https://academy.binance.com/) &mdash; each article shows a difficulty rating: beginner, intermediate, advanced.
+[Starting point](https://academy.binance.com/en/start-here).
+- [CoinMarketCap Alexandria](https://coinmarketcap.com/alexandria)
 - [Gemini Cryptopedia](https://www.gemini.com/cryptopedia)
 - [Kraken Learn](https://www.kraken.com/learn)
 
 ### Generations
 
 #### 1st gen: Bitcoin & wannabes
+
+**Bitcoin & its creator**:
+In October 2008,
+a white paper titled [_Bitcoin: A Peer-to-Peer Electronic Cash System_](https://bitcoin.org/bitcoin.pdf) was published by ["Satoshi Nakamoto"](https://academy.binance.com/en/articles/who-is-satoshi-nakamoto).
+It's still a mystery who Satoshi Nakamoto really is over a decade later.
+They could be a man, a woman or a group of people.
+[Current top candidates](https://youtu.be/cuItlQZ3RQg).
+
+The 9-page white paper gives a comprehensive overview of this creation that builds on top of some existing cryptography ideas & technologies.
+A lot of the paper is quite a heavy read for the average person but the first line gives a brief summary:
+
+> A **purely peer-to-peer** version of **electronic cash** would allow online
+payments to be sent directly from one party to another **without going through a financial institution**.
+
+This means that Bitcoin was designed to be a system of transferring monetary value (cash).
+This system is run by the people (peer-to-peer) and doesn't need any central financial institution such as a bank.
+The Bitcoin paper came during the severe, global [financial crisis of 2007–2008](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008) that was partly caused by excessive risks taken by financial institutions.
+
+With a truly-digital form of cash, how do you stop someone from "copy-pasting" or spending the same $10 at 2 different sellers?
+In today's centralised approach with banks, they are responsible for accounting and ordering transactions to avoid [**double-spending**](https://academy.binance.com/en/articles/double-spending-explained).
+Bitcoin was the first to solve the double-spend problem in a decentralised (peer-to-peer) approach using a new technology.
+
+**Blockchain**:
+This is simply a database, or you could think of it as a notebook.
+With Bitcoin, a blockchain/database is used to maintain accounting of all existing bitcoins (the currency unit) and all transactions.
+Unlike most databases, a blockchain can only be added to and existing data cannot be changed.
+This is because each block of the chain (or page of the notebook) has a cryptographic (mathematical) snapshot of the previous block (page).
+To correctly change an old block, you'd have to also update all the blocks between it and the last one.
+
+**Mining**:
+The Bitcoin peer-to-peer monetary system is collectively run by what are called **nodes** which are computers that run software that impose the Bitcoin system.
+A copy of the blockchain is stored by each node of the network.
+So how are new blocks added?
+The system 
+
+
+The database is 
+The peer-to-peer nature means that everyone has a copy of the blockchain and so it's even harder for everyone to accept this new modified past.
 
 What is Bitcoin?
 
@@ -295,6 +333,10 @@ History forever there.
 Economics and relatively slow transaction speed & throughput
 
 ['Vast Majority' of Institutions Will Own Crypto by 2026](https://decrypt.co/76380/vast-majority-institutions-will-own-crypto-2026-fidelity).
+
+Mining & halving
+
+Energy consumption
 
 ##### Bitcoin as digital gold
 
@@ -388,14 +430,23 @@ News:
 - [Cointelegraph](https://cointelegraph.com/)
 - [Decrypt](https://decrypt.co/)
 
-### Sectors
+### Use cases
 
-#### NFTs
+#### NFT
+
+[Gemini](https://www.gemini.com/cryptopedia/nft-non-fungible-token-crypto-collectibles)
 
 provable & permanent
 
+[Top 7 use cases](https://academy.binance.com/en/articles/top-7-nft-use-cases)
+
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
+
+#### Central Bank Digital Currency (CBDC)
+
+[Alexandria](https://coinmarketcap.com/alexandria/article/what-is-a-central-bank-digital-currency-aka-a-cbdc)
+[BA](https://academy.binance.com/en/articles/central-bank-digital-currencies-cbdc-explained)
 
 ### Exchanges
 
@@ -403,6 +454,10 @@ Binance with 2FA.
 [Lastpass](https://www.lastpass.com/pricing)
 
 ### Investing decisions
+
+#### Strategy
+
+[allocation](https://academy.binance.com/en/articles/asset-allocation-and-diversification-explained)
 
 #### Passive route
 
