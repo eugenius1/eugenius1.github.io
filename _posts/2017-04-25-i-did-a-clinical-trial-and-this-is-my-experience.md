@@ -172,7 +172,7 @@ The outpatient visit usually took less than 20 minutes:
 The calendar below shows my dates for the 1-night stay, 9 outpatients and 3 **repeat blood samples**.
 After an outpatient, you might be recalled for another blood sample, mostly because they want to check an abnormal value they measure in your blood is just an anomaly and not an effect of the study drug.
 Twice I needed to repeat because I had a low [neutrophil](#about-myself) count and once due to my potassium level being on the high side of normal.
-After the first repeat, you get compensated **£30** per repeat; I had 3 repeats so I got an extra £60.
+After the first repeat, you get compensated **£20** per repeat; I had 3 repeats so I got an extra £60.
 
 [![Calendar showing date commitments as well as 3 repeat blood sample dates.](/img/blog/2017/clinical-trial-calendar.png)](/raw/img/blog/2017/clinical-trial-calendar.png)
 
