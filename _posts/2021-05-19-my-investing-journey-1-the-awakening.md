@@ -415,8 +415,8 @@ I've set the majority (~54%) of my stocks to be American companies.
 | Asset Class                                |       2020         |       2021         |
 |--------------------------------------------|--------------------|--------------------|
 | Stocks                                     |        60%         |        60%         |
-| <small>- US</small>                        | <small>30%</small> | <small>27%</small> |
-| <small>- Other developed countries</small> | <small>15%</small> | <small>18%</small> |
+| <small>- US</small>                        | <small>27%</small> | <small>27%</small> |
+| <small>- Other developed countries</small> | <small>13%</small> | <small>18%</small> |
 | <small>- Emerging countries</small>        |  <small>5%</small> |  <small>5%</small> |
 | <small>- Real estate & dividend</small>    | <small>15%</small> | <small>10%</small> |
 | Bonds                                      |        20%         |        15%         |

@@ -100,6 +100,8 @@ Here's an overview of the different commodity types:
 - Mixed commodity ETFs: e.g. [LYTR](https://www.lyxoretf.co.uk/en/retail/products/commodities-etf/lyxor-commodities-refinitivcorecommodity-crb-tr-ucits-etf-acc/lu1829218749/usd),
 [CMOD](https://etf.invesco.com/gb/private/en/product/invesco-bloomberg-commodity-ucits-etf/trading-information?audienceType=private)
 
+TODO: physical vs futures
+
 ### Performance comparison
 
 Let's take these commodity types and see how they've performed historically.
@@ -176,6 +178,10 @@ Gold seems to be the least volatile while delivering the second best performance
 
 ### Types of money
 
+<div class="alert alert-info" role="alert">
+The concepts here help to better understand cryptocurrency.
+</div>
+
 [**Gold standard**](https://www.investopedia.com/ask/answers/09/gold-standard.asp):
 For several millennia, this shiny metal has been used both as a monetary unit to trade goods & services (along with silver)
 and as a store of value & wealth.
@@ -236,6 +242,8 @@ These SF ratios may not significantly increase anytime soon as PlanB explains in
 
 What if there was a scarce commodity like gold that you could easily transport via a medium like the internet?
 
+We'll dive into Bitcoin & other cryptocurrencies before I reveal my commodity choices.
+
 ## Crypto
 
 ### Learning
@@ -284,7 +292,8 @@ In October 2008,
 a white paper titled [_Bitcoin: A Peer-to-Peer Electronic Cash System_](https://bitcoin.org/bitcoin.pdf) was published by ["Satoshi Nakamoto"](https://academy.binance.com/en/articles/who-is-satoshi-nakamoto).
 It's still a mystery who Satoshi Nakamoto really is over a decade later.
 They could be a man, a woman or a group of people.
-[Current top candidates](https://youtu.be/cuItlQZ3RQg).
+They demonstrated world-class programming skills (in C++) and great understanding of economics, cryptography and peer-to-peer networking.
+For the top candidates see [this video](https://youtu.be/cuItlQZ3RQg).
 
 The 9-page white paper gives a comprehensive overview of this creation that builds on top of some existing cryptography ideas & technologies.
 A lot of the paper is quite a heavy read for the average person but the first line gives a brief summary:
@@ -293,54 +302,77 @@ A lot of the paper is quite a heavy read for the average person but the first li
 payments to be sent directly from one party to another **without going through a financial institution**.
 
 This means that Bitcoin was designed to be a system of transferring monetary value (cash).
-This system is run by the people (peer-to-peer) and doesn't need any central financial institution such as a bank.
-The Bitcoin paper came during the severe, global [financial crisis of 2007–2008](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008) that was partly caused by excessive risks taken by financial institutions.
+This system is collectively run by the people (peer-to-peer) and doesn't need any central financial institution such as a bank.
+The Bitcoin white paper came during the severe, global [financial crisis of 2007–2008](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008) that was partly caused by excessive risks taken by financial institutions.
 
 With a truly-digital form of cash, how do you stop someone from "copy-pasting" or spending the same $10 at 2 different sellers?
 In today's centralised approach with banks, they are responsible for accounting and ordering transactions to avoid [**double-spending**](https://academy.binance.com/en/articles/double-spending-explained).
-Bitcoin was the first to solve the double-spend problem in a decentralised (peer-to-peer) approach using a new technology.
+Bitcoin was the first to solve the double-spend problem in a decentralised (peer-to-peer) approach using new technology.
 
 **Blockchain**:
 This is simply a database, or you could think of it as a notebook.
 With Bitcoin, a blockchain/database is used to maintain accounting of all existing bitcoins (the currency unit) and all transactions.
-Unlike most databases, a blockchain can only be added to and existing data cannot be changed.
-This is because each block of the chain (or page of the notebook) has a cryptographic (mathematical) snapshot of the previous block (page).
-To correctly change an old block, you'd have to also update all the blocks between it and the last one.
+Transactions are not added one-by-one but are collectively added as part of a block (page).
+Unlike most databases, a blockchain can only be added to and existing data cannot be changed (**immutable**).
+This is because each block of the chain (or page of the notebook) has a cryptographic (mathematical) snapshot&mdash;a **hash**&mdash;of the previous block (page).
+To correctly change an old block, you'd have to also update all the blocks between it and the latest one.
 
-**Mining**:
-The Bitcoin peer-to-peer monetary system is collectively run by what are called **nodes** which are computers that run software that impose the Bitcoin system.
+Here's a visual and more detailed explanation:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SSo_EIwHSd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
+
+**Nodes & miners**:
+How are new blocks added?
+The Bitcoin peer-to-peer payment network is collectively run by what are called **nodes** which are computers that run software that implement the Bitcoin protocol (set of rules).
 A copy of the blockchain is stored by each node of the network.
-So how are new blocks added?
-The system 
+Some of these nodes are also **miners** as they compete against other miners to be the first to mine (add) a new block to the chain of blocks.
 
+[**Mining**](https://academy.binance.com/en/articles/what-is-cryptocurrency-mining) a new block requires solving a mathematical puzzle.
+New pending transactions to be added to the blockchain have to go into a new block together with a **mathematical signature/fingerprint ([hash](https://academy.binance.com/en/articles/what-is-hashing))**
+A typical Bitcoin block holds roughly [2,000 transactions](https://www.blockchain.com/charts/n-transactions-per-block).
+The difficulty of creating the mathematical signature is dynamically adjusted by the Bitcoin protocol such that it should take an average of **10 minutes** to mine a new block. <!-- TODO: verify -->
 
-The database is 
-The peer-to-peer nature means that everyone has a copy of the blockchain and so it's even harder for everyone to accept this new modified past.
+Mining makes Bitcoin use **a lot of electricity** but also makes it **increasingly more secure**.
+Mining forms part of [**Proof-of-work (PoW)**](https://academy.binance.com/en/articles/proof-of-work-explained),
+a way for the independent nodes to agree on what the **truth** is.
+Each valid block in the chain has an energy cost behind it due to the mathematical signature of each block.
+The longer a chain is, the higher the total energy cost and the more likely it is to be accepted as the truth by nodes.
+So if someone wanted to change an old block, they'd have to do **both** of these:
 
-What is Bitcoin?
+- use a lot of electricity to mine new blocks since and including the old block
+- 51% (majority) attack: convince other nodes to accept their modified chain as the truth by adding new pending transactions faster than other miners. <!-- TODO: link 51% -->
+
+**Halving**:
+Miners are incentivised to mine as they get both a **reward for mining** a new block to the chain and **transaction fees** from the transactions added in the block.
+This reward started at 50 BTC per block and is halved about every 4 years.
+Bitcoin has a **maximum supply** of 210 million BTC so when all BTC will have been mined (around the year 2078) then there will be no more block rewards. <!-- TODO: link year -->
+Miners will only receive transaction fees with each new block.
+It is thought that transaction fees can be enough mining incentive assuming the price of one bitcoin will be significantly higher than today's.<!-- TODO: link or "I think" -->
+
+<!-- TODO: Energy consumption & environmental concerns-->
+
+So what is Bitcoin?
 
 - a currency?
 - a network of computers?
-- a blockchain (public database)?
-- a payment system?
+- a blockchain (public, immutable database)?
+- a global payment system?
 - a protocol (set of rules)?
 
-All of the above.
+All of the above. "Bitcoin" can refer to any of the above related concepts.
 
-most secure payment method.
-History forever there.
+Bitcoin as a **payment system** is the **most secure** in the world. <!-- TODO: link & why -->
+The benefits that Bitcoin payment system brings:
 
-Economics and relatively slow transaction speed & throughput
-
-['Vast Majority' of Institutions Will Own Crypto by 2026](https://decrypt.co/76380/vast-majority-institutions-will-own-crypto-2026-fidelity).
-
-Mining & halving
-
-Energy consumption
+- **Decentralised** &mdash; no single point of failure.
+- **Immutable** &mdash; history on the blockchain is incredibly hard to be changed and it remains there forever, existing as a copy in each node.
+- **Resistant to censorship** &mdash; control of Bitcoin is not with any single entity but with everyone collectively so no government or hacker can actually stop Bitcoin.
+- **Trustless** &mdash; no central authority to trust, e.g. bank; trust is put on cryptography & computer software.
+- **Permissionless** &mdash; no one can stop you from transacting unlike with banks.
 
 ##### Bitcoin as digital gold
 
-[Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
+PlanB presented the [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25).
 
 Ammous estimated that Bitcoin's stock-to-flow ratio will overtake that of gold around 2022.
 
@@ -349,18 +381,9 @@ _The Bitcoin Standard_ book by S. Ammous
 
 [Review of S2F model for Bitcoin](https://youtu.be/jfjjWAmGks4)
 
-Immutable distributed ledger.
-Immutable: really hard to change, basically there forever;
-Distributed: no single computer can decide, but a network of computers;
-Ledger: table of information.
-Powered by cryptography
-
-- decentralised
-- resistant to censorship
-- trustless
-- permissionless
-
 #### 2nd gen: Smart contracts
+
+Economics and relatively slow transaction speed & throughput
 
 Ethereum:
 Turing-complete virtual network that runs applications and stores information on a blockchain.
@@ -372,7 +395,11 @@ Smart contracts are not really contracts but pieces of code that codify business
 - verify rules
 - execute rules
 
-Web 3.0
+- Web 1.0: read; static content
+- Web 2.0: read-write; interactive content
+- Web 3.0: read-write-own; virtual economies
+
+Crypto is not just an alternative money (as introduced by Bitcoin) but an alternative system.
 
 The blockchain Trilemma [Vitalik Buterin]:
 
@@ -413,6 +440,10 @@ Issuance of new ETH will reduce from 4.5% to 0.5-0.8% an together with EIP-1559 
 
 [TPS comparison](https://twitter.com/coin98analytics/status/1318748458052825088)
 
+[Eth deflationary after PoS](https://ultrasound.money/)
+
+[ETH stabilising at 20k](https://youtu.be/LiofrQwmLTI) after a possible "sell the news" drop.
+
 ---
 
 Reduced volatility of BTC and ETH over time as more utility from people and institutions using the respective blockchains.
@@ -430,15 +461,23 @@ News:
 - [Cointelegraph](https://cointelegraph.com/)
 - [Decrypt](https://decrypt.co/)
 
-### Use cases
+### Notable use cases
 
-#### NFT
+#### Stablecoin
+
+#### Non Fungible Token (NFT)
 
 [Gemini](https://www.gemini.com/cryptopedia/nft-non-fungible-token-crypto-collectibles)
 
 provable & permanent
 
 [Top 7 use cases](https://academy.binance.com/en/articles/top-7-nft-use-cases)
+
+- Art
+- Collectible
+- Gaming
+- Music
+- Sport
 
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
@@ -453,6 +492,16 @@ provable & permanent
 Binance with 2FA.
 [Lastpass](https://www.lastpass.com/pricing)
 
+### Institutional adoption
+
+[Fidelity report](https://www.youtube.com/watch?v=2otrUKwehc8)
+
+['Vast Majority' of Institutions Will Own Crypto by 2026](https://decrypt.co/76380/vast-majority-institutions-will-own-crypto-2026-fidelity).
+
+[nasdaq](https://www.nasdaq.com/articles/why-institutional-investors-cannot-afford-to-ignore-defi-2021-10-05)
+
+[Institutions in DeFi](https://cointelegraph.com/news/institutional-investors-dominated-the-defi-scene-in-q2-chainalysis-report)
+
 ### Investing decisions
 
 #### Strategy
@@ -463,9 +512,127 @@ Binance with 2FA.
 
 #### Active route
 
+<hr>
+
+##### My crypto choices
+
+<hr>
+
+##### Blockchains
+
+General-purpose blockchains:
+
+- Ethereum
+- Cardano (ADA): Ethereum co-founder; peer-reviewed
+- Polkadot (DOT) & Kusama (KSM): Ethereum co-founder; parachains
+- Binance Chain & Binance Smart Chain (BNB)
+- Cosmos (ATOM): very good project but subpar tokenomics due to subpar need for ATOM
+- Solana: very fast layer-1 (50k-700k TPS capability!) but tokenomics let down by steep vesting schedule (Dec 2020)  But less transparency, e.g. vesting schedule shows circulating supply in Jan 2021 should be 95% but is 55% as of Apr 2021.
+- Avalanche (AVAX): 2 consensus engines: parallelisable DAG (Avalanche) & totally-ordered chain (Snowman)
+- Elrond (EGLD): Adaptive State Sharding with sharded state, transactions, and network
+- Algorand (ALGO): Permissionless Pure Proof-Of-Stake; strong candidate for CBDC; lacking tokenomics
+- Terra (LUNA): algorithmic stablecoin platform, synthetic asset protocol (Mirror) and stablecoin lending platform (Anchor) with 18-20% APY!
+- Harmony (ONE): random state sharding
+<!-- - Stacks (STX): enabling secure applications and smart contracts on Bitcoin -->
+<!-- - NEAR Protocol: ? -->
+
+Purpose-built blockchains:
+
+- Stellar (XLM): payments
+- VeChain (VET): supply-chain
+- Filecoin (FIL): data storage for IFPS (InterPlanetary File System)
+- Monero (XMR): basically bitcoin with privacy
+- Secret (SCRT): smart contract privacy
+- Haven (XHV): Fork of Monero to allow pegged assets like stablecoins
+- Helium (HNT): low-power IoT; 5G
+
+Not-a-blockchain:
+
+- IOTA: IoT; tangle instead of blockchain; Directed Acyclic Graph (DAG)
+
+<hr>
+
+##### Data
+
+- Chainlink [Ethereum]: data oracle
+- Ocean protocol [Ethereum]: big data
+- The Graph (GRT) [Ethereum]: data indexing
+
+<hr>
+
+##### Decentralised Finance (DeFi)
+
+Decentralised Exchanges (DeX):
+
+- Uniswap [Ethereum]: scalability limitations before Ethereum 2.0
+- THORChain (RUNE) [Binance Chain, Ethereum]: cross-chain DeX
+- 1inch: DeX Aggregator
+- Loopring (LRC) [Ethereum]: open protocol for scalable, orderbook-based DeX’s
+
+DeX you can trade stocks:
+https://www.youtube.com/watch?v=3YHe9-mN2Hs
+
+- Serum (SRM) [Solana]:
+Not going for Synthetix (SNX) and UMA because they are built on Ethereum so limited by Ethereum’s lacking scalability.
+- Injective (INJ) [Cosmos] are good.
+
+Borrowing & lending:
+
+- Aave [Ethereum]: liquidity
+- Compound [Ethereum]: liquidity
+
+Other DeFi:
+
+- Ren [Ethereum]: trustless, permissionless Inter-Blockchain Liquidity
+- Kyber Network (KNC) [Ethereum]: on-chain liquidity protocol that aggregates reserves to allow token swaps. For example, a merchant receiving BTC payments and having them automatically converted to a stable coin like DAI.
+
+<hr>
+
+##### Centralised Finance
+
+Centralised Exchanges:
+
+- Binance Coin (BNB): as well as being the native coin of 2 Binance blockchains, it is also closely related to the exchange.
+- FTX Token (FTT) [Ethereum]: derivatives pioneer
+- KuCoin Token (KCS) [Ethereum]: altcoins
+<!-- - WazirX (WRX) [Binance]: India -->
+
+Borrowing & lending:
+
+- Celsius [Ethereum]: better lending due to rehypothecation (securities lending) to institutions
+- Nexo [Ethereum]:
+
+<hr>
+
+##### Ethereum Scaling Solutions
+
+- Polygon (MATIC): built from Vitalik Buterin’s plasma paper
+- Optimisim: no token
+- OMG
+
+<hr>
+
+##### NFT ecosystems
+
+- Theta (& TFUEL) [Ethereum]: video streaming
+- Enjin [Ethereum]: gaming & NFTs
+
+<hr>
+
+##### Memes
+
 Why no DOGE, SHIB?
 
 rich list
+
+<hr>
+
+##### Other Uses
+
+- Orchid (OXT) [Ethereum]: VPN
+- Phala [Polkadot]: privacy-preserving cloud computing
+
+<hr>
 
 ### Managing the portfolio
 
@@ -513,7 +680,7 @@ I have made a [Telegram group](/projects/investing/telegram/) where I will share
 Upcoming articles:
 
 - Stocks & Bonds
-- Replacing Bonds with 20% interest on Terra's Anchor!
+- Replacing Bonds with 20% interest on Terra's [Anchor](https://app.anchorprotocol.com/earn)!
 - 4-10% interest on fiat savings on [Nexo](https://nexo.io/ref/qygstugzfc)!
 
 ---
