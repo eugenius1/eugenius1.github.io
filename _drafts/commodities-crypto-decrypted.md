@@ -258,7 +258,7 @@ In early 2020, I zoomed out to realise the **bigger picture**:
 There are plenty of resources online these days to learn about crypto.
 I've made a [**YouTube playlist**](https://www.youtube.com/playlist?list=PLJr1hnSQ56-Zyg48p5zKarzIOJh2vwaCk)
 with all the videos that I think are helpful, sorted from fundamental topics to those more advanced.
-If you're new to crypto I **highly recommend** watching at least the first video.
+If you're new to crypto I **highly recommend** watching at least the first video (it's only 2 mins).
 Pro tip: I normally watch at 1.5x speed.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJr1hnSQ56-Zyg48p5zKarzIOJh2vwaCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
@@ -328,19 +328,32 @@ A copy of the blockchain is stored by each node of the network.
 Some of these nodes are also **miners** as they compete against other miners to be the first to mine (add) a new block to the chain of blocks.
 
 [**Mining**](https://academy.binance.com/en/articles/what-is-cryptocurrency-mining) a new block requires solving a mathematical puzzle.
-New pending transactions to be added to the blockchain have to go into a new block together with a **mathematical signature/fingerprint ([hash](https://academy.binance.com/en/articles/what-is-hashing))**
+New pending transactions to be added to the blockchain have to go into a new block together with a **mathematical signature/fingerprint ([hash](https://academy.binance.com/en/articles/what-is-hashing))**.
 A typical Bitcoin block holds roughly [2,000 transactions](https://www.blockchain.com/charts/n-transactions-per-block).
-The difficulty of creating the mathematical signature is dynamically adjusted by the Bitcoin protocol such that it should take an average of **10 minutes** to mine a new block. <!-- TODO: verify -->
+The difficulty of creating the mathematical signature is dynamically adjusted by the Bitcoin protocol about every 2 weeks such that it should take an average of **10 minutes** to mine a new block.
 
 Mining makes Bitcoin use **a lot of electricity** but also makes it **increasingly more secure**.
 Mining forms part of [**Proof-of-work (PoW)**](https://academy.binance.com/en/articles/proof-of-work-explained),
 a way for the independent nodes to agree on what the **truth** is.
-Each valid block in the chain has an energy cost behind it due to the mathematical signature of each block.
+Each valid block in the chain has an energy cost behind it due to the difficulty of the mathematical signature of each block.
 The longer a chain is, the higher the total energy cost and the more likely it is to be accepted as the truth by nodes.
 So if someone wanted to change an old block, they'd have to do **both** of these:
 
 - use a lot of electricity to mine new blocks since and including the old block
-- 51% (majority) attack: convince other nodes to accept their modified chain as the truth by adding new pending transactions faster than other miners. <!-- TODO: link 51% -->
+- [51% (majority) attack](https://academy.binance.com/en/glossary/51-percent-attack): convince other nodes to accept their modified chain as the truth by adding new pending transactions faster than other miners.
+
+**Energy use & carbon emissions**:
+Calculating the total energy use and emissions of Bitcoin is really complex, largely because it's a decentralised network so it could be anyone anywhere.
+There have been numerous articles
+
+[report by CoinShares](https://coinshares.com/research/bitcoin-mining-network-2022)
+[video summary](https://youtu.be/UCwLIE62iWg)
+
+- Less than a third of the carbon emitted by the **gold** industry.
+- Almost less than a third emitted by the **global banking** system.
+
+The network is becoming more efficient both in terms of electricity consumption and carbon emissions per hashing power.
+Furthermore, offsetting emissions by buying carbon credits would only cost around 0.5% per year at current Bitcoin price assuming the cost is shared among all Bitcoin holders.
 
 **Halving**:
 Miners are incentivised to mine as they get both a **reward for mining** a new block to the chain and **transaction fees** from the transactions added in the block.
@@ -482,6 +495,11 @@ provable & permanent
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
 
+[NFT Trading Strategies](https://youtu.be/pF1I1AuRoTk).
+Whitelist > secondary market > newly minted.
+Top 5% of secondary-market users on OpenSea accounted for 80% of profits.
+Experience and capital.
+
 #### Central Bank Digital Currency (CBDC)
 
 [Alexandria](https://coinmarketcap.com/alexandria/article/what-is-a-central-bank-digital-currency-aka-a-cbdc)
@@ -533,28 +551,27 @@ General-purpose blockchains:
 - Algorand (ALGO): Permissionless Pure Proof-Of-Stake; strong candidate for CBDC; lacking tokenomics
 - Terra (LUNA): algorithmic stablecoin platform, synthetic asset protocol (Mirror) and stablecoin lending platform (Anchor) with 18-20% APY!
 - Harmony (ONE): random state sharding
+- Fantom (FTM): DAG
 <!-- - Stacks (STX): enabling secure applications and smart contracts on Bitcoin -->
 <!-- - NEAR Protocol: ? -->
 
+<!-- TODO: refactor this to privacy, IoT & other  -->
 Purpose-built blockchains:
 
 - Stellar (XLM): payments
 - VeChain (VET): supply-chain
-- Filecoin (FIL): data storage for IFPS (InterPlanetary File System)
 - Monero (XMR): basically bitcoin with privacy
 - Secret (SCRT): smart contract privacy
 - Haven (XHV): Fork of Monero to allow pegged assets like stablecoins
 - Helium (HNT): low-power IoT; 5G
-
-Not-a-blockchain:
-
-- IOTA: IoT; tangle instead of blockchain; Directed Acyclic Graph (DAG)
 
 <hr>
 
 ##### Data
 
 - Chainlink [Ethereum]: data oracle
+- Filecoin (FIL): data storage for IFPS (InterPlanetary File System)
+- Arweave (AR): decentralised data storage; used by Solana to archive its large history (due to high TPS)
 - Ocean protocol [Ethereum]: big data
 - The Graph (GRT) [Ethereum]: data indexing
 
@@ -569,8 +586,7 @@ Decentralised Exchanges (DeX):
 - 1inch: DeX Aggregator
 - Loopring (LRC) [Ethereum]: open protocol for scalable, orderbook-based DeX’s
 
-DeX you can trade stocks:
-https://www.youtube.com/watch?v=3YHe9-mN2Hs
+[DeX you can trade stocks](https://www.youtube.com/watch?v=3YHe9-mN2Hs):
 
 - Serum (SRM) [Solana]:
 Not going for Synthetix (SNX) and UMA because they are built on Ethereum so limited by Ethereum’s lacking scalability.
@@ -616,6 +632,8 @@ Borrowing & lending:
 
 - Theta (& TFUEL) [Ethereum]: video streaming
 - Enjin [Ethereum]: gaming & NFTs
+- Chiliz (CHZ): fan tokens of sport teams
+- Flow (FLOW) [Binance Chain, Ethereum]: sport fan tokens & more (games & apps)
 
 <hr>
 

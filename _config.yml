@@ -55,7 +55,7 @@ author:
   linkedin: in/eusebius
   stackoverflow: eusebius-n
   instagram: esebi95
- 
+
 # Select which links to show in the footer
 footer-links-active:
   rss: true
@@ -69,7 +69,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Eusebius.Tech"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "Eusebius.Tech" # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -99,16 +99,14 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
-      share-buttons: true   # A row of social sharing buttons
-  -
-    scope: # Any html files that exist in the projects/ folder will use the project layout,
+      comments: true # add comments to all blog posts
+      share-buttons: true # A row of social sharing buttons
+  - scope: # Any html files that exist in the projects/ folder will use the project layout,
       path: "projects"
       type: "pages"
     values:
@@ -116,8 +114,7 @@ defaults:
       show-avatar: true
       comments: true
       share-buttons: true
-  -
-    scope:
+  - scope:
       path: "" # all files
     values:
       layout: "page"
@@ -126,20 +123,20 @@ defaults:
 
 # Exclude these files from production site
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - "**/README.md"
-  - CNAME
+  - Makefile
   - Vagrantfile
-  - "*.sublime-workspace"
-  - "*.sublime-project"
+  - "**/README.md"
   - "*.sh"
+  - "*.vscode"
 
 # prose.io config
 prose:
-  rooturl: '_posts'
-  media: 'img'
+  rooturl: "_posts"
+  media: "img"
   ignore:
     - 404.html
     - LICENSE
