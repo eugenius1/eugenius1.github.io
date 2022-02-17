@@ -170,3 +170,21 @@ TODO: this gap
 ## [A WARNING To All Investors](https://youtu.be/zs8qHvATlss)
 
 - Stick to your strategy
+
+## [You’re Being Tricked Into Losing Money](https://youtu.be/bZmcJURRlfU)
+
+- Survivorship bias
+- Risk vs return: clarified
+
+## [Investing In 2022 - My Plan](https://youtu.be/JicezQG_-us)
+
+- The weighing machine matters (vs voting machine)
+- Don't chase hype
+- Ignore predictions of doom & gloom
+- Keep investing
+
+## [2022 Market Outlook (WHAT LIES AHEAD)](https://youtu.be/jJYiN2WNJeo)
+
+- Why is the crash happening? Monetary policy
+- How bad will it get? Depends on the Fed's actions
+- What should you do? Don't sell; keep buying
