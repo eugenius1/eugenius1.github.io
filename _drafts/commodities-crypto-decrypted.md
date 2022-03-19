@@ -70,7 +70,7 @@ The idea here is that the price of basic goods needed for daily life tend to mov
 
 Let's see what commodities are available on Trading212:
 
-![Searching for commodity funds in Trading212 app.](/raw/img/blog/2021/investing/trading212-search-commodity-funds.jpg){:.height-fits}
+![Searching for commodity funds in Trading212 app.](/raw/img/blog/2022/investing/commodities/trading212-search-commodity-funds.jpg){:.height-fits}
 [Trading212 app](https://www.trading212.com/invite/FMqHiTlg)
 {:.small}
 {:.text-center}
@@ -107,13 +107,13 @@ TODO: physical vs futures
 Let's take these commodity types and see how they've performed historically.
 Below is how they've performed in percentage terms from 2008 to 2021.
 I've include gold, a classic commodity, as well as S&P 500 Index (SPX), a common reference of the stock market.
-Prices of goods in the US inflated by around [28.5%](https://www.usinflationcalculator.com/) from 2008 to 2021.
+Prices of goods in the United States inflated by around [28.5%](https://www.usinflationcalculator.com/) from 2008 to 2021.
 
 <div class="alert alert-info" role="alert">
 <i class="fa fa-info-circle" aria-hidden="true"></i> <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
 </div>
 
-![Performance of different commodity types 2008-2021: SPX S&P 500, DH2O Water, VZLE Precious Metals, CARB Carbon, AIGI Industrial Metals, AIGA Agriculture, DJP Commodity Index, AIGL Livestock, AIGO Petroleum, AIGE fossil fuel energy](/raw/img/blog/2021/investing/commodities/commodities-2008-2021.png)
+![Performance of different commodity types 2008-2021: SPX S&P 500, DH2O Water, VZLE Precious Metals, CARB Carbon, AIGI Industrial Metals, AIGA Agriculture, DJP Commodity Index, AIGL Livestock, AIGO Petroleum, AIGE fossil fuel energy](/raw/img/blog/2022/investing/commodities/commodities-2008-2021.png)
 {:.small}
 {:.text-center}
 
@@ -149,7 +149,7 @@ DJP, a commodity index, has also lost significant value and checking today's com
 
 Now let's see the 4 precious metals since 1997 (oldest data I could get for palladium & platinum):
 
-![Performance of the 4 precious metals 1997-2021: gold, silver, palladium, platinum](/raw/img/blog/2021/investing/commodities/precious-metals-1997-2021.png)
+![Performance of the 4 precious metals 1997-2021: gold, silver, palladium, platinum](/raw/img/blog/2022/investing/commodities/precious-metals-1997-2021.png)
 {:.small}
 {:.text-center}
 
@@ -172,7 +172,7 @@ From this time perspective (24 years), 3 out of the 4 precious metals have outpe
 Gold seems to be the least volatile while delivering the second best performance after palladium.
 
 <!-- gold's cycles through modern history, maybe vs silver.
-![TODO](/raw/img/blog/2021/investing/commodities/gold-silver-1972-2021.png)
+![TODO](/raw/img/blog/2022/investing/commodities/gold-silver-1972-2021.png)
 {:.small}
 {:.text-center} -->
 
@@ -226,7 +226,7 @@ Economics professor [Dr. Saifedean Ammous](https://books.google.fr/books/about/T
 A former institutional investor with the pseudonym PlanB wrote [an article](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) including the table below with the 4 precious metals and their stock-to-flow ratios:
 
 <!-- TODO: convert to text -->
-![2019 stock-to-flow data of the 4 precious metals: gold, silver, palladium, platinum](/raw/img/blog/2021/investing/commodities/precious-metals-stock-to-flow.png)
+![2019 stock-to-flow data of the 4 precious metals: gold, silver, palladium, platinum](/raw/img/blog/2022/investing/commodities/precious-metals-stock-to-flow.png)
 {:.small}
 {:.text-center}
 
@@ -313,7 +313,7 @@ Bitcoin was the first to solve the double-spend problem in a decentralised (peer
 This is simply a database, or you could think of it as a notebook.
 With Bitcoin, a blockchain/database is used to maintain accounting of all existing bitcoins (the currency unit) and all transactions.
 Transactions are not added one-by-one but are collectively added as part of a block (page).
-Unlike most databases, a blockchain can only be added to and existing data cannot be changed (**immutable**).
+Unlike most databases, a blockchain can only be added to and existing data cannot be changed (**immutability**).
 This is because each block of the chain (or page of the notebook) has a cryptographic (mathematical) snapshot&mdash;a **hash**&mdash;of the previous block (page).
 To correctly change an old block, you'd have to also update all the blocks between it and the latest one.
 
@@ -333,7 +333,7 @@ A typical Bitcoin block holds roughly [2,000 transactions](https://www.blockchai
 The difficulty of creating the mathematical signature is dynamically adjusted by the Bitcoin protocol about every 2 weeks such that it should take an average of **10 minutes** to mine a new block.
 
 Mining makes Bitcoin use **a lot of electricity** but also makes it **increasingly more secure**.
-Mining forms part of [**Proof-of-work (PoW)**](https://academy.binance.com/en/articles/proof-of-work-explained),
+Mining forms part of [**Proof-of-work (PoW)**](https://academy.binance.com/en/articles/proof-of-work-explained) consensus algorithm,
 a way for the independent nodes to agree on what the **truth** is.
 Each valid block in the chain has an energy cost behind it due to the difficulty of the mathematical signature of each block.
 The longer a chain is, the higher the total energy cost and the more likely it is to be accepted as the truth by nodes.
@@ -342,27 +342,12 @@ So if someone wanted to change an old block, they'd have to do **both** of these
 - use a lot of electricity to mine new blocks since and including the old block
 - [51% (majority) attack](https://academy.binance.com/en/glossary/51-percent-attack): convince other nodes to accept their modified chain as the truth by adding new pending transactions faster than other miners.
 
-**Energy use & carbon emissions**:
-Calculating the total energy use and emissions of Bitcoin is really complex, largely because it's a decentralised network so it could be anyone anywhere.
-There have been numerous articles
-
-[report by CoinShares](https://coinshares.com/research/bitcoin-mining-network-2022)
-[video summary](https://youtu.be/UCwLIE62iWg)
-
-- Less than a third of the carbon emitted by the **gold** industry.
-- Almost less than a third emitted by the **global banking** system.
-
-The network is becoming more efficient both in terms of electricity consumption and carbon emissions per hashing power.
-Furthermore, offsetting emissions by buying carbon credits would only cost around 0.5% per year at current Bitcoin price assuming the cost is shared among all Bitcoin holders.
-
 **Halving**:
 Miners are incentivised to mine as they get both a **reward for mining** a new block to the chain and **transaction fees** from the transactions added in the block.
 This reward started at 50 BTC per block and is halved about every 4 years.
 Bitcoin has a **maximum supply** of 210 million BTC so when all BTC will have been mined (around the year 2078) then there will be no more block rewards. <!-- TODO: link year -->
 Miners will only receive transaction fees with each new block.
 It is thought that transaction fees can be enough mining incentive assuming the price of one bitcoin will be significantly higher than today's.<!-- TODO: link or "I think" -->
-
-<!-- TODO: Energy consumption & environmental concerns-->
 
 So what is Bitcoin?
 
@@ -393,6 +378,64 @@ S2F:
 _The Bitcoin Standard_ book by S. Ammous
 
 [Review of S2F model for Bitcoin](https://youtu.be/jfjjWAmGks4)
+
+##### Energy use & greenhouse gas emissions
+
+Figuring out the total energy use and emissions of Bitcoin is **really complex**.
+This is largely because it's a decentralised network so it could be anyone anywhere, and collecting & aggregating all this data is hard.
+
+You may have seen headlines such as "[Bitcoin consumes 'more electricity than Argentina'](https://www.bbc.com/news/technology-56012952)"
+but they are not helpful as they don't put things into context.
+For example, Bitcoin still uses **less** electricity and has [less emissions](https://coinshares.com/research/bitcoin-mining-network-2022) than all the clothes dryers in the world.
+
+**What should we compare Bitcoin to?**
+In a way, it's trying to replace parts of the current banking system (notably the [settlement layer](https://www.investopedia.com/terms/s/settlement-bank.asp) and cross-border payments) and it can also be seen as a replacement for gold as a store of value.
+For context, [40%](http://oilprice.com/Metals/Gold/Gold-Mining-Boom-Increasing-Mercury-Pollution-Risk.html) of newly produced gold is used directly as an investment asset and 50% for jewelry.
+In May 2021, [Galaxy Digital](https://docsend.com/view/adwmdeeyfvqwecj2) estimated the annual energy consumption of bitcoin at 114 terawatt-hours per year, the majority of the banking system at 264 and gold at 241, as illustrated below:
+
+![Estimated Annual Energy Consumption (TWh/yr) of the banking system, gold & bitcoin](/raw/img/blog/2022/investing/crypto/energy-consumption-banking-gold-bitcoin.png)
+[&copy; Galaxy Digital](https://docsend.com/view/adwmdeeyfvqwecj2)
+{:.small}
+{:.text-center}
+
+To put the above figures into more context, Bitcoin's estimated energy consumption is **0.4%** of the global amount of generated electricity,
+and **0.07%** of the global energy supply.
+
+Bitcoin uses a lot of energy **by design** and not by flaw due to its Proof-of-Work consensus algorithm that involves mining.
+On the other hand, more modern cryptocurrencies today use very little energy due to alternative, newer consensus algorithms.
+However, the security of these consensus algorithms has not yet been proven to match that of PoW and so this topic is still considered ongoing research.
+University of Cambridge [notes](https://ccaf.io/cbeci/faq):
+
+> Other consensus mechanisms may appear less ‘wasteful’ at first sight but have their own downsides that may not always be immediately apparent.
+
+But high energy use doesn't mean that Bitcoin needs large greenhouse gas emissions to function.
+The greener that electricity generation becomes by turning away from fossil fuels,
+the greener that Bitcoin mining becomes.
+According to a [report by CoinShares](https://coinshares.com/research/bitcoin-mining-network-2022) ([summary video](https://youtu.be/UCwLIE62iWg)),
+as of December 2021, around 61% of the electricity used to mine Bitcoin comes from **fossil fuels** like coal (35%) & gas (24%).
+These figures are more an illustration of the electricity sources for where Bitcoin is being mined.
+The top 2 mining countries are currently the United States and Kazakhstan.
+
+![Bitcoin Mining: Energy Source Types: 61% fossil fuel, 28% renewable & 11% nuclear](/raw/img/blog/2022/investing/crypto/bitcoin-mining-energy-source-types.png){:style="width: min(100vw, 500px)"}
+
+In the meantime, CoinShares estimates the cost of **offsetting** Bitcoin's emissions by buying carbon credits to be **200 USD per bitcoin per year** if shared among all bitcoin holders.
+That's around **0.6% per year** at time of writing.
+
+[Cambridge Bitcoin Electricity Consumption Index (CBECI)](https://ccaf.io/cbeci/index)
+provides an ongoing daily estimate of Bitcoin's power usage with hypothetical minimum and maximum.
+The upper bound is significantly higher because when bitcoin's price goes higher it brings in miners with less efficient machines who would now become profitable.
+If you'd like to explore more this topic,
+I recommend browsing through [CBECI's FAQ page](https://ccaf.io/cbeci/faq) which answers questions like "Does Bitcoin mining incentivise the deployment of renewable power generation?"
+
+<!-- TODO add CBECI chart -->
+
+<!-- 41 Mt in 2021.
+gold: 100-145 Mt of CO2 emissions annually.
+global banking system: 130 Mt. -->
+
+<!-- **Future**:
+The cheapest electricity sources (eg hydro) tend to be far from largest demand (cities) and electricity is not so easily transported.
+Mining equipment installed next -->
 
 #### 2nd gen: Smart contracts
 
@@ -455,6 +498,10 @@ Issuance of new ETH will reduce from 4.5% to 0.5-0.8% an together with EIP-1559 
 
 [Eth deflationary after PoS](https://ultrasound.money/)
 
+Energy:
+
+[Power consumption per transaction for Fantom, Visa, Ethereum & Bitcoin](https://fantom.foundation/blog/fantom-the-eco-friendly-blockchain/#:~:text=Put%20another%20way%2C%20assuming%20current,which%20is%20around%2010%2C700%20kWh.)
+
 [ETH stabilising at 20k](https://youtu.be/LiofrQwmLTI) after a possible "sell the news" drop.
 
 ---
@@ -478,7 +525,7 @@ News:
 
 #### Stablecoin
 
-#### Non Fungible Token (NFT)
+#### Non-Fungible Token (NFT)
 
 [Gemini](https://www.gemini.com/cryptopedia/nft-non-fungible-token-crypto-collectibles)
 
@@ -494,6 +541,8 @@ provable & permanent
 
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
+
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">The NFT industry will grow tenfold yet most art NFT buyers will end up losing money. NFTs will prove to be fun or useful yet a very poor store of value.<br><br>Tell you why. Creating NFTs is very easy and cheap. Supply will greatly exceed demand.</p>&mdash; Eugene NG (@Eugg_NG) <a href="https://twitter.com/Eugg_NG/status/1495482148404486154?ref_src=twsrc%5Etfw">February 20, 2022</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [NFT Trading Strategies](https://youtu.be/pF1I1AuRoTk).
 Whitelist > secondary market > newly minted.
@@ -634,6 +683,7 @@ Borrowing & lending:
 - Enjin [Ethereum]: gaming & NFTs
 - Chiliz (CHZ): fan tokens of sport teams
 - Flow (FLOW) [Binance Chain, Ethereum]: sport fan tokens & more (games & apps)
+- Immutable X (IMX) [Ethereum]: Ethereum scaling solution focused on NFTS. Not in my portfolio at time of writing at least.
 
 <hr>
 
@@ -662,6 +712,8 @@ As mentioned earlier, **water** is perhaps the most common basic good and whose 
 ETFs and other funds usually have costs consumed by the provider managing the fund to cover their expenses.
 This is called the [Total Expense Ratio (TER)](https://www.investopedia.com/terms/t/ter.asp).
 iShares Global Water ETF (DH2O/IH2O) is an index ETF and so has a low TER at [0.65%](https://www.ishares.com/uk/individual/en/products/251913/ishares-global-water-ucits-etf).
+
+TODO: gold and bitcoin
 
 [Gore Street **Energy Storage** Fund plc (GSF)](https://www.gsenergystoragefund.com/content/about/fund)
 is a company with a fund that invests in a diversiﬁed portfolio of energy storage projects primarily located in the UK & Ireland.

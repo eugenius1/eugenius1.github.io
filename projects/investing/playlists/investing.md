@@ -188,3 +188,15 @@ TODO: this gap
 - Why is the crash happening? Monetary policy
 - How bad will it get? Depends on the Fed's actions
 - What should you do? Don't sell; keep buying
+
+## [How The Economic Machine Works by Ray Dalio](https://youtu.be/PHe0bXAIuk0)
+
+- Short & long-term debt cycles and productivity growth
+- 3 rules of thumb:
+  1. Don't have debt rise faster than income
+  2. Don't have income rise faster than productivity
+  3. Do all that you can to raise productivity
+
+## [I'm Not Worried About The Recession, Here's Why](https://youtu.be/nFUwYUk7jZc)
+
+- Discipline
