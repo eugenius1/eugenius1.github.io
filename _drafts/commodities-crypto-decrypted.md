@@ -110,7 +110,8 @@ I've include gold, a classic commodity, as well as S&P 500 Index (SPX), a common
 Prices of goods in the United States inflated by around [28.5%](https://www.usinflationcalculator.com/) from 2008 to 2021.
 
 <div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i> <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
+<i class="fa fa-info-circle" aria-hidden="true"></i>
+<strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
 </div>
 
 ![Performance of different commodity types 2008-2021: SPX S&P 500, DH2O Water, VZLE Precious Metals, CARB Carbon, AIGI Industrial Metals, AIGA Agriculture, DJP Commodity Index, AIGL Livestock, AIGO Petroleum, AIGE fossil fuel energy](/raw/img/blog/2022/investing/commodities/commodities-2008-2021.png)
@@ -179,7 +180,8 @@ Gold seems to be the least volatile while delivering the second best performance
 ### Types of money
 
 <div class="alert alert-info" role="alert">
-The concepts here help to better understand cryptocurrency.
+<i class="fa fa-info-circle" aria-hidden="true"></i>
+The concepts here will help to better understand cryptocurrency.
 </div>
 
 [**Gold standard**](https://www.investopedia.com/ask/answers/09/gold-standard.asp):
@@ -345,9 +347,10 @@ So if someone wanted to change an old block, they'd have to do **both** of these
 **Halving**:
 Miners are incentivised to mine as they get both a **reward for mining** a new block to the chain and **transaction fees** from the transactions added in the block.
 This reward started at 50 BTC per block and is halved about every 4 years.
-Bitcoin has a **maximum supply** of 210 million BTC so when all BTC will have been mined (around the year 2078) then there will be no more block rewards. <!-- TODO: link year -->
+Bitcoin has a **maximum supply** of 210 million BTC so when all BTC will have been mined (around the year [2140](https://www.investopedia.com/bitcoin-halving-4843769)) then there will be no more block rewards.
 Miners will only receive transaction fees with each new block.
-It is thought that transaction fees can be enough mining incentive assuming the price of one bitcoin will be significantly higher than today's.<!-- TODO: link or "I think" -->
+As we progress to this point,
+it is expected that the total transaction fees per block will increase due to increasing transaction volume as well as increasing price per bitcoin.
 
 So what is Bitcoin?
 
@@ -359,25 +362,13 @@ So what is Bitcoin?
 
 All of the above. "Bitcoin" can refer to any of the above related concepts.
 
-Bitcoin as a **payment system** is the **most secure** in the world. <!-- TODO: link & why -->
-The benefits that Bitcoin payment system brings:
+Bitcoin as a **payment system** is the **most secure** in the world due to the following benefits:
 
 - **Decentralised** &mdash; no single point of failure.
 - **Immutable** &mdash; history on the blockchain is incredibly hard to be changed and it remains there forever, existing as a copy in each node.
 - **Resistant to censorship** &mdash; control of Bitcoin is not with any single entity but with everyone collectively so no government or hacker can actually stop Bitcoin.
-- **Trustless** &mdash; no central authority to trust, e.g. bank; trust is put on cryptography & computer software.
+- **Trustless** &mdash; no central authority to trust, e.g. bank; trust is put on cryptography (maths) & computer software.
 - **Permissionless** &mdash; no one can stop you from transacting unlike with banks.
-
-##### Bitcoin as digital gold
-
-PlanB presented the [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25).
-
-Ammous estimated that Bitcoin's stock-to-flow ratio will overtake that of gold around 2022.
-
-S2F:
-_The Bitcoin Standard_ book by S. Ammous
-
-[Review of S2F model for Bitcoin](https://youtu.be/jfjjWAmGks4)
 
 ##### Energy use & greenhouse gas emissions
 
@@ -412,7 +403,7 @@ But high energy use doesn't mean that Bitcoin needs large greenhouse gas emissio
 The greener that electricity generation becomes by turning away from fossil fuels,
 the greener that Bitcoin mining becomes.
 According to a [report by CoinShares](https://coinshares.com/research/bitcoin-mining-network-2022) ([summary video](https://youtu.be/UCwLIE62iWg)),
-as of December 2021, around 61% of the electricity used to mine Bitcoin comes from **fossil fuels** like coal (35%) & gas (24%).
+as of December 2021, around 61% of the electricity used to mine Bitcoin came from **fossil fuels** like coal (35%) & gas (24%).
 These figures are more an illustration of the electricity sources for where Bitcoin is being mined.
 The top 2 mining countries are currently the United States and Kazakhstan.
 
@@ -421,21 +412,61 @@ The top 2 mining countries are currently the United States and Kazakhstan.
 In the meantime, CoinShares estimates the cost of **offsetting** Bitcoin's emissions by buying carbon credits to be **200 USD per bitcoin per year** if shared among all bitcoin holders.
 That's around **0.6% per year** at time of writing.
 
-[Cambridge Bitcoin Electricity Consumption Index (CBECI)](https://ccaf.io/cbeci/index)
-provides an ongoing daily estimate of Bitcoin's power usage with hypothetical minimum and maximum.
-The upper bound is significantly higher because when bitcoin's price goes higher it brings in miners with less efficient machines who would now become profitable.
+The chart below shows [Cambridge Bitcoin Electricity Consumption Index (CBECI)](https://ccaf.io/cbeci/index),
+an ongoing daily estimate of Bitcoin's power usage with hypothetical minimum and maximum.
+The upper bound can be significantly higher because when bitcoin's price goes higher it brings in miners with less efficient machines who would now become profitable.
 If you'd like to explore more this topic,
 I recommend browsing through [CBECI's FAQ page](https://ccaf.io/cbeci/faq) which answers questions like "Does Bitcoin mining incentivise the deployment of renewable power generation?"
 
-<!-- TODO add CBECI chart -->
-
-<!-- 41 Mt in 2021.
-gold: 100-145 Mt of CO2 emissions annually.
-global banking system: 130 Mt. -->
+![cbeci-historical-bitcoin-network-power-demand](/raw/img/blog/2022/investing/crypto/cbeci-historical-bitcoin-network-power-demand.png)
 
 <!-- **Future**:
 The cheapest electricity sources (eg hydro) tend to be far from largest demand (cities) and electricity is not so easily transported.
 Mining equipment installed next -->
+
+##### Fair value
+
+> **"All models are wrong, but some are useful."**  
+> — George Box (one of the great statistical minds of the 20th century)
+
+As an investor, one of the biggest questions is "_what is the fair value of one bitcoin_"?
+Well, it's not as clear as stocks which have been around for centuries.
+Today we have many well-studied ways to value a company and say what the fair value of its stocks should be.
+But Bitcoin is not a business&mdash;it's a new asset class&mdash;and has about only one decade of price history.
+
+**Bitcoin as digital gold?**
+Earlier I discussed the [Stock-to-Flow of precious metals](#stock-to-flow) and explained it as the reason gold has held its value so well over time.
+PlanB continued this idea with the now well-known [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) which links Stock-to-Flow to market cap, thus giving a way of pricing (giving a fair value to) commodities and Bitcoin.
+
+Criticism:
+
+- Nico Cordeiro (Chief Investment Officer at a digital-asset management firm):  
+[Why Bitcoin’s Stock-to-Flow Model is Fatally Flawed][Cordeiro]
+- Francis Tapon: [8 Flaws in Bitcoin's Stock-to-Flow Model Will Doom It][Tapon]
+- Daniel Ameli: [Limitations of the Stock to Flow model][Ameli]
+
+[Cordeiro]: https://strixleviathan.com/blog/2020/6/29/a-chameleon-model-why-bitcoins-stock-to-flow-model-is-fatally-flawed
+[Tapon]: https://francistapon.com/Work/WanderLearn-Podcast/8-Flaws-in-Bitcoin-s-Stock-to-Flow-Model-Will-Doom-It
+[Ameli]: https://d-ameli.medium.com/limitations-of-the-stock-to-flow-model-34e7cae0f37
+
+[Tapon][Tapon] describes the model as "projecting a baby's height in 20 years based on his first 5 years of growth."
+
+Rainbow chart.
+There's also an [Ethereum verison](https://www.blockchaincenter.net/ethereum-rainbow-chart/).
+HODL is between $55k and $75k.
+
+![Bitcoin rainbow price chart](/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-rainbow-chart.png)
+[&copy; BlockchainCenter.net](https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/)
+{:.small}
+{:.text-center}
+
+> The Rainbow Chart is meant to be be a **fun** way of looking at long term price movements, disregarding the daily volatility “noise”. The color bands follow a logarithmic regression (introduced by Bitcointalk User trolololo in 2014), but are otherwise **completely arbitrary** and **without any scientific basis**. We never change them though. In other words: **It will only be correct until one day it isn’t anymore.**
+
+In 10-20 years, which of these do you think Bitcoin's price will be?
+
+- Zero
+- About the same amount as today
+- A lot more than today
 
 #### 2nd gen: Smart contracts
 
@@ -500,6 +531,8 @@ Issuance of new ETH will reduce from 4.5% to 0.5-0.8% an together with EIP-1559 
 
 Energy:
 
+[Relative energy consumption: Bitcoin vs Eth PoW vs Eth PoS](https://blog.ethereum.org/2021/05/18/country-power-no-more/)
+
 [Power consumption per transaction for Fantom, Visa, Ethereum & Bitcoin](https://fantom.foundation/blog/fantom-the-eco-friendly-blockchain/#:~:text=Put%20another%20way%2C%20assuming%20current,which%20is%20around%2010%2C700%20kWh.)
 
 [ETH stabilising at 20k](https://youtu.be/LiofrQwmLTI) after a possible "sell the news" drop.
@@ -542,7 +575,7 @@ provable & permanent
 - Decentraland (MANA) hosted on Ethereum via Polygon (MATIC) scaling solution.
 - Axie Infinity (AXS) hosted on Ethereum via their own layer-2 sidechain for scalability.
 
-<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">The NFT industry will grow tenfold yet most art NFT buyers will end up losing money. NFTs will prove to be fun or useful yet a very poor store of value.<br><br>Tell you why. Creating NFTs is very easy and cheap. Supply will greatly exceed demand.</p>&mdash; Eugene NG (@Eugg_NG) <a href="https://twitter.com/Eugg_NG/status/1495482148404486154?ref_src=twsrc%5Etfw">February 20, 2022</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The NFT industry will grow tenfold yet most art NFT buyers will end up losing money. NFTs will prove to be fun or useful yet a very poor store of value.<br><br>Tell you why. Creating NFTs is very easy and cheap. Supply will greatly exceed demand.</p>&mdash; Alex Krüger (@krugermacro) <a href="https://twitter.com/krugermacro/status/1495292714719449091?ref_src=twsrc%5Etfw">February 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [NFT Trading Strategies](https://youtu.be/pF1I1AuRoTk).
 Whitelist > secondary market > newly minted.
@@ -576,6 +609,8 @@ Binance with 2FA.
 [allocation](https://academy.binance.com/en/articles/asset-allocation-and-diversification-explained)
 
 #### Passive route
+
+[Crypto Top 10 Hall of Fame](https://www.blockchaincenter.net/crypto-top-10-hall-of-fame/)
 
 #### Active route
 
@@ -704,7 +739,14 @@ rich list
 
 ### Managing the portfolio
 
-#### 3commas
+#### 3Commas
+
+[3Commas]: https://3commas.io/?c=tc378694
+
+![Rebalancing a portfolio in 3Commas](/raw/img/blog/2022/investing/crypto/3commas-rebalancing-portfolio.png)
+[3Commas][3Commas]
+{:.small}
+{:.text-center}
 
 ## My commodity choices
 
