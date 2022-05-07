@@ -424,50 +424,6 @@ I recommend browsing through [CBECI's FAQ page](https://ccaf.io/cbeci/faq) which
 The cheapest electricity sources (eg hydro) tend to be far from largest demand (cities) and electricity is not so easily transported.
 Mining equipment installed next -->
 
-##### Fair value
-
-> **"All models are wrong, but some are useful."**  
-> — George Box (one of the great statistical minds of the 20th century)
-
-As an investor, one of the biggest questions is "_what is the fair value of one bitcoin_"?
-Well, it's not as clear as stocks which have been around for centuries.
-Today we have many well-studied ways to value a company and say what the fair value of its stocks should be.
-But Bitcoin is not a business&mdash;it's a new asset class&mdash;and has about only one decade of price history.
-
-**Bitcoin as digital gold?**
-Earlier I discussed the [Stock-to-Flow of precious metals](#stock-to-flow) and explained it as the reason gold has held its value so well over time.
-PlanB continued this idea with the now well-known [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) which links Stock-to-Flow to market cap, thus giving a way of pricing (giving a fair value to) commodities and Bitcoin.
-
-Criticism:
-
-- Nico Cordeiro (Chief Investment Officer at a digital-asset management firm):  
-[Why Bitcoin’s Stock-to-Flow Model is Fatally Flawed][Cordeiro]
-- Francis Tapon: [8 Flaws in Bitcoin's Stock-to-Flow Model Will Doom It][Tapon]
-- Daniel Ameli: [Limitations of the Stock to Flow model][Ameli]
-
-[Cordeiro]: https://strixleviathan.com/blog/2020/6/29/a-chameleon-model-why-bitcoins-stock-to-flow-model-is-fatally-flawed
-[Tapon]: https://francistapon.com/Work/WanderLearn-Podcast/8-Flaws-in-Bitcoin-s-Stock-to-Flow-Model-Will-Doom-It
-[Ameli]: https://d-ameli.medium.com/limitations-of-the-stock-to-flow-model-34e7cae0f37
-
-[Tapon][Tapon] describes the model as "projecting a baby's height in 20 years based on his first 5 years of growth."
-
-Rainbow chart.
-There's also an [Ethereum verison](https://www.blockchaincenter.net/ethereum-rainbow-chart/).
-HODL is between $55k and $75k.
-
-![Bitcoin rainbow price chart](/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-rainbow-chart.png)
-[&copy; BlockchainCenter.net](https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/)
-{:.small}
-{:.text-center}
-
-> The Rainbow Chart is meant to be be a **fun** way of looking at long term price movements, disregarding the daily volatility “noise”. The color bands follow a logarithmic regression (introduced by Bitcointalk User trolololo in 2014), but are otherwise **completely arbitrary** and **without any scientific basis**. We never change them though. In other words: **It will only be correct until one day it isn’t anymore.**
-
-In 10-20 years, which of these do you think Bitcoin's price will be?
-
-- Zero
-- About the same amount as today
-- A lot more than today
-
 #### 2nd gen: Smart contracts
 
 Economics and relatively slow transaction speed & throughput
@@ -553,6 +509,92 @@ News:
 - [CoinDesk](https://www.coindesk.com/)
 - [Cointelegraph](https://cointelegraph.com/)
 - [Decrypt](https://decrypt.co/)
+
+### Fair value
+
+> **"All models are wrong, but some are useful."**  
+> — George Box (one of the great statistical minds of the 20th century)
+
+As an investor, one of the biggest questions is "_what is the fair value of one bitcoin?_"
+Well, it's not as clear as stocks which have been around for centuries.
+Today we have many well-studied ways to value a company and say what the fair value of its stocks should be.
+But Bitcoin is not a business&mdash;it's a **new asset class**&mdash;and has around only one decade of price history.
+
+**Bitcoin as digital gold?**
+Earlier I discussed the [Stock-to-Flow of precious metals](#stock-to-flow) and explained it as the reason gold has held its value so well over time.
+PlanB continued this idea with the now well-known [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) which links Stock-to-Flow to market cap, thus giving a way of pricing (giving a fair value to) commodities and Bitcoin.
+
+Because Bitcoin's flow (mining rate) is well defined and predictable, it's stock-to-flow ratio can be predicted.
+The pricing model gives the red line below which moves up by a multiplicative factor of roughly 10 after every Bitcoin halving (vertical dotted line).
+Published in March 2019, the model has so far reasonably tracked the real price&mdash;or at least as seen on a [logarithmic scale](https://www.mathsisfun.com/definitions/logarithmic-scale.html).
+The model price at time of writing is around **$71,000**.
+
+![Bitcoin Stock-to-Flow Model](/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-stock-to-flow-model.png)
+[&copy; LookIntoBitcoin.com](https://www.lookintobitcoin.com/charts/stock-to-flow-model/)
+{:.small}
+{:.text-center}
+
+I used to be a strong follower of PlanB's Stock-to-Flow model but after going through its **criticism** (below) I now take it with skepticism for its future predictions.
+[Tapon][Tapon] describes the model as "projecting a baby's height in 20 years based on his first 5 years of growth."
+As Bitcoin grows in value, it becomes harder to keep growing at the same pace as in the past.
+**Growth has to slow down.**
+
+- [Why Bitcoin’s Stock-to-Flow Model is Fatally Flawed][Cordeiro]&mdash;Nico Cordeiro (Chief Investment Officer at a digital-asset management firm)
+- [8 Flaws in Bitcoin's Stock-to-Flow Model Will Doom It][Tapon]&mdash;Francis Tapon
+- [Limitations of the Stock to Flow model][Ameli]&mdash;Daniel Ameli
+
+[Cordeiro]: https://strixleviathan.com/blog/2020/6/29/a-chameleon-model-why-bitcoins-stock-to-flow-model-is-fatally-flawed
+[Tapon]: https://francistapon.com/Work/WanderLearn-Podcast/8-Flaws-in-Bitcoin-s-Stock-to-Flow-Model-Will-Doom-It
+[Ameli]: https://d-ameli.medium.com/limitations-of-the-stock-to-flow-model-34e7cae0f37
+
+There's a model called the [Rainbow Chart][btc_rainbow].
+It's meant to be fun and not serious but I like the logarithmic price bands&mdash;growth slows down with time.
+The fair value price band is named "_[HODL][hodl]!_" (internet speak for "_hold, don't sell_") and is currently **between $55,000 and $75,000**.
+Everyday the price bands slowly move up.
+There's also an [Ethereum version](https://www.blockchaincenter.net/ethereum-rainbow-chart/).
+
+[hodl]: https://www.investopedia.com/terms/h/hodl.asp
+[btc_rainbow]: https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/
+
+![Bitcoin rainbow price chart](/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-rainbow-chart.png)
+[&copy; BlockchainCenter.net][btc_rainbow]
+{:.small}
+{:.text-center}
+
+> The Rainbow Chart is meant to be be a **fun** way of looking at long term price movements, disregarding the daily volatility “noise”. The color bands follow a logarithmic regression (introduced by Bitcointalk User trolololo in 2014), but are otherwise **completely arbitrary** and **without any scientific basis**. We never change them though. In other words: **It will only be correct until one day it isn’t anymore.**
+
+To emphasise the point above, all models will only be "correct" until one day they aren't anymore.
+The key thing is to find the general **usefulness** in them, **not accuracy**.
+With the rainbow chart, you can roughly see the top and bottom of the 2 previous market cycles.
+I've recently found 2 indicators that aim to predict the cycle [top][cycle_top] & [bottom][cycle_bottom]:
+
+[cycle_top]: https://www.lookintobitcoin.com/charts/pi-cycle-top-indicator/
+[cycle_bottom]: https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/
+
+<div class="row">
+  <div class="col-xs-6">
+    <a href="https://www.lookintobitcoin.com/charts/pi-cycle-top-indicator/">
+      <figure>
+        <img src="/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-pi-cycle-top-indicator.png" alt="Bitcoin Pi Cycle Top Indicator">
+        <figcaption class="small text-center">&copy; LookIntoBitcoin.com</figcaption>
+      </figure>
+    </a>
+  </div>
+  <div class="col-xs-6">
+    <a href="https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/">
+      <figure>
+        <img src="/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-200-week-ma-heatmap.png" alt="Bitcoin 200-Week Moving Average Heatmap">
+        <figcaption class="small text-center">&copy; LookIntoBitcoin.com</figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+
+In 10-20 years, which of these do you think Bitcoin's price will be?
+
+- Zero
+- About the same amount as today
+- A lot more than today
 
 ### Notable use cases
 
