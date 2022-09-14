@@ -516,6 +516,7 @@ News:
 > — George Box (one of the great statistical minds of the 20th century)
 
 As an investor, one of the biggest questions is "_what is the fair value of one bitcoin?_"
+(or some other crypto but today most have high correlation to Bitcoin).
 Well, it's not as clear as stocks which have been around for centuries.
 Today we have many well-studied ways to value a company and say what the fair value of its stocks should be.
 But Bitcoin is not a business&mdash;it's a **new asset class**&mdash;and has around only one decade of price history.
@@ -525,7 +526,7 @@ Earlier I discussed the [Stock-to-Flow of precious metals](#stock-to-flow) and e
 PlanB continued this idea with the now well-known [Stock-to-Flow model](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) which links Stock-to-Flow to market cap, thus giving a way of pricing (giving a fair value to) commodities and Bitcoin.
 
 Because Bitcoin's flow (mining rate) is well defined and predictable, it's stock-to-flow ratio can be predicted.
-The pricing model gives the red line below which moves up by a multiplicative factor of roughly 10 after every Bitcoin halving (vertical dotted line).
+The pricing model gives the red line below which moves up by a multiplicative factor of roughly 10 after every Bitcoin halving (vertical dashed lines).
 Published in March 2019, the model has so far reasonably tracked the real price&mdash;or at least as seen on a [logarithmic scale](https://www.mathsisfun.com/definitions/logarithmic-scale.html).
 The model price at time of writing is around **$71,000**.
 
@@ -590,11 +591,13 @@ I've recently found 2 indicators that aim to predict the cycle [top][cycle_top] 
   </div>
 </div>
 
-In 10-20 years, which of these do you think Bitcoin's price will be?
+However, it's easy to get caught up in trying to time the market.
+What should matter more to a long-term investor is to ask:
+_in 10 years or so which of these do I think the price will be?_
 
-- Zero
-- About the same amount as today
-- A lot more than today
+- **Zero**/worthless
+- About the **same** price as today
+- A lot **more** than today
 
 ### Notable use cases
 
