@@ -410,7 +410,7 @@ function updateDisplayedListInfo(length, listSizeEl, timeEstimateEl) {
 
 function onSubmitUsername(event) {
   let username = usernameForm.username.value;
-  let link = `https://www.instagram.com/${username}/?__a=1`;
+  let link = `https://www.instagram.com/${username}/?__a=1&__d=dis`;
 
   window.open(link, '_blank');
   window.focus();

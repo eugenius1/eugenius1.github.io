@@ -46,7 +46,7 @@ async function getLists() {
   try {
     baseInfo = JSON.parse(document.getElementsByTagName('body')[0].innerText);
   } catch (error) {
-    console.error('You may not be on the right page, normally it should be like "https://www.instagram.com/username/?__a=1"', error);
+    console.error('You may not be on the right page, normally it should be like "https://www.instagram.com/username/?__a=1&__d=dis"', error);
     return;
   }
 
@@ -58,7 +58,7 @@ async function getLists() {
     { name: 'followers', user_edge: 'edge_followed_by', query_hash: 'c76146de99bb02f6415203be841dd25a', total_count: followersCount }
   ];
   configs = limitConfigs(configs, pageLimit);
-  
+
   let pageCount = 1;
   for (let i = 0; (i < configs.length) && !doAbort; ++i) {
     let config = configs[i], after = null, hasNext = true, thisList = [];
@@ -136,7 +136,7 @@ async function getMoreDetails(startingIndex = 0, interval = 36000) {
       await timer(interval);
     }
     try {
-      let response = await fetch(`https://www.instagram.com/${username}/?__a=1`);
+      let response = await fetch(`https://www.instagram.com/${username}/?__a=1&__d=dis`);
       if (!response.ok) {
         console.warn(`Failed at index ${i.toLocaleString()} (${username}). HTTP status ${response.status}: ${response.statusText}.`);
         if (response.status === HttpStatus.TOO_MANY_REQUESTS) {

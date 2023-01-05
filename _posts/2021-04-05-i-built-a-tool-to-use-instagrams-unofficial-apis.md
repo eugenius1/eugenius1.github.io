@@ -68,7 +68,7 @@ I started with a manual proof of concept that had to accomplish all of these act
 `https://www.instagram.com/graphql/query/?query_hash=...`
 
 2. Get relevant details about some of these accounts (in a loop)
-`https://www.instagram.com/${username}/?__a=1`
+`https://www.instagram.com/${username}/?__a=1&__d=dis`
 
 The first part was fine, after all, it was the aim of the StackOverflow answers.
 The loop of the second part started running okay and then I run into the HTTP error `429 Too Many Requests`.
@@ -83,7 +83,7 @@ I was logged-in to my only Instagram account so I risked getting it suspended.
 I hit rate limits about 5 times and I don't know at what point Instagram suspends or if they do.
 
 From my testing in November 2020,
-the API for an account's (visible) details (`/${username}/?__a=1`) had a limit of 25 requests per 15 minutes so I added a 36-second **delay** inside the for-loop (15&times;60/25 = 36).
+the API for an account's (visible) details (`/${username}/?__a=1&__d=dis`) had a limit of 25 requests per 15 minutes so I added a 36-second **delay** inside the for-loop (15&times;60/25 = 36).
 One small but important caveat is that the logged in user should not browse instagram.com at the same time otherwise the rate limit could be reached.
 
 ### The tool
@@ -93,7 +93,7 @@ Because I wanted the tool to be 100% web client-side and without needing any ins
 automation software like [Selenium](https://www.selenium.dev/) were out of scope.
 So I envisioned a web page with the following steps:
 
-1. Type your username and open the starting API link (`/${username}/?__a=1`)
+1. Type your username and open the starting API link (`/${username}/?__a=1&__d=dis`)
 2. Copy JavaScript code (with all functions) into the instagram.com console
 3. Run function to get all followers and followings
 4. Paste data into my web page
@@ -131,7 +131,7 @@ async function getLists() {
   try {
     baseInfo = JSON.parse(document.getElementsByTagName('body')[0].innerText);
   } catch (error) {
-    console.error('You may not be on the right page, normally it should be like "https://www.instagram.com/username/?__a=1"', error);
+    console.error('You may not be on the right page, normally it should be like "https://www.instagram.com/username/?__a=1&__d=dis"', error);
     return;
   }
   // ...
@@ -194,3 +194,8 @@ In building this tool, I also empowered others to manage the accounts they follo
 I hope this article helps you to understand the [source code](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists)
 and maybe even empower you to build other tools.
 I am always open to feedback.
+
+---
+
+Edit (5 Jan 2023): Replaced `/${username}/?__a=1` with `/${username}/?__a=1&__d=dis` from this 
+[StackOverflow answer](https://stackoverflow.com/a/73555232).
