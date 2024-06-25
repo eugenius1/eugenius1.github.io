@@ -8,41 +8,47 @@ comments: true
 
 Some of my public projects:
 
-* This personal website/tech blog: [how I made it](/blog/how-i-made-this-website/ "How I made this website!")  
-`#Jekyll`
+* [Stock Scrape](https://github.com/eugenius1/stock-scrape): Web scraper for [SimplyWall.St](https://simplywall.st/) figures  
+`Python` `BeautifulSoup` `Pandas`
+
+* [ScopedStorage](https://github.com/eugenius1/scoped-storage): localStorage & sessionStorage per page  
+`JavaScript`
 
 * [Instagram Lists](/projects/instagram-lists): Detailed, sortable lists of your Instagram followings and followers  
-`#JavaScript` `#hack` `#unofficialAPIs`
+`JavaScript` `hack` `unofficial APIs`
+
+* This personal website/tech blog: [how I made it](/blog/how-i-made-this-website/ "How I made this website!")  
+`Jekyll`
 
 * [Social Login Demos](/social-login-demos/)  
-`#JavaScript` `#webAPIs`
+`JavaScript` `web APIs`
 
-## University Projects
+ University Projects
 
 * My [MEng Final-Year Project](/fyp)  
-`#Python` `#HighLevelSynthesis`
+`Python` `High-Level Synthesis`
 
 * [Crypto-Key](https://github.com/eugenius1/esys-cw1 "EE3: Embedded Systems"): Random-number and random-password generator using a Geiger counter  
-`#embedded` `#microPython` `#webClient`
+`micro Python` `embedded` `web client`
 
 * [Brushless DC Motor Controller](https://github.com/eugenius1/esys-cw2 "EE3: Embedded Systems")  
-`#mbed` `#threaded` `#RTOS`
+`C++` `mbed` `threaded` `RTOS`
 
 * [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing")  
-`#DigitalSignalProcessing` `#embedded` `#C`
+`C` `Digital Signal Processing` `embedded`
 
 * [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle")  
-`#hackathon` `#Qt` `#Arduino`
+`hackathon` `Qt` `Arduino`
 
 * [Udacity CS101](https://github.com/eugenius1/Udacity-CS101): Intro to Computer Science, includes a Gamer's network  
-`#Python`
+`Python`
 
 ## Contributions
 
 I have contributed to these awesome projects:
 
 * [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll): The Jekyll theme used by this website  
-`#staticSite` `#web`
+`static site` `web`
 
 * [num2words-kiswahili](https://github.com/machakux/num2words-kiswahili): Convert numbers to spoken Swahili words  
-`#Python`
+`Python`
