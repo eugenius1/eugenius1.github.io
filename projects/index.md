@@ -23,7 +23,7 @@ Some of my public projects:
 * [Social Login Demos](/social-login-demos/)  
 `JavaScript` `web APIs`
 
- University Projects
+## University Projects
 
 * My [MEng Final-Year Project](/fyp)  
 `Python` `High-Level Synthesis`
