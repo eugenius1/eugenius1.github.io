@@ -37,7 +37,7 @@ Some of my public projects:
 * [Real-Time Speech Enhancement](/projects/ee3-rtdsp/ "EE3: Real-Time Digital Signal Processing")  
 `C` `Digital Signal Processing` `embedded`
 
-* [USB Oscilloscope](http://www.harrybeadle.co.uk/fbhack/ "Written by teammate Harry Beadle")  
+* [USB Oscilloscope](https://github.com/HarryBeadle/Oscilloscope)  
 `hackathon` `Qt` `Arduino`
 
 * [Udacity CS101](https://github.com/eugenius1/Udacity-CS101): Intro to Computer Science, includes a Gamer's network  
