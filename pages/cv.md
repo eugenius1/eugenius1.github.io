@@ -15,10 +15,10 @@ redirect_from:
     </span>
     or
     <span id="download">
-      <a class="btn btn-success" href="/raw/docs/Eusebius_Ngemera_CV.pdf" title="CV as a PDF">My one-page CV</a>
+      <a class="btn btn-success" href="/raw/docs/Eusebius_Ngemera_CV.pdf" title="CV as a PDF">My CV PDF</a>
     </span>
   </p>
   <p class="text-muted">
-    PDF last modified: October 31, 2021
+    PDF last modified: January 7, 2025
   </p>
 </div>
