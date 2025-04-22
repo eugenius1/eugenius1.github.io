@@ -4,8 +4,6 @@ title: CV
 subtitle: Curriculum Vitae
 share-buttons: true
 permalink: "/cv/"
-redirect_from:
- - "/CV/"
 ---
 
 <div class="text-center">
