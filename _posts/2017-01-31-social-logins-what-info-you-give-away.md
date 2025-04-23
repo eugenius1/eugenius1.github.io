@@ -11,6 +11,10 @@ redirect_from:
  - "/b/sl/"
 ---
 
+<div class="alert alert-danger" role="alert">
+  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> The login functionality on this page is <strong>no longer maintained</strong>!
+</div>
+
 **Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will *not* be handled by a Eusebius.Tech server and therefore **never stored here**.
 
 *The scenario*: You go to sign up to a website and they ask you to create an account using an email and a password. If you make up a new password then you will most likely forget it, and if you reuse an old one then it's a security risk. Luckily, this website offers logging in with social networks like Facebook and Google.
