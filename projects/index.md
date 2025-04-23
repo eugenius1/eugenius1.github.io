@@ -20,7 +20,7 @@ Some of my public projects:
 * This personal website/tech blog: [how I made it](/blog/how-i-made-this-website/ "How I made this website!")  
 `Jekyll`
 
-* [Social Login Demos](/social-login-demos/)  
+* [Social Login Demos](/blog/social-logins-what-info-you-give-away/)  
 `JavaScript` `web APIs`
 
 ## University Projects

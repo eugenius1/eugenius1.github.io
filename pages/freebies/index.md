@@ -73,7 +73,7 @@ Get 2 free months of Spotify Premium with [this link](https://www.spotify.com/uk
 
 ### Airbnb
 
-Get **£25 travel credit** for Airbnb when you sign up using [this link](www.airbnb.fr/c/eusebiusn3 "Get £25 off your first adventure").
+Get **£25 travel credit** for Airbnb when you sign up using [this link](https://www.airbnb.fr/c/eusebiusn3 "Get £25 off your first adventure").
 
 ### Flowers Direct
 
