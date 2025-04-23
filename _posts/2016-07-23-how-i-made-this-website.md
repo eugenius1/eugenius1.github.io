@@ -50,7 +50,7 @@ The screenshot below shows the <abbr title="Domain Name System">DNS</abbr> Recor
 
 ## Theme
 
-A theme can drastically affect a website's impression. See versions [1](/index-v1.html) and [2](/index-v2.html) of my homepage.
+A theme can drastically affect a website's impression. See versions [1](/archive/site/v1.0.html) and [2](/archive/site/v2.0.html) of my homepage.
 
 [![The homepage transforms from a simple `Hello, world! It's Eusebius` on a blank white page to another with more text and finally to the current, more polished version with `Hi, I'm Eusebius`.](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
 
