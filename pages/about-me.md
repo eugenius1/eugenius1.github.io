@@ -14,20 +14,14 @@ redirect_from:
 My name is Eusebius Ngemera. I have the following qualities:
 
 - 2017 Graduate in [MEng Electrical & Electronic Engineering](https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-meng/) from Imperial College London
-- My favourite programming language is currently Python
-- Currently hired to develop C++ backends
-- I survived chicken pox at the age of 17
+- Favourite programming language is currently Go, but I admit that TypeScript is very versatile
+- Currently hired to develop full-stack in a [FinTech](https://en.wikipedia.org/wiki/Financial_technology) startup
+- Survived chicken pox at the age of 17
 - More on my [CV](/cv/)
 
 ## Technologies
 
 <ul class="list-inline text-center">
-  <li title="Amazon Web Services">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-amazon fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Amazon Web Services</span>
-  </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-android fa-stack-1x"></i>
@@ -36,21 +30,9 @@ My name is Eusebius Ngemera. I have the following qualities:
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-bluetooth-b fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Bluetooth</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-chrome fa-stack-1x"></i>
     </span>
     <span class="sr-only">Google Chrome</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-facebook fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Facebook</span>
   </li>
   <li title="Font Awesome">
     <span class="fa-stack fa-lg" aria-hidden="true">
@@ -104,12 +86,6 @@ My name is Eusebius Ngemera. I have the following qualities:
       <span class="sr-only">PayPal</span>
     </a>
   </li>
-  <li title="Pocket">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-get-pocket fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Pocket</span>
-  </li>
   <li title="Slack">
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-slack fa-stack-1x"></i>
@@ -121,12 +97,6 @@ My name is Eusebius Ngemera. I have the following qualities:
       <i class="fa fa-spotify fa-stack-1x"></i>
     </span>
     <span class="sr-only">Spotify</span>
-  </li>
-  <li>
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-stack-overflow fa-stack-1x"></i>
-    </span>
-    <span class="sr-only">Stack Overflow</span>
   </li>
   <li title="Terminal">
     <span class="fa-stack fa-lg" aria-hidden="true">
