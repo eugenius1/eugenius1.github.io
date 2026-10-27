@@ -24,6 +24,12 @@ My name is Eusebius Ngemera. I have the following qualities:
 <ul class="list-inline text-center">
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-apple fa-stack-1x"></i>
+    </span>
+    <span class="sr-only">Apple</span>
+  </li>
+  <li>
+    <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-android fa-stack-1x"></i>
     </span>
     <span class="sr-only">Android</span>
