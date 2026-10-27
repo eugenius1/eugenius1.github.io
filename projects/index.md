@@ -8,17 +8,24 @@ comments: true
 
 Some of my public projects:
 
-* [Stock Scrape](https://github.com/eugenius1/stock-scrape): Web scraper for [SimplyWall.St](https://simplywall.st/) figures  
-`Python` `BeautifulSoup` `Pandas`
+* [Bible Version Sync](https://github.com/eugenius1/bible-version-sync): Sync your YouVersion highlights across Bible versions.  
+🔗 [bible.esebi.net](https://bible.esebi.net)  
+`TypeScript` `Next.js`
 
-* [ScopedStorage](https://github.com/eugenius1/scoped-storage): localStorage & sessionStorage per page  
-`JavaScript`
+* [ProPresenter Garage](https://github.com/eugenius1/propresenter-garage): Tools for ProPresenter 7+ files via MCP, web or desktop app.  
+`TypeScript` `Next.js` `MCP`
+
+* [Concurrent Counter](https://github.com/eugenius1/concurrent-counter-next): Shared counters that everyone sees change at the same time.  
+`TypeScript` `Next.js`
 
 * [Instagram Lists](/projects/instagram-lists): Detailed, sortable lists of your Instagram followings and followers  
 `JavaScript` `hack` `unofficial APIs`
 
 * This personal website/tech blog: [how I made it](/blog/how-i-made-this-website/ "How I made this website!")  
 `Jekyll`
+
+* [ScopedStorage](https://github.com/eugenius1/scoped-storage): localStorage & sessionStorage per page  
+`JavaScript`
 
 * [Social Login Demos](/blog/social-logins-what-info-you-give-away/)  
 `JavaScript` `web APIs`
