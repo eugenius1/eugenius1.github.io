@@ -13,6 +13,12 @@ if [ -n "$missing" ]; then
   exit 1
 fi
 
+# The theme leaves a tab's browser title blank without an entry in the locale file.
+if grep -rlE '<title>\s*\|' _site --include='*.html'; then
+  echo "Blank browser titles above: add the tabs to _data/locales/en.yml" >&2
+  exit 1
+fi
+
 # Fails when a theme update changes a file this site overrides, so the copy can
 # be brought up to date.
 overrides="$PWD/scripts/theme-overrides.sha256"

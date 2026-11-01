@@ -16,13 +16,6 @@ script_includes:
     {% if page.description %}
       <p class="post-desc fw-light mb-4">{{ page.description }}</p>
     {% endif %}
-    {% comment %} An image with no alt is only for sharing on social media {% endcomment %}
-    {% if page.image.alt %}
-      <div class="mt-3 mb-3">
-        <img src="{{ page.image.path }}" class="preview-img" alt="{{ page.image.alt | xml_escape }}">
-        <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
-      </div>
-    {% endif %}
     <div class="content">
       {{ content }}
     </div>

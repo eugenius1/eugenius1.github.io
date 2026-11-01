@@ -37,13 +37,14 @@ the one place the Ruby version is set.
 - **Posts** are Markdown in `_posts/`, or `_drafts/` to keep one unpublished. Set
   `description` and `tags`, and `image` for a banner. Its `alt` shows as the caption.
 - **Sidebar pages** are in `_tabs/`, with an `icon` and `order`. Add a new one's
-  lowercase title to `_data/locales/en.yml`, as that sets its browser title.
-- **Other pages** are in `pages/` and `projects/`. A page shows its `image` only when
-  it has an `alt`; without one the image is just for sharing on social media.
+  lowercase title to `_data/locales/en.yml`, as that sets its browser title;
+  `make check` fails if one is missing.
+- **Other pages** are in `pages/` and `projects/`. On a page, `image` is only for
+  sharing on social media, so put any image to show in the Markdown.
 - **Redirects** are `redirect_from` in a page's front matter for old addresses, or a
   file using `layout: my-redirect` with a `to` address, as in `go/`.
 
-Front matter can load extras on one page with `css`, `js`, `ext-css` and `ext-js`.
+Front matter can load extras on one page with `css` and `js`.
 
 ## Change the look
 

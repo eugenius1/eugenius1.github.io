@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "site",
-      "runtimeExecutable": "docker",
-      "runtimeArgs": ["compose", "up", "--build"],
+      "runtimeExecutable": "make",
+      "runtimeArgs": ["local"],
       "port": 4000
     },
     {

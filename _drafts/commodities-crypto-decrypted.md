@@ -570,7 +570,7 @@ I've recently found 2 indicators that aim to predict the cycle [top][cycle_top] 
 [cycle_bottom]: https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/
 
 <div class="row">
-  <div class="col-xs-6">
+  <div class="col-6">
     <a href="https://www.lookintobitcoin.com/charts/pi-cycle-top-indicator/">
       <figure>
         <img src="/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-pi-cycle-top-indicator.png" alt="Bitcoin Pi Cycle Top Indicator">
@@ -578,7 +578,7 @@ I've recently found 2 indicators that aim to predict the cycle [top][cycle_top] 
       </figure>
     </a>
   </div>
-  <div class="col-xs-6">
+  <div class="col-6">
     <a href="https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/">
       <figure>
         <img src="/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-200-week-ma-heatmap.png" alt="Bitcoin 200-Week Moving Average Heatmap">

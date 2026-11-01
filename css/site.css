@@ -31,10 +31,6 @@
   display: inline-block;
   padding-inline: 0.25rem;
 }
-.col-xs-6 {
-  flex: 0 0 auto;
-  width: 50%;
-}
 @media (min-width: 576px) {
   .col-sm-offset-1 {
     margin-left: 8.33%;
@@ -43,19 +39,19 @@
 .jumbotron {
   padding: 1.5rem;
   border-radius: 0.5rem;
-  background: rgba(127, 127, 127, 0.1);
+  background: var(--card-bg);
 }
 .alert-info {
-  background: rgba(59, 130, 246, 0.12);
+  background: var(--prompt-info-bg);
 }
 .alert-warning {
-  background: rgba(234, 179, 8, 0.15);
+  background: var(--prompt-warning-bg);
 }
 .alert-danger {
-  background: rgba(239, 68, 68, 0.15);
+  background: var(--prompt-danger-bg);
 }
 .btn-default {
-  border: 1px solid rgba(127, 127, 127, 0.5);
+  border: 1px solid var(--btn-border-color);
 }
 .form-group,
 .radio {
@@ -70,13 +66,7 @@
   overflow-y: auto;
 }
 .table-bordered :is(th, td) {
-  border: 1px solid rgba(127, 127, 127, 0.4);
-}
-.pager {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  list-style: none;
+  border: 1px solid var(--tb-border-color);
 }
 
 /* Sizing for images in posts */

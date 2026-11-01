@@ -1,5 +1,4 @@
 404.html
-README.md
 about-me/index.html
 about/index.html
 aboutme/index.html

@@ -50,7 +50,8 @@ const firstTable = $('#first-table'); // need to use jQuery for DataTable
 var firstDataTable;
 
 const submitPrunedListButton = $('#submit-pruned-list');
-const prunedUsernameListCode = document.querySelector('#pruned-username-list .rouge-code pre'); // the theme's Copy button reads .rouge-code
+// The theme's Copy button reads .rouge-code, which needs kramdown's block line_numbers
+const prunedUsernameListCode = document.querySelector('#pruned-username-list .rouge-code pre');
 const prunedListSizeSpan = document.getElementById('pruned-list-size');
 const secondTimeEstimateSpan = document.getElementById('second-time-estimate');
 

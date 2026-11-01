@@ -11,14 +11,12 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 let index = -1;
 let shown = null;
 
-function pickNext() {
-  const choices = photos.length - (index < 0 ? 0 : 1);
-  const pick = Math.floor(Math.random() * choices);
-  return index >= 0 && pick >= index ? pick + 1 : pick;
-}
-
 function show() {
-  index = pickNext();
+  const previous = index;
+  do {
+    index = Math.floor(Math.random() * photos.length);
+  } while (index === previous);
+
   const image = new Image();
   image.alt = '';
   image.src = photos[index].path;
@@ -27,7 +25,7 @@ function show() {
     caption.textContent = photos[index].caption;
     image.getBoundingClientRect(); // so the fade starts from opacity 0
     image.classList.add('is-shown');
-    if (reducedMotion) {
+    if (reducedMotion || photos.length < 2) {
       return;
     }
     image.addEventListener(
