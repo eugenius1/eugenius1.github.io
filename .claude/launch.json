@@ -6,6 +6,12 @@
       "runtimeExecutable": "docker",
       "runtimeArgs": ["compose", "up", "--build"],
       "port": 4000
+    },
+    {
+      "name": "production",
+      "runtimeExecutable": "make",
+      "runtimeArgs": ["preview"],
+      "port": 4000
     }
   ]
 }

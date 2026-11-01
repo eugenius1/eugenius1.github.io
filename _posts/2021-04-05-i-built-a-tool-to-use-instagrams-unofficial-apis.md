@@ -1,9 +1,12 @@
 ---
 layout: post
 title: I built a tool to use Instagram's unofficial APIs!
-subtitle: It shows detailed, sortable lists of your Instagram followings and followers
+description: It shows detailed, sortable lists of your Instagram followings and followers
 redirect_from:
  - "/b/iua/"
+tags:
+  - projects
+  - web
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:
@@ -17,9 +20,6 @@ I started with a **problem**: I was **following too many accounts** on Instagram
 And when you consider that I have been using the platform since April 2011,
 it becomes clearer that a good spring cleaning is much needed.
 Also, psychologically I didn't like having a significantly higher number of accounts I am following than followers.
-
-- TOC
-{:toc}
 
 ## Finding solutions & why unofficial
 

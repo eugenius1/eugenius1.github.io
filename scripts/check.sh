@@ -12,3 +12,8 @@ if [ -n "$missing" ]; then
   echo "$missing" >&2
   exit 1
 fi
+
+# Fails when a theme update changes a file this site overrides, so the copy can
+# be brought up to date.
+overrides="$PWD/scripts/theme-overrides.sha256"
+(cd "$(bundle info --path jekyll-theme-chirpy)" && sha256sum --check --quiet "$overrides")

@@ -1,0 +1,14 @@
+# Sharing options at the bottom of each post. Icons from https://fontawesome.com/
+
+platforms:
+  - type: Twitter
+    icon: "fa-brands fa-square-x-twitter"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL&hashtags=EusebiusTech"
+
+  - type: Facebook
+    icon: "fab fa-facebook-square"
+    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+
+  - type: Linkedin
+    icon: "fab fa-linkedin"
+    link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"

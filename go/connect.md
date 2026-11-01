@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Connect
-subtitle: You know what to do
-sitemap:
-  exclude: true
+description: You know what to do
+sitemap: false
 ---
 
 <ul class="list-inline text-center ">

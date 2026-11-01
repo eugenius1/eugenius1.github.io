@@ -1,0 +1,10 @@
+<!-- Photos from page.covers fade behind the title. js/home-cover.js runs them. -->
+{% assign first_cover = page.covers | first %}
+<section class="home-cover" data-covers="{{ page.covers | jsonify | xml_escape }}">
+  <noscript><img class="is-shown" src="{{ first_cover.path | relative_url }}" alt=""></noscript>
+  <div class="home-cover-text">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </div>
+  <p class="home-cover-caption"></p>
+</section>

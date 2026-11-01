@@ -1,0 +1,17 @@
+<!-- Icon names from Font Awesome 4, still used in posts and pages -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/v4-shims.min.css">
+<link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
+
+<!-- Per-page extras, set in front matter -->
+{% for href in page.ext-css %}
+  <link rel="stylesheet" href="{{ href }}">
+{% endfor %}
+{% for href in page.css %}
+  <link rel="stylesheet" href="{{ href }}">
+{% endfor %}
+{% for src in page.ext-js %}
+  <script defer src="{{ src }}"></script>
+{% endfor %}
+{% for src in page.js %}
+  <script defer src="{{ src }}"></script>
+{% endfor %}

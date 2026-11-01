@@ -1,13 +1,16 @@
 ---
 layout: post
 title: "My Investing Journey Pt 1—The Awakening!"
-subtitle: "A 20-something actually starts managing his money (well)"
-bigimg:
- - "/raw/img/covers/blog/2021/2020-stock-market-crash.png": "TradingView"
-share-img: "/raw/img/blog/2021/investing/2020-stock-market-crash-shareable.png"
+description: "A 20-something actually starts managing his money (well)"
 redirect_from:
  - "/mij1/"
  - "/investing/"
+image:
+  path: /raw/img/blog/2021/investing/2020-stock-market-crash-shareable.png
+  alt: "TradingView"
+tags:
+  - investing
+  - money
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**:
@@ -45,9 +48,6 @@ I am <strong>no financial advisor</strong> and nothing in this blog should be co
 Everything here is <strong>knowledge sharing</strong> and <strong>my opinion</strong>.
 Always do your own due diligence.
 </p>
-
-- toc
-{:toc}
 
 ## Learning
 

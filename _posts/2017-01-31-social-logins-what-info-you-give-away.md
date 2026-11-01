@@ -1,14 +1,18 @@
 ---
 layout: post
-title: "Social Logins&mdash;what info you give away!"
-subtitle: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
-share-img: "http://eusebius.tech/img/blog/2017/social-logins-shareable.png"
+title: "Social Logins—what info you give away!"
+description: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
 js:
   - "/js/funcs/specialName.min.js"
   - "/js/blog/2017/social-logins.min.js"
 redirect_from:
  - "/blog/social-logins/"
  - "/b/sl/"
+image:
+  path: /img/blog/2017/social-logins-shareable.png
+tags:
+  - privacy
+  - web
 ---
 
 <div class="alert alert-danger" role="alert">

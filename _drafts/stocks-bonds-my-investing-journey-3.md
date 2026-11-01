@@ -1,11 +1,8 @@
 ---
 layout: post
 title: "Stocks & Bonds—My Investing Journey Pt 3!"
-subtitle: "A millennial's investing thesis. No GME here."
+description: "A millennial's investing thesis. No GME here."
 ---
-
-- toc
-{:toc}
 
 ## Bonds
 

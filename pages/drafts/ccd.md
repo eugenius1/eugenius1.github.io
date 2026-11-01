@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Commodities & Crypto—Decrypted! | MIJ Pt 2"
-subtitle: A software engineer's investing thesis. No dogs.
-share-buttons: false
+description: A software engineer's investing thesis. No dogs.
 permalink: "/drafts/ccd"
-sitemap:
-  exclude: true
+sitemap: false
 ---
 
 Cryptocurrency (crypto) is an asset class that most people haven't yet truly understood.

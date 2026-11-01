@@ -1,14 +1,15 @@
 ---
 layout: post
 title: How I made this website!
-subtitle: An overview to having your own website
-share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
-share-img-cannot-be-wide: true
+description: An overview to having your own website
 redirect_from:
  - "/b/himtw/"
-sitemap:
-  lastmod: "2021-04-25"
-date-updated: "2021-04-25"
+image:
+  path: /img/blog/2016/website-launch-screenshot.png
+last_modified_at: 2021-04-25
+tags:
+  - web
+  - personal
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: Domain name from [Google Domains](https://domains.google/), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](https://beautifuljekyll.com/), with content written in [Markdown](#webpage-content).
@@ -18,9 +19,6 @@ date-updated: "2021-04-25"
 Why bother making a website? 
 For me, this website is my own personal space on the web that I'm in control of. I can quickly link anyone to pages like [eusebius.tech/uber](/uber "Free Uber ride"). 
 The bare minimum to having your own website is finding a place to host it and adding your content. Most people go for blogging services like WordPress but I wanted more than just a blog.
-
-- TOC
-{:toc}
 
 ## Website domain name
 

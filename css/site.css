@@ -1,0 +1,157 @@
+/* This site's own styles, on top of the theme */
+
+/* The Bootstrap 3 classes still used in post and page markup. The theme's
+   production CSS only keeps the Bootstrap classes the theme itself uses. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.center-block {
+  display: block;
+  margin-inline: auto;
+}
+.center-block img {
+  margin-inline: auto;
+}
+.pull-right {
+  float: right;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-inline: 0.25rem;
+}
+.col-xs-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+@media (min-width: 576px) {
+  .col-sm-offset-1 {
+    margin-left: 8.33%;
+  }
+}
+.jumbotron {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(127, 127, 127, 0.1);
+}
+.alert-info {
+  background: rgba(59, 130, 246, 0.12);
+}
+.alert-warning {
+  background: rgba(234, 179, 8, 0.15);
+}
+.alert-danger {
+  background: rgba(239, 68, 68, 0.15);
+}
+.btn-default {
+  border: 1px solid rgba(127, 127, 127, 0.5);
+}
+.form-group,
+.radio {
+  margin-bottom: 0.75rem;
+}
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+}
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: auto;
+}
+.table-bordered :is(th, td) {
+  border: 1px solid rgba(127, 127, 127, 0.4);
+}
+.pager {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Sizing for images in posts */
+.golden-width img {
+  width: 61.8%;
+}
+.height-fits img {
+  width: auto;
+  height: 500px;
+}
+
+/* Right-aligned number columns in investing tables */
+table.right-figures tr :is(th, td):nth-of-type(n + 2),
+table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
+  text-align: right;
+}
+
+/* Homepage cover. js/home-cover.js adds the photos. */
+.home-cover {
+  position: relative;
+  width: 100%; /* or min-height widens it to keep the aspect ratio */
+  aspect-ratio: 21 / 9;
+  min-height: 14rem;
+  margin-block: 1rem 2rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  background: #1b1b1e;
+}
+.home-cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.home-cover img.is-shown {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-cover img {
+    transition: none;
+  }
+}
+.home-cover-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15));
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.home-cover-text h1 {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 800;
+}
+.home-cover-text p {
+  margin: 0.5rem 0 0;
+  font-size: clamp(0.85rem, 1.6vw, 1.125rem);
+}
+.home-cover-caption {
+  position: absolute;
+  inset: auto 0 0;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}

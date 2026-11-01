@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Privacy Policy
-subtitle: Eusebius.Tech
+description: Eusebius.Tech
 date: 2017-04-05
-date-updated: 2017-04-05
 ---
 
 <div class="text-center">There are currently no previous revisions available.</div>

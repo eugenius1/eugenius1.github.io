@@ -1,14 +1,17 @@
 ---
 layout: post
-title: I did a Clinical Trial&mdash;and this is my experience!
-subtitle: I got £,£££
-share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
-bigimg:
-  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London, UK (2017)"
+title: I did a Clinical Trial—and this is my experience!
+description: I got £,£££
 redirect_from:
  - "/b/idact/"
-sitemap:
-  lastmod: "2021-04-25"
+image:
+  path: /img/covers/blog/2017/parexel-ward.jpg
+  alt: "PAREXEL Ward, North London, UK (2017)"
+last_modified_at: 2021-04-25
+tags:
+  - life
+  - health
+  - money
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience at Parexel and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
@@ -25,9 +28,6 @@ But before we get started, let me take you back to how I got into clinical trial
 <div class="alert alert-info" role="alert">
 <i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong>. Key points are in <strong>bold</strong>.
 </div>
-
-- TOC
-{:toc}
 
 
 # Missed opportunity

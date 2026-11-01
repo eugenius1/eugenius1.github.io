@@ -1,0 +1,17 @@
+# Merged over the theme's en.yml.
+
+# The browser title of a tab comes from here, by its lowercase title
+tabs:
+  about me: About me
+  projects: Projects
+  blog: Blog
+  freebies: Freebies
+  donate: Donate
+  cv: CV
+
+# The theme's default wording licenses every post under CC BY 4.0, which this site
+# does not. Only false replaces it, not an empty value.
+copyright:
+  license:
+    template: false
+  brief: false
