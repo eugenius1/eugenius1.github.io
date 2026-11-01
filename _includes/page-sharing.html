@@ -1,0 +1,11 @@
+{% if page.share %}
+  <!-- The theme's share buttons for posts, whose styles need these wrappers. The
+       empty div is where a post has its licence, and keeps the buttons on the right.
+       Of the layouts with this, only `page` has a script for Copy link. -->
+  <div class="post-tail-wrapper text-muted{% unless page.layout == 'page' %} no-copy-link{% endunless %}">
+    <div class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2">
+      <div></div>
+      {% include post-sharing.html lang=lang %}
+    </div>
+  </div>
+{% endif %}

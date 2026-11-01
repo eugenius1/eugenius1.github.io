@@ -4,6 +4,7 @@ description: Curriculum Vitae
 permalink: "/cv/"
 icon: fas fa-file-lines
 order: 7
+share: true
 ---
 
 <div class="text-center">

@@ -1,4 +1,5 @@
-# Sharing options at the bottom of each post. Icons from https://fontawesome.com/
+# Sharing options at the bottom of each post, and of each page with `share: true`.
+# Icons from https://fontawesome.com/
 
 platforms:
   - type: Twitter

@@ -86,6 +86,7 @@ defaults:
       type: pages
     values:
       comments: true
+      share: true
   - scope:
       path: archive
     values:

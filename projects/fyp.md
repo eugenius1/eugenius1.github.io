@@ -3,6 +3,7 @@ layout: page
 title: My MEng Final-Year Project!
 description: Fused Arithmetic Analysis for Efficient Hardware Datapath
 comments: false
+share: false
 sitemap: false
 redirect_from:
  - "/fyp/"

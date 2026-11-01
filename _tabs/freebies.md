@@ -3,6 +3,7 @@ title: Freebies
 permalink: "/freebies/"
 icon: fas fa-gift
 order: 5
+share: true
 ---
 
 Disclaimer: I may also be getting something in turn. Also, these links and codes may become invalid.

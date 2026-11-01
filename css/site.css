@@ -84,6 +84,11 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   text-align: right;
 }
 
+/* Set by _includes/page-sharing.html where no script handles this button */
+.no-copy-link #copy-link {
+  display: none;
+}
+
 /* Homepage cover. js/home-cover.js adds the photos. */
 .home-cover {
   position: relative;

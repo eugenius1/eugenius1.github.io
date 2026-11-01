@@ -40,7 +40,9 @@ the one place the Ruby version is set.
   lowercase title to `_data/locales/en.yml`, as that sets its browser title;
   `make check` fails if one is missing.
 - **Other pages** are in `pages/` and `projects/`. On a page, `image` is only for
-  sharing on social media, so put any image to show in the Markdown.
+  sharing on social media, so put any image to show in the Markdown. Posts always
+  have share buttons; `share: true` adds them to a page, and pages in `projects/`
+  have them unless set to `false`.
 - **Redirects** are `redirect_from` in a page's front matter for old addresses, or a
   file using `layout: my-redirect` with a `to` address, as in `go/`.
 

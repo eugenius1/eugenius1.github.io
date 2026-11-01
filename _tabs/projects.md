@@ -2,6 +2,7 @@
 title: Projects
 description: My productive fixations
 comments: true
+share: true
 image:
   path: /img/projects/ee3-rtdsp/lynx.png
 icon: fas fa-code
