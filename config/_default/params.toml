@@ -1,7 +1,7 @@
 # Change the whole look here. Options: blowfish, avocado, burufugu, fire, ocean,
 # forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, slate,
 # github, one-light
-colorScheme = "blowfish"
+colorScheme = "autumn"
 
 logo = "img/eusebius-avatar-icon.jpg"
 enableCodeCopy = true
