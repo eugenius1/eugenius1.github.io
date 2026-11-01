@@ -126,9 +126,10 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - Makefile
-  - Vagrantfile
+  - Dockerfile
+  - compose.yaml
+  - scripts
   - "**/README.md"
-  - "*.sh"
   - "*.vscode"
   - vendor
 
@@ -183,14 +184,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
-plugins_dir:
-  - jekyll-compress-images
-
-compress_images:
-  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
-
-imageoptim:
-  pngout: false
-  svgo: false
-  verbose: false

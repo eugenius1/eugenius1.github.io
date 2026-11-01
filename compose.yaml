@@ -1,0 +1,9 @@
+services:
+  site:
+    build: .
+    volumes:
+      - .:/site
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    command: bundle exec jekyll serve --drafts --livereload --host 0.0.0.0

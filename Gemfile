@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'github-pages'
-gem 'jekyll-compress-images'
+gem 'jekyll', '~> 4.4'
 gem 'jekyll-paginate'
 gem 'jekyll-redirect-from'
-gem 'jekyll-spark'
+gem 'kramdown-parser-gfm'
