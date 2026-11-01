@@ -82,6 +82,11 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
+      path: projects
+      type: pages
+    values:
+      comments: true
+  - scope:
       path: archive
     values:
       sitemap: false

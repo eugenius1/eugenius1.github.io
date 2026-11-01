@@ -11,6 +11,12 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 let index = -1;
 let shown = null;
 
+function scheduleNext() {
+  if (!reducedMotion && photos.length > 1) {
+    setTimeout(show, HOLD_MS);
+  }
+}
+
 function show() {
   const previous = index;
   do {
@@ -20,20 +26,18 @@ function show() {
   const image = new Image();
   image.alt = '';
   image.src = photos[index].path;
+  image.onerror = scheduleNext;
   image.onload = () => {
     cover.insertBefore(image, text);
     caption.textContent = photos[index].caption;
     image.getBoundingClientRect(); // so the fade starts from opacity 0
     image.classList.add('is-shown');
-    if (reducedMotion || photos.length < 2) {
-      return;
-    }
     image.addEventListener(
       'transitionend',
       () => {
         shown?.remove();
         shown = image;
-        setTimeout(show, HOLD_MS);
+        scheduleNext();
       },
       { once: true }
     );
