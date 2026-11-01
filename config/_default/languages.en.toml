@@ -1,0 +1,12 @@
+locale = "en-gb"
+title = "Eusebius.Tech"
+
+[params]
+  isoCode = "en-gb"
+  description = "Personal website of Eusebius Ngemera, including a blog of technologies and life as he knows it."
+  copyright = "© Eusebius Ngemera"
+
+  [params.author]
+    name = "Eusebius Ngemera"
+    email = "me@eusebius.tech"
+    image = "img/eusebius-avatar-icon.jpg"

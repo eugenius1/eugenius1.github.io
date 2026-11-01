@@ -1,0 +1,48 @@
+baseURL = "https://eusebius.tech/"
+theme = "blowfish"
+timeZone = "Europe/London"
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 0
+
+[imaging]
+  anchor = "Center"
+  [imaging.jpeg]
+    quality = 80
+  [imaging.webp]
+    quality = 80
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Keeps the feed at /feed.xml, where existing subscribers point
+[outputFormats.RSS]
+  baseName = "feed"
+
+[services.disqus]
+  shortname = "eusebiustech"
+
+[services.googleAnalytics]
+  ID = "G-ME9VJ7Y5RR"
+
+[services.rss]
+  limit = 20
+
+# raw/ holds the only committed copy of each image. Mounting raw/img under
+# assets lets the build resize and convert them; raw/ also stays public at
+# /raw/ for linked originals and the PDFs.
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+[[module.mounts]]
+  source = "raw/img"
+  target = "assets/img"
+[[module.mounts]]
+  source = "static"
+  target = "static"
+[[module.mounts]]
+  source = "raw"
+  target = "static/raw"

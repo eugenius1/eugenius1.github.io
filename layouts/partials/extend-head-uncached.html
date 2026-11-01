@@ -1,0 +1,16 @@
+{{/* Per-page extras, set in front matter */}}
+{{ if .Params.fontAwesome }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{{ end }}
+{{ range .Params.externalCSS }}
+  <link rel="stylesheet" href="{{ . }}">
+{{ end }}
+{{ range .Params.scripts }}
+  <script defer src="{{ . | relURL }}"></script>
+{{ end }}
+{{ with .Params.bundle }}
+  {{ $options := dict "minify" hugo.IsProduction "target" "es2021" }}
+  {{ $algorithm := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $bundle := resources.Get (printf "ts/%s/main.ts" .) | js.Build $options | resources.Fingerprint $algorithm }}
+  <script defer src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}"></script>
+{{ end }}

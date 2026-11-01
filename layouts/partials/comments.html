@@ -1,0 +1,17 @@
+{{/* Hugo's own Disqus partial needs disqus_url on every page. Threads are matched
+   by URL, so query strings must not start a new one. */}}
+{{ if hugo.IsProduction }}
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = {{ .Permalink }};
+    };
+    (function () {
+      var script = document.createElement("script");
+      script.src = "https://{{ site.Config.Services.Disqus.Shortname }}.disqus.com/embed.js";
+      script.setAttribute("data-timestamp", +new Date());
+      document.head.appendChild(script);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+{{ end }}

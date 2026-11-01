@@ -1,0 +1,10 @@
+services:
+  site:
+    build: .
+    volumes:
+      - .:/site
+      # Keeps the image's Linux node_modules from being hidden by the repo mount
+      - /site/node_modules
+    ports:
+      - "1313:1313"
+    command: hugo server --buildDrafts --renderToMemory --bind 0.0.0.0

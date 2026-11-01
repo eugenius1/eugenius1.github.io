@@ -1,0 +1,18 @@
+{{/* Cover image with the title over it. Set heroStyle: cover on a page.
+   custom.css hides the theme's own heading when this is on the page. */}}
+{{ with resources.Get .Params.featureimage }}
+  {{ $image := partial "functions/resize.html" (dict "resource" . "spec" "1280x webp") }}
+  <figure class="cover-hero">
+    <div class="cover-hero-frame">
+      <img
+        src="{{ $image.RelPermalink }}"
+        alt=""
+        fetchpriority="high"
+        class="nozoom">
+      <h1>{{ $.Title | emojify }}</h1>
+    </div>
+    {{ with $.Params.featureimagecaption }}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+  </figure>
+{{ end }}

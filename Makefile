@@ -1,5 +1,5 @@
-SHELL := bash
-.SHELLFLAGS := -euo pipefail -c
-
 local:
-	bundle exec jekyll serve --drafts --livereload
+	docker compose up --build
+
+check:
+	docker compose run --build --rm site npm run check

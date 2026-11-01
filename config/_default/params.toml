@@ -1,0 +1,31 @@
+# Change the whole look here. Options: blowfish, avocado, burufugu, fire, ocean,
+# forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, slate,
+# github, one-light
+colorScheme = "blowfish"
+
+logo = "img/eusebius-avatar-icon.jpg"
+enableCodeCopy = true
+images = ["raw/img/branding/github-eugenius1/original.png"]
+mainSections = ["blog"]
+
+[header]
+  layout = "fixed-fill"
+
+[homepage]
+  layout = "cover"
+  showRecent = true
+  showMoreLink = true
+  showMoreLinkDest = "/blog/"
+
+# Off by default for pages. content/blog/_index.md turns the blog ones back on.
+[article]
+  showDate = false
+  showAuthor = false
+  showPagination = false
+  showReadingTime = false
+  showTaxonomies = true
+  showWordCount = false
+
+[list]
+  showSummary = true
+  groupByYear = false

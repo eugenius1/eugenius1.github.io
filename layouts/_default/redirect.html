@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ .Params.to }}">
+    {{ if hugo.IsProduction }}{{ partial "analytics/main.html" . }}{{ end }}
+    <meta http-equiv="refresh" content="0; url={{ .Params.to }}">
+  </head>
+  <body>
+    <a href="{{ .Params.to }}">Click here to go to <em>{{ .Title }}</em>.</a>
+  </body>
+</html>

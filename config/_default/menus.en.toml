@@ -1,0 +1,79 @@
+[[main]]
+  name = "About Me"
+  url = "/about-me/"
+  weight = 10
+
+[[main]]
+  identifier = "projects"
+  name = "Projects"
+  weight = 20
+
+[[main]]
+  name = "All"
+  parent = "projects"
+  url = "/projects/"
+  weight = 10
+
+[[main]]
+  name = "Instagram Lists"
+  parent = "projects"
+  url = "/projects/instagram-lists/"
+  weight = 20
+
+[[main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 30
+
+[[main]]
+  identifier = "misc"
+  name = "Misc."
+  weight = 40
+
+[[main]]
+  name = "Freebies"
+  parent = "misc"
+  url = "/freebies/"
+  weight = 10
+
+[[main]]
+  name = "Donate"
+  parent = "misc"
+  url = "/donate/"
+  weight = 20
+
+[[main]]
+  name = "CV"
+  parent = "misc"
+  url = "/cv/"
+  weight = 30
+
+[[footer]]
+  name = "Email"
+  url = "mailto:me@eusebius.tech"
+  weight = 10
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/eugenius1"
+  weight = 20
+
+[[footer]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/eusebius"
+  weight = 30
+
+[[footer]]
+  name = "Twitter"
+  url = "https://twitter.com/esebi95"
+  weight = 40
+
+[[footer]]
+  name = "Instagram"
+  url = "https://www.instagram.com/esebi95"
+  weight = 50
+
+[[footer]]
+  name = "RSS"
+  url = "/feed.xml"
+  weight = 60
