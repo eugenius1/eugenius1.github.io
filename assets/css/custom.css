@@ -323,3 +323,24 @@ html:has(.toc-popup[open]) {
     transform: translateY(-1.5rem);
   }
 }
+
+/* Blog cards. Only on devices that hover, or a tap leaves a card stuck raised. */
+@media (hover: hover) {
+  .article-link--card {
+    transition:
+      border-color 0.2s,
+      box-shadow 0.2s,
+      transform 0.2s;
+  }
+  .article-link--card:hover,
+  .article-link--card:focus-within {
+    border-color: rgb(var(--color-primary-500));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .article-link--card:hover,
+  .article-link--card:focus-within {
+    transform: translateY(-4px);
+  }
+}

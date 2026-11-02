@@ -29,3 +29,8 @@ mainSections = ["blog"]
 [list]
   showSummary = true
   groupByYear = false
+  cardView = true
+  featureImageHover = true
+
+[term]
+  cardView = true
