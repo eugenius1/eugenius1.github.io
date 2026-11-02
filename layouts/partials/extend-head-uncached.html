@@ -8,9 +8,17 @@
 {{ range .Params.scripts }}
   <script defer src="{{ . | relURL }}"></script>
 {{ end }}
+{{ $bundles := slice }}
 {{ with .Params.bundle }}
-  {{ $options := dict "minify" hugo.IsProduction "target" "es2021" }}
-  {{ $algorithm := site.Params.fingerprintAlgorithm | default "sha512" }}
+  {{ $bundles = $bundles | append . }}
+{{ end }}
+{{/* The theme's own test for showing a table of contents */}}
+{{ if and (.Params.showTableOfContents | default site.Params.article.showTableOfContents) (in .TableOfContents "<ul") }}
+  {{ $bundles = $bundles | append "toc" }}
+{{ end }}
+{{ $options := dict "minify" hugo.IsProduction "target" "es2021" }}
+{{ $algorithm := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ range $bundles }}
   {{ $bundle := resources.Get (printf "ts/%s/main.ts" .) | js.Build $options | resources.Fingerprint $algorithm }}
   <script defer src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}"></script>
 {{ end }}

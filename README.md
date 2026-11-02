@@ -51,7 +51,8 @@ file copied from Blowfish, so the copy can be brought up to date.
 
 TypeScript lives in `assets/ts/`, with tests beside the code. A page loads a
 bundle by setting `bundle` in its front matter, which builds
-`assets/ts/<bundle>/main.ts`.
+`assets/ts/<bundle>/main.ts`. Pages with a table of contents load the `toc`
+bundle by themselves, for the bar and popup on narrow screens.
 
 `assets/js/instagram-lists/satellite.js` stays as JavaScript because people paste
 it into the browser console on instagram.com. The copy they see is in
