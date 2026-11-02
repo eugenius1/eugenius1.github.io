@@ -103,7 +103,12 @@ const usernameColumn = {
   width: USERNAME_COLUMN_WIDTH,
   render: { display: username },
 };
-const fullNameColumn = { data: 'full_name', className: 'small' };
+// Anyone can put HTML in these fields of their profile
+const fullNameColumn = {
+  data: 'full_name',
+  className: 'small',
+  render: $.fn.dataTable.render.text(),
+};
 const isPrivateColumn = icon('is_private', 'fa fa-lock');
 const isVerifiedColumn = icon('is_verified', 'fa fa-certificate ig-verified');
 const followsViewerColumn = icon('follows_viewer', 'fa fa-check');
@@ -159,7 +164,7 @@ const secondDataTable = $('#second-table').DataTable({
     icon('is_joined_recently', 'fa fa-check'),
     isVerifiedColumn,
     icon('is_business_account', 'fa fa-briefcase'),
-    { data: 'business_category_name', className: 'small' },
+    { data: 'business_category_name', className: 'small', render: $.fn.dataTable.render.text() },
     number('posts_count'),
     { data: 'last_post_timestamp', className: 'dt-body-right small', render: igTimestamp },
     number('story_highlights_count'),
@@ -175,6 +180,15 @@ function handleError(error: unknown): void {
   alert(
     `Sorry, an error occurred. Re-paste any data you recently pasted and retry. If it still doesn't work then please leave a comment with or send me this:\n${error}`,
   );
+}
+
+// Only lets the page recover after a reload, so a full quota shouldn't stop it working
+function save(key: string, value: unknown): void {
+  try {
+    storage?.setItem(key, value);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 function setDataInTable(dataTable: DataTableApi, data: User[]): void {
@@ -227,9 +241,9 @@ function onSubmitInputLists(event: Event): void {
   } catch (error) {
     handleError(error);
   }
-  storage?.setItem(StorageKeys.inputListsTextArea, inputListsTextArea.value);
-  storage?.setItem(StorageKeys.firstSelectedList, firstSelectedList);
-  storage?.setItem(StorageKeys.listSelectionRadios, listSelectionRadios.value);
+  save(StorageKeys.inputListsTextArea, inputListsTextArea.value);
+  save(StorageKeys.firstSelectedList, firstSelectedList);
+  save(StorageKeys.listSelectionRadios, listSelectionRadios.value);
 }
 
 function onClickGetFirstCsv(): void {
@@ -257,7 +271,7 @@ function onSubmitMoreDetails(event: Event): void {
   try {
     const moreDetails: User[] = JSON.parse(moreDetailsTextArea.value);
     setDataInTable(secondDataTable, moreDetails);
-    storage?.setItem(StorageKeys.moreDetails, moreDetails);
+    save(StorageKeys.moreDetails, moreDetails);
   } catch (error) {
     handleError(error);
   }

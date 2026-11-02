@@ -39,7 +39,7 @@ export function objectArrayToCsv(rows: Record<string, unknown>[]): string {
 }
 
 function csvField(field: unknown): string {
-  if (typeof field === 'string' && /[,"]/.test(field)) {
+  if (typeof field === 'string' && /[,"\r\n]/.test(field)) {
     // " becomes "", then surround in double quotes
     return `"${field.replaceAll('"', '""')}"`;
   }

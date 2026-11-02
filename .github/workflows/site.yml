@@ -6,11 +6,8 @@ on:
   pull_request:
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # One deployment at a time, never cancelled part way. Pull requests run apart from
 # deployments, and a new push replaces the older run.
@@ -37,6 +34,10 @@ jobs:
   deploy:
     # Only deploy on the default branch
     if: github.ref == 'refs/heads/master'
+    # Only this job can publish, not the build that runs on pull requests
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

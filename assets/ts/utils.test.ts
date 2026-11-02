@@ -29,6 +29,11 @@ describe('objectArrayToCsv', () => {
     );
   });
 
+  it('quotes line breaks so a field stays on its row', () => {
+    expect(objectArrayToCsv([{ a: 'x\ny' }])).toBe('a\r\n"x\ny"\r\n');
+    expect(objectArrayToCsv([{ a: 'x\r\ny' }])).toBe('a\r\n"x\r\ny"\r\n');
+  });
+
   it('returns nothing for an empty list', () => {
     expect(objectArrayToCsv([])).toBe('');
   });

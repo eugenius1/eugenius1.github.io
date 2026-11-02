@@ -21,7 +21,7 @@ interface DataTableStatic {
   ext: {
     order: Record<string, (this: DataTableContext, settings: unknown, col: number) => unknown>;
   };
-  render: { number(thousands: string, decimal: string): unknown };
+  render: { number(thousands: string, decimal: string): unknown; text(): unknown };
 }
 
 interface JQuery {

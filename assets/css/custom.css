@@ -333,14 +333,14 @@ html:has(.toc-popup[open]) {
       transform 0.2s;
   }
   .article-link--card:hover,
-  .article-link--card:focus-within {
+  .article-link--card:has(:focus-visible) {
     border-color: rgb(var(--color-primary-500));
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .article-link--card:hover,
-  .article-link--card:focus-within {
+  .article-link--card:has(:focus-visible) {
     transform: translateY(-4px);
   }
 }
