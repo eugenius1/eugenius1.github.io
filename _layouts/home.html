@@ -147,4 +147,6 @@ layout: default
   {% include post-paginator.html %}
 {% endif %}
 
-{% include page-sharing.html %}
+{% if paginator.page == 1 %}
+  {% include page-sharing.html %}
+{% endif %}

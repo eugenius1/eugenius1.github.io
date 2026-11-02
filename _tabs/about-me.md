@@ -73,7 +73,7 @@ My name is Eusebius Ngemera. I have the following qualities:
     <span class="sr-only">Instagram</span>
   </li>
   <li>
-    <a href="https://www.linkedin.com/in/eusebius/" title="LinkedIn">
+    <a class="hide-border-bottom" href="https://www.linkedin.com/in/eusebius/" title="LinkedIn">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fa fa-linkedin fa-stack-1x"></i>
       </span>
@@ -87,7 +87,7 @@ My name is Eusebius Ngemera. I have the following qualities:
     <span class="sr-only">Linux</span>
   </li>
   <li>
-    <a href="/donate/" title="PayPal">
+    <a class="hide-border-bottom" href="/donate/" title="PayPal">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fa fa-paypal fa-stack-1x"></i>
       </span>

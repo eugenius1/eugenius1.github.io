@@ -84,11 +84,6 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   text-align: right;
 }
 
-/* Icon links, including when hovered. The theme underlines links in content. */
-.content .list-inline a:not(.img-link) {
-  border-bottom: 0;
-}
-
 /* Set by _includes/page-sharing.html where no script handles this button */
 .no-copy-link #copy-link {
   display: none;
