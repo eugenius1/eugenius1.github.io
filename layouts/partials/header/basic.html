@@ -1,5 +1,4 @@
-{{/* Blowfish v3.9.0 header, showing your name rather than the site title, with
-   the logo resized for the 40px it is shown at */}}
+{{/* Blowfish v3.9.0 header, with the logo resized for the 40px it is shown at */}}
 <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
   {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
@@ -25,7 +24,7 @@
   {{ end }}
   {{ if not .Site.Params.disableTextInHeader | default true }}
     <a href="{{ "" | relLangURL }}" class="text-base font-medium truncate min-w-0 shrink">
-      {{ site.Params.Author.name }}
+      {{ .Site.Title | markdownify }}
     </a>
   {{ end }}
   <div class="flex items-center ms-auto">
