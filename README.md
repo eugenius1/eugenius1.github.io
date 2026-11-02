@@ -60,7 +60,8 @@ the visitor's system and shows a toggle in the sidebar.
 
 ## Theme overrides
 
-`_layouts/home.html`, `_layouts/page.html` and `_includes/comments/disqus.html` are
-copies of the theme's files with small changes. When a theme update changes one,
+`_layouts/home.html`, `_layouts/page.html`, `_includes/footer.html` and
+`_includes/comments/disqus.html` are copies of the theme's files with small changes.
+When a theme update changes one,
 `make check` fails. Bring the copy up to date, then update its hash in
 `scripts/theme-overrides.sha256`.

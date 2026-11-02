@@ -84,9 +84,26 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   text-align: right;
 }
 
+/* Icon links, including when hovered. The theme underlines links in content. */
+.content .list-inline a:not(.img-link) {
+  border-bottom: 0;
+}
+
 /* Set by _includes/page-sharing.html where no script handles this button */
 .no-copy-link #copy-link {
   display: none;
+}
+
+/* My photo beside the site name in the homepage's top bar, shown on phones and tablets */
+body:has(.home-cover) #topbar-title::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background: url("../img/eusebius-avatar-icon.jpg") center / cover;
+  vertical-align: middle;
 }
 
 /* Homepage cover. js/home-cover.js adds the photos. */
