@@ -138,4 +138,4 @@ It's usually pronounced [yoo-*SEE*-bee-əs] but I am the exception [yoo-**SAY**-
 
 ## Contact
 
-You will find buttons below to email or connect with me on social networks. My email address is [me [at] eusebius [dot] tech](mailto:me@eusebius.tech).
+You will find buttons below to email or connect with me on social networks. My email address is {% include email-link.html %}.

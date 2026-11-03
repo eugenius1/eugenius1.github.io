@@ -69,7 +69,7 @@ The features above are built-in very well as all I had to do was fill in my [Dis
 
 **Update** 27/03/2021: My new registrar, [Google Domains](https://domains.google/), allows free email forwarding to a single email address.
 The caveat is no PayPal so I have to remember to update my payment card before it expires.
-All emails sent to [me@eusebius.tech](mailto:me@eusebius.tech) are forwarded to my personal email address.
+All emails sent to {% include email-link.html %} are forwarded to my personal email address.
 
 Another email solution is [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of the post date, I haven't been able to modify their record.
 

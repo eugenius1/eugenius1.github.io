@@ -1,0 +1,8 @@
+{%- comment -%}
+  A link to email me, built when clicked as the sidebar's is, so the address isn't
+  in the page for scrapers to find.
+{%- endcomment -%}
+{%- assign email = site.social.email | split: '@' -%}
+<a href="javascript:void(location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))">
+  {{- email[0] }} [at] {{ email[1] | replace: '.', ' [dot] ' -}}
+</a>
