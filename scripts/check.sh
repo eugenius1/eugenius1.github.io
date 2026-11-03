@@ -14,7 +14,7 @@ if [ -n "$missing" ]; then
 fi
 
 # The theme leaves a tab's browser title blank without an entry in the locale file.
-if grep -rlE '<title>\s*\|' _site --include='*.html'; then
+if grep -rlE '<title>\s*(\||</title>)' _site --include='*.html'; then
   echo "Blank browser titles above: add the tabs to _data/locales/en.yml" >&2
   exit 1
 fi
