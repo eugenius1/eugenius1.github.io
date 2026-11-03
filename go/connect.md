@@ -33,13 +33,4 @@ sitemap: false
       <span class="sr-only">Spotify</span>
     </a>
   </li>
-  <li>
-    <a class="hide-border-bottom" href="https://www.youtube.com/c/eusebiusngemera" title="YouTube">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">YouTube</span>
-    </a>
-  </li>
 </ul>

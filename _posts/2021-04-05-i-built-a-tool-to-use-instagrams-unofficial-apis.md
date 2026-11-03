@@ -4,6 +4,10 @@ title: I built a tool to use Instagram's unofficial APIs!
 description: It shows detailed, sortable lists of your Instagram followings and followers
 redirect_from:
  - "/b/iua/"
+image:
+  path: /img/projects/instagram-lists/my-result.jpg
+  alt: Number of accounts I follow reduced from 1079 to 928
+  banner: false
 tags:
   - projects
   - web

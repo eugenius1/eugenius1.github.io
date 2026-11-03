@@ -36,6 +36,8 @@ the one place the Ruby version is set.
 
 - **Posts** are Markdown in `_posts/`, or `_drafts/` to keep one unpublished. Set
   `description` and `tags`, and `image` for a banner. Its `alt` shows as the caption.
+  With `banner: false` under `image`, the image is only in listings and social
+  media previews.
 - **Sidebar pages** are in `_tabs/`, with an `icon` and `order`. Add a new one's
   lowercase title to `_data/locales/en.yml`, as that sets its browser title;
   `make check` fails if one is missing.

@@ -5,21 +5,21 @@
 
 platforms:
   - type: WhatsApp
-    icon: "fa-brands fa-square-whatsapp"
+    icon: "fa-brands fa-whatsapp"
     link: "https://wa.me/?text=TITLE%20URL"
 
   - type: Twitter
-    icon: "fa-brands fa-square-x-twitter"
+    icon: "fa-brands fa-x-twitter"
     link: "https://twitter.com/intent/tweet?text=TITLE&url=URL&hashtags=EusebiusTech"
 
   - type: Linkedin
-    icon: "fab fa-linkedin"
+    icon: "fa-brands fa-linkedin-in"
     link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
 
   - type: Threads
-    icon: "fa-brands fa-square-threads"
+    icon: "fa-brands fa-threads"
     link: "https://www.threads.com/intent/post?text=TITLE%20URL"
 
   - type: Facebook
-    icon: "fab fa-facebook-square"
+    icon: "fa-brands fa-facebook-f"
     link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"

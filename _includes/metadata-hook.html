@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
 
 <!-- Per-page extras, set in front matter -->
+{% if page.image.banner == false %}
+  <!-- The image is only for listings and social media, not a banner on the post -->
+  <style>div:has(> .preview-img) { display: none; }</style>
+{% endif %}
 {% for href in page.css %}
   <link rel="stylesheet" href="{{ href }}">
 {% endfor %}

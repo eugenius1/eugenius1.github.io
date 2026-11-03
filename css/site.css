@@ -6,6 +6,11 @@ h1 {
   font-weight: 800;
 }
 
+/* Subtitles in regular weight, not the theme's light */
+.post-desc.fw-light {
+  font-weight: 400 !important;
+}
+
 /* The theme sizes the sidebar photo in px but its circle in rem */
 #avatar img {
   width: 100%;
