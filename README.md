@@ -20,9 +20,9 @@ configuration in `.claude/launch.json` starts the same thing for Claude Code.
 make preview
 ```
 
-Runs the production build, which is the only way to see the theme's real CSS and
-compressed HTML. `make local` loads all of Bootstrap, so a class can look fine there
-and be missing in production.
+Runs the production build at <http://localhost:4001>, which is the only way to see
+the theme's real CSS and compressed HTML. `make local` loads all of Bootstrap, so a
+class can look fine there and be missing in production. The two can run at once.
 
 ```bash
 make check
@@ -52,6 +52,10 @@ Front matter can load extras on one page with `css` and `js`.
 
 `css/site.css` holds this site's own styles, including the Bootstrap 3 classes still
 used in posts. The theme only ships the Bootstrap classes it uses itself.
+
+The text size, title fonts and green accent are set at the top of `css/site.css`,
+with a shade of green for each of light and dark. The share buttons are in
+`_data/share.yml`.
 
 The homepage photos and their captions are `covers` in `index.html`.
 
