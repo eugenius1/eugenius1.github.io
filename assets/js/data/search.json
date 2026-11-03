@@ -1,0 +1,25 @@
+---
+layout: compress
+swcache: true
+---
+
+{%- comment -%}
+  This site's change: pages and tabs are searchable too, not only posts. Pages kept
+  out of the sitemap are kept out of search as well.
+{%- endcomment -%}
+{%- assign pages = site.tabs | concat: site.pages | where: 'layout', 'page' | where_exp: 'item', 'item.sitemap != false' -%}
+{%- assign entries = site.posts | concat: pages -%}
+
+[
+  {% for post in entries %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "categories": {{ post.categories | join: ', ' | jsonify }},
+    "tags": {{ post.tags | join: ', ' | jsonify }},
+    "date": {{ post.date | jsonify }},
+    {% capture content -%}{% include post-summary.html full_text=true %}{%- endcapture -%}
+    "content": {{ content | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
