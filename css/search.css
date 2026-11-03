@@ -1,0 +1,9 @@
+/* http://appfinite.com/topic/google-custom-search-box-and-button-is-squished/ */
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+  height: 26px !important;
+  margin-top: 0 !important;
+  min-width: 13px !important;
+  padding: 5px 26px !important;
+  width: 68px !important;
+}
