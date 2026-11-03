@@ -8,10 +8,10 @@ const caption = cover.querySelector('.home-cover-caption');
 const photos = JSON.parse(cover.dataset.covers);
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
+const failed = new Set();
 let index = -1;
 let shown = null;
 let timer;
-let failures = 0;
 
 function scheduleNext() {
   clearTimeout(timer);
@@ -27,29 +27,32 @@ function finish(image) {
 }
 
 function show() {
-  const previous = index;
-  do {
-    index = Math.floor(Math.random() * photos.length);
-  } while (index === previous);
+  const choices = photos.map((_, i) => i).filter((i) => i !== index && !failed.has(i));
+  if (choices.length === 0) return;
+  const current = choices[Math.floor(Math.random() * choices.length)];
+  index = current;
 
   const image = new Image();
   image.alt = '';
-  image.src = photos[index].path;
+  image.src = photos[current].path;
   image.onerror = () => {
-    // Try another photo, until each has had a turn at failing
-    if (++failures < photos.length) show();
+    // Try another photo, until each has failed
+    failed.add(current);
+    show();
   };
   image.onload = () => {
-    failures = 0;
     cover.insertBefore(image, text);
-    caption.textContent = photos[index].caption;
+    caption.textContent = photos[current].caption;
     image.getBoundingClientRect(); // so the fade starts from opacity 0
     image.classList.add('is-shown');
-    // Reduced motion turns the fade off, so there's no transitionend to wait for
+    // Reduced motion turns the fade off, so there's no transitionend to wait for,
+    // and turning it on mid-fade cancels the transition
     if (reducedMotion.matches) {
       finish(image);
     } else {
-      image.addEventListener('transitionend', () => finish(image), { once: true });
+      const done = () => finish(image);
+      image.addEventListener('transitionend', done, { once: true });
+      image.addEventListener('transitioncancel', done, { once: true });
     }
   };
 }

@@ -4,8 +4,9 @@ swcache: true
 ---
 
 {%- comment -%}
-  This site's change: pages and tabs are searchable too, not only posts. Pages kept
-  out of the sitemap are kept out of search as well.
+  This site's change: tabs and pages with the page layout are searchable too, not
+  only posts. Listing tabs such as Blog and Tags are left out, as their content is
+  generated, and so are pages kept out of the sitemap.
 {%- endcomment -%}
 {%- assign pages = site.tabs | concat: site.pages | where: 'layout', 'page' | where_exp: 'item', 'item.sitemap != false' -%}
 {%- assign entries = site.posts | concat: pages -%}
