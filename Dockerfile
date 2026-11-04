@@ -4,7 +4,7 @@
 # Compiles and tests the TypeScript in _ts/. compose.yaml mounts the repository
 # over /site, so the packages are linked from /node_modules, where Node looks after
 # /site/node_modules.
-FROM node:24-slim AS node
+FROM node:26-slim AS node
 WORKDIR /deps
 COPY package.json package-lock.json ./
 RUN npm ci --no-fund --no-audit && ln -s /deps/node_modules /node_modules
