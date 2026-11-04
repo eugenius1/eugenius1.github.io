@@ -157,7 +157,8 @@ image's own format for old browsers. A copy is never wider than its image, so a
 narrow image's wider copies are all the same size. It also writes each image's size
 to `_data/images.json`. Neither is in git. It only remakes images that have changed,
 and CI keeps `assets/img/` between runs, so a new image adds a few seconds, not a
-minute.
+minute. `make local` makes them only when it starts, so restart it after adding an
+image.
 
 To add an image, put it in `_images/`, then show it in a post or page with:
 

@@ -11,8 +11,9 @@ import sharp from 'sharp';
 // copy is too, so `<name>-1200.jpg` can be written in front matter for any image.
 export const WIDTHS = [480, 800, 1200, 2000];
 
-// Changing how copies are made should bump this, so every image is made again
-const VERSION = 1;
+// Changing how copies are made should bump this, so every image is made again.
+// The widths are part of it, as the data file lists each image's copies.
+const VERSION = `1 ${WIDTHS.join(' ')}`;
 
 const FORMATS: Record<string, 'jpeg' | 'png' | 'gif' | 'webp'> = {
   '.jpg': 'jpeg',
@@ -39,7 +40,7 @@ export interface ImageData {
 }
 
 interface Manifest {
-  version: number;
+  version: string;
   images: Record<string, { hash: string; data: ImageData }>;
 }
 
