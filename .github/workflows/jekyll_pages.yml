@@ -58,12 +58,15 @@ jobs:
       # Ubuntu's AppArmor rules stop Chrome's sandbox from starting on the runner
       - name: Run Lighthouse
         run: npx --yes @lhci/cli@0.15.1 collect --settings.chromeFlags="--no-sandbox"
-      # Before the scores are checked, so the reports are there when they fail
+      # Before the scores are checked, so the reports are there when they fail, and
+      # after a failed collection too, for whichever runs finished
       - name: Write reports
+        if: ${{ !cancelled() && hashFiles('.lighthouseci/lhr-*.json') != '' }}
         run: |
           npx --yes @lhci/cli@0.15.1 upload
           node scripts/lighthouse-summary.js >> "$GITHUB_STEP_SUMMARY"
       - name: Upload reports
+        if: ${{ !cancelled() && hashFiles('.lighthouseci/lhr-*.json') != '' }}
         uses: actions/upload-artifact@v4
         with:
           name: lighthouse-reports

@@ -51,8 +51,9 @@ On pull requests, the `lighthouse` job runs Chrome's
 job made: the homepage, a long post, About Me, the CV and Instagram Lists. It fails
 when accessibility, SEO or best practices drop below their limits, and only warns
 for performance, as Google Analytics, Disqus and the CDN fonts make that score vary.
-The pages and limits are in `lighthouserc.json`. Each run's scores
-are in the job's summary, and its full reports in the `lighthouse-reports` artifact.
+The pages and limits are in `lighthouserc.json`. Each page runs three times: the
+limits are checked against its best run, and the job's summary shows its median run.
+The full reports are in the `lighthouse-reports` artifact.
 
 It runs on the host rather than in Docker, as it needs Chrome. With Node and Chrome
 installed, after `make check` has built `_site`:

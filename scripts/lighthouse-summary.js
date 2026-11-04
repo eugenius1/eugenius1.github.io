@@ -15,4 +15,7 @@ for (const run of manifest.filter((run) => run.isRepresentativeRun)) {
   );
   console.log(`| ${new URL(run.url).pathname} | ${scores.join(' | ')} |`);
 }
+console.log(
+  '\nEach page\'s median run. The limits are checked against its best run, so a score here can be under a limit that passed.',
+);
 console.log('\nThe full reports are in the `lighthouse-reports` artifact.');

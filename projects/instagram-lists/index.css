@@ -47,6 +47,7 @@ a.ig-username {
 .dataTables_wrapper .dataTables_paginate .paginate_button:not(.current, :hover) {
   color: inherit !important;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:is(:hover, :active) {
   color: var(--text-muted-color) !important;
 }
