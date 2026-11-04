@@ -135,9 +135,12 @@ describe('Google Analytics', () => {
     expect(window[`ga-disable-${ID}`]).toBe(true);
     expect(document.cookie).toBe('other=1');
 
-    // Accepting again turns it back on
+    // Accepting again turns it back on, and counts the page again
     loadAnalytics(ID);
     expect(window[`ga-disable-${ID}`]).toBe(false);
+    expect(analyticsScripts()).toHaveLength(1);
+    expect([...(window.dataLayer!.at(-1) as IArguments)]).toEqual(['config', ID]);
+    expect(window.dataLayer).toHaveLength(3);
   });
 
   it('asks about nothing without an Analytics id, as in development', () => {

@@ -59,12 +59,15 @@ function localStorageOrNull(): Storage | null {
 // What Chirpy's analytics/google.html did on every page, now only after consent
 export function loadAnalytics(id: string, doc: Document = document): void {
   window[`ga-disable-${id}`] = false;
-  if (doc.querySelector('script[data-google-analytics]')) return;
-
   window.dataLayer = window.dataLayer || [];
   // gtag.js reads the arguments object itself, not an array
   function gtag(..._: unknown[]) {
     window.dataLayer!.push(arguments);
+  }
+  // Accepting again after refusing on the same page counts the page again
+  if (doc.querySelector('script[data-google-analytics]')) {
+    gtag('config', id);
+    return;
   }
   gtag('js', new Date());
   gtag('config', id);
@@ -99,10 +102,16 @@ export function stopAnalytics(id: string, doc: Document = document): void {
 interface Settings {
   storage: Storage | null;
   analyticsId?: string;
+  privacyUrl?: string;
   doc?: Document;
 }
 
-export function setUp({ storage, analyticsId, doc = document }: Settings): void {
+export function setUp({
+  storage,
+  analyticsId,
+  privacyUrl = '/pages/privacy-policy/',
+  doc = document,
+}: Settings): void {
   let consent = readConsent(storage);
   let banner: HTMLElement | null = null;
   let opener: HTMLElement | null = null;
@@ -138,6 +147,13 @@ export function setUp({ storage, analyticsId, doc = document }: Settings): void 
     return element;
   }
 
+  function actions(...buttons: HTMLButtonElement[]): HTMLDivElement {
+    const row = doc.createElement('div');
+    row.className = 'consent-actions';
+    row.append(...buttons);
+    return row;
+  }
+
   function openBanner(from?: HTMLElement) {
     if (banner) {
       banner.focus();
@@ -156,7 +172,7 @@ export function setUp({ storage, analyticsId, doc = document }: Settings): void 
         : 'This site asks before loading anything that sets cookies. ',
     );
     const policy = doc.createElement('a');
-    policy.href = '/pages/privacy-policy/';
+    policy.href = privacyUrl;
     policy.textContent = 'Privacy policy';
     question.append(policy);
     banner.append(question);
@@ -169,13 +185,12 @@ export function setUp({ storage, analyticsId, doc = document }: Settings): void 
           consent.analytics === 'granted' ? 'You have accepted.' : 'You have refused.';
         banner.append(current);
       }
-      const actions = doc.createElement('div');
-      actions.className = 'consent-actions';
-      actions.append(
-        button('Accept', () => chooseAnalytics('granted')),
-        button('Refuse', () => chooseAnalytics('denied')),
+      banner.append(
+        actions(
+          button('Accept', () => chooseAnalytics('granted')),
+          button('Refuse', () => chooseAnalytics('denied')),
+        ),
       );
-      banner.append(actions);
     }
 
     if (consent.comments === 'granted') {
@@ -183,24 +198,20 @@ export function setUp({ storage, analyticsId, doc = document }: Settings): void 
       comments.className = 'consent-current';
       comments.textContent =
         'Disqus comments load on their own, which lets Disqus set cookies. ';
-      banner.append(comments);
-      const actions = doc.createElement('div');
-      actions.className = 'consent-actions';
-      actions.append(
-        button('Ask before loading comments', () => {
-          save({ comments: 'denied' });
-          closeBanner();
-        }),
+      banner.append(
+        comments,
+        actions(
+          button('Ask before loading comments', () => {
+            save({ comments: 'denied' });
+            closeBanner();
+          }),
+        ),
       );
-      banner.append(actions);
     }
 
     // Opened from a settings button with nothing to change
     if (!analyticsId && consent.comments !== 'granted') {
-      const actions = doc.createElement('div');
-      actions.className = 'consent-actions';
-      actions.append(button('Close', closeBanner));
-      banner.append(actions);
+      banner.append(actions(button('Close', closeBanner)));
     }
 
     banner.addEventListener('keydown', (event) => {
@@ -274,15 +285,11 @@ export function setUp({ storage, analyticsId, doc = document }: Settings): void 
     rememberRow.className = 'consent-remember';
     rememberRow.append(remember, ' ', label);
 
-    const actions = doc.createElement('div');
-    actions.className = 'consent-actions';
-    actions.append(
-      button('Load comments', () => {
-        if (remember.checked) save({ comments: 'granted' });
-        load();
-      }),
-    );
-    placeholder.append(text, actions, rememberRow);
+    const loadButton = button('Load comments', () => {
+      if (remember.checked) save({ comments: 'granted' });
+      load();
+    });
+    placeholder.append(text, actions(loadButton), rememberRow);
     thread.append(placeholder);
   }
 }
@@ -290,5 +297,9 @@ export function setUp({ storage, analyticsId, doc = document }: Settings): void 
 // Tests import the functions above without the script tag on the page
 const script = document.querySelector<HTMLScriptElement>('script#consent-script');
 if (script) {
-  setUp({ storage: localStorageOrNull(), analyticsId: script.dataset.gaId || undefined });
+  setUp({
+    storage: localStorageOrNull(),
+    analyticsId: script.dataset.gaId || undefined,
+    privacyUrl: script.dataset.privacyUrl,
+  });
 }
