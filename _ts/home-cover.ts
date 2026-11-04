@@ -16,6 +16,7 @@ export function start(cover: HTMLElement): void {
   const failed = new Set<number>();
   let index = -1; // the photo shown
   let shown: HTMLImageElement | null = null;
+  let fading: HTMLImageElement | null = null;
   let timer: ReturnType<typeof setTimeout> | undefined;
   let busy = false;
 
@@ -27,6 +28,9 @@ export function start(cover: HTMLElement): void {
   }
 
   function finish(image: HTMLImageElement) {
+    // Both transition events and reduced motion can finish the same photo
+    if (image !== fading) return;
+    fading = null;
     busy = false;
     shown?.remove();
     shown = image;
@@ -57,6 +61,7 @@ export function start(cover: HTMLElement): void {
       caption.textContent = photos[current].caption;
       image.getBoundingClientRect(); // so the fade starts from opacity 0
       image.classList.add('is-shown');
+      fading = image;
       // Reduced motion turns the fade off, so there's no transitionend to wait for,
       // and turning it on mid-fade cancels the transition
       if (reducedMotion.matches) {
@@ -69,7 +74,11 @@ export function start(cover: HTMLElement): void {
     };
   }
 
-  reducedMotion.addEventListener('change', scheduleNext);
+  reducedMotion.addEventListener('change', () => {
+    // A fade that never started sends no transition event to finish it
+    if (reducedMotion.matches && fading) finish(fading);
+    else scheduleNext();
+  });
   show();
 }
 

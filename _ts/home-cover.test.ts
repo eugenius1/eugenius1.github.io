@@ -242,6 +242,24 @@ describe('home cover', () => {
     expect(vi.getTimerCount()).toBe(0);
   });
 
+  it('shows a photo straight away when reduced motion turns on before its fade starts', () => {
+    const cover = startCover(3);
+    rotate();
+    load();
+    reducedMotion.set(true);
+    expectOnly(cover, latest());
+    expect(vi.getTimerCount()).toBe(0);
+
+    // A late transition event leaves the photo shown
+    latest().dispatchEvent(new Event('transitioncancel'));
+    expectOnly(cover, latest());
+    reducedMotion.set(false);
+    vi.advanceTimersByTime(HOLD_MS);
+    expect(images).toHaveLength(3);
+    rotate();
+    expect(images).toHaveLength(4);
+  });
+
   it('does not start a photo while one is loading', () => {
     startCover(3);
     reducedMotion.set(true);
@@ -258,8 +276,8 @@ describe('home cover', () => {
   it('does not start a photo while one is fading in', () => {
     const cover = startCover(3);
     load();
-    reducedMotion.set(true);
-    reducedMotion.set(false);
+    // A change event that leaves reduced motion off, which schedules the next photo
+    reducedMotion.dispatchEvent(new Event('change'));
     vi.advanceTimersByTime(HOLD_MS);
     expect(images).toHaveLength(1);
 
