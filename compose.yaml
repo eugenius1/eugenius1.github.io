@@ -8,3 +8,17 @@ services:
       - "127.0.0.1:4000:4000"
       - "127.0.0.1:35729:35729"
     command: bundle exec jekyll serve --drafts --livereload --host 0.0.0.0
+
+  # Compiles _ts/ to js/ and again on each change, which Jekyll then picks up
+  node:
+    build:
+      context: .
+      target: node
+    volumes:
+      - .:/site
+    # Hides any node_modules on the host, so Node uses the image's packages, and
+    # keeps Vitest's cache out of the repository
+    tmpfs: /site/node_modules
+    # Stops the watcher straight away on Ctrl-C
+    init: true
+    command: npm run watch

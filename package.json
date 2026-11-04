@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild _ts/home-cover.ts --bundle --target=es2020 --outfile=js/home-cover.js",
+    "watch": "npm run build -- --watch=forever",
+    "test": "vitest run --dir _ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "jsdom": "30.1.3",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}
