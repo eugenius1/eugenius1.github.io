@@ -118,7 +118,11 @@ posts need in `css/site.css`.
 **A theme update can silently undo one of this site's changes.** The overrides are
 whole copies of the theme's files, so a newer theme file is ignored. When
 `make check` fails on `scripts/theme-overrides.sha256`, bring the copy up to date
-with the theme's new version, keep this site's change, then update its hash.
+with the theme's new version, keep this site's change, then record the new theme
+file's hash in `scripts/theme-overrides.sha256`. The check hashes the installed
+theme's file, not this site's copy, so get it with
+`sha256sum "$(bundle info --path jekyll-theme-chirpy)/<path>"` inside the `site`
+container. The same goes when overriding a new file.
 
 **Changing an address loses its Disqus thread and breaks links to it.** Threads are
 looked up by URL, and `scripts/urls.txt` lists every address the old site served.
