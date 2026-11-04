@@ -1,5 +1,7 @@
 # project
 _site
+# Built from _ts/ by `npm run build`
+js/home-cover.js
 .jekyll-cache
 .sass-cache
 

@@ -124,6 +124,10 @@ exclude:
   - Makefile
   - Dockerfile
   - compose.yaml
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - node_modules
   - scripts
   - README.md
   - "**/README.md"
