@@ -37,6 +37,6 @@ wrong — not a changelog line.
 
 Disqus threads and inbound links follow URLs. Moving or renaming a post or page
 needs `redirect_from` in its front matter for the old address (or a page with
-`redirect_to`, as in `go/`). `make check` only catches this for the
+`redirect_to` in `_redirects/`). `make check` only catches this for the
 addresses in `scripts/urls.txt`, which the site served before the move to Jekyll
 4; anything newer is on you. Never delete a line from it to make the check pass.

@@ -93,9 +93,9 @@ make links
 ### TypeScript
 
 The site's own scripts are TypeScript in `_ts/`, with their tests beside them.
-esbuild compiles `_ts/home-cover.ts` and `_ts/consent.ts` to `js/`, where they're
-not in git. `make local` recompiles them on each change, and `make preview` and
-`make check` compile them first. `_ts/images.ts` runs in Node instead, to make the
+esbuild compiles `_ts/home-cover.ts` and `_ts/consent.ts` to `assets/js/`, where
+they're not in git. `make local` recompiles them on each change, and `make preview`
+and `make check` compile them first. `_ts/images.ts` runs in Node instead, to make the
 images (see [Images](#images)).
 
 Node runs in Docker too. To run the tests or the type check on their own:
@@ -138,13 +138,15 @@ replace it with a service that sets no cookies.
   media previews.
 - **Sidebar pages** are in `_tabs/`, with an `icon` and `order`. Add a new one's
   lowercase title to `_data/locales/en.yml`, as that sets its browser title.
-- **Other pages** are in `pages/` and `projects/`. On a page, `image` is only for
-  sharing on social media, so put any image to show in the Markdown. Posts always
-  have share buttons; `share: true` adds them to a page, and pages in `projects/`
-  have them unless set to `false`.
+- **Other pages** are in `pages/` and `projects/`. A page in `pages/` sets its
+  address with `permalink`, or is at `/pages/<name>/` without one. On a page, `image`
+  is only for sharing on social media, so put any image to show in the Markdown.
+  Posts always have share buttons; `share: true` adds them to a page, and pages in
+  `projects/` have them unless set to `false`.
 - **Redirects** are `redirect_from` in a page's front matter for old addresses, or a
-  page with a `redirect_to` address in its front matter, as in `go/`. Both come from
-  the `jekyll-redirect-from` plugin.
+  file in `_redirects/` with a `redirect_to` address, for short links such as
+  `/go/kili/`. Each file there sets its address with `permalink`, so its folder
+  doesn't change where it's served. Both come from the `jekyll-redirect-from` plugin.
 
 Front matter can load extras on one page with `css` and `js`.
 
@@ -184,12 +186,12 @@ published.
 
 ### Changing the look
 
-`css/site.css` holds this site's own styles, including the Bootstrap 3 classes still
-used in posts.
+`assets/css/site.css` holds this site's own styles, including the Bootstrap 3
+classes still used in posts.
 
-The text size, title fonts and green accent are set at the top of `css/site.css`,
-with a shade of green for each of light and dark. The share buttons are in
-`_data/share.yml`.
+The text size, title fonts and green accent are set at the top of
+`assets/css/site.css`, with a shade of green for each of light and dark. The share
+buttons are in `_data/share.yml`.
 
 The homepage photos and their captions are `covers` in `index.html`, each with
 its path in `_images/`.
@@ -202,7 +204,7 @@ the visitor's system and shows a toggle in the sidebar.
 **A class that works in `make local` can be missing in production.** The dev build
 loads all of Bootstrap, but the theme's production CSS only ships the Bootstrap
 classes the theme uses itself. Check styling in `make preview`, and put any class
-posts need in `css/site.css`.
+posts need in `assets/css/site.css`.
 
 **A theme update can silently undo one of this site's changes.** The overrides are
 whole copies of the theme's files, so a newer theme file is ignored. When

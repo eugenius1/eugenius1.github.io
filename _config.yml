@@ -66,6 +66,10 @@ collections:
   tabs:
     output: true
     sort_by: order
+  # Short links and old addresses that send visitors elsewhere. Each sets its
+  # own permalink, so the folders inside are only for tidiness.
+  redirects:
+    output: true
 
 defaults:
   - scope:

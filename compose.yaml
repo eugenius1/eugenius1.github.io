@@ -9,7 +9,7 @@ services:
       - "127.0.0.1:35729:35729"
     command: bundle exec jekyll serve --drafts --livereload --host 0.0.0.0
 
-  # Compiles _ts/ to js/ and again on each change, which Jekyll then picks up
+  # Compiles _ts/ to assets/js/ and again on each change, which Jekyll then picks up
   node:
     build:
       context: .

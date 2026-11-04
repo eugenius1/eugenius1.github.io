@@ -1,5 +1,5 @@
-/// <reference path="../../js/utils/utils.js" />
-/// <reference path="../../js/utils/storage.js" />
+/// <reference path="../../assets/js/utils/utils.js" />
+/// <reference path="../../assets/js/utils/storage.js" />
 
 // also in ./satellite.js
 const StoryViewStatus = Object.freeze({ NA: 0, NONE: 1, PARTIAL: 2, ALL: 3 });

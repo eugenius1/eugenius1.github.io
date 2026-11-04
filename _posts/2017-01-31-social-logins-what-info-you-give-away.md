@@ -3,7 +3,7 @@ layout: post
 title: "Social Logins—what info you give away!"
 description: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
 js:
-  - "/js/blog/2017/social-logins.min.js"
+  - "/assets/js/blog/2017/social-logins.min.js"
 redirect_from:
  - "/blog/social-logins/"
  - "/b/sl/"

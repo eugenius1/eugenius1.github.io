@@ -27,7 +27,7 @@
 {%- if include.sizes -%}
   {%- assign _sizes = include.sizes -%}
 {%- elsif _image and include.class contains 'height-fits' -%}
-  {%- comment -%} 500px tall, as in css/site.css {%- endcomment -%}
+  {%- comment -%} 500px tall, as in assets/css/site.css {%- endcomment -%}
   {%- assign _sizes = 500 | times: _image.width | divided_by: _image.height | append: 'px' -%}
 {%- elsif include.class contains 'golden-width' -%}
   {%- assign _sizes = '(min-width: 1200px) 480px, (min-width: 768px) 510px, 62vw' -%}
