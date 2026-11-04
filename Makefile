@@ -5,6 +5,10 @@ local: PORT ?= 4000
 preview: PORT ?= 4001
 LIVERELOAD_PORT = $(shell expr $(PORT) + 31729)
 
+# Docker Compose names a project after its folder, so two checkouts in folders of the
+# same name would share containers. A hash of the full path keeps them apart.
+export COMPOSE_PROJECT_NAME ?= $(shell printf '%s' '$(notdir $(CURDIR))' | tr 'A-Z' 'a-z' | tr -c 'a-z0-9_-' '-')-$(shell printf '%s' '$(CURDIR)' | cksum | cut -d ' ' -f 1)
+
 # Compiles once first, so Jekyll's first build has the scripts
 local:
 	@test $(PORT) -le 33806 || { echo "PORT must be 33806 or lower, so live reload's port stays below 65536"; exit 1; }
