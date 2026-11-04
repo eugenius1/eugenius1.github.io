@@ -49,10 +49,17 @@ jobs:
             fi
             exit 0
           fi
+          # 2 means dead links. Anything else is lychee itself failing, such as a
+          # mistake in lychee.toml, which should fail the run rather than file an issue.
+          if [ "$EXIT_CODE" != 2 ]; then
+            echo "lychee failed with exit code $EXIT_CODE" >&2
+            exit 1
+          fi
           {
             echo "Found by the weekly link check ($RUN_URL). Fix the link in the source, link to an archived copy on the Wayback Machine if the page has gone for good, or exclude the site in \`lychee.toml\` if it always blocks bots."
             echo
-            cat lychee/out.md
+            # GitHub caps an issue's body at 65,536 characters; the run's summary has it all
+            head -c 60000 lychee/out.md
           } > body.md
           if [ -n "$issue" ]; then
             gh issue edit "$issue" --body-file body.md

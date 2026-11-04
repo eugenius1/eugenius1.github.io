@@ -15,7 +15,8 @@ exclude_path = [
 exclude = [
   '^https?://(www\.)?eusebius\.tech',
   # Always answer bots with 403, 406, 999 or a dropped connection, whether the
-  # page is there or not. Check these by hand now and then.
+  # page is there or not. Check these by hand now and then, above all the
+  # Trading212 and Uber referral links on the freebies page.
   '^https://www\.linkedin\.com/',
   '^https://stackoverflow\.com/',
   '^https://www\.forbes\.com/',
