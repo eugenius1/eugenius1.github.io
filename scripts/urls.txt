@@ -42,7 +42,6 @@ freebies/uber/index.html
 fyp/index.html
 get/cv/index.html
 go/connect/index.html
-go/easoc/index.html
 go/fyp/p/index.html
 go/fyp/r/index.html
 go/hover.com/index.html
