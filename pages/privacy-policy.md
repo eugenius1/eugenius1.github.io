@@ -9,41 +9,33 @@ This is what [Eusebius.Tech](https://eusebius.tech) (the "site"), run by Eusebiu
 Ngemera, does with information about you. The site has no accounts and no sign-up,
 and it doesn't sell or share information about you.
 
-<button type="button" class="consent-settings-link" data-consent-settings hidden>Change your cookie settings</button>
-
 ## Cookies
 
-The site sets no cookies of its own. Two services it uses would set theirs, so the
-site asks you first and loads neither until you agree.
+The site sets no cookies of its own. Two services it uses set theirs.
 
 ### Google Analytics
 
 [Google Analytics](https://marketingplatform.google.com/about/analytics/) counts
 visits and shows which pages people read, where they come from and what device
-they use. It runs only if you choose **Accept** on the banner at the bottom of the
-page. It then sets the `_ga` and `_ga_ME9VJ7Y5RR` cookies, which last up to two
-years, and sends Google your IP address and details of your browser and the pages
-you visit. See
+they use. It loads on every page and sets the `_ga` and `_ga_ME9VJ7Y5RR` cookies,
+which last up to two years. It sends Google your IP address and details of your
+browser and the pages you visit. See
 [how Google uses information from sites that use its services](https://policies.google.com/technologies/partner-sites).
-
-If you choose **Refuse**, Google Analytics never loads. Refusing later, from the
-cookie settings, turns it off and deletes its cookies.
+To stop it, block cookies for this site in your browser, or use Google's
+[opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
 
 ### Disqus comments
 
 The comments under posts and projects are run by [Disqus](https://disqus.com/),
 which sets cookies and tracks visitors across the sites that use it. They load only
 when you choose **Load comments**. Tick **Always load comments** to have them load
-on every page without asking; the cookie settings let you go back to being asked.
-See [Disqus's privacy policy](https://disqus.com/privacy-policy/).
+on every page without asking; **Ask before loading comments**, under the comments,
+undoes that. See [Disqus's privacy policy](https://disqus.com/privacy-policy/).
 
-### Your choices
-
-The site remembers your choices in your browser's local storage, under
-`cookie-consent`, not in a cookie, and they never leave your browser. To change
-them, use **Cookie settings** at the bottom of any page, or the button at the top
-of this one. Clearing the site's data in your browser makes it ask again. Local
-storage also keeps whether you switched the site to light or dark mode.
+The site remembers **Always load comments** in your browser's local storage, under
+`cookie-consent`, not in a cookie, and it never leaves your browser. Clearing the
+site's data in your browser makes it ask again. Local storage also keeps whether
+you switched the site to light or dark mode.
 
 ## Other services
 

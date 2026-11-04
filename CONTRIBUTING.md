@@ -123,14 +123,11 @@ Comments are Disqus, and their threads are found by the page's full address alon
 (see `_includes/comments/disqus.html`): the old threads were made that way, with no
 identifier. Google Analytics is set in `_config.yml`.
 
-Both set cookies, so neither loads until the visitor agrees. `_ts/consent.ts` shows
-a banner asking about Analytics, and a "Load comments" button where the comments
-go; the "Cookie settings" link in the footer and on the privacy policy brings the
-banner back to change the answer. The choices are kept in `localStorage`, not a
-cookie. The theme has no consent option, so `_includes/analytics/google.html` is
-emptied and `_includes/metadata-hook.html` passes the Analytics id to the script
-instead. Analytics only runs in the production build, so check the banner with
-`make preview`.
+Disqus sets cookies, so the comments don't load until the visitor clicks "Load
+comments", which `_ts/consent.ts` puts where they go. Ticking "Always load comments"
+keeps that choice in `localStorage`, not a cookie, and a button under the comments
+undoes it. Google Analytics still loads on every production page; issue 59 is to
+replace it with a service that sets no cookies.
 
 ### Writing
 
