@@ -453,9 +453,9 @@ so a drawdown needs to return to the previous peak value but adjusted for inflat
 The many other charts include those allowing you to plan **financial independence**.
 The chart below shows that if I invest 30% of my income in this portfolio, I could retire in 18-28 years (aged 43-53).
 This assumes my current monthly expenses (the remaining 70%) will be enough for me then when adjusted for (French) inflation, but this won't be enough if I will have more financial responsibilities like children.
-More details [here](https://portfoliocharts.com/portfolio/financial-independence/)
-and [here](https://portfoliocharts.com/portfolio/withdrawal-rates/)
-on how the calculation is done.
+More details on how the calculation is done are on PortfolioCharts' pages on
+[financial independence](https://portfoliocharts.com/portfolio/financial-independence/)
+and [withdrawal rates](https://portfoliocharts.com/portfolio/withdrawal-rates/).
 
 ![Financial independence profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/financial-independence.png)
 

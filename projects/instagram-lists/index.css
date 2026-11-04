@@ -40,3 +40,14 @@ a.ig-username {
 .table>tbody>tr>td.body-right {
   text-align: right;
 }
+/* DataTables' own CSS sets these to dark greys, unreadable in dark mode */
+.dataTables_wrapper :is(.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate) {
+  color: inherit !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.current, :hover) {
+  color: inherit !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:is(:hover, :active) {
+  color: var(--text-muted-color) !important;
+}

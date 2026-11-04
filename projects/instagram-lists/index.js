@@ -256,7 +256,13 @@ const secondDataTableArgs = {
   autoWidth: true,
   scrollX: true,
   fixedColumns: {
-    leftColumns: 2
+    leftColumns: 2,
+    // The frozen columns are a copy that screen readers skip, so keep the keyboard
+    // out of it too: its sort headers and links are reachable in the table itself
+    drawCallback: function (left) {
+      $(left.header).add(left.body).add(left.footer)
+        .find('a, button, input, select, [tabindex]').attr('tabindex', -1);
+    }
   },
   initComplete1: function () {
     this.api().columns().every(function () {
