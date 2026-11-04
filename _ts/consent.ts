@@ -1,7 +1,7 @@
 // Asks before loading Disqus comments, which set cookies and track visitors: a
 // "Load comments" button sits where they go. The choice to always load them is
 // kept in localStorage rather than a cookie, so asking sets no cookie itself.
-// `npm run build` compiles it to js/consent.js.
+// `npm run build` compiles it to assets/js/consent.js.
 
 export type Choice = 'granted' | 'denied';
 

@@ -1,5 +1,5 @@
 // Fades the homepage cover through its photos in random order, never showing the
-// same one twice running. `npm run build` compiles it to js/home-cover.js.
+// same one twice running. `npm run build` compiles it to assets/js/home-cover.js.
 const HOLD_MS = 6000;
 
 // The copies of each photo, from _includes/home-cover.html

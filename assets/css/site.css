@@ -204,7 +204,7 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   height: 1.75rem;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background: url("../assets/img/eusebius-avatar-icon-480.webp") center / cover;
+  background: url("../img/eusebius-avatar-icon-480.webp") center / cover;
   vertical-align: middle;
 }
 
@@ -282,7 +282,7 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   text-decoration: underline;
 }
 
-/* The "Load comments" placeholder from js/consent.js */
+/* The "Load comments" placeholder from assets/js/consent.js */
 .consent-comments {
   margin: 1rem 0;
   padding: 1rem 1.25rem;

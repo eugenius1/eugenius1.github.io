@@ -9,9 +9,9 @@ css:
 js:
   - https://code.jquery.com/jquery-3.5.1.js
   - https://cdn.datatables.net/v/dt/dt-1.10.22/fc-3.3.1/datatables.min.js
-  - /js/DataTables/plugins.js
-  - /js/utils/utils.js
-  - /js/utils/storage.js
+  - /assets/js/DataTables/plugins.js
+  - /assets/js/utils/utils.js
+  - /assets/js/utils/storage.js
   - index.js
 redirect_from:
  - "/igl/"

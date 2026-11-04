@@ -66,6 +66,10 @@ collections:
   tabs:
     output: true
     sort_by: order
+  # Short links and old addresses that send visitors elsewhere. Each sets its
+  # own permalink, so the folders inside are only for tidiness.
+  redirects:
+    output: true
 
 defaults:
   - scope:
@@ -92,15 +96,16 @@ defaults:
       comments: true
       share: true
   - scope:
+      path: ""
+      type: redirects
+    values:
+      sitemap: false
+  - scope:
       path: archive
     values:
       sitemap: false
   - scope:
       path: raw
-    values:
-      sitemap: false
-  - scope:
-      path: test
     values:
       sitemap: false
   - scope:
@@ -118,11 +123,10 @@ compress_html:
   ignore:
     envs: [development]
 
-# Exclude these files from production site
+# Exclude these files from production site. Jekyll leaves out Gemfile,
+# node_modules, vendor/ and files starting with a dot itself.
 exclude:
   - CNAME
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - Makefile
   - Dockerfile
@@ -132,14 +136,15 @@ exclude:
   - tsconfig.json
   - lighthouserc.json
   - lychee.toml
-  - node_modules
   - scripts
   # Screenshots for pull requests, not pages
   - docs
+  # Docs for people working on the site. The second only matches README files
+  # in folders.
   - README.md
   - "**/README.md"
-  - "*.vscode"
-  - vendor
+  - AGENTS.md
+  - CONTRIBUTING.md
   # The dev build, so `make preview` doesn't rebuild each time `make local` does
   - _site
 

@@ -9,7 +9,7 @@
     let paragraph = document.createElement('p');
 
     disqusThread.id = 'disqus_thread';
-    {%- comment -%} This site's change: js/consent.js loads this only once someone agrees to Disqus's cookies, rather than the theme loading it as it scrolls into view {%- endcomment %}
+    {%- comment -%} This site's change: assets/js/consent.js loads this only once someone agrees to Disqus's cookies, rather than the theme loading it as it scrolls into view {%- endcomment %}
     disqusThread.dataset.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
     paragraph.className = 'text-center text-muted small';
     paragraph.innerHTML = 'Comments powered by <a href="https://disqus.com/">Disqus</a>.';

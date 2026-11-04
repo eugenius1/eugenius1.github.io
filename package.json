@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "images": "node _ts/images.ts",
-    "scripts": "esbuild _ts/home-cover.ts _ts/consent.ts --bundle --target=es2020 --outdir=js",
+    "scripts": "esbuild _ts/home-cover.ts _ts/consent.ts --bundle --target=es2020 --outdir=assets/js",
     "build": "npm run images && npm run scripts",
     "watch": "npm run scripts -- --watch=forever",
     "test": "vitest run --dir _ts",
