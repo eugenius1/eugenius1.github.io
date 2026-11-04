@@ -24,6 +24,10 @@ Runs the production build at <http://localhost:4001>, which is the only way to s
 the theme's real CSS and compressed HTML. `make local` loads all of Bootstrap, so a
 class can look fine there and be missing in production. The two can run at once.
 
+Either takes another port, such as `make local PORT=4002`, so several checkouts or
+worktrees can each run their own. Claude Code's previews pick a free port this way
+on their own.
+
 ```bash
 make check
 ```
