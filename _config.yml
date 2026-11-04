@@ -139,9 +139,12 @@ exclude:
   - scripts
   # Screenshots for pull requests, not pages
   - docs
-  # The second only matches README files in folders
+  # Docs for people working on the site. The second only matches README files
+  # in folders.
   - README.md
   - "**/README.md"
+  - AGENTS.md
+  - CONTRIBUTING.md
   # The dev build, so `make preview` doesn't rebuild each time `make local` does
   - _site
 
