@@ -7,6 +7,7 @@ LIVERELOAD_PORT = $(shell expr $(PORT) + 31729)
 
 # Compiles once first, so Jekyll's first build has the scripts
 local:
+	@test $(PORT) -le 33806 || { echo "PORT must be 33806 or lower, so live reload's port stays below 65536"; exit 1; }
 	docker compose run --build --rm node npm run build
 	PORT=$(PORT) LIVERELOAD_PORT=$(LIVERELOAD_PORT) docker compose up --build
 
