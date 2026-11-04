@@ -87,6 +87,13 @@ function rotate() {
   vi.advanceTimersByTime(HOLD_MS);
 }
 
+// The cover shows this image and no other
+function expectOnly(cover: HTMLElement, image: HTMLImageElement) {
+  const shown = cover.querySelectorAll('img');
+  expect(shown).toHaveLength(1);
+  expect(shown[0]).toBe(image);
+}
+
 function caption() {
   return document.querySelector('.home-cover-caption')!.textContent;
 }
@@ -136,7 +143,7 @@ describe('home cover', () => {
     load();
     expect(cover.querySelectorAll('img')).toHaveLength(2);
     fadeIn();
-    expect([...cover.querySelectorAll('img')]).toEqual([latest()]);
+    expectOnly(cover, latest());
   });
 
   it('shows each photo with its own caption', () => {
@@ -191,7 +198,7 @@ describe('home cover', () => {
     expect(images.map(photo)).toEqual([0, 1, 2]);
     vi.advanceTimersByTime(HOLD_MS * 10);
     expect(images).toHaveLength(3);
-    expect([...cover.querySelectorAll('img')]).toEqual([images[0]]);
+    expectOnly(cover, images[0]);
   });
 
   it('swaps photos straight away with reduced motion, and holds the photo', () => {
@@ -199,7 +206,7 @@ describe('home cover', () => {
     const cover = startCover(3);
     load();
     // No fade to wait for
-    expect([...cover.querySelectorAll('img')]).toEqual([latest()]);
+    expectOnly(cover, latest());
     expect(caption()).toBe(`Caption ${photo(latest())}`);
     expect(vi.getTimerCount()).toBe(0);
     vi.advanceTimersByTime(HOLD_MS * 10);
@@ -231,7 +238,7 @@ describe('home cover', () => {
     reducedMotion.set(true);
     // Turning the fade off cancels the transition
     latest().dispatchEvent(new Event('transitioncancel'));
-    expect([...cover.querySelectorAll('img')]).toEqual([latest()]);
+    expectOnly(cover, latest());
     expect(vi.getTimerCount()).toBe(0);
   });
 
@@ -257,7 +264,7 @@ describe('home cover', () => {
     expect(images).toHaveLength(1);
 
     latest().dispatchEvent(new Event('transitioncancel'));
-    expect([...cover.querySelectorAll('img')]).toEqual([latest()]);
+    expectOnly(cover, latest());
     vi.advanceTimersByTime(HOLD_MS);
     expect(images).toHaveLength(2);
   });

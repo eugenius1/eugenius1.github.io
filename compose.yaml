@@ -16,4 +16,9 @@ services:
       target: node
     volumes:
       - .:/site
+    # Hides any node_modules on the host, so Node uses the image's packages, and
+    # keeps Vitest's cache out of the repository
+    tmpfs: /site/node_modules
+    # Stops the watcher straight away on Ctrl-C
+    init: true
     command: npm run watch
