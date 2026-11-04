@@ -12,7 +12,7 @@ const failed = new Set();
 let index = -1;
 let shown = null;
 let timer;
-let loading = false;
+let busy = false;
 
 function scheduleNext() {
   clearTimeout(timer);
@@ -22,6 +22,7 @@ function scheduleNext() {
 }
 
 function finish(image) {
+  busy = false;
   shown?.remove();
   shown = image;
   scheduleNext();
@@ -29,24 +30,24 @@ function finish(image) {
 
 function show() {
   // Turning reduced motion off can schedule another photo while one still loads
-  if (loading) return;
+  // or fades in
+  if (busy) return;
   const choices = photos.map((_, i) => i).filter((i) => i !== index && !failed.has(i));
   if (choices.length === 0) return;
   const current = choices[Math.floor(Math.random() * choices.length)];
   index = current;
-  loading = true;
+  busy = true;
 
   const image = new Image();
   image.alt = '';
   image.src = photos[current].path;
   image.onerror = () => {
     // Try another photo, until each has failed
-    loading = false;
+    busy = false;
     failed.add(current);
     show();
   };
   image.onload = () => {
-    loading = false;
     cover.insertBefore(image, text);
     caption.textContent = photos[current].caption;
     image.getBoundingClientRect(); // so the fade starts from opacity 0
