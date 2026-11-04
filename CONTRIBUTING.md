@@ -43,6 +43,28 @@ job. On `master`, its `deploy` job then publishes the site to GitHub Pages at
 <https://eusebius.tech> (the domain is in `CNAME`). Pull requests build and check
 but don't deploy.
 
+### Lighthouse
+
+On pull requests, the `lighthouse` job runs Chrome's
+[Lighthouse](https://github.com/GoogleChrome/lighthouse-ci) on the site the `build`
+job made: the homepage, a long post, About Me, the CV and Instagram Lists. It fails
+when accessibility or SEO drops below 95 or best practices below 90, and only warns
+when performance drops below 60, as Google Analytics, Disqus and the CDN fonts make
+that score vary. The pages and limits are in `lighthouserc.json`. Each run's scores
+are in the job's summary, and its full reports in the `lighthouse-reports` artifact.
+
+It runs on the host rather than in Docker, as it needs Chrome. With Node and Chrome
+installed, after `make check` has built `_site`:
+
+```bash
+npx @lhci/cli@0.15.1 collect && npx @lhci/cli@0.15.1 assert
+```
+
+The reports are then in `.lighthouseci/`. Chrome follows the system's light or dark
+mode; CI checks light mode only, so check dark mode here after changing colours. Add
+`--settings.chromeFlags="--blink-settings=preferredColorScheme=0"` to `collect` to
+force dark mode, or `=1` for light.
+
 ### TypeScript
 
 The site's own scripts are TypeScript in `_ts/`, with their tests beside them.
@@ -83,6 +105,7 @@ docker compose run --build --rm node npm run typecheck
 | `scripts/check.sh` | What `make check` runs after the TypeScript |
 | `scripts/urls.txt` | Every address the site served before the move to Jekyll 4 |
 | `scripts/theme-overrides.sha256` | Hashes of the theme files this site overrides |
+| `lighthouserc.json`, `scripts/lighthouse-summary.js` | Lighthouse's pages and limits, and its scores table in CI |
 | `Dockerfile`, `compose.yaml`, `Makefile` | The Docker setup behind `make` |
 
 ## How it works

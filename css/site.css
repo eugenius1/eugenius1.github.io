@@ -31,17 +31,21 @@ h1 {
   --btn-share-hover-color: var(--accent);
   --sidebar-active-color: var(--accent);
   --sidebar-hover-bg: color-mix(in srgb, var(--accent) 8%, transparent);
+  /* The theme's line numbers in code blocks are too faint on the light background */
+  --highlight-lineno-color: #6a6a6a;
 }
 :root[data-bs-theme="dark"] {
   --accent: #6ec45f;
   --accent-hover: #9fdb94;
   --link-underline-color: #3f6b38;
+  --highlight-lineno-color: #808080;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-bs-theme]) {
     --accent: #6ec45f;
     --accent-hover: #9fdb94;
     --link-underline-color: #3f6b38;
+    --highlight-lineno-color: #808080;
   }
 }
 
@@ -263,4 +267,16 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   font-size: 0.75rem;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Image captions are a fixed grey in the theme, too faint on the dark background */
+.content a.popup + em,
+.embed-video + em,
+.embed-audio + em {
+  color: var(--text-muted-color);
+}
+/* "Comments powered by Disqus" until Disqus loads: muted text around the link
+   leaves colour alone too close to tell it apart */
+#disqus_thread a {
+  text-decoration: underline;
 }

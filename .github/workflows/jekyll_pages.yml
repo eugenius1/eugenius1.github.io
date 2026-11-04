@@ -29,6 +29,47 @@ jobs:
       - name: Upload artifact
         if: github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
+      # For the lighthouse job. The images that make up most of it don't compress.
+      - name: Upload site for Lighthouse
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+          compression-level: 0
+          retention-days: 1
+
+  # Runs on GitHub's runner, which has Node and Chrome, against the site build made.
+  # The limits are in lighthouserc.json.
+  lighthouse:
+    if: github.event_name == 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
+      # Ubuntu's AppArmor rules stop Chrome's sandbox from starting on the runner
+      - name: Run Lighthouse
+        run: npx --yes @lhci/cli@0.15.1 collect --settings.chromeFlags="--no-sandbox"
+      # Before the scores are checked, so the reports are there when they fail
+      - name: Write reports
+        run: |
+          npx --yes @lhci/cli@0.15.1 upload
+          node scripts/lighthouse-summary.js >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci/reports
+      - name: Check scores
+        run: npx --yes @lhci/cli@0.15.1 assert
 
   deploy:
     # Only deploy on the default branch
