@@ -21,15 +21,16 @@ they use. It loads on every page and sets the `_ga` and `_ga_ME9VJ7Y5RR` cookies
 which last up to two years. It sends Google your IP address and details of your
 browser and the pages you visit. See
 [how Google uses information from sites that use its services](https://policies.google.com/technologies/partner-sites).
-To stop it, block cookies for this site in your browser, or use Google's
-[opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
+Blocking cookies doesn't stop it sending this. To stop it, use Google's
+[opt-out browser add-on](https://tools.google.com/dlpage/gaoptout) or a content
+blocker.
 
 ### Disqus comments
 
 The comments under posts and projects are run by [Disqus](https://disqus.com/),
 which sets cookies and tracks visitors across the sites that use it. They load only
-when you choose **Load comments**. Tick **Always load comments** to have them load
-on every page without asking; **Ask before loading comments**, under the comments,
+when you choose **Load comments**. Tick **Always load comments** first to have them
+load on every page without asking; **Ask before loading comments**, under the comments,
 undoes that. See [Disqus's privacy policy](https://disqus.com/privacy-policy/).
 
 The site remembers **Always load comments** in your browser's local storage, under

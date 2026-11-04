@@ -292,6 +292,9 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
 .consent-comments p {
   margin-bottom: 0.75rem;
 }
+.consent-comments .consent-remember {
+  margin: 0 0 0.75rem;
+}
 .consent-button {
   min-height: 2.75rem; /* a comfortable tap target */
   padding: 0.375rem 1rem;

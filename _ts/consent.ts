@@ -76,9 +76,13 @@ export function setUp({ storage, doc = document }: Settings): void {
     // Below the comments, as Disqus replaces what's inside the thread
     const undo = doc.createElement('p');
     undo.className = 'consent-remember';
+    // Announced, and keeps keyboard focus, once the button it replaces is gone
+    undo.setAttribute('role', 'status');
+    undo.tabIndex = -1;
     const ask = button('Ask before loading comments', 'consent-link-button', () => {
       writeConsent(storage, { comments: 'denied' });
       undo.textContent = 'Comments will wait for a click from the next page on.';
+      undo.focus();
     });
     undo.append(ask);
     thread.after(undo);
@@ -120,9 +124,13 @@ export function setUp({ storage, doc = document }: Settings): void {
   const loadButton = button('Load comments', 'consent-button', () => {
     if (remember.checked) writeConsent(storage, { comments: 'granted' });
     placeholder.remove();
+    // The button is gone, so keyboard users carry on from the comments
+    thread.tabIndex = -1;
+    thread.focus();
     load();
   });
-  placeholder.append(text, loadButton, rememberRow);
+  // The box before the button, as clicking the button removes both
+  placeholder.append(text, rememberRow, loadButton);
   thread.append(placeholder);
 }
 

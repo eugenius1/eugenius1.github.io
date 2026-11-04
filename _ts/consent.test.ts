@@ -95,6 +95,8 @@ describe('Disqus comments', () => {
     // Only this once, as "Always load comments" was left unticked
     expect(readConsent(localStorage)).toEqual({});
     expect(document.cookie).toBe('');
+    // Keyboard users carry on from the comments, not the top of the page
+    expect(document.activeElement).toBe(document.querySelector('#disqus_thread'));
   });
 
   it('loads on its own after "Always load comments", as the comments come into view', () => {
@@ -123,6 +125,7 @@ describe('Disqus comments', () => {
 
     buttonNamed('Ask before loading comments').click();
     expect(readConsent(localStorage)).toEqual({ comments: 'denied' });
+    expect(document.activeElement?.textContent).toContain('wait for a click');
 
     document.body.innerHTML = '';
     addThread();
