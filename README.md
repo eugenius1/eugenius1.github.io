@@ -4,11 +4,10 @@
 
 The personal website and blog of Eusebius Ngemera, at **https://eusebius.tech**.
 
-The site uses two third-party services that set cookies: Google Analytics counts
-visits, and Disqus runs the comments under posts. Neither loads until you agree, from
-a banner for Analytics and a button for the comments, and "Cookie settings" at the
-bottom of every page changes your answer. The site's
-[privacy policy](https://eusebius.tech/pages/privacy-policy/) has the details.
+The site uses two third-party services: Google Analytics counts visits, and Disqus
+runs the comments under posts. Both collect data about visitors under their own
+privacy policies; the site's [privacy policy](https://eusebius.tech/pages/privacy-policy/)
+has the details.
 
 ## What's on the site
 
@@ -26,9 +25,9 @@ Live and updated now and then. The site moved to Jekyll 4 and the Chirpy theme i
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for running the site, how it works,
-writing posts, changing the look and the traps in it. Coding agents should start
-at [AGENTS.md](AGENTS.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for running the site, writing posts,
+changing the look and the traps in the repository. Coding agents should start at
+[AGENTS.md](AGENTS.md).
 
 ## Licence
 

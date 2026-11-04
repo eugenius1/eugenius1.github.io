@@ -6,8 +6,9 @@ rules that bind coding agents specifically.
 
 ## Running it
 
-You need Docker. Nothing else is installed on the host: the Dockerfile is the one
-place the Node and Ruby versions are set. There are no secrets; the Google
+You need Docker and `make`, which macOS has with the Xcode command line tools and
+Linux usually has as a `make` package. Nothing else is installed on the host: the
+Dockerfile is the one place the Node and Ruby versions are set. There are no secrets; the Google
 Analytics id and Disqus shortname in `_config.yml` are public anyway.
 
 ```bash
