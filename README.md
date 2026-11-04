@@ -26,9 +26,9 @@ Live and updated now and then. The site moved to Jekyll 4 and the Chirpy theme i
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for running the site, writing posts,
-changing the look, the layout of the repository and the traps in it. Coding agents
-should start at [AGENTS.md](AGENTS.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for running the site, how it works,
+writing posts, changing the look and the traps in it. Coding agents should start
+at [AGENTS.md](AGENTS.md).
 
 ## Licence
 
