@@ -1,14 +1,17 @@
 ---
 layout: post
-title: I did a Clinical Trial&mdash;and this is my experience!
-subtitle: I got £,£££
-share-img: "http://eusebius.tech/img/covers/blog/2017/parexel-ward.jpg"
-bigimg:
-  - "/img/covers/blog/2017/parexel-ward-shaded.jpg" : "PAREXEL Ward, North London, UK (2017)"
+title: I did a Clinical Trial—and this is my experience!
+description: I got £,£££
 redirect_from:
  - "/b/idact/"
-sitemap:
-  lastmod: "2021-04-25"
+image:
+  path: /img/covers/blog/2017/parexel-ward.jpg
+  alt: "PAREXEL Ward, North London, UK (2017)"
+last_modified_at: 2021-04-25
+tags:
+  - life
+  - health
+  - money
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: I had a pretty good experience at Parexel and got money that covered my lacking student finance. I discovered the world of clinical trials and what to anticipate as a volunteer. They are a lot safer now than 10 years ago.
@@ -26,11 +29,8 @@ But before we get started, let me take you back to how I got into clinical trial
 <i class="fa fa-info-circle" aria-hidden="true"></i> Brace yourself! This a <strong>long read</strong>. Key points are in <strong>bold</strong>.
 </div>
 
-- TOC
-{:toc}
 
-
-# Missed opportunity
+## Missed opportunity
 
 In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">Tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has the potential to treat [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
 
@@ -55,7 +55,7 @@ Fast-forward past this missed opportunity, I had a look at some other drug resea
 |     19    |      4      |       3,575      |
 
 
-# Study details
+## Study details
 
 The trial I was part of is study 230172 run by [Parexel](https://en.wikipedia.org/wiki/PAREXEL) and sponsored by [AstraZeneca](https://en.wikipedia.org/wiki/AstraZeneca), the drug developer ([1](https://clinicaltrials.gov/ct2/show/NCT02968914))([2](https://www.smartpatients.com/trials/NCT02968914)). I was given a 19-page document with participant information and a consent document. Up to 180 participants will take part in this study. The study is also being run at another study centre in Germany.
 
@@ -72,7 +72,7 @@ The **main purpose** of the study is to compare how much of the drug is taken up
 My participation in the study took 2 months from the overnight stay to the last outpatient visit, with my screening being the week before the start. Volunteers are free to leave the study at any time and without any reason. If you leave early you're partially compensated by the fraction of the *time* you've taken part, and not by the number of outpatients you've been to for example.
 
 
-## Safety
+### Safety
 
 > The efficacy and safety of benralizumab have been shown in **two large clinical trials** in patients that suffer from [asthma](http://www.nhs.uk/conditions/Asthma/Pages/Introduction.aspx).
 
@@ -80,7 +80,7 @@ That's what was mentioned in the information document and is supported by [other
 I'm now realising the original [first brief](#intro) was wrong or at least ambiguous in saying this is a [*first time into man*](https://en.wikipedia.org/wiki/First-in-man_study) study.
 
 
-# Screening
+## Screening
 
 Before getting screened, there are some requirements I had to meet before going in:
 
@@ -108,7 +108,7 @@ I got dates for my overnight stay and outpatient visits during my screening and 
 After my successful screening, Parexel sent a request to my GP for my medical history. I had to pay my GP surgery for this to be sent but Parexel reimbursed me.
 
 
-# In-house stay
+## In-house stay
 
 There is some restriction on what can be brought in before going in, mostly to stop external food and drink. Inside we got **set meals** which were really good; I have no complaints. Weirdly enough, everyone gets vegetarian meals on their first day. The first day and night of standardised meals prepared us to a baseline state, so to speak, before dosing.
 
@@ -128,7 +128,7 @@ The study drug was injected with a random choice between the two devices and als
 We were given yellow cards to have on us at all times to present to any medical staff or use one of the phone numbers to reach the study doctor. I was injected at 8:44 am and was told to try to be at the outpatient visits for checkup at the same time, probably for scheduling purposes to avoid long queues.
 
 
-# Restrictions
+## Restrictions
 
 Any restrictions I list here should only be taken as examples since generally they'll vary between different trials and different research units but most may be similar. My restrictions during the trial, mostly until the last visit:
 
@@ -146,7 +146,7 @@ Any restrictions I list here should only be taken as examples since generally th
 The poppy seed restriction meant missing my beloved [seeded bread](http://www.warburtons.co.uk/products/bread/seeded/400g-seeded-batch-five-seeds) for 11 weeks or so. Other than that, my non-smoking, non-binge drinking habits and lack of caffeine had prepared me well for this trial's "restrictions".
 
 
-# Outpatient visits
+## Outpatient visits
 
 ![Commuting at 6:33 am through Acton, London.](/img/blog/2017/outpatient-morning-commute.jpg){:.golden-width}
 
@@ -181,12 +181,12 @@ I didn't realise at screening, but the dates I was given were perfect for me. Ap
 Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Placebo) and no one will ever know if they are one of them, even after the study finishes. They say the fact is inside a sealed envelope that is only opened in medical emergencies to determine whether special measures should be taken. The outpatient nurses don't know if someone has been given a placebo so they treat everyone the same. The **nurses** at Parexel were very friendly and caring.
 
 
-# What I discovered
+## What I discovered
 
 ![8:08 am, Wembley Stadium through heavy mist with the sunrise in view.](/img/blog/2017/wembley-sunrise.jpg){:.height-fits}
 
 
-## &hellip;about myself {#about-myself}
+### &hellip;about myself {#about-myself}
 
 I'm **objectively quite healthy**, if not greatly so, although I wouldn't go as far as claiming I have great fitness.
 I thought I drank quite enough water but I should be drinking even more, and I'm not just saying this because I had to drink a lot more because of blood samples.
@@ -196,7 +196,7 @@ I generally have a low (but still normal) count for [neutrophil](https://en.wiki
 This is very likely to happen to (young, male) people of **African descent**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
 
 
-## Research units
+### Research units
 
 Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too. I've heard HMR has a very professional and timely administration.
 
@@ -206,7 +206,7 @@ Below are some of the units I've come across that run clinical trials. I've hear
 - [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above from what I've seen)
 
 
-## 2006 *TGN1412* incident
+### 2006 *TGN1412* incident
 
 While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat [leukaemia](https://www.bupa.co.uk/health-information/directory/l/leukaemia)** (blood cancer). On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. Since then, it has changed how medical trials are done.
 
@@ -237,7 +237,7 @@ An independent report made 22 recommendations to improve the safety of first-in-
 The first man to be injected is now married with **3 kids**. He is glad to have been saved by another drug and still values the importance of clinical trials.
 
 
-# Conclusion
+## Conclusion
 
 Knowing what I know now, would I go back and do it again?
 

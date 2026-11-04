@@ -1,14 +1,15 @@
 ---
 layout: post
 title: How I made this website!
-subtitle: An overview to having your own website
-share-img: "http://eusebius.tech/img/blog/2016/website-launch-screenshot.png"
-share-img-cannot-be-wide: true
+description: An overview to having your own website
 redirect_from:
  - "/b/himtw/"
-sitemap:
-  lastmod: "2021-04-25"
-date-updated: "2021-04-25"
+image:
+  path: /img/blog/2016/website-launch-screenshot.png
+last_modified_at: 2021-04-25
+tags:
+  - web
+  - personal
 ---
 
 **<abbr title="Too long; didn't read">TL;DR</abbr>**: Domain name from [Google Domains](https://domains.google/), free hosting through [GitHub Pages](https://pages.github.com/), and theme by [*Beautiful Jekyll*](https://beautifuljekyll.com/), with content written in [Markdown](#webpage-content).
@@ -18,9 +19,6 @@ date-updated: "2021-04-25"
 Why bother making a website? 
 For me, this website is my own personal space on the web that I'm in control of. I can quickly link anyone to pages like [eusebius.tech/uber](/uber "Free Uber ride"). 
 The bare minimum to having your own website is finding a place to host it and adding your content. Most people go for blogging services like WordPress but I wanted more than just a blog.
-
-- TOC
-{:toc}
 
 ## Website domain name
 
@@ -71,7 +69,7 @@ The features above are built-in very well as all I had to do was fill in my [Dis
 
 **Update** 27/03/2021: My new registrar, [Google Domains](https://domains.google/), allows free email forwarding to a single email address.
 The caveat is no PayPal so I have to remember to update my payment card before it expires.
-All emails sent to [me@eusebius.tech](mailto:me@eusebius.tech) are forwarded to my personal email address.
+All emails sent to {% include email-link.html %} are forwarded to my personal email address.
 
 Another email solution is [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of the post date, I haven't been able to modify their record.
 

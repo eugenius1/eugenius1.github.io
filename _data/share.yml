@@ -1,0 +1,25 @@
+# Sharing options at the bottom of each post, and of each page with `share: true`.
+# Icons from https://fontawesome.com/
+# The device's own share button comes before these and Copy link after, from
+# _includes/post-sharing.html.
+
+platforms:
+  - type: WhatsApp
+    icon: "fa-brands fa-whatsapp"
+    link: "https://wa.me/?text=TITLE%20URL"
+
+  - type: Twitter
+    icon: "fa-brands fa-x-twitter"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL&hashtags=EusebiusTech"
+
+  - type: Linkedin
+    icon: "fa-brands fa-linkedin-in"
+    link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
+
+  - type: Threads
+    icon: "fa-brands fa-threads"
+    link: "https://www.threads.com/intent/post?text=TITLE%20URL"
+
+  - type: Facebook
+    icon: "fa-brands fa-facebook-f"
+    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"

@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "make",
+      "runtimeArgs": ["local"],
+      "port": 4000
+    },
+    {
+      "name": "production",
+      "runtimeExecutable": "make",
+      "runtimeArgs": ["preview"],
+      "port": 4001,
+      "autoPort": false
+    }
+  ]
+}

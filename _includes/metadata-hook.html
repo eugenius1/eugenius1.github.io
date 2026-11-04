@@ -1,0 +1,20 @@
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+
+<!-- The old site's font for titles -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap">
+
+<!-- Icon names from Font Awesome 4, still used in posts and pages -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/v4-shims.min.css">
+<link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
+
+<!-- Per-page extras, set in front matter -->
+{% if page.image.banner == false %}
+  <!-- The image is only for listings and social media, not a banner on the post -->
+  <style>div:has(> .preview-img) { display: none; }</style>
+{% endif %}
+{% for href in page.css %}
+  <link rel="stylesheet" href="{{ href }}">
+{% endfor %}
+{% for src in page.js %}
+  <script defer src="{{ src }}"></script>
+{% endfor %}

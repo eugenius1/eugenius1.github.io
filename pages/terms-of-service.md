@@ -1,16 +1,15 @@
 ---
 layout: page
 title: Terms of Service
-subtitle: Eusebius.Tech ToS
+description: Eusebius.Tech ToS
 date: 2017-04-05
-date-updated: 2017-04-05
 ---
 
 <div class="text-center">There are currently no previous revisions available.</div>
 
 ---
 
-Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the <http://eusebius.tech> website (the "Service") operated by Eusebius.Tech ("us", "we", or "our").
+Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the <https://eusebius.tech> website (the "Service") operated by Eusebius.Tech ("us", "we", or "our").
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
@@ -134,4 +133,4 @@ Our failure to enforce any right or provision of these Terms will not be conside
 
 If you have any questions about these Terms, please contact us:
 
-<http://eusebius.tech/contact/>
+<https://eusebius.tech/contact/>

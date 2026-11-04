@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Investing
-subtitle: My YouTube playlist
+description: My YouTube playlist
 ---
 
 [Playlist](https://www.youtube.com/playlist?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo)

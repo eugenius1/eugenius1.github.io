@@ -1,16 +1,14 @@
 ---
 layout: page
 title: Instagram Lists
-subtitle: Detailed, sortable lists of your Instagram followings and followers
+description: Detailed, sortable lists of your Instagram followings and followers
 comments: true
-ext-css:
-  - https://cdn.datatables.net/v/bs/dt-1.10.22/fc-3.3.1/datatables.min.css
 css:
+  - https://cdn.datatables.net/v/dt/dt-1.10.22/fc-3.3.1/datatables.min.css
   - index.css
-ext-js:
-  - https://code.jquery.com/jquery-3.5.1.js
-  - https://cdn.datatables.net/v/bs/dt-1.10.22/fc-3.3.1/datatables.min.js
 js:
+  - https://code.jquery.com/jquery-3.5.1.js
+  - https://cdn.datatables.net/v/dt/dt-1.10.22/fc-3.3.1/datatables.min.js
   - /js/DataTables/plugins.js
   - /js/utils/utils.js
   - /js/utils/storage.js

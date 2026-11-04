@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Free Uber ride
-share-buttons: true
 permalink: "/freebies/uber/"
+share: true
 redirect_from:
  - "/uber/"
 ---

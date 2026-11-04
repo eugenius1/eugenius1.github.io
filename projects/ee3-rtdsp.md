@@ -1,16 +1,18 @@
 ---
-layout: project
+layout: page
 title: EE3-RTDSP
-subtitle: Real-Time Digital Signal Processing
-share-img: "/img/projects/ee3-rtdsp/lynx.png"
+description: Real-Time Digital Signal Processing
 comments: true
-github: eugenius1/ee3-rtdsp
 redirect_from:
  - "/ee3-rtdsp/"
+image:
+  path: /img/projects/ee3-rtdsp/lynx.png
 ---
 
 > Telephones are increasingly being used in noisy environments such as cars, airports and undergraduate laboratories! The aim of this project is to implement **a real-time system that will reduce the background noise in a speech signal while leaving the signal itself intact**: this process is called speech enhancement.<br><br>
 ~ Professor Paul D. Mitcheson, Imperial College London Department of Electrical & Electronic Engineering, 2016.
+
+The code and reports are [on GitHub](https://github.com/eugenius1/ee3-rtdsp).
 
 This 3<sup>rd</sup> year project involved understanding Real-Time Digital Signal Processing and putting it into practice on a Texas Instruments DSP Starter Kit (TMS320C6713 DSK). The diagram below shows 3 spectograms. A spectogram is effectively a photograph of sound; a visual representation of a sound's frequency distribution over time. First is noisy sound, then the filtered version, and finally clean speech for comparison.
 

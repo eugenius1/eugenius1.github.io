@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Privacy Policy
-subtitle: Eusebius.Tech
+description: Eusebius.Tech
 date: 2017-04-05
-date-updated: 2017-04-05
 ---
 
 <div class="text-center">There are currently no previous revisions available.</div>
@@ -12,7 +11,7 @@ date-updated: 2017-04-05
 
 This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. 
 
-Please read our privacy policy carefully to get a clear understanding of how Eusebius.Tech ("us", "we", or "our") collects, uses, protects or otherwise handles your Personally Identifiable Information in accordance with the <http://eusebius.tech> Website (the "Service" or "Website").
+Please read our privacy policy carefully to get a clear understanding of how Eusebius.Tech ("us", "we", or "our") collects, uses, protects or otherwise handles your Personally Identifiable Information in accordance with the <https://eusebius.tech> Website (the "Service" or "Website").
 
 This privacy policy was generated using [FreePrivacyPolicy.com](https://www.freeprivacypolicy.com).
 
@@ -127,4 +126,4 @@ We also agree to the Individual Redress Principle which requires that individual
 
 If there are any questions regarding this privacy policy, you may contact us:
 
-<http://eusebius.tech/contact/>
+<https://eusebius.tech/contact/>

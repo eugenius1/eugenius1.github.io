@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Updates
-subtitle: Most active on Instagram, occasional updates on Twitter and LinkedIn
-sitemap:
-  exclude: true
+description: Most active on Instagram, occasional updates on Twitter and LinkedIn
+sitemap: false
 permalink: "/updates/"
 redirect_from:
  - "/go/social/"

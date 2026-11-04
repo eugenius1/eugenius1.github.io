@@ -1,14 +1,18 @@
 ---
 layout: post
-title: "Social Logins&mdash;what info you give away!"
-subtitle: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
-share-img: "http://eusebius.tech/img/blog/2017/social-logins-shareable.png"
+title: "Social Logins—what info you give away!"
+description: An interactive look at exactly what personal details you share with a website or an app when you sign up using Facebook or Google
 js:
   - "/js/funcs/specialName.min.js"
   - "/js/blog/2017/social-logins.min.js"
 redirect_from:
  - "/blog/social-logins/"
  - "/b/sl/"
+image:
+  path: /img/blog/2017/social-logins-shareable.png
+tags:
+  - privacy
+  - web
 ---
 
 <div class="alert alert-danger" role="alert">
@@ -21,7 +25,7 @@ redirect_from:
 
 <noscript><div class="alert alert-danger" role="alert"><strong>Oh no!</strong> JavaScript has not been detected so these demonstrations will not work for you. Please use a full web browser or turn JavaScript back on if it's turned off.</div></noscript>
 
-# Facebook
+## Facebook
 
 <fb:login-button scope="public_profile,email,user_friends" onlogin="facebookCheckLoginState();">
 </fb:login-button>
@@ -94,7 +98,7 @@ All Facebook login permissions are listed [here](https://developers.facebook.com
 
 Note that the basic permissions don't give the exact age in years but instead where the age falls with respect to 18 and 21 (`age_range`). For example, the <abbr title="Application Programming Interface">API</abbr> might just give that you have a minimum age of 13 and a maximum of 17. Even with the `user_birthday` permission granted, the visibility depends on your birthday privacy setting.
 
-# Google
+## Google
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
@@ -128,7 +132,7 @@ Note that the basic permissions don't give the exact age in years but instead wh
 
 By default, Google makes the scopes [`openid`](https://developers.google.com/identity/protocols/OpenIDConnect), `userinfo.profile` and `userinfo.email` available for a developer to request. A developer can quickly and easily [extend to the Google Plus API](https://developers.google.com/+/web/signin/#enable_the_google_api), which adds the scopes `plus.login` and `plus.me`. This basically includes everything (public) on your Google Plus profile page, from your occupation to the places you have lived. The full list is available [here](https://developers.google.com/+/web/api/rest/latest/people#resource).
 
-# Data flow
+## Data flow
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 

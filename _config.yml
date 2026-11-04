@@ -1,123 +1,119 @@
 # --- General options --- #
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+theme: jekyll-theme-chirpy
+lang: en
+timezone: Europe/London
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "https://eusebius.tech"
 baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
-# Name of website
 title: Eusebius.Tech
-# Title just for navigation bar
-title_navbar: Eusebius Ngemera
-
-# Short description of your site
+tagline: Eusebius Ngemera
 description: Personal website of Eusebius Ngemera, including a blog of technologies and life as he knows it.
 
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
-navbar-links:
-  About Me: "about-me/"
-  Projects:
-    - All: "projects/"
-    - Instagram Lists: "projects/instagram-lists/"
-  Blog: "blog/"
-  Misc.:
-    - Freebies: "freebies/"
-    - Donate: "donate/"
-    - CV: "cv/"
-nav-search-link: "/search/"
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
 avatar: "/img/eusebius-avatar-icon.jpg"
+# Image to use when a page has none, when sharing to social media
+social_preview_image: "/raw/img/branding/github-eugenius1/original.png"
 
-# Image to use as default for share-img, when sharing to social media
-thumbnail: "/raw/img/branding/github-eugenius1/original.png"
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
+github:
+  username: eugenius1
+twitter:
+  username: esebi95
+social:
   name: Eusebius Ngemera
-  email: "me@eusebius.tech"
-  github: eugenius1
-  twitter: esebi95
-  linkedin: in/eusebius
-  stackoverflow: eusebius-n
-  instagram: esebi95
+  email: me@eusebius.tech
+  links:
+    # The first one is linked from the footer and each post's author
+    - https://eusebius.tech/about-me/
+    - https://github.com/eugenius1
+    - https://twitter.com/esebi95
+    - https://www.linkedin.com/in/eusebius
+    - https://www.instagram.com/esebi95
 
-# Select which links to show in the footer
-footer-links-active:
-  rss: true
-  facebook: false
-  email: true
-  twitter: true
-  github: true
-  linkedin: true
-  stackoverflow: false
-  instagram: true
+# Keep empty to follow the system setting, with a toggle in the sidebar. Set to
+# light or dark to fix the look.
+theme_mode:
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "Eusebius.Tech" # eg. "deanattali.com/beautiful-jekyll"
+# --- Comments and analytics --- #
 
-# --- Misc --- #
+comments:
+  provider: disqus
+  disqus:
+    shortname: eusebiustech
 
-# Share buttons above and below page content
-share-buttons-above: false
-share-buttons-below: true
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "eusebiustech"
-
-# Fill in your Google Analytics ID to track your website using GA
-google_analytics: "G-ME9VJ7Y5RR"
+analytics:
+  google:
+    id: G-ME9VJ7Y5RR
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
-# Output options (more information on Jekyll's site)
-timezone: "Europe/London"
-markdown: kramdown
-highlighter: rouge
-permalink: /blog/:title/
+toc: true
 paginate: 5
+# Also gives every other page a folder-style address
+permalink: /blog/:title/
 
 kramdown:
   input: GFM
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true # the theme's code blocks and Copy button rely on this
 
-# Default YAML values (more information on Jekyll's site)
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
-      comments: true # add comments to all blog posts
-      share-buttons: true # A row of social sharing buttons
-  - scope: # Any html files that exist in the projects/ folder will use the project layout,
-      path: "projects"
-      type: "pages"
-    values:
-      layout: "projects"
-      show-avatar: true
+      layout: post
       comments: true
-      share-buttons: true
+      toc: true
   - scope:
-      path: "" # all files
+      path: _drafts
     values:
-      layout: "page"
-      show-avatar: true
-      #comments: false
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: projects
+      type: pages
+    values:
+      comments: true
+      share: true
+  - scope:
+      path: archive
+    values:
+      sitemap: false
+  - scope:
+      path: raw
+    values:
+      sitemap: false
+  - scope:
+      path: test
+    values:
+      sitemap: false
+  - scope:
+      path: google339d224e50a4dae4.html
+    values:
+      sitemap: false
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: [development]
 
 # Exclude these files from production site
 exclude:
@@ -126,71 +122,22 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - Makefile
-  - Vagrantfile
+  - Dockerfile
+  - compose.yaml
+  - scripts
+  - README.md
   - "**/README.md"
-  - "*.sh"
   - "*.vscode"
   - vendor
-
-# prose.io config
-prose:
-  rooturl: "_posts"
-  media: "img"
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+  # The dev build, so `make preview` doesn't rebuild each time `make local` does
+  - _site
 
 plugins:
-  - jekyll-paginate
   - jekyll-redirect-from
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-
-plugins_dir:
-  - jekyll-compress-images
-
-compress_images:
-  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
-
-imageoptim:
-  pngout: false
-  svgo: false
-  verbose: false
+jekyll-archives:
+  enabled: [tags]
+  layouts:
+    tag: tag
+  permalinks:
+    tag: /tags/:name/

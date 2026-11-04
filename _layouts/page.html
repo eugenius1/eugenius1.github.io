@@ -1,22 +1,27 @@
 ---
-layout: base
+layout: default
+script_includes:
+  - comment
 ---
 
-{% include header.html type="page" %}
+{% include lang.html %}
 
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %}
+    {% assign tab_key = page.title | downcase %}
+    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+    <h1 class="dynamic-title">
+      {{ title }}
+    </h1>
+    {% if page.description %}
+      <p class="post-desc fw-light mb-4">{{ page.description }}</p>
+    {% endif %}
+    <div class="content">
       {{ content }}
-      {% if page.share-buttons and site.share-buttons-below %}
-        <hr>
-        {% include share-buttons.html %}
-      {% endif %}
-	    {% if page.comments %}
-        <div class="disqus-comments">
-	        {% include disqus.html %}
-        </div>
-	    {% endif %}
     </div>
-  </div>
-</div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</article>
+
+{% include page-sharing.html %}
