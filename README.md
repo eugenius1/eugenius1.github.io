@@ -28,8 +28,9 @@ class can look fine there and be missing in production. The two can run at once.
 make check
 ```
 
-Builds for production, then fails if an address in `scripts/urls.txt` has gone or a
-theme file this site overrides has changed. This is what CI runs. The Dockerfile is
+Builds for production, then fails if an address in `scripts/urls.txt` has gone, a
+link between pages or an image is broken, an image has no alt text, or a theme file
+this site overrides has changed. This is what CI runs. The Dockerfile is
 the one place the Ruby version is set.
 
 ## Write

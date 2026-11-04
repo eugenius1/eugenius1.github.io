@@ -19,6 +19,17 @@ if grep -rlE '<title>\s*(\||</title>)' _site --include='*.html'; then
   exit 1
 fi
 
+# Links between pages, anchors, images and their alt text. Links to other sites are
+# left out, as those go down or block bots now and then, and so is upgrading them
+# to https, which needs each site checked. Anchors with only an id are allowed, as
+# in HTML5. The archive is a frozen copy of the old site, and drafts/ccd is an
+# unlisted draft whose charts aren't in the repo yet.
+bundle exec htmlproofer _site \
+  --disable-external \
+  --no-enforce-https \
+  --allow-missing-href \
+  --ignore-files '/^_site\/(archive|drafts)\//'
+
 # Fails when a theme update changes a file this site overrides, so the copy can
 # be brought up to date.
 overrides="$PWD/scripts/theme-overrides.sha256"
