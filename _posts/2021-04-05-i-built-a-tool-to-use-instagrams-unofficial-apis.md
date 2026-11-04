@@ -40,7 +40,7 @@ Facebook, the company, owns Instagram if you were not already aware.
 The data scandal involved Cambridge Analytica obtaining info about the **friends** of the users of an app that Cambridge Analytica made,
 even if these friends never used the app.
 
-As of writing this, [Instagram's official APIs](https://developers.facebook.com/docs/instagram-basic-display-api/reference)
+As of writing this, [Instagram's official APIs](https://web.archive.org/web/20210227133245/https://developers.facebook.com/docs/instagram-basic-display-api/reference)
 can only provide info on the current user's media;
 nothing on their followers and followings so it would be **impossible** to build a tool that solves my problem using these APIs.
 

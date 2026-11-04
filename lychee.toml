@@ -1,0 +1,38 @@
+# Settings for the weekly check of links to other sites
+# (.github/workflows/links.yml). To run it locally, see CONTRIBUTING.md.
+
+# Links within the site are HTML-Proofer's job in `make check`. The base URL turns
+# root-relative links into links to this site, which are then excluded below.
+base_url = "https://eusebius.tech/"
+scheme = ["https", "http"]
+
+# The archive is a frozen copy of the old site, and drafts aren't listed.
+exclude_path = [
+  '_site/archive',
+  '_site/drafts',
+]
+
+exclude = [
+  '^https?://(www\.)?eusebius\.tech',
+  # Always answer bots with 403, 406, 999 or a dropped connection, whether the
+  # page is there or not. Check these by hand now and then.
+  '^https://www\.linkedin\.com/',
+  '^https://stackoverflow\.com/',
+  '^https://www\.forbes\.com/',
+  '^https://www\.investopedia\.com/',
+  '^https://seekingalpha\.com/',
+  '^https://www\.godaddy\.com/',
+  '^https://www\.w3schools\.com/',
+  '^https://www\.trading212\.com/',
+  '^https://www\.uber\.com/',
+  '^https://money\.usnews\.com/',
+  # A form's target, which only takes POST
+  '^https://www\.paypal\.com/cgi-bin/webscr',
+  # Embedded playlist: answers 404 to anything but a browser, though it plays
+  '^https://www\.youtube\.com/embed/videoseries',
+]
+
+# Rate limiting means the site is up
+accept = ["200..=299", "429"]
+max_retries = 2
+timeout = 30

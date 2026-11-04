@@ -13,3 +13,8 @@ preview:
 check:
 	docker compose run --build --rm node npm run check
 	docker compose run --build --rm site scripts/check.sh
+
+# Links to other sites, as the weekly workflow checks them, over the site that
+# `check` built. Settings are in lychee.toml.
+links:
+	docker run --rm -v "$(CURDIR)":/site -w /site lycheeverse/lychee:0.24.2 --config lychee.toml '_site/**/*.html'
