@@ -60,7 +60,7 @@ with all the videos that I've found helpful, sorted from basics to more advanced
 If you're new to investing I **highly recommend** watching at least the first 3 videos.
 Pro tip: I normally watch at 1.5x speed.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLJr1hnSQ56-a-lTrZNwUIWr24fJiU6EJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center-block"></iframe>
 
 I've also made this [succinct summary](/projects/investing/playlists/investing) of the playlist that you can use to jump to topics that may interest you.
 I follow the channels/accounts below and you may see them a lot in my playlist because their content is gold.

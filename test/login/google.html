@@ -8,7 +8,6 @@
 <body>
 <!-- https://developers.google.com/identity/sign-in/web/sign-in -->
 
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="/js/funcs/specialName.min.js"></script>
 <script type="text/javascript">
 function onSignIn(googleUser) {
@@ -35,6 +34,20 @@ function onSignIn(googleUser) {
 	var scopes = googleUser.getGrantedScopes();
 	console.log(scopes);
 	document.getElementById('google-scopes').innerHTML = scopes;
+}
+</script>
+
+<!-- Loaded only when asked, as Google sets cookies once it loads -->
+<p id="load-google">
+  Google sets cookies once its sign-in loads.
+  <button type="button" onclick="loadGoogle()">Load Google sign-in</button>
+</p>
+<script>
+function loadGoogle() {
+  document.getElementById('load-google').hidden = true;
+  var script = document.createElement('script');
+  script.src = 'https://apis.google.com/js/platform.js';
+  document.head.appendChild(script);
 }
 </script>
 

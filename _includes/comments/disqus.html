@@ -9,6 +9,8 @@
     let paragraph = document.createElement('p');
 
     disqusThread.id = 'disqus_thread';
+    {%- comment -%} This site's change: js/consent.js loads this only once someone agrees to Disqus's cookies, rather than the theme loading it as it scrolls into view {%- endcomment %}
+    disqusThread.dataset.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
     paragraph.className = 'text-center text-muted small';
     paragraph.innerHTML = 'Comments powered by <a href="https://disqus.com/">Disqus</a>.';
     disqusThread.appendChild(paragraph);
@@ -36,22 +38,4 @@
   if (Theme.isToggleable) {
     addEventListener('message', reloadDisqus);
   }
-
-  {%- comment -%} Lazy loading {%- endcomment -%}
-  var disqusObserver = new IntersectionObserver(
-    function (entries) {
-      if (entries[0].isIntersecting) {
-        var d = document,
-          s = d.createElement('script');
-        s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-
-        disqusObserver.disconnect();
-      }
-    },
-    { threshold: [0] }
-  );
-
-  disqusObserver.observe(document.getElementById('disqus_thread'));
 </script>

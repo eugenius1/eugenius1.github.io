@@ -92,9 +92,9 @@ make links
 ### TypeScript
 
 The site's own scripts are TypeScript in `_ts/`, with their tests beside them.
-esbuild compiles `_ts/home-cover.ts` to `js/home-cover.js`, which isn't in git.
-`make local` recompiles it on each change, and `make preview` and `make check`
-compile it first.
+esbuild compiles `_ts/home-cover.ts` and `_ts/consent.ts` to `js/`, where they're
+not in git. `make local` recompiles them on each change, and `make preview` and
+`make check` compile them first.
 
 Node runs in Docker too. To run the tests or the type check on their own:
 
@@ -131,6 +131,7 @@ docker compose run --build --rm node npm run typecheck
 | `scripts/theme-overrides.sha256` | Hashes of the theme files this site overrides |
 | `lighthouserc.json`, `scripts/lighthouse-summary.js` | Lighthouse's pages and limits, and its scores table in CI |
 | `lychee.toml` | Settings and exclusions for the weekly check of links to other sites |
+| `docs/` | Screenshots for pull requests, kept out of the built site |
 | `Dockerfile`, `compose.yaml`, `Makefile` | The Docker setup behind `make` |
 
 ## How it works
@@ -148,6 +149,15 @@ only a few plugins. The workflow builds it with the Gemfile's versions and uploa
 Comments are Disqus, and their threads are found by the page's full address alone
 (see `_includes/comments/disqus.html`): the old threads were made that way, with no
 identifier. Google Analytics is set in `_config.yml`.
+
+Both set cookies, so neither loads until the visitor agrees. `_ts/consent.ts` shows
+a banner asking about Analytics, and a "Load comments" button where the comments
+go; the "Cookie settings" link in the footer and on the privacy policy brings the
+banner back to change the answer. The choices are kept in `localStorage`, not a
+cookie. The theme has no consent option, so `_includes/analytics/google.html` is
+emptied and `_includes/metadata-hook.html` passes the Analytics id to the script
+instead. Analytics only runs in the production build, so check the banner with
+`make preview`.
 
 ### Writing
 
