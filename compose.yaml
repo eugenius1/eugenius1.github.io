@@ -5,9 +5,12 @@ services:
       - .:/site
     ports:
       # Only this machine, as the dev build includes drafts
-      - "127.0.0.1:4000:4000"
-      - "127.0.0.1:35729:35729"
-    command: bundle exec jekyll serve --drafts --livereload --host 0.0.0.0
+      # The Makefile sets these, so each checkout or worktree can run its own
+      - "127.0.0.1:${PORT:-4000}:${PORT:-4000}"
+      - "127.0.0.1:${LIVERELOAD_PORT:-35729}:${LIVERELOAD_PORT:-35729}"
+    command: >-
+      bundle exec jekyll serve --drafts --livereload --host 0.0.0.0
+      --port ${PORT:-4000} --livereload-port ${LIVERELOAD_PORT:-35729}
 
   # Compiles _ts/ to js/ and again on each change, which Jekyll then picks up
   node:

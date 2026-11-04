@@ -26,6 +26,10 @@ Runs the production build at <http://localhost:4001>, which is the only way to s
 the theme's real CSS and compressed HTML. The two can run at once, and
 `production` in `.claude/launch.json` starts this one.
 
+Either takes another port, such as `make local PORT=4002`, so several checkouts or
+worktrees can each run their own. Claude Code's previews pick a free port this way
+on their own.
+
 ```bash
 make check
 ```
@@ -81,8 +85,6 @@ identifier. Google Analytics is set in `_config.yml`.
 
 - **Posts** are Markdown in `_posts/`, or `_drafts/` to keep one unpublished. Set
   `description` and `tags`, and `image` for a banner. Its `alt` shows as the caption.
-  With `banner: false` under `image`, the image is only in listings and social
-  media previews.
 - **Sidebar pages** are in `_tabs/`, with an `icon` and `order`. Add a new one's
   lowercase title to `_data/locales/en.yml`, as that sets its browser title.
 - **Other pages** are in `pages/` and `projects/`. On a page, `image` is only for
