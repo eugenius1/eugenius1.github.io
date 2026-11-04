@@ -13,7 +13,7 @@ Please read these Terms and Conditions ("Terms", "Terms and Conditions") careful
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
-By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Part of this Terms & Conditions agreement is licensed by [TermsFeed](https://termsfeed.com) to Eusebius.Tech. A larger part was obtained from a [Contractology template](http://www.contractology.com/user/free/website-terms-and-conditions.doc).
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Part of this Terms & Conditions agreement is licensed by [TermsFeed](https://termsfeed.com) to Eusebius.Tech. A larger part was obtained from a [Contractology template](https://web.archive.org/web/20160909214223/http://www.contractology.com/user/free/website-terms-and-conditions.doc).
 
 ## License to use the Service
 

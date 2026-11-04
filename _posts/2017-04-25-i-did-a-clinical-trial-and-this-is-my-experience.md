@@ -32,7 +32,7 @@ But before we get started, let me take you back to how I got into clinical trial
 
 ## Missed opportunity
 
-In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">Tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a [trial for M923](http://www.studyforchange.com/wp-content/uploads/5062-QXA79805-IC-Ver-5-dated-07-Mar-2016.pdf). The study drug, M923, has the potential to treat [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
+In the Spring of 2016, I saw an advert on a train in the <abbr title="London Underground">Tube</abbr> for Quintiles who were looking for paid volunteers for some studies. I was interested and so I went online to register to be screened for a trial for M923. The study drug, M923, has the potential to treat [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_disease) like rheumatoid arthritis. The trial would involve 2 nights stay and 13 outpatient visits before getting **£2,910**!
 
 Some time later, I was invited for a screening and accepted to the trial subject to my General Practice (GP) sending my medical summary to Quintiles in time. This didn't happen. I had a good healthcare experience from my GP surgery at that time, Farnham Road Practice in Slough, but they have been poorly let down by very slow admin processing.
 
@@ -74,7 +74,7 @@ My participation in the study took 2 months from the overnight stay to the last 
 
 ### Safety
 
-> The efficacy and safety of benralizumab have been shown in **two large clinical trials** in patients that suffer from [asthma](http://www.nhs.uk/conditions/Asthma/Pages/Introduction.aspx).
+> The efficacy and safety of benralizumab have been shown in **two large clinical trials** in patients that suffer from [asthma](https://www.nhs.uk/conditions/asthma/).
 
 That's what was mentioned in the information document and is supported by [other sources](https://seekingalpha.com/news/3206982-astrazenecas-benralizumab-reduces-asthma-exacerbations-51-percent-two-late-state-studies). More than **2,000 patients** received benralizumab and it was shown that the drug reduces asthma exacerbations (worsening) by up to 51% in two studies. 
 I'm now realising the original [first brief](#intro) was wrong or at least ambiguous in saying this is a [*first time into man*](https://en.wikipedia.org/wiki/First-in-man_study) study.
@@ -98,7 +98,7 @@ The screening took about 2 hours and it was their way of assessing me for the re
 
 - Physical examination, including height and weight for calculating Body Mass Index
 - Urine sample
-- [Electrocardiogram](http://www.nhs.uk/Conditions/electrocardiogram/Pages/Introduction.aspx) (ECG)
+- [Electrocardiogram](https://www.nhs.uk/tests-and-treatments/electrocardiogram/) (ECG)
 - Blood pressure
 - Blood samples (~97 <abbr title="millilitres">mL</abbr>)
 
@@ -143,7 +143,7 @@ Any restrictions I list here should only be taken as examples since generally th
 - as a **male**, use a barrier contraception (eg. condom) and not donate sperm until 4 months after the last visit
 - **females** would need to have a negative pregnancy test, not be breastfeeding and must be unable to have children (eg. age reasons)
 
-The poppy seed restriction meant missing my beloved [seeded bread](http://www.warburtons.co.uk/products/bread/seeded/400g-seeded-batch-five-seeds) for 11 weeks or so. Other than that, my non-smoking, non-binge drinking habits and lack of caffeine had prepared me well for this trial's "restrictions".
+The poppy seed restriction meant missing my beloved [seeded bread](https://www.warburtons.co.uk/products/bread/seeded/seeded-batch-400g/) for 11 weeks or so. Other than that, my non-smoking, non-binge drinking habits and lack of caffeine had prepared me well for this trial's "restrictions".
 
 
 ## Outpatient visits
@@ -193,24 +193,24 @@ I thought I drank quite enough water but I should be drinking even more, and I'm
 
 <a id="neutrophil"></a>
 I generally have a low (but still normal) count for [neutrophil](https://en.wikipedia.org/wiki/Neutrophil), the most abundant type of white blood cell.
-This is very likely to happen to (young, male) people of **African descent**, as backed up by this [research article](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
+This is very likely to happen to (young, male) people of **African descent**, as backed up by this [research article](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000360).
 
 
 ### Research units
 
 Below are some of the units I've come across that run clinical trials. I've heard Simbec and some other units might compensate for screening too. I've heard HMR has a very professional and timely administration.
 
-- PAREXEL ([London](https://www.drugtrial.co.uk/en/about-us) and some other [global locations](https://www.parexel.com/company/volunteer))
-- [Hammersmith Medicines Research (HMR)](http://www.hmrlondon.com/)
-- [Simbec](http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
-- [Imperial Clinical Research Facility](http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above from what I've seen)
+- PAREXEL ([London](https://web.archive.org/web/20170224194000/https://www.drugtrial.co.uk/en/about-us) and some other [global locations](https://web.archive.org/web/20170423140526/https://www.parexel.com/company/volunteer))
+- [Hammersmith Medicines Research (HMR)](https://www.hmrlondon.com/)
+- [Simbec](https://web.archive.org/web/20170705045154/http://www.simbec.co.uk/volunteers/learning-center/clinical-trial-process) (South Wales)
+- [Imperial Clinical Research Facility](https://web.archive.org/web/20170519084029/http://imperial.crf.nihr.ac.uk/) (relatively low pay compared to the above from what I've seen)
 
 
 ### 2006 *TGN1412* incident
 
-While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](http://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat [leukaemia](https://www.bupa.co.uk/health-information/directory/l/leukaemia)** (blood cancer). On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. Since then, it has changed how medical trials are done.
+While writing this article I came across the BBC Two documentary, [The Drug Trial: Emergency at the Hospital](https://www.bbc.co.uk/programmes/b08g8np3). In 2006, Parexel&mdash;the same research unit I went to&mdash;started running a first-in-man study for [TGN1412](https://en.wikipedia.org/wiki/TGN1412), a drug aiming to **treat [leukaemia](https://web.archive.org/web/20170912185151/https://www.bupa.co.uk/health-information/directory/l/leukaemia)** (blood cancer). On the first cohort, the health of all 6 volunteers not given a placebo deteriorated and within the same day, they ended up in the **Intensive Care Unit** (ICU) of the host hospital. Since then, it has changed how medical trials are done.
 
-The study drug was injected for the first time into humans after successful animal tests, human modelling and the government's approval. The volunteers were [agreeing](http://www.circare.org/foia5/tgn1412_consentform.pdf) to 3 nights and 12 outpatients before getting **£2,000**. The purpose of the study:
+The study drug was injected for the first time into humans after successful animal tests, human modelling and the government's approval. The volunteers were [agreeing](https://www.circare.org/foia5/tgn1412_consentform.pdf) to 3 nights and 12 outpatients before getting **£2,000**. The purpose of the study:
 
 > A **first-in-man** study to investigate the effects in healthy male volunteers of single doses of **a new
 drug** for the potential treatment of various inflammatory diseases.
@@ -219,9 +219,9 @@ Study Title:
 
 > A Phase-I, Single-Centre, Double-Blind, Randomised, Placebo-Controlled, Single Escalating-Dose Study to Assess The **Safety**, Pharmacokinetics, Pharmacodynamics And Immunogenicity Of TGN1412 Administered Intravenously To Healthy Volunteers
 
-The 6 men's symptoms included [hypothermia](http://www.mayoclinic.org/diseases-conditions/hypothermia/basics/definition/con-20020453), [loss of bowel control](http://www.nhs.uk/conditions/incontinence-bowel/Pages/Introduction.aspx), [migraines](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) coming in waves and at least 4 of them with [multiple organ failure](https://en.wikipedia.org/wiki/Multiple_organ_dysfunction_syndrome). Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital&mdash;in the same building&mdash;where it now became the job of the National Health Service (NHS) to save their lives.
+The 6 men's symptoms included [hypothermia](https://web.archive.org/web/20170508002117/http://www.mayoclinic.org/diseases-conditions/hypothermia/basics/definition/con-20020453), [loss of bowel control](https://www.nhs.uk/conditions/bowel-incontinence/), [migraines](https://www.nhs.uk/conditions/migraine/) coming in waves and at least 4 of them with [multiple organ failure](https://en.wikipedia.org/wiki/Multiple_organ_dysfunction_syndrome). Once the Parexel study staff realised the deterioration's extent, they moved them to the ICU of Northwick Park Hospital&mdash;in the same building&mdash;where it now became the job of the National Health Service (NHS) to save their lives.
 
-The story caught on in the media at the time that they looked like the ["Elephant Man"](https://en.wikipedia.org/wiki/Joseph_Merrick) after a family member described what they saw. Dr Ganesh Suntharalingam (Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there) in his [personal view](http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event, wrote:
+The story caught on in the media at the time that they looked like the ["Elephant Man"](https://en.wikipedia.org/wiki/Joseph_Merrick) after a family member described what they saw. Dr Ganesh Suntharalingam (Consultant in Intensive Care Medicine and Anaesthesia at Northwick Park Hospital at the time and later Clinical Director of Critical Care there) in his [personal view](https://web.archive.org/web/20171108150439/http://www.lnwh.nhs.uk/about-us/news-and-media/latest-news/the-tgn1412-drug-trial-a-personal-view/) of the whole event, wrote:
 
 > In truth, it was not a specific symptom or effect of the drug, or some kind of explosive growth of the head. Critically ill people develop leaky blood vessels and shock, and the **large volume of fluid we give them in the first few hours causes temporary swelling**&mdash;most noticeable in the face. It gets better as they recover, but can look understandably upsetting to their friends and family.
 

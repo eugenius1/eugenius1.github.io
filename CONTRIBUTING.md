@@ -39,6 +39,7 @@ The gate: run it before every commit. It builds for production and fails if:
 - the TypeScript has a type error or a test fails
 - an address in `scripts/urls.txt` has gone
 - a link between pages or an image is broken
+- a link uses `http://` rather than `https://`
 - an image has no alt text
 - a tab has no browser title
 - a theme file this site overrides has changed
@@ -70,6 +71,29 @@ The reports are then in `.lighthouseci/`. Chrome follows the system's light or d
 mode; CI checks light mode only, so check dark mode here after changing colours. Add
 `--settings.chromeFlags="--blink-settings=preferredColorScheme=0"` to `collect` to
 force dark mode, or `=1` for light.
+
+### Links to other sites
+
+`make check` doesn't check whether other sites are up, as they go down or block bots
+now and then. Instead, `.github/workflows/links.yml` runs
+[lychee](https://github.com/lycheeverse/lychee) over the built site every Monday
+(or on demand, from the Actions tab). It never fails a pull request: it opens a
+single "Dead links to other sites" issue, updates it on later runs, and closes it
+once every link works again.
+
+To fix a dead link, find where the page moved, or, if it has gone for good, link to
+its copy on the [Wayback Machine](https://web.archive.org/) from around when the
+post was written (`https://web.archive.org/web/<timestamp>/<url>`).
+
+Settings and exclusions are in `lychee.toml`: sites that always block bots (LinkedIn,
+Stack Overflow and others), and `archive/` and drafts. Only exclude a site that
+answers bots with an error whether or not the page is there, and check its links by
+hand now and then. To run the same check locally, after `make check` has built
+`_site`:
+
+```bash
+make links
+```
 
 ### TypeScript
 

@@ -128,6 +128,7 @@ exclude:
   - package-lock.json
   - tsconfig.json
   - lighthouserc.json
+  - lychee.toml
   - node_modules
   - scripts
   - README.md
