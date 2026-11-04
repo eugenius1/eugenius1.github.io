@@ -142,7 +142,8 @@ replace it with a service that sets no cookies.
   have share buttons; `share: true` adds them to a page, and pages in `projects/`
   have them unless set to `false`.
 - **Redirects** are `redirect_from` in a page's front matter for old addresses, or a
-  file using `layout: my-redirect` with a `to` address, as in `go/`.
+  page whose front matter has only a `title` and a `redirect_to` address, as in `go/`.
+  Both come from the `jekyll-redirect-from` plugin.
 
 Front matter can load extras on one page with `css` and `js`.
 
