@@ -109,10 +109,6 @@ defaults:
     values:
       sitemap: false
   - scope:
-      path: test
-    values:
-      sitemap: false
-  - scope:
       path: google339d224e50a4dae4.html
     values:
       sitemap: false
@@ -127,11 +123,10 @@ compress_html:
   ignore:
     envs: [development]
 
-# Exclude these files from production site
+# Exclude these files from production site. Jekyll leaves out Gemfile,
+# node_modules, vendor/ and files starting with a dot itself.
 exclude:
   - CNAME
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - Makefile
   - Dockerfile
@@ -141,14 +136,12 @@ exclude:
   - tsconfig.json
   - lighthouserc.json
   - lychee.toml
-  - node_modules
   - scripts
   # Screenshots for pull requests, not pages
   - docs
+  # The second only matches README files in folders
   - README.md
   - "**/README.md"
-  - "*.vscode"
-  - vendor
   # The dev build, so `make preview` doesn't rebuild each time `make local` does
   - _site
 
