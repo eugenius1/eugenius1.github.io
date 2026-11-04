@@ -45,17 +45,13 @@
     </button>
 
     <div id="topbar-title">
-      {% comment %} This site's change: posts show the site's name too, not "Post", as a link home with my photo {% endcomment %}
-      {% if page.layout == 'home' or page.layout == 'post' %}
-        <a href="{{ '/' | relative_url }}" class="with-photo">
-          {{- site.data.locales[include.lang].title | default: site.title -}}
-        </a>
-      {% elsif page.collection == 'tabs' or page.layout == 'page' %}
-        {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
-        {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
-      {% else %}
-        {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
-      {% endif %}
+      {% comment %}
+        This site's change: every page shows the site's name, as a link home with my photo,
+        not the page's title or layout. The page's own title shows in the page, under it.
+      {% endcomment %}
+      <a href="{{ '/' | relative_url }}" class="with-photo">
+        {{- site.data.locales[include.lang].title | default: site.title -}}
+      </a>
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">

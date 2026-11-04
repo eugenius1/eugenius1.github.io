@@ -192,6 +192,14 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
 #topbar-title a {
   color: inherit;
 }
+/* So pages keep their title on phones and tablets too, under the site's name, as posts do.
+   The theme hides it there as its top bar shows the title instead. */
+h1.dynamic-title {
+  display: block !important;
+}
+h1.dynamic-title ~ .content {
+  margin-top: 0 !important;
+}
 #topbar-title .with-photo::before {
   content: "";
   display: inline-block;

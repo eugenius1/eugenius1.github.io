@@ -7,7 +7,6 @@ redirect_from:
 image:
   path: /img/projects/instagram-lists/my-result.jpg
   alt: Number of accounts I follow reduced from 1079 to 928
-  banner: false
 tags:
   - projects
   - web
