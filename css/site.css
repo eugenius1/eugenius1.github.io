@@ -203,7 +203,7 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   vertical-align: middle;
 }
 
-/* Homepage cover. js/home-cover.js adds the photos. */
+/* Homepage cover. _ts/home-cover.ts adds the photos. */
 .home-cover {
   position: relative;
   width: 100%; /* or min-height widens it to keep the aspect ratio */

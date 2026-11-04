@@ -28,10 +28,26 @@ class can look fine there and be missing in production. The two can run at once.
 make check
 ```
 
-Builds for production, then fails if an address in `scripts/urls.txt` has gone, a
-link between pages or an image is broken, an image has no alt text, or a theme file
-this site overrides has changed. This is what CI runs. The Dockerfile is
-the one place the Ruby version is set.
+Type checks and tests the TypeScript, then builds for production, and fails if an
+address in `scripts/urls.txt` has gone, a link between pages or an image is broken,
+an image has no alt text, or a theme file this site overrides has changed. This is
+what CI runs. The Dockerfile is the one place the Node and Ruby versions are set.
+
+## TypeScript
+
+The site's own scripts are TypeScript in `_ts/`, with their tests beside them. esbuild
+compiles `_ts/home-cover.ts` to `js/home-cover.js`, which isn't in git. `make local`
+recompiles it on each change, and `make preview` and `make check` compile it first.
+
+Node runs in Docker too. To run the tests or the type check on their own:
+
+```bash
+docker compose run --build --rm node npm test
+```
+
+```bash
+docker compose run --build --rm node npm run typecheck
+```
 
 ## Write
 

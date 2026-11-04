@@ -1,5 +1,6 @@
 #!/bin/bash
-# Production build, then the checks CI relies on. Run with `make check`.
+# Production build, then the checks CI relies on. Run with `make check`, which
+# compiles the TypeScript first.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
