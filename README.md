@@ -28,10 +28,16 @@ class can look fine there and be missing in production. The two can run at once.
 make check
 ```
 
-Type checks and tests the TypeScript, then builds for production, and fails if an
-address in `scripts/urls.txt` has gone, a link between pages or an image is broken,
-an image has no alt text, or a theme file this site overrides has changed. This is
-what CI runs. The Dockerfile is the one place the Node and Ruby versions are set.
+Builds for production and fails if:
+
+- the TypeScript has a type error or a test fails
+- an address in `scripts/urls.txt` has gone
+- a link between pages or an image is broken
+- an image has no alt text
+- a theme file this site overrides has changed
+
+This is what CI runs. The Dockerfile is the one place the Node and Ruby versions
+are set.
 
 ## TypeScript
 

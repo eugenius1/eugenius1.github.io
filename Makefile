@@ -1,4 +1,6 @@
+# Compiles once first, so Jekyll's first build has the scripts
 local:
+	docker compose run --build --rm node npm run build
 	docker compose up --build
 
 # Production CSS and compressed HTML, which `local` does not show. Its own port and
