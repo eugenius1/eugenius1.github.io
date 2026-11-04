@@ -1,0 +1,47 @@
+{%- comment -%}
+  An image from _images/, in the sizes _ts/images.ts makes, for the browser to pick
+  from. On a line of its own in Markdown:
+
+    {% include img.html src="blog/2016/hover-dns.png" alt="What it shows" %}
+
+  src    its path in _images/
+  alt    required. alt="" for an image that's only decoration.
+  title  optional tooltip
+  class  optional classes for the <picture>, such as golden-width or center-block
+  style  optional CSS for the <img>
+  sizes  optional, for an image not shown the width of the text
+  link   true to link to the largest copy, opened full screen
+
+  Only the first image on a page loads straight away, unless a post banner is above
+  it. An unknown src or a missing alt fails `make check`, as the image is then broken
+  or without alt text.
+{%- endcomment -%}
+{%- assign _image = site.data.images[include.src] -%}
+{%- assign img_count = img_count | plus: 1 -%}
+{%- assign _lazy = true -%}
+{%- if img_count == 1 -%}
+  {%- unless page.layout == 'post' and page.image and page.image.banner != false -%}
+    {%- assign _lazy = false -%}
+  {%- endunless -%}
+{%- endif -%}
+{%- if include.sizes -%}
+  {%- assign _sizes = include.sizes -%}
+{%- elsif _image and include.class contains 'height-fits' -%}
+  {%- comment -%} 500px tall, as in css/site.css {%- endcomment -%}
+  {%- assign _sizes = 500 | times: _image.width | divided_by: _image.height | append: 'px' -%}
+{%- elsif include.class contains 'golden-width' -%}
+  {%- assign _sizes = '(min-width: 1200px) 480px, (min-width: 768px) 510px, 62vw' -%}
+{%- else -%}
+  {%- assign _sizes = site.text_column_sizes -%}
+{%- endif -%}
+{%- capture _webp -%}{% include srcset.html image=_image %}{%- endcapture -%}
+{%- capture _fallback -%}{% include srcset.html image=_image ext=_image.ext %}{%- endcapture -%}
+{%- if include.link -%}<a href="{{ _image.base | relative_url }}-2000.webp" class="popup img-link">{%- endif -%}
+<picture{% if include.class %} class="{{ include.class }}"{% endif %}>
+  {%- if _image -%}<source type="image/webp" srcset="{{ _webp }}" sizes="{{ _sizes }}">{%- endif -%}
+  <img src="{{ _image.base | relative_url }}-1200{{ _image.ext }}" srcset="{{ _fallback }}" sizes="{{ _sizes }}"
+  {%- unless include.alt == nil %} alt="{{ include.alt | xml_escape }}"{% endunless %}
+  {%- if include.title %} title="{{ include.title | xml_escape }}"{% endif %}
+  {%- if include.style %} style="{{ include.style }}"{% endif %} width="{{ _image.width }}" height="{{ _image.height }}"
+  {%- if _lazy %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async"></picture>
+{%- if include.link -%}</a>{%- endif -%}

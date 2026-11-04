@@ -11,9 +11,12 @@ title: Eusebius.Tech
 tagline: Eusebius Ngemera
 description: Personal website of Eusebius Ngemera, including a blog of technologies and life as he knows it.
 
-avatar: "/img/eusebius-avatar-icon.jpg"
+avatar: "/assets/img/eusebius-avatar-icon-480.jpg"
 # Image to use when a page has none, when sharing to social media
-social_preview_image: "/raw/img/branding/github-eugenius1/original.png"
+social_preview_image: "/assets/img/branding/github-eugenius1/original-1200.png"
+# How wide the text column is, for the browser to pick the size of an image from
+# _images/ to load. It's at most 780px from 1200px wide, and 820px below that.
+text_column_sizes: "(min-width: 1200px) 780px, (min-width: 768px) 820px, 100vw"
 
 github:
   username: eugenius1

@@ -5,7 +5,7 @@ description: I got £,£££
 redirect_from:
  - "/b/idact/"
 image:
-  path: /img/covers/blog/2017/parexel-ward.jpg
+  path: /assets/img/covers/blog/2017/parexel-ward-1200.jpg
   alt: "PAREXEL Ward, North London, UK (2017)"
 last_modified_at: 2021-04-25
 tags:
@@ -148,7 +148,7 @@ The poppy seed restriction meant missing my beloved [seeded bread](https://www.w
 
 ## Outpatient visits
 
-![Commuting at 6:33 am through Acton, London.](/img/blog/2017/outpatient-morning-commute.jpg){:.golden-width}
+{% include img.html src="blog/2017/outpatient-morning-commute.jpg" alt="Commuting at 6:33 am through Acton, London." class="golden-width" %}
 
 My outpatients didn't have a scheduled time but I was supposed to be there before noon, with a strong preference towards the time I was dosed, according to the doctors. My commute was an hour each way and so I had to wake up pretty early in the first week to get to my morning lectures on time. My **total commute time has been 26 hours** or so but I always took my laptop with me to do some work while on the train.
 
@@ -174,7 +174,7 @@ After an outpatient, you might be recalled for another blood sample, mostly beca
 Twice I needed to repeat because I had a low [neutrophil](#about-myself) count and once due to my potassium level being on the high side of normal.
 After the first repeat, you get compensated **£20** per repeat; I had 3 repeats so I got an extra £60.
 
-[![Calendar showing date commitments as well as 3 repeat blood sample dates.](/img/blog/2017/clinical-trial-calendar.png)](/raw/img/blog/2017/clinical-trial-calendar.png)
+{% include img.html src="blog/2017/clinical-trial-calendar.png" alt="Calendar showing date commitments as well as 3 repeat blood sample dates." link=true %}
 
 I didn't realise at screening, but the dates I was given were perfect for me. Apart from the first 4 outpatients in the first week, the rest fall on Wednesdays, which I had free. So if you're going to do a trial, **dates and availability are very important** to keep in mind. If your commute time is long I would highly suggest you go for fewer outpatients and more nights in-house.
 
@@ -183,7 +183,7 @@ Some people on my trial will get a [placebo](https://en.wikipedia.org/wiki/Place
 
 ## What I discovered
 
-![8:08 am, Wembley Stadium through heavy mist with the sunrise in view.](/img/blog/2017/wembley-sunrise.jpg){:.height-fits}
+{% include img.html src="blog/2017/wembley-sunrise.jpg" alt="8:08 am, Wembley Stadium through heavy mist with the sunrise in view." class="height-fits" %}
 
 
 ### &hellip;about myself {#about-myself}

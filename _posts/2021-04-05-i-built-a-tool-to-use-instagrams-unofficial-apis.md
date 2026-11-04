@@ -5,7 +5,7 @@ description: It shows detailed, sortable lists of your Instagram followings and 
 redirect_from:
  - "/b/iua/"
 image:
-  path: /img/projects/instagram-lists/my-result.jpg
+  path: /assets/img/projects/instagram-lists/my-result-1200.jpg
   alt: Number of accounts I follow reduced from 1079 to 928
   banner: false
 tags:
@@ -78,7 +78,7 @@ The first part was fine, after all, it was the aim of the StackOverflow answers.
 The loop of the second part started running okay and then I run into the HTTP error `429 Too Many Requests`.
 Consequently, opening the Instagram app (or website also) showed that I needed to confirm my phone number before doing anything else:
 
-![Confirm your phone number. Help us keep the Instagram community safe by entering your phone number. We'll send you a security code.](/img/projects/instagram-lists/instagram-verify.jpg){:.golden-width}
+{% include img.html src="projects/instagram-lists/instagram-verify.jpg" alt="Confirm your phone number. Help us keep the Instagram community safe by entering your phone number. We'll send you a security code." class="golden-width" %}
 
 This is where I had to start thinking about **API rate limits**,
 and understanding that each time I hit the rate limit,
@@ -187,13 +187,13 @@ async function getLists() {
 
 Did I solve my problem? Definitely!
 
-![Number of accounts I follow reduced from 1079 to 928, a reduction of 151](/img/projects/instagram-lists/my-result.jpg){:.golden-width}
+{% include img.html src="projects/instagram-lists/my-result.jpg" alt="Number of accounts I follow reduced from 1079 to 928, a reduction of 151" class="golden-width" %}
 
 In building this tool, I also empowered others to manage the accounts they follow:
 
 > That is a very cool tool! The output is **easy to interpret** and the **instructions work pretty well** for allowing me to **pick what I want to view** in the output
 
-![Positive user feedback from several users](/img/projects/instagram-lists/user-feedback.png){:.golden-width}
+{% include img.html src="projects/instagram-lists/user-feedback.png" alt="Positive user feedback from several users" class="golden-width" %}
 
 I hope this article helps you to understand the [source code](https://github.com/eugenius1/eugenius1.github.io/tree/master/projects/instagram-lists)
 and maybe even empower you to build other tools.

@@ -6,7 +6,7 @@ redirect_from:
  - "/mij1/"
  - "/investing/"
 image:
-  path: /raw/img/blog/2021/investing/2020-stock-market-crash-shareable.png
+  path: /assets/img/blog/2021/investing/2020-stock-market-crash-shareable-1200.png
   alt: "TradingView"
 tags:
   - investing
@@ -133,7 +133,7 @@ and panic sell with **fear** when prices are going down.
 Places like the stock market are the only places where people run away when prices come down (a good investor sees a **sale**),
 and people want to buy more when prices go up.
 
-![Current uncertain reality vs the goal that is more certain to be higher](/raw/img/blog/2021/investing/current-reality-vs-goal.jpg){:.golden-width}
+{% include img.html src="blog/2021/investing/current-reality-vs-goal.jpg" alt="Current uncertain reality vs the goal that is more certain to be higher" class="golden-width" %}
 [&copy; BehaviorGap](https://web.archive.org/web/20210507125144/https://store.behaviorgap.com/collections/all-sketches/products/current-reality)
 {:.small}
 {:.text-center}
@@ -150,19 +150,19 @@ A major key to remember is that investing (medium- to long-term) means going thr
 **Never panic sell**, which I did at the very beginning when I was clueless during the 2020 stock market crash.
 For example, I bought (fractional) shares of Apple and panic sold them 4 days later at a loss of 9%:
 
-![Panic selling Apple stock in March 2020](/raw/img/blog/2021/investing/aapl-2020-panic-sell.png)
+{% include img.html src="blog/2021/investing/aapl-2020-panic-sell.png" alt="Panic selling Apple stock in March 2020" %}
 
 If I continued to hold those same shares through the crash,
 14 months later they would now be worth 70% more than my cost to buy them.
 
-![Apple stock price crashing and then completely recovering](/raw/img/blog/2021/investing/aapl-after-panic-sell.png)
+{% include img.html src="blog/2021/investing/aapl-after-panic-sell.png" alt="Apple stock price crashing and then completely recovering" %}
 
 **Time is the greatest asset**:
 Jack & Jill both invest $200 per month but Jack for 10 years (ages 25-35) while Jill for 30 years (ages 35-65).
 While Jill has put in 3 times as much money as Jack, at age 65 Jack has a larger portfolio value than Jill because he started 10 years earlier.
 **Starting investing earlier** has a greater impact than contributions in later years.
 
-![Impact of when you start investing, even if you stop.](/raw/img/blog/2021/investing/impact-of-when-you-start-investing.png)
+{% include img.html src="blog/2021/investing/impact-of-when-you-start-investing.png" alt="Impact of when you start investing, even if you stop." %}
 [&copy; Coryanne Hicks & Nate Hellman](https://money.usnews.com/investing/investing-101/articles/2018-07-23/9-charts-showing-why-you-should-invest-today)
 {:.small}
 {:.text-center}
@@ -400,7 +400,7 @@ from Vanguard (pioneer of index funds),
 either for inspiration or as a **super-easy passive** way to invest if you're in a country like the UK or the US but not France.
 These funds only provide exposure to stocks and bonds so no commodities nor crypto.
 
-![Asset mix of Vanguard's target retirement funds against one's age. Bonds going from 20% to 70%, with the rest being stocks.](/raw/img/blog/2021/investing/vanguard-target-retirement-funds-asset-mix.png)
+{% include img.html src="blog/2021/investing/vanguard-target-retirement-funds-asset-mix.png" alt="Asset mix of Vanguard's target retirement funds against one's age. Bonds going from 20% to 70%, with the rest being stocks." %}
 &copy; Vanguard Asset Management
 {:.small}
 {:.text-center}
@@ -439,7 +439,7 @@ I used the [portfolio builder](https://portfoliocharts.com/portfolio/my-portfoli
 I assume my 15% crypto to be American Small-Cap Growth (SCG) stocks (but crypto is more volatile and less correlated to the stock market).
 My 15% bonds (green) are split across different bond types which I will detail in a future article.
 
-![My portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/my-portfolio.png)
+{% include img.html src="blog/2021/investing/portfolio-charts/my-portfolio.png" alt="My portfolio on portfoliocharts.com" %}
 
 **Drawdown** is a measure of downside volatility, so concretely, how much of a drop in portfolio value I could see from a peak and for how long.
 The chart below shows the **historical** drawdowns that my built portfolio would have seen from 1970 to 2015.
@@ -448,7 +448,7 @@ The longest drawdown took 10 years to recover.
 This data takes into account inflation (France in this case),
 so a drawdown needs to return to the previous peak value but adjusted for inflation.
 
-![Drawdowns profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/drawdowns.png)
+{% include img.html src="blog/2021/investing/portfolio-charts/drawdowns.png" alt="Drawdowns profile of my portfolio on portfoliocharts.com" %}
 
 The many other charts include those allowing you to plan **financial independence**.
 The chart below shows that if I invest 30% of my income in this portfolio, I could retire in 18-28 years (aged 43-53).
@@ -457,7 +457,7 @@ More details on how the calculation is done are on PortfolioCharts' pages on
 [financial independence](https://portfoliocharts.com/portfolio/financial-independence/)
 and [withdrawal rates](https://portfoliocharts.com/portfolio/withdrawal-rates/).
 
-![Financial independence profile of my portfolio on portfoliocharts.com](/raw/img/blog/2021/investing/portfolio-charts/financial-independence.png)
+{% include img.html src="blog/2021/investing/portfolio-charts/financial-independence.png" alt="Financial independence profile of my portfolio on portfoliocharts.com" %}
 
 ### Broker/Exchange
 
@@ -506,7 +506,7 @@ to:
 
 The first time I did this exercise I determined I could dedicate 13% of my expenditures (excluding saving for my emergency fund) to investing:
 
-![Pie chart of my expenditures by type](/raw/img/blog/2021/investing/my-expenditures-by-type.png)
+{% include img.html src="blog/2021/investing/my-expenditures-by-type.png" alt="Pie chart of my expenditures by type" %}
 
 Minority Mindset [recommends](https://youtu.be/FubGyKuut6o) the percentages below for spending, investing and saving,
 depending on whether you have financial responsibilities (e.g. people that rely on you financially).

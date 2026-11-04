@@ -57,6 +57,13 @@
     {% assign _left = _img_snippet | split: '>' | first %}
     {% assign _right = _img_snippet | remove: _left %}
 
+    {% comment %} This site's change: leave images from _includes/img.html as they are, as a link or lazy loading added inside <picture> would break it {% endcomment %}
+    {% assign _parent = _right | slice: 0, 11 %}
+    {% if _parent == '></picture>' %}
+      {% assign _img_content = _img_content | append: IMG_TAG | append: _img_snippet %}
+      {% continue %}
+    {% endif %}
+
     {% unless _left contains 'src=' %}
       {% continue %}
     {% endunless %}
@@ -154,6 +161,18 @@
 
     {% else %}
       {% assign _wrapper_class = _wrapper_class | append: ' shimmer' %}
+    {% endif %}
+
+    {% comment %} This site's change: a post's banner is at the top, so it loads first rather than lazily, and picks a WebP copy of an image from _images/, whose front matter names the 1200px one {% endcomment %}
+    {% if page.layout == 'post' and _wrapper_class contains 'preview-img' %}
+      {% assign _lazyload = false %}
+      {% assign _left = _left | append: ' fetchpriority="high"' %}
+      {% assign _image_key = _src | remove_first: '/assets/img/' | replace: '-1200.', '.' %}
+      {% assign _image = site.data.images[_image_key] %}
+      {% if _image %}
+        {% capture _srcset %} srcset="{% include srcset.html image=_image %}" sizes="{{ site.text_column_sizes }}"{% endcapture %}
+        {% assign _left = _left | append: _srcset %}
+      {% endif %}
     {% endif %}
 
     <!-- lazy-load images -->

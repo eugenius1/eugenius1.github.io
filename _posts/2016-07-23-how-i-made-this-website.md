@@ -5,7 +5,7 @@ description: An overview to having your own website
 redirect_from:
  - "/b/himtw/"
 image:
-  path: /img/blog/2016/website-launch-screenshot.png
+  path: /assets/img/blog/2016/website-launch-screenshot-1200.png
 last_modified_at: 2021-04-25
 tags:
   - web
@@ -30,7 +30,7 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 `.tech` has the premium annual price of $49.99 but other usual top-level domains like `.com` ($14.99) and `.co.uk` ($9.99) mostly cost far less.
 
-![Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which costs $5 per year. An ICANN fee of $0.18 makes the total $55.17.](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
+{% include img.html src="blog/2016/hover-renewal.png" alt="Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which costs $5 per year. An ICANN fee of $0.18 makes the total $55.17." title="Domain renewal for a second year" %}
 
 *Whois* is a service that gives you information about the registered user of a domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](https://www.whois.com/whois/eusebius.tech).
 
@@ -44,13 +44,13 @@ GitHub Pages seamlessly implements https for you.
 
 The screenshot below shows the <abbr title="Domain Name System">DNS</abbr> Records for my domain. These are just settings for where subdomains lie. The key settings for the transfer from GitHub Pages are `A`-records for `@` and `*`. `CNAME`-record for `www` is for having the subdomain `www.eusebius.tech`, which for me links to the apex domain `eusebius.tech`. Read more on [setting up custom domains on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages).
 
-![5 entries in the DNS records.](/img/blog/2016/hover-dns.png "DNS settings on hover.com")
+{% include img.html src="blog/2016/hover-dns.png" alt="5 entries in the DNS records." title="DNS settings on hover.com" %}
 
 ## Theme
 
 A theme can drastically affect a website's impression. See versions [1](/archive/site/v1.0.html) and [2](/archive/site/v2.0.html) of my homepage.
 
-[![The homepage transforms from a simple `Hello, world! It's Eusebius` on a blank white page to another with more text and finally to the current, more polished version with `Hi, I'm Eusebius`.](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
+{% include img.html src="blog/2016/theme-history.gif" alt="The homepage transforms from a simple Hello, world! It's Eusebius on a blank white page to another with more text and finally to the current, more polished version with Hi, I'm Eusebius." title="GIF of website transformation" link=true %}
 
 The theme I'm using is [*Beautiful Jekyll*](https://beautifuljekyll.com/), and it goes beyond providing some [css](https://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 

@@ -87,8 +87,18 @@ layout: default
 
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
+          {% comment %} This site's change: the card picks a small WebP copy of an image from _images/, whose front matter names the 1200px one. {% endcomment %}
+          {% assign image_key = src | remove_first: '/assets/img/' | replace: '-1200.', '.' %}
+          {% assign image = site.data.images[image_key] %}
+          {% assign srcset_attr = nil %}
+          {% if image %}
+            {%- capture srcset_attr -%}
+              srcset="{% include srcset.html image=image %}" sizes="(min-width: 768px) 320px, 100vw"
+            {%- endcapture -%}
+          {% endif %}
+
           <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip_attr }}>
+            <img src="{{ src }}" {{ srcset_attr }} alt="{{ alt }}" {{ lqip_attr }}>
           </div>
 
           {% assign card_body_col = '7' %}

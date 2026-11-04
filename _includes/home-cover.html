@@ -1,7 +1,23 @@
 <!-- Photos from page.covers fade behind the title. _ts/home-cover.ts runs them. -->
-{% assign first_cover = page.covers | first %}
-<section class="home-cover" data-covers="{{ page.covers | jsonify | xml_escape }}">
-  <noscript><img class="is-shown" src="{{ first_cover.path | relative_url }}" alt=""></noscript>
+{%- comment -%}
+  Each photo's copies from _ts/images.ts, so the browser picks the size to load.
+  The cover is the width of the text column.
+{%- endcomment -%}
+{%- assign sizes = site.text_column_sizes -%}
+{%- capture photos -%}
+  [
+  {%- for cover in page.covers -%}
+    {%- assign image = site.data.images[cover.src] -%}
+    {%- capture srcset -%}{% include srcset.html image=image %}{%- endcapture -%}
+    {%- assign src = image.base | relative_url | append: '-1200.webp' -%}
+    {"src": {{ src | jsonify }}, "srcset": {{ srcset | jsonify }}, "caption": {{ cover.caption | jsonify }}}
+    {%- unless forloop.last %}, {% endunless -%}
+  {%- endfor -%}
+  ]
+{%- endcapture -%}
+{%- assign first = site.data.images[page.covers.first.src] %}
+<section class="home-cover" data-covers="{{ photos | xml_escape }}" data-sizes="{{ sizes }}">
+  <noscript><img class="is-shown" src="{{ first.base | relative_url }}-1200.webp" alt=""></noscript>
   <div class="home-cover-text">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>

@@ -67,7 +67,7 @@ The idea here is that the price of basic goods needed for daily life tend to mov
 
 Let's see what commodities are available on Trading212:
 
-![Searching for commodity funds in Trading212 app.](/raw/img/blog/2022/investing/commodities/trading212-search-commodity-funds.jpg){:.height-fits}
+{% include img.html src="blog/2022/investing/commodities/trading212-search-commodity-funds.jpg" alt="Searching for commodity funds in Trading212 app." class="height-fits" %}
 [Trading212 app](https://www.trading212.com/invite/FMqHiTlg)
 {:.small}
 {:.text-center}
@@ -111,7 +111,7 @@ Prices of goods in the United States inflated by around [28.5%](https://www.usin
 <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
 </div>
 
-![Performance of different commodity types 2008-2021: SPX S&P 500, DH2O Water, VZLE Precious Metals, CARB Carbon, AIGI Industrial Metals, AIGA Agriculture, DJP Commodity Index, AIGL Livestock, AIGO Petroleum, AIGE fossil fuel energy](/raw/img/blog/2022/investing/commodities/commodities-2008-2021.png)
+{% include img.html src="blog/2022/investing/commodities/commodities-2008-2021.png" alt="Performance of different commodity types 2008-2021: SPX S&P 500, DH2O Water, VZLE Precious Metals, CARB Carbon, AIGI Industrial Metals, AIGA Agriculture, DJP Commodity Index, AIGL Livestock, AIGO Petroleum, AIGE fossil fuel energy" %}
 {:.small}
 {:.text-center}
 
@@ -147,7 +147,7 @@ DJP, a commodity index, has also lost significant value and checking today's com
 
 Now let's see the 4 precious metals since 1997 (oldest data I could get for palladium & platinum):
 
-![Performance of the 4 precious metals 1997-2021: gold, silver, palladium, platinum](/raw/img/blog/2022/investing/commodities/precious-metals-1997-2021.png)
+{% include img.html src="blog/2022/investing/commodities/precious-metals-1997-2021.png" alt="Performance of the 4 precious metals 1997-2021: gold, silver, palladium, platinum" %}
 {:.small}
 {:.text-center}
 
@@ -170,7 +170,7 @@ From this time perspective (24 years), 3 out of the 4 precious metals have outpe
 Gold seems to be the least volatile while delivering the second best performance after palladium.
 
 <!-- gold's cycles through modern history, maybe vs silver.
-![TODO](/raw/img/blog/2022/investing/commodities/gold-silver-1972-2021.png)
+{% include img.html src="blog/2022/investing/commodities/gold-silver-1972-2021.png" alt="TODO" %}
 {:.small}
 {:.text-center} -->
 
@@ -225,7 +225,7 @@ Economics professor [Dr. Saifedean Ammous](https://books.google.fr/books/about/T
 A former institutional investor with the pseudonym PlanB wrote [an article](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) including the table below with the 4 precious metals and their stock-to-flow ratios:
 
 <!-- TODO: convert to text -->
-![2019 stock-to-flow data of the 4 precious metals: gold, silver, palladium, platinum](/raw/img/blog/2022/investing/commodities/precious-metals-stock-to-flow.png)
+{% include img.html src="blog/2022/investing/commodities/precious-metals-stock-to-flow.png" alt="2019 stock-to-flow data of the 4 precious metals: gold, silver, palladium, platinum" %}
 {:.small}
 {:.text-center}
 
@@ -381,7 +381,7 @@ In a way, it's trying to replace parts of the current banking system (notably th
 For context, [40%](http://oilprice.com/Metals/Gold/Gold-Mining-Boom-Increasing-Mercury-Pollution-Risk.html) of newly produced gold is used directly as an investment asset and 50% for jewelry.
 In May 2021, [Galaxy Digital](https://docsend.com/view/adwmdeeyfvqwecj2) estimated the annual energy consumption of bitcoin at 114 terawatt-hours per year, the majority of the banking system at 264 and gold at 241, as illustrated below:
 
-![Estimated Annual Energy Consumption (TWh/yr) of the banking system, gold & bitcoin](/raw/img/blog/2022/investing/crypto/energy-consumption-banking-gold-bitcoin.png)
+{% include img.html src="blog/2022/investing/crypto/energy-consumption-banking-gold-bitcoin.png" alt="Estimated Annual Energy Consumption (TWh/yr) of the banking system, gold & bitcoin" %}
 [&copy; Galaxy Digital](https://docsend.com/view/adwmdeeyfvqwecj2)
 {:.small}
 {:.text-center}
@@ -404,7 +404,7 @@ as of December 2021, around 61% of the electricity used to mine Bitcoin came fro
 These figures are more an illustration of the electricity sources for where Bitcoin is being mined.
 The top 2 mining countries are currently the United States and Kazakhstan.
 
-![Bitcoin Mining: Energy Source Types: 61% fossil fuel, 28% renewable & 11% nuclear](/raw/img/blog/2022/investing/crypto/bitcoin-mining-energy-source-types.png){:style="width: min(100vw, 500px)"}
+{% include img.html src="blog/2022/investing/crypto/bitcoin-mining-energy-source-types.png" alt="Bitcoin Mining: Energy Source Types: 61% fossil fuel, 28% renewable & 11% nuclear" style="width: min(100vw, 500px)" sizes="(min-width: 500px) 500px, 100vw" %}
 
 In the meantime, CoinShares estimates the cost of **offsetting** Bitcoin's emissions by buying carbon credits to be **200 USD per bitcoin per year** if shared among all bitcoin holders.
 That's around **0.6% per year** at time of writing.
@@ -415,7 +415,7 @@ The upper bound can be significantly higher because when bitcoin's price goes hi
 If you'd like to explore more this topic,
 I recommend browsing through [CBECI's FAQ page](https://ccaf.io/cbeci/faq) which answers questions like "Does Bitcoin mining incentivise the deployment of renewable power generation?"
 
-![cbeci-historical-bitcoin-network-power-demand](/raw/img/blog/2022/investing/crypto/cbeci-historical-bitcoin-network-power-demand.png)
+{% include img.html src="blog/2022/investing/crypto/cbeci-historical-bitcoin-network-power-demand.png" alt="cbeci-historical-bitcoin-network-power-demand" %}
 
 <!-- **Future**:
 The cheapest electricity sources (eg hydro) tend to be far from largest demand (cities) and electricity is not so easily transported.
@@ -527,7 +527,7 @@ The pricing model gives the red line below which moves up by a multiplicative fa
 Published in March 2019, the model has so far reasonably tracked the real price&mdash;or at least as seen on a [logarithmic scale](https://www.mathsisfun.com/definitions/logarithmic-scale.html).
 The model price at time of writing is around **$71,000**.
 
-![Bitcoin Stock-to-Flow Model](/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-stock-to-flow-model.png)
+{% include img.html src="blog/2022/investing/crypto/2022-05-07-bitcoin-stock-to-flow-model.png" alt="Bitcoin Stock-to-Flow Model" %}
 [&copy; LookIntoBitcoin.com](https://www.lookintobitcoin.com/charts/stock-to-flow-model/)
 {:.small}
 {:.text-center}
@@ -554,7 +554,7 @@ There's also an [Ethereum version](https://www.blockchaincenter.net/ethereum-rai
 [hodl]: https://www.investopedia.com/terms/h/hodl.asp
 [btc_rainbow]: https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/
 
-![Bitcoin rainbow price chart](/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-rainbow-chart.png)
+{% include img.html src="blog/2022/investing/crypto/2022-05-07-bitcoin-rainbow-chart.png" alt="Bitcoin rainbow price chart" %}
 [&copy; BlockchainCenter.net][btc_rainbow]
 {:.small}
 {:.text-center}
@@ -573,7 +573,7 @@ I've recently found 2 indicators that aim to predict the cycle [top][cycle_top] 
   <div class="col-6">
     <a href="https://www.lookintobitcoin.com/charts/pi-cycle-top-indicator/">
       <figure>
-        <img src="/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-pi-cycle-top-indicator.png" alt="Bitcoin Pi Cycle Top Indicator">
+        {% include img.html src="blog/2022/investing/crypto/2022-05-07-bitcoin-pi-cycle-top-indicator.png" alt="Bitcoin Pi Cycle Top Indicator" sizes="(min-width: 1200px) 420px, 50vw" %}
         <figcaption class="small text-center">&copy; LookIntoBitcoin.com</figcaption>
       </figure>
     </a>
@@ -581,7 +581,7 @@ I've recently found 2 indicators that aim to predict the cycle [top][cycle_top] 
   <div class="col-6">
     <a href="https://www.lookintobitcoin.com/charts/200-week-moving-average-heatmap/">
       <figure>
-        <img src="/raw/img/blog/2022/investing/crypto/2022-05-07-bitcoin-200-week-ma-heatmap.png" alt="Bitcoin 200-Week Moving Average Heatmap">
+        {% include img.html src="blog/2022/investing/crypto/2022-05-07-bitcoin-200-week-ma-heatmap.png" alt="Bitcoin 200-Week Moving Average Heatmap" sizes="(min-width: 1200px) 420px, 50vw" %}
         <figcaption class="small text-center">&copy; LookIntoBitcoin.com</figcaption>
       </figure>
     </a>
@@ -785,7 +785,7 @@ rich list
 
 [3Commas]: https://3commas.io/?c=tc378694
 
-![Rebalancing a portfolio in 3Commas](/raw/img/blog/2022/investing/crypto/3commas-rebalancing-portfolio.png)
+{% include img.html src="blog/2022/investing/crypto/3commas-rebalancing-portfolio.png" alt="Rebalancing a portfolio in 3Commas" %}
 [3Commas][3Commas]
 {:.small}
 {:.text-center}

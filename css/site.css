@@ -118,6 +118,7 @@ footer a:hover,
   margin-inline: auto;
 }
 .center-block img {
+  display: block;
   margin-inline: auto;
 }
 .pull-right {
@@ -203,7 +204,7 @@ table.right-figures-3 tr :is(th, td):nth-of-type(n + 3) {
   height: 1.75rem;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background: url("../img/eusebius-avatar-icon.jpg") center / cover;
+  background: url("../assets/img/eusebius-avatar-icon-480.webp") center / cover;
   vertical-align: middle;
 }
 
