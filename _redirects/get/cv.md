@@ -2,5 +2,4 @@
 permalink: "/get/cv/"
 redirect_to: /raw/docs/Eusebius_Ngemera_CV.pdf
 title: CV Download
-sitemap: false
 ---

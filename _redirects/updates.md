@@ -4,5 +4,4 @@ permalink: "/updates/"
 redirect_from:
  - "/go/social/"
 redirect_to: /about-me/
-sitemap: false
 ---

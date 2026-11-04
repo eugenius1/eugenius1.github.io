@@ -96,6 +96,11 @@ defaults:
       comments: true
       share: true
   - scope:
+      path: ""
+      type: redirects
+    values:
+      sitemap: false
+  - scope:
       path: archive
     values:
       sitemap: false
