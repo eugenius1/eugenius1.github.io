@@ -37,6 +37,6 @@ wrong — not a changelog line.
 
 Disqus threads and inbound links follow URLs. Moving or renaming a post or page
 needs `redirect_from` in its front matter for the old address (or a
-`layout: my-redirect` file, as in `go/`). `scripts/urls.txt` lists every address
-the site has served, and `make check` fails when one of them is missing from the
-build; never delete a line from it to make the check pass.
+`layout: my-redirect` file, as in `go/`). `make check` only catches this for the
+addresses in `scripts/urls.txt`, which the site served before the move to Jekyll
+4; anything newer is on you. Never delete a line from it to make the check pass.

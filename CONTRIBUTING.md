@@ -72,6 +72,7 @@ docker compose run --build --rm node npm run typecheck
 | `donate/` | The page shown after a donation |
 | `index.html` | The homepage and its cover photos |
 | `_layouts/`, `_includes/` | This site's layouts, and copies of the theme's files with small changes |
+| `assets/` | The 404 page and the search index, a copy of the theme's |
 | `_data/` | Locale strings (`locales/en.yml`), share buttons, contact links |
 | `css/site.css` | This site's own styles |
 | `_ts/` | TypeScript for the site's scripts, with tests; compiled into `js/` |

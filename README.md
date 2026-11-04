@@ -5,8 +5,8 @@
 The personal website and blog of Eusebius Ngemera, at **https://eusebius.tech**.
 
 The site uses two third-party services: Google Analytics counts visits, and Disqus
-runs the comments under posts. Each sets its own cookies under its own privacy
-policy; the site's [privacy policy](https://eusebius.tech/pages/privacy-policy/)
+runs the comments under posts. Both collect data about visitors under their own
+privacy policies; the site's [privacy policy](https://eusebius.tech/pages/privacy-policy/)
 has the details.
 
 ## What's on the site
@@ -14,7 +14,7 @@ has the details.
 - **Blog**: posts on technology, investing and things I've tried, such as
   [taking part in a clinical trial](https://eusebius.tech/blog/i-did-a-clinical-trial-and-this-is-my-experience/).
 - **Projects**: university and side projects, including my MEng final-year project.
-- **Freebies**: things to download and use.
+- **Freebies**: referral links and codes that get you something free.
 - **About me** and my **CV**.
 
 ## Status
