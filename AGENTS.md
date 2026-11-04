@@ -19,8 +19,8 @@ make check
 
 Strongly recommended: run `/code-review --fix` (or your tool's equivalent
 review-and-fix pass) over the branch's changes, using Claude Sonnet or a model of
-similar strength, then commit its fixes and re-run the pre-commit check above. It
-catches mistakes, duplication and needless complexity that the checks don't.
+similar strength, then run the pre-commit check above on its fixes and commit
+them. It catches mistakes, duplication and needless complexity that the checks don't.
 
 ## Attribution
 
