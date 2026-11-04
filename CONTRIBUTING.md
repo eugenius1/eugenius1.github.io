@@ -48,9 +48,9 @@ but don't deploy.
 On pull requests, the `lighthouse` job runs Chrome's
 [Lighthouse](https://github.com/GoogleChrome/lighthouse-ci) on the site the `build`
 job made: the homepage, a long post, About Me, the CV and Instagram Lists. It fails
-when accessibility or SEO drops below 95 or best practices below 90, and only warns
-when performance drops below 60, as Google Analytics, Disqus and the CDN fonts make
-that score vary. The pages and limits are in `lighthouserc.json`. Each run's scores
+when accessibility, SEO or best practices drop below their limits, and only warns
+for performance, as Google Analytics, Disqus and the CDN fonts make that score vary.
+The pages and limits are in `lighthouserc.json`. Each run's scores
 are in the job's summary, and its full reports in the `lighthouse-reports` artifact.
 
 It runs on the host rather than in Docker, as it needs Chrome. With Node and Chrome

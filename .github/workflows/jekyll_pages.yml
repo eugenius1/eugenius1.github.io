@@ -39,7 +39,7 @@ jobs:
           compression-level: 0
           retention-days: 1
 
-  # Runs on GitHub's runner, which has Node and Chrome, against the site build made.
+  # Runs on GitHub's runner, which has Node and Chrome, against the site that build made.
   # The limits are in lighthouserc.json.
   lighthouse:
     if: github.event_name == 'pull_request'
@@ -68,6 +68,8 @@ jobs:
         with:
           name: lighthouse-reports
           path: .lighthouseci/reports
+          # Otherwise skipped, as the folder's name starts with a dot
+          include-hidden-files: true
       - name: Check scores
         run: npx --yes @lhci/cli@0.15.1 assert
 

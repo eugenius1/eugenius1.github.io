@@ -9,7 +9,10 @@ console.log('## Lighthouse\n');
 console.log(`| Page | ${categories.join(' | ')} |`);
 console.log(`| --- |${' ---: |'.repeat(categories.length)}`);
 for (const run of manifest.filter((run) => run.isRepresentativeRun)) {
-  const scores = categories.map((category) => Math.round(run.summary[category] * 100));
+  // A category Lighthouse couldn't score is null, not 0
+  const scores = categories.map((category) =>
+    run.summary[category] == null ? 'n/a' : Math.round(run.summary[category] * 100),
+  );
   console.log(`| ${new URL(run.url).pathname} | ${scores.join(' | ')} |`);
 }
 console.log('\nThe full reports are in the `lighthouse-reports` artifact.');
