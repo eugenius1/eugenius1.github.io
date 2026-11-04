@@ -61,31 +61,6 @@ docker compose run --build --rm node npm test
 docker compose run --build --rm node npm run typecheck
 ```
 
-## Layout
-
-| Path | Purpose |
-| --- | --- |
-| `_config.yml` | Site settings: title, social links, comments, analytics, permalinks, front matter defaults |
-| `_posts/`, `_drafts/` | Blog posts, and posts not yet published |
-| `_tabs/` | The pages in the sidebar |
-| `pages/`, `projects/` | Other pages, at addresses that follow their folder |
-| `go/`, `get/` | Short addresses that redirect elsewhere |
-| `donate/` | The page shown after a donation |
-| `index.html` | The homepage and its cover photos |
-| `_layouts/`, `_includes/` | This site's layouts, and copies of the theme's files with small changes |
-| `assets/` | The 404 page and the search index, a copy of the theme's |
-| `_data/` | Locale strings (`locales/en.yml`), share buttons, contact links |
-| `css/site.css` | This site's own styles |
-| `_ts/` | TypeScript for the site's scripts, with tests; compiled into `js/` |
-| `js/` | Scripts the site loads |
-| `img/`, `raw/` | Images and files; `raw/` is served as-is |
-| `archive/` | A frozen copy of the old Beautiful Jekyll site, not checked for links |
-| `test/` | Pages for trying features out, not linked from the site |
-| `scripts/check.sh` | What `make check` runs after the TypeScript |
-| `scripts/urls.txt` | Every address the site served before the move to Jekyll 4 |
-| `scripts/theme-overrides.sha256` | Hashes of the theme files this site overrides |
-| `Dockerfile`, `compose.yaml`, `Makefile` | The Docker setup behind `make` |
-
 ## How it works
 
 The site is [Jekyll](https://jekyllrb.com/) 4 with the
