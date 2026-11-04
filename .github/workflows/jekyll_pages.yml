@@ -24,6 +24,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # The web copies of _images/, which take a minute to make from nothing. An
+      # older cache still saves the images that haven't changed, as `make check`
+      # only makes new or changed ones. They're in _site, so the lighthouse job and
+      # the deployment get them too.
+      - name: Restore image copies
+        uses: actions/cache@v4
+        with:
+          path: assets/img
+          key: images-${{ hashFiles('_images/**', '_ts/images.ts', 'package-lock.json') }}
+          restore-keys: images-
       - name: Test, build and check
         run: make check
       - name: Upload artifact

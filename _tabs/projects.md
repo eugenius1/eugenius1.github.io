@@ -4,7 +4,7 @@ description: My productive fixations
 comments: true
 share: true
 image:
-  path: /img/projects/ee3-rtdsp/lynx.png
+  path: /assets/img/projects/ee3-rtdsp/lynx-1200.png
 icon: fas fa-code
 order: 2
 permalink: /projects/

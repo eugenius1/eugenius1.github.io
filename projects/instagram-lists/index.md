@@ -20,7 +20,7 @@ redirect_from:
 This tool helped me clean up the accounts I used to follow on Instagram.
 I could sort the accounts I follow by details like when they last posted.
 
-![Number of accounts I follow reduced from 1079 to 928, a reduction of 151](/img/projects/instagram-lists/my-result.jpg){:.golden-width}{:.center-block}
+{% include img.html src="projects/instagram-lists/my-result.jpg" alt="Number of accounts I follow reduced from 1079 to 928, a reduction of 151" class="golden-width center-block" %}
 
 This would not be possible with Instagram's official <a href="https://en.wikipedia.org/wiki/API"><abbr title="Application Programming Interface">API</abbr></a>s so here we use their **unofficial, internal APIs**.
 We are using something that wasn't designed for us to easily use.
@@ -56,7 +56,7 @@ There are two stages:
       - date of their last post
       - are they a business account?
       - have they joined recently?
-    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/raw/img/projects/instagram-lists/instagram-verify.jpg) your identity via email or phone number.
+    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/assets/img/projects/instagram-lists/instagram-verify-2000.webp) your identity via email or phone number.
 
 This tool doesn't unfollow accounts for you, you will have to open the linked Instagram profiles to unfollow.
 
@@ -94,7 +94,7 @@ Make sure you're **logged in** on [instagram.com](https://www.instagram.com/).
 
 In the new instagram.com tab, open the browser console (normally `Ctrl`+`Shift`+`J` on Windows/Linux or `⌘`+`Option`+`J` on Mac).
 
-[![Browser console](/img/projects/instagram-lists/console-annotated.png)](/raw/img/projects/instagram-lists/console-annotated.png){:.center-block}
+{% include img.html src="projects/instagram-lists/console-annotated.png" alt="Browser console" class="center-block" link=true %}
 
 Copy the code below into the console and press `Enter`. This will set up all the needed functions.
 

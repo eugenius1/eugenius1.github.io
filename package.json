@@ -3,15 +3,19 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "esbuild _ts/home-cover.ts _ts/consent.ts --bundle --target=es2020 --outdir=js",
-    "watch": "npm run build -- --watch=forever",
+    "images": "node _ts/images.ts",
+    "scripts": "esbuild _ts/home-cover.ts _ts/consent.ts --bundle --target=es2020 --outdir=js",
+    "build": "npm run images && npm run scripts",
+    "watch": "npm run scripts -- --watch=forever",
     "test": "vitest run --dir _ts",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm test && npm run build"
   },
   "devDependencies": {
+    "@types/node": "24.19.2",
     "esbuild": "0.28.2",
     "jsdom": "30.1.3",
+    "sharp": "0.35.5",
     "typescript": "7.0.2",
     "vitest": "5.1.0"
   }

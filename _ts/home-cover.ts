@@ -2,8 +2,10 @@
 // same one twice running. `npm run build` compiles it to js/home-cover.js.
 const HOLD_MS = 6000;
 
+// The copies of each photo, from _includes/home-cover.html
 interface Photo {
-  path: string;
+  src: string;
+  srcset: string;
   caption: string;
 }
 
@@ -11,6 +13,8 @@ export function start(cover: HTMLElement): void {
   const text = cover.querySelector('.home-cover-text');
   const caption = cover.querySelector('.home-cover-caption')!;
   const photos: Photo[] = JSON.parse(cover.dataset.covers!);
+  const sizes = cover.dataset.sizes ?? '100vw';
+  let first = true;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
   const failed = new Set<number>();
@@ -48,7 +52,13 @@ export function start(cover: HTMLElement): void {
 
     const image = new Image();
     image.alt = '';
-    image.src = photos[current].path;
+    // The first photo is what the page is waiting for, the others load out of sight
+    if (first) image.setAttribute('fetchpriority', 'high');
+    first = false;
+    // sizes before srcset, or the browser may pick a size before it knows
+    image.sizes = sizes;
+    image.srcset = photos[current].srcset;
+    image.src = photos[current].src;
     image.onerror = () => {
       // Try another photo, until each has failed
       busy = false;

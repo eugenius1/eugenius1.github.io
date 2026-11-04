@@ -1,0 +1,10 @@
+{%- comment -%}
+  A srcset of an image's copies, as _ts/images.ts made them.
+  image: its entry in site.data.images
+  ext:   the copies' format, .webp unless given
+  No spaces after the commas, as refactor-content.html removes " /" from images.
+{%- endcomment -%}
+{%- assign _ext = include.ext | default: '.webp' -%}
+{%- for _copy in include.image.copies -%}
+  {{ include.image.base | relative_url }}-{{ _copy.slot }}{{ _ext }} {{ _copy.width }}w{% unless forloop.last %},{% endunless %}
+{%- endfor -%}

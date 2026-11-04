@@ -36,7 +36,7 @@ The gate: run it before every commit. It builds for production and fails if:
 - an address in `scripts/urls.txt` has gone
 - a link between pages or an image is broken
 - a link uses `http://` rather than `https://`
-- an image has no alt text
+- an image has no alt text, or `_includes/img.html` was given one not in `_images/`
 - a tab has no browser title
 - a theme file this site overrides has changed
 
@@ -95,7 +95,8 @@ make links
 The site's own scripts are TypeScript in `_ts/`, with their tests beside them.
 esbuild compiles `_ts/home-cover.ts` and `_ts/consent.ts` to `js/`, where they're
 not in git. `make local` recompiles them on each change, and `make preview` and
-`make check` compile them first.
+`make check` compile them first. `_ts/images.ts` runs in Node instead, to make the
+images (see [Images](#images)).
 
 Node runs in Docker too. To run the tests or the type check on their own:
 
@@ -147,6 +148,39 @@ replace it with a service that sets no cookies.
 
 Front matter can load extras on one page with `css` and `js`.
 
+### Images
+
+`_images/` holds one copy of each image, at the largest size there is. Jekyll
+doesn't publish it. Before each build, `_ts/images.ts` makes web copies of each one
+into `assets/img/`, at 480, 800, 1200 and 2000 pixels wide, as WebP and in the
+image's own format for old browsers. A copy is never wider than its image, so a
+narrow image's wider copies are all the same size. It also writes each image's size
+to `_data/images.json`. Neither is in git. It only remakes images that have changed,
+and CI keeps `assets/img/` between runs, so a new image adds a few seconds, not a
+minute.
+
+To add an image, put it in `_images/`, then show it in a post or page with:
+
+```liquid
+{% include img.html src="blog/2026/photo.jpg" alt="What the photo shows" %}
+```
+
+`src` is its path in `_images/`, and `alt` is required (`alt=""` for one that's only
+decoration). `title`, `class` (such as `golden-width`, `height-fits` or
+`center-block`), `style`, `sizes` and `link=true` (opens the 2000px copy full
+screen) are optional; the comment at the top of `_includes/img.html` explains each.
+The browser picks the copy to load for the screen. Only the first image on a page
+loads straight away, unless a post banner comes first.
+
+Front matter can't use the include, so `image` in a post or page, `avatar` and
+`social_preview_image` in `_config.yml`, and the homepage `covers` point at one
+copy instead, such as `/assets/img/<path>-1200.jpg` with the image's own extension. Use
+the image's own format there rather than WebP, which some sites don't show in link
+previews. The homepage cover and the post cards there pick their sizes themselves.
+
+Other files in `_images/`, such as the Photoshop and PowerPoint sources, aren't
+published.
+
 ### Changing the look
 
 `css/site.css` holds this site's own styles, including the Bootstrap 3 classes still
@@ -156,7 +190,8 @@ The text size, title fonts and green accent are set at the top of `css/site.css`
 with a shade of green for each of light and dark. The share buttons are in
 `_data/share.yml`.
 
-The homepage photos and their captions are `covers` in `index.html`.
+The homepage photos and their captions are `covers` in `index.html`, each with
+its path in `_images/`.
 
 `theme_mode` in `_config.yml` fixes the site to light or dark. Left empty, it follows
 the visitor's system and shows a toggle in the sidebar.

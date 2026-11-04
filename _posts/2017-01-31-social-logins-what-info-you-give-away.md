@@ -9,7 +9,7 @@ redirect_from:
  - "/blog/social-logins/"
  - "/b/sl/"
 image:
-  path: /img/blog/2017/social-logins-shareable.png
+  path: /assets/img/blog/2017/social-logins-shareable-1200.png
 tags:
   - privacy
   - web
@@ -104,7 +104,7 @@ Note that the basic permissions don't give the exact age in years but instead wh
 <div class="g-signin2" data-onsuccess="GoogleOnSignIn"></div>
 
 <div class="alert alert-warning" role="alert" id="google-thanks-name">If you have issues with signing in with Google on a mobile device,<br>
-  <div class="text-muted small">open this page in your phone or tablet's native browser, not that inside another app. Check out this <a href="/raw/img/blog/2017/open-in-chrome-android.png">screenshot</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
+  <div class="text-muted small">open this page in your phone or tablet's native browser, not that inside another app. Check out this <a href="/assets/img/blog/2017/open-in-chrome-android-2000.webp">screenshot</a>. This is due to a <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1">limitation</a> by Google.</div>
 </div>
 
 <div class="row">
@@ -136,7 +136,7 @@ By default, Google makes the scopes [`openid`](https://developers.google.com/ide
 
 The code to gather and display your info on this page only runs on your machine and never by a Eusebius.Tech server; your info goes directly from Facebook or Google servers to your browser.
 
-[![Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server](/img/blog/2017/client-side-social-login-flow-diagram.png)](/raw/img/blog/2017/client-side-social-login-flow-diagram.png)
+{% include img.html src="blog/2017/client-side-social-login-flow-diagram.png" alt="Flow diagram of social login shows Eusebius.Tech servers giving JavaScript code to the user followed by the user's side requesting user details from a social network server" link=true %}
 
 My experience with social logins has come from doing web development at a startup during my last summer holiday. When a user logs in for the first time, say using Facebook, a new user is created on the database using the basic details fetched from Facebook. This user doesn't have a password and instead, logging in with Facebook is the only way of authentication. Like in most other development work, frameworks should always be embraced, for example [*python-social-auth*](https://python-social-auth.readthedocs.io/en/latest/).
 

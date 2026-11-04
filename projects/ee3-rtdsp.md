@@ -6,7 +6,7 @@ comments: true
 redirect_from:
  - "/ee3-rtdsp/"
 image:
-  path: /img/projects/ee3-rtdsp/lynx.png
+  path: /assets/img/projects/ee3-rtdsp/lynx-1200.png
 ---
 
 > Telephones are increasingly being used in noisy environments such as cars, airports and undergraduate laboratories! The aim of this project is to implement **a real-time system that will reduce the background noise in a speech signal while leaving the signal itself intact**: this process is called speech enhancement.<br><br>
@@ -16,7 +16,7 @@ The code and reports are [on GitHub](https://github.com/eugenius1/ee3-rtdsp).
 
 This 3<sup>rd</sup> year project involved understanding Real-Time Digital Signal Processing and putting it into practice on a Texas Instruments DSP Starter Kit (TMS320C6713 DSK). The diagram below shows 3 spectograms. A spectogram is effectively a photograph of sound; a visual representation of a sound's frequency distribution over time. First is noisy sound, then the filtered version, and finally clean speech for comparison.
 
-[![Spectograms that show speech with reduced noise from a lynx helicopter](/img/projects/ee3-rtdsp/lynx.png "Spectograms for speech with noise from a lynx helicopter")](/raw/img/projects/ee3-rtdsp/lynx.png)
+{% include img.html src="projects/ee3-rtdsp/lynx.png" alt="Spectograms that show speech with reduced noise from a lynx helicopter" title="Spectograms for speech with noise from a lynx helicopter" link=true %}
 
 The [final report](https://github.com/eugenius1/ee3-rtdsp/blob/master/speech-enhancement/EusebiusN_And_PrahnavS_RTDSP_Project.pdf) is available on GitHub. To sum up, these are the goals achieved towards the end of the project.
 

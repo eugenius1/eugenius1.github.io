@@ -5,12 +5,12 @@ permalink: "/about-me/"
 redirect_from:
  - "/about/"
  - "/aboutme/"
-image: /img/covers/2015-wedding-tux.jpg
+image: /assets/img/covers/2015-wedding-tux-1200.jpg
 icon: fas fa-user
 order: 1
 ---
 
-![Eusebius in a tuxedo and bow tie](/img/covers/2015-wedding-tux.jpg)
+{% include img.html src="covers/2015-wedding-tux.jpg" alt="Eusebius in a tuxedo and bow tie" %}
 _© Faisal ‘Tre’ Shah (2014)_
 
 My name is Eusebius Ngemera. I have the following qualities:

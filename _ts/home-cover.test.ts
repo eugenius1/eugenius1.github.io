@@ -51,10 +51,12 @@ function startCover(count: number) {
     </section>`;
   const cover = document.querySelector<HTMLElement>('.home-cover')!;
   const photos = Array.from({ length: count }, (_, i) => ({
-    path: `/img/${i}.jpg`,
+    src: `/img/${i}-1200.webp`,
+    srcset: `/img/${i}-480.webp 480w, /img/${i}-1200.webp 1200w`,
     caption: `Caption ${i}`,
   }));
   cover.dataset.covers = JSON.stringify(photos);
+  cover.dataset.sizes = '(min-width: 1200px) 780px, (min-width: 768px) 820px, 100vw';
   start(cover);
   return cover;
 }
@@ -65,7 +67,7 @@ function latest() {
 
 // Which photo an image is of
 function photo(image: HTMLImageElement) {
-  return Number(image.getAttribute('src')!.match(/(\d+)\.jpg$/)![1]);
+  return Number(image.getAttribute('src')!.match(/(\d+)-1200\.webp$/)![1]);
 }
 
 function load(image = latest()) {
@@ -112,6 +114,19 @@ describe('home cover', () => {
     // Not a fixed cycle: photo 0 is followed by more than one other photo
     const afterFirst = new Set(order.filter((p, i) => i > 0 && order[i - 1] === 0));
     expect(afterFirst.size).toBeGreaterThan(1);
+  });
+
+  it('lets the browser pick the size, and hurries only the first photo', () => {
+    vi.spyOn(Math, 'random').mockReturnValue(0);
+    startCover(2);
+    const first = latest();
+    expect(first.getAttribute('sizes')).toBe('(min-width: 1200px) 780px, (min-width: 768px) 820px, 100vw');
+    expect(first.getAttribute('srcset')).toBe('/img/0-480.webp 480w, /img/0-1200.webp 1200w');
+    expect(first.getAttribute('fetchpriority')).toBe('high');
+
+    rotate();
+    expect(photo(latest())).toBe(1);
+    expect(latest().hasAttribute('fetchpriority')).toBe(false);
   });
 
   it('picks from the photos not just shown', () => {
