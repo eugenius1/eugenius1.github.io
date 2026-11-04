@@ -18,7 +18,7 @@ and started truly understanding them in 2021.
 > — Benjamin Franklin
 
 <p class="alert alert-warning" role="alert">
-<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
 I am <strong>no financial advisor</strong> and nothing in this blog should be considered financial, tax or investment advice.
 Everything here is <strong>knowledge sharing</strong> and <strong>my opinion</strong>.
 Always do your own due diligence.
@@ -107,7 +107,7 @@ I've include gold, a classic commodity, as well as S&P 500 Index (SPX), a common
 Prices of goods in the United States inflated by around [28.5%](https://www.usinflationcalculator.com/) from 2008 to 2021.
 
 <div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i>
+<i class="fa-solid fa-circle-info" aria-hidden="true"></i>
 <strong>Reminder</strong>: Past performance is <strong>not a reliable indicator</strong> of future returns.
 </div>
 
@@ -177,7 +177,7 @@ Gold seems to be the least volatile while delivering the second best performance
 ### Types of money
 
 <div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i>
+<i class="fa-solid fa-circle-info" aria-hidden="true"></i>
 The concepts here will help to better understand cryptocurrency.
 </div>
 
@@ -264,9 +264,9 @@ Pro tip: I normally watch at 1.5x speed.
 
 Some of the YouTube channels I follow:
 
-- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Coin Bureau](https://www.youtube.com/c/CoinBureau): education, coin reviews, news
-- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Benjamin Cowen](https://www.youtube.com/channel/UCRvqjQPSeaWn-uEx-w0XOIg): solid market analysis
-- [<i class="fa fa-youtube-play" aria-hidden="true"></i> uncomplication](https://www.youtube.com/c/uncomplication): a few interesting things like psychology
+- [<i class="fa-brands fa-youtube" aria-hidden="true"></i> Coin Bureau](https://www.youtube.com/c/CoinBureau): education, coin reviews, news
+- [<i class="fa-brands fa-youtube" aria-hidden="true"></i> Benjamin Cowen](https://www.youtube.com/channel/UCRvqjQPSeaWn-uEx-w0XOIg): solid market analysis
+- [<i class="fa-brands fa-youtube" aria-hidden="true"></i> uncomplication](https://www.youtube.com/c/uncomplication): a few interesting things like psychology
 
 As there's a lot of greed and fear around crypto, you have to be careful with the information and advice you consume especially on YouTube.
 I prefer to have all the info I need to make an investing decision rather than to be blindly sold something.

@@ -16,7 +16,7 @@ tags:
 ---
 
 <div class="alert alert-danger" role="alert">
-  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> The login functionality on this page is <strong>no longer maintained</strong>!
+  <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> The login functionality on this page is <strong>no longer maintained</strong>!
 </div>
 
 **Try out the two social login demos below!** They're powered by client-side JavaScript (more on this below), which means the information you will see will *not* be handled by a Eusebius.Tech server and therefore **never stored here**.
