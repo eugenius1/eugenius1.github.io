@@ -1,5 +1,6 @@
 {
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "esbuild _ts/home-cover.ts --bundle --target=es2020 --outfile=js/home-cover.js",

@@ -1,94 +1,44 @@
 # Eusebius.Tech
 
-Personal website and blog at <https://eusebius.tech>, built with
-[Jekyll](https://jekyllrb.com/) and the
-[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme and hosted on
-GitHub Pages.
+[![Build and deploy](https://github.com/eugenius1/eugenius1.github.io/actions/workflows/jekyll_pages.yml/badge.svg)](https://github.com/eugenius1/eugenius1.github.io/actions/workflows/jekyll_pages.yml)
 
-## Run it
+The personal website and blog of Eusebius Ngemera, at **https://eusebius.tech**.
 
-You need Docker.
+The site uses two third-party services: Google Analytics counts visits, and Disqus
+runs the comments under posts. Both collect data about visitors under their own
+privacy policies; the site's [privacy policy](https://eusebius.tech/pages/privacy-policy/)
+has the details.
 
-```bash
-make local
-```
+## What's on the site
 
-The site, including drafts, is then at <http://localhost:4000>. The `site`
-configuration in `.claude/launch.json` starts the same thing for Claude Code.
+- **Blog**: posts on technology, investing and things I've tried, such as
+  [taking part in a clinical trial](https://eusebius.tech/blog/i-did-a-clinical-trial-and-this-is-my-experience/).
+- **Projects**: university and side projects, including my MEng final-year project.
+- **Freebies**: referral links and codes that get you something free.
+- **About me** and my **CV**.
 
-```bash
-make preview
-```
+## Status
 
-Runs the production build at <http://localhost:4001>, which is the only way to see
-the theme's real CSS and compressed HTML. `make local` loads all of Bootstrap, so a
-class can look fine there and be missing in production. The two can run at once.
+Live and updated now and then. The site moved to Jekyll 4 and the Chirpy theme in
+2026, keeping every old address working; the previous site is kept under
+`archive/`. More posts are in drafts.
 
-```bash
-make check
-```
+## Contributing
 
-Builds for production and fails if:
+See [CONTRIBUTING.md](CONTRIBUTING.md) for running the site, writing posts,
+changing the look and the traps in the repository. Coding agents should start at
+[AGENTS.md](AGENTS.md).
 
-- the TypeScript has a type error or a test fails
-- an address in `scripts/urls.txt` has gone
-- a link between pages or an image is broken
-- an image has no alt text
-- a theme file this site overrides has changed
+## Licence
 
-This is what CI runs. The Dockerfile is the one place the Node and Ruby versions
-are set.
+The site is split in two, as set out in [LICENSE](LICENSE):
 
-## TypeScript
-
-The site's own scripts are TypeScript in `_ts/`, with their tests beside them. esbuild
-compiles `_ts/home-cover.ts` to `js/home-cover.js`, which isn't in git. `make local`
-recompiles it on each change, and `make preview` and `make check` compile it first.
-
-Node runs in Docker too. To run the tests or the type check on their own:
-
-```bash
-docker compose run --build --rm node npm test
-```
-
-```bash
-docker compose run --build --rm node npm run typecheck
-```
-
-## Write
-
-- **Posts** are Markdown in `_posts/`, or `_drafts/` to keep one unpublished. Set
-  `description` and `tags`, and `image` for a banner. Its `alt` shows as the caption.
-  With `banner: false` under `image`, the image is only in listings and social
-  media previews.
-- **Sidebar pages** are in `_tabs/`, with an `icon` and `order`. Add a new one's
-  lowercase title to `_data/locales/en.yml`, as that sets its browser title;
-  `make check` fails if one is missing.
-- **Other pages** are in `pages/` and `projects/`. On a page, `image` is only for
-  sharing on social media, so put any image to show in the Markdown. Posts always
-  have share buttons; `share: true` adds them to a page, and pages in `projects/`
-  have them unless set to `false`.
-- **Redirects** are `redirect_from` in a page's front matter for old addresses, or a
-  file using `layout: my-redirect` with a `to` address, as in `go/`.
-
-Front matter can load extras on one page with `css` and `js`.
-
-## Change the look
-
-`css/site.css` holds this site's own styles, including the Bootstrap 3 classes still
-used in posts. The theme only ships the Bootstrap classes it uses itself.
-
-The text size, title fonts and green accent are set at the top of `css/site.css`,
-with a shade of green for each of light and dark. The share buttons are in
-`_data/share.yml`.
-
-The homepage photos and their captions are `covers` in `index.html`.
-
-`theme_mode` in `_config.yml` fixes the site to light or dark. Left empty, it follows
-the visitor's system and shows a toggle in the sidebar.
-
-## Theme overrides
-
-The files in `scripts/theme-overrides.sha256` are copies of the theme's files with
-small changes. When a theme update changes one, `make check` fails. Bring the copy
-up to date, then update its hash in that file.
+- **The code** (HTML, Liquid, CSS, JavaScript, TypeScript and scripts) is under the
+  MIT License. Parts come from the
+  [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll) theme the site
+  was first built on and from the
+  [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, both also MIT.
+- **The articles and images** are under
+  [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/):
+  you may share and adapt them for non-commercial use, with credit, under the same
+  licence.
