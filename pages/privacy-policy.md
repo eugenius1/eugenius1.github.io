@@ -7,11 +7,13 @@ date: 2017-04-05
 
 This is what [Eusebius.Tech](https://eusebius.tech) (the "site"), run by Eusebius
 Ngemera, does with information about you. The site has no accounts and no sign-up,
-and it doesn't sell or share information about you.
+and it doesn't sell information about you. The services below get some, as each
+section says.
 
 ## Cookies
 
-The site sets no cookies of its own. Two services it uses set theirs.
+The site sets no cookies of its own. Two services it uses set theirs, and an old
+post's sign-in demo can too.
 
 ### Google Analytics
 
@@ -37,6 +39,12 @@ The site remembers **Always load comments** in your browser's local storage, und
 `cookie-consent`, not in a cookie, and it never leaves your browser. Clearing the
 site's data in your browser makes it ask again. Local storage also keeps whether
 you switched the site to light or dark mode.
+
+### Sign-in demo
+
+The 2017 post [Social Logins—what info you give away!](/blog/social-logins-what-info-you-give-away/)
+loads Facebook's and Google's sign-in scripts when you open it, for its demo.
+Facebook or Google may then set cookies under their own privacy policies.
 
 ## Other services
 

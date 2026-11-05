@@ -5,6 +5,10 @@ permalink: "/about-me/"
 redirect_from:
  - "/about/"
  - "/aboutme/"
+ - "/contact/"
+ - "/go/connect/"
+ - "/go/social/"
+ - "/updates/"
 image: /assets/img/covers/2015-wedding-tux-1200.jpg
 icon: fas fa-user
 order: 1

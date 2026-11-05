@@ -29,11 +29,14 @@ export function readConsent(storage: Storage | null): Consent {
   }
 }
 
-export function writeConsent(storage: Storage | null, consent: Consent): void {
+// Says whether the choice was stored, so the page doesn't promise what it can't keep
+export function writeConsent(storage: Storage | null, consent: Consent): boolean {
+  if (!storage) return false;
   try {
-    storage?.setItem(STORAGE_KEY, JSON.stringify(consent));
+    storage.setItem(STORAGE_KEY, JSON.stringify(consent));
+    return true;
   } catch {
-    // The choice then lasts for this page only
+    return false;
   }
 }
 
@@ -54,7 +57,6 @@ export function setUp({ storage, doc = document }: Settings): void {
   const thread = doc.querySelector<HTMLElement>('#disqus_thread[data-src]');
   if (!thread) return;
   const src = thread.dataset.src!;
-  const consent = readConsent(storage);
 
   function button(text: string, className: string, onClick: () => void) {
     const element = doc.createElement('button');
@@ -69,69 +71,83 @@ export function setUp({ storage, doc = document }: Settings): void {
     const script = doc.createElement('script');
     script.src = src;
     script.dataset.timestamp = String(Date.now());
+    // Blocked or offline: ask again, rather than leave an empty space
+    script.addEventListener('error', () => {
+      script.remove();
+      showPlaceholder("The comments couldn't load. ");
+    });
     (doc.head || doc.body).append(script);
   }
 
-  if (consent.comments === 'granted') {
-    // Below the comments, as Disqus replaces what's inside the thread
+  // Below the comments, as Disqus replaces what's inside the thread
+  function showUndo() {
+    if (thread!.nextElementSibling?.classList.contains('consent-undo')) return;
     const undo = doc.createElement('p');
-    undo.className = 'consent-remember';
+    undo.className = 'consent-remember consent-undo';
     // Announced, and keeps keyboard focus, once the button it replaces is gone
     undo.setAttribute('role', 'status');
     undo.tabIndex = -1;
     const ask = button('Ask before loading comments', 'consent-link-button', () => {
-      writeConsent(storage, { comments: 'denied' });
-      undo.textContent = 'Comments will wait for a click from the next page on.';
+      undo.textContent = writeConsent(storage, { comments: 'denied' })
+        ? 'Comments will wait for a click from the next page on.'
+        : "Your browser didn't let the site save this, so comments may still load on their own.";
       undo.focus();
     });
     undo.append(ask);
-    thread.after(undo);
+    thread!.after(undo);
+  }
 
-    // As the theme did: only once the comments are about to scroll into view
-    if (typeof IntersectionObserver === 'undefined') {
+  function showPlaceholder(problem = '') {
+    const placeholder = doc.createElement('div');
+    placeholder.className = 'consent-comments';
+    const text = doc.createElement('p');
+    text.append(problem, 'The comments are on Disqus, which sets cookies and tracks visitors. See ');
+    const link = doc.createElement('a');
+    link.href = DISQUS_PRIVACY;
+    link.textContent = "Disqus's privacy policy";
+    text.append(link, '.');
+
+    const remember = doc.createElement('input');
+    remember.type = 'checkbox';
+    remember.id = 'consent-comments-always';
+    const label = doc.createElement('label');
+    label.htmlFor = remember.id;
+    label.textContent = 'Always load comments';
+    const rememberRow = doc.createElement('p');
+    rememberRow.className = 'consent-remember';
+    rememberRow.append(remember, ' ', label);
+
+    const loadButton = button('Load comments', 'consent-button', () => {
+      if (remember.checked && writeConsent(storage, { comments: 'granted' })) showUndo();
+      placeholder.remove();
+      // The button is gone, so keyboard users carry on from the comments
+      thread!.tabIndex = -1;
+      thread!.focus();
       load();
-      return;
-    }
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        observer.disconnect();
-        load();
-      }
     });
-    observer.observe(thread);
+    // The box before the button, as clicking the button removes both
+    placeholder.append(text, rememberRow, loadButton);
+    thread!.append(placeholder);
+  }
+
+  if (readConsent(storage).comments !== 'granted') {
+    showPlaceholder();
     return;
   }
 
-  const placeholder = doc.createElement('div');
-  placeholder.className = 'consent-comments';
-  const text = doc.createElement('p');
-  text.append('The comments are on Disqus, which sets cookies and tracks visitors. See ');
-  const link = doc.createElement('a');
-  link.href = DISQUS_PRIVACY;
-  link.textContent = "Disqus's privacy policy";
-  text.append(link, '.');
-
-  const remember = doc.createElement('input');
-  remember.type = 'checkbox';
-  remember.id = 'consent-comments-always';
-  const label = doc.createElement('label');
-  label.htmlFor = remember.id;
-  label.textContent = 'Always load comments';
-  const rememberRow = doc.createElement('p');
-  rememberRow.className = 'consent-remember';
-  rememberRow.append(remember, ' ', label);
-
-  const loadButton = button('Load comments', 'consent-button', () => {
-    if (remember.checked) writeConsent(storage, { comments: 'granted' });
-    placeholder.remove();
-    // The button is gone, so keyboard users carry on from the comments
-    thread.tabIndex = -1;
-    thread.focus();
+  showUndo();
+  // As the theme did: only once the comments are about to scroll into view
+  if (typeof IntersectionObserver === 'undefined') {
     load();
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      observer.disconnect();
+      load();
+    }
   });
-  // The box before the button, as clicking the button removes both
-  placeholder.append(text, rememberRow, loadButton);
-  thread.append(placeholder);
+  observer.observe(thread);
 }
 
 // Tests import the functions above without the script tag on the page
