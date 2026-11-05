@@ -47,6 +47,11 @@ function loadGoogle() {
   document.getElementById('load-google').hidden = true;
   var script = document.createElement('script');
   script.src = 'https://apis.google.com/js/platform.js';
+  // Blocked or offline: offer the button again
+  script.onerror = function() {
+    script.remove();
+    document.getElementById('load-google').hidden = false;
+  };
   document.head.appendChild(script);
 }
 </script>

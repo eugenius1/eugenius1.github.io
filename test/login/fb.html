@@ -81,6 +81,11 @@
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src="https://connect.facebook.net/en_US/sdk.js";
+      // Blocked or offline: offer the button again
+      js.onerror = function() {
+        js.remove();
+        document.getElementById('load-facebook').hidden = false;
+      };
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   }
