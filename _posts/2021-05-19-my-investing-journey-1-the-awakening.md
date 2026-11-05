@@ -43,7 +43,7 @@ In this series, I share my investing journey, starting with **7 key points** bef
 The first 2 key points I think everyone should be considering even if not planning to invest.
 
 <p class="alert alert-warning" role="alert">
-<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
 I am <strong>no financial advisor</strong> and nothing in this blog should be considered financial, tax or investment advice.
 Everything here is <strong>knowledge sharing</strong> and <strong>my opinion</strong>.
 Always do your own due diligence.
@@ -66,10 +66,10 @@ I've also made this [succinct summary](/projects/investing/playlists/investing) 
 I follow the channels/accounts below and you may see them a lot in my playlist because their content is gold.
 What you should keep in mind is they're all in the US so some things like tax may be different for you where you live.
 
-- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Minority Mindset](https://www.youtube.com/channel/UCT3EznhW_CNFcfOlyDNTLLw): education
-- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Investing With Rose](https://www.youtube.com/channel/UCIbslwukNCyVp-XMz_2-gmw): education
-- [<i class="fa fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram:</span> The Millennial Money Mentor](https://www.instagram.com/themillennialmoneymentor/): education
-- [<i class="fa fa-youtube-play" aria-hidden="true"></i> Joseph Carlson](https://www.youtube.com/channel/UCbta0n8i6Rljh0obO7HzG9A): shares his portfolio and news analysis
+- [<i class="fa-brands fa-youtube" aria-hidden="true"></i> Minority Mindset](https://www.youtube.com/channel/UCT3EznhW_CNFcfOlyDNTLLw): education
+- [<i class="fa-brands fa-youtube" aria-hidden="true"></i> Investing With Rose](https://www.youtube.com/channel/UCIbslwukNCyVp-XMz_2-gmw): education
+- [<i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram:</span> The Millennial Money Mentor](https://www.instagram.com/themillennialmoneymentor/): education
+- [<i class="fa-brands fa-youtube" aria-hidden="true"></i> Joseph Carlson](https://www.youtube.com/channel/UCbta0n8i6Rljh0obO7HzG9A): shares his portfolio and news analysis
 
 ### Short recap
 

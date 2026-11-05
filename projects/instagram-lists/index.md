@@ -27,7 +27,7 @@ We are using something that wasn't designed for us to easily use.
 As you will see, it's a _hack_ but you will be guided step-by-step.
 
 <div class="alert alert-warning" role="alert">
-<i class="fa fa-exclamation-circle" aria-hidden="true"></i> This tool <strong>needs a desktop</strong> (Windows, Mac, Linux); it's mostly <strong>not possible on mobiles</strong> (Android, iOS).
+<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> This tool <strong>needs a desktop</strong> (Windows, Mac, Linux); it's mostly <strong>not possible on mobiles</strong> (Android, iOS).
 </div>
 
 We need to use the developer tools built-in to modern desktop browsers like Chrome, Firefox and the new Edge.
@@ -73,7 +73,7 @@ tool.
 ## Let's go!  
 
 <div class="alert alert-info" role="alert">
-<i class="fa fa-info-circle" aria-hidden="true"></i> Leave a comment if something doesn't work as expected or with any other feedback.
+<i class="fa-solid fa-circle-info" aria-hidden="true"></i> Leave a comment if something doesn't work as expected or with any other feedback.
 </div>
 
 ### 1. Setup
@@ -88,7 +88,7 @@ Make sure you're **logged in** on [instagram.com](https://www.instagram.com/).
     <label for="username">Your username:</label>
     <input type="text" class="form-control" id="username" placeholder="username" required>
   </div>
-  <button type="submit" class="btn btn-primary">Open starting point <i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">in a new tab</span></button>
+  <button type="submit" class="btn btn-primary">Open starting point <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="sr-only">in a new tab</span></button>
   <div id="ig-username-fallback" class="small" style="display:none">Didn't work? Link: <a id="ig-username-fallback-link"></a></div>
 </form>
 
@@ -529,7 +529,7 @@ Some of the columns explained:
 
 Your data is stored in this browser tab, even after refreshing, until the tab is closed. You can also manually clear this local storage:
 
-<button type="button" id="clear-storage" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear this page</button>
+<button type="button" id="clear-storage" class="btn btn-danger"><i class="fa-regular fa-trash-can" aria-hidden="true"></i> Clear this page</button>
 
 ### What I discovered from the accounts I followed
 

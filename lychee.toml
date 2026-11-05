@@ -6,10 +6,9 @@
 base_url = "https://eusebius.tech/"
 scheme = ["https", "http"]
 
-# The archive is a frozen copy of the old site, and drafts aren't listed.
+# The archive is a frozen copy of the old site.
 exclude_path = [
   '_site/archive',
-  '_site/drafts',
 ]
 
 exclude = [
