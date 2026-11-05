@@ -36,7 +36,7 @@
 {%- endif -%}
 {%- capture _webp -%}{% include srcset.html image=_image %}{%- endcapture -%}
 {%- capture _fallback -%}{% include srcset.html image=_image ext=_image.ext %}{%- endcapture -%}
-{%- if include.link -%}<a href="{{ _image.base | relative_url }}-2000.webp" class="popup img-link">{%- endif -%}
+{%- if include.link -%}<a href="{{ _image.base | relative_url }}-2000{{ _image.ext }}" class="popup img-link">{%- endif -%}
 <picture{% if include.class %} class="{{ include.class }}"{% endif %}>
   {%- if _image -%}<source type="image/webp" srcset="{{ _webp }}" sizes="{{ _sizes }}">{%- endif -%}
   <img src="{{ _image.base | relative_url }}-1200{{ _image.ext }}" srcset="{{ _fallback }}" sizes="{{ _sizes }}"

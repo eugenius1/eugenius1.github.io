@@ -3,7 +3,7 @@
 // and each image's size into _data/images.json for _includes/img.html. Neither is in
 // git. `npm run images` runs it, and it skips originals that haven't changed.
 import { createHash } from 'node:crypto';
-import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rename, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
@@ -104,8 +104,9 @@ async function readManifest(file: string): Promise<Manifest> {
 }
 
 async function make(input: Buffer, name: string, ext: string, options: Options): Promise<ImageData> {
-  // Animated GIFs keep their frames, and photos are turned the way their EXIF says
-  const animated = ext === '.gif';
+  // Animated GIFs and WebPs keep their frames, and photos are turned the way their
+  // EXIF says
+  const animated = ext === '.gif' || ext === '.webp';
   const original = sharp(input, { animated, autoOrient: true });
   const meta = await original.metadata();
   const copies = copiesFor(meta.autoOrient.width);
@@ -123,7 +124,14 @@ async function make(input: Buffer, name: string, ext: string, options: Options):
     };
     for (const [suffix, image] of Object.entries(encoded)) {
       const { data, info } = await image.toBuffer({ resolveWithObject: true });
-      for (const slot of slots) await writeFile(path.join(options.out, `${name}-${slot}${suffix}`), data);
+      for (const slot of slots) {
+        // Through a temporary file, so a run stopped part way never leaves a cut-off
+        // copy that the next run would take as made. The next run removes a
+        // leftover temporary file, as it isn't a copy.
+        const target = path.join(options.out, `${name}-${slot}${suffix}`);
+        await writeFile(`${target}.tmp`, data);
+        await rename(`${target}.tmp`, target);
+      }
       height = info.pageHeight ?? info.height;
     }
   }
@@ -146,8 +154,18 @@ export async function processImages(options: Options): Promise<Summary> {
   const wanted = new Set(['.manifest.json']);
   const summary: Summary = { made: [], unchanged: [], removed: 0 };
 
+  // A missing folder of originals would otherwise remove every copy
+  await stat(options.src);
   // Other files, such as Photoshop or PowerPoint sources, stay unpublished
   const originals = (await walk(options.src)).filter((file) => path.extname(file).toLowerCase() in FORMATS);
+  // The WebP copies of chart.jpg and chart.png would have the same names
+  const stems = new Map<string, string>();
+  for (const file of originals) {
+    const stem = file.slice(0, -path.extname(file).length);
+    const other = stems.get(stem);
+    if (other) throw new Error(`${other} and ${file} would share WebP copies, so rename one`);
+    stems.set(stem, file);
+  }
   for (const file of originals) {
     const ext = path.extname(file).toLowerCase();
     const name = file.slice(0, -ext.length);
@@ -157,7 +175,7 @@ export async function processImages(options: Options): Promise<Summary> {
     files.forEach((name) => wanted.add(name));
 
     const before = old.images[file];
-    if (before?.hash === hash && files.every((name) => existing.has(name))) {
+    if (before?.hash === hash && before.data.base === `${options.url}/${name}` && files.every((name) => existing.has(name))) {
       manifest.images[file] = before;
       summary.unchanged.push(file);
     } else {

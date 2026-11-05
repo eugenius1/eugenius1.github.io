@@ -160,4 +160,38 @@ describe('processImages', () => {
     expect(await readdir(path.join(options.out, 'sub'))).toEqual([]);
     expect(Object.keys(await data())).toEqual(['a.png']);
   });
+
+  it('removes a temporary file left by a run that stopped', async () => {
+    await original('a.png', 100, 100);
+    await processImages(options);
+    await writeFile(path.join(options.out, 'a-480.webp.tmp'), 'cut off');
+
+    expect((await processImages(options)).removed).toBe(1);
+  });
+
+  it('makes the data again when the address changes', async () => {
+    await original('a.png', 100, 100);
+    await processImages(options);
+
+    const summary = await processImages({ ...options, url: '/img' });
+
+    expect(summary.made).toEqual(['a.png']);
+    expect((await data())['a.png'].base).toBe('/img/a');
+  });
+
+  it('refuses two originals that differ only in format', async () => {
+    await original('chart.png', 100, 100);
+    await original('chart.jpg', 100, 100, 'jpeg');
+
+    await expect(processImages(options)).rejects.toThrow('chart.jpg and chart.png');
+  });
+
+  it('removes nothing when the folder of originals is missing', async () => {
+    await original('a.png', 100, 100);
+    await processImages(options);
+    await rm(options.src, { recursive: true });
+
+    await expect(processImages(options)).rejects.toThrow();
+    expect(await readdir(options.out)).toContain('a-480.webp');
+  });
 });

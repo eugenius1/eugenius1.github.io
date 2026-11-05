@@ -66,6 +66,9 @@ export function start(cover: HTMLElement): void {
       show();
     };
     image.onload = () => {
+      // A new size from srcset, after a resize, loads it again, and finishing it
+      // twice would remove it
+      image.onload = null;
       index = current;
       cover.insertBefore(image, text);
       caption.textContent = photos[current].caption;

@@ -228,6 +228,15 @@ describe('home cover', () => {
     expect(images).toHaveLength(1);
   });
 
+  it('keeps the photo when it loads again at another size', () => {
+    reducedMotion.matches = true;
+    const cover = startCover(3);
+    load();
+    const shown = latest();
+    load(shown);
+    expectOnly(cover, shown);
+  });
+
   it('stops when reduced motion turns on, and resumes when it turns off', () => {
     startCover(3);
     rotate();

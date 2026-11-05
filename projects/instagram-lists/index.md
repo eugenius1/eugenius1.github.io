@@ -56,7 +56,7 @@ There are two stages:
       - date of their last post
       - are they a business account?
       - have they joined recently?
-    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/assets/img/projects/instagram-lists/instagram-verify-2000.webp) your identity via email or phone number.
+    - **Warning**: Due to the possibly large number of requests, the Instagram app might ask you to [verify](/assets/img/projects/instagram-lists/instagram-verify-2000.jpg) your identity via email or phone number.
 
 This tool doesn't unfollow accounts for you, you will have to open the linked Instagram profiles to unfollow.
 

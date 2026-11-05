@@ -174,8 +174,7 @@ The browser picks the copy to load for the screen. Only the first image on a pag
 loads straight away, unless a post banner comes first.
 
 Front matter can't use the include, so `image` in a post or page, `avatar` and
-`social_preview_image` in `_config.yml`, and the homepage `covers` point at one
-copy instead, such as `/assets/img/<path>-1200.jpg` with the image's own extension. Use
+`social_preview_image` in `_config.yml` point at one copy instead, such as `/assets/img/<path>-1200.jpg` with the image's own extension. Use
 the image's own format there rather than WebP, which some sites don't show in link
 previews. The homepage cover and the post cards there pick their sizes themselves.
 
