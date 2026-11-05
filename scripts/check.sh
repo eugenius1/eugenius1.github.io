@@ -30,6 +30,24 @@ bundle exec htmlproofer _site \
   --allow-missing-href \
   --ignore-files '/^_site\/archive\//'
 
+# Each short link in _redirects/, and each old address in a `redirect_from`, is a
+# redirect page that sends the visitor where jekyll-redirect-from's own list says,
+# not an ordinary page at the same address.
+ruby -ryaml -rjson -e '
+  redirects = JSON.parse(File.read("_site/redirects.json"))
+  bad = Dir["_redirects/**/*.md"].filter_map do |file|
+    link = YAML.load_file(file)["permalink"]
+    "#{file}: #{link} is not a redirect" unless redirects.key?(link)
+  end
+  redirects.each do |from, to|
+    page = "_site#{from}index.html"
+    unless File.exist?(page) && File.read(page).include?("url=#{to}\"")
+      bad << "#{page} does not redirect to #{to}"
+    end
+  end
+  abort(bad.join("\n")) unless bad.empty?
+'
+
 # Fails when a theme update changes a file this site overrides, so the copy can
 # be brought up to date.
 overrides="$PWD/scripts/theme-overrides.sha256"
