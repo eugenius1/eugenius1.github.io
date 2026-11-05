@@ -131,6 +131,8 @@ exclude:
   - lychee.toml
   - node_modules
   - scripts
+  # Screenshots for pull requests, not pages
+  - docs
   - README.md
   - "**/README.md"
   - "*.vscode"

@@ -2,6 +2,7 @@
 _site
 # Built from _ts/ by `npm run build`
 js/home-cover.js
+js/consent.js
 .jekyll-cache
 .sass-cache
 
