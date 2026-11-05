@@ -46,6 +46,7 @@ layout: default
   {% endfor %}
 {% endif %}
 
+{% comment %} This site's change: the photo cover above the posts {% endcomment %}
 {% include home-cover.html %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
@@ -119,6 +120,7 @@ layout: default
                   </span>
                 {% endif %}
 
+                {% comment %} This site's change: each post's tags, which the theme leaves out {% endcomment %}
                 <!-- tags -->
                 {% if post.tags.size > 0 %}
                   <i class="fa-solid fa-tags fa-fw me-1"></i>
@@ -147,6 +149,7 @@ layout: default
   {% include post-paginator.html %}
 {% endif %}
 
+{% comment %} This site's change: share buttons on the first page {% endcomment %}
 {% if paginator.page == 1 %}
   {% include page-sharing.html %}
 {% endif %}
