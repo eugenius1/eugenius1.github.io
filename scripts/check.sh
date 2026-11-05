@@ -33,15 +33,15 @@ bundle exec htmlproofer _site \
 # Each short link in _redirects/, and each old address in a `redirect_from`, is a
 # redirect page that sends the visitor where jekyll-redirect-from's own list says,
 # not an ordinary page at the same address.
-ruby -ryaml -rjson -e '
+ruby -ryaml -rjson -rcgi -e '
   redirects = JSON.parse(File.read("_site/redirects.json"))
   bad = Dir["_redirects/**/*.md"].filter_map do |file|
     link = YAML.load_file(file)["permalink"]
     "#{file}: #{link} is not a redirect" unless redirects.key?(link)
   end
   redirects.each do |from, to|
-    page = "_site#{from}index.html"
-    unless File.exist?(page) && File.read(page).include?("url=#{to}\"")
+    page = from.end_with?("/") ? "_site#{from}index.html" : "_site#{from}"
+    unless File.exist?(page) && File.read(page).include?("url=#{CGI.escapeHTML(to)}\"")
       bad << "#{page} does not redirect to #{to}"
     end
   end
