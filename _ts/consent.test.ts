@@ -51,7 +51,7 @@ afterEach(() => {
 
 describe('stored choices', () => {
   it('reads back what was written', () => {
-    writeConsent(localStorage, { comments: 'granted' });
+    expect(writeConsent(localStorage, { comments: 'granted' })).toBe(true);
     expect(readConsent(localStorage)).toEqual({ comments: 'granted' });
   });
 
@@ -74,7 +74,8 @@ describe('stored choices', () => {
       },
     } as unknown as Storage;
     expect(readConsent(broken)).toEqual({});
-    expect(() => writeConsent(broken, { comments: 'granted' })).not.toThrow();
+    expect(writeConsent(broken, { comments: 'granted' })).toBe(false);
+    expect(writeConsent(null, { comments: 'granted' })).toBe(false);
   });
 });
 
@@ -131,5 +132,41 @@ describe('Disqus comments', () => {
     addThread();
     setUp({ storage: localStorage });
     expect(buttonNamed('Load comments')).toBeTruthy();
+  });
+
+  it('offers the undo straight away, on the page where "Always load comments" was ticked', () => {
+    addThread();
+    setUp({ storage: localStorage });
+    document.querySelector<HTMLInputElement>('#consent-comments-always')!.click();
+    buttonNamed('Load comments').click();
+    buttonNamed('Ask before loading comments').click();
+    expect(readConsent(localStorage)).toEqual({ comments: 'denied' });
+  });
+
+  it("says so when the choice to stop can't be saved", () => {
+    writeConsent(localStorage, { comments: 'granted' });
+    const readOnly = {
+      getItem: (key: string) => localStorage.getItem(key),
+      setItem: () => {
+        throw new Error('quota');
+      },
+    } as unknown as Storage;
+    stubObserver();
+    addThread();
+    setUp({ storage: readOnly });
+    buttonNamed('Ask before loading comments').click();
+    expect(document.activeElement?.textContent).toContain("didn't let the site save");
+  });
+
+  it('asks again when Disqus fails to load', () => {
+    addThread();
+    setUp({ storage: localStorage });
+    buttonNamed('Load comments').click();
+    disqusScripts()[0].dispatchEvent(new Event('error'));
+    expect(disqusScripts()).toHaveLength(0);
+    expect(document.querySelector('.consent-comments')!.textContent).toContain("couldn't load");
+
+    buttonNamed('Load comments').click();
+    expect(disqusScripts()).toHaveLength(1);
   });
 });
