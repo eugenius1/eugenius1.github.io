@@ -16,7 +16,8 @@ Some of my public projects:
 🔗 [bible.esebi.net](https://bible.esebi.net)  
 `TypeScript` `Next.js`
 
-* [ProPresenter Garage](https://github.com/eugenius1/propresenter-garage): Tools for ProPresenter 7+ files via MCP, web or desktop app.  
+* [Presenter Garage](https://github.com/eugenius1/presenter-garage): Tools for ProPresenter 7+ files via MCP, web or desktop app.  
+🔗 [presenter-garage.eusebius.tech](https://presenter-garage.eusebius.tech)  
 `TypeScript` `Next.js` `MCP`
 
 * [Concurrent Counter](https://github.com/eugenius1/concurrent-counter-next): Shared counters that everyone sees change at the same time.  
