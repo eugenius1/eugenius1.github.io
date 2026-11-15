@@ -3,7 +3,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "esbuild _ts/home-cover.ts --bundle --target=es2020 --outfile=js/home-cover.js",
+    "build": "esbuild _ts/home-cover.ts _ts/consent.ts --bundle --target=es2020 --outdir=js",
     "watch": "npm run build -- --watch=forever",
     "test": "vitest run --dir _ts",
     "typecheck": "tsc --noEmit",
