@@ -12,7 +12,7 @@ ENV PATH=/deps/node_modules/.bin:$PATH
 WORKDIR /site
 
 # Builds the site. Last, so it's the default.
-FROM ruby:3.3-slim
+FROM ruby:4.0-slim
 
 # The package lists are only needed to install, so they're deleted in the same step
 # to keep them out of the image. HTML-Proofer loads libcurl even when it doesn't
