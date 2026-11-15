@@ -111,17 +111,17 @@ const renderers = {
       let srText = '';
       if (data === true) {
         srText = 'True';
-        let iconClass = 'fa ';
+        let iconClass = '';
 
         switch (row.story_view_status) {
           case StoryViewStatus.NONE:
-            iconClass += 'fa-circle ig-story-not-viewed';
+            iconClass += 'fa-solid fa-circle ig-story-not-viewed';
             break;
           case StoryViewStatus.PARTIAL:
-            iconClass += 'fa-circle-thin ig-story-partly-viewed';
+            iconClass += 'fa-regular fa-circle ig-story-partly-viewed';
             break;
           case StoryViewStatus.ALL:
-            iconClass += 'fa-circle-thin ig-story-finished';
+            iconClass += 'fa-regular fa-circle ig-story-finished';
             break;
           default:
             break;
@@ -211,13 +211,13 @@ const firstDataTableArgs = {
       data: 'is_private',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-lock', data, type); }
     },
     {
       data: 'is_verified',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-certificate ig-verified', data, type); }
     },
     {
       data: 'has_story',
@@ -235,7 +235,7 @@ const firstDataTableArgs = {
       data: 'follows_viewer',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-check', data, type); }
     },
     {
       data: 'followed_by_viewer',
@@ -298,13 +298,13 @@ const secondDataTableArgs = {
       data: 'is_private',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-lock', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-lock', data, type); }
     },
     {
       data: 'follows_viewer',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-check', data, type); }
     },
     {
       data: 'followed_by_viewer',
@@ -337,19 +337,19 @@ const secondDataTableArgs = {
       data: 'is_joined_recently',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-check', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-check', data, type); }
     },
     {
       data: 'is_verified',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-certificate ig-verified', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-certificate ig-verified', data, type); }
     },
     {
       data: 'is_business_account',
       searchable: false,
       className: 'body-center',
-      render: function (data, type) { return renderers.iconForBoolean('fa fa-briefcase', data, type); }
+      render: function (data, type) { return renderers.iconForBoolean('fa-solid fa-briefcase', data, type); }
     },
     {
       data: 'business_category_name',
@@ -374,25 +374,25 @@ const secondDataTableArgs = {
       data: 'has_igtv',
       searchable: false,
       className: 'body-center',
-      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-television', data, type, row); }
+      render: function (data, type, row) { return renderers.iconForBoolean('fa-solid fa-tv', data, type, row); }
     },
     {
       data: 'has_reel_clips',
       searchable: false,
       className: 'body-center',
-      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-youtube-play', data, type, row); }
+      render: function (data, type, row) { return renderers.iconForBoolean('fa-brands fa-youtube', data, type, row); }
     },
     {
       data: 'has_ar_effects',
       searchable: false,
       className: 'body-center',
-      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-smile-o', data, type, row); }
+      render: function (data, type, row) { return renderers.iconForBoolean('fa-regular fa-face-smile', data, type, row); }
     },
     {
       data: 'has_guides',
       searchable: false,
       className: 'body-center',
-      render: function (data, type, row) { return renderers.iconForBoolean('fa fa-newspaper-o', data, type, row); }
+      render: function (data, type, row) { return renderers.iconForBoolean('fa-regular fa-newspaper', data, type, row); }
     }
   ]
 }

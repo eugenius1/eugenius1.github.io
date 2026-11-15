@@ -34,7 +34,6 @@ contact/index.html
 cv/index.html
 donate/index.html
 donate/thank-you/index.html
-drafts/ccd.html
 ee3-rtdsp/index.html
 favicon.ico
 feed.xml
@@ -43,7 +42,6 @@ freebies/uber/index.html
 fyp/index.html
 get/cv/index.html
 go/connect/index.html
-go/easoc/index.html
 go/fyp/p/index.html
 go/fyp/r/index.html
 go/hover.com/index.html
@@ -175,9 +173,5 @@ raw/img/start.jpg
 redirects.json
 search/index.html
 sitemap.xml
-test/features/search/gcse.html
-test/features/search/index.html
-test/login/fb.html
-test/login/google.html
 uber/index.html
 updates/index.html

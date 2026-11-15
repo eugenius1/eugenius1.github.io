@@ -86,7 +86,7 @@ its copy on the [Wayback Machine](https://web.archive.org/) from around when the
 post was written (`https://web.archive.org/web/<timestamp>/<url>`).
 
 Settings and exclusions are in `lychee.toml`: sites that always block bots (LinkedIn,
-Stack Overflow and others), and `archive/` and drafts. Only exclude a site that
+Stack Overflow and others), and `archive/`. Only exclude a site that
 answers bots with an error whether or not the page is there, and check its links by
 hand now and then. To run the same check locally, after `make check` has built
 `_site`:
@@ -145,7 +145,8 @@ replace it with a service that sets no cookies.
   have share buttons; `share: true` adds them to a page, and pages in `projects/`
   have them unless set to `false`.
 - **Redirects** are `redirect_from` in a page's front matter for old addresses, or a
-  file using `layout: my-redirect` with a `to` address, as in `go/`.
+  page with a `redirect_to` address in its front matter, as in `go/`. Both come from
+  the `jekyll-redirect-from` plugin.
 
 Front matter can load extras on one page with `css` and `js`.
 

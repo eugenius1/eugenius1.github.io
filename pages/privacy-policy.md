@@ -12,8 +12,8 @@ section says.
 
 ## Cookies
 
-The site sets no cookies of its own. Two services it uses set theirs, and two old
-sign-in demos can too.
+The site sets no cookies of its own. Two services it uses set theirs, and an old
+post's sign-in demo can too.
 
 ### Google Analytics
 
@@ -40,12 +40,11 @@ The site remembers **Always load comments** in your browser's local storage, und
 site's data in your browser makes it ask again. Local storage also keeps whether
 you switched the site to light or dark mode.
 
-### Sign-in demos
+### Sign-in demo
 
-Two old demo pages, for [Facebook](/test/login/fb.html) and
-[Google](/test/login/google.html) sign-in, load those companies' sign-in scripts
-only when you choose **Load Facebook sign-in** or **Load Google sign-in**. Once
-loaded, Facebook or Google may set cookies under their own privacy policies.
+The 2017 post [Social Logins—what info you give away!](/blog/social-logins-what-info-you-give-away/)
+loads Facebook's and Google's sign-in scripts when you open it, for its demo.
+Facebook or Google may then set cookies under their own privacy policies.
 
 ## Other services
 
