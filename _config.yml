@@ -127,6 +127,7 @@ exclude:
   - package.json
   - package-lock.json
   - tsconfig.json
+  - lighthouserc.json
   - node_modules
   - scripts
   - README.md
