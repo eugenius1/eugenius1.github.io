@@ -134,7 +134,7 @@ Places like the stock market are the only places where people run away when pric
 and people want to buy more when prices go up.
 
 ![Current uncertain reality vs the goal that is more certain to be higher](/raw/img/blog/2021/investing/current-reality-vs-goal.jpg){:.golden-width}
-[&copy; BehaviorGap](https://store.behaviorgap.com/collections/all-sketches/products/current-reality)
+[&copy; BehaviorGap](https://web.archive.org/web/20210507125144/https://store.behaviorgap.com/collections/all-sketches/products/current-reality)
 {:.small}
 {:.text-center}
 
@@ -484,7 +484,7 @@ Normally, one big benefit is that you can invest from your salary before it gets
 and tax when withdrawing might be only on gains.
 
 For **crypto**, hands down the [biggest](https://coinmarketcap.com/rankings/exchanges/)
-and best exchange is [Binance](https://guy.coinbureau.com/binance/)
+and best exchange is [Binance](https://accounts.binance.com/register?ref=V96K5I7V)
 (this referral link is not mine but you get 25% commission back with each trade).
 Binance has one of the lowest fees available, a very wide range of cryptocurrencies and [insurance](https://academy.binance.com/en/glossary/secure-asset-fund-for-users).
 Binance also has the [highest liquidity](https://coinmarketcap.com/currencies/bitcoin/markets/) which results in the market price to buy or sell a cryptocurrency tending to be the best in the global market at that point in time.

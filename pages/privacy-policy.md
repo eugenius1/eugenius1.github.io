@@ -81,7 +81,7 @@ Users can set preferences for how Google advertises to you using the Google Ad S
 
 ## California Online Privacy Protection Act
 
-CalOPPA is the first state law in the United States to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. See more at: <http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf>
+CalOPPA is the first state law in the United States to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. See more at: <https://consumercal.org/california-online-privacy-protection-act-caloppa/>
 
 According to CalOPPA, we agree to the following:
 
