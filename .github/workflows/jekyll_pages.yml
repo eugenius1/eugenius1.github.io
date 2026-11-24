@@ -29,6 +29,52 @@ jobs:
       - name: Upload artifact
         if: github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v5
+      # For the lighthouse job. The images that make up most of it don't compress.
+      - name: Upload site for Lighthouse
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+          compression-level: 0
+          retention-days: 1
+
+  # Runs on GitHub's runner, which has Node and Chrome, against the site that build made.
+  # The limits are in lighthouserc.json.
+  lighthouse:
+    if: github.event_name == 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Download site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
+      # Ubuntu's AppArmor rules stop Chrome's sandbox from starting on the runner
+      - name: Run Lighthouse
+        run: npx --yes @lhci/cli@0.15.1 collect --settings.chromeFlags="--no-sandbox"
+      # Before the scores are checked, so the reports are there when they fail, and
+      # after a failed collection too, for whichever runs finished
+      - name: Write reports
+        if: ${{ !cancelled() && hashFiles('.lighthouseci/lhr-*.json') != '' }}
+        run: |
+          npx --yes @lhci/cli@0.15.1 upload
+          node scripts/lighthouse-summary.js >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload reports
+        if: ${{ !cancelled() && hashFiles('.lighthouseci/lhr-*.json') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci/reports
+          # Otherwise skipped, as the folder's name starts with a dot
+          include-hidden-files: true
+      - name: Check scores
+        run: npx --yes @lhci/cli@0.15.1 assert
 
   deploy:
     # Only deploy on the default branch
