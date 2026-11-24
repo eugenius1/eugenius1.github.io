@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/v4-shims.min.css">
 <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
 
+<!-- Asks before Disqus comments load, as they set cookies -->
+<script defer id="consent-script" src="{{ '/js/consent.js' | relative_url }}"></script>
+
 <!-- Per-page extras, set in front matter -->
 {% for href in page.css %}
   <link rel="stylesheet" href="{{ href }}">

@@ -98,9 +98,9 @@ make links
 ### TypeScript
 
 The site's own scripts are TypeScript in `_ts/`, with their tests beside them.
-esbuild compiles `_ts/home-cover.ts` to `js/home-cover.js`, which isn't in git.
-`make local` recompiles it on each change, and `make preview` and `make check`
-compile it first.
+esbuild compiles `_ts/home-cover.ts` and `_ts/consent.ts` to `js/`, where they're
+not in git. `make local` recompiles them on each change, and `make preview` and
+`make check` compile them first.
 
 Node runs in Docker too. To run the tests or the type check on their own:
 
@@ -127,6 +127,12 @@ only a few plugins. The workflow builds it with the Gemfile's versions and uploa
 Comments are Disqus, and their threads are found by the page's full address alone
 (see `_includes/comments/disqus.html`): the old threads were made that way, with no
 identifier. Google Analytics is set in `_config.yml`.
+
+Disqus sets cookies, so the comments don't load until the visitor clicks "Load
+comments", which `_ts/consent.ts` puts where they go. Ticking "Always load comments"
+keeps that choice in `localStorage`, not a cookie, and a button under the comments
+undoes it. Google Analytics still loads on every production page; issue 59 is to
+replace it with a service that sets no cookies.
 
 ### Writing
 
