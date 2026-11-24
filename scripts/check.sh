@@ -23,12 +23,12 @@ fi
 # Links between pages, anchors, images and their alt text, and that links use https.
 # Whether other sites are up is left to the weekly lychee check
 # (.github/workflows/links.yml), as they go down or block bots now and then.
-# Anchors with only an id are allowed, as in HTML5. The archive is a frozen copy of the old site, and drafts/ccd is an
-# unlisted draft whose charts aren't in the repo yet.
+# Anchors with only an id are allowed, as in HTML5. The archive is a frozen copy of
+# the old site.
 bundle exec htmlproofer _site \
   --disable-external \
   --allow-missing-href \
-  --ignore-files '/^_site\/(archive|drafts)\//'
+  --ignore-files '/^_site\/archive\//'
 
 # Fails when a theme update changes a file this site overrides, so the copy can
 # be brought up to date.

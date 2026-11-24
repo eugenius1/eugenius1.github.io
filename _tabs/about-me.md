@@ -5,6 +5,10 @@ permalink: "/about-me/"
 redirect_from:
  - "/about/"
  - "/aboutme/"
+ - "/contact/"
+ - "/go/connect/"
+ - "/go/social/"
+ - "/updates/"
 image: /img/covers/2015-wedding-tux.jpg
 icon: fas fa-user
 order: 1
@@ -26,107 +30,107 @@ My name is Eusebius Ngemera. I have the following qualities:
 <ul class="list-inline text-center">
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-apple fa-stack-1x"></i>
+      <i class="fa-brands fa-apple fa-stack-1x"></i>
     </span>
     <span class="sr-only">Apple</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-android fa-stack-1x"></i>
+      <i class="fa-brands fa-android fa-stack-1x"></i>
     </span>
     <span class="sr-only">Android</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-chrome fa-stack-1x"></i>
+      <i class="fa-brands fa-chrome fa-stack-1x"></i>
     </span>
     <span class="sr-only">Google Chrome</span>
   </li>
   <li title="Font Awesome">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-font-awesome fa-stack-1x"></i>
+      <i class="fa-brands fa-font-awesome fa-stack-1x"></i>
     </span>
     <span class="sr-only">Font Awesome</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-git fa-stack-1x"></i>
+      <i class="fa-brands fa-git fa-stack-1x"></i>
     </span>
     <span class="sr-only">Git</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-github fa-stack-1x"></i>
+      <i class="fa-brands fa-github fa-stack-1x"></i>
     </span>
     <span class="sr-only">GitHub</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-google fa-stack-1x"></i>
+      <i class="fa-brands fa-google fa-stack-1x"></i>
     </span>
     <span class="sr-only">Google</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-instagram fa-stack-1x"></i>
+      <i class="fa-brands fa-instagram fa-stack-1x"></i>
     </span>
     <span class="sr-only">Instagram</span>
   </li>
   <li>
     <a class="hide-border-bottom" href="https://www.linkedin.com/in/eusebius/" title="LinkedIn">
       <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fa fa-linkedin fa-stack-1x"></i>
+        <i class="fa-brands fa-linkedin fa-stack-1x"></i>
       </span>
       <span class="sr-only">LinkedIn</span>
     </a>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-linux fa-stack-1x"></i>
+      <i class="fa-brands fa-linux fa-stack-1x"></i>
     </span>
     <span class="sr-only">Linux</span>
   </li>
   <li>
     <a class="hide-border-bottom" href="/donate/" title="PayPal">
       <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fa fa-paypal fa-stack-1x"></i>
+        <i class="fa-brands fa-paypal fa-stack-1x"></i>
       </span>
       <span class="sr-only">PayPal</span>
     </a>
   </li>
   <li title="Slack">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-slack fa-stack-1x"></i>
+      <i class="fa-brands fa-slack fa-stack-1x"></i>
     </span>
     <span class="sr-only">Slack</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-spotify fa-stack-1x"></i>
+      <i class="fa-brands fa-spotify fa-stack-1x"></i>
     </span>
     <span class="sr-only">Spotify</span>
   </li>
   <li title="Terminal">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-terminal fa-stack-1x"></i>
+      <i class="fa-solid fa-terminal fa-stack-1x"></i>
     </span>
     <span class="sr-only">Terminal</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-whatsapp fa-stack-1x"></i>
+      <i class="fa-brands fa-whatsapp fa-stack-1x"></i>
     </span>
     <span class="sr-only">WhatsApp</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-wikipedia-w fa-stack-1x"></i>
+      <i class="fa-brands fa-wikipedia-w fa-stack-1x"></i>
     </span>
     <span class="sr-only">Wikipedia</span>
   </li>
   <li>
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-youtube fa-stack-1x"></i>
+      <i class="fa-brands fa-youtube fa-stack-1x"></i>
     </span>
     <span class="sr-only">YouTube</span>
   </li>
