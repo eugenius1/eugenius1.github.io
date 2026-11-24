@@ -43,7 +43,7 @@ You can then also sign up for a Nexo Card using [this link](https://nexo.io/nexo
 
 #### Binance (exchange)
 
-Reduce trading fees by 25% (to 0.05625% with BNB) when you sign up using [this link](https://guy.coinbureau.com/r/binance) or referral ID `V96K5I7V`.
+Reduce trading fees by 25% (to 0.05625% with BNB) when you sign up using [this link](https://accounts.binance.com/register?ref=V96K5I7V) or referral ID `V96K5I7V`.
 
 > Disclaimer: not my link but Coin Bureau's.
 

@@ -11,7 +11,7 @@ redirect_from:
 
 **In one easy sentence**: I improved a (Python) software tool that's used to further improve digital circuits that perform numerical computations.
 
-Project Supervisor: [Prof. George A. Constantinides](http://cas.ee.ic.ac.uk/people/gac1/)
+Project Supervisor: [Prof. George A. Constantinides](https://profiles.imperial.ac.uk/g.constantinides)
 
 <a class="btn btn-primary btn-lg" href="/raw/docs/2017/Eusebius_Ngemera_MEng_FYP.pdf">Report (PDF)</a>
 

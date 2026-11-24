@@ -32,11 +32,11 @@ You buy a domain name from a registrar; I bought mine from [hover.com](https://h
 
 ![Domain renewal for eusebius.tech is $49.99 for 1 year. Mail forward option is chosen, which costs $5 per year. An ICANN fee of $0.18 makes the total $55.17.](/img/blog/2016/hover-renewal.png "Domain renewal for a second year")
 
-*Whois* is a service that gives you information about the registered user of a domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](http://www.whois.com/whois/eusebius.tech).
+*Whois* is a service that gives you information about the registered user of a domain name. Without privacy, my home address and phone number would be publicly available. With privacy, you get [masked contact info](https://www.whois.com/whois/eusebius.tech).
 
 ## Hosting
 
-Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](http://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages. A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when someone requests a page.
+Before eusebius.tech, I was hosting a simpler website through [GitHub Pages](https://pages.github.com/) at [eugenius1.github.io](https://eugenius1.github.io) (which now links to this domain). GitHub Pages can host a static website from a repository as well as project pages. A static website is like a folder containing fully-rendered contents, whereas a dynamic website is like a program which runs on a server and produces content when someone requests a page.
 
 The beauty of GitHub Pages is that I can have my website hosted, for free, at a custom domain. This is true freedom, taking my website name from `eugenius1.github.io` to a much more friendly `eusebius.tech`.
 ~~One downside is that I lose https as I now would have to implement a secure connection myself instead of GitHub doing that for me.~~
@@ -52,7 +52,7 @@ A theme can drastically affect a website's impression. See versions [1](/archive
 
 [![The homepage transforms from a simple `Hello, world! It's Eusebius` on a blank white page to another with more text and finally to the current, more polished version with `Hi, I'm Eusebius`.](/img/blog/2016/theme-history.gif "GIF of website transformation")](/raw/img/blog/2016/theme-history.gif)
 
-The theme I'm using is [*Beautiful Jekyll*](https://beautifuljekyll.com/), and it goes beyond providing some [css](http://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
+The theme I'm using is [*Beautiful Jekyll*](https://beautifuljekyll.com/), and it goes beyond providing some [css](https://www.w3schools.com/css/css_intro.asp "Cascading Style Sheets")'s and visuals. It's more of a framework, built on top of Jekyll. [Jekyll](https://jekyllrb.com/) is a static-site generator.
 
 ### Features
 
@@ -71,7 +71,7 @@ The features above are built-in very well as all I had to do was fill in my [Dis
 The caveat is no PayPal so I have to remember to update my payment card before it expires.
 All emails sent to {% include email-link.html %} are forwarded to my personal email address.
 
-Another email solution is [improvmx.com](http://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of the post date, I haven't been able to modify their record.
+Another email solution is [improvmx.com](https://improvmx.com/), which is free. All emails to your domain can be forwarded to a single email address. The only caveat is that you have one shot at making the setting on improvmx. I made a mistake in the email address to forward to and as of the post date, I haven't been able to modify their record.
 
 ## Webpage content
 
